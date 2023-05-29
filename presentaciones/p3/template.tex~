@@ -1,0 +1,367 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 2.0 (March 8, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	11pt, % Set the default font size, options include: 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
+	%t, % Uncomment to vertically align all slide content to the top of the slide, rather than the default centered
+	%aspectratio=169, % Uncomment to set the aspect ratio to a 16:9 ratio which matches the aspect ratio of 1080p and 4K screens and projectors
+]{beamer}
+
+\graphicspath{{Images/}{./}} % Specifies where to look for included images (trailing slash required)
+
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule for better rules in tables
+
+%----------------------------------------------------------------------------------------
+%	SELECT LAYOUT THEME
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with a number of default layout themes which change the colors and layouts of slides. Below is a list of all themes available, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+\usetheme{Boadilla} %me gusta
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen} %dos dos
+%\usetheme{Hannover} %dos dos
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester} %muy flat
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+%----------------------------------------------------------------------------------------
+%	SELECT COLOR THEME
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with a number of color themes that can be applied to any layout theme to change its colors. Uncomment each of these in turn to see how they change the colors of your selected layout theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily} %default
+%\usecolortheme{monarca}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{spruce}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%----------------------------------------------------------------------------------------
+%	SELECT FONT THEME & FONTS
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with several font themes to easily change the fonts used in various parts of the presentation. Review the comments beside each one to decide if you would like to use it. Note that additional options can be specified for several of these font themes, consult the beamer documentation for more information.
+
+\usefonttheme{default} % Typeset using the default sans serif font
+%\usefonttheme{serif} % Typeset using the default serif font (make sure a sans font isn't being set as the default font if you use this option!)
+%\usefonttheme{structurebold} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in bold
+%\usefonttheme{structureitalicserif} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in italic serif
+%\usefonttheme{structuresmallcapsserif} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in small caps serif
+
+%------------------------------------------------
+
+%\usepackage{mathptmx} % Use the Times font for serif text
+\usepackage{palatino} % Use the Palatino font for serif text
+
+\usepackage[ruled,vlined]{algorithm2e}
+%\usepackage{helvet} % Use the Helvetica font for sans serif text
+\usepackage[default]{opensans} % Use the Open Sans font for sans serif text
+\usepackage[spanish]{babel}
+%\usepackage[default]{FiraSans} % Use the Fira Sans font for sans serif text
+%\usepackage[default]{lato} % Use the Lato font for sans serif text
+
+%----------------------------------------------------------------------------------------
+%	SELECT INNER THEME
+%----------------------------------------------------------------------------------------
+
+% Inner themes change the styling of internal slide elements, for example: bullet points, blocks, bibliography entries, title pages, theorems, etc. Uncomment each theme in turn to see what changes it makes to your presentation.
+
+%\useinnertheme{default}
+\useinnertheme{circles}
+%\useinnertheme{rectangles}
+%\useinnertheme{rounded}
+%\useinnertheme{inmargin}
+
+%----------------------------------------------------------------------------------------
+%	SELECT OUTER THEME
+%----------------------------------------------------------------------------------------
+
+% Outer themes change the overall layout of slides, such as: header and footer lines, sidebars and slide titles. Uncomment each theme in turn to see what changes it makes to your presentation.
+
+%\useoutertheme{default}
+%\useoutertheme{infolines}
+%\useoutertheme{miniframes}
+%\useoutertheme{smoothbars}
+%\useoutertheme{sidebar}
+%\useoutertheme{split}
+%\useoutertheme{shadow}
+%\useoutertheme{tree}
+%\useoutertheme{smoothtree}
+
+%\setbeamertemplate{footline} % Uncomment this line to remove the footer line in all slides
+%\setbeamertemplate{footline}[page number] % Uncomment this line to replace the footer line in all slides with a simple slide count
+
+%\setbeamertemplate{navigation symbols}{} % Uncomment this line to remove the navigation symbols from the bottom of all slides
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title[SEMINARIO DE INVESTIGACIÓN I]{¿Cómo se hace un mapa conceptual?} % The short title in the optional parameter appears at the bottom of every slide, the full title in the main parameter is only on the title page
+
+%\subtitle{Optional Subtitle} % Presentation subtitle, remove this command if a subtitle isn't required
+
+\author[Luis Ballado]{Luis Ballado} % Presenter name(s), the optional parameter can contain a shortened version to appear on the bottom of every slide, while the main parameter will appear on the title slide
+
+\institute[CINVESTAV]{CINVESTAV - UNIDAD TAMAULIPAS \\ \smallskip \textit{luis.ballado@cinvestav.mx}} % Your institution, the optional parameter can be used for the institution shorthand and will appear on the bottom of every slide after author names, while the required parameter is used on the title slide and can include your email address or additional information on separate lines
+
+\date[\today]{\today} % Presentation date or conference/meeting name, the optional parameter can contain a shortened version to appear on the bottom of every slide, while the required parameter value is output to the title slide
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SLIDE
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+	\titlepage % Output the title slide, automatically created using the text entered in the PRESENTATION INFORMATION block above
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS SLIDE
+%----------------------------------------------------------------------------------------
+
+% The table of contents outputs the sections and subsections that appear in your presentation, specified with the standard \section and \subsection commands. You may either display all sections and subsections on one slide with \tableofcontents, or display each section at a time on subsequent slides with \tableofcontents[pausesections]. The latter is useful if you want to step through each section and mention what you will discuss.
+
+%\begin{frame}
+%	\frametitle{Contenido} % Slide title, remove this command for no title
+	
+%	\tableofcontents % Output the table of contents (all sections on one slide)
+	%\tableofcontents[pausesections] % Output the table of contents (break sections up across separate slides)
+%\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION BODY SLIDES
+%----------------------------------------------------------------------------------------
+
+%\section{Introducción} % Sections are added in order to organize your presentation into discrete blocks, all sections and subsections are automatically output to the table of contents as an overview of the talk but NOT output in the presentation as separate slides
+
+%------------------------------------------------
+\section{¿Cómo se hace un mapa conceptual?}
+\begin{frame}
+  \frametitle{¿Qué es un mapa conceptual?}
+
+  \begin{itemize}
+    \item Desarrollados por el Prof. Joseph D. Novak a principios de los 70's.
+    \item Herramienta para organizar y representar conocimiento
+    \item Permiten una rápida interpretación del material y su relación con el tema de la presentación, ayudando a refinar el mensaje principal a transmitir a la audiencia.
+  \end{itemize}
+          
+\end{frame}
+
+\begin{frame}
+  
+  Para la realización de la tesis, el estudiante requiere:
+  
+  \begin{itemize}
+  \item creatividad
+  \item conocimientos
+  \item metodología y entusiasmo
+  \end{itemize}
+
+  \bigskip % Vertical whitespace
+  El alumno debe ser más \textbf{participativo, innovador y debe aportar} en lugar de esperar a recibir.\\
+  \bigskip % Vertical whitespace
+
+  \textit{Para una tesis de maestría, el aspirante a maestro comprueba o desaprueba una teoría, ya sea de nueva creación o anteriormente analizada. Contribuye a incrementar el conocimiento y/o resolver problemáticas determinadas mediante la aplicación innovadora del conocimiento.}
+  
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{¿Cómo se elige un tema de tesis?}
+  \bigskip % Vertical whitespace
+
+  La elección del tema es el punto de partida y la clave sobre la cual se asienta la posibilidad de un trabajo exitoso o el riesgo de perderse en la amplitud, o falta de originalidad.\\
+  \bigskip % Vertical whitespace
+  Éste puede ser asignado en forma arbitraria o seleccionado por quien lo va a desarrollar.\\
+  \bigskip % Vertical whitespace
+  \begin{enumerate}
+  \item La persona u organismo que solicita la investigación será quien la delimite y precise los objetivos y demás características específicas, de acuerdo con sus necesidades e intreses.
+  \item El estudioso es quien debe buscar y seleccionar un tema, tomando en cuenta las líneas de investigación de los cuerpos académicos, el área de estudio y el tiempo del que se dispone para realizar el proyecto.
+  \end{enumerate}
+  
+\end{frame}
+
+\begin{frame}
+  
+  La elección del tema implica lecturas, diálogos con personas expertas en el área, consejos y reflexiones. Se definen cinco pasos a seguir para elegir un tema:
+  \bigskip % Vertical whitespace
+  \begin{enumerate}
+  \item Definir qué tipo de temas le resultan más atractivos y para cuáles se siente más preparado.
+  \item Concretar qué sector o en el área elegida a través de lecturas.
+  \item Profundizar los conocimientos en el área elegida a través de lecturas.
+  \item A partir de la lectura de textos especializados, identificar problemas o temas particulares que se ocupen en esa área.
+  \item Consultar con expertos en el área para verificar que el tema elegido no haya sido estudiado ya, para aclarar dudas y para definir el camino de la investigación.
+  \end{enumerate}
+  
+\end{frame}
+
+\begin{frame}
+  Es importante que durante este proceso de elección se tenga en cuenta lo siguiente:
+  \bigskip % Vertical whitespace
+  \begin{enumerate}
+  \item \textbf{La extensión del tema:} Una de las habilidades clave para elegir un tema reside en seleccionar uno que tenga la extensión adecuada; ni muy largo ni muy corto, que sea factible realizarlo teniendo en cuenta el tiempo, el espacio y los recursos que dispone.
+  \item \textbf{Factibilidad:}
+    \begin{itemize}
+    \item Cuánto cuesta la investigación. Hay temas que requieren gastos considerables de transporte, libros,..etc.
+    \item Cuestiones relativas al acceso. Antes de comprometerse con un tema específico lo mejor es averiguar si es posible lograr acceso a la información y a los recursos que se requieren para la investigación.
+    \end{itemize}
+  \item \textbf{Originalidad:} En el caso de la tesis doctoral, el tema debe ofrecer una aportación al progreso del saber.
+  \end{enumerate}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{¿Qué caracteristicas tiene un tema de tesis?}
+  \bigskip % Vertical whitespace
+  
+  \begin{itemize}
+  \item \textbf{Relevancia:} El tema debe ser relevante de tu campo de estudio. Debe abordar una pregunta, problema o área de investigación actual y significativa. Un tema relevante captará el interés de la comunidad académica y contribuirá al conocimiento existente.
+  \item \textbf{Originalidad:} Es deseable que el tema tenga un elemento de originalidad. Debería explorar nuevos enfoques, perspectivas o soluciones, o bien, aplicar conceptos o teorías existentes a nuevos contextos o problemas.
+  \item \textbf{Enfoque específico:} Debe estar claramente delimitado y enfocado en un área especifica de estudio. Es importante evitar temas demasiado amplios, ya que pueden ser difíciles de abordar de manera exhaustiva en el contexto de una tesis.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+  \item \textbf{Factibilidad:} Debe ser factible en términos de recursos y tiempo disponibles. Debes considerar si tienes acceso a las fuentes necesarias, como datos, literatura académica o equipos especializados. También evaluar si se pueden realizar la investigación requerida dentro de los plazos establecidos.
+  \item \textbf{Potencial de investigación:} El tema debe ofrecer oportunidades para llevar a cabo una investigación sustancial y significativa. Debe permitirte plantear una pregunta de investigación clara y generar datos o evidencia que respalden tus argumentos y conclusiones.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+  \item \textbf{Valor académico y práctico:} Tener valor tanto académico como práctico. Contribuir al conocimiento existente en el campo de estudio y, idealmente, tener la capacidad de generar resultados o recomendaciones aplicables en la práctica.
+  \item \textbf{Interés personal:} Es importante que el tema te resulte interesante y motivador. La tesis requerirá un esfuerzo considerable y dedicación a lo largo de un periodo prolongado, por lo que es fundamental que te sientas comprometido y entusiasmado con el tema que elijas.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+
+  Si bien se revisó anteriormente diversas maneras de definir y encuadrar el concepto de tesis, no hay que perder de vista sus propósitos esenciales. (según ciertos autores Cone y Foster, 2008)\\
+
+  \begin{itemize}
+  \item Demostrar la habilidad del estudiante de conducir una investigación de forma independiente que aporte una contribución original al conocimiento sobre un tema importante.
+  \item Valorar el dominio de un área especializada de la ciencia.
+  \item Servir como un medio de entrenamiento, puesto que al conducir un proyecto de esta naturaleza se aprende y se madura en las habilidades de investigación y conocimiento sobre un tema, ello deriva también en: pensar de forma crítica, sintetizar y ampliar el trabajo de otros y comunicar de forma clara y profesional.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Estructura de Tesis}
+
+  Director: Dr. José Torres Jiménez\\
+  Año: Diciembre 2021\\
+  Tesis Maestria\\
+  \begin{enumerate}
+  \item Introducción
+  \item Marco Teórico
+  \item Estado del Arte
+  \item Desarrollo de algoritmos para la construcción de SCAs
+  \item Metodología de construcción de SCAs y SCAs construidos
+  \item Conclusiones y trabajo futuro
+  \end{enumerate}
+
+\end{frame}
+
+\begin{frame}
+  Director: Dr. José Gabriel Ramírez Torres\\
+  Año: Febrero 2018\\
+  Tesis Doctorado\\
+  \begin{enumerate}
+  \item Introducción
+  \item Marco Teórico
+  \item Estado del Arte
+  \item Enfoque propuesto
+  \item Resultados
+  \item Conclusiones
+  \end{enumerate}
+
+\end{frame}
+
+\begin{frame}
+  
+  Director: Dr. Wilfrido Gómez Flores\\
+  Año: Diciembre 2021\\
+  Tesis Doctorado\\
+  \begin{enumerate}
+  \item Introducción
+  \item Estado del Arte
+  \item Marco Teórico
+  \item Enfoque propuesto
+  \item Marco Experimental
+  \item Resultados
+  \item Conclusiones
+  \end{enumerate}
+  
+\end{frame}
+
+\begin{frame}{Referencias}
+  \begin{thebibliography}{10}
+    \setbeamertemplate{bibliography item}[text]
+    
+    \bibitem{Wscientific}
+    Writing a Scientific-Style Thesis, NUI Galway OE Gaillimg \url{https://www.universityofgalway.ie/media/graduatestudies/files/writingascientificstylethesis/writing_a_scientific_thesis.pdf}
+  \bibitem{UCtesis}
+    Universidad de Colima, El portal de la tesis \url{https://recursos.ucol.mx/tesis/tema_investigacion.php}
+  \bibitem{SemUNAM}
+    UNAM, Seminario Investigación \url{http://profesores.fi-b.unam.mx/jlfl/Seminario_IEE/Seminario_IEE_Tema_1.pdf}
+  \bibitem{Consj}
+    Guia Universitaria, Consejos prácticos elección de tesis \url{https://guiauniversitaria.mx/6-consejos-practicos-para-elegir-tu-tema-de-tesis/}
+  \bibitem{MTesis}
+    LASALLE, Manual de Tesis y Trabajos de Investigación \url{https://www.lasallevictoria.edu.mx/descargas/alumnos/Manual_de_Tesis_y_Trabajos_de_Inv.pdf}
+  \end{thebibliography}
+\end{frame}
+%------------------------------------------------
+\end{document} 
