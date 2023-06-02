@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lachaise Assignment
+% LaTeX Template
+% Version 1.0 (26/6/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Marion Lachaise & François Févotte
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\input{structure.tex}
+
+\title{Estrategias para la exploración coordinada multi-VANT}
+
+\author{Luis Ballado\\ \texttt{luis.ballado@cinvestav.mx}} % Author name and email address
+
+\date{CINVESTAV UNIDAD TAMAULIPAS --- \today} 
+
+\begin{document}
+
+\maketitle
+
+En la última década el uso de los Vehículos Aéreos No Tripulados (VANTs) en aplicaciones civiles han tenido mucho auge, trayendo consigo la necesidad de coordinarlos a medida que aumenta su uso en diversas aplicaciones como vigilancia, búsqueda y rescate. Donde la coordinación efectiva y segura de múltiples VANTs se vuelve fundamental. Dicha tarea de coordinar plantea desafíos para evitar colisiones, asignar tareas, planificar rutas, administrar recursos para optimizar el rendimiento de las misiones asignadas y garantizar una comunicación fluida son aspectos críticos. Se requiere el desarrollo de algoritmos adaptables, sistemas de control y comunicaciones robustas, así como regulaciones adecuadas para abordar esta problemática y permitir el despliegue eficiente de los VANTs en entornos complejos.\\
+
+Resolver estas problemáticas permitirá aprovechar todo el potencial de los VANTs en diversas aplicaciones, como la vigilancia, entrega de paquetes, la inspección de infraestructuras, hasta la respuesta rápida a emergencias donde un VANT pueda acceder de forma eficiente.\\
+
+\textbf{Palabras clave: } \textit{VANTs, coordinación multiagente, mapeo, inteligencia colectiva, percepción y autonomía}\\
+
+Las investigaciones relacionadas con robots móviles, vehículos aéreos no tripulados, vehículos submarinos autónomos o robots humanoides son algunos de los sistemas de interés que se aplican para resolver problemas reales o para facilitar tareas del hombre. Son comúnmente utilizados para la exploración donde el acceso del hombre es imposible o de alto riesgo. Estos sistemas son de gran interés para probar nuevas técnicas de control o algoritmos donde son considerados como sistemas no lineales por no cumplir con la ley de superposición, es decir que la respuesta de salida no es proporcional a la suma de las entradas.\\
+
+Estos robot tienen un problema en común su tarea es explorar zonas desconocidas. La clave es conocer su ubicación para no perderse en la exploración. Puesto que, es casi imposible para un robot operar en un ambiente sin un mapa que guíe sus movimientos.\\
+
+Por otra parte, dentro de la robótica móvil aérea cuenta con problemas inherentes que deben abordarse para lograr un funcionamiento eficiente y seguro.
+
+\begin{itemize}
+\item Establidad y control: Los VANTs deben ser capaces de mantener una estabilidad adecuada y un control preciso durante el vuelo. Esto implica superar desafios como la estabilización en condiciones climáticas adversas y la capacidad de responder rápidamente a las perturbaciones externas.
+\item Navegación y planificación de rutas - Los VANTs debe poder navegar de manera autónoma y planificar rutas óptimas para alcanzar sus objetivos. Esto implica la detección y evación de obstáculos, la planificación de trayectorias suaves y eficientes, y la capacidad de adaptarse a entornos desconocidos y cambiantes.
+\item Detección y percepción - Los VANTs necesitan sistemas de detección y percepción para obtener información sobre su entorno y tomar decisiones. Esto incluye la capacidad de detectar y reconocer objetos, evitar colisiones, realizar mapeo y localización simultánea (SLAM).
+\item Administración de energía - La administración eficiente es un desafío, especialmente en robots que operan de manera autónoma durante largos períodos. Maximizar la duración de la batería y optimizar el consumo de energía son aspectos clave en el diseño y desarrollo de robots móviles.
+\end{itemize}
+
+A medida que la tecnología avanza, surgen nuevos desafíos y áreas de investigación para mejorar aún más el rendimiento y capacidad de los robots móviles aéreos.\\
+
+La generación de algoritmos adaptativos capaces de ajustar su comportamiento en función de las nuevas condiciones del entorno es la pieza clave que se busca en este trabajo.\\
+
+Los usos y aplicaciones de vehículos aéreos han sido extensamente estudiados y una larga lista de aplicaciones  ya existen entre nosotros. Pero las limitaciones que presentan en la implementación de un solo agente pueden reducirse a medida que aumentamos el número de agentes en múltiples VANTs.\\
+
+%Una de las aplicaciones con mayor éxito de multiples VANTs se encuentra en el área del entretenimiento. Siendo la compañia Genesis (la marca de lujo de Hyundai) con una coreografía de \href{https://www.guinnessworldrecords.com/news/commercial/2021/5/3281-drones-break-dazzling-record-for-most-airborne-simultaneously-655062}{3,281} drones perfectamente sincronizados.\\
+
+%como circula la informacion
+%si es centralizado
+%si tiene una base centralizada
+%sobre el que se quiere hacer
+%que desafios
+%para que lo quiero hacer
+%logistica que son para un unico vants pero un numeroso numero de vants puede tener una gran ventaja en ciertas tareas
+%en lugar de tener un dron especializado, se puede
+%para que .. que pretendo tener con ellos .. obtener robustes de que alguno pueda fallar ...
+%desarrollar estrategias para realizar una exploracion eficiente con tolerancia a fallos
+%como lo quiero lo puedo hacer .. que sea desentralizado ..distribuido entre los drones
+
+%que el utilizar los multiples drones
+%una de las areas es la exploracion ahi se puede mencionar exploracion busqueda y rescate .. vigilancia..inspeccion en campos eolicos..todas se reducen a generar un mapa para tomar decisiones de que se va a reaizar
+
+%como -- los efoques .. pocos drones..enjambre es mas de 20 drones.. la aplicacion de grupos de robots.. enjambres
+
+%leer tesis de juan carlos
+
+%cada minuto cuenta
+%Una de las aplicaciones de colaboraciones es durante situaciones de emergencia, regularmente unas pocas horas están disponibles para hacer desiciones clave. Tecnologia para esta tarea debe contar con un despliege rápido y de facil traslado
+
+Partiendo de la necesidad de coordinación se busca explorar y proponer una estrategia resiliente a problemas de comunicación. Probando diversas arquitecturas de redes de comunicación que permitan la propagación de información entre los agentes. Dicha comunicación puede ser híbrida. Es decir, que el agente que tenga una mejor comunicación a la base (computadora central), podrá establecer contacto con la computadora principal para cuestiones de telemetría o cambios en la tarea a realizar.\\ 
+
+Para la aplicación de algortimos de coordinación, cada robot áereo debe poseer sensores que lo ayuden a percibir el ambiente en el que se desplaza, así como conocer el estado de las variables de sus vecinos como posición, velocidad y altitud. Aunque el intercambio de información puede resultar un alto costo computacional a medida que el número de robots áeros crece.\\
+
+Pese a que la propuesta es de software, se pretende realizar una implementación en el mundo real. Esto involucra crear VANTs capaces de poder interpretar los algoritmos propuestos durante el desarrollo de éste trabajo.\\
+
+Se buscará el desarrollo de vehículos aéreos (drones) en el transcurso del curso de tópicos selectos de robótica móvil que ayuden en la implementación del trabajo.\\
+
+%La coordinación de robots aéreos es importante para lograr una mayor eficiencia, cubrir áreas extensas, aprovechar sinergias y poder abordar tareas complejas. Estas ventajas permiten aprovechar todo el potencial de los robots aéreos en diversas aplicaciones.\\
+
+\textbf{Planteamiento formal del problema de exploración utilizando múltiples VANTs:}\\
+
+Objetivo: Realizar la exploración de manera eficiente, cubriendo la mayor cantidad posible del área de interés $A$ con los drones disponibles.
+
+\begin{itemize}
+\item Dado un área de interés $A$ que se desea explorar
+\item Un conjunto de drones denotados como $D={D_1,D_2,...,D_n}$, donde n es el número total de drones disponibles.
+\item Un conjunto de tareas de exploración o mapeo, denotado como $T={T_1,T_2,...,T_m}$, donde m es el número total de tareas a realizar.
+\item Restricciones y requisitos específicos del problema, como límites de tiempo, áreas prioritarias, obstáculos a evitar, etc.
+\end{itemize}
+
+Para cada tarea de exploración $Tm$, se definen las siguientes variables:
+
+\begin{itemize}
+\item Posición inicial: $p_i$ (x,y,z), representa la posición inicial del dron o los drones asignados a la tarea $Tm$
+\item Trayectoria: $\alpha_i$, describe la trayectoria seguida por el/los dron/es asignado(s) a la tarea $Tm$ en función del tiempo t.
+\item Información recolectada: $C_i$, representa la información recolectada por el/los dron/nes asignado(s) a la tarea $Tm$ durante la exploración.
+\end{itemize}
+
+La función objetivo puede variar según los objetivos específicos del problema. Algunas posibles funciones objetivo podrían ser:
+
+\begin{itemize}
+\item Maximizar la cobertura del área de interés A.
+\item Minimizar el tiempo total requerido para cubrir el área de interés A.
+\item Maximizar la cantidad de información recolectada.
+\end{itemize}
+
+\end{document}
+
+
