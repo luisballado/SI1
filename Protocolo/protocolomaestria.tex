@@ -25,16 +25,16 @@
 %-----------------------
 
 \title{ Centro de Investigaci\'{o}n y Estudios Avanzados del IPN\\
-        Departamento de Engenier\'{\i}a El\'{e}ctrica \\     
-        Secci\'{o}n de Computaci\'{o}n \\     
-        \textbf{Protocolo de investigación}
+  Unidad Tamaulipas\\
+  \textbf{Protocolo de tesis}
 }
 
 
 \author{
-Título: \pp{Nombre de la investigación} \\
+Título: Estrategias para la exploración coordinada multi-VANT \\
 Candidato: Luis Alberto Ballado Aradias \\
-Asesor de Tesis: \pp{Nombre del asesor}
+Asesor de Tesis: Dr. José Gabriel Ramirez Torres \\
+Co-Asesor de Tesis: Dr. Eduardo Rodriguez Tello
 }
 
 \date{\today}
@@ -54,8 +54,13 @@ Asesor de Tesis: \pp{Nombre del asesor}
 \maketitle
 
 \begin{abstract}
+
+  La exploración es un problema fundamental de la robótica móvil autónoma que consiste en utilizar un robot para obtener información de un entorno desconocido, a través de sus sensores, con el objetivo de generar un mapa que lo represente. Por motivos de eficiencia y robustez la exploración suele llevarse a cabo con más de un robot, en este caso el problema se conoce como el de exploración multi-robot.\\
   
-\pp{Poner resumen}
+  Uno de los principales aspectos de la exploración es determinar a que lugares los robots deben moverse para obtener información del entorno. Para esto se suele primero identificar dichos lugares, conocidos como objetivos de exploración, para luego asignar los objetivos identificados a los robots. Cuando se utiliza más de un robot es deseable que la asignación de objetivos se lleve a cabo siguiendo una estrategia de coordinación para evitar que los robots exploren los mismos lugares o que se obstaculicen entre sí.\\
+  
+Los entornos estructurados como edificios, hogares y otras construcciones humanas son entornos que pueden dividirse en segmentos, como habitaciones y corredores. En este tipo de entornos una posible estrategia de coordinación es la de llevar a cabo la exploración maximizando la distribución de los robots sobre los segmentos.
+%\pp{Poner resumen}
 \medskip \\
 \noindent \textsf{Palabras claves:} \pp{Poner palabras claves}
 
@@ -64,7 +69,7 @@ Asesor de Tesis: \pp{Nombre del asesor}
 \section{Datos Generales}
 
 \subsection{T\'{\i}tulo de proyecto}
-\pp{Repetir título}
+Estrategias para la exploración coordinada multi-VANT
 \subsection{Datos del alumno}
 \begin{tabular}{ll} 
 Nombre:  &          Luis Alberto Ballado Aradias \\
@@ -75,35 +80,40 @@ Tel\'{e}fono (lugar de trabajo):    & \pp{tel} \\
 Direcci\'{o}n electr\'{o}nica: & luis.ballado@cinvestav.mx \\
 URL: & luis.madlab.mx
 \end{tabular}
-\subsection{Instituci\'{o}n receptora}
+\subsection{Instituci\'{o}n}
 \begin{tabular}{ll} 
 Nombre:  &          CINVESTAV-IPN \\
-Departamento:    &  Depto. de Ingenier\'{\i}a El\'{e}ctrica,\\
-                 &  Secci\'{o}n de Computaci\'{o}n.\\
-Direcci\'{o}n:   &  Av. Instituto Polit\'{e}cnico Nacional No. 2508,\\
-                 &  Col. San Pedro Zacatenco,\\
-                 &  M\'{e}xico, D. F. 07300.\\
-Tel\'{e}fono:    & (52) (55) 57.47.37.58   \\ 
+Departamento:    &  Unidad Tamaulipas\\
+Direcci\'{o}n:   &  Km 5.5 carretera Cd. Victoria - Soto la Marina.\\
+                 &  Parque Científico y Tecnológico TECNOTAM,\\
+                 &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
+Tel\'{e}fono:    & (+52) (834) 107 0220\\
 \end{tabular}
 \subsection{Beca de tesis}
 \begin{tabular}{ll} 
 Instituci\'{o}n otorgante:  &  CONACYT  \\
-Tipo de beca:      & Maestr\'ia \\
-Vigencia:    &   Septiembre 2001 - Agosto 2003
+Tipo de beca:      & Maestr\'ia Nacional\\
+Vigencia:    &   Septiembre 2022 - Agosto 2024
 \end{tabular}
 
 \subsection{Datos del asesor}
 \begin{tabular}{ll} 
-Nombre:  &   Dr. Guillermo Morales Luna \\
-Direcci\'{o}n:   &   Av. Instituto Polit\'{e}cnico Nacional No. 2508,\\
-                 &  Col. San Pedro Zacatenco,\\
-                 &  M\'{e}xico, D. F. 07300.\\
-Tel\'{e}fono (oficina):    &  (52) (55) 57.47.37.59 \\ 
-Instituci\'{o}n:    &  CINVESTAV-IPN \\ \\ 
-Departamento adscripci\'{o}n: &  Depto. de Ingenier\'{\i}a El\'{e}ctrica,\\
-                 &  Secci\'{o}n de Computaci\'{o}n.\\
-Grado acad\'{e}mico: & Doctor en Philosophia en Computaci\'on 
-\
+Nombre:  &   Dr. José Gabriel Ramirez Torres \\
+Direcci\'{o}n:   &   Km. 5.5 carretera Cd. Victoria - Soto la Marina\\
+                 &  Parque Científico y Tecnológico TECNOTAM\\
+                 &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
+Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext.  \\ 
+Instituci\'{o}n:    &  CINVESTAV-IPN \\ 
+Departamento adscripci\'{o}n: &  Unidad Tamaulipas\\
+Grado acad\'{e}mico: & Doctorado \\\\
+Nombre:  &   Dr. Eduardo Rodriguez Tello \\
+Direcci\'{o}n:   &   Km. 5.5 carretera Cd. Victoria - Soto la Marina\\
+                 &  Parque Científico y Tecnológico TECNOTAM\\
+                 &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
+Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext.  \\ 
+Instituci\'{o}n:    &  CINVESTAV-IPN \\ 
+Departamento adscripci\'{o}n: &  Unidad Tamaulipas\\
+Grado acad\'{e}mico: & Doctorado 
 \end{tabular} 
 
 \section{Descripci\'{o}n del proyecto}
