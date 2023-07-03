@@ -55,13 +55,13 @@ Co-Asesor de Tesis: Dr. Eduardo Rodriguez Tello
 
 \begin{abstract}
 
-  La exploración es un problema fundamental de la robótica móvil autónoma que consiste en utilizar un robot para obtener información de un entorno desconocido, a través de sus sensores, con el objetivo de generar un mapa que lo represente. Por motivos de eficiencia y robustez la exploración suele llevarse a cabo con más de un robot, en este caso el problema se conoce como el de exploración multi-robot.\\
+  La exploración es un problema fundamental de la robótica móvil autónoma. Consiste en utilizar un robot para obtener información de un entorno desconocido con ayuda de diferentes técnicas de odometría. El objetivo, generar un mapa que represente el ambiente que lo rodea. En el caso de hacer la exploración con más robots, el problema se conoce como el de exploración multi-robot.\\
   
-  Uno de los principales aspectos de la exploración es determinar a que lugares los robots deben moverse para obtener información del entorno. Para esto se suele primero identificar dichos lugares, conocidos como objetivos de exploración, para luego asignar los objetivos identificados a los robots. Cuando se utiliza más de un robot es deseable que la asignación de objetivos se lleve a cabo siguiendo una estrategia de coordinación para evitar que los robots exploren los mismos lugares o que se obstaculicen entre sí.\\
+  Uno de los principales aspectos de la exploración es determinar a que lugares los robots deben moverse para obtener información del entorno. Para esto se primero debemos identificar dichos lugares conocidos, como objetivos de exploración, para luego asignar los objetivos a los robots. Decimos que cuando se utiliza más de un robot es deseable que la asignación de objetivos se lleve a cabo siguiendo una estrategia de coordinación para evitar que los robots exploren los mismos lugares o que se obstaculicen entre sí.\\
   
   Los entornos estructurados como edificios, hogares y otras construcciones humanas son entornos que pueden dividirse en segmentos, como habitaciones y corredores. En este tipo de entornos una posible estrategia de coordinación es la de llevar a cabo la exploración maximizando la distribución de los robots sobre los segmentos.\\
 
-  Los comportamientos reactivos se han estudiado desde los años 80's con las propuestas de diferentes tipos de arquitecturas que hasta hoy en dia son modelos base para la construcción de un robot como su arquitectura en tres etapas Reactiva, Deliverativa y diseño de un camino. Podemos llevar estos tipos de comportamientos para las etapas de planificadores locales.\\
+  Los comportamientos reactivos se han estudiado desde los años 80's con las propuestas de diferentes tipos de arquitecturas que hasta hoy en dia son modelos base para la construcción de un robot, como su arquitectura en tres etapas (reactiva, deliverativa y planificadora). Podemos llevar estos tipos de comportamientos para las etapas de planificadores locales.\\
   
   %\pp{Poner resumen}
   \medskip \\
@@ -121,12 +121,14 @@ Grado acad\'{e}mico: & Doctorado
 
 \section{Descripci\'{o}n del proyecto}
 
-Generación de una arquitectura desentralizada capaz de coordinar la exploración en entornos desconocidos, capaces de mapear el area al mismo tiempo que exploran el area.
+Generación de una arquitectura descentralizada capaz de coordinar la exploración de multiples Vehículos Aéreos No Tripulados (VANTs) en entornos desconocidos.
 
 \subsection{Antecedentes y motivaci\'{o}n para el proyecto}
-A raíz de la alta demanda de vehiculos aereos no tripulados, los precios de estos han sufrido una caida de precio haciendo accesible la adquisición para fines cientificos capaces de dotarles de sensores a bordo del drone y probar diferentes tipos de teorias de control (Mencionar paper de pendulo inverso en un drone), convirtiendo los problemas tipicos de control 2D como pendulo inverso fijo .. a un ambiente 3D, teniendo más variables a controlar y tomar en cuenta.\\
+A raíz de la alta demanda de vehículos aéreos no tripulados, han provocado la disminución de sus precios en el mercado, haciendo accesible su adquisición. En recientes años, dotarlos de inteligencia para explotar la información recolectada de sensores a bordo del VANT ha sido y es un área estudiada en robótica móvil áerea. Buscando probar diferentes teorías de control, convirtiendo los problemas típicos de control 2D (péndulo inverso fijo) a un ambiente 3D, teniendo así más variables a controlar.\\
+%\href{https://www.flyingmachinearena.ethz.ch/wp-content/publications/2011/hehn_dandrea_flying_inverted_pendulum.pdf}
 
-El despliegue rapido de robots en situaciones de riesgo, busqueda y rescate ha sido un área que ha sido ampliamente estudiada en la robotica movil. Donde se han aplicado teorias de grafos para la optención óptima de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente autonomo. Esa percepción que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura tolerante a fallas y capaz de coordinar multiples vehiculos aereos no trupulados a medida que incrementa o disminuye la oferta de drones disponibles 
+
+El despliegue rápido de robots en situaciones de riesgo, búsqueda y rescate ha sido un área ampliamente estudiada en la robótica móvil. Donde se han aplicado teorias de grafos para la optención óptima de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente autonomo. Esa percepción que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura tolerante a fallas y capaz de coordinar multiples vehiculos aereos no trupulados a medida que incrementa o disminuye la oferta de drones disponibles 
 
 \section{Planteamiento del problema}
 
