@@ -59,11 +59,14 @@ Co-Asesor de Tesis: Dr. Eduardo Rodriguez Tello
   
   Uno de los principales aspectos de la exploración es determinar a que lugares los robots deben moverse para obtener información del entorno. Para esto se suele primero identificar dichos lugares, conocidos como objetivos de exploración, para luego asignar los objetivos identificados a los robots. Cuando se utiliza más de un robot es deseable que la asignación de objetivos se lleve a cabo siguiendo una estrategia de coordinación para evitar que los robots exploren los mismos lugares o que se obstaculicen entre sí.\\
   
-Los entornos estructurados como edificios, hogares y otras construcciones humanas son entornos que pueden dividirse en segmentos, como habitaciones y corredores. En este tipo de entornos una posible estrategia de coordinación es la de llevar a cabo la exploración maximizando la distribución de los robots sobre los segmentos.
-%\pp{Poner resumen}
-\medskip \\
-\noindent \textsf{Palabras claves:} \pp{Poner palabras claves}
+  Los entornos estructurados como edificios, hogares y otras construcciones humanas son entornos que pueden dividirse en segmentos, como habitaciones y corredores. En este tipo de entornos una posible estrategia de coordinación es la de llevar a cabo la exploración maximizando la distribución de los robots sobre los segmentos.\\
 
+  Los comportamientos reactivos se han estudiado desde los años 80's con las propuestas de diferentes tipos de arquitecturas que hasta hoy en dia son modelos base para la construcción de un robot como su arquitectura en tres etapas Reactiva, Deliverativa y diseño de un camino. Podemos llevar estos tipos de comportamientos para las etapas de planificadores locales.\\
+  
+  %\pp{Poner resumen}
+  \medskip \\
+  \noindent \textsf{Palabras claves:} multi-Vant, cordinación multi-agent, 3D mapping, 3D Path finding
+  
 \end{abstract}
 
 \section{Datos Generales}
@@ -118,25 +121,38 @@ Grado acad\'{e}mico: & Doctorado
 
 \section{Descripci\'{o}n del proyecto}
 
-\subsection{Antecedentes y motivaci\'{o}n para el proyecto}
+Generación de una arquitectura desentralizada capaz de coordinar la exploración en entornos desconocidos, capaces de mapear el area al mismo tiempo que exploran el area.
 
+\subsection{Antecedentes y motivaci\'{o}n para el proyecto}
+A raíz de la alta demanda de vehiculos aereos no tripulados, los precios de estos han sufrido una caida de precio haciendo accesible la adquisición para fines cientificos capaces de dotarles de sensores a bordo del drone y probar diferentes tipos de teorias de control (Mencionar paper de pendulo inverso en un drone), convirtiendo los problemas tipicos de control 2D como pendulo inverso fijo .. a un ambiente 3D, teniendo más variables a controlar y tomar en cuenta.\\
+
+El despliegue rapido de robots en situaciones de riesgo, busqueda y rescate ha sido un área que ha sido ampliamente estudiada en la robotica movil. Donde se han aplicado teorias de grafos para la optención óptima de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente autonomo. Esa percepción que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura tolerante a fallas y capaz de coordinar multiples vehiculos aereos no trupulados a medida que incrementa o disminuye la oferta de drones disponibles 
 
 \section{Planteamiento del problema}
 
+Para poder desplazarse en un ambiente desconocido lo primero es explorar el area y a medida que se obtiene información del espacio se puden calcular las rutas mas cortas o ciertas caracteristicas que nos ayuden a conocer donde estoy dentro de un ambiente desconocido. Estudios en robotica movil por mas de 25 años han demostrado que la teoria de grafos ha aydado mucho al area ya que se representaba como grafos planos y ahora al tener el agente robot en el aire, el problema se vuelve 3D.
 
 \section{Objetivos generales y espec\'{\i}ficos del proyecto}
 
 \textbf{General} \\
 
-Se trata de \pp{lo que se trata}
+Los objetivos generales para dotar a un agente de autonomia
+\begin{itemize}
+\item Evitar colisiones: El objetivo primordial es garantizar que los drones eviten colisiones entre sí y con otros objetos en su entorno. La coordinación adecuada asegura que los drones mantengan una distancia segura y sigan rutas que minimicen el riesgo de colisión.
+\item Eficiencia y rendimiento: La coordinación de múltiples drones busca optimizar la eficiencia y el rendimiento del sistema en su conjunto. Esto implica asignar tareas de manera óptima entre los drones, minimizar los tiempos de espera y los tiempos de respuesta, y maximizar la capacidad de realizar tareas en paralelo.
+\item Cumplimiento de objetivos: Los drones pueden tener objetivos específicos a cumplir, como la recolección de datos, la entrega de paquetes o la vigilancia de áreas. La coordinación tiene como objetivo garantizar que cada dron contribuya de manera efectiva al logro de los objetivos generales, sin redundancia ni superposición de tareas.
+\item Distribucion equitativa de tareas: Si los drones tienen capacidades o limitaciones diferentes, como la duración de la batería o la capacidad de carga, se busca una distribución equitativa de la carga de trabajo entre los drones. Esto asegura que todos los drones contribuyan de manera equilibrada y evita la sobrecarga de algunos drones mientras otros están subutilizados.
+\item Comunicación y sincronicación: La coordinación requiere una comunicación efectiva entre los drones para intercambiar información y sincronizar sus acciones. El objetivo es establecer una comunicación confiable y eficiente que permita la transmisión de datos relevantes y las instrucciones necesarias para la coordinación.
+\item Adaptabilidad y flexibilidad: Los objetivos de la coordinación pueden cambiar en función de las circunstancias y las necesidades. La coordinación de múltiples drones debe ser adaptable y flexible para ajustarse a cambios en el entorno, nuevos objetivos o la incorporación o salida de drones del sistema.
+\end{itemize}
 
 \bigskip
 \noindent
 \textbf{Particulares} \\
 \begin{enumerate}
-\item \pp{particular uno}
-\item \pp{particular dos}
-\item \pp{particular cuál sea necesario}
+\item Formación y patrones de vuelo
+\item Tolerante a fallas de comunicación
+\item Colaboración en tareas complejas
 \end{enumerate}
 
 \section{Metodolog\'{\i}a}
@@ -153,14 +169,19 @@ Se trata de \pp{lo que se trata}
 
 \section{Estado del arte}
 
+\begin{itemize}
+\item Planificador de trayectorias
+\item Arquitectura de robots coordinados
+\item Percepcion de información 3D a partir de sistemas de vision por computadora
+\end{itemize}
 \section{Contribuciones o resultados esperados}
 \pp{introducir esta parte}
 
 Se espera entregar:
 \begin{enumerate}
-\item 
-\item 
-\item 
+\item Códigos a disposición de la comunidad 
+\item Simulación de solución
+\item Prototipo de solución
 \item Tesis impresa.
 \end{enumerate}
 
