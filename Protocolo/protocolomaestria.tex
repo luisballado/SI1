@@ -55,17 +55,14 @@ Co-Asesor: Dr. Eduardo Rodriguez Tello
 
 \begin{abstract}
 
-  La exploración es un problema fundamental de la robótica móvil autónoma que consiste en utilizar un robot para obtener información de un entorno desconocido, a través de sus sensores, con el objetivo de generar un mapa que lo represente. Por motivos de eficiencia y robustez la exploración suele llevarse a cabo con más de un robot, en este caso el problema se conoce como el de exploración multi-robot.\\
-  
-  Uno de los principales aspectos de la exploración es determinar a que lugares los robots deben moverse para obtener información del entorno. Para esto se suele primero identificar dichos lugares, conocidos como objetivos de exploración, para luego asignar los objetivos identificados a los robots. Cuando se utiliza más de un robot es deseable que la asignación de objetivos se lleve a cabo siguiendo una estrategia de coordinación para evitar que los robots exploren los mismos lugares o que se obstaculicen entre sí.\\
-  
-Los entornos estructurados como edificios, hogares y otras construcciones humanas son entornos que pueden dividirse en segmentos, como habitaciones y corredores. En este tipo de entornos una posible estrategia de coordinación es la de llevar a cabo la exploración maximizando la distribución de los robots sobre los segmentos.
-%\pp{Poner resumen}
-\medskip \\
-\noindent \textsf{Palabras claves:} \pp{Poner palabras claves}
+  Una de las áreas de investigación dentro de la robótica móvil inteligente es la navegación autónoma y eficiente. Diversas técnicas algoritmicas dotan al robot de estrategias para cumplir la tarea de \textbf{navegar dentro de un ambiente} en base a la representación que el agente robot puede tener del mundo. Antes de llevar acabo dicha tarea, es necesario que el robot conozca el entorno donde planee desplazar. Es donde \textbf{la exploración} toma un factor importante en la construcción de mapas a partir de un entorno desconocido. Con el desarrollo y avances en la tecnología en telemetría de baja potencia, es posible recabar información necesaria para la elaboración de mapas en ambientes desconocidos. Teniendo un nuevo reto, la \textbf{coordinación multi-robot}. Evitar colisiones y lecturas de áreas previamente exploradas es una tarea que un agente que participe en un grupo de robots debe desempeñar. Otro aspecto es determinar a que lugares los robots deben moverse para obtener información del entorno, definimos \textbf{exploración} como el acto de moverse en un ambiente desconocido, mientras se construye su mapa que es usado para navegaciones posteriores. Para esto, debemos identificar lugares conocidos (landmarks) como objetivos de exploración, para luego asignar los objetivos a los robots. Decimos que cuando se utiliza más de un robot es deseable que la asignación de objetivos se lleve a cabo siguiendo una estrategia de coordinación para evitar que los robots exploren los mismos lugares o que se obstaculicen entre sí. Los entornos estructurados como edificios, hogares y otras construcciones humanas son entornos que pueden dividirse en segmentos, como habitaciones y corredores. En este tipo de entornos una posible estrategia de coordinación es la de llevar a cabo la exploración maximizando la distribución de los robots sobre los segmentos. Los comportamientos reactivos se han sido estudiado desde los años 80's junto con las propuestas de diferentes tipos de arquitecturas que hasta hoy en día son modelos base para la construcción de un robot (reactiva, deliverativa y planificación). Podemos llevar estos tipos de comportamientos para las etapas de planificadores locales. El objetivo de este trabajo es la propuesta de una arquitectura resiliente a fallas, capaz de explorar ambientes desconocidos y cambiantes. El proyecto de investigación demostrará que es posible diseñar algoritmos inteligentes capaces de resolver tareas en colaboración multi-VANT.\\
+  \medskip \\
 
+  \noindent \textsf{Palabras claves:} multi-VANT, cordinación multi-agente, 3D mapping, 3D Path finding
+  
 \end{abstract}
 
+\newpage
 \section{Datos Generales}
 
 \subsection{T\'{\i}tulo de proyecto}
@@ -73,12 +70,12 @@ Estrategias para la exploración coordinada multi-VANT
 \subsection{Datos del alumno}
 \begin{tabular}{ll} 
 Nombre:  &          Luis Alberto Ballado Aradias \\
-Direcci\'{o}n:   & \pp{Una línea}\\
-                 & \pp{otra línea} \\
-Tel\'{e}fono (casa):    & 833 2126651 \\
-Tel\'{e}fono (lugar de trabajo):    & \pp{tel} \\
+Direcci\'{o}n:   & Juan José de La Garza \#909\\
+                 & Colonia: Guadalupe Mainero C.P. 87130\\
+Tel\'{e}fono (casa):    & 81 20706661 \\
+Tel\'{e}fono (lugar de trabajo):    & (834) 107 0220 + Ext  \\
 Direcci\'{o}n electr\'{o}nica: & luis.ballado@cinvestav.mx \\
-URL: & luis.madlab.mx
+URL: & https://luis.madlab.mx
 \end{tabular}
 \subsection{Instituci\'{o}n}
 \begin{tabular}{ll} 
@@ -91,53 +88,63 @@ Tel\'{e}fono:    & (+52) (834) 107 0220\\
 \end{tabular}
 \subsection{Beca de tesis}
 \begin{tabular}{ll} 
-Instituci\'{o}n otorgante:  &  CONACYT  \\
+Instituci\'{o}n otorgante:  &  CONAHCYT  \\
 Tipo de beca:      & Maestr\'ia Nacional\\
 Vigencia:    &   Septiembre 2022 - Agosto 2024
 \end{tabular}
 
 \subsection{Datos del asesor}
 \begin{tabular}{ll} 
-Nombre:  &   Dr. José Gabriel Ramirez Torres \\
+Nombre:  &   Dr. José Gabriel Ramírez Torres \\
 Direcci\'{o}n:   &   Km. 5.5 carretera Cd. Victoria - Soto la Marina\\
                  &  Parque Científico y Tecnológico TECNOTAM\\
                  &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
-Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext.  \\ 
+Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext. 1014 \\ 
 Instituci\'{o}n:    &  CINVESTAV-IPN \\ 
 Departamento adscripci\'{o}n: &  Unidad Tamaulipas\\
 Grado acad\'{e}mico: & Doctorado \\\\
-Nombre:  &   Dr. Eduardo Rodriguez Tello \\
+Nombre:  &   Dr. Eduardo Arturo Rodríguez Tello \\
 Direcci\'{o}n:   &   Km. 5.5 carretera Cd. Victoria - Soto la Marina\\
                  &  Parque Científico y Tecnológico TECNOTAM\\
                  &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
-Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext.  \\ 
+Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext. 1100\\ 
 Instituci\'{o}n:    &  CINVESTAV-IPN \\ 
 Departamento adscripci\'{o}n: &  Unidad Tamaulipas\\
 Grado acad\'{e}mico: & Doctorado 
 \end{tabular} 
 
+\newpage
 \section{Descripci\'{o}n del proyecto}
 
-\subsection{Antecedentes y motivaci\'{o}n para el proyecto}
+Generación de una arquitectura descentralizada capaz de coordinar la exploración de multiples Vehículos Aéreos No Tripulados (VANTs) en ambientes desconocidos y cambiantes.
 
+\subsection{Antecedentes y motivaci\'{o}n para el proyecto}
+A raíz de la alta demanda de vehículos aéreos no tripulados, han provocado la disminución de sus precios en el mercado, haciendo accesible su adquisición. En recientes años, dotarlos de inteligencia para explotar la información recolectada de sensores a bordo del VANT ha sido y es un área estudiada en robótica móvil áerea (Construcción de Mapas). Buscando probar diferentes teorías de control, convirtiendo los problemas típicos de control 2D (péndulo inverso fijo) a un ambiente 3D, teniendo así más variables a controlar buscando mantener el equilibrio del péndulo y al mismo tiempo lograr el movimiento y las maniobras deseadas del dron en el espacio tridimensional..\\
+%\href{https://www.flyingmachinearena.ethz.ch/wp-content/publications/2011/hehn_dandrea_flying_inverted_pendulum.pdf}
+
+El despliegue rápido de robots en situaciones de riesgo, búsqueda y rescate ha sido un área ampliamente estudiada en la robótica móvil. Donde se han aplicado teorias de grafos para la optención óptima de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente autonomo. Esa percepción que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura tolerante a fallas y capaz de coordinar multiples vehiculos aereos no trupulados a medida que incrementa o disminuye la oferta de drones disponibles 
 
 \section{Planteamiento del problema}
 
+Para poder desplazarse en un ambiente desconocido lo primero es explorar el area y a medida que se obtiene información del espacio se puden calcular las rutas mas cortas o ciertas caracteristicas que nos ayuden a conocer donde estoy dentro de un ambiente desconocido. Estudios en robotica movil por mas de 25 años han demostrado que la teoria de grafos ha aydado mucho al area ya que se representaba como grafos planos y ahora al tener el agente robot en el aire, el problema se vuelve 3D.
 
 \section{Objetivos generales y espec\'{\i}ficos del proyecto}
 
 \textbf{General} \\
 
-Se trata de \pp{lo que se trata}
+Creación de una arquitectura tolerante a fallas para la coordinación de multiples VANT's aplicados a la tarea de búsqueda y rescate.
 
 \bigskip
 \noindent
 \textbf{Particulares} \\
-\begin{enumerate}
-\item \pp{particular uno}
-\item \pp{particular dos}
-\item \pp{particular cuál sea necesario}
-\end{enumerate}
+\begin{itemize}
+\item Evitar colisiones: El objetivo primordial es garantizar que los drones eviten colisiones entre sí y con otros objetos en su entorno. La coordinación adecuada asegura que los drones mantengan una distancia segura y sigan rutas que minimicen el riesgo de colisión.
+\item Eficiencia y rendimiento: La coordinación de múltiples drones busca optimizar la eficiencia y el rendimiento del sistema en su conjunto. Esto implica asignar tareas de manera óptima entre los drones, minimizar los tiempos de espera y los tiempos de respuesta, y maximizar la capacidad de realizar tareas en paralelo.
+\item Cumplimiento de objetivos: Los drones pueden tener objetivos específicos a cumplir, como la recolección de datos, la entrega de paquetes o la vigilancia de áreas. La coordinación tiene como objetivo garantizar que cada dron contribuya de manera efectiva al logro de los objetivos generales, sin redundancia ni superposición de tareas.
+\item Distribucion equitativa de tareas: Si los drones tienen capacidades o limitaciones diferentes, como la duración de la batería o la capacidad de carga, se busca una distribución equitativa de la carga de trabajo entre los drones. Esto asegura que todos los drones contribuyan de manera equilibrada y evita la sobrecarga de algunos drones mientras otros están subutilizados.
+\item Comunicación y sincronicación: La coordinación requiere una comunicación efectiva entre los drones para intercambiar información y sincronizar sus acciones. El objetivo es establecer una comunicación confiable y eficiente que permita la transmisión de datos relevantes y las instrucciones necesarias para la coordinación.
+\item Adaptabilidad y flexibilidad: Los objetivos de la coordinación pueden cambiar en función de las circunstancias y las necesidades. La coordinación de múltiples drones debe ser adaptable y flexible para ajustarse a cambios en el entorno, nuevos objetivos o la incorporación o salida de drones del sistema.
+\end{itemize}
 
 \section{Metodolog\'{\i}a}
 
@@ -153,32 +160,40 @@ Se trata de \pp{lo que se trata}
 
 \section{Estado del arte}
 
+\begin{itemize}
+\item Planificador de trayectorias
+\item Arquitectura de robots coordinados
+\item Percepcion de información 3D a partir de sistemas de vision por computadora
+\end{itemize}
 \section{Contribuciones o resultados esperados}
 \pp{introducir esta parte}
 
 Se espera entregar:
 \begin{enumerate}
-\item 
-\item 
-\item 
+\item Códigos a disposición de la comunidad 
+\item Simulación de solución
+\item Prototipo de solución
 \item Tesis impresa.
 \end{enumerate}
 
 \section{Referencias}
+
+
+
 \newpage
 \begin{center}
 \begin{tabular}{c@{\hspace{5em}}c}
 {\Large{Fecha de inicio}} & {\Large{Fecha de terminaci\'on}} \\
 % Poner fechas respectivas
 &\\
-Septiembre de 2002 & Agosto de 2003
+Septiembre de 2023 & Agosto de 2024
 \end{tabular} \vspace{2.5cm} \\
 Firma del alumno: \underline{\hspace{5cm}} \vspace{2cm}\\ \ \\
 {\Large{Comit\'e de aprobaci\'on del tema de tesis}} \vspace{2cm} \\
 \begin{tabular}{p{7cm}p{5cm}}
-Dr. Guillermo Morales Luna & \underline{\hspace{5cm}} \vspace{1cm} \\
-Dr. Oscar Olmedo Aguirre   & \underline{\hspace{5cm}} \vspace{1cm} \\
-Dr. Francisco Rodr\'iguez Henr\'iquez & \underline{\hspace{5cm}} %\vspace{1cm} \\
+Dr. José Gabriel Ramírez Torres & \underline{\hspace{5cm}} \vspace{1cm} \\
+Dr. Eduardo Arturo Rodríguez Tello   & \underline{\hspace{5cm}} \vspace{1cm} \\
+%Dr. Francisco Rodr\'iguez Henr\'iquez & \underline{\hspace{5cm}} %\vspace{1cm} \\
 \end{tabular}
 \end{center}
 %\newpage
