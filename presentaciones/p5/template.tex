@@ -1,0 +1,335 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 2.0 (March 8, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	11pt, % Set the default font size, options include: 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
+	%t, % Uncomment to vertically align all slide content to the top of the slide, rather than the default centered
+	%aspectratio=169, % Uncomment to set the aspect ratio to a 16:9 ratio which matches the aspect ratio of 1080p and 4K screens and projectors
+]{beamer}
+
+\graphicspath{{Images/}{./}} % Specifies where to look for included images (trailing slash required)
+
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule for better rules in tables
+
+%----------------------------------------------------------------------------------------
+%	SELECT LAYOUT THEME
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with a number of default layout themes which change the colors and layouts of slides. Below is a list of all themes available, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+\usetheme{Boadilla} %me gusta
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen} %dos dos
+%\usetheme{Hannover} %dos dos
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester} %muy flat
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+%----------------------------------------------------------------------------------------
+%	SELECT COLOR THEME
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with a number of color themes that can be applied to any layout theme to change its colors. Uncomment each of these in turn to see how they change the colors of your selected layout theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily} %default
+%\usecolortheme{monarca}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{spruce}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%----------------------------------------------------------------------------------------
+%	SELECT FONT THEME & FONTS
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with several font themes to easily change the fonts used in various parts of the presentation. Review the comments beside each one to decide if you would like to use it. Note that additional options can be specified for several of these font themes, consult the beamer documentation for more information.
+
+\usefonttheme{default} % Typeset using the default sans serif font
+%\usefonttheme{serif} % Typeset using the default serif font (make sure a sans font isn't being set as the default font if you use this option!)
+%\usefonttheme{structurebold} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in bold
+%\usefonttheme{structureitalicserif} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in italic serif
+%\usefonttheme{structuresmallcapsserif} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in small caps serif
+
+%------------------------------------------------
+
+%\usepackage{mathptmx} % Use the Times font for serif text
+\usepackage{palatino} % Use the Palatino font for serif text
+
+\usepackage[ruled,vlined]{algorithm2e}
+%\usepackage{helvet} % Use the Helvetica font for sans serif text
+\usepackage[default]{opensans} % Use the Open Sans font for sans serif text
+\usepackage[spanish]{babel}
+%\usepackage[default]{FiraSans} % Use the Fira Sans font for sans serif text
+%\usepackage[default]{lato} % Use the Lato font for sans serif text
+
+%----------------------------------------------------------------------------------------
+%	SELECT INNER THEME
+%----------------------------------------------------------------------------------------
+
+% Inner themes change the styling of internal slide elements, for example: bullet points, blocks, bibliography entries, title pages, theorems, etc. Uncomment each theme in turn to see what changes it makes to your presentation.
+
+%\useinnertheme{default}
+\useinnertheme{circles}
+%\useinnertheme{rectangles}
+%\useinnertheme{rounded}
+%\useinnertheme{inmargin}
+
+%----------------------------------------------------------------------------------------
+%	SELECT OUTER THEME
+%----------------------------------------------------------------------------------------
+
+% Outer themes change the overall layout of slides, such as: header and footer lines, sidebars and slide titles. Uncomment each theme in turn to see what changes it makes to your presentation.
+
+%\useoutertheme{default}
+%\useoutertheme{infolines}
+%\useoutertheme{miniframes}
+%\useoutertheme{smoothbars}
+%\useoutertheme{sidebar}
+%\useoutertheme{split}
+%\useoutertheme{shadow}
+%\useoutertheme{tree}
+%\useoutertheme{smoothtree}
+
+%\setbeamertemplate{footline} % Uncomment this line to remove the footer line in all slides
+%\setbeamertemplate{footline}[page number] % Uncomment this line to replace the footer line in all slides with a simple slide count
+
+%\setbeamertemplate{navigation symbols}{} % Uncomment this line to remove the navigation symbols from the bottom of all slides
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title[SEMINARIO DE INVESTIGACIÓN I]{¿Cómo se plantea una pregunta de investigación?} % The short title in the optional parameter appears at the bottom of every slide, the full title in the main parameter is only on the title page
+
+%\subtitle{Optional Subtitle} % Presentation subtitle, remove this command if a subtitle isn't required
+
+\author[Luis Ballado]{Luis Ballado} % Presenter name(s), the optional parameter can contain a shortened version to appear on the bottom of every slide, while the main parameter will appear on the title slide
+
+\institute[CINVESTAV]{CINVESTAV - UNIDAD TAMAULIPAS \\ \smallskip \textit{luis.ballado@cinvestav.mx}} % Your institution, the optional parameter can be used for the institution shorthand and will appear on the bottom of every slide after author names, while the required parameter is used on the title slide and can include your email address or additional information on separate lines
+
+\date[\today]{\today} % Presentation date or conference/meeting name, the optional parameter can contain a shortened version to appear on the bottom of every slide, while the required parameter value is output to the title slide
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SLIDE
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+	\titlepage % Output the title slide, automatically created using the text entered in the PRESENTATION INFORMATION block above
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS SLIDE
+%----------------------------------------------------------------------------------------
+
+% The table of contents outputs the sections and subsections that appear in your presentation, specified with the standard \section and \subsection commands. You may either display all sections and subsections on one slide with \tableofcontents, or display each section at a time on subsequent slides with \tableofcontents[pausesections]. The latter is useful if you want to step through each section and mention what you will discuss.
+
+%\begin{frame}
+%	\frametitle{Contenido} % Slide title, remove this command for no title
+	
+%	\tableofcontents % Output the table of contents (all sections on one slide)
+	%\tableofcontents[pausesections] % Output the table of contents (break sections up across separate slides)
+%\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION BODY SLIDES
+%----------------------------------------------------------------------------------------
+
+%\section{Introducción} % Sections are added in order to organize your presentation into discrete blocks, all sections and subsections are automatically output to the table of contents as an overview of the talk but NOT output in the presentation as separate slides
+
+%------------------------------------------------
+
+\begin{frame}
+  %\frametitle{¿Qué es un mapa conceptual?}
+  
+  La investigación nace de preguntas que tienen su origen en el hombre primitivo, cuando surge como ser pensante con interrogantes sobre su entorno amenazador y competitivo.\\
+  \bigskip % Vertical whitespace
+  Al obtener respuestas puede adaptarse, sobrevivir, evolucionar y trascender a través de los tiempos.
+
+  \bigskip % Vertical whitespace
+
+  Con el desarrollo y la evolución de la ciencia cada vez conocemos más sobre la naturaleza y el universo; con este mayor conocimiento disponemos de un mayor detalle de los fenómenos estudiados y de más herramientas para continuar con su estudio, lo cual aumenta la complejidad y a su vez puede dificultar el planteamiento de problemas de investigación y buenas preguntas, es decir \textbf{preguntas claras, sencillas, no ambiguas y contundentes.}
+  
+  %\begin{figure}[h]
+  %  \includegraphics[width=0.7\linewidth]{drone_altura}
+  %\end{figure}
+  
+\end{frame}
+
+\begin{frame}
+  Una pregunta es el \textbf{inicio y el eje de la investigación}, no es solo un asunto de redacción. Para hacer buenas preguntas debemos hacerlas como lo hacen los niños, de manera espontánea y sencilla sobre situaciones del día a día o de temas de interés particular.\\
+
+  \bigskip % Vertical whitespace
+  
+  La pregunta parte del problema de investigación que es un brecha en el conocimiento entre lo que es en la realidad y lo que debería ser, es algo que debe resolver el científico.\\
+  Este interrogante nos guía hacía lo que se debe investigar.\\
+  \bigskip % Vertical whitespace
+  
+  \textbf{El éxito de un proceso de investigación está relacionado con la habilidad del investigador para traducir un problema en una buena pregunta.}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Tipos de preguntas de investigación}
+  \bigskip % Vertical whitespace
+  Se determina de acuerdo el enfoque y orientación del estudio, pueden ser:
+  \bigskip % Vertical whitespace
+  \begin{itemize}
+  \item \textbf{Cuantitativa}, cuanto, cifras a cuantificar $\implies$ medimos
+  \item \textbf{Cualitativo}, cualidades $\implies$ entendemos 
+  \end{itemize}
+  \bigskip % Vertical whitespace
+  Entender el enfoque de investigación que queremos trabajar, nos ayudará a formular la pregunta de investigación.
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{¿Cómo identificar una pregunta de investigación?}
+  \begin{itemize}
+  \item \textbf{Clara}, evitar el uso de lenguaje técnico.
+  \item \textbf{Enfocada}, Debe resumir un tema o problema a través de la investigación, mediante una revisión de la literatura.
+  \item \textbf{Realista}, teniendo en cuenta los recursos disponibles.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}
+  Criterios para plantear una pregunta de investigación:\\
+  \bigskip % Vertical whitespace
+  \begin{itemize}
+  \item \textbf{Factible}, ¿Es posible resolverlo? (el alcance, los recursos y el tiempo).
+  \item \textbf{Interesante}, para la comunidad.
+  \item \textbf{Novedosa}, aporta nuevos hallazgos y conocimientos.
+  \item \textbf{Ética}, al reflejar propuestas que consideren los principales riesgos, la confidencialidad de la información, etc.
+  \item \textbf{Relevante} para el conocimiento científico e investigación futura.
+  \end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{¿Cuándo se plantea en forma de pregunta?}
+  \bigskip % Vertical whitespace
+  Se plantea en forma de interrogante para identificar el tema a investigar, y guiar el enfoque del estudio al inicio del proceso de investigación. Esta pregunta debe ser respondida a través de la recolección y el análisis de datos durante la investigación.\\
+  \bigskip % Vertical whitespace
+  La pregunta de investigación puede evolucionar a lo largo del proceso de investigación a medida que se adquiere más conocimiento sobre el tema y resultados preliminares.\\
+  \bigskip % Vertical whitespace
+  En algunos casos, puede ser necesario ajustar o modificar la pregunta inicial para adaptarse a los nuevos hallazgos o para enfocarse en aspectos más especificos del tema.
+  
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{¿Cuándo se plantea en forma de hipotesis?}
+  \bigskip % Vertical whitespace
+
+  Se produce después de plantear la pregunta de investigación. Una vez que se ha establecido la pregunta principal, las hipótesis se utilizan para proponer posibles respuestas o explicaciones tentativas a esa pregunta.
+
+  \bigskip % Vertical whitespace
+
+  \textit{Hipótesis: predicción o explicación provisoria a un fenómeno. Una hipótesis relaciona dos o más variables entre sí o explica causalidad entre ellas.}
+
+  \bigskip % Vertical whitespace
+
+  Formular una hipótesis nos permite delimitar las variables del problema. En algunos casos (estudios exploratorios o descriptivos), la pregunta de investigación puede ser suficiente sin la necesidad de hipótesis específicas.
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{¿Cuándo se plantea en forma de hipotesis nula?}
+  \bigskip % Vertical whitespace
+  La hipótesis nula se plantea en el contexto de pruebas de significancia estadística y se utiliza para contrastar con la hipótesis alternativa. Se formula con la expectativa de que no hay diferencia o no hay efecto entre las variables que se están investigando.
+  \bigskip % Vertical whitespace
+
+  La hipótesis nula no implica que la afirmación sea necesariamente verdadera. Solo se establece como una suposición inicial que se pone a prueba en base a la evidencia empírica.\\
+  \bigskip % Vertical whitespace
+  La afirmación de la hipótesis nula no se puede rechazar a no ser que los datos de la muestra parezcan demostrar que ésta es falsa. \textit{Por lo general incluye un no en su enunciado.}
+  
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{TAXNOMIA DE BLOOM}
+  \begin{figure}[h]
+    \includegraphics[width=0.7\linewidth]{taxonomia_de_bloom.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \begin{figure}[h]
+    \includegraphics[width=1.0\linewidth]{bloom.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Referencias}
+  \begin{thebibliography}{10}
+    \setbeamertemplate{bibliography item}[text]
+
+  \bibitem{Scielo}
+    Trillos-Peña, Carlos Enrique, \href{http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S1692-72732017000300309}{La pregunta, eje de la investigación. Un reto para el investigador}
+  \bibitem{Com}
+    Grupo Comunicar, \href{https://www.grupocomunicar.com/wp/escuela-de-autores/como-identificar-una-pregunta-de-investigacion-significativa/}{¿Cómo identificar una pregunta de investigación significativa?}
+  \bibitem{QPro}
+    QuestionPro, \href{https://www.questionpro.com/blog/es/pregunta-de-investigacion/}{Pregunta de investigación: Qué es y cómo realizarla}
+  \bibitem{TBloom}
+    Consejería de Educación Gob. de Canarias, \href{https://www3.gobiernodecanarias.org/medusa/edublog/cprofestenerifesur/2015/12/03/la-taxonomia-de-bloom-una-herramienta-imprescindible-para-ensenar-y-aprender/}{La taxonomía de Bloom}
+  \bibitem{Uch}
+    Universidad de Chile, \href{https://aprendizaje.uchile.cl/recursos-para-leer-escribir-y-hablar-en-la-universidad/profundiza/profundiza-en-la-tesis/hipotesis/}{¿Cómo formular la hipótesis de mi tesis?}
+  \bibitem{URos}
+    Universidad de Rosario, \href{https://urosario.edu.co/sites/default/files/2022-07/Claves-para-plantear-preguntas-de-investigacion.pdf}{Claves para plantear preguntas de investigación.}
+    
+    
+
+  \end{thebibliography}
+\end{frame}
+
+\end{document} 

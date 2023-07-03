@@ -1,0 +1,195 @@
+%\documentclass[11pt,epsf,times,twocolumn]{article}
+\documentclass[11pt,epsf,times]{article}
+\usepackage{epsf,latexsym}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage{graphicx,moreverb}
+\hoffset=-19pt
+\voffset=-36pt
+\textheight=244mm
+%\textheight=680p
+\textwidth=505pt
+\marginparsep=30pt
+\columnsep=9.9mm
+%\columnsep=20pt
+\def\figurename{Figura}
+\pagestyle{empty}
+
+\pagestyle{plain}
+\textwidth 6.5in
+\textheight 8.75in
+\oddsidemargin 0in
+\evensidemargin 0in
+\topmargin -0.5in
+\newcommand{\pp}[1]{$\langle$#1$\rangle$}
+%-----------------------
+
+\title{ Centro de Investigaci\'{o}n y Estudios Avanzados del IPN\\
+  Unidad Tamaulipas\\
+  \textbf{Protocolo de tesis}
+}
+
+
+\author{
+Título: Estrategias para la exploración coordinada multi-VANT \\
+Candidato: Luis Alberto Ballado Aradias \\
+Asesor de Tesis: Dr. José Gabriel Ramirez Torres \\
+Co-Asesor de Tesis: Dr. Eduardo Rodriguez Tello
+}
+
+\date{\today}
+
+\usepackage{amssymb}
+
+\addtolength{\textheight}{90pt}
+
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+  La exploración es un problema fundamental de la robótica móvil autónoma que consiste en utilizar un robot para obtener información de un entorno desconocido, a través de sus sensores, con el objetivo de generar un mapa que lo represente. Por motivos de eficiencia y robustez la exploración suele llevarse a cabo con más de un robot, en este caso el problema se conoce como el de exploración multi-robot.\\
+  
+  Uno de los principales aspectos de la exploración es determinar a que lugares los robots deben moverse para obtener información del entorno. Para esto se suele primero identificar dichos lugares, conocidos como objetivos de exploración, para luego asignar los objetivos identificados a los robots. Cuando se utiliza más de un robot es deseable que la asignación de objetivos se lleve a cabo siguiendo una estrategia de coordinación para evitar que los robots exploren los mismos lugares o que se obstaculicen entre sí.\\
+  
+Los entornos estructurados como edificios, hogares y otras construcciones humanas son entornos que pueden dividirse en segmentos, como habitaciones y corredores. En este tipo de entornos una posible estrategia de coordinación es la de llevar a cabo la exploración maximizando la distribución de los robots sobre los segmentos.
+%\pp{Poner resumen}
+\medskip \\
+\noindent \textsf{Palabras claves:} \pp{Poner palabras claves}
+
+\end{abstract}
+
+\section{Datos Generales}
+
+\subsection{T\'{\i}tulo de proyecto}
+Estrategias para la exploración coordinada multi-VANT
+\subsection{Datos del alumno}
+\begin{tabular}{ll} 
+Nombre:  &          Luis Alberto Ballado Aradias \\
+Direcci\'{o}n:   & \pp{Una línea}\\
+                 & \pp{otra línea} \\
+Tel\'{e}fono (casa):    & 833 2126651 \\
+Tel\'{e}fono (lugar de trabajo):    & \pp{tel} \\
+Direcci\'{o}n electr\'{o}nica: & luis.ballado@cinvestav.mx \\
+URL: & luis.madlab.mx
+\end{tabular}
+\subsection{Instituci\'{o}n}
+\begin{tabular}{ll} 
+Nombre:  &          CINVESTAV-IPN \\
+Departamento:    &  Unidad Tamaulipas\\
+Direcci\'{o}n:   &  Km 5.5 carretera Cd. Victoria - Soto la Marina.\\
+                 &  Parque Científico y Tecnológico TECNOTAM,\\
+                 &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
+Tel\'{e}fono:    & (+52) (834) 107 0220\\
+\end{tabular}
+\subsection{Beca de tesis}
+\begin{tabular}{ll} 
+Instituci\'{o}n otorgante:  &  CONACYT  \\
+Tipo de beca:      & Maestr\'ia Nacional\\
+Vigencia:    &   Septiembre 2022 - Agosto 2024
+\end{tabular}
+
+\subsection{Datos del asesor}
+\begin{tabular}{ll} 
+Nombre:  &   Dr. José Gabriel Ramirez Torres \\
+Direcci\'{o}n:   &   Km. 5.5 carretera Cd. Victoria - Soto la Marina\\
+                 &  Parque Científico y Tecnológico TECNOTAM\\
+                 &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
+Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext.  \\ 
+Instituci\'{o}n:    &  CINVESTAV-IPN \\ 
+Departamento adscripci\'{o}n: &  Unidad Tamaulipas\\
+Grado acad\'{e}mico: & Doctorado \\\\
+Nombre:  &   Dr. Eduardo Rodriguez Tello \\
+Direcci\'{o}n:   &   Km. 5.5 carretera Cd. Victoria - Soto la Marina\\
+                 &  Parque Científico y Tecnológico TECNOTAM\\
+                 &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
+Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext.  \\ 
+Instituci\'{o}n:    &  CINVESTAV-IPN \\ 
+Departamento adscripci\'{o}n: &  Unidad Tamaulipas\\
+Grado acad\'{e}mico: & Doctorado 
+\end{tabular} 
+
+\section{Descripci\'{o}n del proyecto}
+
+\subsection{Antecedentes y motivaci\'{o}n para el proyecto}
+
+
+\section{Planteamiento del problema}
+
+
+\section{Objetivos generales y espec\'{\i}ficos del proyecto}
+
+\textbf{General} \\
+
+Se trata de \pp{lo que se trata}
+
+\bigskip
+\noindent
+\textbf{Particulares} \\
+\begin{enumerate}
+\item \pp{particular uno}
+\item \pp{particular dos}
+\item \pp{particular cuál sea necesario}
+\end{enumerate}
+
+\section{Metodolog\'{\i}a}
+
+\begin{enumerate}
+\item 
+\item 
+\item 
+\item 
+\end{enumerate}
+ 
+\section{Cronograma de actividades (plan de trabajo)}
+\pp{calendarizar por cuatrimestre}
+
+\section{Estado del arte}
+
+\section{Contribuciones o resultados esperados}
+\pp{introducir esta parte}
+
+Se espera entregar:
+\begin{enumerate}
+\item 
+\item 
+\item 
+\item Tesis impresa.
+\end{enumerate}
+
+\section{Referencias}
+\newpage
+\begin{center}
+\begin{tabular}{c@{\hspace{5em}}c}
+{\Large{Fecha de inicio}} & {\Large{Fecha de terminaci\'on}} \\
+% Poner fechas respectivas
+&\\
+Septiembre de 2002 & Agosto de 2003
+\end{tabular} \vspace{2.5cm} \\
+Firma del alumno: \underline{\hspace{5cm}} \vspace{2cm}\\ \ \\
+{\Large{Comit\'e de aprobaci\'on del tema de tesis}} \vspace{2cm} \\
+\begin{tabular}{p{7cm}p{5cm}}
+Dr. Guillermo Morales Luna & \underline{\hspace{5cm}} \vspace{1cm} \\
+Dr. Oscar Olmedo Aguirre   & \underline{\hspace{5cm}} \vspace{1cm} \\
+Dr. Francisco Rodr\'iguez Henr\'iquez & \underline{\hspace{5cm}} %\vspace{1cm} \\
+\end{tabular}
+\end{center}
+%\newpage
+%\bibliographystyle{plain}
+%\bibliography{c:/RodRuiz/bib}
+%\bibliography{book,jour,kocc,proc,trep}
+
+\end{document}
+
+
+
+
+
+
