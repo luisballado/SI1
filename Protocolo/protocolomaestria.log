@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  30 JUN 2023 14:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  3 JUL 2023 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -156,7 +156,7 @@ LaTeX Info: Redefining \% on input line 8.
 Here is how much of TeX's memory you used:
  2504 strings out of 478268
  39495 string characters out of 5846348
- 346808 words of memory out of 5000000
+ 346790 words of memory out of 5000000
  20727 multiletter control sequences out of 15000+600000
  480332 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -168,7 +168,7 @@ b></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 /local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/
 local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on protocolomaestria.pdf (4 pages, 102171 bytes).
+Output written on protocolomaestria.pdf (4 pages, 102158 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
