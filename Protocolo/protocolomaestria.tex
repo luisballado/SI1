@@ -31,9 +31,9 @@
 
 
 \author{
-TÌtulo: Estrategias para la exploraciÛn coordinada multi-VANT \\
+T√≠tulo: Estrategias para la exploraci√≥n coordinada multi-VANT \\
 Candidato: Luis Alberto Ballado Aradias \\
-Asesor: Dr. JosÈ Gabriel Ramirez Torres \\
+Asesor: Dr. Jos√© Gabriel Ramirez Torres \\
 Co-Asesor: Dr. Eduardo Rodriguez Tello
 }
 
@@ -41,6 +41,9 @@ Co-Asesor: Dr. Eduardo Rodriguez Tello
 
 \usepackage{amssymb}
 \usepackage{pgfgantt}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\selectlanguage{spanish}
 
 \addtolength{\textheight}{90pt}
 
@@ -56,10 +59,19 @@ Co-Asesor: Dr. Eduardo Rodriguez Tello
 
 \begin{abstract}
 
-  Una de las ·reas de investigaciÛn dentro de la robÛtica mÛvil inteligente es la \textbf{navegaciÛn autÛnoma}. Diversas estrategias algoritmicas dotan al robot de habilidades para cumplir la tarea de navegar dentro de un ambiente dependiendo de la representaciÛn que se tome del mundo (celdas de ocupaciÛn, mapas topolÛgicos sÛlo por mencionar algunos). Antes de llevar acabo la tarea de navegar, es necesario que el robot conozca el entorno donde se planee desplazar. Es donde la \textbf{exploraciÛn} toma un factor importante en la construcciÛn de mapas a partir de un entorno que el robot mÛvil no conoce. Con el desarrollo y avances en la tecnologÌa de baja potencia, es posible recabar informaciÛn necesaria para la elaboraciÛn de mapas en ambientes desconocidos. A lo largo del desarrollo de robots mÛviles inteligentes ha surgido la necesidad de tener una \textbf{coordinaciÛn multi-robot} para desempeÒar tareas que van desde explorar zonas desconociadas hasta reubicar objetos de lugar. Evitar colisiones y la coordinaciÛn del grupo de robots mÛviles es una tarea que un robot que forme parte del grupo de robots debe desempeÒar. Otro aspecto es determinar a que lugares los robots deben moverse para obtener informaciÛn del entorno, definimos \textbf{exploraciÛn} como el acto de moverse en un ambiente desconocido, mientras se construye su mapa que es usado para navegaciones posteriores. Para ello, debemos identificar puntos de referencia como objetivos de exploraciÛn, para luego asignar los objetivos a los robots. Decimos que cuando se utiliza m·s de un robot es deseable que la asignaciÛn de objetivos se lleve a cabo siguiendo una estrategia de coordinaciÛn para evitar que los robots exploren los mismos lugares o que se obstaculicen entre sÌ. Los entornos estructurados como edificios, hogares y otras construcciones humanas son entornos que pueden dividirse en segmentos, como habitaciones y corredores. En este tipo de entornos una posible estrategia de coordinaciÛn es la de llevar a cabo la exploraciÛn maximizando la distribuciÛn de los robots sobre los segmentos. Los comportamientos reactivos se han sido estudiado desde los aÒos 80's junto con las propuestas de diferentes tipos de arquitecturas que hasta hoy en dÌa son modelos base para la construcciÛn de un robot. Se han comprobado que llevar estos reactivos a etapas de planificadores locales resuelve el problema de navegaciÛn en ambientes cambiantes. El objetivo de este trabajo es la propuesta de una arquitectura resiliente a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinaciÛn de VehÌculos AÈreos No Tripulados (VANT). El proyecto de investigaciÛn demostrar· que es posible diseÒar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboraciÛn multi-VANT.\\
-  \medskip \\
+  %La importancia de la rob√≥tica de servicios y los V√©hiculos A√©reos No Tripulados (VANT) en la actualidad es innegable. Estas tecnolog√≠as est√°n revolucionando la forma en que interactuamos con el mundo y ofrecen un amplio abanico de aplicaciones en diversos sectores. Desde la entrega de paquetes y la asistencia en emergencias hasta la exploraci√≥n espacial, la rob√≥tica de servicios, ha demostrado ser especialmente valiosa en entornos donde los seres humanos pueden enfrentar riesgos o dificultades. Estos robots pueden trabajar de manera aut√≥noma o en colaboraci√≥n.\\
+  %Los V√©hiculos A√©reos No Tripulados, tienen la capacidad de volar y acceder a lugares de manera r√°pida y eficiente convirti√©ndolos en herramientas extremadamente vers√°tiles. Por ejemplo, los VANT(s) est√°n siendo utilizados por empresas de comercio electr√≥nico para entregar productos a los clientes de manera m√°s √°gil. Adem√°s, en la agricultura se utilizan para monitorear cultivos, identificar problemas y aplicar pesticidas o fertilizantes de manera precisa, lo que aumenta la eficiencia y logra reducir costos. En el √°mbito de la seguridad, pueden utilizarse para la vigilancia de √°reas de dif√≠cil acceso o en situaciones de emergencia, proporcionando informaci√≥n valiosa en tiempo real a los equipos de rescate.\\
 
-  \noindent \textsf{Palabras claves:} multi-VANT, cordinaciÛn multi-agente, 3D mapping, 3D Path finding
+  %A pesar de los numerosos beneficios de la rob√≥tica de servicios y los V√©hiculos A√©reos No Tripulados, existen desaf√≠os y problem√°ticas asociadas a su implementaci√≥n.\\
+  %Una de ellas es la \textbf{exploraci√≥n}, la capacidad de exploraci√≥n ampl√≠a nuestro conocimiento y nos ayuda a comprender mejor el mundo que nos rodea. \\
+  %La \textbf{coordinaci√≥n} y el \textbf{trabajo en equipo} de m√∫ltiples-VANTs representa un desaf√≠o emocionante. La \textbf{colaboraci√≥n} de varios VANT(s) puede ser utilizada en misiones de b√∫squeda y rescate, en donde pueden cubrir √°reas m√°s extensas y realizar tareas m√°s complejas de manera simult√°nea. La coordinaci√≥n entre los drones puede optimizar la eficiencia de las operaciones y aumentar las posibilidades de √©xito.\\
+
+  %La implementaci√≥n de sistemas de m√∫ltiples VANT(s) tambi√©n plantea desaf√≠os t√©cnicos y log√≠sticos. La \textbf{comunicaci√≥n} entre ellos, la asignaci√≥n de tareas y la planificaci√≥n de rutas con comportamientos reactivos para la detecci√≥n y evici√≥n de obst√°culos son aspectos cr√≠ticos que deben abordarse para garantizar un funcionamiento fluido y seguro.\\
+
+  %El objetivo de este trabajo es la propuesta de una arquitectura de software resiliente a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinaci√≥n de Veh√≠culos A√©reos No Tripulados. El proyecto de investigaci√≥n demostrar√° que es posible dise√±ar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboraci√≥n multi-VANT.
+  %\medskip\\
+  
+  %\noindent \textsf{Palabras claves:} multi-VANT, coordinaci√≥n multi-agente, Exploraci√≥n 3D, 3D Path finding
   
 \end{abstract}
 
@@ -67,11 +79,12 @@ Co-Asesor: Dr. Eduardo Rodriguez Tello
 \section{Datos Generales}
 
 \subsection{T\'{\i}tulo de proyecto}
-Estrategias para la exploraciÛn coordinada multi-VANT
+Estrategias para la exploraci\'{o}n coordinada multi-VANT
+
 \subsection{Datos del alumno}
 \begin{tabular}{ll} 
 Nombre:  &          Luis Alberto Ballado Aradias \\
-Direcci\'{o}n:   & Juan JosÈ de La Garza \#909\\
+Direcci\'{o}n:   & Juan Jos√© de La Garza \#909\\
                  & Colonia: Guadalupe Mainero C.P. 87130\\
 Tel\'{e}fono (casa):    & 81 20706661 \\
 Tel\'{e}fono (lugar de trabajo):    & (834) 107 0220 + Ext  \\
@@ -83,7 +96,7 @@ URL: & https://luis.madlab.mx
 Nombre:  &          CINVESTAV-IPN \\
 Departamento:    &  Unidad Tamaulipas\\
 Direcci\'{o}n:   &  Km 5.5 carretera Cd. Victoria - Soto la Marina.\\
-                 &  Parque CientÌfico y TecnolÛgico TECNOTAM,\\
+                 &  Parque Cient\'{i}fico y Tecnol\'{o}gico TECNOTAM,\\
                  &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
 Tel\'{e}fono:    & (+52) (834) 107 0220\\
 \end{tabular}
@@ -96,17 +109,17 @@ Vigencia:    &   Septiembre 2022 - Agosto 2024
 
 \subsection{Datos del asesor}
 \begin{tabular}{ll} 
-Nombre:  &   Dr. JosÈ Gabriel RamÌrez Torres \\
+Nombre:  &   Dr. Jos√© Gabriel Ram√≠rez Torres \\
 Direcci\'{o}n:   &   Km. 5.5 carretera Cd. Victoria - Soto la Marina\\
-                 &  Parque CientÌfico y TecnolÛgico TECNOTAM\\
+                 &  Parque Cient\'{i}fico y Tecnol\'{o}gico TECNOTAM\\
                  &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
 Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext. 1014 \\ 
 Instituci\'{o}n:    &  CINVESTAV-IPN \\ 
 Departamento adscripci\'{o}n: &  Unidad Tamaulipas\\
 Grado acad\'{e}mico: & Doctorado \\\\
-Nombre:  &   Dr. Eduardo Arturo RodrÌguez Tello \\
+Nombre:  &   Dr. Eduardo Arturo Rodr√≠guez Tello \\
 Direcci\'{o}n:   &   Km. 5.5 carretera Cd. Victoria - Soto la Marina\\
-                 &  Parque CientÌfico y TecnolÛgico TECNOTAM\\
+                 &  Parque Cient\'{i}fico y Tecnol\'{o}gico TECNOTAM\\
                  &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
 Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext. 1100\\ 
 Instituci\'{o}n:    &  CINVESTAV-IPN \\ 
@@ -117,39 +130,49 @@ Grado acad\'{e}mico: & Doctorado
 \newpage
 \section{Descripci\'{o}n del proyecto}
 
-GeneraciÛn de una arquitectura descentralizada capaz de coordinar la exploraciÛn de multiples VehÌculos AÈreos No Tripulados (VANTs) en ambientes desconocidos y cambiantes.
+El proyecto de estrategias para la exploraci√≥n coordinada multi-VANT se centra en el desarrollo de t√©cnicas y algoritmos que permiten la coordinaci√≥n eficiente de m√∫ltiples drones para llevar a cabo tareas de exploraci√≥n en entornos desconocidos y cambiantes. \\
+El objetivo principal es aprovechar las ventajas de tener multiples-VANT(s) trabajando en conjunto para mejorar la eficiencia y la cobertura de la exploraci√≥n.\\
+
+%Generaci√≥n de una arquitectura descentralizada capaz de coordinar la exploraci√≥n de multiples Veh√≠culos A√©reos No Tripulados (VANTs) en ambientes desconocidos y cambiantes.
 
 \subsection{Antecedentes y motivaci\'{o}n para el proyecto}
-A raÌz de la alta demanda de vehÌculos aÈreos no tripulados, han provocado la disminuciÛn de sus precios en el mercado, haciendo accesible su adquisiciÛn. En recientes aÒos, dotarlos de inteligencia para explotar la informaciÛn recolectada de sensores a bordo del VANT ha sido y es un ·rea estudiada en robÛtica mÛvil ·erea (ConstrucciÛn de Mapas). Buscando probar diferentes teorÌas de control, convirtiendo los problemas tÌpicos de control 2D (pÈndulo inverso fijo) a un ambiente 3D, teniendo asÌ m·s variables a controlar buscando mantener el equilibrio del pÈndulo y al mismo tiempo lograr el movimiento y las maniobras deseadas del dron en el espacio tridimensional..\\
-%\href{https://www.flyingmachinearena.ethz.ch/wp-content/publications/2011/hehn_dandrea_flying_inverted_pendulum.pdf}
 
-El despliegue r·pido de robots en situaciones de riesgo, b˙squeda y rescate ha sido un ·rea ampliamente estudiada en la robÛtica mÛvil. Donde se han aplicado teorias de grafos para la optenciÛn Ûptima de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente autonomo. Esa percepciÛn que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura tolerante a fallas y capaz de coordinar multiples vehiculos aereos no trupulados a medida que incrementa o disminuye la oferta de drones disponibles 
+Millones de V√©hiculos A√©reos No Tripulados, tambi√©n conocidos como VANT(s) o drones, han presentado una adopci√≥n masiva en diferentes aplicaciones, desde usos civiles (b√∫squeda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares [1]. La popularidad de los VANT(s) es atribuida a su movilidad.\\
+
+Aplicaciones que hacen uso de los VANT(s) con sensores abordo son sorprendentes, ya que utilizan las ventajas de sensores eficientes [1] (sensores termicos, c√°maras fotogr√°ficas,..etc.). Los VANT(s) han demostrado ser √∫tiles en aplicaciones industriales [2] petroleras, parques e√≥licos, etc. Los VANT(s) pueden ayudar en la recolecci√≥n de informaci√≥n.\\
+
+El interes en la investigaci√≥n e inovaci√≥n de soluciones con V√©hiculos A√©reos No Tripulados ha crecido exponencialmente recientemente [7,8,9,10].\\
+
+En recientes a√±os, dotar a los VANT de inteligencia para explotar la informaci√≥n recolectada de sensores a bordo, ha sido y es un √°rea estudiada en rob√≥tica m√≥vil √°erea (Construcci√≥n de Mapas)[3]. Buscando probar diferentes teor√≠as de control, convirtiendo los problemas t√≠picos de control 2D (p√©ndulo inverso fijo) a un ambiente 3D, teniendo as√≠ m√°s variables a controlar buscando mantener el equilibrio del p√©ndulo y al mismo tiempo lograr el movimiento y las maniobras deseadas del dron en el espacio tridimensional[4].\\
+
+El despliegue r√°pido de robots en situaciones de riesgo, b√∫squeda y rescate ha sido un √°rea ampliamente estudiada en la rob√≥tica m√≥vil. Donde se han aplicado teorias de grafos para la optenci√≥n de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente autonomo. Esa percepci√≥n que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura tolerante a fallas y capaz de coordinar multiples vehiculos aereos no trupulados a medida que incrementa o disminuye la oferta de drones disponibles
+
 
 \section{Planteamiento del problema}
 
-Para poder desplazarse en un ambiente desconocido lo primero es explorar el area y a medida que se obtiene informaciÛn del espacio se puden calcular las rutas mas cortas o ciertas caracteristicas que nos ayuden a conocer donde estoy dentro de un ambiente desconocido. Estudios en robotica movil por mas de 25 aÒos han demostrado que la teoria de grafos ha aydado mucho al area ya que se representaba como grafos planos y ahora al tener el agente robot en el aire, el problema se vuelve 3D.\\
+Para poder desplazarse en un ambiente desconocido lo primero es explorar el area y a medida que se obtiene informaci√≥n del espacio se puden calcular las rutas mas cortas o ciertas caracteristicas que nos ayuden a conocer donde estoy dentro de un ambiente desconocido. Estudios en robotica movil por mas de 25 a√±os han demostrado que la teoria de grafos ha aydado mucho al area ya que se representaba como grafos planos y ahora al tener el agente robot en el aire, el problema se vuelve 3D.\\
 
-Dada un ·rea de interÈs $A$ que se desea explorar,
+Dada un √°rea de inter√©s $A$ que se desea explorar,
 \begin{itemize}
-\item Un conjunto de VÈhiculos AÈreos No Tripulados (VANT) denotados como $V = V_{1},V_{2},V_{3},...,V_{n}$, donde $n$ es el n˙mero total de VANT's disponibles
-\item Un conjunto de tareas de exploraciÛn denotados como $T = T_{1}, T_{2}, T_{3}, T_{m}$, donde $m$ es el n˙mero total de tareas a realizar.
+\item Un conjunto de V√©hiculos A√©reos No Tripulados (VANT) denotados como $V = V_{1},V_{2},V_{3},...,V_{n}$, donde $n$ es el n√∫mero total de VANT's disponibles
+\item Un conjunto de tareas de exploraci√≥n denotados como $T = T_{1}, T_{2}, T_{3}, T_{m}$, donde $m$ es el n√∫mero total de tareas a realizar.
 \end{itemize}
 
-restricciones y requisitos especÌficos del problema, como lÌmites de tiempo, obst·culos a evitar, etc.
+restricciones y requisitos espec√≠ficos del problema, como l√≠mites de tiempo, obst√°culos a evitar, etc.
 
-Para cada tarea de exploraciÛn $T_{m}$, se definen las siguientes variables:
+Para cada tarea de exploraci√≥n $T_{m}$, se definen las siguientes variables:
 
 \begin{itemize}
-\item PosiciÛn inicial: $p_{i}(x,y,z)$, representa la posiciÛn inicial del VANT o los m˙ltiples-VANTs asignados a la tarea $T_{m}$
-\item Trayectoria: $\alpha_{i}$, describe la trayectoria seguida por el/los VANT(s) asignado(s) a la tarea $T_{m}$ en funciÛn del tiempo $t$
-\item InformaciÛn recolectada: $C_{i}$, representa la informaciÛn recolectada por el/los VANT(s) asignado(s) durante la exploraciÛn
+\item Posici√≥n inicial: $p_{i}(x,y,z)$, representa la posici√≥n inicial del VANT o los m√∫ltiples-VANTs asignados a la tarea $T_{m}$
+\item Trayectoria: $\alpha_{i}$, describe la trayectoria seguida por el/los VANT(s) asignado(s) a la tarea $T_{m}$ en funci√≥n del tiempo $t$
+\item Informaci√≥n recolectada: $C_{i}$, representa la informaci√≥n recolectada por el/los VANT(s) asignado(s) durante la exploraci√≥n
 \end{itemize}
 
-La funciÛn objetivo variar· seg˙n los objetivos especÌficos del problema.
+La funci√≥n objetivo variar√° seg√∫n los objetivos espec√≠ficos del problema.
 \begin{itemize}
-\item Maximizar la cobertura del ·rea de interÈs $A$
-\item Minimizar el tiempo total requerido para cubrir el ·rea de interÈs $A$
-\item Maximizar la cantidad de informaciÛn recolectada
+\item Maximizar la cobertura del √°rea de inter√©s $A$
+\item Minimizar el tiempo total requerido para cubrir el √°rea de inter√©s $A$
+\item Maximizar la cantidad de informaci√≥n recolectada
 \end{itemize}
 
 \newpage
@@ -157,28 +180,28 @@ La funciÛn objetivo variar· seg˙n los objetivos especÌficos del problema.
 
 \textbf{General} \\
 
-CreaciÛn de una arquitectura tolerante a fallas para la coordinaciÛn de multiples VANT's aplicados a la tarea de b˙squeda y rescate.
+Creaci√≥n de una arquitectura tolerante a fallas para la coordinaci√≥n de multiples VANT's aplicados a la tarea de b√∫squeda y rescate.
 
 \bigskip
 \noindent
 \textbf{Particulares} \\
 \begin{itemize}
-\item Evitar colisiones: El objetivo primordial es garantizar que los drones eviten colisiones entre sÌ y con otros objetos en su entorno. La coordinaciÛn adecuada asegura que los drones mantengan una distancia segura y sigan rutas que minimicen el riesgo de colisiÛn.
-\item Eficiencia y rendimiento: La coordinaciÛn de m˙ltiples drones busca optimizar la eficiencia y el rendimiento del sistema en su conjunto. Esto implica asignar tareas de manera Ûptima entre los drones, minimizar los tiempos de espera y los tiempos de respuesta, y maximizar la capacidad de realizar tareas en paralelo.
-\item Cumplimiento de objetivos: Los drones pueden tener objetivos especÌficos a cumplir, como la recolecciÛn de datos, la entrega de paquetes o la vigilancia de ·reas. La coordinaciÛn tiene como objetivo garantizar que cada dron contribuya de manera efectiva al logro de los objetivos generales, sin redundancia ni superposiciÛn de tareas.
-\item Distribucion equitativa de tareas: Si los drones tienen capacidades o limitaciones diferentes, como la duraciÛn de la baterÌa o la capacidad de carga, se busca una distribuciÛn equitativa de la carga de trabajo entre los drones. Esto asegura que todos los drones contribuyan de manera equilibrada y evita la sobrecarga de algunos drones mientras otros est·n subutilizados.
-\item ComunicaciÛn y sincronicaciÛn: La coordinaciÛn requiere una comunicaciÛn efectiva entre los drones para intercambiar informaciÛn y sincronizar sus acciones. El objetivo es establecer una comunicaciÛn confiable y eficiente que permita la transmisiÛn de datos relevantes y las instrucciones necesarias para la coordinaciÛn.
-\item Adaptabilidad y flexibilidad: Los objetivos de la coordinaciÛn pueden cambiar en funciÛn de las circunstancias y las necesidades. La coordinaciÛn de m˙ltiples drones debe ser adaptable y flexible para ajustarse a cambios en el entorno, nuevos objetivos o la incorporaciÛn o salida de drones del sistema.
+\item Evitar colisiones: El objetivo primordial es garantizar que los drones eviten colisiones entre s√≠ y con otros objetos en su entorno. La coordinaci√≥n adecuada asegura que los drones mantengan una distancia segura y sigan rutas que minimicen el riesgo de colisi√≥n.
+\item Eficiencia y rendimiento: La coordinaci√≥n de m√∫ltiples drones busca optimizar la eficiencia y el rendimiento del sistema en su conjunto. Esto implica asignar tareas de manera √≥ptima entre los drones, minimizar los tiempos de espera y los tiempos de respuesta, y maximizar la capacidad de realizar tareas en paralelo.
+\item Cumplimiento de objetivos: Los drones pueden tener objetivos espec√≠ficos a cumplir, como la recolecci√≥n de datos, la entrega de paquetes o la vigilancia de √°reas. La coordinaci√≥n tiene como objetivo garantizar que cada dron contribuya de manera efectiva al logro de los objetivos generales, sin redundancia ni superposici√≥n de tareas.
+\item Distribucion equitativa de tareas: Si los drones tienen capacidades o limitaciones diferentes, como la duraci√≥n de la bater√≠a o la capacidad de carga, se busca una distribuci√≥n equitativa de la carga de trabajo entre los drones. Esto asegura que todos los drones contribuyan de manera equilibrada y evita la sobrecarga de algunos drones mientras otros est√°n subutilizados.
+\item Comunicaci√≥n y sincronicaci√≥n: La coordinaci√≥n requiere una comunicaci√≥n efectiva entre los drones para intercambiar informaci√≥n y sincronizar sus acciones. El objetivo es establecer una comunicaci√≥n confiable y eficiente que permita la transmisi√≥n de datos relevantes y las instrucciones necesarias para la coordinaci√≥n.
+\item Adaptabilidad y flexibilidad: Los objetivos de la coordinaci√≥n pueden cambiar en funci√≥n de las circunstancias y las necesidades. La coordinaci√≥n de m√∫ltiples drones debe ser adaptable y flexible para ajustarse a cambios en el entorno, nuevos objetivos o la incorporaci√≥n o salida de drones del sistema.
 \end{itemize}
 
 \section{Metodolog\'{\i}a}
 
-La metodologÌa propuesta para esta tesis se divide en tres etapas, iniciando en septiembre del 2023. A continuaciÛn se detallan cada una de las actividades que se plantean realizar en cada una.
+La metodolog√≠a propuesta para esta tesis se divide en tres etapas, iniciando en septiembre del 2023. A continuaci√≥n se detallan cada una de las actividades que se plantean realizar en cada una.
 
 \begin{enumerate}
-\item An·lisis y diseÒo de la soluciÛn propuesta
-\item ImplementaciÛn y validaciÛn
-\item EvaluaciÛn, resultados y conclusiones
+\item An√°lisis y dise√±o de la soluci√≥n propuesta
+\item Implementaci√≥n y validaci√≥n
+\item Evaluaci√≥n, resultados y conclusiones
 \end{enumerate}
 
 \newpage
@@ -271,23 +294,31 @@ La metodologÌa propuesta para esta tesis se divide en tres etapas, iniciando en 
 \begin{itemize}
 \item Planificador de trayectorias
 \item Arquitectura de robots coordinados
-\item Percepcion de informaciÛn 3D a partir de sistemas de vision por computadora
+\item Percepcion de informaci√≥n 3D a partir de sistemas de vision por computadora
 \end{itemize}
 \section{Contribuciones o resultados esperados}
-\pp{introducir esta parte}
 
 Se espera entregar:
+
 \begin{enumerate}
-\item CÛdigos a disposiciÛn de la comunidad 
-\item SimulaciÛn de soluciÛn
-\item Prototipo de soluciÛn
+\item C√≥digos a disposici√≥n de la comunidad 
+\item Modelo din√°mico VANT 3D
+\item Simulaci√≥n 3D con el software libre Gazebo
 \item Tesis impresa.
 \end{enumerate}
 
 \section{Referencias}
-
-
-
+        [1] H. Shakhatreh et al., "Unmanned Aerial Vehicles: A Survey on Civil Applications and Key Research Challenges" arXiv:1805.00881, 2018\\
+        [2] P. Daponte, L. De Vito, G. Mazzilli, F. Picariello, S. Rapuano, and M.Riccio, "Metrology for drone and drone for metrology: Measurement systems on small civilian drones," in Metrology for Aerospace (MetroAeroSpace), 2015 IEEE, 2015, pp. 306-311: IEEE.\\
+        [3] A. Shukla and H. Karki, "Application of robotics in onshore oil and gas industry A review Part I," Robotics and Autonomous Systems, vol. 75, pp. 490-507, 2016\\
+        [4] M. Hehn and R. D'Andrea, "A flying inverted pendulum," 2011 IEEE International Conference on Robotics and Automation, Shanghai, China, 2011, pp. 763-770, doi: 10.1109/ICRA.2011.5980244.\\
+        [5]\\
+        [6]\\
+        [7] \\
+        [8] L. Gupta, R. Jain, and G. Vaszkun, "Survey of important issues in UAV communication networks," IEEE Communications Surveys & Tutorials, vol. 18, no. 2, pp. 1123-1152, 2016.\\
+        [9] J. Senthilnath, M. Kandukuri, A. Dokania, and K. Ramesh, "Application of UAV imaging platform for vegetation analysis based on spectral-spatial methods," Computers and Electronics in Agriculture, vol. 140, pp. 8-24, 2017.\\
+        [10]\\
+        
 \newpage
 \begin{center}
 \begin{tabular}{c@{\hspace{5em}}c}
@@ -299,8 +330,8 @@ Septiembre de 2023 & Agosto de 2024
 Firma del alumno: \underline{\hspace{5cm}} \vspace{2cm}\\ \ \\
 {\Large{Comit\'e de aprobaci\'on del tema de tesis}} \vspace{2cm} \\
 \begin{tabular}{p{7cm}p{5cm}}
-Dr. JosÈ Gabriel RamÌrez Torres & \underline{\hspace{5cm}} \vspace{1cm} \\
-Dr. Eduardo Arturo RodrÌguez Tello   & \underline{\hspace{5cm}} \vspace{1cm} \\
+Dr. Jos√© Gabriel Ram√≠rez Torres & \underline{\hspace{5cm}} \vspace{1cm} \\
+Dr. Eduardo Arturo Rodr√≠guez Tello   & \underline{\hspace{5cm}} \vspace{1cm} \\
 %Dr. Francisco Rodr\'iguez Henr\'iquez & \underline{\hspace{5cm}} %\vspace{1cm} \\
 \end{tabular}
 \end{center}
