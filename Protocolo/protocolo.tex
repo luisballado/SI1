@@ -33,15 +33,15 @@
 \author{
 Título: Estrategias para la exploración coordinada multi-VANT \\
 Candidato: Luis Alberto Ballado Aradias \\
-Asesor: Dr. José Gabriel Ramirez Torres \\
-Co-Asesor: Dr. Eduardo Rodriguez Tello
+Asesor: Dr. José Gabriel Ramírez Torres \\
+Co-Asesor: Dr. Eduardo Rodríguez Tello
 }
 
 \date{\today}
 
 \usepackage{amssymb}
 \usepackage{pgfgantt}
-
+\usepackage{hyperref}
 \addtolength{\textheight}{90pt}
 
 \newcommand{\I}{\mathbb{I}}
@@ -56,10 +56,10 @@ Co-Asesor: Dr. Eduardo Rodriguez Tello
 
 \begin{abstract}
 
-  La importancia de la robótica de servicios y los Véhiculos Aéreos No Tripulados (VANT) en la actualidad es innegable. Estas tecnologías están revolucionando la forma en que interactuamos con el mundo y ofrecen un amplio abanico de aplicaciones en diversos sectores. Desde la entrega de paquetes y la asistencia en emergencias hasta la exploración espacial, la robótica de servicios, ha demostrado ser especialmente valiosa en entornos donde los seres humanos pueden enfrentar riesgos o dificultades. Estos robots pueden trabajar de manera autónoma o en colaboración.\\
-  Los Véhiculos Aéreos No Tripulados, tienen la capacidad de volar y acceder a lugares de manera rápida y eficiente convirtiéndolos en herramientas extremadamente versátiles. Por ejemplo, los VANT(s) están siendo utilizados por empresas de comercio electrónico para entregar productos a los clientes de manera ágil. Además, en la agricultura se utilizan para monitorear cultivos, identificar problemas y aplicar pesticidas o fertilizantes de manera precisa, lo que aumenta la eficiencia y logra reducir costos. En el ámbito de la seguridad, pueden utilizarse para la vigilancia de áreas de difícil acceso o en situaciones de emergencia, proporcionando información valiosa en tiempo real a los equipos de rescate.\\
+  La importancia de la robótica de servicios y los Vehículos Aéreos No Tripulados (VANT) en la actualidad es innegable. Estas tecnologías están revolucionando la forma en que interactuamos con el mundo y ofrecen un amplio abanico de aplicaciones en diversos sectores. Desde la entrega de paquetes y la asistencia en emergencias hasta la exploración espacial, la robótica de servicios, ha demostrado ser especialmente valiosa en entornos donde los seres humanos pueden enfrentar riesgos o dificultades. Estos robots pueden trabajar de manera autónoma o en colaboración.\\
+  Los Vehículos Aéreos No Tripulados, tienen la capacidad de volar y acceder a lugares de manera rápida y eficiente convirtiéndolos en herramientas extremadamente versátiles. Por ejemplo, los VANT(s) están siendo utilizados por empresas de comercio electrónico para entregar productos a los clientes de manera ágil. Además, en la agricultura se utilizan para monitorear cultivos, identificar problemas y aplicar pesticidas o fertilizantes de manera precisa. En el ámbito de la seguridad, pueden utilizarse para la vigilancia de áreas de difícil acceso o en situaciones de emergencia, proporcionando información valiosa en tiempo real a los equipos de rescate.\\
 
-  A pesar de los numerosos beneficios de la robótica de servicios y los Véhiculos Aéreos No Tripulados, existen desafíos y problemáticas asociadas a su implementación.\\
+  A pesar de los numerosos beneficios de la robótica de servicios y los Vehículos Aéreos No Tripulados, existen desafíos y problemáticas asociadas a su implementación.\\
   Una de ellas es la \textbf{exploración}, la capacidad de exploración amplía nuestro conocimiento y nos ayuda a comprender mejor el mundo que nos rodea. \\
   La \textbf{coordinación} y el \textbf{trabajo en equipo} de múltiples-VANTs representa un desafío emocionante. La \textbf{colaboración} de varios VANT(s) puede ser utilizada en misiones de búsqueda y rescate, en donde pueden cubrir áreas más extensas y realizar tareas más complejas de manera simultánea. La coordinación entre los drones puede optimizar la eficiencia de las operaciones y aumentar las posibilidades de éxito.\\
 
@@ -68,7 +68,7 @@ Co-Asesor: Dr. Eduardo Rodriguez Tello
   El objetivo de este trabajo es la propuesta de una arquitectura de software resiliente a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinación de Vehículos Aéreos No Tripulados. El proyecto de investigación demostrará que es posible diseñar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboración multi-VANT.
   \medskip \\
   
-  \noindent \textsf{Palabras claves:} multi-VANT, cordinación multi-agente, 3D mapping, 3D Path finding
+  \noindent \textbf{Palabras claves:} multi-VANT, coordinación multi-agente, Exploración 3D, 3D Path finding
   
 \end{abstract}
 
@@ -126,16 +126,16 @@ Grado acad\'{e}mico: & Doctorado
 \newpage
 \section{Descripci\'{o}n del proyecto}
 
-El proyecto de estrategias para la exploración coordinada multi-VANT se entra en el desarrollo de técnicas y algoritmos que permiten la coordinación eficiente de múltiples drones para llevar a cabo tareas de exploración en entornos desconocidos y cambiantes.\\
+El proyecto de estrategias para la exploración coordinada multi-VANT se centra en el desarrollo de técnicas y algoritmos que permiten la coordinación eficiente de múltiples drones para llevar a cabo tareas de exploración en entornos desconocidos y cambiantes.\\
 El objetivo principal es aprovechar las ventajas de tener multiples-VANT(s) trabajando en conjunto para mejorar la eficiencia y la cobertura de la exploración.
 
 \subsection{Antecedentes y motivaci\'{o}n para el proyecto}
 
-Millones de Véhiculos Aéreos No Tripulados, también conocidos como VANT(s) o drones, han presentado una adopción masiva en diferentes aplicaciones, desde usos civiles (búsqueda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares [1]. La popularidad de los VANT(s) es atribuida a su movilidad.\\
+Millones de Vehículos Aéreos No Tripulados, también conocidos como VANT(s) o drones, han presentado una adopción masiva en diferentes aplicaciones, desde usos civiles (búsqueda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares [1]. La popularidad de los VANT(s) es atribuida a su movilidad.\\
 
-Aplicaciones que hacen uso de los VANT(s) con sensores abordo son sorprendentes, ya que utilizan las ventajas de sensores eficientes [1] (sensores termicos, cámaras fotográficas,..etc.). Los VANT(s) han demostrado ser útiles en aplicaciones industriales [2] petroleras, parques eólicos, etc. Los VANT(s) pueden ayudar en la recolección de información.\\
+Aplicaciones que hacen uso de los VANT(s) con sensores abordo son sorprendentes, ya que utilizan las ventajas de sensores eficientes [1] (sensores termicos, cámaras fotográficas,..etc.). Los VANT(s) han demostrado ser útiles en aplicaciones industriales [2] petroleras, parques eólicos, etc., en la recolección de información y vigilancia.\\
 
-El interes en la investigación e inovación de soluciones con Véhiculos Aéreos No Tripulados ha crecido exponencialmente recientemente [7,8,9,10].\\
+El interes en la investigación e inovación de soluciones con Vehículos Aéreos No Tripulados ha crecido exponencialmente en años recientes [7,8,9,10].\\
 
 En recientes años, dotar a los VANT de inteligencia para explotar la información recolectada de sensores a bordo, ha sido y es un área estudiada en robótica móvil área (Construcción de Mapas)[3]. Buscando probar diferentes teorías de control, convirtiendo los problemas típicos de control 2D (péndulo inverso fijo) a un ambiente 3D, teniendo así más variables a controlar buscando mantener el equilibrio del péndulo y al mismo tiempo lograr el movimiento y las maniobras deseadas del dron en el espacio tridimensional[4].\\
 
@@ -147,7 +147,7 @@ Para poder desplazarse en un ambiente desconocido lo primero es explorar el area
 
 Dada un área de interés $A$ que se desea explorar,
 \begin{itemize}
-\item Un conjunto de Véhiculos Aéreos No Tripulados (VANT) denotados como $V = V_{1},V_{2},V_{3},...,V_{n}$, donde $n$ es el número total de VANT's disponibles
+\item Un conjunto de Vehículos Aéreos No Tripulados (VANT) denotados como $V = V_{1},V_{2},V_{3},...,V_{n}$, donde $n$ es el número total de VANT's disponibles
 \item Un conjunto de tareas de exploración denotados como $T = T_{1}, T_{2}, T_{3}, T_{m}$, donde $m$ es el número total de tareas a realizar.
 \end{itemize}
 
@@ -307,12 +307,12 @@ Se espera entregar:
 \item P. Daponte et al., 'Metrology for drone and drone for metrology: Measurement systems on small civilian drones', in Metrology for Aerospace (MetroAeroSpace), 2015 IEEE, 2015, pp. 306-311: IEEE.
 \item A. Shukla and H. Karki, 'Application of robotics in onshore oil and gas industry A review Part I', Robotics and Autonomous Systems, vol. 75, pp. 490-507, 2016
 \item M. Hehn and R. D'Andrea, 'A flying inverted pendulum', 2011 IEEE International Conference on Robotics and Automation, Shanghai, China, 2011, pp. 763-770, doi: 10.1109/ICRA.2011.5980244.
-\item x
-\item x
-\item x
+\item Z. Fu, Y. Mao, D. He, J. Yu and G. Xie, 'Secure Multi-UAV Collaborative Task Allocation,' in IEEE Access, vol. 7, pp. 35579-35587, 2019, doi: 10.1109/ACCESS.2019.2902221.
+\item B. Zhou, H. Xu and S. Shen, 'RACER: Rapid Collaborative Exploration With a Decentralized Multi-UAV System,' in IEEE Transactions on Robotics, vol. 39, no. 3, pp. 1816-1835, June 2023, doi: 10.1109/TRO.2023.3236945.
+\item 'Hovering over the drone patent landscape, ifi claims patent services, Nov 2014 \href{https://www.ificlaims.com/news/view/blog-posts/hovering-over-the-drone.htm}{online}
 \item L. Gupta, R. Jain, and G. Vaszkun, 'Survey of important issues in UAV communication networks', IEEE Communications Surveys \& Tutorials, vol. 18, no. 2, pp. 1123-1152, 2016.
 \item J. Senthilnath, M. Kandukuri, A. Dokania, and K. Ramesh, 'Application of UAV imaging platform for vegetation analysis based on spectral-spatial methods', Computers and Electronics in Agriculture, vol. 140, pp. 8-24, 2017.
-\item x
+\item H. Zhou, H. Kong, L. Wei, D. Creighton, and S. Nahavandi, 'On detecting road regions in a single UAV image,' IEEE Trans. Intell. Transp. Syst., vol. 18, no. 7, pp. 1713-1722, 2017.
 \end{enumerate}
 
 
