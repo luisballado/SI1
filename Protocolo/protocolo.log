@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  10 JUL 2023 13:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  10 JUL 2023 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -748,22 +748,27 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--86
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--88
 
  []
 
@@ -771,11 +776,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--86
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
@@ -795,12 +795,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
@@ -816,59 +816,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--179
  []
 
 
-Overfull \hbox (3.66418pt too wide) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+ []
+
+
+Overfull \hbox (3.66418pt too wide) in paragraph at lines 184--185
 []\OT1/cmr/m/n/10.95 Un con-jun-to de Veh^^S^^Pcu-los A^^Sereos No Tri-pu-la-do
 s (VANT) de-no-ta-dos co-mo $\OML/cmm/m/it/10.95 V \OT1/cmr/m/n/10.95 = \OML/cm
 m/m/it/10.95 V[]; V[]; V[]; :::; V[]$\OT1/cmr/m/n/10.95 ,
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 
  []
 
-[5] [6]
-Overfull \hbox (43.72517pt too wide) in paragraph at lines 257--288
+[5]
+Overfull \hbox (1.73434pt too wide) in paragraph at lines 245--246
+[]\OT1/cmr/m/n/10.95 Realizar si-mu-la-cio-nes pa-ra eva-luar el des-em-pe~no d
+e la coor-di-na-ci^^Son de m^^Sulti-ples VANT(s)
+ []
+
+[6]
+Overfull \hbox (43.72517pt too wide) in paragraph at lines 259--290
 [] 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 413--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--414
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
 
  []
 
-[8] [9] [10]
-Overfull \hbox (28.22733pt too wide) in paragraph at lines 448--449
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--440
+
+ []
+
+[9]
+Overfull \hbox (28.22733pt too wide) in paragraph at lines 467--468
 \OT1/cmr/m/n/10.95 on Ro-bo-tics and Au-to-ma-tion, Shanghai, Chi-na, 2011, pp.
  763-770, doi: 10.1109/ICRA.2011.5980244. 
  []
 
-[11] [12] (./protocolo.aux
+[10] [11] (./protocolo.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
@@ -876,13 +902,13 @@ Package rerunfilecheck Info: File `protocolo.out' has not changed.
 (rerunfilecheck)             Checksum: B06D9654770D6B267D88796A85F90CBC;2698.
  ) 
 Here is how much of TeX's memory you used:
- 22874 strings out of 478268
- 443673 string characters out of 5846348
+ 22884 strings out of 478268
+ 443779 string characters out of 5846348
  740056 words of memory out of 5000000
- 40642 multiletter control sequences out of 15000+600000
+ 40648 multiletter control sequences out of 15000+600000
  478178 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,12n,118p,778b,364s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,12n,118p,787b,364s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -892,10 +918,10 @@ sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
 al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
 texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on protocolo.pdf (12 pages, 154387 bytes).
+Output written on protocolo.pdf (11 pages, 157648 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
+ 50 named destinations out of 1000 (max. 500000)
  141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
