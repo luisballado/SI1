@@ -42,6 +42,23 @@ Co-Asesor: Dr. Eduardo Rodríguez Tello
 \usepackage{amssymb}
 \usepackage{pgfgantt}
 \usepackage{hyperref}
+\usepackage{dirtree}
+\usepackage{xcolor,colortbl}
+
+% A package which allows simple repetition counts, and some useful commands
+
+\usepackage{forloop}
+\newcounter{loopcntr}
+\newcommand{\rpt}[2][1]{%
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{#2}%
+}
+\newcommand{\on}[1][1]{
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&\cellcolor{gray}}
+}
+\newcommand{\off}[1][1]{
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&}
+}
+
 \addtolength{\textheight}{90pt}
 
 \newcommand{\I}{\mathbb{I}}
@@ -56,16 +73,15 @@ Co-Asesor: Dr. Eduardo Rodríguez Tello
 
 \begin{abstract}
 
-  La importancia de la robótica de servicios y los Vehículos Aéreos No Tripulados (VANT) en la actualidad es innegable. Estas tecnologías están revolucionando la forma en que interactuamos con el mundo y ofrecen un amplio abanico de aplicaciones en diversos sectores. Desde la entrega de paquetes y la asistencia en emergencias hasta la exploración espacial, la robótica de servicios, ha demostrado ser especialmente valiosa en entornos donde los seres humanos pueden enfrentar riesgos o dificultades. Estos robots pueden trabajar de manera autónoma o en colaboración.\\
-  Los Vehículos Aéreos No Tripulados, tienen la capacidad de volar y acceder a lugares de manera rápida y eficiente convirtiéndolos en herramientas extremadamente versátiles. Por ejemplo, los VANT(s) están siendo utilizados por empresas de comercio electrónico para entregar productos a los clientes de manera ágil. Además, en la agricultura se utilizan para monitorear cultivos, identificar problemas y aplicar pesticidas o fertilizantes de manera precisa. En el ámbito de la seguridad, pueden utilizarse para la vigilancia de áreas de difícil acceso o en situaciones de emergencia, proporcionando información valiosa en tiempo real a los equipos de rescate.\\
+  La importancia de la robótica de servicios en la actualidad es innegable. Estos avances están revolucionando la forma en que interactuamos con el mundo, ofreciendo un amplio abanico de aplicaciones en diversos sectores. Desde vehículos autónomos, robots móviles en lógistica, hasta la exploración espacial, la robótica de servicios ha demostrado ser útil en entornos donde los seres humanos pueden enfrentar riesgos o dificultades.\\
+  Dentro de la robótica móvil podemos encontrar robots aéreos, mejor conocidos como Vehículos Aéreos No Tripulados (VANT), estos robots móviles tienen la capacidad de volar y acceder a lugares de manera rápida y eficiente, convirtiéndolos en herramientas extremadamente versátiles. Vehículos así están siendo utilizados por empresas de comercio electrónico para entregar productos a los clientes de manera ágil, en la agricultura para monitorear cultivos e identificar problemas con plagas para aplicar pesticidas o fertilizantes de manera precisa. En el ámbito de la seguridad, pueden utilizarse para la vigilancia de áreas de difícil acceso o en situaciones de emergencia, proporcionando información valiosa en tiempo real a los equipos de rescate.\\
 
-  A pesar de los numerosos beneficios de la robótica de servicios y los Vehículos Aéreos No Tripulados, existen desafíos y problemáticas asociadas a su implementación.\\
-  Una de ellas es la \textbf{exploración}, la capacidad de exploración amplía nuestro conocimiento y nos ayuda a comprender mejor el mundo que nos rodea. \\
-  La \textbf{coordinación} y el \textbf{trabajo en equipo} de múltiples-VANTs representa un desafío emocionante. La \textbf{colaboración} de varios VANT(s) puede ser utilizada en misiones de búsqueda y rescate, en donde pueden cubrir áreas más extensas y realizar tareas más complejas de manera simultánea. La coordinación entre los drones puede optimizar la eficiencia de las operaciones y aumentar las posibilidades de éxito.\\
+  A pesar de los numerosos avances de la robótica de servicios y robótica móvil aérea, existen desafíos y problemáticas asociadas a la planificación de trayectorias en ambientes desconocidos y cambiantes. La \textbf{exploración} en robótica móvil implica una serie de tareas y desafíos. Estos pueden incluir la \textbf{planificación de rutas} para cubrir eficientemente el área a explorar, la \textbf{detección} y \textbf{evación de obstáculos}, la localización y mapeo simultáneo (SLAM) y la toma de decisiones para maximizar la información.\\
 
-  La implementación de sistemas de múltiples VANT(s) también plantea desafíos técnicos y logísticos. La \textbf{comunicación} entre ellos, la asignación de tareas y la planificación de rutas con comportamientos reactivos para la detección y evación de obstáculos son aspectos críticos que deben abordarse para garantizar un funcionamiento fluido y seguro.\\
+  La \textbf{coordinación} y el \textbf{trabajo en equipo} de múltiples-VANT(s) representa un desafío emocionante. La \textbf{colaboración} de varios VANT(s) puede ser útil en misiones de búsqueda y rescate, en donde pueden cubrir áreas más extensas y realizar tareas más complejas de manera simultánea. La coordinación entre los drones puede optimizar la eficiencia de las operaciones y aumentar las posibilidades de éxito.\\
 
-  El objetivo de este trabajo es la propuesta de una arquitectura de software resiliente a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinación de Vehículos Aéreos No Tripulados. El proyecto de investigación demostrará que es posible diseñar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboración multi-VANT.
+  El objetivo de este trabajo es la propuesta de una arquitectura de software tolerante a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinación de Vehículos Aéreos No Tripulados.\\
+  El proyecto de investigación demostrará que es posible diseñar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboración multi-VANT.
   \medskip \\
   
   \noindent \textbf{Palabras claves:} multi-VANT, coordinación multi-agente, Exploración 3D, 3D Path finding
@@ -126,26 +142,42 @@ Grado acad\'{e}mico: & Doctorado
 \newpage
 \section{Descripci\'{o}n del proyecto}
 
-El proyecto de estrategias para la exploración coordinada multi-VANT se centra en el desarrollo de técnicas y algoritmos que permiten la coordinación eficiente de múltiples drones para llevar a cabo tareas de exploración en entornos desconocidos y cambiantes.\\
-El objetivo principal es aprovechar las ventajas de tener multiples-VANT(s) trabajando en conjunto para mejorar la eficiencia y la cobertura de la exploración.
+El proyecto de estrategias para la exploración coordinada multi-VANT se centra en las ventajas de tener múltiples-VANT(s) trabajando en conjunto para mejorar la eficiencia y cobertura de la exploración proponiendo una arquitectura de software que con ayuda de algoritmos, permitan la coordinación eficiente de múltiples-VANT(s) para llevar a cabo tareas de exploración en entornos desconocidos y cambiantes.
 
 \subsection{Antecedentes y motivaci\'{o}n para el proyecto}
 
-Millones de Vehículos Aéreos No Tripulados, también conocidos como VANT(s) o drones, han presentado una adopción masiva en diferentes aplicaciones, desde usos civiles (búsqueda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares [1]. La popularidad de los VANT(s) es atribuida a su movilidad.\\
+Millones de Vehículos Aéreos No Tripulados, o también conocidos como drones, han presentado una adopción masiva en diferentes aplicaciones, desde usos civiles (búsqueda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares [1]. La popularidad de los VANT(s) es atribuida a su movilidad.\\
 
-Aplicaciones que hacen uso de los VANT(s) con sensores abordo son sorprendentes, ya que utilizan las ventajas de sensores eficientes [1] (sensores termicos, cámaras fotográficas,..etc.). Los VANT(s) han demostrado ser útiles en aplicaciones industriales [2] petroleras, parques eólicos, etc., en la recolección de información y vigilancia.\\
+La idea de utilizar múltiples robots aéreos en un sistema coordinado se basa en el comportamiento de los enjambres de animales, como las abejas o los pájaros, que trabajan juntos de manera colaborativa para lograr objetivos comunes. Esta inspiración biológica ha llevado al desarrollo de algoritmos y técnicas para coordinar y controlar múltiples VANT(s) en diferentes aplicaciones.\\
 
-El interes en la investigación e inovación de soluciones con Vehículos Aéreos No Tripulados ha crecido exponencialmente en años recientes [7,8,9,10].\\
+El interés en la investigación e inovación de soluciones con Vehículos Aéreos No Tripulados ha crecido exponencialmente en años recientes [2,7,8,9,10].\\
 
-En recientes años, dotar a los VANT de inteligencia para explotar la información recolectada de sensores a bordo, ha sido y es un área estudiada en robótica móvil área (Construcción de Mapas)[3]. Buscando probar diferentes teorías de control, convirtiendo los problemas típicos de control 2D (péndulo inverso fijo) a un ambiente 3D, teniendo así más variables a controlar buscando mantener el equilibrio del péndulo y al mismo tiempo lograr el movimiento y las maniobras deseadas del dron en el espacio tridimensional[4].\\
+En recientes años, dotar a los VANT de inteligencia para explotar la información recolectada de sensores a bordo, ha sido y es un área estudiada en robótica móvil área (Construcción de Mapas)[3]. Buscando probar diferentes teorías de control, convirtiéndo los problemas típicos de control 2D (péndulo inverso fijo) a un ambiente 3D, teniendo más variables a controlar para mantener el equilibrio del péndulo y al mismo tiempo lograr el movimiento y las maniobras deseadas del dron en el espacio tridimensional[4].\\
 
-El despliegue rápido de robots en situaciones de riesgo, búsqueda y rescate ha sido un área ampliamente estudiada en la robótica móvil. Donde se han aplicado teorias de grafos para la optención de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente autonomo. Esa percepción que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura tolerante a fallas y capaz de coordinar múltiples véhiculos aéreos no trupulados a medida que incrementa o disminuye la oferta de drones disponible.
+El despliegue rápido de robots en situaciones de riesgo, búsqueda y rescate ha sido un área ampliamente estudiada en la robótica móvil. Donde se han aplicado teorías de grafos para la obtención de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente autónomo. Esa percepción que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura tolerante a fallas, capaz de coordinar múltiples véhiculos aéreos no trupulados a medida que incrementa o disminuye la oferta de VANT(s) disponible.\\
 
+La coordinación de múltiples-VANT(s) ofrece numerosos beneficios y oportunidades en diversos campos y aplicaciones.
+
+\begin{itemize}
+\item Eficiencia y cobertura
+\item Redundancia y tolerancia a fallos
+\item Adaptabilidad a entornos dinámicos
+\item Distribución de carga de trabajo
+\item Aprendizaje colaborativo
+\end{itemize}
+
+\newpage
 \section{Planteamiento del problema}
 
-Para poder desplazarse en un ambiente desconocido lo primero es explorar el area y a medida que se obtiene información del espacio se puden calcular las rutas mas cortas o ciertas caracteristicas que nos ayuden a conocer donde estoy dentro de un ambiente desconocido. Estudios en robotica movil por mas de 25 años han demostrado que la teoria de grafos ha aydado mucho al area ya que se representaba como grafos planos y ahora al tener el agente robot en el aire, el problema se vuelve 3D.\\
+La coordinación de múltiples-VANT (Vehículos Aéreos No Tripulados) es un desafío complejo en el campo de la robótica y la exploración de áreas desconocidas. A medida que la tecnología de los Vehículos Aéreos No Tripulados continúa avanzando y se vuelven más accesibles, se presenta la oportunidad de utilizar equipos de múltiples VANT(s) para realizar tareas de manera colaborativa y eficiente. Sin embargo, esta coordinación planea diversas problemáticas que deben abordarse.\\
 
-Dada un área de interés $A$ que se desea explorar,
+En primer lugar, la coordinación de múltiples VANT(s) implica la necesidad de establecer una comunicación efectiva entre ellos. Los VANT(s) deben intercambiar información relevante sobre su posición, estado, objetivos y otros datos importantes. La comunicación debe ser confiable, de baja latencia y capaz de manejar múltiples enlaces de manera simultánea. Además, los protocolos de comunicación deben ser seguros para proteger la integridad y confidencialidad de los datos transmitidos.\\
+
+Otro desafío es la planificación de rutas y la toma de decisiones distribuida. Los VANT(s) deben coordinar sus movimientos para evitar colisiones y lograr una cobertura eficiente del área objetivo. Esto implica la necesidad de desarrollar algoritmos y estrategias que permitan la planificación de rutas dinámicas, considerando los obstáculos y las restricciones del entorno. Además, los VANT(s) deben tomar decisiones colaborativas para adaptarse a situaciones imprevistas o cambios en el entorno.\\
+
+La asignación de tareas también es un aspecto crítico en la coordinación de múltiples VANT(s). Cada VANT puede tener diferentes capacidades y sensores especializados, por lo que es importante asignar tareas de acuerdo con las fortalezas individuales de cada robot. Además, los VANT(s) deben colaborar en la recolección y procesamiento de datos, evitanto la duplicación de esfuerzos optimizando el uso de los recursos disponibles.\\
+
+Dada un área de interés $A$ desconocida que se desea explorar,
 \begin{itemize}
 \item Un conjunto de Vehículos Aéreos No Tripulados (VANT) denotados como $V = V_{1},V_{2},V_{3},...,V_{n}$, donde $n$ es el número total de VANT's disponibles
 \item Un conjunto de tareas de exploración denotados como $T = T_{1}, T_{2}, T_{3}, T_{m}$, donde $m$ es el número total de tareas a realizar.
@@ -173,38 +205,94 @@ La función objetivo variará según los objetivos específicos del problema.
 
 \textbf{General} \\
 
-Creación de una arquitectura tolerante a fallas para la coordinación de multiples VANT's aplicados a la tarea de búsqueda y rescate.
+Desarrollo e implementación de una arquitectura de software tolerante a fallas para la coordinación de múltiples VANT(s) aplicados a una simulación de búsqueda y rescate.
 
 \bigskip
 \noindent
 \textbf{Particulares} \\
 \begin{itemize}
-\item Evitar colisiones: El objetivo primordial es garantizar que los drones eviten colisiones entre sí y con otros objetos en su entorno. La coordinación adecuada asegura que los drones mantengan una distancia segura y sigan rutas que minimicen el riesgo de colisión.
-\item Eficiencia y rendimiento: La coordinación de múltiples drones busca optimizar la eficiencia y el rendimiento del sistema en su conjunto. Esto implica asignar tareas de manera óptima entre los drones, minimizar los tiempos de espera y los tiempos de respuesta, y maximizar la capacidad de realizar tareas en paralelo.
-\item Cumplimiento de objetivos: Los drones pueden tener objetivos específicos a cumplir, como la recolección de datos, la entrega de paquetes o la vigilancia de áreas. La coordinación tiene como objetivo garantizar que cada dron contribuya de manera efectiva al logro de los objetivos generales, sin redundancia ni superposición de tareas.
-\item Distribucion equitativa de tareas: Si los drones tienen capacidades o limitaciones diferentes, como la duración de la batería o la capacidad de carga, se busca una distribución equitativa de la carga de trabajo entre los drones. Esto asegura que todos los drones contribuyan de manera equilibrada y evita la sobrecarga de algunos drones mientras otros están subutilizados.
-\item Comunicación y sincronicación: La coordinación requiere una comunicación efectiva entre los drones para intercambiar información y sincronizar sus acciones. El objetivo es establecer una comunicación confiable y eficiente que permita la transmisión de datos relevantes y las instrucciones necesarias para la coordinación.
-\item Adaptabilidad y flexibilidad: Los objetivos de la coordinación pueden cambiar en función de las circunstancias y las necesidades. La coordinación de múltiples drones debe ser adaptable y flexible para ajustarse a cambios en el entorno, nuevos objetivos o la incorporación o salida de drones del sistema.
+\item Generación de la dinámica del Vehículo Aéreo No Tripulado.
+\item Garantizar que los drones eviten colisiones entre sí y con objetos en su entorno.
+\item Eficiencia y rendimiento del sistema en su conjunto. Asignar tareas de manera óptima entre los múltiples-VANT(s), minimizando los tiempos de espera y de respuesta.
+\item Garantizar que cada VANT contribuya de manera efectiva al logro de los objetivos generales, sin redundancia ni superposición de tareas.
+\item Comunicación efectiva entre los múltiples-VANT(s) para intercambiar información y sincronizar sus acciones. El objetivo es establecer una comunicación confiable y eficiente que permita la transmisión de datos relevantes y las instrucciones necesarias para la coordinación.
+\item Adaptabilidad y flexibilidad: Los objetivos de la coordinación pueden cambiar en función de las circunstancias y las necesidades. La coordinación de múltiples-VANT(s) debe ser adaptable y flexible para ajustarse a cambios en el entorno, nuevos objetivos o la incorporación o salida de VANT(s) del sistema.
 \end{itemize}
 
+\newpage
 \section{Metodolog\'{\i}a}
 
 La metodología propuesta para esta tesis se divide en tres etapas, iniciando en septiembre del 2023. A continuación se detallan cada una de las actividades que se plantean realizar en cada una.
 
 \begin{enumerate}
+\item Revisión de literatura
+  \begin{itemize}
+  \item Realizar una revisión de la literatura cientifica y técnica relacionada con la coordinación de múltiples VANT(s).
+  \item Identificar los enfoques existentes, algoritmos y tecnologías utilizadas en la coordinación de múltiples VANT(s).
+  \end{itemize}
 \item Análisis y diseño de la solución propuesta
+  \begin{itemize}
+  \item Identificar los requisitos clave para una coordinación eficiente de VANT(s), considerando factores como la seguiridad, la eficiencia energética y la capacidad de adaptación a diferentes entornos.
+  \item Establecer métricas y criterios de evaluación para medir el desempeño de la coordinación de múltiples VANTS.
+  \item Diseñar algoritmos y protocolos de comunicación que permitan la coordinación de manera eficiente.
+    \item Proponer estrategias para la asignación de tareas y la gestión de recursos en función de los requisitos identificados.
+  \end{itemize}
 \item Implementación y validación
+  \begin{itemize}
+  \item Implementar la metodología propuesta utilizando lenguajes de programación adecuados y herramientas de simulación.
+  \item Realizar estudios de caso y sumulaciones para evaluar el desempeño de la coordinación de drones bajo diferentes escenarios.
+  \end{itemize}
 \item Evaluación, resultados y conclusiones
+
+  \begin{itemize}
+  \item Analizar y comparar los resultados obtenidos con otros enfoques existentes.
+  \item Extraer conclusiones sobre la efectividad propuesta en términos de coordinación eficiente de Vehículos Aéreos No Tripulados.
+  \item Identificar posibles mejoras y áreas de investigación futuras en el campo de la coordinación de múltiples VANT(s).
+  \end{itemize}
 \end{enumerate}
 
 \newpage
 \section{Cronograma de actividades (plan de trabajo)}
 
+\noindent\begin{tabular}{p{0.27\textwidth}*{12}{|p{0.04\textwidth}}|}
+% The top line
+\textbf{Cuatrimestre}
+& \multicolumn{4}{c|}{Q1} 
+& \multicolumn{4}{c|}{Q2} 
+& \multicolumn{4}{c|}{Q3}\\ 
+           
+% The second line, with its five years of four quarters
+\rpt[3]{& 1 & 2 & 3 & 4} \\
+\hline
+% using the on macro to fill in twenty cells as `on'
+Actividad 1        \on[2] \off[10] \\
+\hline
+Actividad 2    \on[2] \off[10] \\
+\hline
+Actividad 3    \on[2]  \off[10] \\
+\hline
+% using the on macro followed by the off macro
+Actividad 4    \on[11] \off[1]\\
+\hline
+% The mbox prevent packages from being hyphenated
+% The multicolumn produces no vertical guides within the columns it spans, but
+% does put one at the end to complete the righ-hand edge of the table
+Actividad 5    \on[2] \off[6] \on[2] \off[2] \\
+\hline
+Actividad 6    \off[2] \on[4] \off[4] \on[1] \off[1] \\
+\hline
+% Note the omitting the count to on or off is the same as setting the count to 1
+Actividad 7    \off[11] \on \\
+\hline
+\end{tabular}
+
+\iffalse
 \begin{ganttchart}[vgrid={draw=none, dotted}]{1}{12}
 \gantttitlelist{1,...,12}{1} \\
 \ganttbar{}{1}{4} \\
 \ganttbar{}{5}{11}
 \end{ganttchart}
+\fi
 
 \iffalse
 \definecolor{barblue}{RGB}{153,204,254}
@@ -282,24 +370,75 @@ La metodología propuesta para esta tesis se divide en tres etapas, iniciando en 
   \end{ganttchart}
 \fi
 
-\section{Estado del arte}
+\section{Infraestructura}
+
+Para el desarrollo de este proyecto de investigación, se hará uso de un equipo de cómputo con las siguientes características:
 
 \begin{itemize}
-\item Planificador de trayectorias
-\item Arquitectura de robots coordinados
-\item Percepcion de información 3D a partir de sistemas de vision por computadora
+\item iMac (21.5-inch, Late 2015)
+\item Procesador 2.8 GHz Quad-Core Intel Core i5
+\item Memoria Ram 8 GB 1867 MHz DDR3
+\item Graphics Intel Iris Pro Graphics 6200 1536 MB
+\item Almacenamiento 1 TB
+\item Tarjeta Raspberry Pi para Nodos ROS
 \end{itemize}
-\section{Contribuciones o resultados esperados}
-\pp{introducir esta parte}
 
-Se espera entregar:
+\newpage
+\section{Estado del arte}
+
+\dirtree{%
+  .1 Robótica Móvil.
+  .2 Problemas en robótica móvil.
+  .3 Mapas.
+  .3 Localización.
+  .3 Planificación trayectorias.
+  .2 Robótica Móvil Aérea.
+  .3 Dinámica de un Vehículo Aéreo No Tripulado.
+  .3 Control de un Vehículo Aéreo No Tripulado.
+  .2 Construcción y representación de mapas 3D.
+  .3 Percepción.
+  .4 Sensores LIDAR.
+  .4 Odometría Visual.
+  .2 Robótica Colaborativa.
+  .3 Exploración con múltiples VANT(s).
+  .3 Coordinación.
+  .3 Coolaboración.
+  .3 Arquitectura de software en robótica colaborativa.
+}
+
+\vspace{1cm}
+
+La colaboración de múltiples VANTs (vehículos aéreos no tripulados), también conocidos como drones, ha surgido como una área de investigación prometedora en los últimos años. La capacidad de coordinar y colaborar entre sí permite a los drones realizar tareas complejas de manera más eficiente, abriendo nuevas posibilidades en una amplia gama de aplicaciones, desde la vigilancia y la logística hasta la exploración y la respuesta a desastres.\\
+
+Uno de los desafíos clave en la colaboración de múltiples VANTs es la planificación de rutas. Se han desarrollado diversos algoritmos para optimizar la planificación de rutas de los drones, minimizando la colisión entre ellos y mejorando la eficiencia de sus misiones. Estos algoritmos tienen en cuenta varios factores, como las restricciones de vuelo, la energía restante de los drones y las ubicaciones objetivo, para generar trayectorias seguras y eficientes.\\
+
+Además de la planificación de rutas, la coordinación de los VANTs requiere una comunicación efectiva. Se han investigado diferentes protocolos de comunicación y estrategias de intercambio de información para permitir la colaboración entre los drones. Algunos enfoques utilizan comunicación directa entre los drones, mientras que otros emplean una arquitectura de red donde los drones se comunican a través de una infraestructura centralizada. La elección del enfoque depende de las características de la aplicación y las restricciones del sistema.\\
+
+La asignación de tareas es otro aspecto crucial en la colaboración de múltiples VANTs. Los drones deben ser capaces de dividir y asignar las tareas de manera óptima, considerando factores como la capacidad de carga, la distancia a las ubicaciones objetivo y los recursos disponibles. Se han propuesto diferentes estrategias de asignación de tareas, como algoritmos basados en la teoría de juegos y enfoques basados en técnicas de optimización.\\
+
+La colaboración de múltiples VANTs también puede implicar la formación de formaciones o la realización de tareas coordinadas. Para ello, se han desarrollado algoritmos de control distribuido que permiten a los drones mantener posiciones relativas estables y realizar movimientos coordinados. Estos algoritmos pueden basarse en técnicas de seguimiento y control de formaciones, y se han aplicado en diferentes contextos, desde la inspección de infraestructuras hasta la búsqueda y rescate.\\
+
+En términos de validación y evaluación, se utilizan simulaciones y pruebas reales para verificar el rendimiento y la eficacia de los sistemas de colaboración de múltiples VANTs. Las simulaciones permiten evaluar diferentes escenarios y ajustar los parámetros del sistema antes de las pruebas reales. Los casos de prueba reales proporcionan información sobre la implementación y la eficiencia en situaciones del mundo real, y pueden ayudar a identificar desafíos adicionales que deben abordarse.
+
+\newpage
+\section{Contribuciones o resultados esperados}
+
 \begin{enumerate}
-\item Códigos a disposición de la comunidad 
+\item Códigos a disposición de la comunidad
+  \begin{itemize}
+  \item Algoritmo para la planificación de rutas
+  \item Protocolos de comunicación y coordinación
+  \item Coordinación en entornos dinámicos
+  \end{itemize}
 \item Simulación de solución
-\item Prototipo de solución
+  \begin{itemize}
+  \item Simulaciones detalladas y pruebas en entornos controlados
+  \item Métricas como tiempo de respuesta, consumo de energía y la capacidad de adaptación a diferentes escenarios. 
+  \end{itemize}
 \item Tesis impresa.
 \end{enumerate}
 
+\newpage
 \section{Referencias}
 
 \begin{enumerate}
