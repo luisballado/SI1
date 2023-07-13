@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  13 JUL 2023 15:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  13 JUL 2023 15:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**protocolo.tex
-(./protocolo.tex
+**../../../Protocolo/protocolo.tex
+(../../../Protocolo/protocolo.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
@@ -660,10 +660,7 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [epsf,times].
 
-(./protocolo.aux
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
-)
+No file protocolo.aux.
 \openout1 = `protocolo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
@@ -686,7 +683,6 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
 LaTeX Info: Redefining \. on input line 71.
 LaTeX Info: Redefining \% on input line 71.
-
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count326
@@ -726,14 +722,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 71.
 LaTeX Info: Redefining \pageref on input line 71.
 LaTeX Info: Redefining \nameref on input line 71.
- (./protocolo.out) (./protocolo.out)
 \@outlinefile=\write4
 \openout4 = `protocolo.out'.
 
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 73
 .
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
@@ -766,42 +760,6 @@ l.73
 l.73 
      
 ? 
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.73 
-     
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.73 
-     
-? 
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.73 
-     
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.73 
-     
-? 
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.73 
-     
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.73 
-     
-? 
 ! Emergency stop.
 <inserted text> 
                 }
@@ -811,11 +769,11 @@ End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 22759 strings out of 478268
- 442452 string characters out of 5846348
- 713061 words of memory out of 5000000
- 40562 multiletter control sequences out of 15000+600000
+ 22721 strings out of 478268
+ 442039 string characters out of 5846348
+ 712876 words of memory out of 5000000
+ 40545 multiletter control sequences out of 15000+600000
  475128 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,8n,118p,429b,364s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,8n,118p,448b,363s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!
