@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  13 JUL 2023 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  13 JUL 2023 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1178,7 +1178,7 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
 ] [29
 
 ]
-<Images//drones.png, id=880, 770.88pt x 332.74312pt>
+<Images//drones.png, id=878, 770.88pt x 332.74312pt>
 File: Images//drones.png Graphic file (type png)
 <use Images//drones.png>
 Package pdftex.def Info: Images//drones.png  used on input line 419.
@@ -1186,12 +1186,12 @@ Package pdftex.def Info: Images//drones.png  used on input line 419.
  [30
 
  <./Images//drones.png>]
-<Images//d4.png, id=909, 301.125pt x 225.84375pt>
+<Images//d4.png, id=908, 301.125pt x 225.84375pt>
 File: Images//d4.png Graphic file (type png)
 <use Images//d4.png>
 Package pdftex.def Info: Images//d4.png  used on input line 431.
 (pdftex.def)             Requested size: 171.14764pt x 128.36697pt.
-<Images//d5.png, id=910, 330.23375pt x 247.92625pt>
+<Images//d5.png, id=909, 330.23375pt x 247.92625pt>
 File: Images//d5.png Graphic file (type png)
 <use Images//d5.png>
 Package pdftex.def Info: Images//d5.png  used on input line 431.
@@ -1209,7 +1209,7 @@ Overfull \vbox (32.38184pt too high) detected at line 431
 ]
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 469.
-<Images//maps.png, id=991, 840.13875pt x 209.78375pt>
+<Images//maps.png, id=990, 840.13875pt x 209.78375pt>
 File: Images//maps.png Graphic file (type png)
 <use Images//maps.png>
 Package pdftex.def Info: Images//maps.png  used on input line 469.
@@ -1246,38 +1246,30 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 00D5E2582F5E5976FC297D8A7A730200;1182.
  ) 
 Here is how much of TeX's memory you used:
- 25326 strings out of 478268
- 492333 string characters out of 5846348
+ 25324 strings out of 478268
+ 492309 string characters out of 5846348
  756779 words of memory out of 5000000
  42877 multiletter control sequences out of 15000+600000
  497715 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,122p,604b,897s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Navigation39} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Navigation40} has been referenced but does not exis
-t, replaced by a fixed one
-
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/tex
-live/2022/texmf-dist/fonts/enc/dvips/opensans/a_n3lhbv.enc}{/usr/local/texlive/
-2022/texmf-dist/fonts/enc/dvips/opensans/a_iz27ck.enc}</usr/local/texlive/2022/
-texmf-dist/fonts/type1/ascender/opensans/OpenSans-Bold.pfb></usr/local/texlive/
-2022/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Italic.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
-local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/loca
-l/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texliv
-e/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/
-texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on template.pdf (38 pages, 695104 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
+exlive/2022/texmf-dist/fonts/enc/dvips/opensans/a_n3lhbv.enc}{/usr/local/texliv
+e/2022/texmf-dist/fonts/enc/dvips/opensans/a_iz27ck.enc}</usr/local/texlive/202
+2/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Bold.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Italic.pfb></usr/local
+/texlive/2022/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr
+/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/lo
+cal/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/202
+2/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on template.pdf (38 pages, 695018 bytes).
 PDF statistics:
- 1201 PDF objects out of 1440 (max. 8388607)
- 1107 compressed objects within 12 object streams
- 86 named destinations out of 1000 (max. 500000)
+ 1198 PDF objects out of 1200 (max. 8388607)
+ 1104 compressed objects within 12 object streams
+ 84 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
