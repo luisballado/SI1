@@ -29,13 +29,13 @@
   \textbf{Protocolo de tesis}
 }
 
-
 \author{
-Título: Estrategias para la exploración coordinada multi-VANT \\
+T\'{i}tulo: Estrategias para la exploraci\'{o}n coordinada multi-VANT \\
 Candidato: Luis Alberto Ballado Aradias \\
-Asesor: Dr. José Gabriel Ramírez Torres \\
-Co-Asesor: Dr. Eduardo Rodríguez Tello
+Asesor: Dr. Jos\'{e} Gabriel Ram\'{i}rez Torres \\
+Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 }
+
 
 \date{\today}
 
@@ -70,191 +70,199 @@ Co-Asesor: Dr. Eduardo Rodríguez Tello
 
 \begin{document}
 \maketitle
-
 \begin{abstract}
 
-  La importancia de la robótica de servicios en la actualidad es innegable. Estos avances están revolucionando la forma en que interactuamos con el mundo, ofreciendo un amplio abanico de aplicaciones en diversos sectores. Desde vehículos autónomos, robots móviles en lógistica, hasta la exploración espacial, la robótica de servicios ha demostrado ser útil en entornos donde los seres humanos pueden enfrentar riesgos o dificultades.\\
+  La importancia de la rob\'{o}tica de servicios en la actualidad es innegable. Estos avances est\'{a}n revolucionando la forma en que interactuamos con el mundo, ofreciendo un amplio abanico de aplicaciones en diversos sectores. Desde veh\'{i}culos aut\'{o}nomos, robots m\'{o}viles en l\'{o}gistica, hasta la exploraci\'{o}n espacial, la rob\'{o}tica de servicios ha demostrado ser \'{u}til en entornos donde los seres humanos pueden enfrentar riesgos o dificultades.\\
   
-  Dentro de la robótica móvil podemos encontrar robots aéreos, mejor conocidos como Vehículos Aéreos No Tripulados (VANT), estos robots móviles tienen la capacidad de volar y acceder a lugares de manera rápida y eficiente, convirtiéndolos en herramientas extremadamente versátiles. Vehículos así están siendo utilizados por empresas de comercio electrónico para entregar productos a los clientes de manera ágil, en la agricultura para monitorear cultivos e identificar problemas con plagas para aplicar pesticidas o fertilizantes de manera precisa. En el ámbito de la seguridad, pueden utilizarse para la vigilancia de áreas de difícil acceso o en situaciones de emergencia, proporcionando información valiosa en tiempo real a los equipos de rescate.\\
+  Dentro de la rob\'{o}tica m\'{o}vil podemos encontrar robots a\'{e}reos, mejor conocidos como Veh\'{i}culos A\'{e}reos No Tripulados (VANT), estos robots m\'{o}viles tienen la capacidad de volar y acceder a lugares de manera r\'{a}pida y eficiente, convirti\'{e}ndolos en herramientas extremadamente vers\'{a}tiles. Veh\'{i}culos as\'{i} est\'{a}n siendo utilizados por empresas de comercio electr\'{o}nico para entregar productos a los clientes de manera \'{a}gil ((hablar del mTSP)), en la agricultura para monitorear cultivos e identificar problemas con plagas para aplicar pesticidas o fertilizantes de manera precisa. En el \'{a}mbito de la seguridad, pueden utilizarse para la vigilancia de \'{A}reas de dif\'{i}cil acceso o en situaciones de emergencia, proporcionando informaci\'{o}n valiosa en tiempo real a los equipos de rescate.\\
 
-  A pesar de los numerosos avances de la robótica de servicios, existen desafíos y problemáticas asociadas a la planificación de trayectorias en ambientes desconocidos y cambiantes.\\
-  La \textbf{exploración} implica una serie de tareas y desafíos. Estos pueden incluir la \textbf{planificación de rutas} para cubrir eficientemente el área a explorar, la \textbf{detección} y \textbf{evación de obstáculos}, \textbf{la localización y mapeo simultáneo} (SLAM) y la toma de decisiones para maximizar la información.\\
+  A pesar de los numerosos avances de la rob\'{o}tica de servicios, existen desaf\'{i}os y problem\'{a}ticas asociadas a la planificaci\'{o}n de trayectorias en ambientes desconocidos y cambiantes.\\
+  La \textbf{exploraci\'{o}n} implica una serie de tareas y desaf\'{i}os. Estos pueden incluir la \textbf{planificaci\'{o}n de rutas} para cubrir eficientemente el \'{a}rea a explorar, la \textbf{detecci\'{o}n} y \textbf{evaci\'{o}n de obst\'{a}culos}, \textbf{la localizaci\'{o}n y mapeo simult\'{a}neo} (SLAM) y la toma de decisiones para maximizar la informaci\'{o}n.\\
 
-  La \textbf{coordinación} y el \textbf{trabajo en equipo} de múltiples-VANT(s) representa un desafío emocionante. La \textbf{colaboración} de varios VANT(s) puede ser útil en misiones de búsqueda y rescate, en donde pueden cubrir áreas más extensas y realizar tareas más complejas de manera simultánea. La coordinación entre los VANT(s) puede optimizar la eficiencia de las operaciones y aumentar las posibilidades de éxito.\\
+  La \textbf{coordinaci\'{o}n} y el \textbf{trabajo en equipo} de m\'{u}ltiples-VANT(s) representa un desaf\'{i}o emocionante. La \textbf{colaboraci\'{o}n} de varios VANT(s) puede ser \'{u}til en misiones de b\'{u}squeda y rescate, en donde pueden cubrir \'{a}reas m\'{a}s extensas y realizar tareas m\'{a}s complejas de manera simult\'{a}nea. La coordinaci\'{o}n entre los VANT(s) puede optimizar la eficiencia de las operaciones y aumentar las posibilidades de \'{e}xito.\\
 
-  El objetivo de este trabajo es la propuesta de una arquitectura de software tolerante a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinación de Vehículos Aéreos No Tripulados.\\
-  El proyecto de investigación demostrará que es posible diseñar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboración multi-VANT.
+  El objetivo de este trabajo es la propuesta de una arquitectura de software tolerante a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinaci\'{o}n de Veh\'{i}culos A\'{e}reos No Tripulados.\\
+  El proyecto de investigaci\'{o}n demostrar\'{a} que es posible dise\~{n}ar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboraci\'{o}n multi-VANT.
   \medskip \\
   
-  \noindent \textbf{Palabras claves:} multi-VANT, coordinación multi-agente, Exploración 3D, 3D Path finding
+  \noindent \textbf{Palabras claves:} multi-VANT, coordinaci\'{o}n multi-agente, Exploraci\'{o}n 3D, 3D Path finding
   
 \end{abstract}
 
 \newpage
-\section{Datos Generales}
+\section*{Datos Generales}
 
-\subsection{T\'{\i}tulo de proyecto}
-Estrategias para la exploración coordinada multi-VANT
-\subsection{Datos del alumno}
+\subsection*{T\'{\i}tulo de proyecto}
+Estrategias para la exploraci\'{o}n coordinada multi-VANT
+\subsection*{Datos del alumno}
 \begin{tabular}{ll} 
 Nombre:  &          Luis Alberto Ballado Aradias \\
-Direcci\'{o}n:   & Juan José de La Garza \#909\\
+Direcci\'{o}n:   & Juan Jos\'{e} de La Garza \#909\\
                  & Colonia: Guadalupe Mainero C.P. 87130\\
 Tel\'{e}fono (casa):    & 81 20706661 \\
 Tel\'{e}fono (lugar de trabajo):    & (834) 107 0220 + Ext  \\
 Direcci\'{o}n electr\'{o}nica: & luis.ballado@cinvestav.mx \\
 URL: & https://luis.madlab.mx
 \end{tabular}
-\subsection{Instituci\'{o}n}
+\subsection*{Instituci\'{o}n}
 \begin{tabular}{ll} 
 Nombre:  &          CINVESTAV-IPN \\
 Departamento:    &  Unidad Tamaulipas\\
 Direcci\'{o}n:   &  Km 5.5 carretera Cd. Victoria - Soto la Marina.\\
-                 &  Parque Científico y Tecnológico TECNOTAM,\\
+                 &  Parque Cient\'{i}fico y Tecnol\'{o}gico TECNOTAM,\\
                  &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
 Tel\'{e}fono:    & (+52) (834) 107 0220\\
 \end{tabular}
-\subsection{Beca de tesis}
+\subsection*{Beca de tesis}
 \begin{tabular}{ll} 
 Instituci\'{o}n otorgante:  &  CONAHCYT  \\
 Tipo de beca:      & Maestr\'ia Nacional\\
 Vigencia:    &   Septiembre 2022 - Agosto 2024
 \end{tabular}
 
-\subsection{Datos del asesor}
+\subsection*{Datos del asesor}
 \begin{tabular}{ll} 
-Nombre:  &   Dr. José Gabriel Ramírez Torres \\
+Nombre:  &   Dr. Jos\'{e} Gabriel Ram\'{i}rez Torres \\
 Direcci\'{o}n:   &   Km. 5.5 carretera Cd. Victoria - Soto la Marina\\
-                 &  Parque Científico y Tecnológico TECNOTAM\\
+                 &  Parque Cient\'{i}fico y Tecnol\'{o}gico TECNOTAM\\
                  &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
 Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext. 1014 \\ 
 Instituci\'{o}n:    &  CINVESTAV-IPN \\ 
 Departamento adscripci\'{o}n: &  Unidad Tamaulipas\\
 Grado acad\'{e}mico: & Doctorado \\\\
-Nombre:  &   Dr. Eduardo Arturo Rodríguez Tello \\
+Nombre:  &   Dr. Eduardo Arturo Rodr\'{i}guez Tello \\
 Direcci\'{o}n:   &   Km. 5.5 carretera Cd. Victoria - Soto la Marina\\
-                 &  Parque Científico y Tecnológico TECNOTAM\\
+                 &  Parque Cient\'{i}fico y Tecnol\'{o}gico TECNOTAM\\
                  &  Ciudad Victoria, Tamaulipas, C.P. 87130\\
 Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext. 1100\\ 
 Instituci\'{o}n:    &  CINVESTAV-IPN \\ 
 Departamento adscripci\'{o}n: &  Unidad Tamaulipas\\
 Grado acad\'{e}mico: & Doctorado 
-\end{tabular} 
+\end{tabular}
 
 \newpage
-\section{Descripci\'{o}n del proyecto}
+\section*{Descripci\'{o}n del proyecto}
 
-El proyecto de estrategias para la exploración coordinada multi-VANT se centra en las ventajas de tener múltiples-VANT(s) trabajando en conjunto para mejorar la eficiencia y cobertura de la exploración proponiendo una arquitectura de software que con ayuda de algoritmos, permitan la coordinación eficiente de múltiples-VANT(s) para llevar a cabo tareas de exploración en entornos desconocidos y cambiantes.
+El proyecto de estrategias para la exploraci\'{o}n coordinada multi-VANT se centra en las ventajas de tener m\'{u}ltiples-VANT(s) trabajando en conjunto para mejorar la eficiencia y cobertura de la exploraci\'{o}n proponiendo una arquitectura de software que con ayuda de algoritmos, permitan la coordinaci\'{o}n eficiente de m\'{u}ltiples-VANT(s) para llevar a cabo tareas de exploraci\'{o}n en entornos desconocidos y cambiantes.
 
-\subsection{Antecedentes y motivaci\'{o}n para el proyecto}
+\subsection*{Antecedentes y motivaci\'{o}n para el proyecto}
 
-Millones de Vehículos Aéreos No Tripulados, o también conocidos como drones, han presentado una adopción masiva en diferentes aplicaciones, desde usos civiles (búsqueda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares [1]. La popularidad de los VANT(s) es atribuida a su movilidad.\\
+Millones de Veh\'{i}culos A\'{e}reos No Tripulados, o tambi\'{e}n conocidos como drones, han presentado una adopci\'{o}n masiva en diferentes aplicaciones, desde usos civiles (b\'{u}squeda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares [1]. La popularidad de los VANT(s) es atribuida a su movilidad.\\
 
-La idea de utilizar múltiples robots aéreos en un sistema coordinado se basa en el comportamiento de los enjambres de animales, como las abejas o los pájaros, que trabajan juntos de manera colaborativa para lograr objetivos comunes. Esta inspiración biológica ha llevado al desarrollo de algoritmos y técnicas para coordinar y controlar múltiples VANT(s) en diferentes aplicaciones.\\
+La idea de utilizar m\'{u}ltiples robots a\'{e}reos en un sistema coordinado se basa en el comportamiento de los enjambres de animales, como las abejas o los p\'{a}jaros, que trabajan juntos de manera colaborativa para lograr objetivos comunes. Esta inspiraci\'{o}n biol\'{o}gica ha llevado al desarrollo de algoritmos y t\'{e}cnicas para coordinar y controlar m\'{u}ltiples VANT(s) en diferentes aplicaciones.\\
 
-El interés en la investigación e inovación de soluciones con Vehículos Aéreos No Tripulados ha crecido exponencialmente en años recientes [2,7,8,9,10].\\
+El inter\'{e}s en la investigaci\'{o}n e inovaci\'{o}n de soluciones con Veh\'{i}culos A\'{e}reos No Tripulados ha crecido exponencialmente en a\~{n}os recientes [2,7,8,9,10].\\
 
-En recientes años, dotar a los VANT de inteligencia para explotar la información recolectada de sensores a bordo, ha sido y es un área estudiada en robótica móvil área (construcción de mapas)[3]. Buscando probar diferentes teorías de control, convirtiéndo los problemas típicos de control 2D (péndulo inverso fijo) a un ambiente 3D, teniendo más variables a controlar para mantener el equilibrio del péndulo y al mismo tiempo lograr el movimiento y las maniobras deseadas del dron en el espacio tridimensional[4].\\
+En recientes a\~{n}os, dotar a los VANT de inteligencia para explotar la informaci\'{o}n recolectada de sensores a bordo, ha sido y es un \'{a}rea estudiada en rob\'{o}tica m\'{o}vil \'{a}rea (construcci\'{o}n de mapas)[3]. Buscando probar diferentes teor\'{i}as de control, convirti\'{e}ndo los problemas t\'{i}picos de control 2D (p\'{e}ndulo inverso fijo) a un ambiente 3D, teniendo m\'{a}s variables a controlar para mantener el equilibrio del p\'{e}ndulo y al mismo tiempo lograr el movimiento y las maniobras deseadas del dron en el espacio tridimensional[4].\\
 
-El despliegue rápido de robots en situaciones de riesgo, búsqueda y rescate ha sido un área ampliamente estudiada en la robótica móvil. Donde se han aplicado teorías de grafos para la obtención de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente autónomo. Esa percepción que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura tolerante a fallas, capaz de coordinar múltiples véhiculos aéreos no trupulados a medida que incrementa o disminuye la oferta de VANT(s) disponibles.\\
+El despliegue r\'{a}pido de robots en situaciones de riesgo, b\'{u}squeda y rescate ha sido un \'{a}rea ampliamente estudiada en la rob\'{o}tica m\'{o}vil. Donde se han aplicado teor\'{i}as de grafos para la obtenci\'{o}n de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente aut\'{o}nomo. Esa percepci\'{o}n que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura tolerante a fallas, capaz de coordinar m\'{u}ltiples v\'{e}hiculos a\'{e}reos no trupulados a medida que incrementa o disminuye la oferta de VANT(s) disponibles.\\
 
-La coordinación de múltiples-VANT(s) ofrece numerosos beneficios y oportunidades en diversos campos y aplicaciones.
+La coordinaci\'{o}n de m\'{u}ltiples-VANT(s) ofrece numerosos beneficios y oportunidades en diversos campos y aplicaciones.
 
 \begin{itemize}
 \item Eficiencia y cobertura
 \item Redundancia y tolerancia a fallos
-\item Adaptabilidad a entornos dinámicos
-\item Distribución de carga de trabajo
+\item Adaptabilidad a entornos din\'{a}micos
+\item Distribuci\'{o}n de carga de trabajo
 \item Aprendizaje colaborativo
 \end{itemize}
 
 \newpage
-\section{Planteamiento del problema}
+\section*{Planteamiento del problema}
 
-La coordinación de múltiples-VANT (Vehículos Aéreos No Tripulados) es un desafío complejo en el campo de la robótica y la exploración de áreas desconocidas. A medida que la tecnología de los Vehículos Aéreos No Tripulados continúa avanzando y se vuelven más accesibles, se presenta la oportunidad de utilizar equipos de múltiples VANT(s) para realizar tareas de manera colaborativa y eficiente. Sin embargo, esta coordinación planea diversas problemáticas que deben abordarse.\\
+La coordinaci\'{o}n de m\'{u}ltiples-VANT (Veh\'{i}culos A\'{e}reos No Tripulados) es un desaf\'{i}o complejo en el campo de la rob\'{o}tica y la exploraci\'{o}n de \'{a}reas desconocidas. A medida que la tecnolog\'{i}a de los Veh\'{i}culos A\'{e}reos No Tripulados contin\'{u}a avanzando y se vuelven m\'{a}s accesibles, se presenta la oportunidad de utilizar equipos de m\'{u}ltiples VANT(s) para realizar tareas de manera colaborativa y eficiente. Sin embargo, esta coordinaci\'{o}n planea diversas problem\'{a}ticas que deben abordarse.\\
 
-La coordinación de múltiples VANT(s) implica la necesidad de establecer una comunicación efectiva entre ellos. Los VANT(s) deben intercambiar información relevante sobre su posición, estado, objetivos y otros datos importantes. La comunicación debe ser confiable, de baja latencia y capaz de manejar múltiples enlaces de manera simultánea. Además, los protocolos de comunicación deben ser seguros para proteger la integridad y confidencialidad de los datos transmitidos.\\
+La coordinaci\'{o}n de m\'{u}ltiples VANT(s) implica la necesidad de establecer una comunicaci\'{o}n efectiva entre ellos. Los VANT(s) deben intercambiar informaci\'{o}n relevante sobre su posici\'{o}n, estado, objetivos y otros datos importantes. La comunicaci\'{o}n debe ser confiable, de baja latencia y capaz de manejar m\'{u}ltiples enlaces de manera simult\'{a}nea. Adem\'{a}s, los protocolos de comunicaci\'{o}n deben ser seguros para proteger la integridad y confidencialidad de los datos transmitidos.\\
 
-Otro desafío es la planificación de rutas y la toma de decisiones distribuida. Los VANT(s) deben coordinar sus movimientos para evitar colisiones y lograr una cobertura eficiente del área objetivo. Esto implica la necesidad de desarrollar algoritmos y estrategias que permitan la planificación de rutas dinámicas, considerando los obstáculos y las restricciones del entorno. Además, los VANT(s) deben tomar decisiones colaborativas para adaptarse a situaciones imprevistas o cambios en el entorno.\\
+Otro desaf\'{i}o es la planificaci\'{o}n de rutas y la toma de decisiones distribuida. Los VANT(s) deben coordinar sus movimientos para evitar colisiones y lograr una cobertura eficiente del \'{a}rea objetivo. Esto implica la necesidad de desarrollar algoritmos y estrategias que permitan la planificaci\'{o}n de rutas din\'{a}micas, considerando los obst\'{a}culos y las restricciones del entorno. Adem\'{a}s, los VANT(s) deben tomar decisiones colaborativas para adaptarse a situaciones imprevistas o cambios en el entorno.\\
 
-La asignación de tareas también es un aspecto crítico en la coordinación de múltiples VANT(s). Cada VANT puede tener diferentes capacidades y sensores especializados, por lo que es importante asignar tareas de acuerdo con las fortalezas individuales de cada robot. Además, los VANT(s) deben colaborar en la recolección y procesamiento de datos, evitanto la duplicación de esfuerzos optimizando el uso de los recursos disponibles.\\
+La asignaci\'{o}n de tareas tambi\'{e}n es un aspecto cr\'{i}tico en la coordinaci\'{o}n de m\'{u}ltiples VANT(s). Cada VANT puede tener diferentes capacidades y sensores especializados, por lo que es importante asignar tareas de acuerdo con las fortalezas individuales de cada robot. Adem\'{a}s, los VANT(s) deben colaborar en la recolecci\'{o}n y procesamiento de datos, evitanto la duplicaci\'{o}n de esfuerzos optimizando el uso de los recursos disponibles.\\
 
-Dada un área de interés $A$ desconocida que se desea explorar,
+Dada un \'{a}rea de inter\'{e}s $A$ desconocida que se desea explorar,
 \begin{itemize}
-\item Un conjunto de Vehículos Aéreos No Tripulados (VANT) denotados como $V = V_{1},V_{2},V_{3},...,V_{n}$, donde $n$ es el número total de VANT's disponibles
-\item Un conjunto de tareas de exploración denotados como $T = T_{1}, T_{2}, T_{3}, T_{m}$, donde $m$ es el número total de tareas a realizar.
+\item Un conjunto de Veh\'{i}culos A\'{e}reos No Tripulados (VANT) denotados como $V = V_{1},V_{2},V_{3},...,V_{n}$, donde $n$ es el n\'{u}mero total de VANT's disponibles
+\item Un conjunto de tareas de exploraci\'{o}n denotados como $T = T_{1}, T_{2}, T_{3}, T_{m}$, donde $m$ es el n\'{u}mero total de tareas a realizar.
 \end{itemize}
 
-restricciones y requisitos específicos del problema, como límites de tiempo, obstáculos a evitar, etc.
+restricciones y requisitos espec\'{i}ficos del problema, como l\'{i}mites de tiempo, obst\'{a}culos a evitar, etc.
 
-Para cada tarea de exploración $T_{m}$, se definen las siguientes variables:
+Para cada tarea de exploraci\'{o}n $T_{m}$, se definen las siguientes variables:
 
 \begin{itemize}
-\item Posición inicial: $p_{i}(x,y,z)$, representa la posición inicial del VANT o los múltiples-VANTs asignados a la tarea $T_{m}$
-\item Trayectoria: $\alpha_{i}$, describe la trayectoria seguida por el/los VANT(s) asignado(s) a la tarea $T_{m}$ en función del tiempo $t$
-\item Información recolectada: $C_{i}$, representa la información recolectada por el/los VANT(s) asignado(s) durante la exploración
+\item Posici\'{o}n inicial: $p_{i}(x,y,z)$, representa la posici\'{o}n inicial del VANT o los m\'{u}ltiples-VANTs asignados a la tarea $T_{m}$
+\item Trayectoria: $\alpha_{i}$, describe la trayectoria seguida por el/los VANT(s) asignado(s) a la tarea $T_{m}$ en funci\'{o}n del tiempo $t$
+\item Informaci\'{o}n recolectada: $C_{i}$, representa la informaci\'{o}n recolectada por el/los VANT(s) asignado(s) durante la exploraci\'{o}n
 \end{itemize}
 
-La función objetivo variará según los objetivos específicos del problema.
+La funci\'{o}n objetivo variar\'{a} seg\'{u}n los objetivos espec\'{i}ficos del problema.
 \begin{itemize}
-\item Maximizar la cobertura del área de interés $A$
-\item Minimizar el tiempo total requerido para cubrir el área de interés $A$
-\item Maximizar la cantidad de información recolectada
+\item Maximizar la cobertura del \'{a}rea de inter\'{e}s $A$
+\item Minimizar el tiempo total requerido para cubrir el \'{a}rea de inter\'{e}s $A$
+\item Maximizar la cantidad de informaci\'{o}n recolectada
 \end{itemize}
 
 \newpage
-\section{Objetivos generales y espec\'{\i}ficos del proyecto}
+\section*{Objetivos generales y espec\'{\i}ficos del proyecto}
 
 \textbf{General} \\
 
-Desarrollo e implementación de una arquitectura de software tolerante a fallas para la coordinación de múltiples VANT(s) aplicados a una simulación de búsqueda y rescate.
+%Desarrollo e implementaci\'{o}n de una arquitectura de software tolerante a fallas para la coordinaci\'{o}n de m\'{u}ltiples VANT(s) aplicados a una simulaci\'{o}n de b\'{u}squeda y rescate.
+
+El objetivo general de la tesis es desarrollar estrategias efectivas para la coordinaci�n de m\'{u}ltiples Veh\'{i}culos A\'{e}reos no Tripulados, con el fin de mejorar la eficiencia y el rendimiento en aplicaciones en exploraciones a�reas.
 
 \bigskip
 \noindent
-\textbf{Particulares} \\
+%\textbf{Particulares} \\
+De manera m\'{a}s espec\'{i}fica, se encuentr\'{a}n los siguientes objetivos secundarios:
 \begin{itemize}
-\item Generación del modelado de la dinámica de un Vehículo Aéreo No Tripulado.
-\item Garantizar que los VANT(s) eviten colisiones entre sí y con objetos en su entorno.
-\item Eficiencia y rendimiento del sistema en su conjunto. Asignar tareas de manera óptima entre los múltiples-VANT(s), minimizando los tiempos de espera y de respuesta.
-\item Garantizar que cada VANT contribuya de manera efectiva al logro de los objetivos generales, sin redundancia ni superposición de tareas.
-\item Comunicación efectiva entre los múltiples-VANT(s) para intercambiar información y sincronizar sus acciones. El objetivo es establecer una comunicación confiable y eficiente que permita la transmisión de datos relevantes y las instrucciones necesarias para la coordinación.
-\item Adaptabilidad y flexibilidad: Los objetivos de la coordinación pueden cambiar en función de las circunstancias y las necesidades. La coordinación de múltiples-VANT(s) debe ser adaptable y flexible para ajustarse a cambios en el entorno, nuevos objetivos o la incorporación o salida de VANT(s) del sistema.
+%\item Generaci\'{o}n del modelado de la din\'{a}mica de un Veh\'{i}culo A\'{e}reo No Tripulado.
+%\item Garantizar que los VANT(s) eviten colisiones entre ellos y con objetos en su entorno.
+%\item Eficiencia y rendimiento del sistema en su conjunto. Asignar tareas de manera \'{o}ptima entre los m\'{u}ltiples-VANT(s), minimizando los tiempos de espera y de respuesta.
+%\item Garantizar que cada VANT contribuya de manera efectiva al logro de los objetivos generales, sin redundancia ni superposici\'{o}n de tareas.
+%\item Comunicaci\'{o}n efectiva entre los m\'{u}ltiples-VANT(s) para intercambiar informaci\'{o}n y sincronizar sus acciones. El objetivo es establecer una comunicaci\'{o}n confiable y eficiente que permita la transmisi\'{o}n de datos relevantes y las instrucciones necesarias para la coordinaci\'{o}n.
+%\item Adaptabilidad y flexibilidad: Los objetivos de la coordinaci\'{o}n pueden cambiar en funci\'{o}n de las circunstancias y las necesidades. La coordinaci\'{o}n de m\'{u}ltiples-VANT(s) debe ser adaptable y flexible para ajustarse a cambios en el entorno, nuevos objetivos o la incorporaci\'{o}n o salida de VANT(s) del sistema.
+\item Investigar y analizar las aplicaciones de coordinaci\'{o}n multi-VANT en diversos campos.
+\item Evaluar las principales limitaciones y desaf\'{i}os asociados con la coordinaci\'{o}n de m\'{u}ltiples VANT, como la comunicaci\'{o}, el control de colisiones, la asignac\'{o}n de tareas y la sincronizaci\'{o}n.
+\item Dise\~{n}ar y desarrollar algoritmos y estrategias de coordinaci\'{o}n para optimizar la interacci\'{o}n entre m\'{u}ltiples UAV, considerando aspectos como la distribuci\'{o}n de tareas, el enrutamiento eficiente, la colaboraci\'{o}n y el intercambio de informaci\'{o}n.
+\item Realizar simulaciones y pruebas de las estrategias propuestas utilizando plataformas de simulaci\'{o}n, evaluando su desempe\~{n}o en t\'{e}rminos de tiempo de respuesta, eficiencia en la asignaci\'{o}n de recursos, seguridad y capacidad de adaptaci\'{o}n a situaciones cambiantes.
+\item Comparar y analizar los resultados obtenidos con enfoques existentes en la coordinaci\'{o}n de VANTs, demostrando las ventajas y contribuciones de las estrategias propuestas.
+\item Proponer recomendaciones y pautas pr\'{a}cticas para la implementaci\'{o}n y aplicaci\'{o}n de las estrategias de coordinaci\'{o}n multi UAV en escenarios reales, considerando factores como la escalabilidad, la robustez y los recursos computacionales requeridos.
 \end{itemize}
 
 \newpage
-\section{Metodolog\'{\i}a}
+\section*{Metodolog\'{\i}a}
 
-La metodología propuesta para esta tesis se divide en tres etapas, iniciando en septiembre del 2023. A continuación se detallan cada una de las actividades que se plantean realizar en cada una.
+La metodolog\'{i}a propuesta para esta tesis se divide en tres etapas, iniciando en septiembre del 2023. A continuaci\'{o}n se detallan cada una de las actividades que se plantean realizar en cada una.
 
 \begin{enumerate}
-\item Revisión de literatura
+\item Revisi\'{o}n de literatura
   \begin{itemize}
-  \item Realizar una revisión de la literatura cientifica y técnica relacionada con la coordinación de múltiples VANT(s).
-  \item Identificar los enfoques existentes, algoritmos y tecnologías utilizadas en la coordinación de múltiples VANT(s).
+  \item Realizar una revisi\'{o}n de la literatura cientifica y t\'{e}cnica relacionada con la coordinaci\'{o}n de m\'{u}ltiples VANT(s).
+  \item Identificar los enfoques existentes, algoritmos y tecnolog\'{i}as utilizadas en la coordinaci\'{o}n de m\'{u}ltiples VANT(s).
   \end{itemize}
-\item Análisis y diseño de la solución propuesta
+\item An\'{a}lisis y dise\~{n}o de la soluci\'{o}n propuesta
   \begin{itemize}
-  \item Identificar los requisitos clave para una coordinación eficiente de VANT(s), considerando factores como la seguiridad, la eficiencia energética y la capacidad de adaptación a diferentes entornos.
-  \item Establecer métricas y criterios de evaluación para medir el desempeño de la coordinación de múltiples VANTS.
-  \item Diseñar algoritmos y protocolos de comunicación que permitan la coordinación de manera eficiente.
-    \item Proponer estrategias para la asignación de tareas y la gestión de recursos en función de los requisitos identificados.
+  \item Identificar los requisitos clave para una coordinaci\'{o}n eficiente de VANT(s), considerando factores como la seguiridad, la eficiencia energ\'{e}tica y la capacidad de adaptaci\'{o}n a diferentes entornos.
+  \item Establecer m\'{e}tricas y criterios de evaluaci\'{o}n para medir el desempe\~{n}o de la coordinaci\'{o}n de m\'{u}ltiples VANTS.
+  \item Dise\~{n}ar algoritmos y protocolos de comunicaci\'{o}n que permitan la coordinaci\'{o}n de manera eficiente.
+    \item Proponer estrategias para la asignaci\'{o}n de tareas y la gesti\'{o}n de recursos en funci\'{o}n de los requisitos identificados.
   \end{itemize}
-\item Implementación y validación
+\item Implementaci\'{o}n y validaci\'{o}n
   \begin{itemize}
-  \item Implementar la metodología propuesta utilizando lenguajes de programación adecuados y herramientas de simulación.
-  \item Realizar simulaciones para evaluar el desempeño de la coordinación de múltiples VANT(s) bajo diferentes escenarios.
+  \item Implementar la metodolog\'{i}a propuesta utilizando lenguajes de programaci\'{o}n adecuados y herramientas de simulaci\'{o}n.
+  \item Realizar simulaciones para evaluar el desempe\~{n}o de la coordinaci\'{o}n de m\'{u}ltiples VANT(s) bajo diferentes escenarios.
   \end{itemize}
-\item Evaluación, resultados y conclusiones
+\item Evaluaci\'{o}n, resultados y conclusiones
 
   \begin{itemize}
   \item Analizar y comparar los resultados obtenidos con otros enfoques existentes.
-  \item Extraer conclusiones sobre la efectividad propuesta en términos de coordinación eficiente de Vehículos Aéreos No Tripulados.
-  \item Identificar posibles mejoras y áreas de investigación futuras en el campo de la coordinación de múltiples VANT(s).
+  \item Extraer conclusiones sobre la efectividad propuesta en t\'{e}rminos de coordinaci\'{o}n eficiente de Veh\'{i}culos A\'{e}reos No Tripulados.
+  \item Identificar posibles mejoras y \'{a}reas de investigaci\'{o}n futuras en el campo de la coordinaci\'{o}n de m\'{u}ltiples VANT(s).
   \end{itemize}
 \end{enumerate}
 
 \newpage
-\section{Cronograma de actividades (plan de trabajo)}
+\section*{Cronograma de actividades (plan de trabajo)}
 
 \noindent\begin{tabular}{p{0.27\textwidth}*{12}{|p{0.04\textwidth}}|}
 % The top line
@@ -372,9 +380,9 @@ Actividad 7    \off[11] \on \\
   \end{ganttchart}
 \fi
 
-\section{Infraestructura}
+\section*{Infraestructura}
 
-Para el desarrollo de este proyecto de investigación, se hará uso de un equipo de cómputo con las siguientes características:
+Para el desarrollo de este proyecto de investigaci\'{o}n, se har\'{a} uso de un equipo de c\'{o}mputo con las siguientes caracter\'{i}sticas:
 
 \begin{itemize}
 \item iMac (21.5-inch, Late 2015)
@@ -386,113 +394,105 @@ Para el desarrollo de este proyecto de investigación, se hará uso de un equipo
 \end{itemize}
 
 \newpage
-\section{Estado del arte}
+\section*{Estado del arte}
 
 \dirtree{%
-  .1 Robótica Móvil.
-  .2 Problemas en robótica móvil.
+  .1 Rob\'{o}tica M\'{o}vil.
+  .2 Problemas en rob\'{o}tica m\'{o}vil.
   .3 Mapas.
-  .3 Localización.
-  .3 Planificación trayectorias.
-  .2 Robótica Móvil Aérea.
-  .3 Dinámica de un Vehículo Aéreo No Tripulado.
-  .3 Control de un Vehículo Aéreo No Tripulado.
-  .2 Construcción y representación de mapas 3D.
-  .3 Percepción.
+  .3 Localizaci\'{o}n.
+  .3 Planificaci\'{o}n trayectorias.
+  .2 Rob\'{o}tica M\'{o}vil A\'{e}rea.
+  .3 Din\'{a}mica de un Veh\'{i}culo A\'{e}reo No Tripulado.
+  .3 Control de un Veh\'{i}culo A\'{e}reo No Tripulado.
+  .2 Construcci\'{o}n y representaci\'{o}n de mapas 3D.
+  .3 Percepci\'{o}n.
   .4 Sensores LIDAR.
-  .4 Odometría Visual.
-  .2 Robótica Colaborativa.
-  .3 Exploración con múltiples VANT(s).
-  .3 Coordinación.
-  .3 Colaboración.
-  .3 Arquitectura de software en robótica colaborativa.
+  .4 Odometr\'{i}a Visual.
+  .2 Rob\'{o}tica Colaborativa.
+  .3 Exploraci\'{o}n con m\'{u}ltiples VANT(s).
+  .3 Coordinaci\'{o}n.
+  .3 Colaboraci\'{o}n.
+  .3 Arquitectura de software en rob\'{o}tica colaborativa.
 }
 
 \vspace{1cm}
 
-Las aplicaciones de la robótica se han centrado en realizar tareas simples y repetitivas. La necesidad de robots con capacidad de identificar cambios en su entorno y reaccionar sin la intervención humana, da origen a los robots inteligentes. Aunado a ello si deseamos que el robot se mueva libremente, los cambios en su entorno pueden aumentar rápidamente y complicar el problema de un comportamiento inteligente. Dentro de la robótica móvil inteligente se han propuesto estrategias de comportamiento reactivas, algoritmos que imitan el comportamiento de insectos y el cómo se desplanzan en un entorno.\\
-El objetivo principal de los algoritmos de navegación es el de guiar al robot desde el punto de inicio al punto destino. Los trabajos por V. Lumelsky y A. Stephanov, et al. [11], dieron respuesta a problematicas de navegación eficiente y de poca memoria (Algoritmos tipo bug).\\
-Se considera a P. Hart, N. Nilsson et al. como los creadores del algoritmo A* en 1968 [12], al mejorar el algoritmo de Dijkstra para el robot Shakey, que debía navegar en una habitación que contenía obstáculos fijos. El objetivo principal del algoritmo A* es la eficiencia en la planificación de rutas.\\
-Otros algoritmos propuestos por A. Stentzz[13] han demostrado operar de manera eficiente ante obstáculos dinámicos, a comparación del algoritmo A* que vuelve a ejecutarse al encontrarse con un obstáculo, el algoritmo D* usa la información previa para buscar una ruta hacia el objetivo.\\
+Las aplicaciones de la rob\'{o}tica se han centrado en realizar tareas simples y repetitivas. La necesidad de robots con capacidad de identificar cambios en su entorno y reaccionar sin la intervenci\'{o}n humana, da origen a los robots inteligentes. Aunado a ello si deseamos que el robot se mueva libremente, los cambios en su entorno pueden aumentar r\'{a}pidamente y complicar el problema de un comportamiento inteligente. Dentro de la rob\'{o}tica m\'{o}vil inteligente se han propuesto estrategias de comportamiento reactivas, algoritmos que imitan el comportamiento de insectos y el c\'{o}mo se desplanzan en un entorno.\\
+El objetivo principal de los algoritmos de navegaci\'{o}n es el de guiar al robot desde el punto de inicio al punto destino. Los trabajos por V. Lumelsky y A. Stephanov, et al. [11], dieron respuesta a problematicas de navegaci\'{o}n eficiente y de poca memoria (Algoritmos tipo bug).\\
+Se considera a P. Hart, N. Nilsson et al. como los creadores del algoritmo A* en 1968 [12], al mejorar el algoritmo de Dijkstra para el robot Shakey, que deb\'{i}a navegar en una habitaci\'{o}n que conten\'{i}a obst\'{a}culos fijos. El objetivo principal del algoritmo A* es la eficiencia en la planificaci\'{o}n de rutas.\\
+Otros algoritmos propuestos por A. Stentzz[13] han demostrado operar de manera eficiente ante obst\'{a}culos din\'{a}micos, a comparaci\'{o}n del algoritmo A* que vuelve a ejecutarse al encontrarse con un obst\'{a}culo, el algoritmo D* usa la informaci\'{o}n previa para buscar una ruta hacia el objetivo.\\
 
 %La planificación de trayectorias también ha abordado la problemática de la planificación de múltiples robots. Se han desarrollado algoritmos que permiten a los robots colaborar y coordinarse para evitar colisiones y mejorar la eficiencia en sus tareas. Estos enfoques utilizan técnicas de planificación centralizada o descentralizada, y pueden basarse en métodos de búsqueda o algoritmos de optimización multiobjetivo.\\
 
-La colaboración de múltiples VANTs (vehículos aéreos no tripulados), también conocidos como VANTs, ha surgido como una área de investigación prometedora en los últimos años [1,2,3,5]. La capacidad de coordinar y colaborar entre sí permite a los VANTs realizar tareas complejas de manera eficiente, abriendo nuevas posibilidades en una amplia gama de aplicaciones, desde la vigilancia y la logística hasta la exploración y la respuesta a desastres [1,2].\\
+La colaboraci\'{o}n de m\'{u}ltiples VANTs (veh\'{i}culos a\'{e}reos no tripulados), tambi\'{e}n conocidos como VANTs, ha surgido como una \'{a}rea de investigaci\'{o}n prometedora en los \'{u}ltimos a\~{n}os [1,2,3,5]. La capacidad de coordinar y colaborar entre s\'{i} permite a los VANTs realizar tareas complejas de manera eficiente, abriendo nuevas posibilidades en una amplia gama de aplicaciones, desde la vigilancia y la log\'{i}stica hasta la exploraci\'{o}n y la respuesta a desastres [1,2].\\
 
-Uno de los desafíos clave en la colaboración de múltiples VANTs es la planificación de rutas. Se han desarrollado diversos algoritmos para optimizar la planificación de rutas dentro de la robótica móvil, minimizando la colisión y mejorando la eficiencia de sus misiones[5,6]. Estos algoritmos tienen en cuenta varios factores, como las restricciones de vuelo, la energía restante de los VANTs y las ubicaciones objetivo, para generar trayectorias seguras y eficientes.\\
+Uno de los desaf\'{i}os clave en la colaboraci\'{o}n de m\'{u}ltiples VANTs es la planificaci\'{o}n de rutas. Se han desarrollado diversos algoritmos para optimizar la planificaci\'{o}n de rutas dentro de la rob\'{o}tica m\'{o}vil, minimizando la colisi\'{o}n y mejorando la eficiencia de sus misiones[5,6]. Estos algoritmos tienen en cuenta varios factores, como las restricciones de vuelo, la energ\'{i}a restante de los VANTs y las ubicaciones objetivo, para generar trayectorias seguras y eficientes.\\
 
-Además de la planificación de rutas, la coordinación de los VANTs requiere una comunicación efectiva. Se han investigado diferentes protocolos de comunicación y estrategias de intercambio de información para permitir la colaboración entre los VANTs. Algunos enfoques utilizan comunicación directa entre los VANTs, mientras que otros emplean una arquitectura de red donde los VANTs se comunican a través de una infraestructura centralizada[6]. La elección del enfoque depende de las características de la aplicación y las restricciones del sistema.\\
+Adem\'{a}s de la planificaci\'{o}n de rutas, la coordinaci\'{o}n de los VANTs requiere una comunicaci\'{o}n efectiva. Se han investigado diferentes protocolos de comunicaci\'{o}n y estrategias de intercambio de informaci\'{o}n para permitir la colaboraci\'{o}n entre los VANTs. Algunos enfoques utilizan comunicaci\'{o}n directa entre los VANTs, mientras que otros emplean una arquitectura de red donde los VANTs se comunican a trav\'{e}s de una infraestructura centralizada[6]. La elecci\'{o}n del enfoque depende de las caracter\'{i}sticas de la aplicaci\'{o}n y las restricciones del sistema.\\
 
 %La asignación de tareas es otro aspecto crucial en la colaboración de múltiples VANTs. Los VANTs deben ser capaces de dividir y asignar las tareas de manera óptima, considerando factores como la capacidad de carga, la distancia a las ubicaciones objetivo y los recursos disponibles. Se han propuesto diferentes estrategias de asignación de tareas, como algoritmos basados en la teoría de grafos y enfoques basados en técnicas de optimización.\\
 
-La colaboración de múltiples VANTs también puede implicar la formación de formaciones o la realización de tareas coordinadas. Para ello, se han desarrollado algoritmos de control distribuido que permiten a los VANTs mantener posiciones relativas estables y realizar movimientos coordinados. Estos algoritmos[14] pueden basarse en técnicas de seguimiento y control de formaciones, y se han aplicado en diferentes contextos, desde la inspección de infraestructuras hasta la búsqueda y rescate.\\
+La colaboraci\'{o}n de m\'{u}ltiples VANTs tambi\'{e}n puede implicar la formaci\'{o}n de formaciones o la realizaci\'{o}n de tareas coordinadas. Para ello, se han desarrollado algoritmos de control distribuido que permiten a los VANTs mantener posiciones relativas estables y realizar movimientos coordinados. Estos algoritmos[14] pueden basarse en t\'{e}cnicas de seguimiento y control de formaciones, y se han aplicado en diferentes contextos, desde la inspecci\'{o}n de infraestructuras hasta la b\'{u}squeda y rescate.\\
 
-En términos de validación y evaluación, se utilizan simulaciones y pruebas reales para verificar el rendimiento y la eficacia de los sistemas de colaboración de múltiples VANTs. Las simulaciones permiten evaluar diferentes escenarios y ajustar los parámetros del sistema antes de las pruebas reales. Los casos de prueba reales proporcionan información sobre la implementación y la eficiencia en situaciones del mundo real, y pueden ayudar a identificar desafíos adicionales que deben abordarse.\\
+En t\'{e}rminos de validaci\'{o}n y evaluaci\'{o}n, se utilizan simulaciones y pruebas reales para verificar el rendimiento y la eficacia de los sistemas de colaboraci\'{o}n de m\'{u}ltiples VANTs. Las simulaciones permiten evaluar diferentes escenarios y ajustar los par\'{a}metros del sistema antes de las pruebas reales. Los casos de prueba reales proporcionan informaci\'{o}n sobre la implementaci\'{o}n y la eficiencia en situaciones del mundo real, y pueden ayudar a identificar desaf\'{i}os adicionales que deben abordarse.\\
 
 %La planificación de trayectorias en robótica móvil es un campo de investigación fundamental que se enfoca en desarrollar algoritmos y técnicas para que los robots móviles puedan determinar rutas óptimas y seguras para navegar en entornos complejos. Esta área ha experimentado avances significativos en las últimas décadas, impulsada por el creciente interés en aplicaciones como la navegación autónoma, la logística y la robótica de servicio. A continuación, se presenta un estado del arte sobre la planificación de trayectorias en robótica móvil.\\
 
 %Un enfoque común en la planificación de trayectorias es la búsqueda basada en grafos. Los algoritmos de búsqueda en grafos, como el algoritmo A*, permiten encontrar rutas óptimas en entornos discretizados. Estos algoritmos generan un grafo que representa el espacio de configuración del robot, donde los nodos son posiciones posibles y las aristas representan transiciones entre ellas. Sin embargo, estos enfoques enfrentan desafíos en entornos de alta dimensionalidad y con obstáculos dinámicos, ya que la construcción y búsqueda del grafo pueden volverse computacionalmente costosas.\\
 
 
-La adquisición de datos es el primer paso en la representación de mapas 3D con VANTs. Los VANTs pueden llevar a cabo vuelos sobre un área de interés, capturando imágenes desde diferentes ángulos y alturas[15]. Estas técnicas aprovechan la información de correspondencia entre las imágenes para calcular la posición y orientación relativa de las cámaras y reconstruir la estructura tridimensional del entorno.\\
+La adquisici\'{o}n de datos es el primer paso en la representaci\'{o}n de mapas 3D con VANTs. Los VANTs pueden llevar a cabo vuelos sobre un \'{a}rea de inter\'{e}s, capturando im\'{a}genes desde diferentes \'{a}ngulos y alturas[15]. Estas t\'{e}cnicas aprovechan la informaci\'{o}n de correspondencia entre las im\'{a}genes para calcular la posici\'{o}n y orientaci\'{o}n relativa de las c\'{a}maras y reconstruir la estructura tridimensional del entorno.\\
 
-Los VANTs pueden utilizar sensores LiDAR (Light Detection and Ranging) para capturar datos 3D. Los sensores LiDAR emiten pulsos de luz láser y miden el tiempo que tarda en reflejarse en los objetos circundantes. Esto permite obtener información precisa sobre la distancia y la posición tridimensional de los objetos en el entorno. Los datos LiDAR pueden combinarse con las imágenes capturadas para generar mapas 3D completos y detallados.\\
+Los VANTs pueden utilizar sensores LiDAR (Light Detection and Ranging) para capturar datos 3D. Los sensores LiDAR emiten pulsos de luz l\'{a}ser y miden el tiempo que tarda en reflejarse en los objetos circundantes. Esto permite obtener informaci\'{o}n precisa sobre la distancia y la posici\'{o}n tridimensional de los objetos en el entorno. Los datos LiDAR pueden combinarse con las im\'{a}genes capturadas para generar mapas 3D completos y detallados.\\
 
 %La visualización y la interacción con los mapas 3D también han sido objeto de investigación. Se han desarrollado herramientas de visualización interactiva que permiten a los usuarios explorar y analizar los mapas 3D generados. Estas herramientas pueden incluir capacidades de navegación, análisis de datos y anotación de objetos para facilitar la comprensión y el uso de los mapas 3D en aplicaciones específicas.\\
 
-\section{Contribuciones o resultados esperados}
+\newpage
+\section*{Contribuciones o resultados esperados}
 
 \begin{enumerate}
-\item Códigos a disposición de la comunidad
+\item C\'{o}digos a disposici\'{o}n de la comunidad
   \begin{itemize}
-  \item Algoritmo para la planificación de rutas
-  \item Protocolos de comunicación y coordinación
-  \item Coordinación en entornos dinámicos
+  \item Algoritmo para la planificaci\'{o}n de rutas
+  \item Protocolos de comunicaci\'{o}n y coordinaci\'{o}n
+  \item Coordinaci\'{o}n en entornos din\'{a}micos
   \end{itemize}
-\item Simulación de solución
+\item Simulaci\'{o}n de soluci\'{o}n
   \begin{itemize}
   \item Simulaciones detalladas y pruebas en entornos controlados
-  \item Métricas como tiempo de respuesta, consumo de energía y la capacidad de adaptación a diferentes escenarios. 
+  \item M\'{e}tricas como tiempo de respuesta, consumo de energ\'{i}a y la capacidad de adaptaci\'{o}n a diferentes escenarios. 
   \end{itemize}
-\item Tesis impresa.
+\item Tesis impresa. \cite{Einstein1905}  \cite{Smith2020}
 \end{enumerate}
 
 \newpage
-\section{Referencias}
-
-\begin{enumerate}
-\item  H. Shakhatreh et al., 'Unmanned Aerial Vehicles: A Survey on Civil Applications and Key Research Challenges', arXiv:1805.00881, 2018
-\item P. Daponte et al., 'Metrology for drone and drone for metrology: Measurement systems on small civilian drones', in Metrology for Aerospace (MetroAeroSpace), 2015 IEEE, 2015, pp. 306-311: IEEE.
-\item A. Shukla and H. Karki, 'Application of robotics in onshore oil and gas industry A review Part I', Robotics and Autonomous Systems, vol. 75, pp. 490-507, 2016
-\item M. Hehn and R. D'Andrea, 'A flying inverted pendulum', 2011 IEEE International Conference on Robotics and Automation, Shanghai, China, 2011, pp. 763-770, doi: 10.1109/ICRA.2011.5980244.
-\item Z. Fu, Y. Mao, D. He, J. Yu and G. Xie, 'Secure Multi-UAV Collaborative Task Allocation,' in IEEE Access, vol. 7, pp. 35579-35587, 2019, doi: 10.1109/ACCESS.2019.2902221.
-\item B. Zhou, H. Xu and S. Shen, 'RACER: Rapid Collaborative Exploration With a Decentralized Multi-UAV System,' in IEEE Transactions on Robotics, vol. 39, no. 3, pp. 1816-1835, June 2023, doi: 10.1109/TRO.2023.3236945.
-\item 'Hovering over the drone patent landscape, ifi claims patent services, Nov 2014 \href{https://www.ificlaims.com/news/view/blog-posts/hovering-over-the-drone.htm}{online}
-\item L. Gupta, R. Jain, and G. Vaszkun, 'Survey of important issues in UAV communication networks', IEEE Communications Surveys \& Tutorials, vol. 18, no. 2, pp. 1123-1152, 2016.
-\item J. Senthilnath, M. Kandukuri, A. Dokania, and K. Ramesh, 'Application of UAV imaging platform for vegetation analysis based on spectral-spatial methods', Computers and Electronics in Agriculture, vol. 140, pp. 8-24, 2017.
-\item H. Zhou, H. Kong, L. Wei, D. Creighton, and S. Nahavandi, 'On detecting road regions in a single UAV image,' IEEE Trans. Intell. Transp. Syst., vol. 18, no. 7, pp. 1713-1722, 2017.
-\item V. Lumelsky y A. Stephanov, Path-Planning Strategies for a Point Mobile Automaton Moving Amidst Unknown Obstacles of Arbitrary Shapes, Algorithmica, vol. 2, pp. 403-430, 1987.
-\item Peter E. Hart, Nils J. Nilsson, Bertram Raphael, A Formal Basis for the Heuristic Determination of Minimum Cost Paths, IEEE Transactions on Systems Science and Cybernetics, vol. 4, pág 100-107, 1968
-\item A. Stentz, Optimal and efficient path planning for partially-known environments, Proc. of IEEE Conference on Robotic Automation, pág 1058-1068, 1994
-\item L. Barnes, W. Alvis, M. Fields, K. Valavanis, and W. Moreno, 'Swarm formation control with potential fields formed by bivariate normal functions,' in Control and Automation, 2006. MED'06. 14th Mediterranean Conference on, 2006, pp. 1-7: IEEE.
-\item T. Cieslewski, E. Kaufmann and D. Scaramuzza, "Rapid exploration with multi-rotors: A frontier selection method for high speed flight," 2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Vancouver, BC, Canada, 2017, pp. 2135-2142, doi: 10.1109/IROS.2017.8206030.
-\item Morbidi, F.; Cano, R.; Lara, D. Minimum-energy path generation for a quadrotor UAV. In Proceedings of the IEEE International
-Conference on Robotics and Automation, Stockholm, Sweden, 16–21 May 2016; pp. 1492–1498. 
-\item Zhang, X.Y.; Duan, H.B. An improved constrained differential evolution algorithm for unmanned aerial vehicle global route
-planning. Appl. Soft Comput. 2015, 26, 270–284
-\item Chen, Y.; Luo, G.; Mei, Y.; Yu, J.; Su, X. UAV Path Planning Using Artificial Potential Field Method Updated by Optimal Control
-Theory. Int. J. Syst. Sci. 2014, 47, 1407–1420
-\item Huang, S.; Teo, R.S.H. Computationally Efficient Visibility Graph-Based Generation Of 3D Shortest Collision-Free Path Among
-Polyhedral Obstacles For Unmanned Aerial Vehicles. In Proceedings of the International Conference on Unmanned Aircraft
-Systems, Atlanta, GA, USA, 11–14 June 2019; pp. 1218–1223.
-\item Maini, P.; Sujit, P.B. Path planning for a UAV with kinematic constraints in the presence of polygonal obstacles. In Proceedings of
-the International Conference on Unmanned Aircraft Systems, Arlington, VA, USA, 7–10 June 2016; pp. 62–67.
-\item Canny, J.; Reif, J. New lower bound techniques for robot motion planning problems. In Proceedings of the 28th Annual
-Symposium on Foundations of Computer Science, Los Angeles, CA, USA, 12–14 October 1987; pp. 49–60.
-\end{enumerate}
-
-
-
+%\section*{Referencias}
+\bibliographystyle{ieeetr}
+\bibliography{referencias.bib}
+%\begin{enumerate}
+%\item  H. Shakhatreh et al., 'Unmanned Aerial Vehicles: A Survey on Civil Applications and Key Research Challenges', arXiv:1805.00881, 2018
+%\item P. Daponte et al., 'Metrology for drone and drone for metrology: Measurement systems on small civilian drones', in Metrology for Aerospace (MetroAeroSpace), 2015 IEEE, 2015, pp. 306-311: IEEE.
+%\item A. Shukla and H. Karki, 'Application of robotics in onshore oil and gas industry A review Part I', Robotics and Autonomous Systems, vol. 75, pp. 490-507, 2016
+%\item M. Hehn and R. D'Andrea, 'A flying inverted pendulum', 2011 IEEE International Conference on Robotics and Automation, Shanghai, China, 2011, pp. 763-770, doi: 10.1109/ICRA.2011.5980244.
+%\item Z. Fu, Y. Mao, D. He, J. Yu and G. Xie, 'Secure Multi-UAV Collaborative Task Allocation,' in IEEE Access, vol. 7, pp. 35579-35587, 2019, doi: 10.1109/ACCESS.2019.2902221.
+%\item B. Zhou, H. Xu and S. Shen, 'RACER: Rapid Collaborative Exploration With a Decentralized Multi-UAV System,' in IEEE Transactions on Robotics, vol. 39, no. 3, pp. 1816-1835, June 2023, doi: 10.1109/TRO.2023.3236945.
+%\item 'Hovering over the drone patent landscape, ifi claims patent services, Nov 2014 \href{https://www.ificlaims.com/news/view/blog-posts/hovering-over-the-drone.htm}{online}
+%\item L. Gupta, R. Jain, and G. Vaszkun, 'Survey of important issues in UAV communication networks', IEEE Communications Surveys \& Tutorials, vol. 18, no. 2, pp. 1123-1152, 2016.
+%\item J. Senthilnath, M. Kandukuri, A. Dokania, and K. Ramesh, 'Application of UAV imaging platform for vegetation analysis based on spectral-spatial methods', Computers and Electronics in Agriculture, vol. 140, pp. 8-24, 2017.
+%\item H. Zhou, H. Kong, L. Wei, D. Creighton, and S. Nahavandi, 'On detecting road regions in a single UAV image,' IEEE Trans. Intell. Transp. Syst., vol. 18, no. 7, pp. 1713-1722, 2017.
+%\item V. Lumelsky y A. Stephanov, Path-Planning Strategies for a Point Mobile Automaton Moving Amidst Unknown Obstacles of Arbitrary Shapes, Algorithmica, vol. 2, pp. 403-430, 1987.
+%\item Peter E. Hart, Nils J. Nilsson, Bertram Raphael, A Formal Basis for the Heuristic Determination of Minimum Cost Paths, IEEE Transactions on Systems Science and Cybernetics, vol. 4, pág 100-107, 1968
+%\item A. Stentz, Optimal and efficient path planning for partially-known environments, Proc. of IEEE Conference on Robotic Automation, pág 1058-1068, 1994
+%\item L. Barnes, W. Alvis, M. Fields, K. Valavanis, and W. Moreno, 'Swarm formation control with potential fields formed by bivariate normal functions,' in Control and Automation, 2006. MED'06. 14th Mediterranean Conference on, 2006, pp. 1-7: IEEE.
+%\item T. Cieslewski, E. Kaufmann and D. Scaramuzza, "Rapid exploration with multi-rotors: A frontier selection method for high speed flight," 2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Vancouver, BC, Canada, 2017, pp. 2135-2142, doi: 10.1109/IROS.2017.8206030.
+%\item Morbidi, F.; Cano, R.; Lara, D. Minimum-energy path generation for a quadrotor UAV. In Proceedings of the IEEE InternationalvConference on Robotics and Automation, Stockholm, Sweden, %16–21 May 2016; pp. 1492–1498.
+%\item Zhang, X.Y.; Duan, H.B. An improved constrained differential evolution algorithm for unmanned aerial vehicle global route planning. Appl. Soft Comput. 2015, 26, %270–284
+%\item Chen, Y.; Luo, G.; Mei, Y.; Yu, J.; Su, X. UAV Path Planning Using Artificial Potential Field Method Updated by Optimal Control Theory. Int. J. Syst. Sci. 2014, 47, %1407–1420
+%\item Huang, S.; Teo, R.S.H. Computationally Efficient Visibility Graph-Based Generation Of 3D Shortest Collision-Free Path Among Polyhedral Obstacles For Unmanned Aerial Vehicles. In Proceedings of the International Conference on Unmanned Aircraft Systems, Atlanta, GA, USA, %11–14 June 2019; pp. 1218–1223.
+%\item Maini, P.; Sujit, P.B. Path planning for a UAV with kinematic constraints in the presence of polygonal obstacles. In Proceedings of the International Conference on Unmanned Aircraft Systems, Arlington, VA, USA,% 7–10 June 2016; pp. %62–67.
+%\item Canny, J.; Reif, J. New lower bound techniques for robot motion planning problems. In Proceedings of the 28th Annual Symposium on Foundations of Computer Science, Los Angeles, CA, USA, %12–14 October 1987; pp. 49–60.
+%\end{enumerate}
 
 \newpage
 \begin{center}
@@ -517,9 +517,4 @@ Dr. 4 & \underline{\hspace{5cm}} %\vspace{1cm} \\
 %\bibliography{book,jour,kocc,proc,trep}
 
 \end{document}
-
-
-
-
-
 
