@@ -44,6 +44,10 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 \usepackage{hyperref}
 \usepackage{dirtree}
 \usepackage{xcolor,colortbl}
+\usepackage{multirow}
+
+\usepackage{bbding} %palomitas checkmark
+\usepackage{pifont}
 
 % A package which allows simple repetition counts, and some useful commands
 
@@ -67,6 +71,9 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
 \begin{document}
 \maketitle
@@ -96,11 +103,12 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 Estrategias para la exploraci\'{o}n coordinada multi-VANT
 \subsection*{Datos del alumno}
 \begin{tabular}{ll} 
-Nombre:  &          Luis Alberto Ballado Aradias \\
+  Nombre:  &          Luis Alberto Ballado Aradias \\
+  Matr\'{i}cula: &   220229860003\\
 Direcci\'{o}n:   & Juan Jos\'{e} de La Garza \#909\\
                  & Colonia: Guadalupe Mainero C.P. 87130\\
-Tel\'{e}fono (casa):    & 81 20706661 \\
-Tel\'{e}fono (lugar de trabajo):    & (834) 107 0220 + Ext  \\
+Tel\'{e}fono (casa):    & +52 (833) 2126651\\
+Tel\'{e}fono (lugar de trabajo):    & +52 (834) 107 0220 + Ext  \\
 Direcci\'{o}n electr\'{o}nica: & luis.ballado@cinvestav.mx \\
 URL: & https://luis.madlab.mx
 \end{tabular}
@@ -206,35 +214,88 @@ La funci\'{o}n objetivo variar\'{a} seg\'{u}n los objetivos espec\'{i}ficos del 
 
 \textbf{General} \\
 
+Dise馻r una arquitectura de software descentralizada de baja memoria capaz de resolver los problemas de localizaci\'{o}n, mapeo, navegaci\'{o}n y coordinaci\'{o}n multi-VANT en ambientes desconocidos y din\'{a}micos para tareas de exploraci\'{o}n en interiores.
+
 %Desarrollo e implementaci\'{o}n de una arquitectura de software tolerante a fallas para la coordinaci\'{o}n de m\'{u}ltiples VANT(s) aplicados a una simulaci\'{o}n de b\'{u}squeda y rescate.
 
-El objetivo general de la tesis es desarrollar estrategias efectivas para la coordinaci髇 de m\'{u}ltiples Veh\'{i}culos A\'{e}reos no Tripulados, con el fin de mejorar la eficiencia y el rendimiento en aplicaciones en exploraciones a閞eas.
+%El objetivo general de la tesis es desarrollar estrategias efectivas para la coordinaci髇 de m\'{u}ltiples Veh\'{i}culos A\'{e}reos no Tripulados, con el fin de mejorar la eficiencia y el rendimiento en aplicaciones en exploraciones a閞eas.
 
 \bigskip
 \noindent
 %\textbf{Particulares} \\
-De manera m\'{a}s espec\'{i}fica, se encuentr\'{a}n los siguientes objetivos secundarios:
-\begin{itemize}
-%\item Generaci\'{o}n del modelado de la din\'{a}mica de un Veh\'{i}culo A\'{e}reo No Tripulado.
+De manera m\'{a}s espec\'{i}fica, se encuentr\'{a}n los siguientes objetivos: %espec\'{i}ficos:
+\begin{enumerate}
+%
 %\item Garantizar que los VANT(s) eviten colisiones entre ellos y con objetos en su entorno.
 %\item Eficiencia y rendimiento del sistema en su conjunto. Asignar tareas de manera \'{o}ptima entre los m\'{u}ltiples-VANT(s), minimizando los tiempos de espera y de respuesta.
 %\item Garantizar que cada VANT contribuya de manera efectiva al logro de los objetivos generales, sin redundancia ni superposici\'{o}n de tareas.
 %\item Comunicaci\'{o}n efectiva entre los m\'{u}ltiples-VANT(s) para intercambiar informaci\'{o}n y sincronizar sus acciones. El objetivo es establecer una comunicaci\'{o}n confiable y eficiente que permita la transmisi\'{o}n de datos relevantes y las instrucciones necesarias para la coordinaci\'{o}n.
 %\item Adaptabilidad y flexibilidad: Los objetivos de la coordinaci\'{o}n pueden cambiar en funci\'{o}n de las circunstancias y las necesidades. La coordinaci\'{o}n de m\'{u}ltiples-VANT(s) debe ser adaptable y flexible para ajustarse a cambios en el entorno, nuevos objetivos o la incorporaci\'{o}n o salida de VANT(s) del sistema.
-\item Investigar y analizar las aplicaciones de coordinaci\'{o}n multi-VANT en diversos campos.
-\item Evaluar las principales limitaciones y desaf\'{i}os asociados con la coordinaci\'{o}n de m\'{u}ltiples VANT, como la comunicaci\'{o}, el control de colisiones, la asignac\'{o}n de tareas y la sincronizaci\'{o}n.
-\item Dise\~{n}ar y desarrollar algoritmos y estrategias de coordinaci\'{o}n para optimizar la interacci\'{o}n entre m\'{u}ltiples UAV, considerando aspectos como la distribuci\'{o}n de tareas, el enrutamiento eficiente, la colaboraci\'{o}n y el intercambio de informaci\'{o}n.
-\item Realizar simulaciones y pruebas de las estrategias propuestas utilizando plataformas de simulaci\'{o}n, evaluando su desempe\~{n}o en t\'{e}rminos de tiempo de respuesta, eficiencia en la asignaci\'{o}n de recursos, seguridad y capacidad de adaptaci\'{o}n a situaciones cambiantes.
-\item Comparar y analizar los resultados obtenidos con enfoques existentes en la coordinaci\'{o}n de VANTs, demostrando las ventajas y contribuciones de las estrategias propuestas.
-\item Proponer recomendaciones y pautas pr\'{a}cticas para la implementaci\'{o}n y aplicaci\'{o}n de las estrategias de coordinaci\'{o}n multi UAV en escenarios reales, considerando factores como la escalabilidad, la robustez y los recursos computacionales requeridos.
-\end{itemize}
+\item Evaluar las limitantes de las soluciones en la literatura asociados con la coordinaci\'{o}n multi-VANT. Enfoc\'{a}ndose en aspectos como la comunicaci\'{o}n, evasi\'{o}n de obst\'{a}culos, asignaci\'{o}n de tareas y sincronizaci\'{o}n de informaci\'{o}n.
+  %, as\'{i} como conocer las soluciones propuestas en la literatura.
+\item Determinar una herramienta de simulaci\'{o}n de libre uso para rob\'{o}tica compatible con el middleware ROS (Robot Operating System).
+\item Generaci\'{o}n y manipulaci\'{o}n del modelo din\'{a}mico de un VANT en el simulador elegido.
+\item Desarrollo e implementaci\'{o}n de tres t\'{e}cnicas para la representaci\'{o}n del ambiente en 3D, as\'{i} como el desarrollo de tres planificadores de trayectorias para un \'{u}nico VANT.
+\item Desarrollo de una estrategia para la coordinaci\'{o}n multi-VANT en base a los puntos anteriores en base al mejor candidato.
+\item Realizar simulaciones y pruebas de las estrategias propuestas, evaluando su desempe\~{n}o en t\'{e}rminos de tiempo de respuesta, eficiencia en la asignaci\'{o}n de recursos, seguridad y capacidad de adaptaci\'{o}n a situaciones cambiantes.
+\item Comparar y analizar los resultados obtenidos con enfoques existentes en la coordinaci\'{o}n multi-VANT, demostrando las ventajas y contribuciones de la estrategia propuesta.
+\item Proponer recomendaciones y pautas pr\'{a}cticas para la implementaci\'{o}n y aplicaci\'{o}n de la estrategias de coordinaci\'{o}n multi-VANT en escenarios reales, considerando factores como la escalabilidad, la robustez y los recursos computacionales requeridos.
+\item Escribir un art\'{i}culo cient\'{i}fico con los hallazgos en esta tesis en relaci\'{o}n con la exploraci\'{o}n y coordinaci\'{o}n multi-VANT.
+\end{enumerate}
 
 \newpage
 \section*{Metodolog\'{\i}a}
 
-La metodolog\'{i}a propuesta para esta tesis se divide en tres etapas, iniciando en septiembre del 2023. A continuaci\'{o}n se detallan cada una de las actividades que se plantean realizar en cada una.
+La metodolog\'{i}a propuesta se divide en tres etapas, iniciando en septiembre del 2023. A continuaci\'{o}n se detallan cada una de las actividades que se plantean realizar en cada una.
 
-\begin{enumerate}
+\subsection*{Etapa 1. An\'{a}lisis y dise\~{n}o de la soluci\'{o}n propuesta}
+
+En esta etapa se comprende en la revisi\'{o}n de la literatura de manera m\'{a}s completa, que permita contar con la informaci\'{o}n necesaria para la elecci\'{o}n de los mejores algoritmos para planificaci\'{o}n de trayectorias. Una vez realizada la elecci\'{o}n del algoritmo que se usar\'{a} para la propuesta de arquitectura, se proceder\'{a} a revisar y estudiar las arquitecturas para los robots colaborativos. Finalmente, se realizar\'{a} el dise\~{n}o de la arquitectura.\\
+Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
+  
+  \begin{enumerate}
+  \item \textbf{E1.A1.} Realizar una revisi\'{o}n de la literatura sobre coordinaci\'{o}n multi-VANT.
+  \item \textbf{E1.A2.} Revisar y documentar
+  \item \textbf{E1.A3.} Estudiar los problemas
+  \item \textbf{E1.A4.} Seleccionar 
+  \item \textbf{E1.A5.} Definir la arquitectura
+  \item \textbf{E1.A6.} Proponer el dise\~{n}o
+  \item \textbf{E1.A7.} Elaborar la documentaci\'{o}n de la revisi\'{o}n bibliogr\'{a}fica realizada, que formar\'{a} parte de la tesis
+  \item \textbf{E1.A8.} Realizar la documentaci\'{o}n del trabajo realizado en la etapa
+  \end{enumerate}
+  
+  \subsection*{Etapa 2. Implementaci\'{o}n y validaci\'{o}n}
+  
+  Esta etapa se centra en la implementaci\'{o}n del dise\~{n}o del sistema ...\\
+  Las actividades espec\'{i}ficas a realizarse en la etapa 2, son:
+
+    \begin{enumerate}
+    \item \textbf{E2.A1.} Definir
+    \item \textbf{E2.A2.} Definir
+    \item \textbf{E2.A3.} Realizar
+    \item \textbf{E2.A4.} Implementar
+    \item \textbf{E2.A5.} Documentar
+    \item \textbf{E2.A6.} Elaborar
+    \end{enumerate}
+
+
+    \subsection*{Etapa 3. Evaluaci\'{o}n experimental, resultados y conclusi\'{o}n}
+    
+    Lorem itsum....\\
+    Las actividades espec\'{i}ficas a realizarse en la etapa 3, son:
+      
+    \begin{enumerate}
+    \item \textbf{E3.A1.} Experimentos para evaluar el prototipo creado en la etapa anterior en las m\'{e}tricas de inter\'{e}s
+    \item \textbf{E3.A2.} Recabar
+    \item \textbf{E3.A3.} Escribir un art\'{i}culo cient\'{i}fico, con los hallazgos de esta tesis
+    \item \textbf{E3.A4.} Iniciar el proceso de revisi\'{o}n de tesis con los directores.
+    \item \textbf{E3.A5.} Escribir los cap\'{i}tulos correspondientes a la implementaci\'{o}n, resultados y conclusiones
+    \item \textbf{E3.A6.} Iniciar el proceso de graduaci\'{o}n
+    \item \textbf{E3.A7.} Participar en actividades de difusi\'{o}n y divulgaci\'{o}n
+    \end{enumerate}
+
+    
+    \begin{enumerate}
 \item Revisi\'{o}n de literatura
   \begin{itemize}
   \item Realizar una revisi\'{o}n de la literatura cientifica y t\'{e}cnica relacionada con la coordinaci\'{o}n de m\'{u}ltiples VANT(s).
@@ -445,6 +506,21 @@ En t\'{e}rminos de validaci\'{o}n y evaluaci\'{o}n, se utilizan simulaciones y p
 La adquisici\'{o}n de datos es el primer paso en la representaci\'{o}n de mapas 3D con VANTs. Los VANTs pueden llevar a cabo vuelos sobre un \'{a}rea de inter\'{e}s, capturando im\'{a}genes desde diferentes \'{a}ngulos y alturas[15]. Estas t\'{e}cnicas aprovechan la informaci\'{o}n de correspondencia entre las im\'{a}genes para calcular la posici\'{o}n y orientaci\'{o}n relativa de las c\'{a}maras y reconstruir la estructura tridimensional del entorno.\\
 
 Los VANTs pueden utilizar sensores LiDAR (Light Detection and Ranging) para capturar datos 3D. Los sensores LiDAR emiten pulsos de luz l\'{a}ser y miden el tiempo que tarda en reflejarse en los objetos circundantes. Esto permite obtener informaci\'{o}n precisa sobre la distancia y la posici\'{o}n tridimensional de los objetos en el entorno. Los datos LiDAR pueden combinarse con las im\'{a}genes capturadas para generar mapas 3D completos y detallados.\\
+
+\begin{tabular}{ |p{1cm}||p{1cm}|p{2cm}|p{1.5cm}|p{2cm}|p{1.7cm}|p{1.7cm}|p{2.5cm}|  }
+ \hline
+ \multicolumn{8}{|c|}{Trabajos relacionados} \\
+ \hline
+ Ref.&3D&Localizaci\'{o}n&Mapa&Navegaci\'{o}n&Simulador&Percepci\'{o}n&Arquitectura\\
+ \hline
+ \cite{Smith2020}&\ding{51}&BLE&Voronoi&A*&gazebo&LiDAR&Centralizada\\
+ \cite{Smith2020}&\ding{55}&GPS&Celdas&D* Lite&gazebo&Camara&Descentralizada\\
+ \cite{Smith2020}&\ding{51}&Feat.&Grafo&RRT*&matlab&Camara&Centralizada\\
+ \cite{Smith2020}&\ding{55}&GPS&Oct-tree&A*&webots&LiDAR&Descentralizada\\
+ \cite{Smith2020}&\ding{55}&BLE&Grafo&RRT&airsim&siete&Descentralizada\\
+ 
+ \hline
+\end{tabular}
 
 %La visualizaci贸n y la interacci贸n con los mapas 3D tambi茅n han sido objeto de investigaci贸n. Se han desarrollado herramientas de visualizaci贸n interactiva que permiten a los usuarios explorar y analizar los mapas 3D generados. Estas herramientas pueden incluir capacidades de navegaci贸n, an谩lisis de datos y anotaci贸n de objetos para facilitar la comprensi贸n y el uso de los mapas 3D en aplicaciones espec铆ficas.\\
 
