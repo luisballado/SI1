@@ -1,0 +1,333 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 2.0 (March 8, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	11pt, % Set the default font size, options include: 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
+	%t, % Uncomment to vertically align all slide content to the top of the slide, rather than the default centered
+	%aspectratio=169, % Uncomment to set the aspect ratio to a 16:9 ratio which matches the aspect ratio of 1080p and 4K screens and projectors
+]{beamer}
+
+\graphicspath{{Images/}{./}} % Specifies where to look for included images (trailing slash required)
+
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule for better rules in tables
+
+%----------------------------------------------------------------------------------------
+%	SELECT LAYOUT THEME
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with a number of default layout themes which change the colors and layouts of slides. Below is a list of all themes available, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+\usetheme{Boadilla} %me gusta
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen} %dos dos
+%\usetheme{Hannover} %dos dos
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester} %muy flat
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+%----------------------------------------------------------------------------------------
+%	SELECT COLOR THEME
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with a number of color themes that can be applied to any layout theme to change its colors. Uncomment each of these in turn to see how they change the colors of your selected layout theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily} %default
+%\usecolortheme{monarca}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{spruce}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%----------------------------------------------------------------------------------------
+%	SELECT FONT THEME & FONTS
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with several font themes to easily change the fonts used in various parts of the presentation. Review the comments beside each one to decide if you would like to use it. Note that additional options can be specified for several of these font themes, consult the beamer documentation for more information.
+
+\usefonttheme{default} % Typeset using the default sans serif font
+%\usefonttheme{serif} % Typeset using the default serif font (make sure a sans font isn't being set as the default font if you use this option!)
+%\usefonttheme{structurebold} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in bold
+%\usefonttheme{structureitalicserif} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in italic serif
+%\usefonttheme{structuresmallcapsserif} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in small caps serif
+
+%------------------------------------------------
+
+%\usepackage{mathptmx} % Use the Times font for serif text
+\usepackage{palatino} % Use the Palatino font for serif text
+
+\usepackage[ruled,vlined]{algorithm2e}
+%\usepackage{helvet} % Use the Helvetica font for sans serif text
+\usepackage[default]{opensans} % Use the Open Sans font for sans serif text
+\usepackage[spanish]{babel}
+\usepackage{dirtree}
+\usepackage{xcolor}
+%\usepackage[default]{FiraSans} % Use the Fira Sans font for sans serif text
+%\usepackage[default]{lato} % Use the Lato font for sans serif text
+
+%----------------------------------------------------------------------------------------
+%	SELECT INNER THEME
+%----------------------------------------------------------------------------------------
+
+% Inner themes change the styling of internal slide elements, for example: bullet points, blocks, bibliography entries, title pages, theorems, etc. Uncomment each theme in turn to see what changes it makes to your presentation.
+
+%\useinnertheme{default}
+\useinnertheme{circles}
+%\useinnertheme{rectangles}
+%\useinnertheme{rounded}
+%\useinnertheme{inmargin}
+
+%----------------------------------------------------------------------------------------
+%	SELECT OUTER THEME
+%----------------------------------------------------------------------------------------
+
+% Outer themes change the overall layout of slides, such as: header and footer lines, sidebars and slide titles. Uncomment each theme in turn to see what changes it makes to your presentation.
+
+%\useoutertheme{default}
+%\useoutertheme{infolines}
+%\useoutertheme{miniframes}
+%\useoutertheme{smoothbars}
+%\useoutertheme{sidebar}
+%\useoutertheme{split}
+%\useoutertheme{shadow}
+%\useoutertheme{tree}
+%\useoutertheme{smoothtree}
+
+%\setbeamertemplate{footline} % Uncomment this line to remove the footer line in all slides
+%\setbeamertemplate{footline}[page number] % Uncomment this line to replace the footer line in all slides with a simple slide count
+
+%\setbeamertemplate{navigation symbols}{} % Uncomment this line to remove the navigation symbols from the bottom of all slides
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title[SEMINARIO DE INVESTIGACIÓN I]{Estrategias para la exploración coordinada multi-VANT} % The short title in the optional parameter appears at the bottom of every slide, the full title in the main parameter is only on the title page
+
+%\subtitle{Optional Subtitle} % Presentation subtitle, remove this command if a subtitle isn't required
+
+\author[Luis Ballado]{Luis Ballado} % Presenter name(s), the optional parameter can contain a shortened version to appear on the bottom of every slide, while the main parameter will appear on the title slide
+
+\institute[CINVESTAV]{CINVESTAV - UNIDAD TAMAULIPAS \\ \smallskip \textit{luis.ballado@cinvestav.mx}} % Your institution, the optional parameter can be used for the institution shorthand and will appear on the bottom of every slide after author names, while the required parameter is used on the title slide and can include your email address or additional information on separate lines
+
+\date[\today]{\today} % Presentation date or conference/meeting name, the optional parameter can contain a shortened version to appear on the bottom of every slide, while the required parameter value is output to the title slide
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SLIDE
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+  \titlepage % Output the title slide, automatically created using the text entered in the PRESENTATION INFORMATION block above
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS SLIDE
+%----------------------------------------------------------------------------------------
+
+% The table of contents outputs the sections and subsections that appear in your presentation, specified with the standard \section and \subsection commands. You may either display all sections and subsections on one slide with \tableofcontents, or display each section at a time on subsequent slides with \tableofcontents[pausesections]. The latter is useful if you want to step through each section and mention what you will discuss.
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Contenido} % Slide title, remove this command for no title
+    \tableofcontents[currentsection] % Output the table of contents (all sections on one slide)
+    %\tableofcontents[pausesections] % Output the table of contents (break sections up across separate slides)
+  \end{frame}
+}
+%----------------------------------------------------------------------------------------
+%	PRESENTATION BODY SLIDES
+%----------------------------------------------------------------------------------------
+
+%\section{Introducción} % Sections are added in order to organize your presentation into discrete blocks, all sections and subsections are automatically output to the table of contents as an overview of the talk but NOT output in the presentation as separate slides
+
+%------------------------------------------------
+
+% Ejemplo imagen
+%\begin{figure}
+%  \includegraphics[width=0.7\linewidth]{dron_ovni.jpg}
+%\end{figure}
+
+\section{Resumen}
+
+\begin{frame}
+  
+  \begin{block}{Resumen}
+
+    La importancia de la robótica de servicios en la actualidad es innegable. Estos avances están revolucionando la forma en que interactuamos con el mundo, ofreciendo un amplio abanico de aplicaciones en diversos sectores. Desde vehículos autónomos, robots móviles en lógistica, hasta la exploración espacial, la robótica de servicios ha demostrado ser útil en entornos donde los seres humanos pueden enfrentar riesgos o dificultades.\\
+  
+
+  \medskip 
+  
+  \noindent \textbf{Palabras claves:} multi-VANT, coordinación multi-agente, Exploración 3D, 3D Path finding
+  
+  \end{block}
+  
+\end{frame}
+
+\section{Descripción del proyecto}
+
+\begin{frame}
+  \frametitle{Descripción del proyecto}
+
+  El proyecto de estrategias para la exploración coordinada multi-VANT se centra en las ventajas de tener múltiples-VANT(s) trabajando en conjunto para mejorar la eficiencia y cobertura de la exploración proponiendo una arquitectura de software que con ayuda de algoritmos, permitan la coordinación eficiente de múltiples-VANT(s) para llevar a cabo tareas de exploración en entornos desconocidos y cambiantes.
+      
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Antecedentes y motivación para el proyecto}
+
+  Millones de Vehículos Aéreos No Tripulados, o también conocidos como drones, han presentado una adopción masiva en diferentes aplicaciones, desde usos civiles (búsqueda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares [1]. La popularidad de los VANT(s) es atribuida a su movilidad.\\
+
+  La idea de utilizar múltiples robots aéreos en un sistema coordinado se basa en el comportamiento de los enjambres de animales, como las abejas o los pájaros, que trabajan juntos de manera colaborativa para lograr objetivos comunes. Esta inspiración biológica ha llevado al desarrollo de algoritmos y técnicas para coordinar y controlar múltiples VANT(s) en diferentes aplicaciones.\\
+
+  El interés en la investigación e inovación de soluciones con Vehículos Aéreos No Tripulados ha crecido exponencialmente en años recientes [2,7,8,9,10].
+
+  
+\end{frame}
+
+\section{Planteamiento del problema}
+
+\begin{frame}
+  \frametitle{Planteamiento del problema}
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt lorem eget congue imperdiet. Integer in odio sollicitudin nisi porttitor bibendum. Suspendisse hendrerit, augue nec condimentum eleifend, dolor nisl bibendum purus, semper tempus lacus metus id augue. Sed non quam nec tellus ultricies euismod. Integer elementum urna rutrum, hendrerit magna sed, cursus tortor. Praesent arcu eros, porta sit amet placerat in, rutrum sed nisi. Sed sed est ut velit porttitor vulputate in sit amet ligula. Phasellus sit amet purus id turpis maximus fringilla. Duis semper posuere lacus, vitae mollis ipsum sagittis nec.\\
+
+  \begin{itemize}
+  \item<1-> Text visible on slide 1
+  \item<2-> Text visible on slide 2
+  \item<3-> Text visible on slide 3
+  \item<4-> Text visible on slide 4
+  \end{itemize}
+  
+\end{frame}
+
+\section{Objetivos generales y específicos del proyecto}
+
+\begin{frame}
+  
+  \frametitle{Objetivos generales y específicos del proyecto}
+
+  \begin{enumerate}
+  \item General \\
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt lorem eget congue imperdiet. Integer in odio sollicitudin nisi porttitor bibendum. Suspendisse hendrerit, augue nec condimentum eleifend, dolor nisl bibendum purus, semper tempus lacus metus id augue. Sed non quam nec tellus ultricies euismod. Integer elementum urna rutrum, hendrerit magna sed, cursus tortor. Praesent arcu eros, porta sit amet placerat in, rutrum sed nisi. \\
+        
+  \item Particulares\\
+
+    \begin{itemize}
+    \item Particular 1
+    \item Particular 2
+    \item Particular 3
+    \end{itemize}
+    
+  \end{enumerate}
+\end{frame}
+
+\section{Metodología}
+
+\begin{frame}
+
+  \frametitle{Metodología}
+  \bigskip % Vertical whitespace
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt lorem eget congue imperdiet. Integer in odio sollicitudin nisi porttitor bibendum. Suspendisse hendrerit, augue nec condimentum eleifend, dolor nisl bibendum purus, semper tempus lacus metus id augue. Sed non quam nec tellus ultricies euismod. Integer elementum urna rutrum, hendrerit magna sed, cursus tortor. Praesent arcu eros, porta sit amet placerat in, rutrum sed nisi. Sed sed est ut velit porttitor vulputate in sit amet ligula. Phasellus sit amet purus id turpis maximus fringilla. Duis semper posuere lacus, vitae mollis ipsum sagittis nec.\\
+  
+  \begin{itemize}
+  \item Particular 1
+  \item Particular 2
+  \item Particular 3
+  \end{itemize}
+\end{frame}
+
+
+\section{Estado del Arte}
+
+\begin{frame}
+
+  %\frametitle{Estado del Arte}
+  {\color{blue} Estado del Arte}
+  \dirtree{%
+    .1 Robótica Móvil.
+    .2 Robótica Móvil Terrestre.
+    .2 Robótica Móvil Aérea.
+    .3 Dinámica de un Vehículo Aéreo No Tripulado.
+    .3 Control de un Vehículo Aéreo No Tripulado.
+    .2 Problemas en la Robótica Móvil.
+    .3 Mapas.
+    .4 Construcción y representación de mapas 3D.
+    .5 Percepción.
+    .6 Sensores LiDAR.
+    .6 Sensores Cámaras (Odometría Visual).
+    .3 Localización.
+    .3 Planificación de trayectorias.
+    .2 Robótica Colaborativa (múltiples robots).
+    .3 Exploración.
+    .3 Coordinación.
+    .3 Colaboración.
+    .2 Arquitectura de Software en robótica.
+  }
+\end{frame}
+
+\section{Contribuciones o resultados esperados}
+
+\begin{frame}
+
+  \frametitle{Contribuciones o resultados esperados}
+
+  \begin{enumerate}
+  \item<1-> Códigos a disposición de la comunidad
+  \item<2-> Simulación de solución
+  \item<3-> Tesis impresa
+  \end{enumerate}
+  
+\end{frame}
+
+\end{document} 
