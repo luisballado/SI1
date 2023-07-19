@@ -200,12 +200,15 @@
   
   \begin{block}{Resumen}
 
-    La importancia de la robótica de servicios en la actualidad es innegable. Estos avances están revolucionando la forma en que interactuamos con el mundo, ofreciendo un amplio abanico de aplicaciones en diversos sectores. Desde vehículos autónomos, robots móviles en lógistica, hasta la exploración espacial, la robótica de servicios ha demostrado ser útil en entornos donde los seres humanos pueden enfrentar riesgos o dificultades.\\
-  
-
+    {\footnotesize Las últimas decadas se ha visto una explosión en el interés de los Vehículos Aéreos No Tripulados (VANTs o drones), a la par que se han introducido nuevas tecnologías de comunicaciones y cómputo en la nube. Los avances en comunicación han permeado al control de VANTs logrando crear soluciones en búsqueda y rescate, así como soluciones de entrega en la última milla. La mayoria de estas aplicaciones carecen de ser autónomas. Para lograr la autonomía primero se deben resolver problemas clásicos en robótica móvil (Mapeo, Localización y Navegación).\\
+      
+    Se ha demostrado que es posible dotar de autonomía a un VANT y la mayoría de las soluciones son en exteriores con una mejor lectura de un sensor GPS. Los drones del mañana deberán navegar en áreas urbanas de la mejor manera posible y tener la habilidad de trabajar en coordinación con múltiples agentes.\\
+    
+    El enfoque de este trabajo es la creación y propuesta de una arquitectura capaz de coordinar múltiples-VANTs.\\
+    }
   \medskip 
   
-  \noindent \textbf{Palabras claves:} multi-VANT, coordinación multi-agente, Exploración 3D, 3D Path finding
+  \noindent \textbf{Palabras claves:} multi-VANT, coordinación multi-agente, arquitectura multi-VANT, 3D Path finding
   
   \end{block}
   
@@ -216,35 +219,78 @@
 \begin{frame}
   \frametitle{Descripción del proyecto}
 
-  El proyecto de estrategias para la exploración coordinada multi-VANT se centra en las ventajas de tener múltiples-VANT(s) trabajando en conjunto para mejorar la eficiencia y cobertura de la exploración proponiendo una arquitectura de software que con ayuda de algoritmos, permitan la coordinación eficiente de múltiples-VANT(s) para llevar a cabo tareas de exploración en entornos desconocidos y cambiantes.
+  {\footnotesize
+  El proyecto de estrategias para la exploración coordinada múlti-VANT se centra en las ventajas de tener múltiples-VANT(s) trabajando en conjunto para mejorar la eficiencia y cobertura de la exploración proponiendo una arquitectura de software que con ayuda de algoritmos que permitan la coordinación eficiente de múltiples-VANT(s) para llevar a cabo tareas de exploración en entornos desconocidos y cambiantes.}
       
 \end{frame}
 
 \begin{frame}
 
   \frametitle{Antecedentes y motivación para el proyecto}
+  {\footnotesize
+  Millones de Vehículos Aéreos No Tripulados, o también conocidos como drones, han presentado una adopción masiva en diferentes aplicaciones, desde usos civiles (búsqueda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares [1]. La popularidad de los VANTs es atribuida a su movilidad omnidireccional.\\
 
-  Millones de Vehículos Aéreos No Tripulados, o también conocidos como drones, han presentado una adopción masiva en diferentes aplicaciones, desde usos civiles (búsqueda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares [1]. La popularidad de los VANT(s) es atribuida a su movilidad.\\
+  La idea de utilizar múltiples robots aéreos en un sistema coordinado se basa en el comportamiento de los enjambres de animales (como las abejas o los pájaros, que trabajan juntos de manera colaborativa para lograr objetivos comunes). Ésta inspiración biológica ha llevado al desarrollo de algoritmos y técnicas para coordinar y controlar múltiples VANTs en diferentes aplicaciones.\\
 
-  La idea de utilizar múltiples robots aéreos en un sistema coordinado se basa en el comportamiento de los enjambres de animales, como las abejas o los pájaros, que trabajan juntos de manera colaborativa para lograr objetivos comunes. Esta inspiración biológica ha llevado al desarrollo de algoritmos y técnicas para coordinar y controlar múltiples VANT(s) en diferentes aplicaciones.\\
-
-  El interés en la investigación e inovación de soluciones con Vehículos Aéreos No Tripulados ha crecido exponencialmente en años recientes [2,7,8,9,10].
-
+  El interés en la investigación e inovación de soluciones con Vehículos Aéreos No Tripulados ha crecido exponencialmente en años recientes [2,7,8,9,10].\\
+  }
+  \bigskip % Vertical whitespace
+  {\footnotesize
+  En recientes años, dotar a los VANTs de inteligencia para explotar la información recolectada de sensores a bordo ha sido y es un área de estudio en robótica móvil aérea (construcción de mapas)[3]. Así también los VANTs han sido un módelo interesante de estudio en control por ser marginalmente estable. Convirtiéndo los problemas típicos de control 2D (péndulo inverso fijo) a ambientes 3D [4].
+  }
   
+\end{frame}
+
+\begin{frame}
+  Calcular la ruta más corta entre dos puntos en un ambiente 3D es un problema NP-hard[21]. La mayoria de planificadores de rutas hacen uso de heuristicas y metaheuristicas para generar el óptimo más cercano \\
+  \bigskip % Vertical whitespace
+  Beneficios coordinación múlti-VANT
+  \begin{itemize}
+  \item Eficiencia y cobertura
+  \item Redundancia y tolerancia a fallos
+  \item Adaptabilidad a entornos dinámicos
+  \item Distribución de carga de trabajo
+  \item Aprendizaje colaborativo
+  \end{itemize}
 \end{frame}
 
 \section{Planteamiento del problema}
 
 \begin{frame}
   \frametitle{Planteamiento del problema}
+  
+  La coordinación múlti-VANT es un desafío complejo y plantea diversas problemáticas que deben abordarse.
+  \bigskip % Vertical whitespace
+  \begin{itemize}
+  \item<1-> Coordinación - Establecer comunicación efectiva entre los múltiples VANTs. Intercambiar información relevante. Tener baja latencia en su comunicación.
+  \item<2-> Planificación - Los VANTs deben coordinar sus movimientos para evitar colisiones y lograr una cobertura eficiente del área objetivo.
+  \item<3-> Asignación de tareas - Se busca evitar la duplicación de esfuerzos optimizando el uso de recursos disponibles.
+  \end{itemize}
+  
+\end{frame}
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt lorem eget congue imperdiet. Integer in odio sollicitudin nisi porttitor bibendum. Suspendisse hendrerit, augue nec condimentum eleifend, dolor nisl bibendum purus, semper tempus lacus metus id augue. Sed non quam nec tellus ultricies euismod. Integer elementum urna rutrum, hendrerit magna sed, cursus tortor. Praesent arcu eros, porta sit amet placerat in, rutrum sed nisi. Sed sed est ut velit porttitor vulputate in sit amet ligula. Phasellus sit amet purus id turpis maximus fringilla. Duis semper posuere lacus, vitae mollis ipsum sagittis nec.\\
+\begin{frame}
+  Dada un área de interés \textbf{A} desconocido que se desea explorar, un conjunto de VANTs denotados como \textbf{$V=V_{1},V_{2},V_{3},...,V_{n}$}, donde $n$ es el número total de VANTs disponibles, un conjunto de tareas de exploración denotados como \textbf{$T=T_{1},T_{2},T_{3},...,T_{m}$}, donde $m$ es el número total de tareas a realizar.\\
+  \bigskip % Vertical whitespace
+  Teniendo restricciones y requisitos específicos del problema, como límites de tiempo, obstáculos a evitar ... etc.\\
+
+  Para las tareas de exploración $T_{m}$, se considerán las siguientes variables:
 
   \begin{itemize}
-  \item<1-> Text visible on slide 1
-  \item<2-> Text visible on slide 2
-  \item<3-> Text visible on slide 3
-  \item<4-> Text visible on slide 4
+  \item Posición inicial: $p_{i}(x,y,z)$, posición inical VANTs
+  \item Trayectoria: $\alpha_{i}$, trayectoria seguida por los VANTs asignados a la tarea $T_{m}$ en función del tiempo t
+  \item Información recolectada: $C_{i}$, representa la información recolectada por los VANTs asignados durante la exploración
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}
+  La función objetivo puede cambiar, algunos ejemplos pueden ser:
+  \bigskip % Vertical whitespace
+  \begin{itemize}
+  \item Maximizar la cobertura del área de interés \textbf{A}
+  \item Minimizar el tiempo total requerido para cubrir el área de interés \textbf{A}
+  \item Maximizar la cantidad de información recolectada
   \end{itemize}
   
 \end{frame}
@@ -256,16 +302,17 @@
   \frametitle{Objetivos generales y específicos del proyecto}
 
   \begin{enumerate}
-  \item General \\
+  \item<1-> General \\
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt lorem eget congue imperdiet. Integer in odio sollicitudin nisi porttitor bibendum. Suspendisse hendrerit, augue nec condimentum eleifend, dolor nisl bibendum purus, semper tempus lacus metus id augue. Sed non quam nec tellus ultricies euismod. Integer elementum urna rutrum, hendrerit magna sed, cursus tortor. Praesent arcu eros, porta sit amet placerat in, rutrum sed nisi. \\
+    Desarrollo e implementación de una arquitectura de software tolerante a fallas para la coordinación de múltiples VANTs con un enfoque simulado en búsqueda y rescate.
         
-  \item Particulares\\
+  \item<2-> Particulares\\
 
     \begin{itemize}
-    \item Particular 1
-    \item Particular 2
-    \item Particular 3
+    \item<1-> Generación del modelo dinámico de un VANT 
+    \item<2-> Creación de algoritmos reactivos de baja memoria que garanticen evitar colisiones
+    \item<3-> Eficiencia y rendimiento del sistema
+    \item<4-> Adaptabilidad y flexibilidad, la coordinación múlti-VANT debe ser adaptable a cambios en el entorno, nuevos objetivos y adaptable a la incorporación o salida de VANTs durante la exploración
     \end{itemize}
     
   \end{enumerate}
@@ -278,13 +325,30 @@
   \frametitle{Metodología}
   \bigskip % Vertical whitespace
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt lorem eget congue imperdiet. Integer in odio sollicitudin nisi porttitor bibendum. Suspendisse hendrerit, augue nec condimentum eleifend, dolor nisl bibendum purus, semper tempus lacus metus id augue. Sed non quam nec tellus ultricies euismod. Integer elementum urna rutrum, hendrerit magna sed, cursus tortor. Praesent arcu eros, porta sit amet placerat in, rutrum sed nisi. Sed sed est ut velit porttitor vulputate in sit amet ligula. Phasellus sit amet purus id turpis maximus fringilla. Duis semper posuere lacus, vitae mollis ipsum sagittis nec.\\
+  \begin{enumerate}
+  \item <1-> Revisión de literatura 
+    \begin{itemize}
+    \item Realizar una revisión de la literatura científica y técnica relacionada con la coordinación de múltiples VANTs
+    \item Identificar los enfoques existentes, algoritmos y tecnologías usadas en la coordinación de múltiples VANTs
+    \end{itemize}
+  \item <2-> Análisis y diseño de la solución propuesta
+    \begin{itemize}
+    \item Identificar los requisitos clave para una coordinación eficiente
+    \item Propuesta de algoritmos y políticas de navegación que permitan la coordinación eficiente
+    \item Estrategias para la repartición de tareas y gestión de recursos.
+    \end{itemize}
+  \item <3-> Implementación y validación
+    \begin{itemize}
+    \item Hacer uso de simuladores (Son baratos, rápidos .. pero la solución está lejos de la solución propuesta en el ambiente real).
+    \item Evaluar el desempeño de la coordinación
+    \end{itemize}
+  \item <4-> Evaluación, resultados y conclusiones
+    \begin{itemize}
+    \item Analizar y comparar los resultados obtenidos con otros enfoques existentes.
+    \item Identificar posibles mejoras y áreas de investigación futuras
+    \end{itemize}
+  \end{enumerate}
   
-  \begin{itemize}
-  \item Particular 1
-  \item Particular 2
-  \item Particular 3
-  \end{itemize}
 \end{frame}
 
 
@@ -315,6 +379,109 @@
     .2 Arquitectura de Software en robótica.
   }
 \end{frame}
+
+\begin{frame}
+
+  La \textbf{robótica móvil} ha experimentado avances significativos en los últimos años, transformando múltiples sectores y abriendo nuevas posibilidades en la automatización.\\
+  Los robots móviles se pueden ver como sistemas autónomos capaces de moverse y operar en entornos cambiantes y complejos sin la necesidad de guías físicas.\\
+  
+\bigskip % Vertical whitespace
+
+En cuanto a la navegación, se han desarrollado técnicas de localización y mapeo simultáneos (SLAM) más precisas y eficientes, permitiendo construir mapas detallados de su entorno y ubicarse con mayor precisión en tiempo real. Además, se han mejorado los algoritmos de planificación de trayectorias para garantizar movimientos seguros y eficientes en entornos dinámicos.\\
+\end{frame}
+\begin{frame}
+Robótica Móvil
+\begin{itemize}
+\item <1-> Robótica Móvil Terrestre (con ruedas)\\
+  \begin{itemize}
+  \item Ackerman
+  \item Triciclo clásico
+  \item Omnidireccionales
+  \item Diferenciales
+  \end{itemize}
+\item <2-> Robótica Móvil Aérea\\
+  \begin{itemize}
+  \item Ala fija
+  \item Rotores
+    \begin{itemize}
+    \item Rotor único
+    \item Multi-rotor
+    \end{itemize}
+  \end{itemize}
+  \item <3-> Hibridos VTOL
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{figure}
+    \includegraphics[width=0.9\linewidth]{drones.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \textbf{Dinámica de un Vehículo Aéreo No Tripulado}
+
+  \begin{figure}
+    \includegraphics[width=0.5\linewidth]{d4.png}
+  \end{figure}
+
+  \begin{figure}
+    \includegraphics[width=0.5\linewidth]{d5.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  Problemas en la Robótica móvil
+  \begin{itemize}
+  \item Mapas
+  \item Localización
+  \item Planificación de trayectorias
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  Construcción y representación de mapas 3D\\
+  Percepción
+  \begin{itemize}
+  \item Sensores LiDAR
+  \item Sensores Cámaras (Odometría Visual)
+  \end{itemize}
+\end{frame}
+
+%\begin{frame}
+%  Localización 
+%\end{frame}
+
+\begin{frame}
+  \textbf{Planificación de trayectorias}\\
+         {\footnotesize
+  Dentro de la literatura a esta problemática se encuentran estudios que minimizan el tiempo de vuelo [16], la altitud de vuelo [17], y la velocidad del dron [18]. Podemos categorizar los panificadores de trayectoria dos grupos \textbf{offline y online}\\
+  Los planificadores Online dado que utilizan sensores y reaccionan a obstáculos no garantizan en dar el camino más óptimo.\\
+
+  Apesar que existen múltiples estudios donde reducen el problema de 3D a 2D [19,20]. Limitando la movilidad del VANT haciendo que los algoritmos propuestos para robótica móvil terrestre puedan ser aplicados directamente. 
+  }
+  \begin{figure}
+    \includegraphics[width=0.8\linewidth]{maps.png}
+    \caption{Representación del medio ambiente}
+  \end{figure}
+  
+\end{frame}
+
+%\begin{frame}
+%  Robótica Colaborativa
+
+%  \begin{itemize}
+%  \item Exploración
+%  \item Coordinación
+%  \item Colaboración
+%  \end{itemize}
+  
+%\end{frame}
+
+%\begin{frame}
+%  Arquitectura de software en robótica
+%\end{frame}
 
 \section{Contribuciones o resultados esperados}
 
