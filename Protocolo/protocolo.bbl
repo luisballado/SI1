@@ -1,11 +1,11 @@
 \begin{thebibliography}{1}
 
-\bibitem{Einstein1905}
-A.~Einstein, ``Zur elektrodynamik bewegter korper,'' {\em Annalen der Physik},
-  vol.~322, no.~10, pp.~891--921, 1905.
-
 \bibitem{Smith2020}
 J.~Smith and S.~Johnson, ``The importance of references,'' {\em Journal of
   Research}, vol.~15, no.~2, pp.~45--60, 2020.
+
+\bibitem{Einstein1905}
+A.~Einstein, ``Zur elektrodynamik bewegter korper,'' {\em Annalen der Physik},
+  vol.~322, no.~10, pp.~891--921, 1905.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  17 JUL 2023 15:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  18 JUL 2023 19:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -772,27 +772,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--94
+Underfull \hbox (badness 10000) in paragraph at lines 93--98
 
  []
 
@@ -800,144 +780,144 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--94
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
 
-Overfull \hbox (3.66418pt too wide) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+
+Overfull \hbox (3.66418pt too wide) in paragraph at lines 204--205
 []\OT1/cmr/m/n/10.95 Un con-jun-to de Veh^^S^^Pcu-los A^^Sereos No Tri-pu-la-do
 s (VANT) de-no-ta-dos co-mo $\OML/cmm/m/it/10.95 V \OT1/cmr/m/n/10.95 = \OML/cm
 m/m/it/10.95 V[]; V[]; V[]; :::; V[]$\OT1/cmr/m/n/10.95 ,
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-[5] [6]
-Overfull \hbox (1.73434pt too wide) in paragraph at lines 314--315
+[6]
+Overfull \hbox (1.73434pt too wide) in paragraph at lines 328--329
 []\OT1/cmr/m/n/10.95 Realizar si-mu-la-cio-nes pa-ra eva-luar el des-em-pe~no d
 e la coor-di-na-ci^^Son de m^^Sulti-ples VANT(s)
  []
 
-[7]
-Overfull \hbox (43.72517pt too wide) in paragraph at lines 328--359
+[7] [8]
+Overfull \hbox (43.72517pt too wide) in paragraph at lines 342--378
 [] 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 482--486
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 489--490
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 491--492
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 493--494
-
- []
-
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
+Underfull \hbox (badness 10000) in paragraph at lines 503--507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--507
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
 
  []
 
 
-Overfull \hbox (1.95082pt too wide) in paragraph at lines 514--514
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
+
+ []
+
+
+Overfull \hbox (1.95082pt too wide) in paragraph at lines 535--535
 []|\OT1/cmr/m/n/10.95 Localizaci^^Son| 
  []
 
 
-Overfull \hbox (3.52129pt too wide) in paragraph at lines 514--514
+Overfull \hbox (3.52129pt too wide) in paragraph at lines 535--535
 []|\OT1/cmr/m/n/10.95 Percepci^^Son| 
  []
 
 
-Overfull \hbox (3.93652pt too wide) in paragraph at lines 517--518
+Overfull \hbox (3.93652pt too wide) in paragraph at lines 538--539
 []|\OT1/cmr/m/n/10.95 Descentralizada| 
  []
 
 
-Overfull \hbox (3.93652pt too wide) in paragraph at lines 519--520
+Overfull \hbox (3.93652pt too wide) in paragraph at lines 540--541
 []|\OT1/cmr/m/n/10.95 Descentralizada| 
  []
 
 
-Overfull \hbox (3.93652pt too wide) in paragraph at lines 520--521
+Overfull \hbox (3.93652pt too wide) in paragraph at lines 541--542
 []|\OT1/cmr/m/n/10.95 Descentralizada| 
  []
 
 
-Overfull \hbox (30.51161pt too wide) in paragraph at lines 510--524
+Overfull \hbox (30.51161pt too wide) in paragraph at lines 531--545
 [][] 
  []
 
-[10] [11] (./protocolo.bbl) [12] [13] (./protocolo.aux
+[11] [12] (./protocolo.bbl) [13] [14] (./protocolo.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
@@ -945,13 +925,13 @@ Package rerunfilecheck Info: File `protocolo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23178 strings out of 478268
- 448860 string characters out of 5846348
+ 23173 strings out of 478268
+ 448824 string characters out of 5846348
  742484 words of memory out of 5000000
- 40896 multiletter control sequences out of 15000+600000
+ 40895 multiletter control sequences out of 15000+600000
  479214 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,12n,118p,879b,423s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,12n,118p,1053b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -963,10 +943,10 @@ al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
 texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on protocolo.pdf (13 pages, 174431 bytes).
+Output written on protocolo.pdf (14 pages, 174178 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
- 72 named destinations out of 1000 (max. 500000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
+ 68 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
