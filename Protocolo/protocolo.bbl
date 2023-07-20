@@ -1,11 +1,19 @@
 \begin{thebibliography}{1}
 
-\bibitem{Smith2020}
-J.~Smith and S.~Johnson, ``The importance of references,'' {\em Journal of
-  Research}, vol.~15, no.~2, pp.~45--60, 2020.
+\bibitem{Bekey2005}
+G.~A. Bekey, {\em Autonomus Robots From Biological Inspiration to
+  Implementation and Control}.
+\newblock MIT Press, 1st~ed., 2005.
 
-\bibitem{Einstein1905}
-A.~Einstein, ``Zur elektrodynamik bewegter korper,'' {\em Annalen der Physik},
-  vol.~322, no.~10, pp.~891--921, 1905.
+\bibitem{UAVCIVIL2019}
+H.~Shakhatreh, A.~H. Sawalmeh, A.~Al-Fuqaha, Z.~Dou, E.~Almaita, I.~Khalil,
+  N.~S. Othman, A.~Khreishah, and M.~Guizani, ``Unmanned aerial vehicles
+  (uavs): A survey on civil applications and key research challenges,'' {\em
+  IEEE Access}, vol.~7, pp.~48572--48634, 2019.
+
+\bibitem{RACER2022}
+B.~Zhou, H.~Xu, and S.~Shen, ``Racer: Rapid collaborative exploration with a
+  decentralized multi-uav system,'' {\em IEEE Transactions on Robotics},
+  vol.~39, no.~3, pp.~1816--1835, 2023.
 
 \end{thebibliography}

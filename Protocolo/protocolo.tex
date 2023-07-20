@@ -98,9 +98,10 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 
   %El objetivo de este trabajo es la propuesta de una arquitectura de software tolerante a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinaci\'{o}n de Veh\'{i}culos A\'{e}reos No Tripulados.\\
   %El proyecto de investigaci\'{o}n demostrar\'{a} que es posible dise\~{n}ar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboraci\'{o}n multi-VANT.
-  En las \'{u}ltimas decadas se ha visto una explosi\'{o}n en el inter\'{e}s de los Veh\'{i}culos A\'{e}reos No Tripulados (conocidos como VANT o coloquialmente drones), a la par que se han introducido nuevas tecnolog\'{i}as de comunicaci\'{o}n, percepci\'{o}n del ambiente (sensores) y computo. Los avances en comunicaci\'{o}n han sido aplicados al control de VANT, logrando crear soluciones en vigilancia, busqueda y rescate, soluciones para el problema de la \'{u}ltima milla, inclusive en espect\'{a}culos a\'{e}reos (solo por mencionar algunos). Dichas aplicaciones suelen carecer de autonom\'{i}a. Para que un robot se considere aut\'{o}nomo deber\'{a} tomar decisiones y realizar tareas sin necesidad de que alguien le diga qu\'{e} hacer o guiarlo paso a paso. Tener la capacidad de percibir su entorno utilizando diversos sensores y usar la información para decidir cómo moverse. Lograr altos niveles de aut\'{o}nomia el robot debe resolver primero problemas como la localizaci\'{o}n, mapeo y navegaci\'{o}n.\\
-  Se ha demostrado que es posible dotar de autonom\'{i}a a un robot (m\'{o}vil o a\'{e}reo) y las aplicaciones antes mencionadas son prueba de ello. Dichas soluciones parten de la ayuda de tener el problema de localizaci\'{o} resuelto al ser aplicaciones en exteriores y poder hacer uso de sensores como GPS. Los Veh\'{i}culos A\'{e}reos no Tripulados (VANT) del mañana deber\'{a}n de navegar en \'{a}reas urbanas de la mejor manera posible y tener la habilidad de trabajar en coordinaci\'{o}n multi-VANT.\\
-  El enfoque de este trabajo es la creaci\'{o}n y propuesta de una arquitectura capaz de coordinar m\'{u}ltiples Veh\'{i}culos A\'{e}reos No Tripulados con algoritmos de baja memoria para la exploraci\'{o}n de \'{a}reas desconocidas y cambiantes convirtiendose en un desaf\'{i}o en rob\'{o}tica m\'{o}vil que busca coordinar y optimizar el movimiento de varios robots para explorar eficientemente un \'{a}rea desconocida. El objetivo pudiera ser maximizar la cobertura del \'{a}rea y minimizar el tiempo requerido para completar la exploraci\'{o}n. Este problema implica tomar decisiones complejas, como asignar tareas a los robots, evitar colisiones y planificar rutas \'{o}ptimas. Factores como la comunicaci\'{o}n entre robots, la incertidumbre del entorno y las limitaciones de recursos deben ser considerados.\\
+  En las \'{u}ltimas decadas se ha visto una explosi\'{o}n en el inter\'{e}s de los Veh\'{i}culos A\'{e}reos No Tripulados (conocidos como VANT o coloquialmente drones), a la par que se han introducido nuevas tecnolog\'{i}as de comunicaci\'{o}n, sensores y computaci\'{o}n. Estos avances han sido aplicados al control de VANT, logrando crear diversas soluciones en vigilancia, busqueda y rescate, soluciones para el problema de la \'{u}ltima milla, inclusive en espect\'{a}culos a\'{e}reos (solo por mencionar algunos). Dichas aplicaciones suelen carecer de autonom\'{i}a. Para que un robot se considere aut\'{o}nomo deber\'{a} tomar decisiones y realizar tareas sin necesidad de que alguien le diga qu\'{e} hacer o guiarlo paso a paso. Tener la capacidad de percibir su entorno y usar la información para decidir c\'{o}mo moverse son considerados altos niveles de aut\'{o}nomia. Para llegar a ello el robot debe resolver primero problemas como su localizaci\'{o}n, mapeo y navegaci\'{o}n.\\
+  Se ha demostrado que es posible dotar de autonom\'{i}a a un robot (m\'{o}vil o a\'{e}reo) y las aplicaciones antes mencionadas son prueba de ello. Dichas soluciones parten de la ayuda de tener el problema de localizaci\'{o} resuelto al ser aplicaciones en exteriores y poder hacer uso de sensores de localizaci\'{o}n como GPS o GNSS. Los Veh\'{i}culos A\'{e}reos no Tripulados (VANT) del mañana deber\'{a}n de navegar en \'{a}reas urbanas de la mejor manera posible y tener la habilidad de trabajar en coordinaci\'{o}n multi-VANT.\\
+
+  El enfoque de este trabajo es la creaci\'{o}n y propuesta de una arquitectura de software capaz de coordinar m\'{u}ltiples Veh\'{i}culos A\'{e}reos No Tripulados con algoritmos para la exploraci\'{o}n de \'{a}reas desconocidas y cambiantes. Convirti\'{e}ndose en un desaf\'{i}o en rob\'{o}tica m\'{o}vil buscando coordinar y optimizar el movimiento de varios robots para explorar eficientemente un \'{a}rea desconocida. El objetivo pudiera ser maximizar la cobertura del \'{a}rea minimizando el tiempo requerido para completar la exploraci\'{o}n. Este problema implica tomar decisiones complejas, como asignar tareas a los robots, evitar colisiones y planificar rutas \'{o}ptimas. Factores como la comunicaci\'{o}n entre robots, la incertidumbre del entorno y las limitaciones de recursos son considerados.\\
   Resolver eficazmente este problema permitir\'{i}a mejorar la eficiencia y efectividad de las misiones de exploraci\'{o}n en diversos campos, como la b\'{u}squeda y rescate, la inspecci\'{o}n de infraestructuras y entre otras. \\
   \medskip \\
   
@@ -168,17 +169,81 @@ El proyecto de estrategias para la exploraci\'{o}n coordinada multi-VANT se cent
 
 \subsection*{Antecedentes y motivaci\'{o}n para el proyecto}
 
+%\begin{itemize}
+%\item Hablar de la robotica de servicios
+%\item robotica movil
+%\item clasificar los diversos robots moviles aereos
+%\item los problemas en la robotica movil
+%\item slam
+%\item robots coolaborativos
+%\end{itemize}
 
-\begin{itemize}
-\item Hablar de la robotica de servicios
-\item robotica movil
-\item clasificar los diversos robots moviles aereos
-\item los problemas en la robotica movil
-\item slam
-\item robots coolaborativos
-\end{itemize}
+Los robots aut\'{o}nomos son m\'{a}quinas inteligentes capaces de ejecutar diversas tareas en un ambiente por si mismos sin que algui\'{e}n gu\'{i}e sus movimientos.\\
+Frecuentemente definimos a un robot como una m\'{a}quina capaz de sensar, pensar y actuar. En Inteligencia Artificial dichos sistemas se les conoce como \textbf{agentes}. Los robots se distinguen de los agentes ya que su implementaci\'{o}n se lleva acabo en el mundo real recibiendo informaci\'{o}n del mundo a trav\'{e}s de sensores. Estando sujetos a las leyes que rigen el mundo f\'{i}sico (ya que tienen masa e inercia), hacen uso de computadoras que incrementan la velocidad de procesamiento con funciones cognitivas complejas.\\
 
-Millones de Veh\'{i}culos A\'{e}reos No Tripulados, o tambi\'{e}n conocidos como drones, han presentado una adopci\'{o}n masiva en diferentes aplicaciones, desde usos civiles (b\'{u}squeda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares [1]. La popularidad de los VANT(s) es atribuida a su movilidad.\\
+La autonom\'{i}a de los robots se ha ampliado en diversos aspectos y no es extra\~{n}o tener uno que ayuden en la limpieza del hogar.\\
+
+\textbf{¿Qu\'{e} es la autonom\'{i}a?}\\
+
+Autonom\'{i}a es referente a sistemas capaces de operar en el mundo como lo conocemos sin un control que lo gobierne.\\
+
+Es com\'{u}n encontrar robots que no sean aut\'{o}nomos, siendo este un campo activo de investigaci\'{o}n lo que ha causado que la autonom\'{i}a de los robots se vea incrementada as\'{i} como su inteligencia.\\
+
+\textbf{¿Qu\'{e} es un robot?}\\
+
+Podemos definir un robot como una m\'{a}quina que sensa, piensa y actua \cite{Bekey2005}. Es por ello que debe de contar con sensores, poder procesar la informaci\'{o}n y actuadores que lo ayuden a su movilidad.\\
+Los sensores son necesarios para la obtenci\'{o}n de informaci\'{o}n de su entorno. Comportamientos reactivos que no requieran procesar cierta informaci\'{o}n y una inteligencia para resolver diversos retos retos que se puedan presentar.\\
+
+\textbf{Problemas de control}\\
+
+Existen diversas capas de control. En niveles bajos de control queremos que los movimientos del robot sean estables sin oscilaciones. En otra capa de control podemos pensar en robots que no colisionen con obst\'{a}culos al mismo tiempo tener una estabilidad en sus movimientos.\\
+Esperamos que el comportamiento aut\'{o}nomo resuelva aspectos como moverse al mismo tiempo evadir obst\'{a}culos.\\
+Arquitecturas de software que permiten este tipo de control regularmente se ejecutan en paralelo y son conocidas como behavior-based architectures (Arkin 1998).\\
+
+La organizacion de software asociada con los niveles de control tiene el nombre de Arquitectura de control de un robot.\\
+
+Los controles de bajo nivel hacen uso de tecnicas de teoria de control. ((CITAR RAMIREZ))\\
+Considerando como entrada del sistema la posicion que deseamos y su orientacion. El error sera la diferencia entre la posicion deseada y la posicion actual\\
+
+Es necesario que la retroalimentacion de este tipo de controles sea de alta velocidad para evitar que los errores aumenten a lo largo del tiempo evitando la inestabilidad.\\
+
+Es comun pensar que el control en ingenieria y el control biologico presentan diversas similitudes. Por un lado los sistemas en ingenieria tienen un valor de referencia pudiendo describirlos como sistemas lineales, los controles biologicos no son lineales.\\
+
+A lo largo del desarrollo de la robotica movil se han demostrado que estrategias de control basadas en comportamientos (behavior-based) presentan mejores desempeños. (Brooks 1986, Maes \& Brooks 1990; Arkin 1998; Beer 1990) Siendo un factor que aumenta la autonomia en dificultades comunes como evitar obstaculos. Brooks et al. (Citar articulo) propusieron estrategias reactivas. El robot sensa su entorno y reacciona con los comportamientos requeridos.\\
+
+\textbf{Sensores}\\
+
+Percibir informacion del entorno es una tarea que deben realizar constantemente los robots y la implementacion de sensores de diversos sensores es necesaria. Diversos robots cuentan con sensores para detectar obstaculos en su camino siendo los sensores de tipo ultrasonico o lasers los mas implementados. Diversas soluciones con sistemas de vision son ampliamente utilizados buscando disminuir la cantidad de sensores que deba contar un robot autonomo.\\
+
+\textbf{Inteligencia}\\
+
+Decimos que un robot es una maquina que sensa, piensa y actua. Las computadoras son el cerebro de los robots, convirtiendose en elementos escenciales. Los avances en la tecnologia han logrado disminuir los tamaños de los microprocesadores asi como incrementado su velocidad y memoria\\.
+Logrando tener robots cada vez mas complejos.\\
+
+La RAE define Inteligencia como la capacidad de resolver problemas, para considerar un robot inteligente este debe cumplir diversos puntos:\\
+
+\begin{enumerate}
+\item \textbf{Procesar Informacion (Sensar)} Las lecturas provenientes de un sensor no son utiles para el control de un robot, sera necesaria una capa de procesamiento que reduzca la carga del control principal.\\
+
+\item \textbf{Reflejos} Sistemas vivientes presentan un nivel alto de reaccion (reflejos) que no involucran el procesar lo que esta sucediendo.\\
+
+\item \textbf{Programas con propositos especificos} Soluciones para la navegacion, localizacion y evacion de obstaculos deben de ser considerados en el software de un robot inteligente.\\
+
+\item \textbf{Funciones Cognitivas} La inteligencia aritficial ((ARTICULOS)) esta proviendo un gran numero de funciones cognitivas como aprender y planear.\\
+\end{enumerate}
+
+La organizacion de estos componentes de control se conoce como Arquitectura de Software de un Robot. Generalmente en una estructura gerarquica con una capa de componentes reactivos en su capa de nivel mas baja y componentes que involucran planificacion y aprendizaje en su nivel mas alto.\\
+
+El desarrollo de la robotica tiene dos rumbos, una se centra en manipulacion de objetos encambio la otra en su movilidad.\\
+
+Por un lado encontramos la robotica industrial, su desarrollo comenzo para facilitar la remocion de materiales radioactivos despues de la Segunda Guerra Mundial. Comunmente los robots manipuladores no cuentan con sensores, teniendo preprogramadas las trayectorias que debe seguir. Robots industriales recientes hacen uso diversos sensores que les permiten contar con mayor autonomia.\\
+Por otro lado la robotica de servicios, que generalmente encontramos robots que cuenten con cierto grado de movilidad (ruedas, voladores, patas ..etc).\\
+
+\textbf{Robots aereos}\\
+
+Claramente los problemas inherentes al control de vehiculos aereos son diferentes a los que pueda presentar un robot en tierra. Y su control recae en el ajuste de los angulos presentes en los tres ejes (roll, pitch, yaw).\\
+
+Millones de Veh\'{i}culos A\'{e}reos No Tripulados, o tambi\'{e}n conocidos como drones, han presentado una adopci\'{o}n masiva en diferentes aplicaciones, desde usos civiles (b\'{u}squeda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares \cite{UAVCIVIL2019}. La popularidad de los VANT(s) es atribuida a su movilidad.\\
 
 La idea de utilizar m\'{u}ltiples robots a\'{e}reos en un sistema coordinado se basa en el comportamiento de los enjambres de animales, como las abejas o los p\'{a}jaros, que trabajan juntos de manera colaborativa para lograr objetivos comunes. Esta inspiraci\'{o}n biol\'{o}gica ha llevado al desarrollo de algoritmos y t\'{e}cnicas para coordinar y controlar m\'{u}ltiples VANT(s) en diferentes aplicaciones.\\
 
@@ -316,69 +381,70 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
     \end{enumerate}
 
 \section*{Cronograma de actividades (plan de trabajo)}
-%inspiracion https://www.udocz.com/apuntes/194565/cronograma-de-actividades-del-proyecto-trucha
-\noindent\begin{tabular}{p{0.37\textwidth}*{12}{|p{0.02\textwidth}}|}
+
+\noindent\begin{tabular}{|p{0.49\textwidth}*{12}{|p{0.025\textwidth}}|}
 % The top line
 %\diagbox[width=12.5em]{Actividades}{Cuatrimestres}
-& \multicolumn{4}{c|}{Cuatrimestre 1} 
-& \multicolumn{4}{c|}{Cuatrimestre 2} 
-& \multicolumn{4}{c|}{Cuatrimestre 3}\\
+\hline
+
+& \multicolumn{4}{c|}{\textbf{Cuatrimestre 1}} 
+& \multicolumn{4}{c|}{\textbf{Cuatrimestre 2}}  
+& \multicolumn{4}{c|}{\textbf{Cuatrimestre 3}}\\
 \hline
 % The second line, with its five years of four quarters
+%\textcolor{black}{\textbf{Etapas}}
 \rpt[3]{& 1 & 2 & 3 & 4} \\
 \hline
-\textcolor{red}{Actividad 1}\\
+\textcolor{black}{\textbf{Etapa 1}}\\
 % using the on macro to fill in twenty cells as `on'
 %\specialcell{Actividad 1\\espacio}        \on[0] \off[12] \\
 %Actividad 1    \on[0] \off[12]\\
 \hline
-\textbf{E1.A1 Revisi\'{o}n estado del arte}    \on[10] \off[2] \\
+\textbf{E1.A1.} Revisi\'{o}n estado del arte    \on[10] \off[2] \\
 \hline
-\textbf{E1.A2}    \on[10]  \off[2] \\
+\textbf{E1.A2.} Evaluaci\'{o}n de aptitudes    \on[10]  \off[2] \\
 \hline
-\textbf{E1.A3}    \on[2]  \off[10] \\
+\textbf{E1.A3.} Selecci\'{o}n de algoritmos    \on[2]  \off[10] \\
 \hline
-\textbf{E1.A4}    \on[1]  \off[11] \\
+\textbf{E1.A4.} Elaboraci\'{o}n de soluci\'{on}    \on[2]  \off[10] \\
 \hline
-\textbf{E1.A5}    \on[2]  \off[10] \\
-\hline
-\textbf{E1.A6}    \on[2]  \off[10] \\
-\hline
-\textbf{E1.A7}    \on[2]  \off[10] \\
-\hline
-\textbf{E1.A8}    \on[2]  \off[10] \\
+\textbf{E1.A5.} Documentaci\'{o}n Etapa 1    \on[1]  \off[11] \\
 \hline
 % using the on macro followed by the off macro
-\textcolor{red}{Actividad 2}\\
+\textcolor{black}{\textbf{Etapa 2}}\\
 \hline
-\textbf{E2.A1}    \on[2] \off[10] \\
+\textbf{E2.A1.} Dise\~{n}o de arquitectura de software    \on[2] \off[10] \\
 \hline
-\textbf{E2.A2}    \on[2]  \off[10] \\
+\textbf{E2.A2.} Selecci\'{o}n de sensores   \on[2]  \off[10] \\
 \hline
-\textbf{E2.A3}    \on[2]  \off[10] \\
+\textbf{E2.A3.} Construcci\'{o}n de aquitectura de software  \on[2]  \off[10] \\
 \hline
-\textbf{E2.A4}    \on[2]  \off[10] \\
+\textbf{E2.A4.} Evaluaci\'{o}n desempe\~{n}o 1 VANT   \on[2]  \off[10] \\
 \hline
-\textbf{E2.A5}    \on[2]  \off[10] \\
+\textbf{E2.A5.} Evaluaci\'{o}n coordinaci\'{o}n   \on[2]  \off[10] \\
 \hline
-\textbf{E2.A6}    \on[2]  \off[10] \\
+\textbf{E2.A6.} Generaci\'{o}n de Pruebas Exploraci\'{o}n   \on[2]  \off[10] \\
 \hline
-\textcolor{red}{Actividad 3}\\
+\textbf{E2.A7.} Documentaci\'{o}n Etapa 2    \on[1]  \off[11] \\
 \hline
-\textbf{E3.A1}    \on[2] \off[6] \on[2] \off[2] \\
+\textbf{E2.A8.} Elaboraci\'{o}n C\'{a}pitulos    \on[1]  \off[11] \\
 \hline
-\textbf{E3.A2}    \off[2] \on[4] \off[4] \on[1] \off[1] \\
+\textcolor{black}{\textbf{Etapa 3}}\\
 \hline
-\textbf{E3.A3}    \off[2] \on[4] \off[4] \on[1] \off[1] \\
+\textbf{E3.A1.} Experimentaci\'{o}n   \on[2] \off[6] \on[2] \off[2] \\
 \hline
-\textbf{E3.A4}    \off[2] \on[4] \off[4] \on[1] \off[1] \\
+\textbf{E3.A2.} Recopilaci\'{o}n resultados   \off[2] \on[4] \off[4] \on[1] \off[1] \\
 \hline
-\textbf{E3.A5}    \off[2] \on[4] \off[4] \on[1] \off[1] \\
+\textbf{E3.A3.} Elaboraci\'{o}n C\'{a}pitulos Finales  \off[2] \on[4] \off[4] \on[1] \off[1] \\
 \hline
-\textbf{E3.A6}    \off[2] \on[4] \off[4] \on[1] \off[1] \\
+\textbf{E3.A4.} Participar en actividades de divulgaci\'{o}n   \off[2] \on[4] \off[4] \on[1] \off[1] \\
+\hline
+\textbf{E3.A5.}    \off[2] \on[4] \off[4] \on[1] \off[1] \\
+\hline
+\textbf{E3.A6.}    \off[2] \on[4] \off[4] \on[1] \off[1] \\
 \hline
 % Note the omitting the count to on or off is the same as setting the count to 1
-\textbf{E3.A7}    \off[11] \on\\
+\textbf{E3.A7.}    \off[11] \on\\
 \hline
 \end{tabular}
 
@@ -475,7 +541,6 @@ Para el desarrollo de este proyecto de investigaci\'{o}n, se har\'{a} uso de un 
 \item Memoria Ram 8 GB 1867 MHz DDR3
 \item Graphics Intel Iris Pro Graphics 6200 1536 MB
 \item Almacenamiento 1 TB
-\item Tarjeta Raspberry Pi para Nodos ROS
 \end{itemize}
 
 \newpage
@@ -539,11 +604,11 @@ Los VANTs pueden utilizar sensores LiDAR (Light Detection and Ranging) para capt
  \hline
  Ref.&3D&Localizaci\'{o}n&Mapa&Navegaci\'{o}n&Simulador&Percepci\'{o}n&Arquitectura\\
  \hline
- \cite{Smith2020}&\ding{51}&BLE&Voronoi&A*&gazebo&LiDAR&Centralizada\\
- \cite{Smith2020}&\ding{55}&GPS&Celdas&D* Lite&gazebo&Camara&Descentralizada\\
- \cite{Smith2020}&\ding{51}&Feat.&Grafo&RRT*&matlab&Camara&Centralizada\\
- \cite{Smith2020}&\ding{55}&GPS&Oct-tree&A*&webots&LiDAR&Descentralizada\\
- \cite{Smith2020}&\ding{55}&BLE&Grafo&RRT&airsim&siete&Descentralizada\\
+ \cite{RACER2022}&\ding{51}&BLE&Voronoi&A*&gazebo&LiDAR&Centralizada\\
+ \cite{RACER2022}&\ding{55}&GPS&Celdas&D* Lite&gazebo&Camara&Descentralizada\\
+ \cite{RACER2022}&\ding{51}&Feat.&Grafo&RRT*&matlab&Camara&Centralizada\\
+ \cite{RACER2022}&\ding{55}&GPS&Oct-tree&A*&webots&LiDAR&Descentralizada\\
+ \cite{RACER2022}&\ding{55}&BLE&Grafo&RRT&airsim&siete&Descentralizada\\
  
  \hline
 \end{tabular}
@@ -565,7 +630,7 @@ Los VANTs pueden utilizar sensores LiDAR (Light Detection and Ranging) para capt
   \item Simulaciones detalladas y pruebas en entornos controlados
   \item M\'{e}tricas como tiempo de respuesta, consumo de energ\'{i}a y la capacidad de adaptaci\'{o}n a diferentes escenarios. 
   \end{itemize}
-\item Tesis impresa. \cite{Einstein1905}  \cite{Smith2020}
+\item Tesis impresa.
 \item Divulgar este trabajo en algun espacio afin en ingenieria y tecnologia.
 
 \end{enumerate}
@@ -581,20 +646,35 @@ Los VANTs pueden utilizar sensores LiDAR (Light Detection and Ranging) para capt
 %\item M. Hehn and R. D'Andrea, 'A flying inverted pendulum', 2011 IEEE International Conference on Robotics and Automation, Shanghai, China, 2011, pp. 763-770, doi: 10.1109/ICRA.2011.5980244.
 %\item Z. Fu, Y. Mao, D. He, J. Yu and G. Xie, 'Secure Multi-UAV Collaborative Task Allocation,' in IEEE Access, vol. 7, pp. 35579-35587, 2019, doi: 10.1109/ACCESS.2019.2902221.
 %\item B. Zhou, H. Xu and S. Shen, 'RACER: Rapid Collaborative Exploration With a Decentralized Multi-UAV System,' in IEEE Transactions on Robotics, vol. 39, no. 3, pp. 1816-1835, June 2023, doi: 10.1109/TRO.2023.3236945.
+
 %\item 'Hovering over the drone patent landscape, ifi claims patent services, Nov 2014 \href{https://www.ificlaims.com/news/view/blog-posts/hovering-over-the-drone.htm}{online}
+
 %\item L. Gupta, R. Jain, and G. Vaszkun, 'Survey of important issues in UAV communication networks', IEEE Communications Surveys \& Tutorials, vol. 18, no. 2, pp. 1123-1152, 2016.
+
 %\item J. Senthilnath, M. Kandukuri, A. Dokania, and K. Ramesh, 'Application of UAV imaging platform for vegetation analysis based on spectral-spatial methods', Computers and Electronics in Agriculture, vol. 140, pp. 8-24, 2017.
+
 %\item H. Zhou, H. Kong, L. Wei, D. Creighton, and S. Nahavandi, 'On detecting road regions in a single UAV image,' IEEE Trans. Intell. Transp. Syst., vol. 18, no. 7, pp. 1713-1722, 2017.
+
 %\item V. Lumelsky y A. Stephanov, Path-Planning Strategies for a Point Mobile Automaton Moving Amidst Unknown Obstacles of Arbitrary Shapes, Algorithmica, vol. 2, pp. 403-430, 1987.
+
 %\item Peter E. Hart, Nils J. Nilsson, Bertram Raphael, A Formal Basis for the Heuristic Determination of Minimum Cost Paths, IEEE Transactions on Systems Science and Cybernetics, vol. 4, pÃ¡g 100-107, 1968
+
 %\item A. Stentz, Optimal and efficient path planning for partially-known environments, Proc. of IEEE Conference on Robotic Automation, pÃ¡g 1058-1068, 1994
+
 %\item L. Barnes, W. Alvis, M. Fields, K. Valavanis, and W. Moreno, 'Swarm formation control with potential fields formed by bivariate normal functions,' in Control and Automation, 2006. MED'06. 14th Mediterranean Conference on, 2006, pp. 1-7: IEEE.
+
 %\item T. Cieslewski, E. Kaufmann and D. Scaramuzza, "Rapid exploration with multi-rotors: A frontier selection method for high speed flight," 2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Vancouver, BC, Canada, 2017, pp. 2135-2142, doi: 10.1109/IROS.2017.8206030.
+
 %\item Morbidi, F.; Cano, R.; Lara, D. Minimum-energy path generation for a quadrotor UAV. In Proceedings of the IEEE InternationalvConference on Robotics and Automation, Stockholm, Sweden, %16â€“21 May 2016; pp. 1492â€“1498.
+
 %\item Zhang, X.Y.; Duan, H.B. An improved constrained differential evolution algorithm for unmanned aerial vehicle global route planning. Appl. Soft Comput. 2015, 26, %270â€“284
+
 %\item Chen, Y.; Luo, G.; Mei, Y.; Yu, J.; Su, X. UAV Path Planning Using Artificial Potential Field Method Updated by Optimal Control Theory. Int. J. Syst. Sci. 2014, 47, %1407â€“1420
+
 %\item Huang, S.; Teo, R.S.H. Computationally Efficient Visibility Graph-Based Generation Of 3D Shortest Collision-Free Path Among Polyhedral Obstacles For Unmanned Aerial Vehicles. In Proceedings of the International Conference on Unmanned Aircraft Systems, Atlanta, GA, USA, %11â€“14 June 2019; pp. 1218â€“1223.
+
 %\item Maini, P.; Sujit, P.B. Path planning for a UAV with kinematic constraints in the presence of polygonal obstacles. In Proceedings of the International Conference on Unmanned Aircraft Systems, Arlington, VA, USA,% 7â€“10 June 2016; pp. %62â€“67.
+
 %\item Canny, J.; Reif, J. New lower bound techniques for robot motion planning problems. In Proceedings of the 28th Annual Symposium on Foundations of Computer Science, Los Angeles, CA, USA, %12â€“14 October 1987; pp. 49â€“60.
 %\end{enumerate}
 
