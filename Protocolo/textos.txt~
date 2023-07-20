@@ -1,0 +1,39 @@
+Los robots autonomos son maquinas inteligentes capaces de ejecutar diversas tareas en un ambiente por si mismos sin que alguien guie sus movimientos.
+Frecuentemente definimos a un robot como una maquina capaz de sensar, pensar y actuar. En Inteligencia artificial dichos sistemas se les conoce como "agentes". Los robots se distinguen de los agentes ya que su implementacion se lleva acabo en el mundo real. Suelen recibir informacion del mundo atravez de sensores.
+Los robots son sujetos a las leyes que rigen el mundo fisico (tienen masa e inercia), hacen uso de computadoras que incrementan la velocidad de procesar señales de entrada y realizar funciones cognitivas.
+
+Los robots moviles sufren y deben adaptarse a las limitantes del mundo.
+
+La autonomia de los robots se ha ampliado en diversos aspectos industriales y los vemos con mayor frecuencia en nuestro dia a dia.
+
+"Creo que en los proximos 20 años veremos robots autonomos en diversos aspectos de nuestras vidas" George A. Bekey 2005.
+
+Que es la autonomia?
+
+Autonomia es referente a sistemas capaces de operar en el mundo como lo conocemos sin un control que lo gobierne.
+
+Es comun que tiempos actuales podamos encontrar robots que no sean autonomos, siendo este un campo activo de investigacion lo que ha causado que la autonomia de los robots se vea incrementada asi como su inteligencia.
+
+Que es un robot?
+
+Podemos definir un robot como una maquina que sensa, piensa y actua.
+Es por ello que debe de contar con sensores, poder procesar la informacion y actuadores que lo ayuden a su movilidad.
+Los sensores son necesarios para la obtencion de informacion de su entorno. Comportamientos reactivos que no requieran procesar cierta informacion y una inteligencia para resolver diversos retos retos que se puedan presentar.
+
+Problemas de control
+Existen diversas capas de control. En niveles bajos de control queremos que los movimientos del robot sean estables sin oscilaciones. En otra capa de control podemos pensar en robots que no colisionen con obstaculos al mismo tiempo de tener una estabilidad en sus movimientos.
+Esperamos que el comportamiento autonomo resuelva aspectos como foraging, flocking, o seguir al mismo tiempo que pueda evadir obstaculos.
+Arquitecturas de software que permiten este tipo de control regularmente se ejecutan en paralelo y son conocidos como subsumption architectures Brooks 1986 ó behavior-based architectures (Arkin 1998).
+
+La organizacion de software asociada con los niveles de control tiene el nombre de Arquitectura de control de un robot.
+
+Los controles de bajo nivel hacen uso de tecnicas de teoria de control. ((CITAR RAMIREZ))
+Considerando como entrada del sistema la posicion que deseamos y su orientacion. El error sera la diferencia entre la posicion deseada y la posicion actual
+
+Es necesario que la retroalimentacion de este tipo de controles sea de alta velocidad para evitar que los errores aumenten a lo largo del tiempo evitando la inestabilidad.
+
+Es comun pensar que el control en ingenieria y el control biologico presentan diversas similitudes. Por un lado los sistemas en ingenieria tienen un valor de referencia pudiendo describirlos como sistemas lineales, los controles biologicos no son lineales.
+
+A lo largo del desarrollo de la robotica movil se han demostrado que estrategias de control basadas en comportamientos (behavior-based) presentan mejores desempeños. (Brooks 1986, Maes & Brooks 1990; Arkin 1998; Beer 1990) Siendo un factor que aumenta la autonomia en dificultades comunes como evitar obstaculos.
+
+Brooks et al. (Citar articulo) propusieron estrategias reactivas. El robot sensa su entorno y reacciona con los comportamientos requeridos.

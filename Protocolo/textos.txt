@@ -1,0 +1,69 @@
+Los robots autonomos son maquinas inteligentes capaces de ejecutar diversas tareas en un ambiente por si mismos sin que alguien guie sus movimientos.
+Frecuentemente definimos a un robot como una maquina capaz de sensar, pensar y actuar. En Inteligencia artificial dichos sistemas se les conoce como "agentes". Los robots se distinguen de los agentes ya que su implementacion se lleva acabo en el mundo real. Suelen recibir informacion del mundo atravez de sensores.
+Los robots son sujetos a las leyes que rigen el mundo fisico (tienen masa e inercia), hacen uso de computadoras que incrementan la velocidad de procesar señales de entrada y realizar funciones cognitivas.
+
+Los robots moviles sufren y deben adaptarse a las limitantes del mundo.
+
+La autonomia de los robots se ha ampliado en diversos aspectos industriales y los vemos con mayor frecuencia en nuestro dia a dia.
+
+"Creo que en los proximos 20 años veremos robots autonomos en diversos aspectos de nuestras vidas" George A. Bekey 2005.
+
+Que es la autonomia?
+
+Autonomia es referente a sistemas capaces de operar en el mundo como lo conocemos sin un control que lo gobierne.
+
+Es comun que tiempos actuales podamos encontrar robots que no sean autonomos, siendo este un campo activo de investigacion lo que ha causado que la autonomia de los robots se vea incrementada asi como su inteligencia.
+
+Que es un robot?
+
+Podemos definir un robot como una maquina que sensa, piensa y actua.
+Es por ello que debe de contar con sensores, poder procesar la informacion y actuadores que lo ayuden a su movilidad.
+Los sensores son necesarios para la obtencion de informacion de su entorno. Comportamientos reactivos que no requieran procesar cierta informacion y una inteligencia para resolver diversos retos retos que se puedan presentar.
+
+Problemas de control
+Existen diversas capas de control. En niveles bajos de control queremos que los movimientos del robot sean estables sin oscilaciones. En otra capa de control podemos pensar en robots que no colisionen con obstaculos al mismo tiempo de tener una estabilidad en sus movimientos.
+Esperamos que el comportamiento autonomo resuelva aspectos como foraging, flocking, o seguir al mismo tiempo que pueda evadir obstaculos.
+Arquitecturas de software que permiten este tipo de control regularmente se ejecutan en paralelo y son conocidos como subsumption architectures Brooks 1986 ó behavior-based architectures (Arkin 1998).
+
+La organizacion de software asociada con los niveles de control tiene el nombre de Arquitectura de control de un robot.
+
+Los controles de bajo nivel hacen uso de tecnicas de teoria de control. ((CITAR RAMIREZ))
+Considerando como entrada del sistema la posicion que deseamos y su orientacion. El error sera la diferencia entre la posicion deseada y la posicion actual
+
+Es necesario que la retroalimentacion de este tipo de controles sea de alta velocidad para evitar que los errores aumenten a lo largo del tiempo evitando la inestabilidad.
+
+Es comun pensar que el control en ingenieria y el control biologico presentan diversas similitudes. Por un lado los sistemas en ingenieria tienen un valor de referencia pudiendo describirlos como sistemas lineales, los controles biologicos no son lineales.
+
+A lo largo del desarrollo de la robotica movil se han demostrado que estrategias de control basadas en comportamientos (behavior-based) presentan mejores desempeños. (Brooks 1986, Maes & Brooks 1990; Arkin 1998; Beer 1990) Siendo un factor que aumenta la autonomia en dificultades comunes como evitar obstaculos.
+
+Brooks et al. (Citar articulo) propusieron estrategias reactivas. El robot sensa su entorno y reacciona con los comportamientos requeridos.
+
+-Sensores-
+
+Percibir informacion del entorno es una tarea que deben realizar constantemente los robots y la implementacion de sensores de diversos sensores es necesaria. Diversos robots cuentan con sensores para detectar obstaculos en su camino siendo los sensores de tipo ultrasonico o lasers los mas implementados. Diversas soluciones con sistemas de vision son ampliamente utilizados buscando disminuir la cantidad de sensores que deba contar un robot autonomo.
+
+-Inteligencia-
+
+Decimos que un robot es una maquina que sensa, piensa y actua. Las computadoras son el cerebro de los robots, convirtiendose en elementos escenciales. Los avances en la tecnologia han logrado disminuir los tamaños de los microprocesadores asi como incrementado su velocidad y memoria. Logrando tener robots cada vez mas complejos.
+
+La RAE define Inteligencia como la capacidad de resolver problemas, para considerar un robot inteligente este debe cumplir diversos puntos:
+
+1. Procesar Informacion (Sensar).- Las lecturas provenientes de un sensor no son utiles para el control de un robot, sera necesaria una capa de procesamiento que reduzca la carga del control principal.
+
+2. Reflejos .- Sistemas vivientes presentan un nivel alto de reaccion (reflejos) que no involucran el procesar lo que esta sucediendo.
+
+3. Programas con propositos especificos.- Soluciones para la navegacion, localizacion y evacion de obstaculos deben de ser considerados en el software de un robot inteligente.
+
+4. Funciones Cognitivas.- La inteligencia aritficial ((ARTICULOS)) esta proviendo un gran numero de funciones cognitivas como aprender y planear.
+
+La organizacion de estos componentes de control se conoce como Arquitectura de Software de un Robot. Generalmente en una estructura gerarquica con una capa de componentes reactivos en su capa de nivel mas baja y componentes que involucran planificacion y aprendizaje en su nivel mas alto.
+
+El desarrollo de la robotica tiene dos rumbos, una se centra en manipulacion de objetos encambio la otra en su movilidad.
+
+Por un lado encontramos la robotica industrial, su desarrollo comenzo para facilitar la remocion de materiales radioactivos despues de la Segunda Guerra Mundial. Comunmente los robots manipuladores no cuentan con sensores, teniendo preprogramadas las trayectorias que debe seguir. Robots industriales recientes hacen uso diversos sensores que les permiten contar con mayor autonomia.
+
+Por otro lado la robotica de servicios, que generalmente encontramos robots que cuenten con cierto grado de movilidad (ruedas, voladores, patas ..etc).
+
+-Robot aereo-
+
+Claramente los problemas inherentes al control de vehiculos aereos son diferentes a los que pueda presentar un robot en tierra. Y su control recae en el ajuste de los angulos presentes en los tres ejes (roll, pitch, yaw).

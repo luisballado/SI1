@@ -59,7 +59,6 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \setlength{\extrarowheight}{1pt}
 
-
 \usepackage{forloop}
 \newcounter{loopcntr}
 \newcommand{\rpt}[2][1]{%
@@ -238,7 +237,7 @@ La funci\'{o}n objetivo variar\'{a} seg\'{u}n los objetivos espec\'{i}ficos del 
 
 \textbf{General} \\
 
-Diseñar una arquitectura de software descentralizada de baja memoria capaz de resolver los problemas de localizaci\'{o}n, mapeo, navegaci\'{o}n y coordinaci\'{o}n multi-VANT en ambientes desconocidos y din\'{a}micos para tareas de exploraci\'{o}n en interiores.
+Diseñar una arquitectura de software descentralizada capaz de resolver los problemas de localizaci\'{o}n, mapeo, navegaci\'{o}n y coordinaci\'{o}n multi-VANT en ambientes desconocidos y din\'{a}micos para tareas de exploraci\'{o}n en interiores.
 
 %Desarrollo e implementaci\'{o}n de una arquitectura de software tolerante a fallas para la coordinaci\'{o}n de m\'{u}ltiples VANT(s) aplicados a una simulaci\'{o}n de b\'{u}squeda y rescate.
 
@@ -247,26 +246,16 @@ Diseñar una arquitectura de software descentralizada de baja memoria capaz de re
 \bigskip
 \noindent
 %\textbf{Particulares} \\
-De manera m\'{a}s espec\'{i}fica, se encuentr\'{a}n los siguientes objetivos: %espec\'{i}ficos:
+De manera m\'{a}s espec\'{i}fica, se listan los siguientes objetivos: %espec\'{i}ficos:
 
 \begin{enumerate}
 
-  %
-%\item Garantizar que los VANT(s) eviten colisiones entre ellos y con objetos en su entorno.
-%\item Eficiencia y rendimiento del sistema en su conjunto. Asignar tareas de manera \'{o}ptima entre los m\'{u}ltiples-VANT(s), minimizando los tiempos de espera y de respuesta.
-%\item Garantizar que cada VANT contribuya de manera efectiva al logro de los objetivos generales, sin redundancia ni superposici\'{o}n de tareas.
-%\item Comunicaci\'{o}n efectiva entre los m\'{u}ltiples-VANT(s) para intercambiar informaci\'{o}n y sincronizar sus acciones. El objetivo es establecer una comunicaci\'{o}n confiable y eficiente que permita la transmisi\'{o}n de datos relevantes y las instrucciones necesarias para la coordinaci\'{o}n.
-%\item Adaptabilidad y flexibilidad: Los objetivos de la coordinaci\'{o}n pueden cambiar en funci\'{o}n de las circunstancias y las necesidades. La coordinaci\'{o}n de m\'{u}ltiples-VANT(s) debe ser adaptable y flexible para ajustarse a cambios en el entorno, nuevos objetivos o la incorporaci\'{o}n o salida de VANT(s) del sistema.
-\item Evaluar las limitantes de las soluciones en la literatura asociados con la coordinaci\'{o}n multi-VANT. Enfoc\'{a}ndose en aspectos como la comunicaci\'{o}n, evasi\'{o}n de obst\'{a}culos, asignaci\'{o}n de tareas y sincronizaci\'{o}n de informaci\'{o}n.%para la creaci\'{o}n de una propuesta.
-%, as\'{i} como conocer las soluciones propuestas en la literatura.
-\item Determinar una herramienta de simulaci\'{o}n de libre uso para rob\'{o}tica compatible con el middleware ROS (Robot Operating System), capaz de importar modelos tridimencionales del ambiente y del robot para lograr el control de m\'{u}ltiples agentes mediante la ejecuci\'{o}n de diversos algoritmos en lenguajes de programaci\'{o}n standard en la rob\'{o}tica pudiendo ejecutar y simular los programas de la arquitectura de coordinaci\'{o}n propuesta.
+\item \textbf{Construccion propuesta} Evaluar las soluciones en la literatura asociados con la coordinaci\'{o}n multi-VANT. Enfoc\'{a}ndose en aspectos como la comunicaci\'{o}n, evasi\'{o}n de obst\'{a}culos, asignaci\'{o}n de tareas y sincronizaci\'{o}n de informaci\'{o}n. En base a esta valoraci\'{o}n, construir una arquitectura de software para la coordinaci\'{o}n multi-VANT.
+
+\item \textbf{Valoracion (prueba) propuesta} Emplear una herramienta de simulaci\'{o}n de libre uso para rob\'{o}tica, para el desarrollo y puesta en marcha de una propuesta de arquitectura de software capaz de realizar el control multi-VANT y evaluar el desemple\~{n}o de dicha arquitectura.
   
-%\item Generaci\'{o}n y manipulaci\'{o}n del modelo din\'{a}mico de un VANT en el simulador elegido.
-%\item Desarrollo e implementaci\'{o}n de tres t\'{e}cnicas para la representaci\'{o}n del ambiente en 3D, as\'{i} como el desarrollo de tres planificadores de trayectorias para un \'{u}nico VANT.
-%\item Desarrollo de una estrategia para la coordinaci\'{o}n multi-VANT en base al mejor candidato del punto anterior.
-%\item Realizar simulaciones y pruebas de la estrategia propuesta, evaluando su desempe\~{n}o en t\'{e}rminos de tiempo de respuesta, eficiencia en la asignaci\'{o}n de recursos, seguridad y capacidad de adaptaci\'{o}n a situaciones din\'{a}micas.
-\item Comparar y analizar los resultados obtenidos con enfoques existentes en la coordinaci\'{o}n multi-VANT, demostrando las ventajas y desventajas de la estrategia propuesta. Buscando proponer recomendaciones y pautas pr\'{a}cticas para la implementaci\'{o}n y aplicaci\'{o}n de la estrategias de coordinaci\'{o}n multi-VANT en escenarios reales, considerando factores como la escalabilidad, la robustez y los recursos computacionales requeridos.
-%\item Escribir un art\'{i}culo cient\'{i}fico con los hallazgos en esta tesis en relaci\'{o}n con la exploraci\'{o}n y coordinaci\'{o}n multi-VANT.
+\item \textbf{Comparacion y analisis} Comparar y analizar los resultados obtenidos con enfoques existentes en la coordinaci\'{o}n multi-VANT, mostrando las ventajas y desventajas de la estrategia propuesta. Con base a estos an\'{a}lisis proponer recomendaciones y pautas pr\'{a}cticas para la implementaci\'{o}n y aplicaci\'{o}n de la estrategias de coordinaci\'{o}n multi-VANT en escenarios reales, considerando factores como la escalabilidad, la robustez y los recursos computacionales requeridos.
+
 \end{enumerate}
 
 \newpage
@@ -276,22 +265,22 @@ La metodolog\'{i}a propuesta se divide en tres etapas, iniciando en septiembre d
 
 \subsection*{Etapa 1. An\'{a}lisis y dise\~{n}o de la soluci\'{o}n propuesta}
 
-En esta etapa se comprende en la revisi\'{o}n de la literatura de manera m\'{a}s completa, que permita contar con la informaci\'{o}n necesaria para la elecci\'{o}n de los mejores algoritmos para planificaci\'{o}n de trayectorias. Una vez realizada la elecci\'{o}n del algoritmo que se usar\'{a} para la propuesta de arquitectura, se proceder\'{a} a revisar y estudiar las arquitecturas para los robots colaborativos. Finalmente, se realizar\'{a} el dise\~{n}o de la arquitectura.\\
+En esta etapa se comprende en la revisi\'{o}n de la literatura de manera m\'{a}s completa, que permita contar con la informaci\'{o}n necesaria para la elecci\'{o}n de los mejores algoritmos para abordar cada una de las problem\'{a}ticas asociadas con la coordinaci\'{o}n de trayectorias. Una vez realizada la elecci\'{o}n de los algoritmos que se usar\'{a}n para la propuesta de arquitectura de software, se proceder\'{a} a revisar y estudiar las arquitecturas para los robots colaborativos. Finalmente, se realizar\'{a} el dise\~{n}o de la arquitectura.\\
 Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
   
   \begin{enumerate}
-  \item \textbf{E1.A1.} Realizar una revisi\'{o}n de la literatura sobre coordinaci\'{o}n multi-VANT, exploraci\'{o}n multi-VANT.
-  \item \textbf{E1.A2.} Revisar y documentar los aspectos relevantes que permiten la colaboraci\'{o}n, coordinaci\'{o}n y balanceo de la carga de trabajo multi-VANT.
-  \item \textbf{E1.A3.} Estudiar las limitantes de las soluciones relevantes en la literatura en base a autonomia e inteligencia computacional.
-  \item \textbf{E1.A4.} Seleccionar, al menos, dos algoritmos para planificaci\'{o}n de trayectorias y exploraci\'{o}n en ambientes desconocidos m\'{a}s adecuados para un entorno de computaci\'{o}n restringida, como las usadas en la construci\'{o}n de Vehiculos Aereos No Tripulados. 
-  \item \textbf{E1.A5.} Definir la arquitectura de software para escenarios en aplicaciones multi-VANT apegadas a las especificaciones de tarjetas de desarrollo como raspberry pi o esp32.
-  \item \textbf{E1.A6.} Proponer el dise\~{n}o de la arquitectura de software que cumpla los siguientes puntos:
+  \item \textbf{E1.A1.} \textbf{Revisi\'{o}n estado del arte} Realizar una revisi\'{o}n de la literatura sobre coordinaci\'{o}n multi-VANT, exploraci\'{o}n multi-VANT.
+  \item \textbf{E1.A2.} \textbf{titulo} Revisar y documentar los aspectos relevantes que permiten la colaboraci\'{o}n, coordinaci\'{o}n y balanceo de la carga de trabajo multi-VANT.
+  \item \textbf{E1.A3.} \textbf{titulo} Estudiar las limitantes de las soluciones relevantes en la literatura en base a autonomia e inteligencia computacional.
+  \item \textbf{E1.A4.} \textbf{titulo} Seleccionar, al menos, dos algoritmos para planificaci\'{o}n de trayectorias y exploraci\'{o}n en ambientes desconocidos m\'{a}s representativos para un entorno de computaci\'{o}n restringida.
+  \item \textbf{E1.A5.} \textbf{titulo} Definir la arquitectura de software para escenarios en aplicaciones multi-VANT apegadas a las especificaciones de tarjetas de desarrollo como raspberry pi o esp32.
+  \item \textbf{E1.A6.} \textbf{titulo} Proponer el dise\~{n}o de la arquitectura de software que cumpla los siguientes puntos:
     \begin{itemize}
     \item Autonomia
     \item Inteligencia
     \end{itemize}
-  \item \textbf{E1.A7.} Elaborar la documentaci\'{o}n de la revisi\'{o}n del estado del arte realizado, que formar\'{a} parte de la tesis
-  \item \textbf{E1.A8.} Realizar la documentaci\'{o}n del trabajo realizado en la etapa.
+  \item \textbf{E1.A7.} \textbf{titulo} Elaborar la documentaci\'{o}n de la revisi\'{o}n del estado del arte realizado, que formar\'{a} parte de la tesis
+  \item \textbf{E1.A8.} \textbf{titulo} Realizar la documentaci\'{o}n del trabajo realizado en la etapa.
   \end{enumerate}
   
   \subsection*{Etapa 2. Implementaci\'{o}n y validaci\'{o}n}
@@ -299,6 +288,8 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
   Esta etapa se centra en la implementaci\'{o}n del dise\~{n}o de la arquitectura para la coordinaci\'{o}n multi-VANT.\\
   Las actividades espec\'{i}ficas a realizarse en la etapa 2, son:
 
+  \textbf{probar aqui cada modilo}
+  
     \begin{enumerate}
     \item \textbf{E2.A1.} Definir la arquitectura del prototipo.
     \item \textbf{E2.A2.} Definir la adquisicion de informacion en base de sensores comunes. (LiDAR, ultrasonido).
@@ -318,48 +309,20 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
     \item \textbf{E3.A1.} Experimentos para evaluar la solucion propuesta creada en la etapa anterior.
     \item \textbf{E3.A2.} Recabar la informacion de los resultados, realizar su analisis y generar la documentacion correspondiente.
     \item \textbf{E3.A3.} Escribir un art\'{i}culo cient\'{i}fico, con los hallazgos de esta tesis.
-    \item \textbf{E3.A4.} Iniciar el proceso de revisi\'{o}n de tesis con los directores.
+    \item \textbf{E3.A4.} Revisi\'{o}n de tesis con los directores.
     \item \textbf{E3.A5.} Escribir los cap\'{i}tulos correspondientes a la evaluaci\'{o}n, resultados y conclusiones.
     \item \textbf{E3.A6.} Iniciar el proceso de graduaci\'{o}n.
     \item \textbf{E3.A7.} Participar en actividades de difusi\'{o}n y divulgaci\'{o}n.
     \end{enumerate}
 
-    
-    %\begin{enumerate}
-%\item Revisi\'{o}n de literatura
- % \begin{itemize}
-  %\item Realizar una revisi\'{o}n de la literatura cientifica y t\'{e}cnica relacionada con la coordinaci\'{o}n de m\'{u}ltiples VANT(s).
-  %\item Identificar los enfoques existentes, algoritmos y tecnolog\'{i}as utilizadas en la coordinaci\'{o}n de m\'{u}ltiples VANT(s).
-  %\end{itemize}
-%\item An\'{a}lisis y dise\~{n}o de la soluci\'{o}n propuesta
- % \begin{itemize}
-  %\item Identificar los requisitos clave para una coordinaci\'{o}n eficiente de VANT(s), considerando factores como la seguiridad, la eficiencia energ\'{e}tica y la capacidad de adaptaci\'{o}n a diferentes entornos.
-  %\item Establecer m\'{e}tricas y criterios de evaluaci\'{o}n para medir el desempe\~{n}o de la coordinaci\'{o}n de m\'{u}ltiples VANTS.
-  %\item Dise\~{n}ar algoritmos y protocolos de comunicaci\'{o}n que permitan la coordinaci\'{o}n de manera eficiente.
-   % \item Proponer estrategias para la asignaci\'{o}n de tareas y la gesti\'{o}n de recursos en funci\'{o}n de los requisitos identificados.
-  %\end{itemize}
-%\item Implementaci\'{o}n y validaci\'{o}n
- % \begin{itemize}
-  %\item Implementar la metodolog\'{i}a propuesta utilizando lenguajes de programaci\'{o}n adecuados y herramientas de simulaci\'{o}n.
-  %\item Realizar simulaciones para evaluar el desempe\~{n}o de la coordinaci\'{o}n de m\'{u}ltiples VANT(s) bajo diferentes escenarios.
-  %\end{itemize}
-%\item Evaluaci\'{o}n, resultados y conclusiones
-
-  %\begin{itemize}
-  %\item Analizar y comparar los resultados obtenidos con otros enfoques existentes.
-  %\item Extraer conclusiones sobre la efectividad propuesta en t\'{e}rminos de coordinaci\'{o}n eficiente de Veh\'{i}culos A\'{e}reos No Tripulados.
-  %\item Identificar posibles mejoras y \'{a}reas de investigaci\'{o}n futuras en el campo de la coordinaci\'{o}n de m\'{u}ltiples VANT(s).
-  %\end{itemize}
-%\end{enumerate}
-
 \section*{Cronograma de actividades (plan de trabajo)}
 %inspiracion https://www.udocz.com/apuntes/194565/cronograma-de-actividades-del-proyecto-trucha
-\noindent\begin{tabular}{p{0.27\textwidth}*{12}{|p{0.04\textwidth}}|}
+\noindent\begin{tabular}{p{0.37\textwidth}*{12}{|p{0.02\textwidth}}|}
 % The top line
-\diagbox[width=12.5em]{Actividades}{Cuatrimestres}
-& \multicolumn{4}{c|}{Q1} 
-& \multicolumn{4}{c|}{Q2} 
-& \multicolumn{4}{c|}{Q3}\\
+%\diagbox[width=12.5em]{Actividades}{Cuatrimestres}
+& \multicolumn{4}{c|}{Cuatrimestre 1} 
+& \multicolumn{4}{c|}{Cuatrimestre 2} 
+& \multicolumn{4}{c|}{Cuatrimestre 3}\\
 \hline
 % The second line, with its five years of four quarters
 \rpt[3]{& 1 & 2 & 3 & 4} \\
@@ -369,7 +332,7 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
 %\specialcell{Actividad 1\\espacio}        \on[0] \off[12] \\
 %Actividad 1    \on[0] \off[12]\\
 \hline
-\textbf{E1.A1}    \on[10] \off[2] \\
+\textbf{E1.A1 Revisi\'{o}n estado del arte}    \on[10] \off[2] \\
 \hline
 \textbf{E1.A2}    \on[10]  \off[2] \\
 \hline
