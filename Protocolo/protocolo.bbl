@@ -1,15 +1,91 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{MITNEWS2018}
+R.~Matheson, ``Fleets of drones could aid searches for lost hikers,'' Nov 2018.
+
+\bibitem{CINVESTAM2013}
+J.~C. Elizondo~Leal, {\em Estrategia Descentralizada para la Exploraci\'{o}n
+  Multi-Robot, incluyendo Restricciones en Rango de Comunicaci\'{o}n}.
+\newblock PhD thesis, CINVESTAV Unidad Tamaulipas, Junio 2013.
+
+\bibitem{CINVES2013}
+H.~Sandoval~Garc\'{i}a, ``Generaci\'{o}n de mapas utilizando veh\'{i}culos
+  a\'{e}reos no tripulados de baja altitud,'' Master's thesis, CINVESTAV Unidad
+  Tamaulipas, Febrero 2013.
+
+\bibitem{CINVES2021}
+L.~E. Campos~Macias, {\em Multi-Agent Autonomus Navigation in Unknown Cluttered
+  Environments}.
+\newblock PhD thesis, CINVESTAV Unidad Guadalajara, Dicember 2021.
+
+\bibitem{CINVES2015}
+O.~A. Villanueva~Grijalva, ``Control de un veh\'{i}culo a\'{e}reo no tripulado
+  (auv) para reconocimiento en interiores,'' Master's thesis, CINVESTAV Unidad
+  Guadalajara, Septiembre 2015.
 
 \bibitem{Bekey2005}
 G.~A. Bekey, {\em Autonomus Robots From Biological Inspiration to
   Implementation and Control}.
 \newblock MIT Press, 1st~ed., 2005.
 
+\bibitem{ramirez2001}
+G.~Ramirez and S.~Zeghloul, ``Collision-free path planning for nonholonomic
+  mobile robots using a new obstacle representation in the velocity space,''
+  {\em Robotica}, vol.~19, no.~5, pp.~543--555, 2001.
+
 \bibitem{UAVCIVIL2019}
 H.~Shakhatreh, A.~H. Sawalmeh, A.~Al-Fuqaha, Z.~Dou, E.~Almaita, I.~Khalil,
   N.~S. Othman, A.~Khreishah, and M.~Guizani, ``Unmanned aerial vehicles
   (uavs): A survey on civil applications and key research challenges,'' {\em
   IEEE Access}, vol.~7, pp.~48572--48634, 2019.
+
+\bibitem{Daponte2015}
+P.~Daponte, L.~D. Vito, G.~Mazzilli, F.~Picariello, S.~Rapuano, and M.~Riccio,
+  ``Metrology for drone and drone for metrology: Measurement systems on small
+  civilian drones,'' {\em 2015 IEEE Metrology for Aerospace (MetroAeroSpace)},
+  pp.~306--311, 2015.
+
+\bibitem{Lcady2014}
+Lcady, ``Hovering over the drone patent landscape,'' Nov 2014.
+
+\bibitem{GUPTA2016}
+L.~Gupta, R.~Jain, and G.~Vaszkun, ``Survey of important issues in uav
+  communication networks,'' {\em IEEE Communications Surveys and Tutorials},
+  vol.~18, no.~2, pp.~1123--1152, 2016.
+
+\bibitem{VEGETACION2017}
+A.~D. J.~Senthilnath, Manasa~Kandukuri, ``Application of uav imaging platform
+  for vegetation analysis based on spectral-spatial methods,'' {\em Computers
+  and Electronics in Agriculture}, vol.~Volume 140, no.~0168-1699, pp.~8--24,
+  2017.
+
+\bibitem{ROADS2017}
+H.~Zhou, H.~Kong, L.~Wei, D.~Creighton, and S.~Nahavandi, ``On detecting road
+  regions in a single uav image,'' {\em IEEE Transactions on Intelligent
+  Transportation Systems}, vol.~18, no.~7, pp.~1713--1722, 2017.
+
+\bibitem{SHUKLA2016490}
+A.~Shukla and H.~Karki, ``Application of robotics in onshore oil and gas
+  industry - a review part i,'' {\em Robotics and Autonomous Systems}, vol.~75,
+  pp.~490--507, 2016.
+
+\bibitem{PENDU2011}
+M.~Hehn and R.~D'Andrea, ``A flying inverted pendulum,'' in {\em 2011 IEEE
+  International Conference on Robotics and Automation}, pp.~763--770, 2011.
+
+\bibitem{Collins-2019}
+M.~Collins, ``Efficient planning for high-speed mav flight in unknown
+  environments using sparse topological graphs,'' Master's thesis, Carnegie
+  Mellon University, Pittsburgh, PA, August 2019.
+
+\bibitem{LIN2017}
+e.~a. Lin~Y, Gao~F, ``Autonomous aerial navigation using monocular
+  visual-inertial fusion,'' {\em Journal of Field Robotics}, pp.~1--29, 2017.
+
+\bibitem{SELIN2019}
+M.~Selin, M.~Tiger, D.~Duberg, F.~Heintz, and P.~Jensfelt, ``Efficient
+  autonomous exploration planning of large-scale 3-d environments,'' {\em IEEE
+  Robotics and Automation Letters}, vol.~4, no.~2, pp.~1699--1706, 2019.
 
 \bibitem{RACER2022}
 B.~Zhou, H.~Xu, and S.~Shen, ``Racer: Rapid collaborative exploration with a
