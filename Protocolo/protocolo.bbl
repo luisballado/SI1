@@ -45,8 +45,11 @@ P.~Daponte, L.~D. Vito, G.~Mazzilli, F.~Picariello, S.~Rapuano, and M.~Riccio,
   civilian drones,'' {\em 2015 IEEE Metrology for Aerospace (MetroAeroSpace)},
   pp.~306--311, 2015.
 
-\bibitem{Lcady2014}
-Lcady, ``Hovering over the drone patent landscape,'' Nov 2014.
+\bibitem{UAVPRACTICAL2023}
+S.~A.~H. Mohsan, N.~Q.~H. Othman, A.~Li, Yanlong, M.~H., and M.~A. Khan,
+  ``Unmanned aerial vehicles (uavs): practical aspects, applications, open
+  challenges, security issues, and future trends,'' {\em Intelligent Service
+  Robotics}, vol.~16, no.~1, 2023.
 
 \bibitem{GUPTA2016}
 L.~Gupta, R.~Jain, and G.~Vaszkun, ``Survey of important issues in uav
@@ -72,6 +75,28 @@ A.~Shukla and H.~Karki, ``Application of robotics in onshore oil and gas
 \bibitem{PENDU2011}
 M.~Hehn and R.~D'Andrea, ``A flying inverted pendulum,'' in {\em 2011 IEEE
   International Conference on Robotics and Automation}, pp.~763--770, 2011.
+
+\bibitem{BUG2019}
+K.~N. McGuire, C.~D. Wagter, K.~Tuyls, H.~J. Kappen, and G.~C. H.~E. de~Croon,
+  ``Minimal navigation solution for a swarm of tiny flying robots to explore an
+  unknown environment,'' {\em Science Robotics}, vol.~4, no.~35, p.~eaaw9710,
+  2019.
+
+\bibitem{ACM2023}
+M.~Jones, S.~Djahel, and K.~Welsh, ``Path-planning for unmanned aerial vehicles
+  with environment complexity considerations: A survey,'' {\em ACM Comput.
+  Surv.}, vol.~55, feb 2023.
+
+\bibitem{KUMAR2023}
+K.~Kumar and N.~Kumar, ``Region coverage-aware path planning for unmanned
+  aerial vehicles: A systematic review,'' {\em Physical Communication},
+  vol.~59, p.~102073, 2023.
+
+\bibitem{machines2023}
+D.~Zhang, Z.~Xuan, Y.~Zhang, J.~Yao, X.~Li, and X.~Li, ``Path planning of
+  unmanned aerial vehicle in complex environments based on state-detection twin
+  delayed deep deterministic policy gradient,'' {\em Machines}, vol.~11, no.~1,
+  2023.
 
 \bibitem{Collins-2019}
 M.~Collins, ``Efficient planning for high-speed mav flight in unknown
