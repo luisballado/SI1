@@ -98,6 +98,49 @@ D.~Zhang, Z.~Xuan, Y.~Zhang, J.~Yao, X.~Li, and X.~Li, ``Path planning of
   delayed deep deterministic policy gradient,'' {\em Machines}, vol.~11, no.~1,
   2023.
 
+\bibitem{HandBookRobotics2016}
+B.~Siciliano and K.~Oussama, {\em Springer Handbook of Robotics}.
+\newblock Springer Cham, 2nd~ed., 2016.
+
+\bibitem{drones2022}
+R.~Jarray, S.~Bouallègue, H.~Rezk, and M.~Al-Dhaifallah, ``Parallel
+  multiobjective multiverse optimizer for path planning of unmanned aerial
+  vehicles in a dynamic environment with moving obstacles,'' {\em Drones},
+  vol.~6, no.~12, 2022.
+
+\bibitem{PathPlanning2022}
+S.~Aggarwal and N.~Kumar, ``Path planning techniques for unmanned aerial
+  vehicles: A review, solutions, and challenges,'' {\em Computer
+  Communications}, vol.~149, pp.~270--299, 2020.
+
+\bibitem{Chen2017}
+X.~Chen, G.-y. Li, and X.-m. Chen, ``Path planning and cooperative control for
+  multiple uavs based on consistency theory and voronoi diagram,'' in {\em 2017
+  29th Chinese Control And Decision Conference (CCDC)}, pp.~881--886, 2017.
+
+\bibitem{MultiPathPlanning2018}
+W.~Zu, G.~Fan, Y.~Gao, Y.~Ma, H.~Zhang, and H.~Zeng, ``Multi-uavs cooperative
+  path planning method based on improved rrt algorithm,'' in {\em 2018 IEEE
+  International Conference on Mechatronics and Automation (ICMA)},
+  pp.~1563--1567, 2018.
+
+\bibitem{Chronis2023}
+C.~Chronis, G.~Anagnostopoulos, E.~Politi, A.~Garyfallou, I.~Varlamis, and
+  G.~Dimitrakopoulos, ``Path planning of autonomous uavs using reinforcement
+  learning,'' {\em Journal of Physics: Conference Series}, vol.~2526,
+  p.~012088, jun 2023.
+
+\bibitem{SurveyCollab2019}
+S.~H. Alsamhi, O.~Ma, M.~S. Ansari, and F.~A. Almalki, ``Survey on
+  collaborative smart drones and internet of things for improving smartness of
+  smart cities,'' {\em IEEE Access}, vol.~7, pp.~128125--128152, 2019.
+
+\bibitem{HybridCampos2017}
+L.~Campos-Mac\'{i}as, D.~G\'{o}mez-Guti\'{e}rrez, R.~Aldana-L\'{o}pez, R.~de~la
+  Guardia, and J.~I. Parra-Vilchis, ``A hybrid method for online trajectory
+  planning of mobile robots in cluttered environments,'' {\em IEEE Robotics and
+  Automation Letters}, vol.~2, no.~2, pp.~935--942, 2017.
+
 \bibitem{Collins-2019}
 M.~Collins, ``Efficient planning for high-speed mav flight in unknown
   environments using sparse topological graphs,'' Master's thesis, Carnegie

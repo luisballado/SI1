@@ -1,4 +1,213 @@
-Los robots autonomos son maquinas inteligentes capaces de ejecutar diversas tareas en un ambiente por si mismos sin que alguien guie sus movimientos.
+Multi-Vehicle Motion Planning for Search and Tracking
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8397034
+
+Multiobjective UAV Path Planning for Emergency
+Information Collection and Transmission
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9031752
+
+Research on Dynamic Obstacle Avoidance Path
+Planning Strategy of UAV
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9986687
+
+Integrating Local Motion Planning and Robust
+Decentralized Fault-Tolerant Tracking Control for
+Search and Rescue Task of Hybrid UAVs and
+Biped Robots Team System
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10120943
+
+An End-to-End Deep Reinforcement Learning
+Method for UAV Autonomous Motion Planning
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10056204
+
+Self-organized search-attack mission planning for UAV swarm
+based on wolf pack hunting behavior
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9679714
+
+Short and Full Horizon Motion Planning for Persistent multi-UAV
+Surveillance with Energy and Communication Constraints
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8202162
+
+A Study on UAV Formation Collision Avoidance
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8028745
+
+Application of Motion Planning in UAVs: A review
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10055974
+
+A 3D Path Planning Approach for Quadrotor UAV
+Navigation
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7279703
+
+Coverage Path Planning Optimization
+of Heterogeneous UAVs Group
+for Precision Agriculture
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10011226
+
+Autonomous navigation of MAVs in unknown cluttered environments
+https://onlinelibrary.wiley.com/doi/10.1002/rob.21959
+
+Unmanned aerial vehicle navigation in underground structure inspection: A review
+https://onlinelibrary.wiley.com/doi/10.1002/gj.4763
+
+Transmission Line Inspection
+Using Unmanned Aerial Vehicle
+https://sci-hub.se/https://doi.org/10.1002/9781119681328.ch6
+
+Autonomous aerial navigation using monocular visual-inertial
+fusion
+https://sci-hub.se/https://doi.org/10.1002/rob.21732
+
+Research trends in collaborative drones
+https://hal.science/hal-03654021/document
+
+Communication and Control in Collaborative UAVs:
+Recent Advances and Future Trends
+https://arxiv.org/pdf/2302.12175.pdf
+
+UAV surveying and mapping information collection method based on Internet of Things
+https://www.sciencedirect.com/science/article/pii/S2667345222000219
+
+Multiple UAV Systems: A Survey
+https://www.worldscientific.com/doi/10.1142/S2301385020500090
+
+A Survey on Drones for Planetary Exploration: Evolution and
+Challenges
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9837214
+
+Multi-drone Control with
+Autonomous Mission Support
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8730844
+
+Collaborative Truck-Drone Routing Optimization
+Using Quantum-Inspired Genetic Algorithms
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9390121
+
+Multi-objective traveling salesman problem with drone: imperialist
+competitive algorithm
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10034189
+
+Taking Drones
+To The nexT Level
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7995044
+
+Multi-drone cooperation to improve navigation
+integrity in low altitude urban environments
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10140116
+
+Swarm-based Drone-as-a-Service (SDaaS) for Delivery
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9284135
+
+Agile Formation Control of Drone Flocking
+Enhanced With Active Vision-Based
+Relative Localization
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9765385
+
+Swarm Robotics in Disaster Management
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9008139
+
+Autonomous Spacecraft Inspection with
+Free-Flying Drones
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9256569
+
+Multi-AGV’s Temporal Memory-Based RRT
+Exploration in Unknown Environment
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9829293
+
+Routing and Scheduling for Hybrid Truck-Drone
+Collaborative Parcel Delivery With Independent
+and Truck-Carried Drones
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8824100
+
+Multi-drone Control with
+Autonomous Mission Support
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8730844
+
+Omni-Swarm: A Decentralized Omnidirectional
+Visual–Inertial–UWB State Estimation
+System for Aerial Swarms
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9813359
+
+RAPTOR: Robust and Perception-Aware Trajectory
+Replanning for Quadrotor Fast Flight
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9422918
+
+Optimization of Autonomous UAV Control
+Technology based on Computer Algorithms
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9919083
+
+Research on autonomous capability assessment technology
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9644093
+
+Velocity Obstacle Based Strategy for Multi-agent
+Collision Avoidance of Unmanned Aerial Vehicles
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9149770
+
+A Centralized Control of Movements Using a
+Collision Avoidance Algorithm for a Swarm of
+Autonomous Agents
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8247496
+
+Decentralized Multi-Subgroup Formation Control
+With Connectivity Preservation
+and Collision Avoidance
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9064526
+
+A Multi-Agent Deep Reinforcement Learning
+Approach for Practical Decentralized UAV
+Collision Avoidance
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9663555
+
+Particle Swarm Optimization Based Co-Operative Task Assignment and
+Path Planning for Multi-Agent System
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8280872
+
+Finite-time Motion Planning of Multi-agent Systems
+with Collision Avoidance
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9828361
+
+Cooperative Multi-Agent Path Finding:
+Beyond Path Planning and Collision Avoidance
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9620590
+
+Multi-Agents Based Safe Path Planning of Autonomous Mobile Robots in Smart Factories
+https://ieeexplore.ieee.org/document/9728542
+
+Improvement of Path Planning Algorithm based on Small Step Artificial Potential Field Method
+https://ieeexplore.ieee.org/document/9914425
+
+Formation Control Strategy of Multi-agent Systems with Obstacle Avoidance
+https://ieeexplore.ieee.org/document/9177846
+
+Autonomous multi-floor indoor navigation with a computationally constrained MAV
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5980357
+
+Minimal navigation solution for a swarm of tiny flying
+robots to explore an unknown environment
+https://sci-hub.se/https://doi.org/10.1126/scirobotics.aaw9710
+
+An Autonomous Path Planning Method for
+Unmanned Aerial Vehicle based on A Tangent
+Intersection and Target Guidance Strategy
+https://arxiv.org/ftp/arxiv/papers/2006/2006.04103.pdf
+
+Region coverage-aware path planning for unmanned aerial vehicles: A systematic review
+https://www.sciencedirect.com/science/article/abs/pii/S1874490723000769
+
+Unmanned aerial vehicles (UAVs): practical aspects, applications, open
+challenges, security issues, and future trends
+https://doi.org/10.1007/s11370-022-00452-4
+
+HandBook UAV
+https://dh8.kr/workshop/sejong_control/Handbook_of_Unmanned_Aerial_Vehicles.pdf
+
+Path planning of autonomous UAVs using
+reinforcement learning
+https://iopscience.iop.org/article/10.1088/1742-6596/2526/1/012088/pdf
+
+Path planning techniques for unmanned aerial vehicles: A review, solutions,
+and challenges
+https://www.sciencedirect.com/science/article/pii/S0140366419308539?ref=cra_js_challenge&fr=RR-1
+
+Los robots autonomos son maquinas inteligentescapaces de ejecutar diversas tareas en un ambiente por si mismos sin que alguien guie sus movimientos.
 Frecuentemente definimos a un robot como una maquina capaz de sensar, pensar y actuar. En Inteligencia artificial dichos sistemas se les conoce como "agentes". Los robots se distinguen de los agentes ya que su implementacion se lleva acabo en el mundo real. Suelen recibir informacion del mundo atravez de sensores.
 Los robots son sujetos a las leyes que rigen el mundo fisico (tienen masa e inercia), hacen uso de computadoras que incrementan la velocidad de procesar señales de entrada y realizar funciones cognitivas.
 
