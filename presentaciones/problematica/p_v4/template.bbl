@@ -1,0 +1,23 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Xiao et~al.(2018)Xiao, Zhu, Wang, and Miao]{8478368}
+Z.~Xiao, B.~Zhu, Y.~Wang, and P.~Miao.
+\newblock Low-complexity path planning algorithm for unmanned aerial vehicles
+  in complicated scenarios.
+\newblock \emph{IEEE Access}, 6:\penalty0 57049--57055, 2018.
+\newblock \doi{10.1109/ACCESS.2018.2873084}.
+
+\bibitem[Zahroof et~al.(2023)Zahroof, Liu, Zhou, and Kumar]{james}
+R.~Zahroof, J.~Liu, L.~Zhou, and V.~Kumar.
+\newblock Multi-robot localization and target tracking with connectivity
+  maintenance and collision avoidance.
+\newblock In \emph{2023 American Control Conference (ACC)}, pages 1331--1338,
+  2023.
+\newblock \doi{10.23919/ACC55779.2023.10155978}.
+
+\end{thebibliography}
