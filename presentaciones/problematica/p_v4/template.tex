@@ -247,18 +247,47 @@
 
 \section{Resumen}
 
-\begin{frame}
-  \frametitle{Some title}
+\begin{frame}{Problemas en la rob\'{o}tica}
+  \begin{itemize}
+  \item Encontrar la ruta m\'{a}s corta
+  \item Physical robot constrains
+  \item Uncertainties: Sensing and actuation
+  \item Escalabilidad y eficiencia computacional
+  \item Obst\'{a}culos din\'{a}micos y en movimiento
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Sistema Aut\'{o}nomo}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth, height=5.5cm]{example-image}
+    \caption[Caption for LOF]{Real caption\protect\footnotemark}
+  \end{figure}
+  \footnotetext{blah blah blah}
+\end{frame}
+
+\begin{frame}{Planificaci\'{o}n Global vs. Local}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth, height=5.5cm]{example-image}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{¿Qu\'{e} es Planificar?}
   \setlength{\leftmargini}{0.5em}
   \begin{columns}[c, onlytextwidth]%EVEN SPECIFYING THE c OPTION
     \begin{column}{.5\textwidth}%
       \setlength{\partopsep}{0pt}%AND EVEN REMOVING EXTRA itemize SPACE
       \begin{itemize}
         \itemsep 1.5em
-      \item First item bla bla bla bla some more text
-      \item second item bla bla bla bla some more text bla bla
-      \item This is an example text with a citation from
-      \item third item bla bla bla bla some more text bla bla bla bla bla bla
+      \item <1-> Encontrar una secuencia valida de configuraciones para mover un robot del punto A al punto B; pero .. ¿C\'{o}mo?
+      \item <2-> Dados:
+        \begin{itemize}
+        \item Configuracion inicial A
+        \item Configuracion objetivo B
+        \item Modelo del robot
+        \item Mapa del ambiente
+        \end{itemize}
       \end{itemize}
     \end{column}%
     \begin{column}{.45\textwidth}
@@ -269,34 +298,416 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}{4 quadrants with Beamer}
+\begin{frame}{Configuraci\'{o}nes}
+  \begin{itemize}
+  \item <1-> Configuracion q: especifica todos los puntos del robot respecto a las coordenadas del sistema
+  \item <2-> Ejemplos:\\
+    \centering
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Espacio de Configuraci\'{o}nes}
+  \begin{itemize}
+  \item <1-> Espacio de Configuracion (C-space): espacio de todas las posibles configuraciones
+  \item <2-> Workspace: conjunto de puntos que el robot puede alcanzar.
+  \item Ejemplos\\
+    \centering
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Espacio de Configuraci\'{o}n}
+  \setlength{\leftmargini}{0.5em}
+  \begin{columns}[c, onlytextwidth]%EVEN SPECIFYING THE c OPTION
+    \begin{column}{.5\textwidth}%
+      \setlength{\partopsep}{0pt}%AND EVEN REMOVING EXTRA itemize SPACE
+      \begin{itemize}
+        \itemsep 1.5em
+      \item Free space $C_{free}$ and obstacle space $C_{obs}$
+        second item bla bla bla bla some more text bla bla\\
+        This is an example text with a citation from\\
+        third item bla bla bla bla some more text bla bla bla bla bla bla
+      \end{itemize}
+    \end{column}%
+    \begin{column}{.45\textwidth}
+      \begin{center}
+        \includegraphics[width=\textwidth, height=5.5cm]{example-image}
+      \end{center}
+    \end{column}%
+\end{columns}
+\end{frame}
+
+\begin{frame}{Problema de Planificacion}
+  \begin{itemize}
+  \item Given a start configuration $q_{s}$ and a goal configuration $q_{g}$, encontrar un camino continuo que sastiface $\tau (0) = q_{s}, \tau (1)=q_{g}$, y $\tau :[0,1] \rightarrow C_{free}$ \\
+    \centering
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Consideraciones}
+  \centering
+  \fbox{\parbox[t]{10em}{
+      \begin{itemize}
+        \tiny \item Caracteristicas Robot
+        \begin{itemize}
+        \tiny \item Grados de libertad
+        \tiny \item Fisica del robot
+        \tiny \item limitaciones en Mobilidad
+        \tiny\item limitaciones en Dinamica
+        \end{itemize}
+      \end{itemize}
+    }
+  }%
+  \raisebox{-4ex}{$\to$}%
+  \fbox{\parbox[t]{10em}{
+      \begin{itemize}
+      \tiny \item Propiedades del algortimo
+        \begin{itemize}
+        \tiny \item Optimalidad
+        \tiny \item Costo Computacional
+        \tiny \item Costo en memoria
+        \tiny \item Completez
+        \tiny \item Online vs. Offline
+        \tiny \item Anytime
+        \tiny \item Caminos vs. trayectorias
+        \tiny \item Exactos vs. aproximados
+        
+        \end{itemize}
+      \end{itemize}
+    }
+  }
+  \obeylines\\
+\end{frame}
+
+\begin{frame}{Panorama de m\'{e}todos de planificaci\'{o}n}
+  \begin{itemize}
+  \item Geom\'{e}tricos
+    \begin{itemize}
+    \item Grafos de visibilidad, descomposici\'{o}n en celdas, diagramas de voronoi, etc.
+    \end{itemize}
+  \item Campos de potencial
+    \begin{itemize}
+    \item Frentes de onta, funciones de navegaci\'{o}n, etc.
+    \end{itemize}
+  \item Basados en b\'{u}squeda
+    \begin{itemize}
+    \item Dijkstra, A*, D*, D* Lite, etc.
+    \end{itemize}
+  \item Basados en pruebas
+    \begin{itemize}
+    \item RRT, RRT*, PRM, etc.
+    \end{itemize}
+  \item Trayectorias
+    \begin{itemize}
+    \item M\'{i}nimo tiempo/energia, etc.
+    \end{itemize}
+  \item Bioinspirados
+    \begin{itemize}
+    \item Redes Neuronales, Algoritmos Geneticos, Ant Colony Optimisation, etc.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Metodos Geometicos}
+  \begin{itemize}
+  \item Mapa de ruta con la informacion de la conectividad de los espacios libres\\
+    \begin{itemize}
+    \item Vertice
+    \item Arista
+    \end{itemize}
+  \item Planes usando algoritmos de grafos\\
+    \centering
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Metodos Geometicos}
+  \begin{itemize}
+  \item Grafo de visibilidad\\
+  \item Idea: Conectar todos los vertices visibles  de los obstaculos\\
+  \item Planear un camino desde el inicio al objetivo atravez de las aristas: Conectar todos los vertices visibles  de los obstaculos\\
+  \item Camino mas corto para obstaculos poligonales\\
+  \item Limitantes: Muy cerca de los obstaculos\\
+    \centering
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Metodos Geometicos}
+  \begin{itemize}
+  \item Diagramas de voronoi\\
+  \item Idea: Conectar todos los vertices visibles  de los obstaculos\\
+  \item Planea una ruta\\
+    \centering
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Metodos Geometicos}
+  \begin{itemize}
+  \item Diagrama de voronoi\\
+  \item Beneficios\\
+    \begin{itemize}
+    \item Rutas conservadoras
+    \item Similar al comportamiento humano
+    \end{itemize}
+  \item Limitaciones\\
+    \begin{itemize}
+    \item Dificil de calcular para altas dimencionalidades
+    \item Inestable - cambios minimos en el entorno el diagrama cambia completamente
+    \end{itemize}    
+    \centering
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Metodos Campo de potencial}
+  \begin{itemize}
+  \item El Robot es una masa redonda en un plano inclinado \\
+  \item Los campos de potencial artificial son funciones derivables\\
+    $U: R^{m} \implies R$
+  \item Potencial de atraccion\\
+  \item Potencial de repulsion\\
+    
+    \centering
+    $A*B=C$\\
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Metodos Campo de potencial}
+  \begin{itemize}
+  \item Consideraciones\\
+    \begin{itemize}
+    \item Modelo del potencial
+    \item Solucion del metodo
+    \end{itemize}
+  \item Idea: seguir el gradiente negativo con uso de desenso de gradiente\\
+    \centering
+    $F(q)=-\Delta U(q)$\\
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Metodos Campo de potencial}
+  \begin{itemize}
+  \item Beneficios\\
+    \begin{itemize}
+    \item Implementacion sencilla
+    \item Evacion de obstaculos online
+    \end{itemize}
+  \item Limitaciones\\
+    \begin{itemize}
+    \item Escalabilidad
+    \item Minimo local
+    \end{itemize}
+    \centering
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Metodos basados en busquedas}
+  \begin{itemize}
+  \item Planificacion a partir de un grafo $G=(V,E)$\\
+    \begin{itemize}
+    \item $V$ es un conjunto de vertices $\rightarrow$ configuraciones
+    \item $E$ es un conjunto de aristas $\rightarrow$ conecciones libres de colisiones
+    \end{itemize}
+  \item Aplicar algoritmos de busqueda para encontrar un camino\\
+    \begin{itemize}
+    \item DFS,BFS,Dijkstra, $A*$, etc.
+    \end{itemize}
+  \item Ejemplo: Grafo de visibilidad $+$ Dijkstra\\
+    \centering
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Metodos basados en busquedas}
+  \begin{itemize}
+  \item Mapa por celdas (Caso especial de un grafo)\\
+  \item Se subdivide el $C_{free}$ en pequeñas celdas\\
+  \item Permite planificaciones con metodos discretos\\
+    \centering
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Metodos basados en busquedas}
+  \begin{itemize}
+  \item Ejemplo: Algoritmo de \textbf{Dijkstra} Expande los nodos con una distancia minima al nodo de origen\\
+    \centering
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Metodos basados en busquedas}
+  \begin{itemize}
+  \item Ejemplo: Algoritmo \textbf{A$*$} Considera una heuristica basada en la distancia al objetivo\\
+    \centering
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Metodos a partir de pruebas}
+  \begin{itemize}
+  \item Ejemplo: Probabilistic roadmap (PRM)\\
+    \centering
+    fase de aprendizaje\\
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+    fase de busquedas\\
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Metodos a partir de pruebas}
+  \begin{itemize}
+  \item Ejemplo: Rapidly-exploring random tree (RRT)\\
+    \centering
+    \includegraphics[angle=45,width=4cm]{cinvestavlogo}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \centering
+  \begin{tabular}{ |p{1cm}||p{0.8cm}|p{0.8cm}|p{1.2cm}|p{5cm}|  }
+    \hline
+    \multicolumn{5}{|c|}{\tiny Comparaci\'{o}n de m\'{e}todos} \\
+    \hline 
+    \tiny Metodo& \tiny Completo & \tiny Optimo& \tiny Escalable& \tiny Notas \\
+    \hline
+    \tiny Visibility   & \tiny Si    & \tiny Si&   \tiny No& \tiny Poca escalabilidad, el robot pasa cerca de los obstaculos\\
+    \hline
+    \tiny Voronoi   & \tiny Si    & \tiny No&   \tiny No& \tiny Poca escalabilidad\\
+    \hline
+    \tiny Potential field   & \tiny Si    & \tiny No&   \tiny Depende del ambiente& \tiny Facil de implementar, suceptible a minimos locales\\
+    \hline
+    \tiny Dijkstra/A*   & \tiny Si    & \tiny Grid&   \tiny No& \tiny A* usa una funcion heuristica que guia la busqueda mas eficiente, Poca escalabilidad\\
+    \hline
+    \tiny PRM   & \tiny Si    & \tiny Grafo&   \tiny Si&  \tiny Eficiente para multi-busquedas, completez probabilistica \\
+    \hline
+    \tiny RRT   & \tiny Si    & \tiny No&   \tiny Si&  \tiny Eficiente para problemas simples, completez probabilistica\\
+    \hline
+  \end{tabular}  
+\end{frame}
+
+\begin{frame}{Sistemas Multi-Robot}
   \FourQuad%
    { \begin{itemize}
-      \item<1-> Item 1
+      \item<1-> Dado un conjunto de robots que pueden cooperar y comunicarse entre si para realizar ciertas tareas\\
      \end{itemize}\vspace{2cm}\hspace{2.7cm}
-     \makebox[\linewidth]{\resizebox{2.9\linewidth}{1pt}{$\bullet$}}
    }
-   { \begin{itemize}
-      \item<1-> Item 2
-     \end{itemize}\vspace{2cm} 
+   {
+     \includegraphics[width=0.5\textwidth]{cinvestavlogo}
    }
-   { \begin{itemize}
-      \item<1-> Item 3
-     \end{itemize} 
+   {
+     \includegraphics[width=0.5\textwidth]{cinvestavlogo}
    }
-   { \begin{itemize}
-      \item<1-> Item 4
-     \end{itemize}\vspace{1.5cm}
-     \begin{rotate}{90}\makebox[\linewidth]{\resizebox{2.0\linewidth} 
-     {1pt}{$\bullet$}}\end{rotate}
+   {
+     \includegraphics[width=0.5\textwidth]{cinvestavlogo}
    }
 
 \end{frame}
 
+\begin{frame}{Un solo robot vs. Multi-Robot}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{itemize}
+    \item Ventajas
+      \begin{itemize}
+      \item Mejor
+      \item Mejor
+      \item Mejor
+      \item Mejor
+      \end{itemize}
+    \end{itemize}
+    \column{0.5\textwidth}
+    \begin{itemize}
+    \item Desventajas
+      \begin{itemize}
+      \item Mejor
+      \item Mejor
+      \item Mejor
+      \item Mejor
+      \end{itemize}
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Taxonomia Multi-Robot}
+  \FourQuad%
+      { \begin{itemize}
+        \item Comportamiento colectivo
+        \end{itemize}\vspace{2cm}\hspace{2.7cm}
+      }
+      {
+        \begin{itemize}
+        \item Comunicacion
+        \end{itemize}\vspace{2cm}\hspace{2.7cm}
+        
+      }
+      {
+        \begin{itemize}
+        \item Tomar desiciones
+        \end{itemize}\vspace{2cm}\hspace{2.7cm}
+        
+      }
+      {
+        \begin{itemize}
+        \item Formulacion del problema
+        \end{itemize}\vspace{2cm}\hspace{2.7cm}
+      }
+
+\end{frame}
+
+\begin{frame}{Centralizado vs. Descentralizado}
+  \begin{itemize}
+  \item Centralizado
+  \item Descentralizado
+  \item Hibrido
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Centralizado: Acoplado}
+  \begin{itemize}
+  \item Plan directly in joint
+  \item For K robots: 
+  \item Use standard planning methods
+  \item Problem space
+  \item Computationally
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Centralizado: Desacoplado}
+  \begin{itemize}
+  \item First Plan for each robot
+  \item Then
+  \item Not complete, not optimal
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Desentralizado}
+  \begin{itemize}
+  \item Information 
+  \item Suboptimal
+  \item Implicit or explicit
+  \item Coordination strategies..
+  \end{itemize}
+\end{frame}
+
+%Robotic Information Gathering
+
+
 \begin{frame}{Subfigures in Beamer}
   You can see in Figure \ref{fig:images} that I have inserted two images, Figures \ref{fig:nature1} and \ref{fig:nature2}, that I can reference independently.
   \begin{figure}
-    \centering
+   \centering
     \begin{subfigure}[t]{0.4\textwidth}
       \includegraphics[width=0.5\textwidth]{cinvestavlogo}
       \caption{Image of the nature V1.}
@@ -313,13 +724,13 @@
   \end{frame}
 
 \begin{frame}
-\frametitle{Using Columns}
-\begin{columns}
-\column{0.5\textwidth}
-<text>
-\column{0.5\textwidth}
-<text>
-\end{columns}
+  \frametitle{Using Columns}
+  \begin{columns}
+    \column{0.5\textwidth}
+    <text>
+    \column{0.5\textwidth}
+    <text>
+  \end{columns}
 \end{frame}
 
 \begin{frame}
