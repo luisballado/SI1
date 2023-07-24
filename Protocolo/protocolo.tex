@@ -3,25 +3,33 @@
 \usepackage{epsf,latexsym}
 \usepackage[spanish]{babel}
 \usepackage[latin1]{inputenc}
-%\usepackage{graphicx,moreverb}
-\hoffset=-19pt
+
+\hoffset=-9pt %-19pt
 \voffset=-36pt
-\textheight=244mm
-%\textheight=680p
 \textwidth=505pt
 \marginparsep=30pt
 \columnsep=9.9mm
-%\columnsep=20pt
-\def\figurename{Figura}
-\pagestyle{empty}
 
-\pagestyle{plain}
+\def\figurename{Figura}
+
+%--SE LOS QUITE--
+%\pagestyle{empty}
+%\pagestyle{plain}
+%\usepackage{graphicx,moreverb}
+%\newcommand{\pp}[1]{$\langle$#1$\rangle$}
+%\textheight=244mm
+%\columnsep=20pt
+%\usepackage{dingbat}
+%\usepackage{diagbox}
+%\usepackage{pgfgantt}
+%--SE LOS QUITE--
+
 \textwidth 6.5in
-\textheight 8.75in
+\textheight 8.2in %ancho en footer
 \oddsidemargin 0in
 \evensidemargin 0in
 \topmargin -0.5in
-\newcommand{\pp}[1]{$\langle$#1$\rangle$}
+
 %-----------------------
 
 \title{ Centro de Investigaci\'{o}n y Estudios Avanzados del IPN\\
@@ -41,7 +49,7 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 
 \usepackage{dirtree}
 \usepackage{amssymb}
-%\usepackage{pgfgantt}
+
 \usepackage{hyperref}
 \usepackage{dirtree}
 \usepackage{xcolor,colortbl}
@@ -54,12 +62,14 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 
 \usepackage{graphicx}
 \usepackage{tabularx,booktabs}
-\usepackage{dingbat}
-\usepackage{diagbox}
+
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \setlength{\extrarowheight}{1pt}
 
 \usepackage{multicol}
+
+\usepackage[scaled]{helvet}
+\usepackage[round]{natbib}
 
 \usepackage{forloop}
 \newcounter{loopcntr}
@@ -192,19 +202,104 @@ La robustez se alcanza para las perturbaciones.\\
 Otra investigacion relevante se encuentra en la tesis de doctorado del CINVESTAV Unidad Guadalajara \cite{CINVES2021, CINVES2015}.
 El objetivo principal de este trabajo es el de realizar seguimiento ..\\
 
+
 %\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+\begin{center}
+\fbox{\parbox[t]{14em}{
+    \begin{itemize}
+      \tiny \item Caracteristicas Robot
+      \begin{itemize}
+        \tiny \item Grados de libertad
+        \tiny \item Fisica del robot
+        \tiny \item limitaciones en Mobilidad
+        \tiny \item limitaciones en Dinamica
+      \end{itemize}
+    \end{itemize}
+  }
+}%
+\raisebox{-10ex}{\Huge$\to$}%
+\fbox{\parbox[t]{14em}{
+    \begin{itemize}
+      \tiny \item Propiedades del algortimo
+      \begin{itemize}
+        \tiny \item Optimalidad
+        \tiny \item Costo Computacional
+        \tiny \item Costo en memoria
+        \tiny \item Completez
+        \tiny \item Online vs. Offline
+        \tiny \item Anytime
+        \tiny \item Caminos vs. trayectorias
+        \tiny \item Exactos vs. aproximados
+        
+      \end{itemize}
+    \end{itemize}
+  }
+}
+\end{center}
+
+\newpage
+\subsection*{Panorama de m\'{e}todos de planificaci\'{o}n}
+\begin{itemize}
+  \item Geom\'{e}tricos
+    \begin{itemize}
+    \item Grafos de visibilidad, descomposici\'{o}n en celdas, diagramas de voronoi, etc.
+    \end{itemize}
+  \item Campos de potencial
+    \begin{itemize}
+    \item Frentes de onta, funciones de navegaci\'{o}n, etc.
+    \end{itemize}
+  \item Basados en b\'{u}squeda
+    \begin{itemize}
+    \item Dijkstra, A*, D*, D* Lite, etc.
+    \end{itemize}
+  \item Basados en pruebas
+    \begin{itemize}
+    \item RRT, RRT*, PRM, etc.
+    \end{itemize}
+  \item Trayectorias
+    \begin{itemize}
+    \item M\'{i}nimo tiempo/energia, etc.
+    \end{itemize}
+  \item Bioinspirados
+    \begin{itemize}
+    \item Redes Neuronales, Algoritmos Geneticos, Ant Colony Optimisation, etc.
+    \end{itemize}
+\end{itemize}
+
+
+  \begin{tabular}{ |p{2cm}|p{1.5cm}|p{1.5cm}|p{1.4cm}|p{7.5cm}|  }
+    \hline
+    Metodo& Completo & Optimo& Escalable& Notas \\
+    \hline
+    \rowcolor{black!5}
+    Visibility   & Si    & Si&   No& Poca escalabilidad, el robot pasa cerca de los obstaculos\\
+    \hline
+    Voronoi   & Si    & No& No& Poca escalabilidad\\
+    \hline
+    \rowcolor{black!5}
+    Potential field   & Si    & No& Depende del ambiente& Facil de implementar, suceptible a minimos locales\\
+    \hline
+    Dijkstra/A*   & Si    & Grid& No& A* usa una funcion heuristica que guia la busqueda mas eficiente, Poca escalabilidad\\
+    \hline
+    \rowcolor{black!5}
+    PRM   & Si    & Grafo& Si& Eficiente para multi-busquedas, completez probabilistica \\
+    \hline
+    RRT   & Si    & No & Si& Eficiente para problemas simples, completez probabilistica\\
+    \hline
+  \end{tabular}\\
 
 Los robots aut\'{o}nomos son m\'{a}quinas inteligentes capaces de ejecutar diversas tareas en un ambiente por si mismos sin que algui\'{e}n gu\'{i}e sus movimientos \cite{Bekey2005}. Frecuentemente definimos a un robot como una m\'{a}quina capaz de sensar, pensar y actuar. En Inteligencia Artificial dichos sistemas se les conoce como \textbf{agentes}. Los robots se distinguen de los agentes ya que su implementaci\'{o}n se lleva acabo en el mundo real recibiendo informaci\'{o}n del exterior a trav\'{e}s de sensores. Estando sujetos a las leyes que rigen el mundo f\'{i}sico (ya que tienen masa e inercia). Parte escencial de un robot hoy en dia, es el uso de computadoras que incrementan la velocidad de procesamiento con funciones cognitivas complejas.\\
 
 La autonom\'{i}a de los robots se ha ampliado en diversos aspectos y no es extra\~{n}o tener uno que ayuden en la limpieza del hogar.
 
-\subsection*{¿Qu\'{e} es la autonom\'{i}a?}
+\subsection*{�Qu\'{e} es la autonom\'{i}a?}
 
   Autonom\'{i}a es referente a sistemas capaces de operar en el mundo como lo conocemos sin un control que lo gobierne.\\
 
   Es com\'{u}n encontrar robots que no sean aut\'{o}nomos, siendo este un campo activo de investigaci\'{o}n lo que ha causado que la autonom\'{i}a de los robots se vea incrementada as\'{i} como su inteligencia.
 
-\subsection*{¿Qu\'{e} es un robot?}
+\subsection*{�Qu\'{e} es un robot?}
 
   Podemos definir un robot como una m\'{a}quina que sensa, piensa y actua \cite{Bekey2005}. Es por ello que debe de contar con sensores, poder procesar la informaci\'{o}n y actuadores que lo ayuden a su movilidad.\\
   Los sensores son necesarios para la obtenci\'{o}n de informaci\'{o}n de su entorno. Comportamientos reactivos que no requieran procesar cierta informaci\'{o}n y una inteligencia para resolver diversos retos retos que se puedan presentar.
@@ -404,7 +499,9 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
   
 \section*{Cronograma de actividades (plan de trabajo)}
 
-\noindent\begin{tabular}{|p{0.49\textwidth}*{12}{|p{0.025\textwidth}}|}
+\begin{minipage}{13cm}
+
+\noindent\begin{tabular}{|p{0.49\textwidth}*{12}{|p{0.035\textwidth}}|}
 % The top line
 %\diagbox[width=12.5em]{Actividades}{Cuatrimestres}
 \hline
@@ -476,6 +573,7 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
 \textbf{E3.A6.} Proceso de titulaci\'{o}n  \off[11] \on\\
 \hline
 \end{tabular}
+\end{minipage}
 
 \iffalse
 \begin{ganttchart}[vgrid={draw=none, dotted}]{1}{12}
@@ -667,27 +765,29 @@ La adquisici\'{o}n de datos es el primer paso en la representaci\'{o}n de mapas 
 
 Los VANTs pueden utilizar sensores LiDAR (Light Detection and Ranging) para capturar datos 3D. Los sensores LiDAR emiten pulsos de luz l\'{a}ser y miden el tiempo que tarda en reflejarse en los objetos circundantes. Esto permite obtener informaci\'{o}n precisa sobre la distancia y la posici\'{o}n tridimensional de los objetos en el entorno. Los datos LiDAR pueden combinarse con las im\'{a}genes capturadas para generar mapas 3D completos y detallados.\\
 
-\begin{tabular}{ |p{1cm}||p{1cm}|p{1.5cm}|p{2cm}|p{1.7cm}|p{1.7cm}|p{2.5cm}|  }
- \hline
- \multicolumn{7}{|c|}{Trabajos relacionados} \\
- \hline
- %Ref.&3D&Localizaci\'{o}n&Mapa&Navegaci\'{o}n&Simulador&Percepci\'{o}n&Arquitectura\\
- Ref.&3D&Mapa&Navegaci\'{o}n&Simulador&Percepci\'{o}n&Arquitectura\\
- \hline
- \cite{Collins-2019}&\ding{51}&Voronoi&A*&gazebo&LiDAR&Centralizada\\
- \cite{LIN2017}&\ding{55}&Celdas&D* Lite&gazebo&Camara&Descentralizada\\
- \cite{CINVES2021}&\ding{51}&Grafo&RRT*&matlab&Camara&Centralizada\\
- \cite{SELIN2019}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\
- \cite{RACER2022}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\
- \cite{RACER2022}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\
- \cite{RACER2022}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\
- 
- \hline
-\end{tabular}
+Trabajos relacionados:
+\begin{center}
+    \begin{tabular}{ | l | l | l | l | l | l | p{3cm} |}
+      \hline
+      Ref.&3D&Mapa&Navegaci\'{o}n&Simulador&Percepci\'{o}n&Arquitectura\\ \hline
+      \cite{CIESLEWSKI2017}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\ \hline
+      \cite{PAPACHRISTOS2017}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\ \hline
+      \cite{SELIN2019}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
+      \cite{OLEYNIKOVA2018}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
+      \cite{GAO2018}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
+      \cite{FLORENCE2018}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
+      \cite{USENKO2017}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
+      \cite{MOHTA2017}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
+      \cite{LIN2017}&\ding{55}&Celdas&D* Lite&gazebo&Camara&Descentralizada\\ \hline
+      \cite{COLLINS2019}&\ding{51}&Voronoi&A*&gazebo&LiDAR&Centralizada\\ \hline
+      \cite{CINVES2021}&\ding{51}&Grafo&RRT*&matlab&Camara&Centralizada\\ \hline
+      \cite{RACER2022}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\
+      \hline
+    \end{tabular}
+\end{center}
 
 %La visualizaciÃÂ³n y la interacciÃÂ³n con los mapas 3D tambiÃÂ©n han sido objeto de investigaciÃÂ³n. Se han desarrollado herramientas de visualizaciÃÂ³n interactiva que permiten a los usuarios explorar y analizar los mapas 3D generados. Estas herramientas pueden incluir capacidades de navegaciÃÂ³n, anÃÂ¡lisis de datos y anotaciÃÂ³n de objetos para facilitar la comprensiÃÂ³n y el uso de los mapas 3D en aplicaciones especÃÂ­ficas.\\
 
-\newpage
 \section*{Contribuciones o resultados esperados}
 
 \begin{enumerate}
@@ -703,13 +803,12 @@ Los VANTs pueden utilizar sensores LiDAR (Light Detection and Ranging) para capt
   \item M\'{e}tricas como tiempo de respuesta, consumo de energ\'{i}a y la capacidad de adaptaci\'{o}n a diferentes escenarios. 
   \end{itemize}
 \item Tesis impresa.
-\item Divulgar este trabajo en algun espacio afin en ingenieria y tecnologia.
 
 \end{enumerate}
 
 \newpage
 %\section*{Referencias}
-\bibliographystyle{ieeetr}
+\bibliographystyle{abbrvnat}
 \bibliography{referencias.bib}
 %\begin{enumerate}
 %\item  H. Shakhatreh et al., 'Unmanned Aerial Vehicles: A Survey on Civil Applications and Key Research Challenges', arXiv:1805.00881, 2018
