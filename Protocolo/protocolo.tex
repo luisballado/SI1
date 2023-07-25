@@ -1,5 +1,16 @@
 %\documentclass[11pt,epsf,times,twocolumn]{article}
 \documentclass[11pt,epsf,times]{article}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{forest}
+\usetikzlibrary{shadows,arrows.meta}
+
+\tikzset{parent/.style={align=center,text width=2cm,fill=green!20,rounded corners=2pt},
+    child/.style={align=center,text width=2.8cm,fill=green!50,rounded corners=6pt},
+    grandchild/.style={fill=pink!50,text width=2.3cm}
+}
+
 \usepackage{epsf,latexsym}
 \usepackage[spanish]{babel}
 \usepackage[latin1]{inputenc}
@@ -69,7 +80,12 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 \usepackage{multicol}
 
 \usepackage[scaled]{helvet}
-\usepackage[round]{natbib}
+\usepackage[authoryear,sort]{natbib}
+
+\usepackage[ruled,vlined]{algorithm2e}
+
+\usepackage{array} % needed for \arraybackslash
+\usepackage{adjustbox} % for \adjincludegraphics
 
 \usepackage{forloop}
 \newcounter{loopcntr}
@@ -96,6 +112,7 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
   \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
 \begin{document}
+
 \maketitle
 \begin{abstract}
 
@@ -181,6 +198,65 @@ El proyecto de estrategias para la exploraci\'{o}n coordinada multi-VANT se cent
 
 \subsection*{Antecedentes y motivaci\'{o}n para el proyecto}
 
+\begin{center}
+\begin{forest}
+for tree={%
+    thick,
+    drop shadow,
+    l sep=0.6cm,
+    s sep=0.8cm,
+    node options={draw,font=\sffamily},
+    edge={semithick,-Latex},
+    where level=0{parent}{},
+    where level=1{
+        minimum height=1cm,
+        child,
+        parent anchor=south west,
+        tier=p,
+        l sep=0.25cm,
+        for descendants={%
+            grandchild,
+            minimum height=0.6cm,
+            anchor=150,
+            edge path={
+                \noexpand\path[\forestoption{edge}]
+                (!to tier=p.parent anchor) |-(.child anchor)\forestoption{edge label};
+            },
+        }
+    }{},
+}
+[Retos\\multi-VANT
+  [Path Planning
+    [Swarm formation
+      [Collision avoidance
+        [Energi planning]
+      ]
+    ]
+  ]
+  [Percepcion
+    [Coleccion de informacion
+      [Algoritmos
+        [visualizacion]
+      ]
+    ]
+  ]
+  [Comunicaci\'{o}n
+    [Topologia de control
+      [Calidad
+        [Seguridad]
+      ]
+    ]
+  ]
+  [Control de Vuelo
+    [PID
+      [Learning based methods
+        [Controles lineales]
+      ]
+    ]
+  ]
+]
+\end{forest}
+\end{center}
 %\begin{itemize}
 %\item Hablar de la robotica de servicios
 %\item robotica movil
@@ -499,9 +575,8 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
   
 \section*{Cronograma de actividades (plan de trabajo)}
 
-\begin{minipage}{13cm}
-
-\noindent\begin{tabular}{|p{0.49\textwidth}*{12}{|p{0.035\textwidth}}|}
+\begin{minipage}{11cm}
+\noindent\begin{tabular}{|p{0.6\textwidth}*{12}{|p{0.040\textwidth}}|}
 % The top line
 %\diagbox[width=12.5em]{Actividades}{Cuatrimestres}
 \hline
@@ -514,7 +589,7 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
 %\textcolor{black}{\textbf{Etapas}}
 \rpt[3]{& 1 & 2 & 3 & 4} \\
 \hline
-\textcolor{black}{\textbf{Etapa 1}}\\
+\rowcolor{black!5}{\textbf{Etapa 1}}\\
 % using the on macro to fill in twenty cells as `on'
 %\specialcell{Actividad 1\\espacio}        \on[0] \off[12] \\
 %Actividad 1    \on[0] \off[12]\\
@@ -532,7 +607,7 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
 \textbf{E1.A6.} Revisi\'{o}n de tesis Etapa 1    \off[2] \on[1]  \off[9] \\
 \hline
 % using the on macro followed by the off macro
-\textcolor{black}{\textbf{Etapa 2}}\\
+\rowcolor{black!5}{\textbf{Etapa 2}}\\
 \hline
 \textbf{E2.A1.} Selecci\'{o}n Simulador    \off[3] \on[1]  \off[8] \\
 \hline
@@ -558,7 +633,7 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
 \hline
 \textbf{E2.A12.} Revisi\'{o}n de tesis  \off[7] \on[1]  \off[4] \\
 \hline
-\textcolor{black}{\textbf{Etapa 3}}\\
+\rowcolor{black!5}{\textbf{Etapa 3}}\\
 \hline
 \textbf{E3.A1.} Experimentaci\'{o}n de soluci\'{o}n   \off[8] \on[2]  \off[2] \\
 \hline
@@ -765,23 +840,60 @@ La adquisici\'{o}n de datos es el primer paso en la representaci\'{o}n de mapas 
 
 Los VANTs pueden utilizar sensores LiDAR (Light Detection and Ranging) para capturar datos 3D. Los sensores LiDAR emiten pulsos de luz l\'{a}ser y miden el tiempo que tarda en reflejarse en los objetos circundantes. Esto permite obtener informaci\'{o}n precisa sobre la distancia y la posici\'{o}n tridimensional de los objetos en el entorno. Los datos LiDAR pueden combinarse con las im\'{a}genes capturadas para generar mapas 3D completos y detallados.\\
 
+Aplicaciones\\
+\begin{center}
+    \centering
+    \begin{tabular}{ | l | p{12cm} |}
+      \hline
+      \rowcolor{black!5}
+      \textbf{Aplicaci\'{o}n}& \textbf{Casos de uso, Retos en Dise\~{n}o, Requisitos}\\ \hline
+      Transporte &
+      \begin{itemize}
+      \item Diseno blah
+      \item Improper Node/Node
+      \end{itemize}\\\hline
+      \textbf{Construcci\'{o}n e Inspecci\'{o}n} &
+      \begin{itemize}
+      \item Improper Node/Node
+      \item Improper Node/Node
+      \end{itemize}\\\hline
+      \textbf{Busqueda y rescate} &
+      \begin{itemize}
+      \item Improper Node/Node
+      \item Improper Node/Node
+      \end{itemize}\\\hline
+      \textbf{Entrega de productos} &
+      \begin{itemize}
+      \item Improper Node/Node
+      \item Improper Node/Node
+      \end{itemize}\\\hline
+      \textbf{Medicina}  &
+      \begin{itemize}
+      \item Improper Node/Node
+      \item Improper Node/Node
+      \end{itemize}\\
+      \hline
+    \end{tabular}
+\end{center}
+
 Trabajos relacionados:
 \begin{center}
     \begin{tabular}{ | l | l | l | l | l | l | p{3cm} |}
       \hline
       Ref.&3D&Mapa&Navegaci\'{o}n&Simulador&Percepci\'{o}n&Arquitectura\\ \hline
       \cite{CIESLEWSKI2017}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\ \hline
-      \cite{PAPACHRISTOS2017}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\ \hline
-      \cite{SELIN2019}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
-      \cite{OLEYNIKOVA2018}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
-      \cite{GAO2018}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
-      \cite{FLORENCE2018}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
       \cite{USENKO2017}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
       \cite{MOHTA2017}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
       \cite{LIN2017}&\ding{55}&Celdas&D* Lite&gazebo&Camara&Descentralizada\\ \hline
+      \cite{PAPACHRISTOS2017}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\ \hline
+      \cite{OLEYNIKOVA2018}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
+      \cite{GAO2018}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
+      \cite{FLORENCE2018}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
+      \cite{SELIN2019}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
       \cite{COLLINS2019}&\ding{51}&Voronoi&A*&gazebo&LiDAR&Centralizada\\ \hline
       \cite{CINVES2021}&\ding{51}&Grafo&RRT*&matlab&Camara&Centralizada\\ \hline
-      \cite{RACER2022}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\
+      \cite{RACER2022}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\ \hline
+      \cite{WESTHEIDER2023}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\
       \hline
     \end{tabular}
 \end{center}
