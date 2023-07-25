@@ -1,46 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2022)
+This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: protocolo.aux
-The style file: ieeetr.bst
+The style file: abbrvnat.bst
 Database file #1: referencias.bib
-You've used 31 entries,
-            1876 wiz_defined-function locations,
-            688 strings with 9909 characters,
-and the built_in function-call counts, 8572 in all, are:
-= -- 842
-> -- 350
-< -- 0
-+ -- 130
-- -- 99
-* -- 603
-:= -- 1218
-add.period$ -- 35
-call.type$ -- 31
-change.case$ -- 29
-chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 451
-empty$ -- 773
-format.name$ -- 99
-if$ -- 2116
-int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 27
-newline$ -- 100
-num.names$ -- 31
-pop$ -- 83
+You've used 39 entries,
+            2773 wiz_defined-function locations,
+            899 strings with 14840 characters,
+and the built_in function-call counts, 21595 in all, are:
+= -- 1925
+> -- 1472
+< -- 20
++ -- 495
+- -- 456
+* -- 1913
+:= -- 3379
+add.period$ -- 167
+call.type$ -- 39
+change.case$ -- 267
+chr.to.int$ -- 39
+cite$ -- 78
+duplicate$ -- 860
+empty$ -- 1545
+format.name$ -- 507
+if$ -- 4518
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 33
+newline$ -- 252
+num.names$ -- 157
+pop$ -- 474
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 230
 quote$ -- 0
-skip$ -- 335
+skip$ -- 720
 stack$ -- 0
-substring$ -- 542
-swap$ -- 207
-text.length$ -- 0
+substring$ -- 734
+swap$ -- 124
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 419
 warning$ -- 0
-while$ -- 66
-width$ -- 33
-write$ -- 309
+while$ -- 153
+width$ -- 0
+write$ -- 609

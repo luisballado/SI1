@@ -105,7 +105,6 @@ author = {Amit Shukla and Hamad Karki},
   pages={35579-35587},
   doi={10.1109/ACCESS.2019.2902221}}
 
-
 @ARTICLE{RACER2022,
   author={Zhou, Boyu and Xu, Hao and Shen, Shaojie},
   journal={IEEE Transactions on Robotics}, 
@@ -117,13 +116,12 @@ author = {Amit Shukla and Hamad Karki},
   doi={10.1109/TRO.2023.3236945}}
 
 @book{HandBookRobotics2016,
-  author = {Siciliano, Bruno and Khatib Oussama},
-  title = {Springer Handbook of Robotics},
-  edition = {2nd},
-  publisher = {Springer Cham},
+doi = {10.1007/978-3-319-32552-1},
+  url = {https://doi.org/10.1007/978-3-319-32552-1},
   year = {2016},
-  isbn = {978-3-319-32552-1},
-  doi={https://doi.org/10.1007/978-3-319-32552-1}
+  publisher = {Springer International Publishing},
+  editor = {Bruno Siciliano and Oussama Khatib},
+  title = {Springer Handbook of Robotics}
 }
 
 @book{HandBookUAV2016,
@@ -262,14 +260,6 @@ month={Nov}
   pages={8-24},
   doi={10.1016/j.compag.2017.05.027}}
 
-@ARTICLE{LIN2017,
-  author={Lin Y, Gao F, et al.},
-  journal={Journal of Field Robotics}, 
-  title={Autonomous aerial navigation using monocular visual-inertial fusion}, 
-  year={2017},
-    pages={1-29},
-  doi={10.1002/rob.21732}}
-
 @ARTICLE{SELIN2019,
   author={Selin, Magnus and Tiger, Mattias and Duberg, Daniel and Heintz, Fredrik and Jensfelt, Patric},
   journal={IEEE Robotics and Automation Letters}, 
@@ -356,15 +346,21 @@ number={2},
 pages={935-942},
 doi={10.1109/LRA.2017.2655145}} 
 
-@phdthesis{CINVES2021,
-    author        = {Campos Macias, Leobardo Emmanuel},
-    title         = {Multi-Agent Autonomus Navigation in Unknown Cluttered Environments},
-    school = {CINVESTAV Unidad Guadalajara},
-    month = {Dicember},
-    year          = {2021}
+@article{CINVES2021,
+	doi = {10.1002/rob.21959},
+	url = {https://doi.org/10.1002/rob.21959},
+	year = 2020,
+	month = {may},
+	publisher = {Wiley},
+	volume = {38},
+	number = {2},
+	pages = {307--326},
+	author = {Leobardo Campos-Mac\'{i}as and Rodrigo Aldana-L\'{o}pez and Rafael Guardia and Jos\'{e} I. Parra-Vilchis and David G\'{o}mez-Guti\'{e}rrez},
+	title = {Autonomous navigation of {MAVs} in unknown cluttered environments}, 
+	journal = {Journal of Field Robotics}
 }
 
-@mastersthesis{Collins-2019,
+@mastersthesis{COLLINS2019,
 author = {Matthew Collins},
 title = {Efficient Planning for High-Speed MAV Flight in Unknown Environments Using Sparse Topological Graphs},
 year = {2019},
@@ -372,4 +368,106 @@ month = {August},
 school = {Carnegie Mellon University},
 address = {Pittsburgh, PA},
 number = {CMU-RI-TR-19-62},
+}
+
+@INPROCEEDINGS{CIESLEWSKI2017,
+  author={Cieslewski, Titus and Kaufmann, Elia and Scaramuzza, Davide},
+  booktitle={2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={Rapid exploration with multi-rotors: A frontier selection method for high speed flight}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={2135-2142},
+  doi={10.1109/IROS.2017.8206030}}
+
+@INPROCEEDINGS{PAPACHRISTOS2017,
+  author={Papachristos, Christos and Khattak, Shehryar and Alexis, Kostas},
+  booktitle={2017 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={Uncertainty-aware receding horizon exploration and mapping using aerial robots}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={4568-4575},
+  doi={10.1109/ICRA.2017.7989531}}
+
+@article{OLEYNIKOVA2018,
+	doi = {10.1109/lra.2018.2800109},
+	url = {https://doi.org/10.1109/lra.2018.2800109},
+	year = 2018,
+	month = {jul},
+	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+	volume = {3},
+	number = {3},
+	pages = {1474--1481},
+	author = {Helen Oleynikova and Zachary Taylor and Roland Siegwart and Juan Nieto},
+	title = {Safe Local Exploration for Replanning in Cluttered Unknown Environments for Microaerial Vehicles}, 
+	journal = {{IEEE} Robotics and Automation Letters}
+}
+
+@INPROCEEDINGS{GAO2018,
+  author={Gao, Fei and Wu, William and Lin, Yi and Shen, Shaojie},
+  booktitle={2018 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={Online Safe Trajectory Generation for Quadrotors Using Fast Marching Method and Bernstein Basis Polynomial}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={344-351},
+  doi={10.1109/ICRA.2018.8462878}}
+
+@misc{FLORENCE2018,
+      title={NanoMap: Fast, Uncertainty-Aware Proximity Queries with Lazy Search over Local 3D Data}, 
+      author={Peter R. Florence and John Carter and Jake Ware and Russ Tedrake},
+      year={2018},
+      eprint={1802.09076},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+
+@inproceedings{USENKO2017,
+	doi = {10.1109/iros.2017.8202160},
+	url = {https://doi.org/10.1109/iros.2017.8202160},
+	year = 2017,
+	month = {sep},
+	publisher = {{IEEE}
+},
+	author = {Vladyslav Usenko and Lukas von Stumberg and Andrej Pangercic and Daniel Cremers},
+	title = {Real-time trajectory replanning for {MAVs} using uniform B-splines and a 3D circular buffer}, 
+	booktitle = {2017 {IEEE}/{RSJ} International Conference on Intelligent Robots and Systems ({IROS})}
+}
+
+@article{MOHTA2017,
+  doi = {10.1002/rob.21774},
+  url = {https://doi.org/10.1002/rob.21774},
+  year = {2017},
+  month = dec,
+  publisher = {Wiley},
+  volume = {35},
+  number = {1},
+  pages = {101--120},
+  author = {Kartik Mohta and Michael Watterson and Yash Mulgaonkar and Sikang Liu and Chao Qu and Anurag Makineni and Kelsey Saulnier and Ke Sun and Alex Zhu and Jeffrey Delmerico and Konstantinos Karydis and Nikolay Atanasov and Giuseppe Loianno and Davide Scaramuzza and Kostas Daniilidis and Camillo Jose Taylor and Vijay Kumar},
+  title = {Fast,  autonomous flight in {GPS}-denied and cluttered environments},
+  journal = {Journal of Field Robotics}
+}
+
+@article{LIN2017,
+  doi = {10.1002/rob.21732},
+  url = {https://doi.org/10.1002/rob.21732},
+  year = {2017},
+  month = jul,
+  publisher = {Wiley},
+  volume = {35},
+  number = {1},
+  pages = {23--51},
+  author = {Yi Lin and Fei Gao and Tong Qin and Wenliang Gao and Tianbo Liu and William Wu and Zhenfei Yang and Shaojie Shen},
+  title = {Autonomous aerial navigation using monocular visual-inertial fusion},
+  journal = {Journal of Field Robotics}
+}
+
+@misc{WESTHEIDER2023,
+      title={Multi-UAV Adaptive Path Planning Using Deep Reinforcement Learning}, 
+      author={Jonas Westheider and Julius R{\"u}ckin and Marija Popovi{\.c}},
+      year={2023},
+      eprint={2303.01150},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
 }
