@@ -86,7 +86,7 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 
 \usepackage{array} % needed for \arraybackslash
 \usepackage{adjustbox} % for \adjincludegraphics
-
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
 \usepackage{forloop}
 \newcounter{loopcntr}
 \newcommand{\rpt}[2][1]{%
@@ -130,8 +130,10 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
   En las \'{u}ltimas decadas se ha visto un aumento en el inter\'{e}s de los Veh\'{i}culos A\'{e}reos No Tripulados (conocidos como VANT o coloquialmente drones), a la par que se han introducido nuevas tecnolog\'{i}as de comunicaci\'{o}n, sensores y computaci\'{o}n. Estos avances han sido aplicados al control de VANT, logrando crear diversas soluciones en vigilancia, b\'{u}squeda y rescate \cite{MITNEWS2018}, soluciones para el problema de la \'{u}ltima milla, inclusive en espect\'{a}culos a\'{e}reos (solo por mencionar algunos). Dichas aplicaciones suelen carecer de autonom\'{i}a. Para que un robot se considere aut\'{o}nomo deber\'{a} tomar decisiones y realizar tareas sin necesidad de que alguien le diga qu\'{e} hacer o guiarlo paso a paso. Tener la capacidad de percibir su entorno y usar la informaci\'{o}n para decidir c\'{o}mo moverse son considerados altos niveles de autonom\'{i}a. Para llegar a ello el robot debe resolver primero problemas como su localizaci\'{o}n, mapeo y navegaci\'{o}n.\\
   Se ha demostrado que es posible dotar de autonom\'{i}a a un robot (m\'{o}vil o a\'{e}reo) y las aplicaciones antes mencionadas son prueba de ello. Dichas soluciones parten de tener el problema de localizaci\'{o}n resuelto al ser aplicaciones en exteriores y poder hacer uso de sistemas de localizaci\'{o}n como el Sistema de Posicionamiento Global (GPS) o Sistema Global de Navegaci\'{o}n por Sat\'{e}lite (Global Navigation Satellite System, GNSS). Los Veh\'{i}culos A\'{e}reos no Tripulados (VANT) del ma\~{n}ana deber\'{a}n de navegar en \'{a}reas urbanas de la mejor manera posible y tener la habilidad de trabajar en coordinaci\'{o}n multi-VANT.\\
 
-  El enfoque de este trabajo es la creaci\'{o}n y propuesta de una arquitectura de software capaz de coordinar m\'{u}ltiples Veh\'{i}culos A\'{e}reos No Tripulados con algoritmos para la exploraci\'{o}n de \'{a}reas desconocidas y cambiantes. Convirti\'{e}ndose en un desaf\'{i}o en rob\'{o}tica m\'{o}vil buscando coordinar y optimizar el movimiento de varios robots para explorar eficientemente un \'{a}rea desconocida. El objetivo pudiera ser maximizar la cobertura del \'{a}rea minimizando el tiempo requerido para completar la exploraci\'{o}n. Este problema implica tomar decisiones complejas, como asignar tareas a los robots, evitar colisiones y planificar rutas \'{o}ptimas. Factores como la comunicaci\'{o}n entre robots, la incertidumbre del entorno y las limitaciones de recursos son considerados en este trabajo.\\
-  Resolver eficazmente este problema permitir\'{i}a mejorar la eficiencia y efectividad de las misiones de exploraci\'{o}n en diversos campos, como la b\'{u}squeda y rescate \cite{MITNEWS2018}, la inspecci\'{o}n de infraestructuras y entre otras. \\
+  El enfoque de este trabajo es la creaci\'{o}n y propuesta de una arquitectura de software capaz de coordinar m\'{u}ltiples Veh\'{i}culos A\'{e}reos No Tripulados con algoritmos para la exploraci\'{o}n de \'{a}reas desconocidas y cambiantes. Convirti\'{e}ndose en un desaf\'{i}o en rob\'{o}tica m\'{o}vil buscando coordinar y optimizar el movimiento de varios robots para explorar eficientemente un \'{a}rea desconocida. El objetivo pudiera ser maximizar la cobertura del \'{a}rea minimizando el tiempo requerido para completar la exploraci\'{o}n. Este problema implica tomar decisiones complejas, como asignar tareas a los robots, evitar colisiones y planificar rutas \'{o}ptimas. Factores como la comunicaci\'{o}n entre robots, la incertidumbre del entorno y las limitaciones de recursos son considerados en este trabajo. Resolver eficazmente este problema permitir\'{i}a mejorar la eficiencia y efectividad de las misiones de exploraci\'{o}n en diversos campos, como la b\'{u}squeda y rescate \cite{MITNEWS2018}, la inspecci\'{o}n de infraestructuras y entre otras. \\
+
+  Como humanidad aun tenemos lugares desconocidos que deseamos explorar (volcanes, ..etc.), entonces a los lugares que a\'{u}n no podemos enviar gente, entonces podremos enviar m\'{a}quinas.\\
+  La naturaleza es una fuente inmensa de soluciones a problemas como la locomoci\'{o}n de los robots no importa la criatura, o que desagradable tal vez ella pueda contener los secretos que nos llevar\'{a}n algun dia a las estrellas \'{o} almenos nos traer\'{a}n nuestras compras.
   \medskip \\
   
   \noindent \textbf{Palabras claves:} multi-VANT, coordinaci\'{o}n multi-VANT, exploraci\'{o}n 3D, planificador de rutas 3D.
@@ -193,10 +195,17 @@ Grado acad\'{e}mico: & Doctorado
 \newpage
 \section*{Descripci\'{o}n del proyecto}
 
-El proyecto de estrategias para la exploraci\'{o}n coordinada multi-VANT se centra en las ventajas de tener m\'{u}ltiples-VANT(s) trabajando en conjunto para mejorar la eficiencia y cobertura de la exploraci\'{o}n proponiendo una arquitectura de software descentralizada que permita la coordinaci\'{o}n eficiente de multi-VANT para tareas de exploraci\'{o}n en entornos desconocidos y cambiantes.
+El proyecto de estrategias para la exploraci\'{o}n coordinada multi-VANT se centra en las ventajas de tener m\'{u}ltiples-VANT(s) trabajando en conjunto para mejorar la eficiencia y cobertura de la exploraci\'{o}n proponiendo una arquitectura de software descentralizada que permita la coordinaci\'{o}n eficiente de multi-VANT para tareas de exploraci\'{o}n en entornos desconocidos y cambiantes.\\
 
+Supongamos que tengo un VANT y lo deseo mover de un punto A a un punto B. Para que el dron se pueda desplazar el dron debe cambiar las velocidades de sus propelas, cambiando estas velocidades lograr\'{a}n desplazar el dron deacuerdo a cierta \textbf{configuraci\'{o}n}. Est\'{o} podr\'{a} ser la respuesta de la salida de un algoritmo genetico.\\
+
+\textbf{¿C\'{o}mo podemos generar un modelo matem\'{a}tico que nos permita controlar y manipular nuestro objeto es el espacio?}. A simples palabras en la cantidad de fuerza de momento es requerida para ir de un punto dado. Asi que particularmente depende de una masa que rota.\\
 
 \subsection*{Antecedentes y motivaci\'{o}n para el proyecto}
+
+Hablar de por que necesitamos de robots colaborativos y cuales pueden ser sus ventajas y desventajas\\
+
+
 
 \begin{center}
 \begin{forest}
@@ -344,24 +353,54 @@ El objetivo principal de este trabajo es el de realizar seguimiento ..\\
 \end{itemize}
 
 
-  \begin{tabular}{ |p{2cm}|p{1.5cm}|p{1.5cm}|p{1.4cm}|p{7.5cm}|  }
+  \begin{tabular}{ |p{2cm}|p{1.5cm}|p{1.5cm}|p{1.4cm}|p{6cm}|  }
     \hline
-    Metodo& Completo & Optimo& Escalable& Notas \\
-    \hline
-    \rowcolor{black!5}
-    Visibility   & Si    & Si&   No& Poca escalabilidad, el robot pasa cerca de los obstaculos\\
-    \hline
-    Voronoi   & Si    & No& No& Poca escalabilidad\\
+    \tiny Metodo& \tiny Completez & \tiny \'{O}ptimo& \tiny Escalable& \tiny Notas \\
     \hline
     \rowcolor{black!5}
-    Potential field   & Si    & No& Depende del ambiente& Facil de implementar, suceptible a minimos locales\\
+    \tiny Visibility   & \tiny Si    & \tiny Si&  \tiny No&
+    \begin{itemize}[noitemsep,topsep=0pt]
+    \tiny \item Mucho espacio libre
+    \tiny \item Mala escalabilidad
+    \tiny \item El robot pasa cerca de obstaculos
+    \end{itemize}\\
     \hline
-    Dijkstra/A*   & Si    & Grid& No& A* usa una funcion heuristica que guia la busqueda mas eficiente, Poca escalabilidad\\
+    \tiny Voronoi   & \tiny Si    & \tiny No& \tiny No&
+    \begin{itemize}[noitemsep,topsep=0pt]
+    \tiny \item Espacio libre m\'{a}ximo
+    \tiny \item Rutas conservadoras
+    \tiny \item Mala escalabilidad
+    \end{itemize}\\
     \hline
     \rowcolor{black!5}
-    PRM   & Si    & Grafo& Si& Eficiente para multi-busquedas, completez probabilistica \\
+    \tiny Potential field   & \tiny Si    & \tiny No& \tiny Depende del ambiente&
+    \begin{itemize}[noitemsep,topsep=0pt]
+    \tiny \item Depende del ambiente
+    \tiny \item F\'{a}cil de implementar
+    \tiny \item Suceptible a m\'{i}nimos locales
+    \end{itemize}\\
     \hline
-    RRT   & Si    & No & Si& Eficiente para problemas simples, completez probabilistica\\
+    \tiny Dijkstra/A*   & \tiny Si    & \tiny Grid& \tiny No&
+    \begin{itemize}[noitemsep,topsep=0pt]
+    \tiny \item M\'{a}s r\'{a}pido que la b\'{u}squeda desinformada
+    \tiny \item A* usa una funci\'{o}n heur\'{i}stica para impulsar la b\'{u}squeda de manera eficiente
+    \tiny \item Mala escalabilidad
+    \end{itemize}\\
+    \hline
+    \rowcolor{black!5}
+    \tiny PRM   & \tiny Si    & \tiny Grafo& \tiny Si&
+    \begin{itemize}[noitemsep,topsep=0pt]
+    \tiny \item Eficiente para problemas con consultas múltiples
+    \tiny \item Completez probabil\'{i}stica\
+    \tiny \item Camino irregular
+    \end{itemize}\\
+    \hline
+    \tiny RRT   & \tiny Si    & \tiny No & \tiny Si&
+    \begin{itemize}[noitemsep,topsep=0pt]
+    \tiny \item Eficiente para problemas de consulta \'{u}nica
+    \tiny \item Completez probabil\'{i}stica
+    \tiny \item Camino irregular
+    \end{itemize}\\
     \hline
   \end{tabular}\\
 
@@ -472,7 +511,7 @@ Dada un \'{a}rea de inter\'{e}s $A$ desconocida que se desea explorar,
 \item Un conjunto de tareas de exploraci\'{o}n denotados como $T = T_{1}, T_{2}, T_{3}, T_{m}$, donde $m$ es el n\'{u}mero total de tareas a realizar.
 \end{itemize}
 
-restricciones y requisitos espec\'{i}ficos del problema, como l\'{i}mites de tiempo, obst\'{a}culos a evitar, etc.
+restricciones y requisitos espec\'{i}ficos del problema, como l\'{i}mites de tiempo, obst\'{a}culos a evitar, etc.\\
 
 Para cada tarea de exploraci\'{o}n $T_{m}$, se definen las siguientes variables:
 
@@ -488,6 +527,17 @@ La funci\'{o}n objetivo variar\'{a} seg\'{u}n los objetivos espec\'{i}ficos del 
 \item Minimizar el tiempo total requerido para cubrir el \'{a}rea de inter\'{e}s $A$
 \item Maximizar la cantidad de informaci\'{o}n recolectada
 \end{itemize}
+
+Con base en lo anterior, surgen las siguientes preguntas de investigaci\'{o}n:
+
+\begin{itemize}
+\item ¿Es posible crear una arquitectura de software capaz de coordinar multiples-VANTS para tareas en exploraci\'{o}n de manera lineal $O(n)$?
+\item ¿Cual\'{e}s son los mejores algoritmos conocidos adecuados para correr en una raspberry pi?
+\end{itemize}
+
+\subsection*{Hip\'{o}tesis}
+
+Es posible crear una arquitectura de software para coordinar multiples-VANTS en exploracion que sea de orden lineal capaz de contar con una representacion del ambiente en voxels.
 
 \newpage
 \section*{Objetivos generales y espec\'{\i}ficos del proyecto}
@@ -748,11 +798,11 @@ Para el desarrollo de este proyecto de investigaci\'{o}n, se har\'{a} uso de un 
 \newpage
 \section*{Estado del arte}
 
-A minimal navigation solution is presented for swarms of tiny flying robots to explore unknown, GPS-denied environments. Swarms of tiny flying robots hold great potential for exploring unknown, indoor environments. Their small size allows them to move in narrow spaces, and their light weight makes them safe for operating around humans. Until now, this task has been out of reach due to the lack of adequate navigation strategies. The absence of external infrastructure implies that any positioning attempts must be performed by the robots themselves. State-of-the-art solutions, such as simultaneous localization and mapping, are still too resource demanding. This article presents the swarm gradient bug algorithm (SGBA), a minimal navigation solution that allows a swarm of tiny flying robots to autonomously explore an unknown environment and subsequently come back to the departure point. SGBA maximizes coverage by having robots travel in different directions away from the departure point. The robots navigate the environment and deal with static obstacles on the fly by means of visual odometry and wall-following behaviors. Moreover, they communicate with each other to avoid collisions and maximize search efficiency. To come back to the departure point, the robots perform a gradient search toward a home beacon. We studied the collective aspects of SGBA, demonstrating that it allows a group of 33-g commercial off-the-shelf quadrotors to successfully explore a real-world environment. The application potential is illustrated by a proof-of-concept search-and-rescue mission in which the robots captured images to find victims in an office environment. The developed algorithms generalize to other robot types and lay the basis for tackling other similarly complex missions with robot swarms in the future \cite{BUG2019}.\\
+Se presenta una solución de navegación mínima para enjambres de diminutos robots voladores que exploran entornos desconocidos sin señal de GPS. Los enjambres de pequeños robots voladores tienen un gran potencial para explorar entornos desconocidos, especialmente en interiores. Su pequeño tamaño les permite moverse en espacios estrechos y su ligereza los hace seguros para operar alrededor de humanos. Hasta ahora, esta tarea ha sido difícil debido a la falta de estrategias de navegación adecuadas. La ausencia de infraestructura externa implica que cualquier intento de posicionamiento debe ser realizado por los propios robots. Las soluciones de vanguardia, como la localización y el mapeo simultáneos, todavía requieren demasiados recursos. Este artículo presenta el algoritmo "Swarm Gradient Bug" (SGBA), una solución de navegación mínima que permite a un enjambre de diminutos robots voladores explorar autonomamente un entorno desconocido y regresar posteriormente al punto de partida. SGBA maximiza la cobertura al hacer que los robots se muevan en diferentes direcciones lejos del punto de partida. Los robots navegan por el entorno y enfrentan obstáculos estáticos sobre la marcha mediante la odometría visual y comportamientos de seguimiento de paredes. Además, se comunican entre sí para evitar colisiones y maximizar la eficiencia de la búsqueda. Para regresar al punto de partida, los robots realizan una búsqueda de gradiente hacia un faro de referencia. Se estudiaron los aspectos colectivos de SGBA, demostrando que permite que un grupo de cuadricópteros comerciales estándar de 33 gramos explore con éxito un entorno del mundo real. El potencial de aplicación se ilustra mediante una misión de búsqueda y rescate de prueba en la que los robots capturaron imágenes para encontrar víctimas en un entorno de oficina. Los algoritmos desarrollados se generalizan a otros tipos de robots y sientan las bases para abordar misiones igualmente complejas con enjambres de robots en el futuro.\cite{BUG2019}.\\
 
-Unmanned aerial vehicles (UAVs) have the potential to make a significant impact in a range of scenarios where it is too risky or too costly to rely on human labour. Fleets of autonomous UAVs, which complete tasks collaboratively while managing their basic flight and related tasks independently, present further opportunities along with research and regulatory challenges. Improvements in UAV construction and components, along with developments in embedded computing hardware, communication mechanisms and sensors which may be mounted on-board a UAV, are nearing the point where commercial deployment of fleets of autonomous UAVs will be technically possible.To fulfil this potential, UAVs will need to operate safely and reliably in complex and potentially dynamically changing environments with path-planning, obstacle sensing and collision avoidance paramount. This survey presents an original environment complexity classification and critically analyses the current state of the art in relation to UAV path-planning approaches. Moreover, it highlights the existing challenges in environment complexity modelling and representation, as well as path-planning approaches, and outlines open research questions together with future directions. \cite{ACM2023}
+El texto destaca el potencial de los vehículos aéreos no tripulados (UAV) para tener un impacto significativo en situaciones donde es demasiado arriesgado o costoso depender del trabajo humano. Los UAV autónomos, que completan tareas colaborativamente mientras gestionan su vuelo básico y tareas relacionadas de forma independiente, presentan oportunidades adicionales junto con desafíos de investigación y regulación. Las mejoras en la construcción y componentes de los UAV, así como en el hardware de computación embebida, mecanismos de comunicación y sensores que pueden ser montados a bordo de un UAV, están cerca del punto en el que el despliegue comercial de flotas de UAV autónomos será técnicamente posible. Para alcanzar este potencial, los UAV deberán operar de manera segura y confiable en entornos complejos y potencialmente cambiantes, con especial énfasis en la planificación de rutas, la detección de obstáculos y la evitación de colisiones. La encuesta presenta una clasificación original de la complejidad del entorno y analiza críticamente el estado actual del arte en cuanto a enfoques de planificación de rutas para UAV. Además, resalta los desafíos existentes en la modelización y representación de la complejidad del entorno, así como en los enfoques de planificación de rutas, y plantea preguntas abiertas de investigación junto con futuras direcciones. \cite{ACM2023}
 
-The use of unmanned aerial vehicles (UAVs) to carry out remote aerial surveys has become prominent in recent years. The UAV-based survey faces several operational issues, such as complicated terrain, limited UAV resources, obstacles, sensor limitations, and other environmental factors. In addition, the coverage plan includes numerous objectives, such as lowering path length, maximizing coverage, and limiting survey time, necessitating multi-objective optimization. UAVs require effective coverage path planning (CPP) to generate the ideal route. It involves determining the path which encompasses every point inside the required region under different constraints. The process automates the process of route determination for autonomous operation by considering various environmental constraints. In this paper, we explore and analyze the existing research on the various techniques used in coverage route planning for UAVs. It provides an overview of the current state-of-the-art CPP methods for UAVs. The study discusses the key challenges and requirements of CPP for UAVs and presents various approaches proposed in the literature to tackle these challenges. We explore a variety of geometric flight patterns for the area of interest having UAV deployment. It also features multi-UAV and multi-region coverage strategies, providing a new dimension to UAV-based operations. The energy consumption of UAVs during CPP is an essential factor, as it influences their flight length and mission duration. The design of the CPP algorithm is determined by the unique requirements of the UAV application, such as the size and form of the region to be mapped, the existence of obstacles, and the desired coverage resolution. Path planning strategies in a three-dimensional environment and dynamic coverage are also included in the study. Moreover, we compare the existing strategies using different performance metrics to evaluate the success of covering missions. Finally, the problems and unresolved concerns related to UAV coverage path planning are examined to provide valuable insights to the readers \cite{KUMAR2023}.\\
+En los últimos años, el uso de vehículos aéreos no tripulados (UAVs) para llevar a cabo estudios aéreos remotos se ha vuelto prominente. Sin embargo, este tipo de encuestas basadas en UAVs enfrenta varios problemas operativos, como terrenos complicados, recursos limitados de los UAVs, obstáculos, limitaciones de sensores y otros factores ambientales. Para abordar estos desafíos y alcanzar múltiples objetivos, como reducir la longitud del recorrido, maximizar la cobertura y limitar el tiempo de encuesta, se requiere una optimización multiobjetivo. Los UAVs necesitan una planificación efectiva de la ruta de cobertura (CPP) para generar la ruta ideal, considerando diversas restricciones ambientales para la operación autónoma. En este artículo, se exploran y analizan las investigaciones existentes sobre las diversas técnicas utilizadas en la planificación de rutas de cobertura para UAVs, brindando una visión general de los métodos más avanzados en CPP para UAVs. El estudio discute los principales desafíos y requisitos de CPP para UAVs, y presenta diversos enfoques propuestos en la literatura para abordar estos problemas. Se exploran diversos patrones de vuelo geométricos para el área de interés con despliegue de UAVs, además de estrategias de cobertura para múltiples UAVs y múltiples regiones, lo que proporciona una nueva dimensión a las operaciones basadas en UAVs. También se considera el consumo de energía de los UAVs durante CPP, un factor esencial que afecta su duración de vuelo y misión. La selección del algoritmo CPP se determina según los requisitos únicos de la aplicación de los UAVs, como el tamaño y forma de la región a cartografiar, la existencia de obstáculos y la resolución de cobertura deseada. El estudio también incluye estrategias de planificación de rutas en un entorno tridimensional y la cobertura dinámica. Además, se comparan las estrategias existentes utilizando diferentes métricas de rendimiento para evaluar el éxito de las misiones de cobertura. Finalmente, se examinan los problemas y las preocupaciones sin resolver relacionadas con la planificación de rutas de cobertura de UAVs para proporcionar conocimientos valiosos a los lectores. \cite{KUMAR2023}.\\
 
 This paper investigates the path planning problem of an unmanned aerial vehicle (UAV) for completing a raid mission through ultra-low altitude flight in complex environments. The UAV needs to avoid radar detection areas, low-altitude static obstacles, and low-altitude dynamic obstacles during the flight process. Due to the uncertainty of low-altitude dynamic obstacle movement, this can slow down the convergence of existing algorithm models and also reduce the mission success rate of UAVs. In order to solve this problem, this paper designs a state detection method to encode the environmental state of the UAVs direction of travel and compress the environmental state space. In considering the continuity of the state space and action space, the SD-TD3 algorithm is proposed in combination with the double-delayed deep deterministic policy gradient algorithm (TD3), which can accelerate the training convergence speed and improve the obstacle avoidance capability of the algorithm model. Further, to address the sparse reward problem of traditional reinforcement learning, a heuristic dynamic reward function is designed to give real-time rewards and guide the UAV to complete the task. The simulation results show that the training results of the SD-TD3 algorithm converge faster than the TD3 algorithm, and the actual results of the converged model are better \cite{machines2023}
 
@@ -774,7 +824,9 @@ Autonomous BVLOS Unmanned Aerial Vehicles (UAVs) are gradually gaining their sha
 
 Drones are poised to become an integral part of smart cities and improve overall life experience in the sense of monitoring pollution, accident investigation, fire-fighting, package delivery, supporting first responder activities, delivering medicine, monitoring traffic, and supervising construction sites. Drone technology can further lead to enormous secondary benefits such as reducing power consumption, conserving resources, reducing pollution, accessing hazardous and disaster areas, and increasing preparedness for emergencies \cite{SurveyCollab2019}.\\
 
-This paper presents a method for online trajectory planning in known environments. The proposed algorithm is a fusion of sampling-based techniques and model-based optimization via quadratic programming. The former is used to efficiently generate an obstacle-free path while the latter takes into account the robot dynamical constraints to generate a time-dependent trajectory. The main contribution of this work lies on the formulation of a convex optimization problem over the generated obstacle-free path that is guaranteed to be feasible. Thus, in contrast with previously proposed methods, iterative formulations are not required. The proposed method has been compared with state-of-the-art approaches showing a significant improvement in success rate and computation time. To illustrate the effectiveness of this approach for online planning, the proposed method was applied to the fluid autonomous navigation of a quadcopter in multiple environments consisting of up to 200 obstacles. The scenarios hereinafter presented are some of the most densely cluttered experiments for online planning and navigation reported to date \cite{HybridCampos2017}.\\
+%This paper presents a method for online trajectory planning in known environments. The proposed algorithm is a fusion of sampling-based techniques and model-based optimization via quadratic programming. The former is used to efficiently generate an obstacle-free path while the latter takes into account the robot dynamical constraints to generate a time-dependent trajectory. The main contribution of this work lies on the formulation of a convex optimization problem over the generated obstacle-free path that is guaranteed to be feasible. Thus, in contrast with previously proposed methods, iterative formulations are not required. The proposed method has been compared with state-of-the-art approaches showing a significant improvement in success rate and computation time. To illustrate the effectiveness of this approach for online planning, the proposed method was applied to the fluid autonomous navigation of a quadcopter in multiple environments consisting of up to 200 obstacles. The scenarios hereinafter presented are some of the most densely cluttered experiments for online planning and navigation reported to date 
+
+Este artículo presenta un método para la planificación de trayectorias en línea en entornos conocidos. El algoritmo propuesto es una fusión de técnicas basadas en muestreo y optimización basada en modelos a través de programación cuadrática. El primero se utiliza para generar eficientemente una ruta libre de obstáculos, mientras que el último tiene en cuenta las restricciones dinámicas del robot para generar una trayectoria dependiente del tiempo. La principal contribución de este trabajo radica en la formulación de un problema de optimización convexa sobre la ruta libre de obstáculos generada, lo que garantiza que sea factible. Por lo tanto, a diferencia de los métodos propuestos anteriormente, no se requieren formulaciones iterativas. El método propuesto ha sido comparado con enfoques de vanguardia, mostrando una mejora significativa en la tasa de éxito y el tiempo de cálculo. Para ilustrar la efectividad de este enfoque para la planificación en línea, se aplicó el método propuesto a la navegación autónoma fluida de un quadcopter en múltiples entornos que consisten en hasta 200 obstáculos. Los escenarios presentados a continuación son algunos de los experimentos con mayor densidad de obstáculos para la planificación y navegación en línea reportados hasta la fecha. \cite{HybridCampos2017}.\\
 
 %The works of Shen, Michael, and Kumar (2011) and Fraundorfer et al. (2012) are among the earliest demonstrating autonomous MAV navigation. They showed that MAVs could follow waypoints in the currently estimated map, avoid obstacles, and complete exploration tasks in cluttered environments. Nonetheless, those early works fell short of demonstrating full autonomy since the former lacked onboard planning while the latter relied online mapping.\\
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  24 JUL 2023 19:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  25 JUL 2023 23:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1003,10 +1003,19 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen330
 \@vwid@roff=\dimen331
 ))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip79
+\enit@outerparindent=\dimen332
+\enit@toks=\toks53
+\enit@inbox=\box141
+\enit@count@id=\count353
+\enitdp@description=\count354
+)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/forloop/forloop.sty
 Package: forloop 2006/09/18 v3.0 For Loops for LaTeX
 )
-\c@loopcntr=\count353
+\c@loopcntr=\count355
 
 
 LaTeX Warning: Unused global option(s):
@@ -1039,17 +1048,17 @@ LaTeX Font Info:    ... okay on input line 114.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count354
-\scratchdimen=\dimen332
-\scratchbox=\box141
-\nofMPsegments=\count355
-\nofMParguments=\count356
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count357
-\MPscratchDim=\dimen333
-\MPnumerator=\count358
-\makeMPintoPDFobject=\count359
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count356
+\scratchdimen=\dimen333
+\scratchbox=\box142
+\nofMPsegments=\count357
+\nofMParguments=\count358
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count359
+\MPscratchDim=\dimen334
+\MPnumerator=\count360
+\makeMPintoPDFobject=\count361
+\everyMPtoPDFconversion=\toks55
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1085,364 +1094,547 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 117
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+
+Package natbib Warning: Citation `MITNEWS2018' on page 1 undefined on input lin
+e 130.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 130--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--136
+Package natbib Warning: Citation `MITNEWS2018' on page 1 undefined on input lin
+e 133.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--138
 
  []
 
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+ []
+
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
-58.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1phv.fd
+67.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 258.
+(Font)              scaled to size 10.40245pt on input line 267.
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 271--272
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Package natbib Warning: Citation `CINVESTAM2013' on page 4 undefined on input l
+ine 280.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Package natbib Warning: Citation `CINVES2013' on page 4 undefined on input line
+ 282.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--280
+Underfull \hbox (badness 10000) in paragraph at lines 284--286
 
  []
 
-[3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}] [4{/usr/loc
-al/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Overfull \hbox (3.55428pt too wide) in paragraph at lines 349--349
-[]|\OT1/cmr/m/n/10.95 Completo| 
+[4{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+
+Package natbib Warning: Citation `CINVES2021' on page 5 undefined on input line
+ 287.
+
+
+Package natbib Warning: Citation `CINVES2015' on page 5 undefined on input line
+ 287.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--289
+
+ []
+
+[5{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}]
+Underfull \hbox (badness 5741) in paragraph at lines 393--394
+[]\OT1/cmr/m/n/6 Eficiente pa-ra pro-ble-mas con con-sul-tas
  []
 
 
-Overfull \hbox (4.78761pt too wide) in paragraph at lines 349--349
-[]|\OT1/cmr/m/n/10.95 Escalable| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 357--357
-[]|\OT1/cmr/m/n/10.95 Potential
- []
-
-
-Overfull \hbox (1.68512pt too wide) in paragraph at lines 357--357
-[]|\OT1/cmr/m/n/10.95 Depende
- []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 357--357
-\OT1/cmr/m/n/10.95 del am-
- []
-
-
-Overfull \hbox (1.1296pt too wide) in paragraph at lines 359--359
-[]|\OT1/cmr/m/n/10.95 Dijkstra/A*| 
- []
-
-
-Overfull \hbox (5.13806pt too wide) in paragraph at lines 347--367
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 347--367
+Underfull \hbox (badness 10000) in paragraph at lines 356--406
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 374--375
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 385--388
-
- []
+Package natbib Warning: Citation `Bekey2005' on page 6 undefined on input line 
+407.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--390
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--393
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 406--408
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+Package natbib Warning: Citation `Bekey2005' on page 7 undefined on input line 
+419.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--427
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--415
+Package natbib Warning: Citation `ramirez2001' on page 7 undefined on input lin
+e 430.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--419
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 432--433
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 434--435
+Underfull \hbox (badness 10000) in paragraph at lines 445--447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--437
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--439
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--441
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 461--462
+
+Package natbib Warning: Citation `UAVCIVIL2019' on page 9 undefined on input li
+ne 471.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--464
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
+Package natbib Warning: Citation `Daponte2015' on page 9 undefined on input lin
+e 475.
+
+
+Package natbib Warning: Citation `UAVPRACTICAL2023' on page 9 undefined on inpu
+t line 475.
+
+
+Package natbib Warning: Citation `GUPTA2016' on page 9 undefined on input line 
+475.
+
+
+Package natbib Warning: Citation `VEGETACION2017' on page 9 undefined on input 
+line 475.
+
+
+Package natbib Warning: Citation `ROADS2017' on page 9 undefined on input line 
+475.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
+Package natbib Warning: Citation `SHUKLA2016490' on page 9 undefined on input l
+ine 477.
+
+
+Package natbib Warning: Citation `PENDU2011' on page 9 undefined on input line 
+477.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
 
  []
 
 
-Overfull \hbox (3.66418pt too wide) in paragraph at lines 471--472
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
+
+ []
+
+
+Overfull \hbox (3.66418pt too wide) in paragraph at lines 510--511
 []\OT1/cmr/m/n/10.95 Un con-jun-to de Veh^^S^^Pcu-los A^^Sereos No Tri-pu-la-do
 s (VANT) de-no-ta-dos co-mo $\OML/cmm/m/it/10.95 V \OT1/cmr/m/n/10.95 = \OML/cm
 m/m/it/10.95 V[]; V[]; V[]; :::; V[]$\OT1/cmr/m/n/10.95 ,
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 495--496
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
 
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+[10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 541--542
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 563--564
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 575--576
 
  []
 
 
-Overfull \hbox (186.61496pt too wide) in paragraph at lines 579--651
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
+
+ []
+
+
+Overfull \hbox (186.61496pt too wide) in paragraph at lines 629--701
 [] 
  []
 
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 751--752
+[14] [15]
+
+Package natbib Warning: Citation `BUG2019' on page 16 undefined on input line 8
+01.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--802
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--756
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 759--760
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 765--766
-
- []
+Package natbib Warning: Citation `ACM2023' on page 16 undefined on input line 8
+03.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 767--768
+Package natbib Warning: Citation `KUMAR2023' on page 16 undefined on input line
+ 805.
 
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 771--772
+Underfull \hbox (badness 10000) in paragraph at lines 805--806
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 773--774
+
+Package natbib Warning: Citation `machines2023' on page 17 undefined on input l
+ine 807.
+
+
+Package natbib Warning: Citation `UAVPRACTICAL2023' on page 17 undefined on inp
+ut line 809.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--810
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 775--776
+Package natbib Warning: Citation `HandBookRobotics2016' on page 17 undefined on
+ input line 811.
 
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 777--778
-
- []
+Package natbib Warning: Citation `drones2022' on page 17 undefined on input lin
+e 813.
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 815--819
+
+Package natbib Warning: Citation `PathPlanning2022' on page 18 undefined on inp
+ut line 815.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--816
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 822--823
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--825
-
- []
+Package natbib Warning: Citation `Chen2017' on page 18 undefined on input line 
+817.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 826--827
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 830--831
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 832--833
+Underfull \hbox (badness 10000) in paragraph at lines 817--818
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 839--840
+
+Package natbib Warning: Citation `MultiPathPlanning2018' on page 19 undefined o
+n input line 821.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--822
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 841--842
+Package natbib Warning: Citation `Chronis2023' on page 19 undefined on input li
+ne 823.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--824
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 843--844
+Package natbib Warning: Citation `SurveyCollab2019' on page 19 undefined on inp
+ut line 825.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 825--826
 
  []
 
 
-Overfull \hbox (41.2985pt too wide) in paragraph at lines 846--877
- [] 
+Package natbib Warning: Citation `HybridCampos2017' on page 19 undefined on inp
+ut line 829.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--830
+
  []
 
 [19]
-Overfull \hbox (45.81232pt too wide) in paragraph at lines 881--899
+Underfull \hbox (badness 10000) in paragraph at lines 867--871
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 874--875
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 876--877
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 878--879
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 882--883
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 884--885
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 891--892
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--894
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 895--896
+
+ []
+
+
+Overfull \hbox (41.2985pt too wide) in paragraph at lines 898--929
  [] 
  []
 
-[20] (./protocolo.bbl [21] [22]) [23] [24] (./protocolo.aux
+[21]
+
+Package natbib Warning: Citation `CIESLEWSKI2017' on page 22 undefined on input
+ line 936.
+
+
+Package natbib Warning: Citation `USENKO2017' on page 22 undefined on input lin
+e 937.
+
+
+Package natbib Warning: Citation `MOHTA2017' on page 22 undefined on input line
+ 938.
+
+
+Package natbib Warning: Citation `LIN2017' on page 22 undefined on input line 9
+39.
+
+
+Package natbib Warning: Citation `PAPACHRISTOS2017' on page 22 undefined on inp
+ut line 940.
+
+
+Package natbib Warning: Citation `OLEYNIKOVA2018' on page 22 undefined on input
+ line 941.
+
+
+Package natbib Warning: Citation `GAO2018' on page 22 undefined on input line 9
+42.
+
+
+Package natbib Warning: Citation `FLORENCE2018' on page 22 undefined on input l
+ine 943.
+
+
+Package natbib Warning: Citation `SELIN2019' on page 22 undefined on input line
+ 944.
+
+
+Package natbib Warning: Citation `COLLINS2019' on page 22 undefined on input li
+ne 945.
+
+
+Package natbib Warning: Citation `CINVES2021' on page 22 undefined on input lin
+e 946.
+
+
+Package natbib Warning: Citation `RACER2022' on page 22 undefined on input line
+ 947.
+
+
+Package natbib Warning: Citation `WESTHEIDER2023' on page 22 undefined on input
+ line 948.
+
+[22] [23] (./protocolo.bbl [24] [25]) [26]
+
+Package natbib Warning: There were undefined citations.
+
+[27] (./protocolo.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
+
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
 )
 Package rerunfilecheck Info: File `protocolo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 37558 strings out of 476025
- 803219 string characters out of 5790017
+ 37903 strings out of 476025
+ 809221 string characters out of 5790017
  1925388 words of memory out of 5000000
- 57359 multiletter control sequences out of 15000+600000
+ 57696 multiletter control sequences out of 15000+600000
  529340 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 158i,12n,156p,2156b,2295s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 158i,12n,156p,2254b,2298s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -1459,10 +1651,10 @@ e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/
 2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/20
 23/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2023/texm
 f-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on protocolo.pdf (24 pages, 287332 bytes).
+Output written on protocolo.pdf (27 pages, 291136 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
- 100 named destinations out of 1000 (max. 500000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
+ 104 named destinations out of 1000 (max. 500000)
  127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
