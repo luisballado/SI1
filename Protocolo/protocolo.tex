@@ -205,6 +205,97 @@ Supongamos que tengo un VANT y lo deseo mover de un punto A a un punto B. Para q
 
 Hablar de por que necesitamos de robots colaborativos y cuales pueden ser sus ventajas y desventajas\\
 
+El \'{e}xito de sus misiones dependen de alcanzar un determinado lugar para que puedan realizar ciertas acciones.\\
+
+Buscamos una arquitectura que funcione multirobot buscando el \'{e}xito de sus misiones de una forma segura y confiable\\
+
+Aplicaciones\\
+
+\begin{multicols}{2}
+  
+  \textbf{Transporte}
+  \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+  \item Diseno blah
+  \item Improper Node/Node
+  \end{itemize}
+    
+  \textbf{Construcci\'{o}n e Inspecci\'{o}n} 
+  \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+  \item Improper Node/Node
+  \item Improper Node/Node
+  \end{itemize}
+
+  \textbf{Busqueda y rescate}
+  \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+  \item Improper Node/Node
+  \item Improper Node/Node
+  \end{itemize}
+
+  \textbf{Entrega de productos}
+  \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+  \item Improper Node/Node
+  \item Improper Node/Node
+  \end{itemize}
+
+  \textbf{Medicina}
+  \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+  \item Improper Node/Node
+  \item Improper Node/Node
+  \end{itemize}
+\end{multicols}
+
+\vspace{1cm}
+
+\textbf{Piano Problem}\\
+
+Comunmente se relaciona al problema de planificaci\'{o}n de rutas con el problema del mover un piano. Es un problema dificil ya que el piano es un objeto en 3D que puede rotar y trasladarse. La \textbf{planificaci\'{o}n de rutas}, es similar. Ya que queremos mover al robot a un punto especifico.\\
+
+En problemas cl\'{a}sicos de planificaci\'{o}n de rutas decimos que el camino \'{o}ptimo es el camino m\'{a}s corto, hay distintas formas cualitativas de poder ver un camino corto (Minimizando la energia en la trayectoria ..etc).\\
+
+Nuestra soluci\'{o}n se centra en buscar la posible manera m\'{a}s r\'{a}pida de llegar de un punto al otro.\\
+
+La planificaci\'{o}n de rutas presenta diversos retos:
+\begin{itemize}
+\item Restricciones fisicas del robot (su geometria o forma)
+\item Din\'{a}mica del robot
+\item Incertidumbres de lecturas de sensores (ruido)
+\end{itemize}
+
+Para crear rutas seguras, debemos respetar las restricciones para que el robot pueda ejecutar los movimientos en el mundo real.\\
+
+Entonces, si le ordenamos al robot que ejecute una acci\'{o}n particular a trav\'{e}s de su interfaz de control, ¿qu\'{e} tan seguros estaremos de que el robot realmente lleg\'{o} a ese punto sin estar observandolo?\\
+
+Los problemas que emergen de la planificaci\'{o}n de trayectorias es la \textbf{escalabilidad} y \textbf{eficiencia computacional}.\\
+
+Considerando mover un VANT en 3D que puede trasladarse y rotar. El problema ser\'{a} en optimizar varios parametros por los 6 DoF (Grados de libertad) que cuenta y si queremos algoritmos que corran en tiempo real (que se ejecuten r\'{a}pido) dentro de dispositivos computacionales limitados.\\
+
+Finalmente habr\'{a} obst\'{a}culos o otros robots en el ambiente que nuestra soluci\'{o}n de arquitectura deba considerar en su planificaci\'{o}n. El robot debe sensar los obst\'{a}culos y evitarlos.\\
+
+Existen tres preguntas en Rob\'{o}tica M\'{o}vil:
+
+\begin{itemize}
+  \item ¿D\'onde estoy?
+  \item ¿A d\'{o}nde voy?
+  \item ¿C\'{o}mo llego ah\'{i}?
+\end{itemize}
+
+Para responder, el robot debe tener un modelo del ambiente, percibir y analizar el ambiente, planear y ejecutar sus movimientos.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% IMAGEN Sistema autonomo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{¿Qu\'{e} es Planificaci\'{o}n?}\\
+
+Analogicamente, es como ir al supermercado con el carrito de compras evitando chocar con cosas mientras navegamos dentro de la tienda. Esto es f\'{a}cil para nosotros los humanos, pero para los robots es m\'{a}s complicado.\\
+
+Partimos que el robot cuenta con una configuraci\'{o}n global, modelo del robot, y mapa del ambiente.\\
+
+Planificaci\'{o}n est\'{a} en terminos de la configuraci\'{o}n del robot. Siendo la configuraci\'{o}n el minimo conjunto de par\'{a}metros que necesitamos respecto a los Grados de Libertad del robot o dada una configuraci\'{o}n podemos saber donde esta.\\
+
+\textbf{Espacio de configuraciones}: Espacio de todas las posibles configuraciones.\\
+
+
 
 
 \begin{center}
@@ -359,14 +450,14 @@ El objetivo principal de este trabajo es el de realizar seguimiento ..\\
     \hline
     \rowcolor{black!5}
     \tiny Visibility   & \tiny Si    & \tiny Si&  \tiny No&
-    \begin{itemize}[noitemsep,topsep=0pt]
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
     \tiny \item Mucho espacio libre
     \tiny \item Mala escalabilidad
     \tiny \item El robot pasa cerca de obstaculos
     \end{itemize}\\
     \hline
     \tiny Voronoi   & \tiny Si    & \tiny No& \tiny No&
-    \begin{itemize}[noitemsep,topsep=0pt]
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
     \tiny \item Espacio libre m\'{a}ximo
     \tiny \item Rutas conservadoras
     \tiny \item Mala escalabilidad
@@ -374,14 +465,14 @@ El objetivo principal de este trabajo es el de realizar seguimiento ..\\
     \hline
     \rowcolor{black!5}
     \tiny Potential field   & \tiny Si    & \tiny No& \tiny Depende del ambiente&
-    \begin{itemize}[noitemsep,topsep=0pt]
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
     \tiny \item Depende del ambiente
     \tiny \item F\'{a}cil de implementar
     \tiny \item Suceptible a m\'{i}nimos locales
     \end{itemize}\\
     \hline
     \tiny Dijkstra/A*   & \tiny Si    & \tiny Grid& \tiny No&
-    \begin{itemize}[noitemsep,topsep=0pt]
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
     \tiny \item M\'{a}s r\'{a}pido que la b\'{u}squeda desinformada
     \tiny \item A* usa una funci\'{o}n heur\'{i}stica para impulsar la b\'{u}squeda de manera eficiente
     \tiny \item Mala escalabilidad
@@ -389,14 +480,14 @@ El objetivo principal de este trabajo es el de realizar seguimiento ..\\
     \hline
     \rowcolor{black!5}
     \tiny PRM   & \tiny Si    & \tiny Grafo& \tiny Si&
-    \begin{itemize}[noitemsep,topsep=0pt]
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
     \tiny \item Eficiente para problemas con consultas múltiples
     \tiny \item Completez probabil\'{i}stica\
     \tiny \item Camino irregular
     \end{itemize}\\
     \hline
     \tiny RRT   & \tiny Si    & \tiny No & \tiny Si&
-    \begin{itemize}[noitemsep,topsep=0pt]
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
     \tiny \item Eficiente para problemas de consulta \'{u}nica
     \tiny \item Completez probabil\'{i}stica
     \tiny \item Camino irregular
@@ -891,42 +982,6 @@ En t\'{e}rminos de validaci\'{o}n y evaluaci\'{o}n, se utilizan simulaciones y p
 La adquisici\'{o}n de datos es el primer paso en la representaci\'{o}n de mapas 3D con VANTs. Los VANTs pueden llevar a cabo vuelos sobre un \'{a}rea de inter\'{e}s, capturando im\'{a}genes desde diferentes \'{a}ngulos y alturas[15]. Estas t\'{e}cnicas aprovechan la informaci\'{o}n de correspondencia entre las im\'{a}genes para calcular la posici\'{o}n y orientaci\'{o}n relativa de las c\'{a}maras y reconstruir la estructura tridimensional del entorno.\\
 
 Los VANTs pueden utilizar sensores LiDAR (Light Detection and Ranging) para capturar datos 3D. Los sensores LiDAR emiten pulsos de luz l\'{a}ser y miden el tiempo que tarda en reflejarse en los objetos circundantes. Esto permite obtener informaci\'{o}n precisa sobre la distancia y la posici\'{o}n tridimensional de los objetos en el entorno. Los datos LiDAR pueden combinarse con las im\'{a}genes capturadas para generar mapas 3D completos y detallados.\\
-
-Aplicaciones\\
-\begin{center}
-    \centering
-    \begin{tabular}{ | l | p{12cm} |}
-      \hline
-      \rowcolor{black!5}
-      \textbf{Aplicaci\'{o}n}& \textbf{Casos de uso, Retos en Dise\~{n}o, Requisitos}\\ \hline
-      Transporte &
-      \begin{itemize}
-      \item Diseno blah
-      \item Improper Node/Node
-      \end{itemize}\\\hline
-      \textbf{Construcci\'{o}n e Inspecci\'{o}n} &
-      \begin{itemize}
-      \item Improper Node/Node
-      \item Improper Node/Node
-      \end{itemize}\\\hline
-      \textbf{Busqueda y rescate} &
-      \begin{itemize}
-      \item Improper Node/Node
-      \item Improper Node/Node
-      \end{itemize}\\\hline
-      \textbf{Entrega de productos} &
-      \begin{itemize}
-      \item Improper Node/Node
-      \item Improper Node/Node
-      \end{itemize}\\\hline
-      \textbf{Medicina}  &
-      \begin{itemize}
-      \item Improper Node/Node
-      \item Improper Node/Node
-      \end{itemize}\\
-      \hline
-    \end{tabular}
-\end{center}
 
 Trabajos relacionados:
 \begin{center}
