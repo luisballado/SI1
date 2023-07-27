@@ -1,4 +1,4 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{46}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -23,12 +23,32 @@ S.~H. Alsamhi, O.~Ma, M.~S. Ansari, and F.~A. Almalki.
 \newblock \emph{IEEE Access}, 7:\penalty0 128125--128152, 2019.
 \newblock \doi{10.1109/ACCESS.2019.2934998}.
 
+\bibitem[Arkin(1998)]{ARKIN1998}
+R.~C. Arkin, editor.
+\newblock \emph{Behavior-Based Robotics}.
+\newblock MIT Press, 1998.
+\newblock \doi{10.1007/978-3-319-32552-1}.
+\newblock URL
+  \url{https://mitpress.mit.edu/9780262529204/behavior-based-robotics/}.
+
 \bibitem[Bekey(2005)]{Bekey2005}
 G.~A. Bekey.
 \newblock \emph{Autonomus Robots From Biological Inspiration to Implementation
   and Control}.
 \newblock MIT Press, 1st edition, 2005.
 \newblock ISBN 9780262534185.
+
+\bibitem[Brooks(1986)]{BROOKS1986}
+R.~Brooks.
+\newblock A robust layered control system for a mobile robot.
+\newblock \emph{IEEE Journal on Robotics and Automation}, 2\penalty0
+  (1):\penalty0 14--23, 1986.
+\newblock \doi{10.1109/JRA.1986.1087032}.
+
+\bibitem[Cai and Yang(2012)]{6320878}
+Y.~Cai and S.~X. Yang.
+\newblock A survey on multi-robot systems.
+\newblock In \emph{World Automation Congress 2012}, pages 1--6, 2012.
 
 \bibitem[Campos-Mac\'{i}as et~al.(2017)Campos-Mac\'{i}as,
   G\'{o}mez-Guti\'{e}rrez, Aldana-L\'{o}pez, de~la Guardia, and
@@ -93,12 +113,6 @@ P.~Daponte, L.~D. Vito, G.~Mazzilli, F.~Picariello, S.~Rapuano, and M.~Riccio.
 \newblock \emph{2015 IEEE Metrology for Aerospace (MetroAeroSpace)}, pages
   306--311, 2015.
 
-\bibitem[Elizondo~Leal(2013)]{CINVESTAM2013}
-J.~C. Elizondo~Leal.
-\newblock \emph{Estrategia Descentralizada para la Exploraci\'{o}n Multi-Robot,
-  incluyendo Restricciones en Rango de Comunicaci\'{o}n}.
-\newblock PhD thesis, CINVESTAV Unidad Tamaulipas, Junio 2013.
-
 \bibitem[Florence et~al.(2018)Florence, Carter, Ware, and
   Tedrake]{FLORENCE2018}
 P.~R. Florence, J.~Carter, J.~Ware, and R.~Tedrake.
@@ -143,6 +157,16 @@ M.~Hehn and R.~D'Andrea.
 \newblock In \emph{2011 IEEE International Conference on Robotics and
   Automation}, pages 763--770, 2011.
 \newblock \doi{10.1109/ICRA.2011.5980244}.
+
+\bibitem[Hornung et~al.(2013)Hornung, Wurm, Bennewitz, Stachniss, and
+  Burgard]{ARMIN2013}
+A.~Hornung, K.~M. Wurm, M.~Bennewitz, C.~Stachniss, and W.~Burgard.
+\newblock {OctoMap}: An efficient probabilistic {3D} mapping framework based on
+  octrees.
+\newblock \emph{Autonomous Robots}, 2013.
+\newblock \doi{10.1007/s10514-012-9321-0}.
+\newblock URL \url{https://octomap.github.io}.
+\newblock Software available at \url{https://octomap.github.io}.
 
 \bibitem[J.~Senthilnath(2017)]{VEGETACION2017}
 A.~D. J.~Senthilnath, Manasa~Kandukuri.
@@ -189,12 +213,6 @@ Y.~Lin, F.~Gao, T.~Qin, W.~Gao, T.~Liu, W.~Wu, Z.~Yang, and S.~Shen.
 \newblock \doi{10.1002/rob.21732}.
 \newblock URL \url{https://doi.org/10.1002/rob.21732}.
 
-\bibitem[Matheson(2018)]{MITNEWS2018}
-R.~Matheson.
-\newblock Fleets of drones could aid searches for lost hikers, Nov 2018.
-\newblock URL
-  \url{https://news.mit.edu/2018/fleets-drones-help-searches-lost-hikers-1102}.
-
 \bibitem[McGuire et~al.(2019)McGuire, Wagter, Tuyls, Kappen, and
   de~Croon]{BUG2019}
 K.~N. McGuire, C.~D. Wagter, K.~Tuyls, H.~J. Kappen, and G.~C. H.~E. de~Croon.
@@ -204,6 +222,14 @@ K.~N. McGuire, C.~D. Wagter, K.~Tuyls, H.~J. Kappen, and G.~C. H.~E. de~Croon.
 \newblock \doi{10.1126/scirobotics.aaw9710}.
 \newblock URL
   \url{https://www.science.org/doi/abs/10.1126/scirobotics.aaw9710}.
+
+\bibitem[Meagher(1982)]{DONALD1982}
+D.~Meagher.
+\newblock Geometric modeling using octree encoding.
+\newblock \emph{Computer Graphics and Image Processing}, 19\penalty0
+  (2):\penalty0 129--147, June 1982.
+\newblock \doi{10.1016/0146-664x(82)90104-6}.
+\newblock URL \url{https://doi.org/10.1016/0146-664x(82)90104-6}.
 
 \bibitem[Mohsan et~al.(2023)Mohsan, Othman, Li, H., and Khan]{UAVPRACTICAL2023}
 S.~A.~H. Mohsan, N.~Q.~H. Othman, A.~Li, Yanlong, M.~H., and M.~A. Khan.
@@ -267,12 +293,6 @@ T.~Rou\v{c}ek, M.~Pecka, P.~\v{C}\'{\i}\v{z}ek, T.~Pet\v{r}\'\i\v{c}ek,
 \newblock \doi{10.55417/fr.2022055}.
 \newblock URL \url{https://doi.org/10.55417/fr.2022055}.
 
-\bibitem[Sandoval~Garc\'{i}a(2013)]{CINVES2013}
-H.~Sandoval~Garc\'{i}a.
-\newblock Generaci\'{o}n de mapas utilizando veh\'{i}culos a\'{e}reos no
-  tripulados de baja altitud.
-\newblock Master's thesis, CINVESTAV Unidad Tamaulipas, Febrero 2013.
-
 \bibitem[Selin et~al.(2019)Selin, Tiger, Duberg, Heintz, and
   Jensfelt]{SELIN2019}
 M.~Selin, M.~Tiger, D.~Duberg, F.~Heintz, and P.~Jensfelt.
@@ -333,12 +353,6 @@ V.~Usenko, L.~von Stumberg, A.~Pangercic, and D.~Cremers.
 \newblock \doi{10.1109/iros.2017.8202160}.
 \newblock URL \url{https://doi.org/10.1109/iros.2017.8202160}.
 
-\bibitem[Villanueva~Grijalva(2015)]{CINVES2015}
-O.~A. Villanueva~Grijalva.
-\newblock Control de un veh\'{i}culo a\'{e}reo no tripulado (auv) para
-  reconocimiento en interiores.
-\newblock Master's thesis, CINVESTAV Unidad Guadalajara, Septiembre 2015.
-
 \bibitem[Westheider et~al.(2023)Westheider, R{\"u}ckin, and
   Popovi{\.c}]{WESTHEIDER2023}
 J.~Westheider, J.~R{\"u}ckin, and M.~Popovi{\.c}.
@@ -368,6 +382,15 @@ H.~Zhou, H.~Kong, L.~Wei, D.~Creighton, and S.~Nahavandi.
 \newblock \emph{IEEE Transactions on Intelligent Transportation Systems},
   18\penalty0 (7):\penalty0 1713--1722, 2017.
 \newblock \doi{10.1109/TITS.2016.2622280}.
+
+\bibitem[Zouganeli and Lentzas(2022)]{ZOUGANELI2022}
+E.~Zouganeli and A.~Lentzas.
+\newblock Cognitive robotics - towards the~development of~next-generation
+  robotics and~intelligent systems.
+\newblock In \emph{Communications in Computer and Information Science}, pages
+  16--25. Springer International Publishing, 2022.
+\newblock \doi{10.1007/978-3-031-17030-0_2}.
+\newblock URL \url{https://doi.org/10.1007/978-3-031-17030-0_2}.
 
 \bibitem[Zu et~al.(2018)Zu, Fan, Gao, Ma, Zhang, and
   Zeng]{MultiPathPlanning2018}
