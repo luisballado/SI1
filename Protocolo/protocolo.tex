@@ -88,6 +88,7 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 \usepackage{adjustbox} % for \adjincludegraphics
 \usepackage{enumitem}% http://ctan.org/pkg/enumitem
 \usepackage{forloop}
+\usepackage{pdflscape}
 \newcounter{loopcntr}
 \newcommand{\rpt}[2][1]{%
   \forloop{loopcntr}{0}{\value{loopcntr}<#1}{#2}%
@@ -132,7 +133,7 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 
   El enfoque de este trabajo es la creaci\'{o}n y propuesta de una arquitectura de software capaz de coordinar m\'{u}ltiples Veh\'{i}culos A\'{e}reos No Tripulados con algoritmos para la exploraci\'{o}n de \'{a}reas desconocidas y cambiantes. Convirti\'{e}ndose en un desaf\'{i}o en rob\'{o}tica m\'{o}vil buscando coordinar y optimizar el movimiento de varios robots para explorar eficientemente un \'{a}rea desconocida. El objetivo pudiera ser maximizar la cobertura del \'{a}rea minimizando el tiempo requerido para completar la exploraci\'{o}n. Este problema implica tomar decisiones complejas, como asignar tareas a los robots, evitar colisiones y planificar rutas \'{o}ptimas. Factores como la comunicaci\'{o}n entre robots, la incertidumbre del entorno y las limitaciones de recursos son considerados en este trabajo. Resolver eficazmente este problema permitir\'{i}a mejorar la eficiencia y efectividad de las misiones de exploraci\'{o}n en diversos campos, como la b\'{u}squeda y rescate \cite{MITNEWS2018}, la inspecci\'{o}n de infraestructuras y entre otras. \\
 
-  Como humanidad aun tenemos lugares desconocidos que deseamos explorar (volcanes, ..etc.), entonces a los lugares que a\'{u}n no podemos enviar gente, entonces podremos enviar m\'{a}quinas.\\
+  Como humanidad aun tenemos lugares desconocidos que deseamos explorar (volcanes, ..etc.), entonces a los lugares que a\'{u}n no podemos enviar gente, entonces podremos enviar m\'{a}quinas. \cite{DARPA2022}\\
   La naturaleza es una fuente inmensa de soluciones a problemas como la locomoci\'{o}n de los robots no importa la criatura, o que desagradable tal vez ella pueda contener los secretos que nos llevar\'{a}n algun dia a las estrellas \'{o} almenos nos traer\'{a}n nuestras compras.
   \medskip \\
   
@@ -287,17 +288,61 @@ Para responder, el robot debe tener un modelo del ambiente, percibir y analizar 
 
 \textbf{¿Qu\'{e} es Planificaci\'{o}n?}\\
 
+Es encontrar una secuencia de configuraci\'{o}n v\'{a}lidas para mover al robot de un punto A $\rightarrow$ B\\
+
+Dados:
+\begin{itemize}
+\item Configuraci\'{o}n inicial
+\item Configuraci\'{o}n del robot
+\item Modelo del robot (Cinematica, Geometria del robot)
+\item Mapa del ambiente
+\end{itemize}
+
+y la salida ser\'{a} la ruta que conectan los dos puntos.
+
 Analogicamente, es como ir al supermercado con el carrito de compras evitando chocar con cosas mientras navegamos dentro de la tienda. Esto es f\'{a}cil para nosotros los humanos, pero para los robots es m\'{a}s complicado.\\
 
 Partimos que el robot cuenta con una configuraci\'{o}n global, modelo del robot, y mapa del ambiente.\\
 
 Planificaci\'{o}n est\'{a} en terminos de la configuraci\'{o}n del robot. Siendo la configuraci\'{o}n el minimo conjunto de par\'{a}metros que necesitamos respecto a los Grados de Libertad del robot o dada una configuraci\'{o}n podemos saber donde esta.\\
 
+Configuraci\'{o}n del robot \textbf{q} especifica todos los puntos del robot en relaci\'{o}n con un sistema de coordenadas fijo.\\
+
+\begin{figure}[!htb]
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[width=.7\linewidth]{differential}
+     \caption{$q=(x,y,\theta)$}\label{Fig:Data1}
+   \end{minipage}\hfill
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[width=.7\linewidth]{links}
+     \caption{$q=(q{1},q_{2},...,q_{10})$}\label{Fig:Data2}
+   \end{minipage}
+\end{figure}
+
 \textbf{Espacio de configuraciones}: Espacio de todas las posibles configuraciones.\\
 
+\begin{figure}[!htb]
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[width=.7\linewidth]{differential}
+     \caption{$q=(x,y,\theta)$}\label{Fig:Data3}
+   \end{minipage}\hfill
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[width=.7\linewidth]{multirotor}
+     \caption{$q=(q{1},q_{2},...,q_{10})$}\label{Fig:Data4}
+   \end{minipage}
+\end{figure}
 
+Es el espacio de configuraciones esta compuesto por los espacios libres ($C_{free}$) y espacios ocupado (con obstaculos) $C_{obs}$.\\
 
+Sea $\mathcal{W} = \mathbb{R}^{m}$, $\mathcal{O} \in \mathcal{W}$ el conjunto de obstaculos, $\mathcal{A}(q)$ las configuraciones del robot $q \in \mathcal{C}$
 
+\[ C_{free} = \{q \in \mathcal{C}{ } |{ } \mathcal{A}(q)\cap\mathcal{O} = \emptyset\}\]
+\[C_{obs} = C/C_{free}\]
+donde $\mathcal{W} = \mathbb{R}^{m}$ es el espacio de trabajo del robot, $\mathcal{O} \in \mathcal{W}$ es el conjunto de obstaculos, y $\mathcal{A}(q)$ son las configuraciones del robot $q \in \mathcal{C}$
 \begin{center}
 \begin{forest}
 for tree={%
@@ -889,6 +934,10 @@ Para el desarrollo de este proyecto de investigaci\'{o}n, se har\'{a} uso de un 
 \newpage
 \section*{Estado del arte}
 
+Los trabajos de \cite{SHEN2011}, \cite{GRZONKA2012} y \cite{FRAUNDORFER2012} son pioneros en demostrar la navegaci\'{o}n aut\'{o}noma de Veh\'{i}culos A\'{e}reos No Tripulados (VANT). Estos estudios demostraron que los VANT pueden seguir puntos de referencia en el mapa, evitar obst\'{a}culos y llevar a cabo tareas de exploraci\'{o}n en entornos complejos. Sin embargo, aunque mostraron avances significativos, no lograron alcanzar una autonom\'{i}a total. Los primeros carecen de planificaci\'{o}n interna, mientras que los segundos depend\'{i}an de un mapeo previo fuera de l\'{i}nea para su funcionamiento.\\
+
+Los avances en hardware y software inform\'{a}ticos, la disponibilidad de sensores robustos pero ligeros, como c\'{a}maras de profundidad, y m\'{o}dulos integrados de localizaci\'{o}n basados en visi\'{o}n, junto con desarrollos algor\'{i}tmicos, han permitido recientemente maniobras de navegaci\'{o}n precisas y agresivas de VANT en entornos desconocidos, como los m\'{e}todos propuesto por \cite{THRUN2005}; Tsardoulias, Iliakopoulou, Kargakos y Petrou (2016), y por Cadena et al. (2016). %Sin embargo, todavía falta un marco que combine elementos de estos campos para garantizar una navegación completamente autónoma en entornos generales para VANT con restricciones informáticas, ya que no se ha demostrado hasta la fecha.
+
 Se presenta una solución de navegación mínima para enjambres de diminutos robots voladores que exploran entornos desconocidos sin señal de GPS. Los enjambres de pequeños robots voladores tienen un gran potencial para explorar entornos desconocidos, especialmente en interiores. Su pequeño tamaño les permite moverse en espacios estrechos y su ligereza los hace seguros para operar alrededor de humanos. Hasta ahora, esta tarea ha sido difícil debido a la falta de estrategias de navegación adecuadas. La ausencia de infraestructura externa implica que cualquier intento de posicionamiento debe ser realizado por los propios robots. Las soluciones de vanguardia, como la localización y el mapeo simultáneos, todavía requieren demasiados recursos. Este artículo presenta el algoritmo "Swarm Gradient Bug" (SGBA), una solución de navegación mínima que permite a un enjambre de diminutos robots voladores explorar autonomamente un entorno desconocido y regresar posteriormente al punto de partida. SGBA maximiza la cobertura al hacer que los robots se muevan en diferentes direcciones lejos del punto de partida. Los robots navegan por el entorno y enfrentan obstáculos estáticos sobre la marcha mediante la odometría visual y comportamientos de seguimiento de paredes. Además, se comunican entre sí para evitar colisiones y maximizar la eficiencia de la búsqueda. Para regresar al punto de partida, los robots realizan una búsqueda de gradiente hacia un faro de referencia. Se estudiaron los aspectos colectivos de SGBA, demostrando que permite que un grupo de cuadricópteros comerciales estándar de 33 gramos explore con éxito un entorno del mundo real. El potencial de aplicación se ilustra mediante una misión de búsqueda y rescate de prueba en la que los robots capturaron imágenes para encontrar víctimas en un entorno de oficina. Los algoritmos desarrollados se generalizan a otros tipos de robots y sientan las bases para abordar misiones igualmente complejas con enjambres de robots en el futuro.\cite{BUG2019}.\\
 
 El texto destaca el potencial de los vehículos aéreos no tripulados (UAV) para tener un impacto significativo en situaciones donde es demasiado arriesgado o costoso depender del trabajo humano. Los UAV autónomos, que completan tareas colaborativamente mientras gestionan su vuelo básico y tareas relacionadas de forma independiente, presentan oportunidades adicionales junto con desafíos de investigación y regulación. Las mejoras en la construcción y componentes de los UAV, así como en el hardware de computación embebida, mecanismos de comunicación y sensores que pueden ser montados a bordo de un UAV, están cerca del punto en el que el despliegue comercial de flotas de UAV autónomos será técnicamente posible. Para alcanzar este potencial, los UAV deberán operar de manera segura y confiable en entornos complejos y potencialmente cambiantes, con especial énfasis en la planificación de rutas, la detección de obstáculos y la evitación de colisiones. La encuesta presenta una clasificación original de la complejidad del entorno y analiza críticamente el estado actual del arte en cuanto a enfoques de planificación de rutas para UAV. Además, resalta los desafíos existentes en la modelización y representación de la complejidad del entorno, así como en los enfoques de planificación de rutas, y plantea preguntas abiertas de investigación junto con futuras direcciones. \cite{ACM2023}
@@ -984,26 +1033,28 @@ La adquisici\'{o}n de datos es el primer paso en la representaci\'{o}n de mapas 
 Los VANTs pueden utilizar sensores LiDAR (Light Detection and Ranging) para capturar datos 3D. Los sensores LiDAR emiten pulsos de luz l\'{a}ser y miden el tiempo que tarda en reflejarse en los objetos circundantes. Esto permite obtener informaci\'{o}n precisa sobre la distancia y la posici\'{o}n tridimensional de los objetos en el entorno. Los datos LiDAR pueden combinarse con las im\'{a}genes capturadas para generar mapas 3D completos y detallados.\\
 
 Trabajos relacionados:
+\newpage
+\begin{landscape}
 \begin{center}
-    \begin{tabular}{ | l | l | l | l | l | l | p{3cm} |}
+    \begin{tabular}{ | l | l | l | l | l | l | p{1.5cm} |}
       \hline
-      Ref.&3D&Mapa&Navegaci\'{o}n&Simulador&Percepci\'{o}n&Arquitectura\\ \hline
-      \cite{CIESLEWSKI2017}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\ \hline
-      \cite{USENKO2017}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
-      \cite{MOHTA2017}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
-      \cite{LIN2017}&\ding{55}&Celdas&D* Lite&gazebo&Camara&Descentralizada\\ \hline
-      \cite{PAPACHRISTOS2017}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\ \hline
-      \cite{OLEYNIKOVA2018}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
-      \cite{GAO2018}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
-      \cite{FLORENCE2018}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
-      \cite{SELIN2019}&\ding{55}&Oct-tree&A*&webots&LiDAR&Descentralizada\\ \hline
-      \cite{COLLINS2019}&\ding{51}&Voronoi&A*&gazebo&LiDAR&Centralizada\\ \hline
-      \cite{CINVES2021}&\ding{51}&Grafo&RRT*&matlab&Camara&Centralizada\\ \hline
-      \cite{RACER2022}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\ \hline
-      \cite{WESTHEIDER2023}&\ding{55}&Grafo&RRT&airsim&siete&Descentralizada\\
-      \hline
+      REFERENCIA&MAPA&\multicolumn{1}{p{2cm}|}{\centering Planificador\\ de rutas}&\multicolumn{1}{p{2cm}|}{\centering Generaci\'{o}n \\ trayectoria}&Simulador&Percepci\'{o}n&MULTI-VANT\\ \hline
+      \cite{CIESLEWSKI2017}&Octomap&Frontier Based&Direct Velocity Control&Gazebo&siete&\ding{55}\\ \hline
+      \cite{USENKO2017}&Egocentric Grid&Oct-tree&A*&webots&LiDAR&\ding{55}\\ \hline
+      \cite{MOHTA2017}&3D local map and 2D global map&Oct-tree&A*&webots&LiDAR&\ding{55}\\ \hline
+      \cite{LIN2017}&TSDF&Celdas&D* Lite&gazebo&Camara&\ding{51}\\ \hline
+      \cite{PAPACHRISTOS2017}&Octomap&Grafo&RRT&airsim&siete&\ding{55}\\ \hline
+      \cite{OLEYNIKOVA2018}&Voxel Hashing TSDF \& ESDF&Oct-tree&A*&webots&LiDAR&\ding{55}\\ \hline
+      \cite{GAO2018}&Regular ESDF Grid Map&Oct-tree&A*&webots&LiDAR&\ding{55}\\ \hline
+      \cite{FLORENCE2018}&Search over views&Oct-tree&A*&webots&LiDAR&\ding{55}\\ \hline
+      \cite{SELIN2019}&Octomap&Oct-tree&A*&webots&LiDAR&\ding{55}\\ \hline
+      \cite{COLLINS2019}&KD Tree $+$ Sliding Voxel Map &Voronoi&A*&gazebo&LiDAR&\ding{55}\\ \hline
+      \cite{CINVES2021}&Linear Octree&Grafo&RRT*&matlab&Camara&\ding{55}\\ \hline
+      \cite{RACER2022}&HGrid&Grafo&RRT&airsim&siete&\ding{55}\\ \hline
+      \cite{WESTHEIDER2023}&Grid Mapping&Grafo&RRT&airsim&siete&\ding{55}\\ \hline
     \end{tabular}
 \end{center}
+\end{landscape}
 
 %La visualizaciÃƒÂƒÃ‚Â³n y la interacciÃƒÂƒÃ‚Â³n con los mapas 3D tambiÃƒÂƒÃ‚Â©n han sido objeto de investigaciÃƒÂƒÃ‚Â³n. Se han desarrollado herramientas de visualizaciÃƒÂƒÃ‚Â³n interactiva que permiten a los usuarios explorar y analizar los mapas 3D generados. Estas herramientas pueden incluir capacidades de navegaciÃƒÂƒÃ‚Â³n, anÃƒÂƒÃ‚Â¡lisis de datos y anotaciÃƒÂƒÃ‚Â³n de objetos para facilitar la comprensiÃƒÂƒÃ‚Â³n y el uso de los mapas 3D en aplicaciones especÃƒÂƒÃ‚Â­ficas.\\
 
