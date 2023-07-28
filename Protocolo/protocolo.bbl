@@ -1,30 +1,20 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Aggarwal and Kumar(2020)]{PathPlanning2022}
-S.~Aggarwal and N.~Kumar.
-\newblock Path planning techniques for unmanned aerial vehicles: A review,
-  solutions, and challenges.
-\newblock \emph{Computer Communications}, 149:\penalty0 270--299, 2020.
-\newblock ISSN 0140-3664.
-\newblock \doi{https://doi.org/10.1016/j.comcom.2019.10.014}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0140366419308539}.
-
 \bibitem[Alsamhi et~al.(2019)Alsamhi, Ma, Ansari, and
   Almalki]{SurveyCollab2019}
-S.~H. Alsamhi, O.~Ma, M.~S. Ansari, and F.~A. Almalki.
+Saeed~H. Alsamhi, Ou~Ma, Mohammad~Samar Ansari, and Faris~A. Almalki.
 \newblock Survey on collaborative smart drones and internet of things for
   improving smartness of smart cities.
 \newblock \emph{IEEE Access}, 7:\penalty0 128125--128152, 2019.
 \newblock \doi{10.1109/ACCESS.2019.2934998}.
 
 \bibitem[Arkin(1998)]{ARKIN1998}
-R.~C. Arkin, editor.
+Ronald~C. Arkin, editor.
 \newblock \emph{Behavior-Based Robotics}.
 \newblock MIT Press, 1998.
 \newblock \doi{10.1007/978-3-319-32552-1}.
@@ -32,7 +22,7 @@ R.~C. Arkin, editor.
   \url{https://mitpress.mit.edu/9780262529204/behavior-based-robotics/}.
 
 \bibitem[Bekey(2005)]{Bekey2005}
-G.~A. Bekey.
+George~A. Bekey.
 \newblock \emph{Autonomus Robots From Biological Inspiration to Implementation
   and Control}.
 \newblock MIT Press, 1st edition, 2005.
@@ -46,15 +36,15 @@ R.~Brooks.
 \newblock \doi{10.1109/JRA.1986.1087032}.
 
 \bibitem[Cai and Yang(2012)]{6320878}
-Y.~Cai and S.~X. Yang.
+Yifan Cai and Simon~X. Yang.
 \newblock A survey on multi-robot systems.
 \newblock In \emph{World Automation Congress 2012}, pages 1--6, 2012.
 
 \bibitem[Campos-Mac\'{i}as et~al.(2017)Campos-Mac\'{i}as,
   G\'{o}mez-Guti\'{e}rrez, Aldana-L\'{o}pez, de~la Guardia, and
   Parra-Vilchis]{HybridCampos2017}
-L.~Campos-Mac\'{i}as, D.~G\'{o}mez-Guti\'{e}rrez, R.~Aldana-L\'{o}pez, R.~de~la
-  Guardia, and J.~I. Parra-Vilchis.
+Leobardo Campos-Mac\'{i}as, David G\'{o}mez-Guti\'{e}rrez, Rodrigo
+  Aldana-L\'{o}pez, Rafael de~la Guardia, and Jos\'{e}~I. Parra-Vilchis.
 \newblock A hybrid method for online trajectory planning of mobile robots in
   cluttered environments.
 \newblock \emph{IEEE Robotics and Automation Letters}, 2\penalty0 (2):\penalty0
@@ -63,35 +53,17 @@ L.~Campos-Mac\'{i}as, D.~G\'{o}mez-Guti\'{e}rrez, R.~Aldana-L\'{o}pez, R.~de~la
 
 \bibitem[Campos-Mac\'{i}as et~al.(2020)Campos-Mac\'{i}as, Aldana-L\'{o}pez,
   Guardia, Parra-Vilchis, and G\'{o}mez-Guti\'{e}rrez]{CINVES2021}
-L.~Campos-Mac\'{i}as, R.~Aldana-L\'{o}pez, R.~Guardia, J.~I. Parra-Vilchis, and
-  D.~G\'{o}mez-Guti\'{e}rrez.
+Leobardo Campos-Mac\'{i}as, Rodrigo Aldana-L\'{o}pez, Rafael Guardia,
+  Jos\'{e}~I. Parra-Vilchis, and David G\'{o}mez-Guti\'{e}rrez.
 \newblock Autonomous navigation of {MAVs} in unknown cluttered environments.
 \newblock \emph{Journal of Field Robotics}, 38\penalty0 (2):\penalty0 307--326,
   may 2020.
 \newblock \doi{10.1002/rob.21959}.
 \newblock URL \url{https://doi.org/10.1002/rob.21959}.
 
-\bibitem[Chen et~al.(2017)Chen, Li, and Chen]{Chen2017}
-X.~Chen, G.-y. Li, and X.-m. Chen.
-\newblock Path planning and cooperative control for multiple uavs based on
-  consistency theory and voronoi diagram.
-\newblock In \emph{2017 29th Chinese Control And Decision Conference (CCDC)},
-  pages 881--886, 2017.
-\newblock \doi{10.1109/CCDC.2017.7978644}.
-
-\bibitem[Chronis et~al.(2023)Chronis, Anagnostopoulos, Politi, Garyfallou,
-  Varlamis, and Dimitrakopoulos]{Chronis2023}
-C.~Chronis, G.~Anagnostopoulos, E.~Politi, A.~Garyfallou, I.~Varlamis, and
-  G.~Dimitrakopoulos.
-\newblock Path planning of autonomous uavs using reinforcement learning.
-\newblock \emph{Journal of Physics: Conference Series}, 2526\penalty0
-  (1):\penalty0 012088, jun 2023.
-\newblock \doi{10.1088/1742-6596/2526/1/012088}.
-\newblock URL \url{https://dx.doi.org/10.1088/1742-6596/2526/1/012088}.
-
 \bibitem[Cieslewski et~al.(2017)Cieslewski, Kaufmann, and
   Scaramuzza]{CIESLEWSKI2017}
-T.~Cieslewski, E.~Kaufmann, and D.~Scaramuzza.
+Titus Cieslewski, Elia Kaufmann, and Davide Scaramuzza.
 \newblock Rapid exploration with multi-rotors: A frontier selection method for
   high speed flight.
 \newblock In \emph{2017 IEEE/RSJ International Conference on Intelligent Robots
@@ -99,7 +71,7 @@ T.~Cieslewski, E.~Kaufmann, and D.~Scaramuzza.
 \newblock \doi{10.1109/IROS.2017.8206030}.
 
 \bibitem[Collins(2019)]{COLLINS2019}
-M.~Collins.
+Matthew Collins.
 \newblock Efficient planning for high-speed mav flight in unknown environments
   using sparse topological graphs.
 \newblock Master's thesis, Carnegie Mellon University, Pittsburgh, PA, August
@@ -107,7 +79,8 @@ M.~Collins.
 
 \bibitem[Daponte et~al.(2015)Daponte, Vito, Mazzilli, Picariello, Rapuano, and
   Riccio]{Daponte2015}
-P.~Daponte, L.~D. Vito, G.~Mazzilli, F.~Picariello, S.~Rapuano, and M.~Riccio.
+Pasquale Daponte, Luca~De Vito, Gianluca Mazzilli, Francesco Picariello, Sergio
+  Rapuano, and Maria Riccio.
 \newblock Metrology for drone and drone for metrology: Measurement systems on
   small civilian drones.
 \newblock \emph{2015 IEEE Metrology for Aerospace (MetroAeroSpace)}, pages
@@ -115,14 +88,14 @@ P.~Daponte, L.~D. Vito, G.~Mazzilli, F.~Picariello, S.~Rapuano, and M.~Riccio.
 
 \bibitem[Florence et~al.(2018)Florence, Carter, Ware, and
   Tedrake]{FLORENCE2018}
-P.~R. Florence, J.~Carter, J.~Ware, and R.~Tedrake.
+Peter~R. Florence, John Carter, Jake Ware, and Russ Tedrake.
 \newblock Nanomap: Fast, uncertainty-aware proximity queries with lazy search
   over local 3d data, 2018.
 
 \bibitem[Fraundorfer et~al.(2012)Fraundorfer, Heng, Honegger, Lee, Meier,
   Tanskanen, and Pollefeys]{FRAUNDORFER2012}
-F.~Fraundorfer, L.~Heng, D.~Honegger, G.~H. Lee, L.~Meier, P.~Tanskanen, and
-  M.~Pollefeys.
+Friedrich Fraundorfer, Lionel Heng, Dominik Honegger, Gim~Hee Lee, Lorenz
+  Meier, Petri Tanskanen, and Marc Pollefeys.
 \newblock Vision-based autonomous mapping and exploration using a quadrotor
   mav.
 \newblock In \emph{2012 IEEE/RSJ International Conference on Intelligent Robots
@@ -130,7 +103,7 @@ F.~Fraundorfer, L.~Heng, D.~Honegger, G.~H. Lee, L.~Meier, P.~Tanskanen, and
 \newblock \doi{10.1109/IROS.2012.6385934}.
 
 \bibitem[Gao et~al.(2018)Gao, Wu, Lin, and Shen]{GAO2018}
-F.~Gao, W.~Wu, Y.~Lin, and S.~Shen.
+Fei Gao, William Wu, Yi~Lin, and Shaojie Shen.
 \newblock Online safe trajectory generation for quadrotors using fast marching
   method and bernstein basis polynomial.
 \newblock In \emph{2018 IEEE International Conference on Robotics and
@@ -138,21 +111,21 @@ F.~Gao, W.~Wu, Y.~Lin, and S.~Shen.
 \newblock \doi{10.1109/ICRA.2018.8462878}.
 
 \bibitem[Grzonka et~al.(2012)Grzonka, Grisetti, and Burgard]{GRZONKA2012}
-S.~Grzonka, G.~Grisetti, and W.~Burgard.
+Slawomir Grzonka, Giorgio Grisetti, and Wolfram Burgard.
 \newblock A fully autonomous indoor quadrotor.
 \newblock \emph{IEEE Transactions on Robotics}, 28\penalty0 (1):\penalty0
   90--100, 2012.
 \newblock \doi{10.1109/TRO.2011.2162999}.
 
 \bibitem[Gupta et~al.(2016)Gupta, Jain, and Vaszkun]{GUPTA2016}
-L.~Gupta, R.~Jain, and G.~Vaszkun.
+Lav Gupta, Raj Jain, and Gabor Vaszkun.
 \newblock Survey of important issues in uav communication networks.
 \newblock \emph{IEEE Communications Surveys and Tutorials}, 18\penalty0
   (2):\penalty0 1123--1152, 2016.
 \newblock \doi{10.1109/COMST.2015.2495297}.
 
 \bibitem[Hehn and D'Andrea(2011)]{PENDU2011}
-M.~Hehn and R.~D'Andrea.
+Markus Hehn and Raffaello D'Andrea.
 \newblock A flying inverted pendulum.
 \newblock In \emph{2011 IEEE International Conference on Robotics and
   Automation}, pages 763--770, 2011.
@@ -160,7 +133,8 @@ M.~Hehn and R.~D'Andrea.
 
 \bibitem[Hornung et~al.(2013)Hornung, Wurm, Bennewitz, Stachniss, and
   Burgard]{ARMIN2013}
-A.~Hornung, K.~M. Wurm, M.~Bennewitz, C.~Stachniss, and W.~Burgard.
+Armin Hornung, Kai~M. Wurm, Maren Bennewitz, Cyrill Stachniss, and Wolfram
+  Burgard.
 \newblock {OctoMap}: An efficient probabilistic {3D} mapping framework based on
   octrees.
 \newblock \emph{Autonomous Robots}, 2013.
@@ -169,25 +143,15 @@ A.~Hornung, K.~M. Wurm, M.~Bennewitz, C.~Stachniss, and W.~Burgard.
 \newblock Software available at \url{https://octomap.github.io}.
 
 \bibitem[J.~Senthilnath(2017)]{VEGETACION2017}
-A.~D. J.~Senthilnath, Manasa~Kandukuri.
+Akanksha~Dokania J.~Senthilnath, Manasa~Kandukuri.
 \newblock Application of uav imaging platform for vegetation analysis based on
   spectral-spatial methods.
 \newblock \emph{Computers and Electronics in Agriculture}, Volume 140\penalty0
   (0168-1699):\penalty0 8--24, 2017.
 \newblock \doi{10.1016/j.compag.2017.05.027}.
 
-\bibitem[Jarray et~al.(2022)Jarray, Bouallègue, Rezk, and
-  Al-Dhaifallah]{drones2022}
-R.~Jarray, S.~Bouallègue, H.~Rezk, and M.~Al-Dhaifallah.
-\newblock Parallel multiobjective multiverse optimizer for path planning of
-  unmanned aerial vehicles in a dynamic environment with moving obstacles.
-\newblock \emph{Drones}, 6\penalty0 (12), 2022.
-\newblock ISSN 2504-446X.
-\newblock \doi{10.3390/drones6120385}.
-\newblock URL \url{https://www.mdpi.com/2504-446X/6/12/385}.
-
 \bibitem[Jones et~al.(2023)Jones, Djahel, and Welsh]{ACM2023}
-M.~Jones, S.~Djahel, and K.~Welsh.
+Michael Jones, Soufiene Djahel, and Kristopher Welsh.
 \newblock Path-planning for unmanned aerial vehicles with environment
   complexity considerations: A survey.
 \newblock \emph{ACM Comput. Surv.}, 55\penalty0 (11), feb 2023.
@@ -196,7 +160,7 @@ M.~Jones, S.~Djahel, and K.~Welsh.
 \newblock URL \url{https://doi.org/10.1145/3570723}.
 
 \bibitem[Kumar and Kumar(2023)]{KUMAR2023}
-K.~Kumar and N.~Kumar.
+Krishan Kumar and Neeraj Kumar.
 \newblock Region coverage-aware path planning for unmanned aerial vehicles: A
   systematic review.
 \newblock \emph{Physical Communication}, 59:\penalty0 102073, 2023.
@@ -206,7 +170,8 @@ K.~Kumar and N.~Kumar.
   \url{https://www.sciencedirect.com/science/article/pii/S1874490723000769}.
 
 \bibitem[Lin et~al.(2017)Lin, Gao, Qin, Gao, Liu, Wu, Yang, and Shen]{LIN2017}
-Y.~Lin, F.~Gao, T.~Qin, W.~Gao, T.~Liu, W.~Wu, Z.~Yang, and S.~Shen.
+Yi~Lin, Fei Gao, Tong Qin, Wenliang Gao, Tianbo Liu, William Wu, Zhenfei Yang,
+  and Shaojie Shen.
 \newblock Autonomous aerial navigation using monocular visual-inertial fusion.
 \newblock \emph{Journal of Field Robotics}, 35\penalty0 (1):\penalty0 23--51,
   July 2017.
@@ -215,7 +180,7 @@ Y.~Lin, F.~Gao, T.~Qin, W.~Gao, T.~Liu, W.~Wu, Z.~Yang, and S.~Shen.
 
 \bibitem[McGuire et~al.(2019)McGuire, Wagter, Tuyls, Kappen, and
   de~Croon]{BUG2019}
-K.~N. McGuire, C.~D. Wagter, K.~Tuyls, H.~J. Kappen, and G.~C. H.~E. de~Croon.
+K.~N. McGuire, C.~De Wagter, K.~Tuyls, H.~J. Kappen, and G.~C. H.~E. de~Croon.
 \newblock Minimal navigation solution for a swarm of tiny flying robots to
   explore an unknown environment.
 \newblock \emph{Science Robotics}, 4\penalty0 (35):\penalty0 eaaw9710, 2019.
@@ -224,7 +189,7 @@ K.~N. McGuire, C.~D. Wagter, K.~Tuyls, H.~J. Kappen, and G.~C. H.~E. de~Croon.
   \url{https://www.science.org/doi/abs/10.1126/scirobotics.aaw9710}.
 
 \bibitem[Meagher(1982)]{DONALD1982}
-D.~Meagher.
+Donald Meagher.
 \newblock Geometric modeling using octree encoding.
 \newblock \emph{Computer Graphics and Image Processing}, 19\penalty0
   (2):\penalty0 129--147, June 1982.
@@ -232,7 +197,8 @@ D.~Meagher.
 \newblock URL \url{https://doi.org/10.1016/0146-664x(82)90104-6}.
 
 \bibitem[Mohsan et~al.(2023)Mohsan, Othman, Li, H., and Khan]{UAVPRACTICAL2023}
-S.~A.~H. Mohsan, N.~Q.~H. Othman, A.~Li, Yanlong, M.~H., and M.~A. Khan.
+Syed Agha~Hassnain Mohsan, Nawaf Qasem~Hamood Othman, Alsharif Li, Yanlong,
+  Mohammed H., and Muhammad~Asghar Khan.
 \newblock Unmanned aerial vehicles (uavs): practical aspects, applications,
   open challenges, security issues, and future trends.
 \newblock \emph{Intelligent Service Robotics}, 16\penalty0 (1), 2023.
@@ -241,18 +207,19 @@ S.~A.~H. Mohsan, N.~Q.~H. Othman, A.~Li, Yanlong, M.~H., and M.~A. Khan.
 \bibitem[Mohta et~al.(2017)Mohta, Watterson, Mulgaonkar, Liu, Qu, Makineni,
   Saulnier, Sun, Zhu, Delmerico, Karydis, Atanasov, Loianno, Scaramuzza,
   Daniilidis, Taylor, and Kumar]{MOHTA2017}
-K.~Mohta, M.~Watterson, Y.~Mulgaonkar, S.~Liu, C.~Qu, A.~Makineni, K.~Saulnier,
-  K.~Sun, A.~Zhu, J.~Delmerico, K.~Karydis, N.~Atanasov, G.~Loianno,
-  D.~Scaramuzza, K.~Daniilidis, C.~J. Taylor, and V.~Kumar.
+Kartik Mohta, Michael Watterson, Yash Mulgaonkar, Sikang Liu, Chao Qu, Anurag
+  Makineni, Kelsey Saulnier, Ke~Sun, Alex Zhu, Jeffrey Delmerico, Konstantinos
+  Karydis, Nikolay Atanasov, Giuseppe Loianno, Davide Scaramuzza, Kostas
+  Daniilidis, Camillo~Jose Taylor, and Vijay Kumar.
 \newblock Fast, autonomous flight in {GPS}-denied and cluttered environments.
 \newblock \emph{Journal of Field Robotics}, 35\penalty0 (1):\penalty0 101--120,
-  Dec. 2017.
+  December 2017.
 \newblock \doi{10.1002/rob.21774}.
 \newblock URL \url{https://doi.org/10.1002/rob.21774}.
 
 \bibitem[Oleynikova et~al.(2018)Oleynikova, Taylor, Siegwart, and
   Nieto]{OLEYNIKOVA2018}
-H.~Oleynikova, Z.~Taylor, R.~Siegwart, and J.~Nieto.
+Helen Oleynikova, Zachary Taylor, Roland Siegwart, and Juan Nieto.
 \newblock Safe local exploration for replanning in cluttered unknown
   environments for microaerial vehicles.
 \newblock \emph{{IEEE} Robotics and Automation Letters}, 3\penalty0
@@ -262,7 +229,7 @@ H.~Oleynikova, Z.~Taylor, R.~Siegwart, and J.~Nieto.
 
 \bibitem[Papachristos et~al.(2017)Papachristos, Khattak, and
   Alexis]{PAPACHRISTOS2017}
-C.~Papachristos, S.~Khattak, and K.~Alexis.
+Christos Papachristos, Shehryar Khattak, and Kostas Alexis.
 \newblock Uncertainty-aware receding horizon exploration and mapping using
   aerial robots.
 \newblock In \emph{2017 IEEE International Conference on Robotics and
@@ -270,7 +237,7 @@ C.~Papachristos, S.~Khattak, and K.~Alexis.
 \newblock \doi{10.1109/ICRA.2017.7989531}.
 
 \bibitem[Ramirez and Zeghloul(2001)]{ramirez2001}
-G.~Ramirez and S.~Zeghloul.
+Gabriel Ramirez and Said Zeghloul.
 \newblock Collision-free path planning for nonholonomic mobile robots using a
   new obstacle representation in the velocity space.
 \newblock \emph{Robotica}, 19\penalty0 (5):\penalty0 543--555, 2001.
@@ -281,21 +248,24 @@ G.~Ramirez and S.~Zeghloul.
   B\'{a}\v{c}a, Spurn\'y, Kr\'{a}tky\'{y}, Petr\'{a}\v{c}ek, Baril, Vaidis,
   Kubelka, Pomerleau, Faigl, Zimmermann, Saska, Svoboda, and
   Krajn\'{i}k]{DARPA2022}
-T.~Rou\v{c}ek, M.~Pecka, P.~\v{C}\'{\i}\v{z}ek, T.~Pet\v{r}\'\i\v{c}ek,
-  J.~Bayer, V.~\v{S}alansk\'{y}, T.~Azayev, D.~He\v{r}t, M.~Petrl\'{i}k,
-  T.~B\'{a}\v{c}a, V.~Spurn\'y, V.~Kr\'{a}tky\'{y}, P.~Petr\'{a}\v{c}ek,
-  D.~Baril, M.~Vaidis, V.~Kubelka, F.~Pomerleau, J.~Faigl, K.~Zimmermann,
-  M.~Saska, T.~Svoboda, and T.~Krajn\'{i}k.
+Tom\'{a}\v{s} Rou\v{c}ek, Martin Pecka, Petr \v{C}\'{\i}\v{z}ek, Tom\'{a}\v{s}
+  Pet\v{r}\'\i\v{c}ek, Jan Bayer, Vojt\v{e}ch \v{S}alansk\'{y}, Teymur Azayev,
+  Daniel He\v{r}t, Mat\v{e}j Petrl\'{i}k, Tom\'{a}\v{s} B\'{a}\v{c}a, Vojtech
+  Spurn\'y, V\'{i}t Kr\'{a}tky\'{y}, Pavel Petr\'{a}\v{c}ek, Dominic Baril,
+  Maxime Vaidis, Vladim\'{i}r Kubelka, Fran\c{c}ois Pomerleau, Jan Faigl, Karel
+  Zimmermann, Martin Saska, Tom\'{a}\v{s} Svoboda, and Tom\'{a}\v{s}
+  Krajn\'{i}k.
 \newblock System for multi-robotic exploration of underground environments
   {CTU}-{CRAS}-{NORLAB} in the {DARPA} subterranean challenge.
-\newblock \emph{Field Robotics}, 2\penalty0 (1):\penalty0 1779--1818, Mar.
+\newblock \emph{Field Robotics}, 2\penalty0 (1):\penalty0 1779--1818, March
   2022.
 \newblock \doi{10.55417/fr.2022055}.
 \newblock URL \url{https://doi.org/10.55417/fr.2022055}.
 
 \bibitem[Selin et~al.(2019)Selin, Tiger, Duberg, Heintz, and
   Jensfelt]{SELIN2019}
-M.~Selin, M.~Tiger, D.~Duberg, F.~Heintz, and P.~Jensfelt.
+Magnus Selin, Mattias Tiger, Daniel Duberg, Fredrik Heintz, and Patric
+  Jensfelt.
 \newblock Efficient autonomous exploration planning of large-scale 3-d
   environments.
 \newblock \emph{IEEE Robotics and Automation Letters}, 4\penalty0 (2):\penalty0
@@ -304,15 +274,15 @@ M.~Selin, M.~Tiger, D.~Duberg, F.~Heintz, and P.~Jensfelt.
 
 \bibitem[Shakhatreh et~al.(2019)Shakhatreh, Sawalmeh, Al-Fuqaha, Dou, Almaita,
   Khalil, Othman, Khreishah, and Guizani]{UAVCIVIL2019}
-H.~Shakhatreh, A.~H. Sawalmeh, A.~Al-Fuqaha, Z.~Dou, E.~Almaita, I.~Khalil,
-  N.~S. Othman, A.~Khreishah, and M.~Guizani.
+Hazim Shakhatreh, Ahmad~H. Sawalmeh, Ala Al-Fuqaha, Zuochao Dou, Eyad Almaita,
+  Issa Khalil, Noor~Shamsiah Othman, Abdallah Khreishah, and Mohsen Guizani.
 \newblock Unmanned aerial vehicles (uavs): A survey on civil applications and
   key research challenges.
 \newblock \emph{IEEE Access}, 7:\penalty0 48572--48634, 2019.
 \newblock \doi{10.1109/ACCESS.2019.2909530}.
 
 \bibitem[Shen et~al.(2011)Shen, Michael, and Kumar]{SHEN2011}
-S.~Shen, N.~Michael, and V.~Kumar.
+Shaojie Shen, Nathan Michael, and Vijay Kumar.
 \newblock Autonomous multi-floor indoor navigation with a computationally
   constrained mav.
 \newblock In \emph{2011 IEEE International Conference on Robotics and
@@ -320,7 +290,7 @@ S.~Shen, N.~Michael, and V.~Kumar.
 \newblock \doi{10.1109/ICRA.2011.5980357}.
 
 \bibitem[Shukla and Karki(2016)]{SHUKLA2016490}
-A.~Shukla and H.~Karki.
+Amit Shukla and Hamad Karki.
 \newblock Application of robotics in onshore oil and gas industry - a review
   part i.
 \newblock \emph{Robotics and Autonomous Systems}, 75:\penalty0 490--507, 2016.
@@ -329,15 +299,8 @@ A.~Shukla and H.~Karki.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0921889015002006}.
 
-\bibitem[Siciliano and Khatib(2016)]{HandBookRobotics2016}
-B.~Siciliano and O.~Khatib, editors.
-\newblock \emph{Springer Handbook of Robotics}.
-\newblock Springer International Publishing, 2016.
-\newblock \doi{10.1007/978-3-319-32552-1}.
-\newblock URL \url{https://doi.org/10.1007/978-3-319-32552-1}.
-
 \bibitem[Thrun et~al.(2005)Thrun, Burgard, and Fox]{THRUN2005}
-S.~Thrun, W.~Burgard, and D.~Fox.
+Sebastian Thrun, Wolfram Burgard, and Dieter Fox.
 \newblock \emph{Probabilistic Robotics (Intelligent Robotics and Autonomous
   Agents)}.
 \newblock The MIT Press, 2005.
@@ -345,7 +308,7 @@ S.~Thrun, W.~Burgard, and D.~Fox.
 
 \bibitem[Usenko et~al.(2017)Usenko, von Stumberg, Pangercic, and
   Cremers]{USENKO2017}
-V.~Usenko, L.~von Stumberg, A.~Pangercic, and D.~Cremers.
+Vladyslav Usenko, Lukas von Stumberg, Andrej Pangercic, and Daniel Cremers.
 \newblock Real-time trajectory replanning for {MAVs} using uniform b-splines
   and a 3d circular buffer.
 \newblock In \emph{2017 {IEEE}/{RSJ} International Conference on Intelligent
@@ -355,12 +318,12 @@ V.~Usenko, L.~von Stumberg, A.~Pangercic, and D.~Cremers.
 
 \bibitem[Westheider et~al.(2023)Westheider, R{\"u}ckin, and
   Popovi{\.c}]{WESTHEIDER2023}
-J.~Westheider, J.~R{\"u}ckin, and M.~Popovi{\.c}.
+Jonas Westheider, Julius R{\"u}ckin, and Marija Popovi{\.c}.
 \newblock Multi-uav adaptive path planning using deep reinforcement learning,
   2023.
 
 \bibitem[Zhang et~al.(2023)Zhang, Xuan, Zhang, Yao, Li, and Li]{machines2023}
-D.~Zhang, Z.~Xuan, Y.~Zhang, J.~Yao, X.~Li, and X.~Li.
+Danyang Zhang, Zhaolong Xuan, Yang Zhang, Jiangyi Yao, Xi~Li, and Xiongwei Li.
 \newblock Path planning of unmanned aerial vehicle in complex environments
   based on state-detection twin delayed deep deterministic policy gradient.
 \newblock \emph{Machines}, 11\penalty0 (1), 2023.
@@ -368,8 +331,16 @@ D.~Zhang, Z.~Xuan, Y.~Zhang, J.~Yao, X.~Li, and X.~Li.
 \newblock \doi{10.3390/machines11010108}.
 \newblock URL \url{https://www.mdpi.com/2075-1702/11/1/108}.
 
+\bibitem[Zhang et~al.(2018)Zhang, Lin, and Chen]{sym10100450}
+Han-ye Zhang, Wei-ming Lin, and Ai-xia Chen.
+\newblock Path planning for the mobile robot: A review.
+\newblock \emph{Symmetry}, 10\penalty0 (10), 2018.
+\newblock ISSN 2073-8994.
+\newblock \doi{10.3390/sym10100450}.
+\newblock URL \url{https://www.mdpi.com/2073-8994/10/10/450}.
+
 \bibitem[Zhou et~al.(2023)Zhou, Xu, and Shen]{RACER2022}
-B.~Zhou, H.~Xu, and S.~Shen.
+Boyu Zhou, Hao Xu, and Shaojie Shen.
 \newblock Racer: Rapid collaborative exploration with a decentralized multi-uav
   system.
 \newblock \emph{IEEE Transactions on Robotics}, 39\penalty0 (3):\penalty0
@@ -377,28 +348,19 @@ B.~Zhou, H.~Xu, and S.~Shen.
 \newblock \doi{10.1109/TRO.2023.3236945}.
 
 \bibitem[Zhou et~al.(2017)Zhou, Kong, Wei, Creighton, and Nahavandi]{ROADS2017}
-H.~Zhou, H.~Kong, L.~Wei, D.~Creighton, and S.~Nahavandi.
+Hailing Zhou, Hui Kong, Lei Wei, Douglas Creighton, and Saeid Nahavandi.
 \newblock On detecting road regions in a single uav image.
 \newblock \emph{IEEE Transactions on Intelligent Transportation Systems},
   18\penalty0 (7):\penalty0 1713--1722, 2017.
 \newblock \doi{10.1109/TITS.2016.2622280}.
 
 \bibitem[Zouganeli and Lentzas(2022)]{ZOUGANELI2022}
-E.~Zouganeli and A.~Lentzas.
+Evi Zouganeli and Athanasios Lentzas.
 \newblock Cognitive robotics - towards the~development of~next-generation
   robotics and~intelligent systems.
 \newblock In \emph{Communications in Computer and Information Science}, pages
   16--25. Springer International Publishing, 2022.
 \newblock \doi{10.1007/978-3-031-17030-0_2}.
 \newblock URL \url{https://doi.org/10.1007/978-3-031-17030-0_2}.
-
-\bibitem[Zu et~al.(2018)Zu, Fan, Gao, Ma, Zhang, and
-  Zeng]{MultiPathPlanning2018}
-W.~Zu, G.~Fan, Y.~Gao, Y.~Ma, H.~Zhang, and H.~Zeng.
-\newblock Multi-uavs cooperative path planning method based on improved rrt
-  algorithm.
-\newblock In \emph{2018 IEEE International Conference on Mechatronics and
-  Automation (ICMA)}, pages 1563--1567, 2018.
-\newblock \doi{10.1109/ICMA.2018.8484400}.
 
 \end{thebibliography}
