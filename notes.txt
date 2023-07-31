@@ -4,3 +4,30 @@ https://www.tandfonline.com/doi/full/10.1080/07377363.2020.1712579
 https://fisherpub.sjf.edu/cgi/viewcontent.cgi?article=1000&context=mathcs_etd_masters
 https://www.researchgate.net/publication/228761562_Theoretical_origins_of_concept_maps_how_to_construct_them_and_uses_in_education
 test
+
+%PRO TIPS
+https://researchrabbitapp.com/home
+https://elicit.org/
+https://consensus.app/details/approach-multirobot-exploration-minimizes-exploration-benkrid/f35ab47732ac5e4c8743e9eab27b06c7/
+
+
+NOTE CLASS
+http://srl.informatik.uni-freiburg.de/teachingdir/ws13/slides/12-RobotMotionPlanning.pdf
+
+PAPERS REVISAR
+
+***https://ieeexplore.ieee.org/document/7759784
+***https://sci-hub.se/https://doi.org/10.1177/0278364911406761
+***https://ieeexplore.ieee.org/document/10184313
+***https://arxiv.org/pdf/1812.03892.pdf
+***http://msl.cs.illinois.edu/~lavalle/papers/Lav98c.pdf
+***https://ieeexplore.ieee.org/document/10161230
+***https://ieeexplore.ieee.org/document/10106522
+***https://ieeexplore.ieee.org/document/9836079
+***https://ieeexplore.ieee.org/document/9197167
+***https://ieeexplore.ieee.org/document/9561284
+***https://ieeexplore.ieee.org/document/9813359
+***https://ieeexplore.ieee.org/document/8202160
+***https://www.zora.uzh.ch/id/eprint/176053/
+***https://arxiv.org/abs/2011.10348
+***https://ieeexplore.ieee.org/document/6004839
