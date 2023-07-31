@@ -1,4 +1,4 @@
-\begin{thebibliography}{65}
+\begin{thebibliography}{69}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -38,6 +38,13 @@ Ronald~C. Arkin, editor.
 \newblock \doi{10.1007/978-3-319-32552-1}.
 \newblock URL
   \url{https://mitpress.mit.edu/9780262529204/behavior-based-robotics/}.
+
+\bibitem[Bartolomei et~al.(2023)Bartolomei, Teixeira, and Chli]{BARTOLOMEI2023}
+Luca Bartolomei, Lucas Teixeira, and Margarita Chli.
+\newblock Fast multi-uav decentralized exploration of forests.
+\newblock \emph{IEEE Robotics and Automation Letters}, 8\penalty0 (9):\penalty0
+  5576--5583, 2023.
+\newblock \doi{10.1109/LRA.2023.3296037}.
 
 \bibitem[Bekey(2005)]{Bekey2005}
 George~A. Bekey.
@@ -150,6 +157,16 @@ Qingpei Fan and Jun Meng.
   2022.
 \newblock \doi{10.1109/CAC57257.2022.10055974}.
 
+\bibitem[Farooq et~al.(2022)Farooq, Laoudias, Kolios, and
+  Theocharides]{9836079}
+Adil Farooq, Christos Laoudias, Panayiotis~S. Kolios, and Theocharis
+  Theocharides.
+\newblock Quantitative and qualitative assessment of indoor exploration
+  algorithms for autonomous uavs.
+\newblock In \emph{2022 International Conference on Unmanned Aircraft Systems
+  (ICUAS)}, pages 487--496, 2022.
+\newblock \doi{10.1109/ICUAS54217.2022.9836079}.
+
 \bibitem[Florence et~al.(2018)Florence, Carter, Ware, and
   Tedrake]{FLORENCE2018}
 Peter~R. Florence, John Carter, Jake Ware, and Russ Tedrake.
@@ -249,6 +266,14 @@ Michael Jones, Soufiene Djahel, and Kristopher Welsh.
 \newblock \doi{10.1145/3570723}.
 \newblock URL \url{https://doi.org/10.1145/3570723}.
 
+\bibitem[Karaman and Frazzoli(2011)]{Karaman2011}
+Sertac Karaman and Emilio Frazzoli.
+\newblock Sampling-based algorithms for optimal motion planning.
+\newblock \emph{The International Journal of Robotics Research}, 30\penalty0
+  (7):\penalty0 846--894, June 2011.
+\newblock \doi{10.1177/0278364911406761}.
+\newblock URL \url{https://doi.org/10.1177/0278364911406761}.
+
 \bibitem[Kumar and Kumar(2023)]{KUMAR2023}
 Krishan Kumar and Neeraj Kumar.
 \newblock Region coverage-aware path planning for unmanned aerial vehicles: A
@@ -299,6 +324,11 @@ Donald Meagher.
   (2):\penalty0 129--147, June 1982.
 \newblock \doi{10.1016/0146-664x(82)90104-6}.
 \newblock URL \url{https://doi.org/10.1016/0146-664x(82)90104-6}.
+
+\bibitem[Min et~al.(2020)Min, Han, and Kim]{min2020accelerating}
+Heajung Min, Kyung~Min Han, and Young~J. Kim.
+\newblock Accelerating probabilistic volumetric mapping using ray-tracing
+  graphics hardware, 2020.
 
 \bibitem[Mohsan et~al.(2023)Mohsan, Othman, Li, H., and Khan]{UAVPRACTICAL2023}
 Syed Agha~Hassnain Mohsan, Nawaf Qasem~Hamood Othman, Alsharif Li, Yanlong,
