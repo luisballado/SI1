@@ -36,7 +36,7 @@
 %--SE LOS QUITE--
 
 \textwidth 6.5in
-\textheight 8.2in %ancho en footer
+\textheight 8.4in %ancho en footer
 \oddsidemargin 0in
 \evensidemargin 0in
 \topmargin -0.5in
@@ -321,16 +321,15 @@ Algunas aplicaciones multi-robot \cite{6320878}:
   \end{itemize}
 \end{multicols}
 
-\newpage
-\textbf{¿Qu\'{e} es un robot?} Podemos definir un robot como una m\'{a}quina que sensa, piensa y actua \cite{Bekey2005}. Es por ello que debe de contar con sensores, poder procesar la informaci\'{o}n y actuadores que lo ayuden a su movilidad. Los sensores son necesarios para la obtenci\'{o}n de informaci\'{o}n de su entorno. Comportamientos reactivos que no requieran procesar cierta informaci\'{o}n y una inteligencia para resolver diversos retos retos que se puedan presentar.\\
+\textbf{\textquestiondown Qu\'{e} es un robot?} Podemos definir un robot como una m\'{a}quina que sensa, piensa y actua \cite{Bekey2005}. Es por ello que debe de contar con sensores, poder procesar la informaci\'{o}n y actuadores que lo ayuden a su movilidad. Los sensores son necesarios para la obtenci\'{o}n de informaci\'{o}n de su entorno. Comportamientos reactivos que no requieran procesar cierta informaci\'{o}n y una inteligencia para resolver diversos retos retos que se puedan presentar.\\
 
   Existen tres preguntas en Rob\'{o}tica M\'{o}vil:
   \begin{multicols}{3}
   
   \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-  \item ¿D\'onde estoy?
-  \item ¿A d\'{o}nde voy?
-  \item ¿C\'{o}mo llego ah\'{i}?
+  \item \textquestiondown D\'onde estoy?
+  \item \textquestiondown A d\'{o}nde voy?
+  \item \textquestiondown C\'{o}mo llego ah\'{i}?
   \end{itemize}
   \end{multicols}
 
@@ -404,7 +403,7 @@ Algunas aplicaciones multi-robot \cite{6320878}:
 
 La autonom\'{i}a de los robots se ha ampliado en diversos aspectos y no es extra\~{n}o tener uno que ayuden en la limpieza del hogar.
 
-\subsection*{¿Qu\'{e} es la autonom\'{i}a?}
+\subsection*{\textquestiondown Qu\'{e} es la autonom\'{i}a?}
 
 Autonom\'{i}a es referente a sistemas capaces de operar en el mundo como lo conocemos sin un control que lo gobierne, siendo este un campo activo de investigaci\'{o}n lo que ha causado que la autonom\'{i}a de los robots se vea incrementada as\'{i} como su inteligencia.
 
@@ -452,7 +451,7 @@ Autonom\'{i}a es referente a sistemas capaces de operar en el mundo como lo cono
   %Por un lado encontramos la robotica industrial, su desarrollo comenzo para facilitar la remocion de materiales radioactivos despues de la Segunda Guerra Mundial. Comunmente los robots manipuladores no cuentan con sensores, teniendo preprogramadas las trayectorias que debe seguir. Robots industriales recientes hacen uso diversos sensores que les permiten contar con mayor autonomia.\\
   %Por otro lado la robotica de servicios, que generalmente encontramos robots que cuenten con cierto grado de movilidad (ruedas, voladores, patas ..etc).\\
   
-  \textbf{¿Qu\'{e} es Planificaci\'{o}n?} Es encontrar una secuencia de configuraci\'{o}n v\'{a}lidas para mover al robot de un punto A $\rightarrow$ B\\
+  \textbf{\textquestiondown Qu\'{e} es Planificaci\'{o}n?} Es encontrar una secuencia de configuraci\'{o}n v\'{a}lidas para mover al robot de un punto A $\rightarrow$ B\\
 
   Dados los siguientes par\'{a}metros:\\
   \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
@@ -528,7 +527,7 @@ La planificaci\'{o}n de rutas presenta diversos retos:
 
 Para crear rutas seguras, debemos respetar las restricciones para que el robot pueda ejecutar los movimientos en el mundo real.\\
 
-Entonces, si le ordenamos al robot que ejecute una acci\'{o}n particular a trav\'{e}s de su interfaz de control, ¿qu\'{e} tan seguros estaremos de que el robot realmente lleg\'{o} a ese punto sin estar observandolo?\\
+Entonces, si le ordenamos al robot que ejecute una acci\'{o}n particular a trav\'{e}s de su interfaz de control, \textquestiondown qu\'{e} tan seguros estaremos de que el robot realmente lleg\'{o} a ese punto sin estar observandolo?\\
 
 Los problemas que emergen de la planificaci\'{o}n de trayectorias es la \textbf{escalabilidad} y \textbf{eficiencia computacional}.\\
 
@@ -560,8 +559,6 @@ La idea de utilizar m\'{u}ltiples robots a\'{e}reos en un sistema coordinado se 
 \subsection*{Panorama de m\'{e}todos de planificaci\'{o}n}
 
 Un modelo del entorno nos ayudar\'{a} a conocer sus variables y reducir rutas inecesarias y asi el computo necesario. Metodos para modelar el ambiente se basan en aproximaciones de espacios, espacios libres, descomposicion por celdas, mapas topologicos y metodos probabilisticos como el PRM (probabilistic roadmap method).\\
-
-
 
 Dentro del survey Path Planning for the Mobile Robot\citenum{sym10100450} muestran que el n\'{u}mero de publicaciones para planificadores de trayectoria, los algoritmos basados en Inteligencia Artificial han ganado terreno como soluciones para planificaci\'{o}n de rutas. Esto es en la b\'{u}squeda de la mejor en base a un mapa ya conocido.\\
 
@@ -621,7 +618,6 @@ Varios metodos de Inteligencia Computacional se han propuesto para el problema d
 %    \end{itemize}
 %\end{itemize}
 
-\newpage
 La siguiente tabla muestra los m\'{e}todos de planificaci\'{o}n de trayectorias.\\
 
   \begin{tabular}{ |p{2cm}|p{1.5cm}|p{1.5cm}|p{1.4cm}|p{6cm}|  }
@@ -768,8 +764,8 @@ La funci\'{o}n objetivo variar\'{a} seg\'{u}n los objetivos espec\'{i}ficos del 
 Con base en lo anterior, surgen las siguientes preguntas de investigaci\'{o}n:
 
 \begin{itemize}
-\item ¿Cual\'{e}s son los mejores algoritmos conocidos adecuados para correr en una tarjeta electr\'{o}nica con recursos limitados?
-\item ¿Es posible crear una arquitectura de software capaz de coordinar m\'{u}ltiples-VANTS para tareas en exploraci\'{o}n de manera eficiente?
+\item \textquestiondown Cual\'{e}s son los mejores algoritmos conocidos adecuados para correr en una tarjeta electr\'{o}nica con recursos limitados?
+\item \textquestiondown Es posible crear una arquitectura de software capaz de coordinar m\'{u}ltiples-VANTS para tareas en exploraci\'{o}n de manera eficiente?
 \end{itemize}
 
 \subsection*{Hip\'{o}tesis}

@@ -111,12 +111,13 @@ Titus Cieslewski, Elia Kaufmann, and Davide Scaramuzza.
   and Systems (IROS)}, pages 2135--2142, 2017.
 \newblock \doi{10.1109/IROS.2017.8206030}.
 
-\bibitem[Collins(2019)]{COLLINS2019}
-Matthew Collins.
+\bibitem[Collins and Michael(2020)]{COLLINS2019}
+Matthew Collins and Nathan Michael.
 \newblock Efficient planning for high-speed mav flight in unknown environments
-  using sparse topological graphs.
-\newblock Master's thesis, Carnegie Mellon University, Pittsburgh, PA, August
-  2019.
+  using online sparse topological graphs.
+\newblock In \emph{2020 IEEE International Conference on Robotics and
+  Automation (ICRA)}, pages 11450--11456, 2020.
+\newblock \doi{10.1109/ICRA40945.2020.9197167}.
 
 \bibitem[Cui et~al.(2022)Cui, Dong, Li, and Tu]{10056204}
 Yangjie Cui, Xin Dong, Daochun Li, and Zhan Tu.
