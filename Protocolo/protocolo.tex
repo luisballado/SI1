@@ -220,8 +220,41 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
   
   Resolver eficazmente este problema permitir\'{i}a mejorar la eficiencia y efectividad en misones de exploraci\'{o}n que son necesarias en diversos campos, como la b\'{u}squeda y rescate, la inspecci\'{o}n de infraestructuras entre otras.\\
   \medskip \\
-  
+
   \noindent \textbf{Palabras claves:} coordinaci\'{o}n multi-VANT, exploraci\'{o}n multi-VANT, planificador de rutas 3D, arquitectura de software multi-VANT.
+
+  \hrulefill\\
+  Los robots cooperativos multi-robot han tenido recientemente mucha atenci\'{o}n debido a los avances en tecnlog\'{i}a. Son soluciones interesantes para tareas que tienen el potencial de ser resultas con m\'{a}s de un robot. Un claro ejemplo es en los escenarios de b\'{u}squeda y rescate, donde m\'{u}ltiples robots pueden cubrir el \'{a}rea de exploraci\'{o}n para la b\'{u}squeda del objetivo en un corto tiempo. Otras aplicaciones pueden se para inspecci\'{o}n industrial y construcciones (Jordan et al, 2018) y cinematograf\'{i}a a\'{e}rea.\\
+  Debido a su tama\~{n}o y peso, los VANT tienen mayor acceso donde los humanos pueden llegar.\\
+  Desafortunadamente escenarios con rangos de comunicaci\'{o}n limitados, restricciones de carga, espacios cerrados, duraci\'{o}n de bateria hacen la autonom\'{i}a en VANT peque\~{n}os un problema retador.\\
+  Sistemas aut\'{o}nomos para VANT generalmente est\'{a}n compuestos por tres componentes: \textbf{mapeo, evaci\'{o}n de obt\'{a}culos y planificaci\'{o}n de trayectoria.}\\
+  Los VANT dotados de autonom\'{i}a generalmente son grandes teniendo aplicaciones generalmente en exteriores podemos ver aplicaciones de vigilancia y agricultura de precisi\'{o}n.\\
+  Aplicaciones donde los espacios son reducidos, los VANT grandes son limitados, pero siguen teniendo los mismos problemas de navegaci\'{o}n.\\
+  Este trabajo se centra en el desarrollo de un framework proponiendo los mejores algoritmos en el estado de arte.\\
+  Permitir m\'{u}ltiples VANT navegar en ambientes desconocidos de manera aut\'{o}noma requiere dotar de habilidades como construcci\'{o}n de mapas, planificador de trayectorias, evitar obst\'{a}culos.\\
+  \textbf{Percepci\'{o}n} es obtener informaci\'{o}n de sensores\\
+  \textbf{Toma de decisiones} es el realizar decisiones a partir de la informaci\'{o}n de los sensores y el \textbf{control} aplicar\'{a} la desici\'{o}n a trav\'{e}s de sus actuadores.\\
+
+  Los principales retos para crear sistemas cooperativos son: \textbf{ubicaci\'{o}n, planificadores de rutas, y el sistema de control} dado que existen m\'{a}s de un VANT, se esperan que existan m\'{u}ltiples tareas, m\'{u}ltiples rutas.
+
+  \hrulefill\\
+  Los robots en industrias como en la log\'{i}stica han incrementado la eficiencia, as\'{i} como la seguridad en bodegas. Tecnolog\'{i}as como estas nos permiten efectuar optimizaciones y conocer los cuellos de botellas existentes. A\'{u}n as\'{i} para empacar los paquetes, al ser un problema de grano fino se sigue haciendo uso de mano de obra para elaborarlos.\\
+  Cada vez muchas soluciones han salido a la luz haciendo uso de infraestructuras existentes como montacargas automatizados \textbf{(CITAR LARs)}, generalmente estos sistemas tienen \'{a}reas restringidas como \textbf{((MUELLES AUTOMATIZADOS)),((KIVA DU-1000 DU-3000 PEGASUS)),((OCADOs grocery robots))}.\\
+
+  Buscar la mejor soluci\'{o}n, \textbf{optimizar} han sido importante para el progreso de una sociedad.\\
+  El hombre, \'{u}nico ser vivo consiente de donde vive, desde muy antiguo ha sentido la necesidad de conocer, descubrir cada lugar que pisa y mirar hacia el horizonte. Desarrollar el sentido de la orientaci\'{o}n a partir de los elementos que le rodean, desde el momento que el hombre comienza a representar las superficies nacen lo que hoy conocemos como mapas.(Fragmentos del documental de divulgaci\'{o}n del Instituto de Estad\'{i}istica y Cartograf\'{i}a de Andaluc\'{i}a)\\
+
+  \hrulefill\\
+  \textbf{COSAS DE EStADO DEL ARTE}\\
+  Estos problemas ya se han resulto en varios robots terrestres llegando a tener soluciones distribuidas o resultos los problemas de colisi\'{o}n, navegaci\'{o}n, mapeo y se han propuestos buenos algoritmos que formar\'{a}n parte de la arquitectura de software para resolver.\\
+  Trabajos como el de \textbf{Marco Hutler et al.} han logrado optimizar problemas de alta dimencionalidad con el control de navegaci\'{o}n para un robot con cuatro patas, haciendo uso de aprendizaje por refuerzo con ayuda de simulaciones corriendo en paralelo en un cuarto simulado, logrando obtener los pesos que le ayudan a resolver el problema de navegaci\'{o}n, pero al momento de pasar a efectuar un despliege de software el robot no pudo hace un paso correcto. Los huecos entre la simulaci\'{o}n y la realidad debido a los anchos de banda que sufren las lecturas de sensores, teniendo una comunicaci\'{o}n deficiente en la arquitectura.\\
+  Tomando en cuenta los ruidos estoc\'{a}sticos y realizando simulaciones hibridas han logrado ganar el DARPA CHALLENGE usando una exploraci\'{o}n basada en grafos y un mapa de ocupaci\'{o}n (OctoMap) para simular el entorno tridimencional.\\
+
+  Navegaciones interesantes como de la ETH Learning High-Speed Flight in th Wild que propone una arquitectura con capas de proyecci\'{o}n, decisi\'{o}n y control posterior a un procesamiento de imagen con segmentaciones de profundidad con uso de algoritmos Semi-global matching para la estimaci\'{o}n de un mapa de disparidad denso lograr\'{o}n demostrar que pueden navegar en entornos extremadamente complejos a altas velocidades haciendo uso de arquitecturas de tipo sensar, mapear, planear ya que han demostrado buenos resultados en velocidades moderadas con ayuda de una red convolucional entrenada con una muestra previa imitando al experto.\\
+  Otras propuestas novedosas de control parten del uso de t\'{e}cnicas de optimizaci\'{o}n que acercan a Modelos de control predictivos, pero son demasiado costosas computacionalmente, otras soluciones de control como Aprendizaje por refuerzo, permiten un control r\'{a}pido y eficiente pero no tan bueno que el control MCP, pero para situaciones donde el tiempo real es necesario se proponen soluciones \textbf{Training Efficient Controlles via Analytic Policy Gradient} tomando ventaja de la simulaci\'{o}n del robot y poder probar infinidad de ocaciones minimizando el error con descenso de gradiente mostrando resultados similares al control tipo MCP (Model Predictive Control).\\
+
+  \textbf{Autonomous Drone Racing with Deep Reinforcement Learning} Propone algoritmos para el control de navegaci\'{o}n de un drone con uso de aprendizaje por refuerzo siendo soluciones perfectas para un simple robot ya que en su trabajo buscan viajar a m\'{a}s de 60 km/h\\
+  
   
 \end{abstract}
 
