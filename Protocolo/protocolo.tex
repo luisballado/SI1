@@ -247,14 +247,25 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
   \hrulefill\\
   \textbf{COSAS DE EStADO DEL ARTE}\\
   Estos problemas ya se han resulto en varios robots terrestres llegando a tener soluciones distribuidas o resultos los problemas de colisi\'{o}n, navegaci\'{o}n, mapeo y se han propuestos buenos algoritmos que formar\'{a}n parte de la arquitectura de software para resolver.\\
-  Trabajos como el de \textbf{Marco Hutler et al.} han logrado optimizar problemas de alta dimencionalidad con el control de navegaci\'{o}n para un robot con cuatro patas, haciendo uso de aprendizaje por refuerzo con ayuda de simulaciones corriendo en paralelo en un cuarto simulado, logrando obtener los pesos que le ayudan a resolver el problema de navegaci\'{o}n, pero al momento de pasar a efectuar un despliege de software el robot no pudo hace un paso correcto. Los huecos entre la simulaci\'{o}n y la realidad debido a los anchos de banda que sufren las lecturas de sensores, teniendo una comunicaci\'{o}n deficiente en la arquitectura.\\
+  Trabajos como el de \textbf{Marco Hutter et al.} han logrado optimizar problemas de alta dimencionalidad con el control de navegaci\'{o}n para un robot con cuatro patas, haciendo uso de aprendizaje por refuerzo con ayuda de simulaciones corriendo en paralelo en un cuarto simulado, logrando obtener los pesos que le ayudan a resolver el problema de navegaci\'{o}n, pero al momento de pasar a efectuar un despliege de software el robot no pudo hace un paso correcto. Los huecos entre la simulaci\'{o}n y la realidad debido a los anchos de banda que sufren las lecturas de sensores, teniendo una comunicaci\'{o}n deficiente en la arquitectura.\\
   Tomando en cuenta los ruidos estoc\'{a}sticos y realizando simulaciones hibridas han logrado ganar el DARPA CHALLENGE usando una exploraci\'{o}n basada en grafos y un mapa de ocupaci\'{o}n (OctoMap) para simular el entorno tridimencional.\\
 
   Navegaciones interesantes como de la ETH Learning High-Speed Flight in th Wild que propone una arquitectura con capas de proyecci\'{o}n, decisi\'{o}n y control posterior a un procesamiento de imagen con segmentaciones de profundidad con uso de algoritmos Semi-global matching para la estimaci\'{o}n de un mapa de disparidad denso lograr\'{o}n demostrar que pueden navegar en entornos extremadamente complejos a altas velocidades haciendo uso de arquitecturas de tipo sensar, mapear, planear ya que han demostrado buenos resultados en velocidades moderadas con ayuda de una red convolucional entrenada con una muestra previa imitando al experto.\\
+  \textbf{Autonomous Drone Racing with Deep Reinforcement Learning} Propone algoritmos para el control de navegaci\'{o}n de un drone con uso de aprendizaje por refuerzo siendo soluciones perfectas para un simple robot ya que en su trabajo buscan viajar a m\'{a}s de 60 km/h\\
   Otras propuestas novedosas de control parten del uso de t\'{e}cnicas de optimizaci\'{o}n que acercan a Modelos de control predictivos, pero son demasiado costosas computacionalmente, otras soluciones de control como Aprendizaje por refuerzo, permiten un control r\'{a}pido y eficiente pero no tan bueno que el control MCP, pero para situaciones donde el tiempo real es necesario se proponen soluciones \textbf{Training Efficient Controlles via Analytic Policy Gradient} tomando ventaja de la simulaci\'{o}n del robot y poder probar infinidad de ocaciones minimizando el error con descenso de gradiente mostrando resultados similares al control tipo MCP (Model Predictive Control).\\
 
-  \textbf{Autonomous Drone Racing with Deep Reinforcement Learning} Propone algoritmos para el control de navegaci\'{o}n de un drone con uso de aprendizaje por refuerzo siendo soluciones perfectas para un simple robot ya que en su trabajo buscan viajar a m\'{a}s de 60 km/h\\
-  
+  Revisar\\
+  MADER: Decentralized and Asynchronous Multiagent Trajectory Planner\\
+  Panther: Perception-Aware Trajectory Planner in Dynamic\\
+  CoSLAM: Collaborative Visual SLAM in Dynamic Scenes.\\
+  Decentralized Multi-Agent Visual SLAM\\
+  Probabilistic Traversability Model for Risk-Aware Motion Planning\\
+
+  Mientras no tengamos controles confiables, la problem\'{a}tica es fuerte. Soluciones mec\'{a}nicas para la amortiguaci\'{o}n de golpes con paredes ayudan a dar un punto que es posible de control y evitar dañar el VANT. \textbf{Collision-inclusive motion planning for an impact-resilient aerial robot}.\\
+
+  Matematicamente el problema de encontrar rutas es resuelto con grafos, siendo un grafo una representaci\'{o}n matem\'{a}tica de v\'{e}rtices y aristas. Siendo el v\'{e}rtice  la posici\'{o}n del robot y las aristas un camino donde encontramos algoritmos lineales \ldots\\
+
+  En recientes aportes de \cite{CIESLEWSKI2021} han demostrado descentralizar la tarea de SLAM para la creaci\'{o}n de mapas
   
 \end{abstract}
 
