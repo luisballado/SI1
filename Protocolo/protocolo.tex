@@ -118,6 +118,7 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 \usepackage{charter}
 \usepackage{environ}
 \usetikzlibrary{calc,matrix}
+\usepackage{soul}
 
 \makeatletter
 \let\matamp=&
@@ -200,19 +201,21 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 \begin{abstract}
 
   %MEJORAR
-  %La importancia de la rob\'{o}tica de servicios hoy en d\'{i}a es innegable. Estos avances estan revolucionando la forma en que interactuamos con el mundo, ofreciendo amplias posibilidades en diversos sectores como en el sector de bodegas y entregas de productos ((CITAR ALGO)) cada vez las tareas repetitivas y pesadas estan siendo delegadas a los robots. La exploraci\'{o}n espacial ha traido consigo soluciones a problemas en la rob\'{o}tica 
+ \st{La importancia de la rob\'{o}tica de servicios hoy en d\'{i}a es innegable. Estos avances estan revolucionando la forma en que interactuamos con el mundo, ofreciendo amplias posibilidades en diversos sectores como en el sector de bodegas y entregas de productos ((CITAR ALGO)) cada vez las tareas repetitivas y pesadas estan siendo delegadas a los robots. La exploraci\'{o}n espacial ha traido consigo soluciones a problemas en la rob\'{o}tica.}\\
+
+ \st{La importancia de la rob\'{o}tica de servicios en la actualidad es innegable. Estos avances est\'{a}n revolucionando la forma en que interactuamos con el mundo, ofreciendo un amplio abanico de aplicaciones en diversos sectores. Desde veh\'{i}culos aut\'{o}nomos, robots m\'{o}viles en l\'{o}gistica, hasta la exploraci\'{o}n espacial, la rob\'{o}tica de servicios ha demostrado ser \'{u}til en entornos donde los seres humanos pueden enfrentar riesgos o dificultades.}\\
   
-  %La importancia de la rob\'{o}tica de servicios en la actualidad es innegable. Estos avances est\'{a}n revolucionando la forma en que interactuamos con el mundo, ofreciendo un amplio abanico de aplicaciones en diversos sectores. Desde veh\'{i}culos aut\'{o}nomos, robots m\'{o}viles en l\'{o}gistica, hasta la exploraci\'{o}n espacial, la rob\'{o}tica de servicios ha demostrado ser \'{u}til en entornos donde los seres humanos pueden enfrentar riesgos o dificultades.\\
+  \st{Dentro de la rob\'{o}tica m\'{o}vil podemos encontrar robots a\'{e}reos, mejor conocidos como Veh\'{i}culos A\'{e}reos No Tripulados (VANT), estos robots m\'{o}viles tienen la capacidad de volar y acceder a lugares de manera r\'{a}pida y eficiente, convirti\'{e}ndolos en herramientas extremadamente vers\'{a}tiles. Veh\'{i}culos as\'{i} est\'{a}n siendo utilizados por empresas de comercio electr\'{o}nico para entregar productos a los clientes de manera \'{a}gil ((hablar del mTSP)), en la agricultura para monitorear cultivos e identificar problemas con plagas para aplicar pesticidas o fertilizantes de manera precisa. En el \'{a}mbito de la seguridad, pueden utilizarse para la vigilancia de \'{A}reas de dif\'{i}cil acceso o en situaciones de emergencia, proporcionando informaci\'{o}n valiosa en tiempo real a los equipos de rescate.}\\
+
+  \st{A pesar de los numerosos avances de la rob\'{o}tica de servicios, existen desaf\'{i}os y problem\'{a}ticas asociadas a la planificaci\'{o}n de trayectorias en ambientes desconocidos y cambiantes.}\\
+  \st{La \textbf{exploraci\'{o}n} implica una serie de tareas y desaf\'{i}os. Estos pueden incluir la \textbf{planificaci\'{o}n de rutas} para cubrir eficientemente el \'{a}rea a explorar, la \textbf{detecci\'{o}n} y \textbf{evaci\'{o}n de obst\'{a}culos}, \textbf{la localizaci\'{o}n y mapeo simult\'{a}neo} (SLAM) y la toma de decisiones para maximizar la informaci\'{o}n.}\\
+
+  \st{La \textbf{coordinaci\'{o}n} y el \textbf{trabajo en equipo} de m\'{u}ltiples-VANT(s) representa un desaf\'{i}o emocionante. La \textbf{colaboraci\'{o}n} de varios VANT(s) puede ser \'{u}til en misiones de b\'{u}squeda y rescate, en donde pueden cubrir \'{a}reas m\'{a}s extensas y realizar tareas m\'{a}s complejas de manera simult\'{a}nea. La coordinaci\'{o}n entre los VANT(s) puede optimizar la eficiencia de las operaciones y aumentar las posibilidades de \'{e}xito.}\\
+
+  \st{El objetivo de este trabajo es la propuesta de una arquitectura de software tolerante a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinaci\'{o}n de Veh\'{i}culos A\'{e}reos No Tripulados.}\\
+  \st{El proyecto de investigaci\'{o}n demostrar\'{a} que es posible dise\~{n}ar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboraci\'{o}n multi-VANT.}\\
+  \noindent\hrulefill\\
   
-  %Dentro de la rob\'{o}tica m\'{o}vil podemos encontrar robots a\'{e}reos, mejor conocidos como Veh\'{i}culos A\'{e}reos No Tripulados (VANT), estos robots m\'{o}viles tienen la capacidad de volar y acceder a lugares de manera r\'{a}pida y eficiente, convirti\'{e}ndolos en herramientas extremadamente vers\'{a}tiles. Veh\'{i}culos as\'{i} est\'{a}n siendo utilizados por empresas de comercio electr\'{o}nico para entregar productos a los clientes de manera \'{a}gil ((hablar del mTSP)), en la agricultura para monitorear cultivos e identificar problemas con plagas para aplicar pesticidas o fertilizantes de manera precisa. En el \'{a}mbito de la seguridad, pueden utilizarse para la vigilancia de \'{A}reas de dif\'{i}cil acceso o en situaciones de emergencia, proporcionando informaci\'{o}n valiosa en tiempo real a los equipos de rescate.\\
-
-  %A pesar de los numerosos avances de la rob\'{o}tica de servicios, existen desaf\'{i}os y problem\'{a}ticas asociadas a la planificaci\'{o}n de trayectorias en ambientes desconocidos y cambiantes.\\
-  %La \textbf{exploraci\'{o}n} implica una serie de tareas y desaf\'{i}os. Estos pueden incluir la \textbf{planificaci\'{o}n de rutas} para cubrir eficientemente el \'{a}rea a explorar, la \textbf{detecci\'{o}n} y \textbf{evaci\'{o}n de obst\'{a}culos}, \textbf{la localizaci\'{o}n y mapeo simult\'{a}neo} (SLAM) y la toma de decisiones para maximizar la informaci\'{o}n.\\
-
-  %La \textbf{coordinaci\'{o}n} y el \textbf{trabajo en equipo} de m\'{u}ltiples-VANT(s) representa un desaf\'{i}o emocionante. La \textbf{colaboraci\'{o}n} de varios VANT(s) puede ser \'{u}til en misiones de b\'{u}squeda y rescate, en donde pueden cubrir \'{a}reas m\'{a}s extensas y realizar tareas m\'{a}s complejas de manera simult\'{a}nea. La coordinaci\'{o}n entre los VANT(s) puede optimizar la eficiencia de las operaciones y aumentar las posibilidades de \'{e}xito.\\
-
-  %El objetivo de este trabajo es la propuesta de una arquitectura de software tolerante a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinaci\'{o}n de Veh\'{i}culos A\'{e}reos No Tripulados.\\
-  %El proyecto de investigaci\'{o}n demostrar\'{a} que es posible dise\~{n}ar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboraci\'{o}n multi-VANT.
   En las \'{u}ltimas decadas se ha visto un aumento en el inter\'{e}s de los Veh\'{i}culos A\'{e}reos No Tripulados (conocidos como VANT o coloquialmente drones), a la par que se han introducido nuevas tecnolog\'{i}as de comunicaci\'{o}n, sensores y computaci\'{o}n. Estos avances han sido aplicados al control de VANT, logrando crear diversas soluciones en vigilancia ((CITAR DJI)), b\'{u}squeda y rescate ((CITAR UNO)), propuestas para el problema de la \'{u}ltima milla ((CITAR UNO)), inclusive en espect\'{a}culos a\'{e}reos ((CITAR UNA)) \citenum{UAVPRACTICAL2023}. Dichas aplicaciones suelen carecer de autonom\'{i}a. Para que un robot se considere aut\'{o}nomo deber\'{a} tomar decisiones y realizar tareas sin necesidad de que alguien le diga qu\'{e} hacer o guiarlo paso a paso. Tener la capacidad de percibir su entorno y usar la informaci\'{o}n para decidir c\'{o}mo moverse son considerados altos niveles de autonom\'{i}a. Para llegar a ello el robot debe resolver primero problemas como su localizaci\'{o}n, mapeo y navegaci\'{o}n.\\
   Se ha demostrado que es posible dotar de autonom\'{i}a a un robot (m\'{o}vil o a\'{e}reo) ((CITAR)). Dichas soluciones parten de tener el problema de localizaci\'{o}n resuelto al ser aplicaciones en exteriores y poder hacer uso de sistemas de localizaci\'{o}n como el Sistema de Posicionamiento Global (GPS) o Sistema Global de Navegaci\'{o}n por Sat\'{e}lite (Global Navigation Satellite System, GNSS). Los Veh\'{i}culos A\'{e}reos no Tripulados (VANT) del ma\~{n}ana deber\'{a}n de navegar en \'{a}reas urbanas de la mejor manera posible y tener la habilidad de trabajar en coordinaci\'{o}n multi-VANT.\\
 
@@ -254,7 +257,7 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
   \textbf{COSAS DE ESTADO DEL ARTE}\\
   
   Estos problemas ya se han resulto en varios robots terrestres llegando a tener soluciones distribuidas o resultos los problemas de colisi\'{o}n, navegaci\'{o}n, mapeo y se han propuestos buenos algoritmos que formar\'{a}n parte de la arquitectura de software para resolver.\\
-  Trabajos como el de \textbf{Marco Hutter et al.} han logrado optimizar problemas de alta dimencionalidad con el control de navegaci\'{o}n para un robot con cuatro patas, haciendo uso de aprendizaje por refuerzo con ayuda de simulaciones corriendo en paralelo en un cuarto simulado, logrando obtener los pesos que le ayudan a resolver el problema de navegaci\'{o}n, pero al momento de pasar a efectuar un despliege de software el robot no pudo hace un paso correcto. Los huecos entre la simulaci\'{o}n y la realidad debido a los anchos de banda que sufren las lecturas de sensores, teniendo una comunicaci\'{o}n deficiente en la arquitectura.\\
+  Trabajos como el de \cite{CERBERUS2022} han logrado optimizar problemas de alta dimencionalidad con el control de navegaci\'{o}n para un robot con cuatro patas, haciendo uso de aprendizaje por refuerzo con ayuda de simulaciones corriendo en paralelo en un cuarto simulado, logrando obtener los pesos que le ayudan a resolver el problema de navegaci\'{o}n, pero al momento de pasar a efectuar un despliege de software el robot no pudo hace un paso correcto. Los huecos entre la simulaci\'{o}n y la realidad debido a los anchos de banda que sufren las lecturas de sensores, teniendo una comunicaci\'{o}n deficiente en la arquitectura.\\
   Tomando en cuenta los ruidos estoc\'{a}sticos y realizando simulaciones hibridas han logrado ganar el DARPA CHALLENGE usando una exploraci\'{o}n basada en grafos y un mapa de ocupaci\'{o}n (OctoMap) para simular el entorno tridimencional.\\
 
   Navegaciones interesantes como de la ETH Learning High-Speed Flight in th Wild que propone una arquitectura con capas de proyecci\'{o}n, decisi\'{o}n y control posterior a un procesamiento de imagen con segmentaciones de profundidad con uso de algoritmos Semi-global matching para la estimaci\'{o}n de un mapa de disparidad denso lograr\'{o}n demostrar que pueden navegar en entornos extremadamente complejos a altas velocidades haciendo uso de arquitecturas de tipo sensar, mapear, planear ya que han demostrado buenos resultados en velocidades moderadas con ayuda de una red convolucional entrenada con una muestra previa imitando al experto.\\
@@ -462,7 +465,8 @@ Autonom\'{i}a es referente a sistemas capaces de operar en el mundo como lo cono
 \subsection*{Problemas de control}
   
   Existen diversas capas de control. En niveles bajos de control queremos que los movimientos del robot sean estables sin oscilaciones, que no colisionen con obst\'{a}culos al mismo tiempo tener una estabilidad en sus movimientos. Esperamos que el comportamiento aut\'{o}nomo resuelva aspectos como moverse al mismo tiempo evadir obst\'{a}culos. Arquitecturas de software que permiten este tipo de control regularmente se ejecutan en paralelo y son conocidas como behavior-based architectures \cite{ARKIN1998}.\\
-  
+
+  \noindent\hrulefill\\
   La organizaci\'{o}n de software asociada con los niveles de control tiene el nombre de \textbf{Arquitectura Software de control} de un robot.\\
   
   Los controles de bajo nivel responden muy bien a t\'{e}cnicas de teoria de control \cite{ramirez2001}. Considerando como entrada del sistema la posici\'{o}n que deseamos y su orientaci\'{o}n. El error ser\'{a} la diferencia entre la posici\'{o}n deseada y la posici\'{o}n actual\\
@@ -517,7 +521,7 @@ Autonom\'{i}a es referente a sistemas capaces de operar en el mundo como lo cono
   
   Anal\'{o}gicamente, es como ir al supermercado con el carrito de compras evitando chocar con cosas mientras navegamos dentro de la tienda. Esto es f\'{a}cil para nosotros los humanos, pero para los robots es complicado.\\
   
-  Revisar este Good path planning technology of mobile robot can not only save a lot of time, but also reduce the wear and capital investment of mobile robot. Several methodologies have been proposed and reported in the literature for the path planning of mobile robot. Although these methodologies do not guarantee an optimal solution, they have been successfully applied in their works. The purpose of this paper is to review the modeling, optimization criteria and solution algorithms for the path planning of mobile robot. The survey shows GA (genetic algorithm), PSO (particle swarm optimization algorithm), APF (artificial potential field), and ACO (ant colony optimization algorithm) are the most used approaches to solve the path planning of mobile robot. Finally, future research is discussed which could provide reference for the path planning of mobile robot. \cite{sym10100450}
+  Tener un planificador de rutas optimizado para un robot m\'{o}vil, no solo nos ahorrara tiempo en su desplazamiento, si no tambi\'{e}n los recursos empleados en el desplazamiento. Diversas metodolog\'{i}as para abordar el problema de planificaci\'{o}n de trayectorias se han propuesto en la literatura. Sin embargo esos m\'{e}todos no garantizan una soluci\'{o}n \'{o}ptima. En el survey de \cite{sym10100450} revisan los diferentes modelos y criterios de optimizaci\'{o}n propuestos como, Algoritmos Gen\'{e}ticos, PSO (Partical Swarm Optimization), APF (Artificial Potential Field), ACO (Ant Colony Optimization) han sido los m\'{a}s empleados para la creaci\'{o}n de un planificador de rutas offline\\
   
   %Partimos que el robot cuenta con una configuraci\'{o}n global, modelo del robot, y mapa del ambiente.\\
   
@@ -589,6 +593,11 @@ Finalmente habr\'{a} obst\'{a}culos o otros robots en el ambiente que nuestra so
 
 \subsection*{Robots aereos}
 
+\cite{10120941} clasifican los Veh\'{i}culos A\'{e}reos No Tripulados (VANT) principalmente como: \textbf{Ala Fija, Ala Rotatoria y Hibrido}\\
+\textbf{Ala fija} - cuentan con una ala rigida, similar a los aviones comerciales que conocemos. Requieren un area reservada para el despegue\\
+\textbf{Ala rotatoria} - \\
+\textbf{Hibrido} -  \\
+
 %UAVs are typically categorized as fixed-wing, rotary-wing, and hybrid-wing. Fixed-wing UAVs have rigid wings, like conventional human aircraft. They require relative velocity to generate aerodynamic forces and are thus more aero-dynamically efficient; however, fixed-wing UAVs require a runway for takeoff and landing. Vertical takeoff and landing are possible for rotary-wing UAVs because their revolving rotary blades generate adequate aerodynamic thrust. \cite{10120941}
 
 %Mostrar la figura 1 de \cite{10120941}, mostrar la figura 2 \cite{10120941}\\
@@ -643,32 +652,32 @@ Varios metodos de Inteligencia Computacional se han propuesto para el problema d
 
 
 
-%\begin{itemize}
-%  \item Geom\'{e}tricos
-%    \begin{itemize}
-%    \item Grafos de visibilidad, descomposici\'{o}n en celdas, diagramas de voronoi, etc.
-%    \end{itemize}
-%  \item Campos de potencial
-%    \begin{itemize}
-%    \item Frentes de onta, funciones de navegaci\'{o}n, etc.
-%    \end{itemize}
-%  \item Basados en b\'{u}squeda
-%    \begin{itemize}
-%    \item Dijkstra, A*, D*, D* Lite, etc.
-%    \end{itemize}
-%  \item Basados en pruebas
-%    \begin{itemize}
-%    \item RRT, RRT*, PRM, etc.
-%    \end{itemize}
-%  \item Trayectorias
-%    \begin{itemize}
-%    \item M\'{i}nimo tiempo/energia, etc.
-%    \end{itemize}
-%  \item Bioinspirados
-%    \begin{itemize}
-%    \item Redes Neuronales, Algoritmos Geneticos, Ant Colony Optimisation, etc.
-%    \end{itemize}
-%\end{itemize}
+\begin{itemize}
+  \item Geom\'{e}tricos
+    \begin{itemize}
+    \item Grafos de visibilidad, descomposici\'{o}n en celdas, diagramas de voronoi, etc.
+    \end{itemize}
+  \item Campos de potencial
+    \begin{itemize}
+    \item Frentes de onta, funciones de navegaci\'{o}n, etc.
+    \end{itemize}
+  \item Basados en b\'{u}squeda
+    \begin{itemize}
+    \item Dijkstra, A*, D*, D* Lite, etc.
+    \end{itemize}
+  \item Basados en pruebas
+    \begin{itemize}
+    \item RRT, RRT*, PRM, etc.
+    \end{itemize}
+  \item Trayectorias
+    \begin{itemize}
+    \item M\'{i}nimo tiempo/energia, etc.
+    \end{itemize}
+  \item Bioinspirados
+    \begin{itemize}
+    \item Redes Neuronales, Algoritmos Geneticos, Ant Colony Optimisation, etc.
+    \end{itemize}
+\end{itemize}
 
 La siguiente tabla muestra los m\'{e}todos de planificaci\'{o}n de trayectorias.\\
 
@@ -709,7 +718,7 @@ La siguiente tabla muestra los m\'{e}todos de planificaci\'{o}n de trayectorias.
     \rowcolor{black!5}
     \tiny PRM   & \tiny Si    & \tiny Grafo& \tiny Si&
     \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-    \tiny \item Eficiente para problemas con consultas múltiples
+    \tiny \item Eficiente para problemas con consultas m\'{u}ltiples
     \tiny \item Completez probabil\'{i}stica\
     \tiny \item Camino irregular
     \end{itemize}\\
@@ -779,9 +788,14 @@ La siguiente tabla muestra los m\'{e}todos de planificaci\'{o}n de trayectorias.
 \newpage
 \section*{Planteamiento del problema}
 
+Dado un espacio 3D (V) que un VANT debe explorar, \textquestiondown Qu\'{e} acciones debera de realizar el VANT para explorar el espacio completo lo m\'{a}s r\'{a}pido posible?. Cada punto del volumen puede tomar tres valores (Ocupado, libre, desconocido) $V(x)=(libre|ocupado|desconocido)$\\
+
+Completar la exploraci\'{o}n significa que el robot creo un mapa M que cubre el volumen V y los puntos en el mapa. Por la naturaleza del problema, esto se debe resolver online.\\
+
 %The problem addressed can be summarized as follows: Given a bounded 3D-volume V that an agent e.g. a drone wishes to explore, which actions should the agent perform to explore V completely and as fast as possible? Each point in this volume, $xÃ¢ÂÂVÃ¢ÂÂR3$, can take the two values: free or occupied, i.e. V(x)=(free|occupied).\\
 
 %Complete exploration means that the agent has created a map M covering the volume V and every point x in the map, that can be observed by any of the agent's sensors, has been observed as free or occupied, i.e. M(xreachable)=(free|occupied). Points that are non-observable, e.g. hollow spaces without openings, the inside of thick walls or space out of range, will still be unmapped even after the exploration has been completed. If no prior information is given, every x in the map is initially unmapped. Due to the active nature of the problem, it has to be solved online.\\
+
 
 La coordinaci\'{o}n de m\'{u}ltiples-VANT (Veh\'{i}culos A\'{e}reos No Tripulados) es un desaf\'{i}o complejo en el campo de la rob\'{o}tica y la exploraci\'{o}n de \'{a}reas desconocidas. A medida que la tecnolog\'{i}a de los Veh\'{i}culos A\'{e}reos No Tripulados contin\'{u}a avanzando y se vuelven m\'{a}s accesibles, se presenta la oportunidad de utilizar equipos de m\'{u}ltiples VANT para realizar tareas de manera colaborativa y eficiente. Sin embargo, esta coordinaci\'{o}n planea diversas problem\'{a}ticas que deben abordarse.\\
 
@@ -814,7 +828,6 @@ La funci\'{o}n objetivo variar\'{a} seg\'{u}n los objetivos espec\'{i}ficos del 
 \end{itemize}
 
 Con base en lo anterior, surgen las siguientes preguntas de investigaci\'{o}n:
-
 \begin{itemize}
 \item \textquestiondown Cual\'{e}s son los mejores algoritmos conocidos adecuados para correr en una tarjeta electr\'{o}nica con recursos limitados?
 \item \textquestiondown Es posible crear una arquitectura de software capaz de coordinar m\'{u}ltiples-VANTS para tareas en exploraci\'{o}n de manera eficiente?
@@ -1093,8 +1106,8 @@ Entre los trabajos m\'{a}s relevantes se encuentra la tesis doctoral de \cite{CI
 
 Por otra parte trabajos de tesis de maestria de \cite{CINVES2013} que tiene como objetivo general la Generaci\'{o}n de mapas utilizando veh\'{i}culos a\'{e}reos no tripulados de baja altitud.\\
 
-Este trabajo desarrolla usando una combinacion entre la tecnica y tecnica de ... en especial el algoritmo de ... Los resultados de este trabajo muestran un buen desempe\~{n}o del sistema de control....
-La robustez se alcanza para las perturbaciones.\\
+%Este trabajo desarrolla usando una combinacion entre la tecnica y tecnica de ... en especial el algoritmo de ... Los resultados de este trabajo muestran un buen desempe\~{n}o del sistema de control....
+%La robustez se alcanza para las perturbaciones.\\
 
 Otra investigacion relevante se encuentra en la tesis de doctorado del CINVESTAV Unidad Guadalajara \cite{CINVES2021, CINVES2015}.
 El objetivo principal de este trabajo es el de realizar seguimiento ..\\
@@ -1120,16 +1133,15 @@ Coverage Path Planning Optimization of Heterogeneous UAVs Group for Precision Ag
 Unmanned aerial vehicle navigation in underground structure inspection: A review \cite{Zhang2023}\\
 Transmission Line Inspection Using Unmanned Aerial Vehicle \cite{Subahani2020}\\
 Decentralized Spatial-Temporal Trajectory Planning for Multicopter Swarms \cite{zhou2021decentralized}\\
-%A Survey on multi-robot systems \cite{6320878}\\
-%Sacar mas paha de aca? \cite{DENG2023}\\
-%talves de aca mas paha \cite{UAVPRACTICAL2023}\\
-%hojeada de aca \cite{XU2023110164}
+A Survey on multi-robot systems \cite{6320878}\\
+Three-dimensional path plan- ning of uav based on improved particle swarm optimization \cite{DENG2023}\\
+Unmanned aerial vehicles (uavs): practical aspects, applications, open challenges, security issues, and future trends. \cite{UAVPRACTICAL2023}\\
+Cooperative path planning optimization for multiple uavs with communication constraints. \cite{XU2023110164}
 %https://docs.ufpr.br/~danielsantos/ProbabilisticRobotics.pdf
 
-%revisar: \cite{drones7060337}\\
+Decentralized multi- uav cooperative exploration using dynamic centroid-based area partition. \cite{drones7060337}\\
 %sacar mas data de aqui \cite{PathPlanning2020} y de aca \cite{10120941} y de aca \cite{UAVPRACTICAL2023} o de aca \cite{ZOUGANELI2022}, revisar \cite{math11102356}\\
 %Dar revisada a \cite{CHEN2014}\\
-
 
 Las aplicaciones de la rob\'{o}tica se han centrado en realizar tareas simples y repetitivas. La necesidad de robots con capacidad de identificar cambios en su entorno y reaccionar sin la intervenci\'{o}n humana, da origen a los robots inteligentes. Aunado a ello si deseamos que el robot se mueva libremente, los cambios en su entorno pueden aumentar r\'{a}pidamente y complicar el problema de un comportamiento inteligente. Dentro de la rob\'{o}tica m\'{o}vil inteligente se han propuesto estrategias de comportamiento reactivas, algoritmos que imitan el comportamiento de insectos y el c\'{o}mo se desplanzan en un entorno.\\
 El objetivo principal de los algoritmos de navegaci\'{o}n es el de guiar al robot desde el punto de inicio al punto destino. Los trabajos por V. Lumelsky y A. Stephanov, et al. [11], dieron respuesta a problematicas de navegaci\'{o}n eficiente y de poca memoria (Algoritmos tipo bug).\\
@@ -1154,7 +1166,6 @@ En t\'{e}rminos de validaci\'{o}n y evaluaci\'{o}n, se utilizan simulaciones y p
 
 %Un enfoque comÃÂÃÂºn en la planificaciÃÂÃÂ³n de trayectorias es la bÃÂÃÂºsqueda basada en grafos. Los algoritmos de bÃÂÃÂºsqueda en grafos, como el algoritmo A*, permiten encontrar rutas ÃÂÃÂ³ptimas en entornos discretizados. Estos algoritmos generan un grafo que representa el espacio de configuraciÃÂÃÂ³n del robot, donde los nodos son posiciones posibles y las aristas representan transiciones entre ellas. Sin embargo, estos enfoques enfrentan desafÃÂÃÂ­os en entornos de alta dimensionalidad y con obstÃÂÃÂ¡culos dinÃÂÃÂ¡micos, ya que la construcciÃÂÃÂ³n y bÃÂÃÂºsqueda del grafo pueden volverse computacionalmente costosas.\\
 
-
 La adquisici\'{o}n de datos es el primer paso en la representaci\'{o}n de mapas 3D con VANTs. Los VANTs pueden llevar a cabo vuelos sobre un \'{a}rea de inter\'{e}s, capturando im\'{a}genes desde diferentes \'{a}ngulos y alturas[15]. Estas t\'{e}cnicas aprovechan la informaci\'{o}n de correspondencia entre las im\'{a}genes para calcular la posici\'{o}n y orientaci\'{o}n relativa de las c\'{a}maras y reconstruir la estructura tridimensional del entorno.\\
 
 Los VANTs pueden utilizar sensores LiDAR (Light Detection and Ranging) para capturar datos 3D. Los sensores LiDAR emiten pulsos de luz l\'{a}ser y miden el tiempo que tarda en reflejarse en los objetos circundantes. Esto permite obtener informaci\'{o}n precisa sobre la distancia y la posici\'{o}n tridimensional de los objetos en el entorno. Los datos LiDAR pueden combinarse con las im\'{a}genes capturadas para generar mapas 3D completos y detallados.\\
@@ -1172,7 +1183,7 @@ Se presenta una soluci\'{o}n de navegaci\'{o}n m\'{i}nima para enjambres de dimi
 
 El texto destaca el potencial de los veh\'{i}culos a\'{e}reos no tripulados (UAV) para tener un impacto significativo en situaciones donde es demasiado arriesgado o costoso depender del trabajo humano. Los UAV aut\'{o}nomos, que completan tareas colaborativamente mientras gestionan su vuelo b\'{a}sico y tareas relacionadas de forma independiente, presentan oportunidades adicionales junto con desaf\'{i}os de investigaci\'{o}n y regulaci\'{o}n. Las mejoras en la construcci\'{o}n y componentes de los UAV, as\'{i} como en el hardware de computaci\'{o}n embebida, mecanismos de comunicaci\'{o}n y sensores que pueden ser montados a bordo de un UAV, est\'{a}n cerca del punto en el que el despliegue comercial de flotas de UAV aut\'{o}nomos ser\'{i} t\'{e}cnicamente posible. Para alcanzar este potencial, los UAV deber\'{a}n operar de manera segura y confiable en entornos complejos y potencialmente cambiantes, con especial \'{e}nfasis en la planificaci\'{o}n de rutas, la detecci\'{o}n de obst\'{a}culos y la evitaci\'{o}n de colisiones. La encuesta presenta una clasificaci\'{o}n original de la complejidad del entorno y analiza cr\'{i}ticamente el estado actual del arte en cuanto a enfoques de planificaci\'{o}n de rutas para UAV. Adem\'{a}s, resalta los desaf\'{i}os existentes en la modelizaci\'{o}n y representaci\'{o}n de la complejidad del entorno, as\'{i} como en los enfoques de planificaci\'{o}n de rutas, y plantea preguntas abiertas de investigaci\'{o}n junto con futuras direcciones. \cite{ACM2023}
 
-Sin embargo, este tipo de encuestas basadas en UAVs enfrenta varios problemas operativos, como terrenos complicados, recursos limitados de los UAVs, obst\'{a}culos, limitaciones de sensores y otros factores ambientales. Para abordar estos desaf\'{i}os y alcanzar m\'{u}ltiples objetivos, como reducir la longitud del recorrido, maximizar la cobertura y limitar el tiempo de encuesta, se requiere una optimizaci\'{o}n multiobjetivo. Los UAVs necesitan una planificaci\'{o}n efectiva de la ruta de cobertura (CPP) para generar la ruta ideal, considerando diversas restricciones ambientales para la operaci\'{o}n aut\'{o}noma. En este art\'{i}culo, se exploran y analizan las investigaciones existentes sobre las diversas t\'{e}cnicas utilizadas en la planificaci\'{o}n de rutas de cobertura para UAVs, brindando una visi\'{o}n general de los m\'{e}todos m\'{a}s avanzados en CPP para UAVs. El estudio discute los principales desaf\'{i}os y requisitos de CPP para UAVs, y presenta diversos enfoques propuestos en la literatura para abordar estos problemas. Se exploran diversos patrones de vuelo geom\'{e}tricos para el \'{a}rea de inter\'{e}s con despliegue de UAVs, adem\'{a}s de estrategias de cobertura para m\'{u}ltiples UAVs y m\'{u}ltiples regiones, lo que proporciona una nueva dimensi\'{o}n a las operaciones basadas en UAVs. Tambi\'{e}n se considera el consumo de energ\'{i}a de los UAVs durante CPP, un factor esencial que afecta su duraci\'{o}n de vuelo y misi\'{o}n. La selecci\'{o}n del algoritmo CPP se determina seg\'{u}n los requisitos \'{u}nicos de la aplicaci\'{o}n de los UAVs, como el tama\~{n}o y forma de la regi\'{o}n a cartografiar, la existencia de obst\'{a}culos y la resoluci\'{o}n de cobertura deseada. El estudio tambi\'{e}n incluye estrategias de planificaci\'{o}n de rutas en un entorno tridimensional y la cobertura din\'{a}mica. Adem\'{a}s, se comparan las estrategias existentes utilizando diferentes m\'{e}tricas de rendimiento para evaluar el \'{e}xito de las misiones de cobertura. Finalmente, se examinan los problemas y las preocupaciones sin resolver relacionadas con la planificaci\'{o}n de rutas de cobertura de UAVs para proporcionar conocimientos valiosos a los lectores. \cite{KUMAR2023}.\\
+%Sin embargo, este tipo de encuestas basadas en UAVs enfrenta varios problemas operativos, como terrenos complicados, recursos limitados de los UAVs, obst\'{a}culos, limitaciones de sensores y otros factores ambientales. Para abordar estos desaf\'{i}os y alcanzar m\'{u}ltiples objetivos, como reducir la longitud del recorrido, maximizar la cobertura y limitar el tiempo de encuesta, se requiere una optimizaci\'{o}n multiobjetivo. Los UAVs necesitan una planificaci\'{o}n efectiva de la ruta de cobertura (CPP) para generar la ruta ideal, considerando diversas restricciones ambientales para la operaci\'{o}n aut\'{o}noma. En este art\'{i}culo, se exploran y analizan las investigaciones existentes sobre las diversas t\'{e}cnicas utilizadas en la planificaci\'{o}n de rutas de cobertura para UAVs, brindando una visi\'{o}n general de los m\'{e}todos m\'{a}s avanzados en CPP para UAVs. El estudio discute los principales desaf\'{i}os y requisitos de CPP para UAVs, y presenta diversos enfoques propuestos en la literatura para abordar estos problemas. Se exploran diversos patrones de vuelo geom\'{e}tricos para el \'{a}rea de inter\'{e}s con despliegue de UAVs, adem\'{a}s de estrategias de cobertura para m\'{u}ltiples UAVs y m\'{u}ltiples regiones, lo que proporciona una nueva dimensi\'{o}n a las operaciones basadas en UAVs. Tambi\'{e}n se considera el consumo de energ\'{i}a de los UAVs durante CPP, un factor esencial que afecta su duraci\'{o}n de vuelo y misi\'{o}n. La selecci\'{o}n del algoritmo CPP se determina seg\'{u}n los requisitos \'{u}nicos de la aplicaci\'{o}n de los UAVs, como el tama\~{n}o y forma de la regi\'{o}n a cartografiar, la existencia de obst\'{a}culos y la resoluci\'{o}n de cobertura deseada. El estudio tambi\'{e}n incluye estrategias de planificaci\'{o}n de rutas en un entorno tridimensional y la cobertura din\'{a}mica. Adem\'{a}s, se comparan las estrategias existentes utilizando diferentes m\'{e}tricas de rendimiento para evaluar el \'{e}xito de las misiones de cobertura. Finalmente, se examinan los problemas y las preocupaciones sin resolver relacionadas con la planificaci\'{o}n de rutas de cobertura de UAVs para proporcionar conocimientos valiosos a los lectores. \cite{KUMAR2023}.\\
 
 El art\'{i}culo de \cite{machines2023} investiga el problema de planificaci\'{o}n de rutas de un veh\'{i}culo a\'{e}reo no tripulado (VANT) para completar una misi\'{o}n de incursi\'{o}n a trav\'{e}s de un vuelo de baja altitud en entornos complejos. El VANT debe evitar las \'{a}reas de detecci\'{o}n de radar, los obst\'{a}culos est\'{a}ticos de baja altitud y los obst\'{a}culos din\'{a}micos durante el proceso de vuelo. Debido a la incertidumbre del movimiento din\'{a}mico de obst\'{a}culos a baja altitud, puede ralentizar la convergencia de los modelos de algoritmos existentes y tambi\'{e}n reducir la tasa de \'{e}xito de la misi\'{o}n de los VANT. Para resolver este problema, este art\'{i}culo dise\~{n}a un m\'{e}todo de detecci\'{o}n de estado para codificar el estado ambiental de la direcci\'{o}n de viaje de los VANT y comprimir el espacio de estado ambiental. Al considerar la continuidad del espacio de estado y el espacio de acci\'{o}n, se propone el algoritmo SD-TD3 en combinaci\'{o}n con el algoritmo de pol\'{i}tica de gradiente determinista de doble retraso (TD3), que puede acelerar la velocidad de convergencia de entrenamiento y mejorar la capacidad de evasi\'{o}n de obst\'{a}culos del modelo de algoritmo. Adem\'{a}s, para abordar el problema de la recompensa escasa del aprendizaje por refuerzo tradicional, se ha dise\~{n}ado una funci\'{o}n de recompensa din\'{a}mica heur\'{i}stica para otorgar recompensas en tiempo real y guiar al UAV para completar la tarea. Los resultados de la simulaci\'{o}n muestran que los resultados de entrenamiento del algoritmo SD-TD3 convergen m\'{a}s r\'{a}pido que el algoritmo TD3.
 
@@ -1243,19 +1254,19 @@ El art\'{i}culo de \cite{machines2023} investiga el problema de planificaci\'{o}
       \hline
       REFERENCIA&MAPA&\multicolumn{1}{p{2cm}|}{\centering Planificador\\ de rutas}&\multicolumn{1}{p{2cm}|}{\centering Generaci\'{o}n \\ trayectoria}&Simulador&Percepci\'{o}n&MULTI-VANT\\ \hline
       \cite{CIESLEWSKI2017}&Octomap&Frontier Based&Direct Velocity Control&Gazebo&siete&\ding{55}\\ \hline
-      \cite{USENKO2017}&Egocentric Grid&Oct-tree&A*&webots&LiDAR&\ding{55}\\ \hline
-      \cite{MOHTA2017}&3D local map and 2D global map&Oct-tree&A*&webots&LiDAR&\ding{55}\\ \hline
-      \cite{LIN2017}&TSDF&Celdas&D* Lite&gazebo&Camara&\ding{51}\\ \hline
-      \cite{PAPACHRISTOS2017}&Octomap&Grafo&RRT&airsim&siete&\ding{55}\\ \hline
-      \cite{OLEYNIKOVA2018}&Voxel Hashing TSDF \& ESDF&Oct-tree&A*&webots&LiDAR&\ding{55}\\ \hline
-      \cite{GAO2018}&Regular ESDF Grid Map&Oct-tree&A*&webots&LiDAR&\ding{55}\\ \hline
-      \cite{FLORENCE2018}&Search over views&Oct-tree&A*&webots&LiDAR&\ding{55}\\ \hline
-      \cite{SELIN2019}&Octomap&Oct-tree&A*&webots&LiDAR&\ding{55}\\ \hline
-      \cite{COLLINS2019}&KD Tree $+$ Sliding Voxel Map &Voronoi&A*&gazebo&LiDAR&\ding{55}\\ \hline
-      \cite{CINVES2021}&Octree&Grafo&RRT*&matlab&Camara&\ding{55}\\ \hline
-      \cite{RACER2022}&HGrid&Grafo&RRT&airsim&siete&\ding{55}\\ \hline
-      \cite{WESTHEIDER2023}&Grid Mapping&Grafo&RRT&airsim&siete&\ding{55}\\ \hline
-      \cite{BARTOLOMEI2023}&Grid Mapping&Grafo&RRT&airsim&siete&\ding{55}\\ \hline
+      \cite{USENKO2017}&Egocentric Grid&Oct-tree&A*&Gazebo&LiDAR&\ding{55}\\ \hline
+      \cite{MOHTA2017}&3D local map and 2D global map&Oct-tree&A*&Gazebo&LiDAR&\ding{55}\\ \hline
+      \cite{LIN2017}&TSDF&Celdas&D* Lite&Gazebo&Camara&\ding{55}\\ \hline
+      \cite{PAPACHRISTOS2017}&Octomap&Grafo&RRT&Gazebo&LiDAR&\ding{55}\\ \hline
+      \cite{OLEYNIKOVA2018}&Voxel Hashing TSDF \& ESDF&Oct-tree&A*&Gazebo&LiDAR&\ding{55}\\ \hline
+      \cite{GAO2018}&Regular ESDF Grid Map&Oct-tree&A*&NA&LiDAR&\ding{55}\\ \hline
+      \cite{FLORENCE2018}&Search over views&Oct-tree&A*&NA&LiDAR&\ding{55}\\ \hline
+      \cite{SELIN2019}&Octomap&Oct-tree&A*&Gazebo&LiDAR&\ding{55}\\ \hline
+      \cite{COLLINS2019}&KD Tree $+$ Sliding Voxel Map &Voronoi&A*&Gazebo&LiDAR&\ding{55}\\ \hline
+      \cite{CINVES2021}&Octree&Grafo&RRT*&Gazebo&Camara&\ding{55}\\ \hline
+      \cite{RACER2022}&HGrid&Grafo&RRT&Gazebo&Camara&\ding{51}\\ \hline
+      \cite{WESTHEIDER2023}&Grid Mapping&Grafo&RRT&Gazebo&LiDAR&\ding{51}\\ \hline
+      \cite{BARTOLOMEI2023}&Grid Mapping&Grafo&RRT&NA&Camara&\ding{51}\\ \hline
     \end{tabular}
 \end{center}
 \end{landscape}

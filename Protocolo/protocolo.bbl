@@ -164,16 +164,6 @@ Qingpei Fan and Jun Meng.
   2022.
 \newblock \doi{10.1109/CAC57257.2022.10055974}.
 
-\bibitem[Farooq et~al.(2022)Farooq, Laoudias, Kolios, and
-  Theocharides]{9836079}
-Adil Farooq, Christos Laoudias, Panayiotis~S. Kolios, and Theocharis
-  Theocharides.
-\newblock Quantitative and qualitative assessment of indoor exploration
-  algorithms for autonomous uavs.
-\newblock In \emph{2022 International Conference on Unmanned Aircraft Systems
-  (ICUAS)}, pages 487--496, 2022.
-\newblock \doi{10.1109/ICUAS54217.2022.9836079}.
-
 \bibitem[Florence et~al.(2018)Florence, Carter, Ware, and
   Tedrake]{FLORENCE2018}
 Peter~R. Florence, John Carter, Jake Ware, and Russ Tedrake.
@@ -475,6 +465,24 @@ Sebastian Thrun, Wolfram Burgard, and Dieter Fox.
   Agents)}.
 \newblock The MIT Press, 2005.
 \newblock ISBN 0262201623.
+
+\bibitem[Tranzatto et~al.(2022)Tranzatto, Mascarich, Bernreiter, Godinho,
+  Camurri, Khattak, Dang, Reijgwart, Loeje, Wisth, Zimmermann, Nguyen, Fehr,
+  Solanka, Buchanan, Bjelonic, Khedekar, Valceschini, Jenelten, Dharmadhikari,
+  Homberger, Petris, Wellhausen, Kulkarni, Miki, Hirsch, Montenegro,
+  Papachristos, Tresoldi, Carius, Valsecchi, Lee, Meyer, Wu, Nieto, Smith,
+  Hutter, Siegwart, Mueller, Fallon, and Alexis]{CERBERUS2022}
+Marco Tranzatto, Frank Mascarich, Lukas Bernreiter, Carolina Godinho, Marco
+  Camurri, Shehryar Khattak, Tung Dang, Victor Reijgwart, Johannes Loeje, David
+  Wisth, Samuel Zimmermann, Huan Nguyen, Marius Fehr, Lukas Solanka, Russell
+  Buchanan, Marko Bjelonic, Nikhil Khedekar, Mathieu Valceschini, Fabian
+  Jenelten, Mihir Dharmadhikari, Timon Homberger, Paolo~De Petris, Lorenz
+  Wellhausen, Mihir Kulkarni, Takahiro Miki, Satchel Hirsch, Markus Montenegro,
+  Christos Papachristos, Fabian Tresoldi, Jan Carius, Giorgio Valsecchi, Joonho
+  Lee, Konrad Meyer, Xiangyu Wu, Juan Nieto, Andy Smith, Marco Hutter, Roland
+  Siegwart, Mark Mueller, Maurice Fallon, and Kostas Alexis.
+\newblock Cerberus: Autonomous legged and aerial robotic exploration in the
+  tunnel and urban circuits of the darpa subterranean challenge, 2022.
 
 \bibitem[Usenko et~al.(2017)Usenko, von Stumberg, Pangercic, and
   Cremers]{USENKO2017}
