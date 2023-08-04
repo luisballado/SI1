@@ -335,6 +335,8 @@ Grado acad\'{e}mico: & Doctorado en Ciencias
 \newpage
 \section*{Descripci\'{o}n del proyecto}
 
+%El proyecto de \textbf{estrategias para la exploraci\'{o}n coordinada multi-VANT} se centra en la recopilaci\'{o}n de algoritmos que den autonomia a la tarea de exploraci\'{o}n, coordinaci\'{o}n y planificaci\'{o}n.
+
 El proyecto de estrategias para la exploraci\'{o}n coordinada multi-VANT se centra en las ventajas de tener m\'{u}ltiples VANT trabajando en conjunto para mejorar la eficiencia y cobertura de la exploraci\'{o}n proponiendo una arquitectura de software descentralizada que permita la coordinaci\'{o}n eficiente de multi-VANT para tareas de exploraci\'{o}n en entornos desconocidos y cambiantes.\\
 
 Crear una arquitectura de software con algoritmos eficientes y r\'{a}pidos capaces de completar una tarea complicada como lo es la exploraci\'{o}n y coordinaci\'{o}n.
@@ -681,57 +683,51 @@ Varios metodos de Inteligencia Computacional se han propuesto para el problema d
 
 La siguiente tabla muestra los m\'{e}todos de planificaci\'{o}n de trayectorias.\\
 
-\begin{tabular}{ |p{2cm}|p{1.5cm}|p{1.5cm}|p{1.4cm}|p{6cm}|  }
-  \hline
-    \tiny Metodo& \tiny Completez & \tiny \'{O}ptimo& \tiny Escalable& \tiny Notas \\
-    \hline
-    \rowcolor{black!5}
-    \tiny Grafo de visibilidad   & \tiny Si    & \tiny Si&  \tiny No&
-    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-    \tiny \item Mucho espacio libre
-    \tiny \item Mala escalabilidad
-    \tiny \item El robot pasa cerca de obstaculos
-    \end{itemize}\\
-    \hline
-    \tiny Voronoi   & \tiny Si    & \tiny No& \tiny No&
-    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-    \tiny \item Espacio libre m\'{a}ximo
-    \tiny \item Rutas conservadoras
-    \tiny \item Mala escalabilidad
-    \end{itemize}\\
-    \hline
-    \rowcolor{black!5}
-    \tiny Potential field   & \tiny Si    & \tiny No& \tiny Depende del ambiente&
-    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-    \tiny \item Depende del ambiente
-    \tiny \item F\'{a}cil de implementar
-    \tiny \item Suceptible a m\'{i}nimos locales
-    \end{itemize}\\
-    \hline
-    \tiny Dijkstra/A*   & \tiny Si    & \tiny Grid& \tiny No&
-    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-    \tiny \item M\'{a}s r\'{a}pido que la b\'{u}squeda desinformada
-    \tiny \item A* usa una funci\'{o}n heur\'{i}stica para impulsar la b\'{u}squeda de manera eficiente
-    \tiny \item Mala escalabilidad
-    \end{itemize}\\
-    \hline
-    \rowcolor{black!5}
-    \tiny PRM   & \tiny Si    & \tiny Grafo& \tiny Si&
-    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-    \tiny \item Eficiente para problemas con consultas m\'{u}ltiples
-    \tiny \item Completez probabil\'{i}stica\
-    \tiny \item Camino irregular
-    \end{itemize}\\
-    \hline
-    \tiny RRT   & \tiny Si    & \tiny No & \tiny Si&
-    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-    \tiny \item Eficiente para problemas de consulta \'{u}nica
-    \tiny \item Completez probabil\'{i}stica
-    \tiny \item Camino irregular
-    \end{itemize}\\
-    \hline
-  \end{tabular}
-
+\begin{table}[h!]
+\centering
+%\caption{A table without vertical lines.}
+\begin{tabular}[t]{l|c|c|c|p{6cm}}
+\hline
+Metodo&Completez&Optimo&Escalable&Notas\\
+\hline
+Grafo de visibilidad & Si & Si & No & \begin{itemize}[left=0pt,topsep=0pt]
+  \setlength\itemsep{0.1em}
+\item Mucho espacio libre
+\item Mala escalabilidad
+\item El robot pasa cerca de obstaculos
+\end{itemize}\nointerlineskip\\
+\hline
+Voronoi & Si & No & No & \begin{itemize}[left=0pt,topsep=0pt]
+\item Espacio libre m\'{a}ximo
+\item Rutas conservadoras
+\item Mala escalabilidad
+\end{itemize}\nointerlineskip\\
+\hline
+Potential field & Si & No & Depende del ambiente & \begin{itemize}[left=0pt,topsep=0pt]
+\item F\'{a}cil de implementar
+\item Suceptible a m\'{i}nimos locales
+\end{itemize}\nointerlineskip\\
+\hline
+Dijkstra/A* & Si & Grid & No & \begin{itemize}[left=0pt,topsep=0pt]
+\item M\'{a}s r\'{a}pido que la b\'{u}squeda desinformada
+\item A* usa una funci\'{o}n heur\'{i}stica para impulsar la b\'{u}squeda de manera eficiente
+\item Mala escalabilidad
+\end{itemize}\nointerlineskip\\
+\hline
+PRM & Si & Grafo & Si & \begin{itemize}[left=0pt,topsep=0pt]
+\item Eficiente para problemas con consultas m\'{u}ltiples
+\item Completez probabil\'{i}stica
+\item  Camino irregular
+\end{itemize}\nointerlineskip\\
+\hline
+RRT & Si & No & Si & \begin{itemize}[left=0pt,topsep=0pt]
+\item Eficiente para problemas de consulta \'{u}nica
+\item Completez probabil\'{i}stica
+\item Camino irregular
+\end{itemize}\nointerlineskip\\
+\hline
+\end{tabular}
+\end{table}%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % IMAGEN Sistema autonomo
@@ -1250,23 +1246,96 @@ El art\'{i}culo de \cite{machines2023} investiga el problema de planificaci\'{o}
 
 \begin{landscape}
 \begin{center}
-    \begin{tabular}{ | l | l | l | l | l | l | p{1.5cm} |}
+    \begin{tabular}{ | l | p{5cm} | p{4cm} | l | p{1.5cm} |}
       \hline
-      REFERENCIA&MAPA&\multicolumn{1}{p{2cm}|}{\centering Planificador\\ de rutas}&\multicolumn{1}{p{2cm}|}{\centering Generaci\'{o}n \\ trayectoria}&Simulador&Percepci\'{o}n&MULTI-VANT\\ \hline
-      \cite{CIESLEWSKI2017}&Octomap&Frontier Based&Direct Velocity Control&Gazebo&siete&\ding{55}\\ \hline
-      \cite{USENKO2017}&Egocentric Grid&Oct-tree&A*&Gazebo&LiDAR&\ding{55}\\ \hline
-      \cite{MOHTA2017}&3D local map and 2D global map&Oct-tree&A*&Gazebo&LiDAR&\ding{55}\\ \hline
-      \cite{LIN2017}&TSDF&Celdas&D* Lite&Gazebo&Camara&\ding{55}\\ \hline
-      \cite{PAPACHRISTOS2017}&Octomap&Grafo&RRT&Gazebo&LiDAR&\ding{55}\\ \hline
-      \cite{OLEYNIKOVA2018}&Voxel Hashing TSDF \& ESDF&Oct-tree&A*&Gazebo&LiDAR&\ding{55}\\ \hline
-      \cite{GAO2018}&Regular ESDF Grid Map&Oct-tree&A*&NA&LiDAR&\ding{55}\\ \hline
-      \cite{FLORENCE2018}&Search over views&Oct-tree&A*&NA&LiDAR&\ding{55}\\ \hline
-      \cite{SELIN2019}&Octomap&Oct-tree&A*&Gazebo&LiDAR&\ding{55}\\ \hline
-      \cite{COLLINS2019}&KD Tree $+$ Sliding Voxel Map &Voronoi&A*&Gazebo&LiDAR&\ding{55}\\ \hline
-      \cite{CINVES2021}&Octree&Grafo&RRT*&Gazebo&Camara&\ding{55}\\ \hline
-      \cite{RACER2022}&HGrid&Grafo&RRT&Gazebo&Camara&\ding{51}\\ \hline
-      \cite{WESTHEIDER2023}&Grid Mapping&Grafo&RRT&Gazebo&LiDAR&\ding{51}\\ \hline
-      \cite{BARTOLOMEI2023}&Grid Mapping&Grafo&RRT&NA&Camara&\ding{51}\\ \hline
+      REFERENCIA&
+      MAPA&
+      Planificador de rutas&
+      Generaci\'{o}n trayectoria&
+      MULTI-VANT\\ \hline
+      %--------------------------
+      \cite{CIESLEWSKI2017}&
+      Octomap&
+      Frontier Based&
+      Direct Velocity Control&
+      \ding{55}\\ \hline
+      %--------------------------
+      \cite{USENKO2017}&
+      Egocentric Grid&
+      Offline RRT*&
+      B-Splines&
+      \ding{55}\\ \hline
+      %--------------------------
+      \cite{MOHTA2017}&
+      3D-L map and 2D-G map&
+      A*&
+      Quadratic Programing
+      &\ding{55}\\ \hline
+      %--------------------------
+      \cite{LIN2017}&
+      TSDF&
+      A*&
+      Quadratic Optimization&
+      \ding{55}\\ \hline
+      %--------------------------
+      \cite{PAPACHRISTOS2017}&
+      Octomap&
+      NBVP&
+      Direct Velocity Control
+      &\ding{55}\\ \hline
+      %--------------------------
+      \cite{OLEYNIKOVA2018}&
+      Voxel Hashing TSDF \& ESDF&
+      NBVP&
+      Quadratic Optimization&
+      \ding{55}\\ \hline
+      %--------------------------
+      \cite{GAO2018}&
+      Regular ESDF Grid Map
+      &Fast Marching Method&
+      Quadratic Optimization&
+      \ding{55}\\ \hline
+      %--------------------------
+      \cite{FLORENCE2018}&
+      Search over views&
+      2D A*&MPC&
+      \ding{55}\\ \hline
+      %--------------------------
+      \cite{SELIN2019}&
+      Octomap&
+      NBVP&
+      Direct Velocity Control&
+      \ding{55}\\ \hline
+      %--------------------------
+      \cite{COLLINS2019}&
+      KD Tree $+$ Sliding Voxel Map &
+      Graph Search&
+      Motion Primitives&
+      \ding{55}\\ \hline
+      %--------------------------
+      \cite{CINVES2021}&
+      Octree&
+      RRT&
+      Contouring based&
+      \ding{55}\\ \hline
+      %--------------------------
+      \cite{RACER2022}&
+      HGrid&
+      NBVP&
+      Direct Velocity Control&
+      \ding{51}\\ \hline
+      %--------------------------
+      \cite{WESTHEIDER2023}&
+      Grid Mapping&
+      Deep Learning&
+      Direct Velocity Control&
+      \ding{51}\\ \hline
+      %--------------------------
+      \cite{BARTOLOMEI2023}&
+      Grid Mapping&
+      NBVP&
+      Direct Velocity Control&
+      \ding{51}\\ \hline
     \end{tabular}
 \end{center}
 \end{landscape}
