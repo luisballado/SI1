@@ -323,7 +323,7 @@ Grado acad\'{e}mico: & Doctorado en Inform\'{a}tica
 
 %El proyecto de \textbf{estrategias para la exploraci\'{o}n coordinada multi-VANT} se centra en la recopilaci\'{o}n de algoritmos que den autonomia a la tarea de exploraci\'{o}n, coordinaci\'{o}n y planificaci\'{o}n.
 
-El proyecto de estrategias para la exploraci\'{o}n coordinada multi-VANT se centra en las ventajas de tener m\'{u}ltiples VANT trabajando en conjunto para mejorar la eficiencia y cobertura de la exploraci\'{o}n proponiendo una arquitectura de software descentralizada con algoritmos eficientes capaz de coordinar, planificar trayectorias considerando la incertidumbre de obst\'{a}culos dentro de entornos desconocidos y cambiantes.
+El proyecto de estrategias para la exploraci\'{o}n coordinada multi-VANT se centra en las ventajas de tener m\'{u}ltiples VANT trabajando en conjunto para mejorar la eficiencia y cobertura de la exploraci\'{o}n, proponiendo una arquitectura de software descentralizada con algoritmos eficientes capaces de coordinar y planificar trayectorias considerando la incertidumbre de obst\'{a}culos dentro de entornos desconocidos y cambiantes.
 
 %Crear una arquitectura de software con algoritmos eficientes y r\'{a}pidos capaces de completar una tarea complicada como lo es la exploraci\'{o}n y coordinaci\'{o}n.
 
@@ -333,21 +333,17 @@ El proyecto de estrategias para la exploraci\'{o}n coordinada multi-VANT se cent
 
 \subsection*{Antecedentes y motivaci\'{o}n para el proyecto}
 
-Con la llegada de las primeras c\'{a}maras 3D capaces de obtener valores de profundidad (RGB-D), mayores capacidades de almacenamiento en menos espacio nos permiten ver el entorno como realmente es $\mathbb{R}^{3}$.\\
+La exploraci\'{o}n multi-VANT ofrece varios beneficios, siendo una de ellas la cobertura r\'{a}pida de \'{a}reas siendo \'{u}til en tareas como b\'{u}squeda y rescate, as\'{i} como el estudio de zonas de desastres.\\
 
-Con la propuesta de estructura de datos basada en grafos \textbf{octrees} por \cite{DONALD1982}, esta estructura de software ha sido ampliamente usado en gr\'{a}ficos 3D y motores de simuladores por tener una baja complejidad en el orden logaritmico.\\
+Los V\'{e}hiculos A\'{e}reos No Tripulados tienen cualidades sobresalientes que los convierten adecuados para la exploraci\'{o}n. La movilidad, una perspectiva privilegiada de su entorno y su dinamismo hacen que el despliege de los VANT sea una tarea sencilla, teniendo acceso r\'{a}pido a zonas afectadas por desastres, permitiendoles llegar a \'{a}reas que pueden ser inaccesibles para otro tipo de robots. El uso adecuado de m\'{u}ltiples V\'{e}hiculos A\'{e}reos No Tripulados (VANT) proporciona robustez, brindando resilencia frente a fallas de un VANT siendo una de las principales ventajas del uso de sistemas multi-robot.\\
 
-En 2013 se introduj\'{o} un nuevo concepto para la representaci\'{o}n de mapas 3D basados en los principios de los trabajos de \cite{DONALD1982}, haciendo que la representaci\'{o}n de ocupaci\'{o}n en entornos 3D se realice de manera eficiente para aplicaciones en rob\'{o}tica donde se necesitan algoritmos r\'{a}pidos.\\
-
-Los Mapas Volumetricos Probabilisticos (PVM) representan un entorno 3D usado para tareas de navegaci\'{o}n autonoma. Los trabajos de \cite{ARMIN2013} (OctoMap) es una extensi\'{o}n espec\'{i}fica del Octree que se utiliza principalmente para representar mapas tridimensionales ocupados y desconocidos en entornos de rob\'{o}tica y navegaci\'{o}n. En lugar de simplemente dividir el espacio en octantes, el OctoMap utiliza el Octree para modelar la probabilidad de ocupaci\'{o}n en diferentes regiones del espacio. En recientes trabajos \cite{min2020accelerating} proponen dar soluci\'{o}n a los cuellos de botella que se presentan en el OctoMap para determinar la ocupaci\'{o}n en el grid de voxel volumetricos mostrando acelerar el tiempo de computo en la construcci\'{o}n de mapas con la implementaci\'{o}n de Aceleradores Gr\'{a}ficos GPU.\\
-Obteniendo los siguientes resultados cuando el tama\~{n}o del voxel es de 10 cm, OctoMap-RT es 49.3x r\'{a}pido que OctoMap y 8.7x r\'{a}pido que SuperRay
-Variantes de OctoMap: SuperRay, \textbf{OctoMap-RT}
+Existen desaf\'{i}os inherentes con la exploraci\'{o}n multi-VANT. Una coordinaci\'{o}n que garantice no colisonar entre ellos, manteniendo una distancia que no comprometa la integridad de los m\'{u}ltiples VANT y la comunicaci\'{o}n efectiva con sus vecinos son desaf\'{i}os que deben abordarse.\\
 
 La colaboraci\'{o}n entre robots de manera coordinada ofrece ventajas en comparaci\'{o}n con el uso de un solo robot como la distribuci\'{o}n de tareas, redundancia de informaci\'{o}n, cubir mayores \'{a}reas. Pero la coordinaci\'{o}n y comunicaci\'{o}n entre ellos puede aumentar la complejidad del sistema, para ello debemos de dotarlos de algoritmos r\'{a}pidos para garantizar una operaci\'{o}n eficiente.\\
 
 El \'{e}xito de sus misiones dependen de alcanzar un determinado lugar para que puedan realizar ciertas acciones.\\
 
-Buscamos una arquitectura que funcione multi-robot buscando el \'{e}xito de sus misiones de una forma segura y confiable\\
+%Buscamos crear una arquitectura multi-robot que logre el \'{e}xito de sus misiones de una forma segura y confiable.\\
 
 Algunas aplicaciones multi-robot \citenum{6320878}:
 \begin{multicols}{2}
@@ -363,6 +359,17 @@ Algunas aplicaciones multi-robot \citenum{6320878}:
   \item Monitoreo Ambiental
   \end{itemize}
 \end{multicols}
+
+% ESTE TEXTO ES BUENO
+%Con la llegada de las primeras c\'{a}maras 3D capaces de obtener valores de profundidad (RGB-D), mayores capacidades de almacenamiento en menos espacio nos permiten ver el entorno como realmente es $\mathbb{R}^{3}$.\\
+
+%Con la propuesta de estructura de datos basada en grafos \textbf{octrees} por \cite{DONALD1982}, esta estructura de software ha sido ampliamente usado en gr\'{a}ficos 3D y motores de simuladores por tener una baja complejidad en el orden logaritmico.\\
+
+%En 2013 se introduj\'{o} un nuevo concepto para la representaci\'{o}n de mapas 3D basados en los principios de los trabajos de \cite{DONALD1982}, haciendo que la representaci\'{o}n de ocupaci\'{o}n en entornos 3D se realice de manera eficiente para aplicaciones en rob\'{o}tica donde se necesitan algoritmos r\'{a}pidos.\\
+
+%Los Mapas Volumetricos Probabilisticos (PVM) representan un entorno 3D usado para tareas de navegaci\'{o}n autonoma. Los trabajos de \cite{ARMIN2013} (OctoMap) es una extensi\'{o}n espec\'{i}fica del Octree que se utiliza principalmente para representar mapas tridimensionales ocupados y desconocidos en entornos de rob\'{o}tica y navegaci\'{o}n. En lugar de simplemente dividir el espacio en octantes, el OctoMap utiliza el Octree para modelar la probabilidad de ocupaci\'{o}n en diferentes regiones del espacio. En recientes trabajos \cite{min2020accelerating} proponen dar soluci\'{o}n a los cuellos de botella que se presentan en el OctoMap para determinar la ocupaci\'{o}n en el grid de voxel volumetricos mostrando acelerar el tiempo de computo en la construcci\'{o}n de mapas con la implementaci\'{o}n de Aceleradores Gr\'{a}ficos GPU.\\
+%Obteniendo los siguientes resultados cuando el tama\~{n}o del voxel es de 10 cm, OctoMap-RT es 49.3x r\'{a}pido que OctoMap y 8.7x r\'{a}pido que SuperRay
+%Variantes de OctoMap: SuperRay, \textbf{OctoMap-RT}
 
 \textbf{\textquestiondown Qu\'{e} es un robot?} Podemos definir un robot como una m\'{a}quina que sensa, piensa y actua \cite{Bekey2005}. Es por ello que debe de contar con sensores, poder procesar la informaci\'{o}n y actuadores que lo ayuden a su movilidad. Los sensores son necesarios para la obtenci\'{o}n de informaci\'{o}n de su entorno. Comportamientos reactivos que no requieran procesar cierta informaci\'{o}n y una inteligencia para resolver diversos retos retos que se puedan presentar.\\
 
@@ -451,22 +458,44 @@ La autonom\'{i}a de los robots se ha ampliado en diversos aspectos y no es extra
 Autonom\'{i}a es referente a sistemas capaces de operar en el mundo como lo conocemos sin un control que lo gobierne, siendo este un campo activo de investigaci\'{o}n lo que ha causado que la autonom\'{i}a de los robots se vea incrementada as\'{i} como su inteligencia.
 
 \subsection*{Problemas de control}
-  
-  Existen diversas capas de control. En niveles bajos de control queremos que los movimientos del robot sean estables sin oscilaciones, que no colisionen con obst\'{a}culos al mismo tiempo tener una estabilidad en sus movimientos. Esperamos que el comportamiento aut\'{o}nomo resuelva aspectos como moverse al mismo tiempo evadir obst\'{a}culos. Arquitecturas de software que permiten este tipo de control regularmente se ejecutan en paralelo y son conocidas como behavior-based architectures \cite{ARKIN1998}.\\
 
-  \noindent\hrulefill\\
-  La organizaci\'{o}n de software asociada con los niveles de control tiene el nombre de \textbf{Arquitectura Software de control} de un robot.\\
-  
-  Los controles de bajo nivel responden muy bien a t\'{e}cnicas de teoria de control \cite{ramirez2001}. Considerando como entrada del sistema la posici\'{o}n que deseamos y su orientaci\'{o}n. El error ser\'{a} la diferencia entre la posici\'{o}n deseada y la posici\'{o}n actual\\
+La organizaci\'{o}n de software asociada con los niveles de control tiene el nombre de \textbf{Arquitectura Software de control} de un robot.\\
+
+Existen diversas capas de control. En niveles bajos de control queremos que los movimientos del robot sean estables sin oscilaciones, que no colisionen con obst\'{a}culos al mismo tiempo tener una estabilidad en sus movimientos. Esperamos que el comportamiento aut\'{o}nomo resuelva aspectos como moverse al mismo tiempo evadir obst\'{a}culos. Arquitecturas de software que permiten este tipo de control regularmente se ejecutan en paralelo y son conocidas como behavior-based architectures \cite{ARKIN1998}.\\
+
+%\noindent\hrulefill\\
+Los controles de bajo nivel responden muy bien a t\'{e}cnicas de teoria de control \cite{ramirez2001}. Considerando como entrada del sistema la posici\'{o}n que deseamos y su orientaci\'{o}n. El error ser\'{a} la diferencia entre la posici\'{o}n deseada y la posici\'{o}n actual\\
   
   Es necesario que la retroalimentaci\'{o}n de este tipo de controles sea de alta velocidad para evitar que los errores aumenten a lo largo del tiempo evitando la inestabilidad.\\
+
+  A lo largo del desarrollo de la robotica m\'{o}vil se han demostrado que estrategias de control basadas en comportamientos (behavior-based) presentan mejores desempe\~{n}os \cite{BROOKS1986}. El robot sensa su entorno y reacciona con los comportamientos requeridos. Factores como estos aumentan la autonom\'{i}a y solucionan los problemas comunes como el de evitar obst\'{a}culos.\\
   
-  Es comun pensar que el control en ingenieria y el control biologico presentan diversas similitudes. Por un lado los sistemas en ingenieria tienen un valor de referencia pudiendo describirlos como sistemas lineales, los controles biologicos no son lineales.\\
+  Es com\'{u}n pensar que la ingenier\'{i}a de control y el control biol\'{o}gico presentan diversas similitudes. Por un lado los sistemas en ingenier\'{i}a tienen un valor de referencia, pudiendo describirlos como sistemas lineales. Los controles biol\'{o}gicos no son lineales. Bajo las inspiraciones de la naturaleza se han propuesto algoritmos heur\'{i}sticos que buscan aprovechar el comportamiento de la naturaleza para intereses propios de optimizaci\'{o}n.\\
+
+  Las metaheuristicas Bio-inspiradas son una clase de algoritmos de optimizaci\'{o}n inspirados de sistemas y procesos biol\'{o}gicos que nos ayudan a resolver problemas complejos de optimizaci\'{o}n. Existen varios tipos de metaheuristicas bio-inspiradas.
+
+  \begin{enumerate}
+  \item \textbf{Algoritmos Gen\'{e}ticos (GA)} Propuestos por J. Holland, se basan en los principios de selecci\'{o}n natural, usando operadores como la cruza, mutaci\'{o}n y selecci\'{o}n. Mantiendo una poblaci\'{o}n de las posibles soluciones iterando para encontrar la soluci\'{o}n cercana a la soluci\'{o}n \'{o}ptima. 
+  \item \textbf{Particle Swarm Optimization (PSO)} Propuestos por Eberhart y Kennedy, inspirado en el comportamiento de parvadas de p\'{a}jaros y cardumen de peces, el algoritmo involucra una poblaci\'{o}n de part\'{i}culas que se mueven en un espacio de b\'{u}squeda. Cada part\'{i}cula ajusta su posici\'{o}n seg\'{u}n su propia soluci\'{o}n y la soluci\'{o}n de toda la poblaci\'{o}n.
+  \item \textbf{Ant Colony Optimization (ACO)} Propuesto por M. Dorigo, inspidado en el comportamiento de b\'{u}squeda de alimento de las hormigas, imita la comunicaci\'{o}n y toma de decisiones colectiva de las hormigas, puede ser usado para encontrar caminos dentro de un grafo. 
+  \item \textbf{Firefly Algorithm (FA)} Propuesto por X. Yang, sigue el modelo de los patrones intermitentes de las luci\'{e}rnagas, el algoritmo emula el comportamiento de atracci\'{o}n y repulsi\'{o}n de las luci\'{e}rnagas.
+  \end{enumerate}
+
+  While metaheuristics have proven to be effective in solving a wide range of optimization problems, their adoption in the robotics field has been more limited for several reasons:
+
+  \begin{itemize}
+    \item Complexity and Real-Time Constraints: Robotics often involves real-time decision-making, where robots must respond quickly to changing environments. Metaheuristics typically require extensive computational resources and iterations to converge to an optimal solution, which may not be feasible in real-time robotics applications. Real-time control and planning in robotics often require algorithms with low computational complexity, such as classical planning or reactive control approaches.
+
+    \item Deterministic Solutions: In many robotics applications, especially those involving safety-critical tasks or precise control, deterministic and predictable solutions are preferred over stochastic solutions offered by metaheuristics. Metaheuristics provide approximate solutions with varying degrees of optimality, which may not be suitable for tasks requiring precise control or safety guarantees.
+
+    \item Model-Based Optimization: Many robotics problems can be effectively solved using model-based optimization techniques. With known dynamics models and environmental constraints, model-based methods such as optimal control or trajectory optimization can provide analytical or numerical solutions with guaranteed performance. These approaches can exploit the problem structure and specific constraints, leading to more efficient and reliable solutions compared to general-purpose metaheuristics.
+
+    \item Task-Specific Algorithms: Robotics often involves specific tasks and domains that have been extensively studied, resulting in task-specific algorithms tailored to those domains. These tailored approaches are often more efficient and effective for solving the specific problems addressed in robotics, making general-purpose metaheuristics less attractive.
+
+    \item Hardware and Energy Limitations: Robotics systems typically have limited hardware resources and are often constrained by energy consumption. Metaheuristics, which often require large populations or extensive iterations for convergence, may not be well-suited for resource-constrained robotic platforms.
+  \end{itemize}
   
-  A lo largo del desarrollo de la robotica movil se han demostrado que estrategias de control basadas en comportamientos (behavior-based) presentan mejores desempe\~{n}os \cite{BROOKS1986}. Factores como estos aumentan la autonomia y solucionan los problemas comunes como el de evitar obst\'{a}culos.
-  %Maes \& Brooks 1990; Arkin 1998; Beer 1990) Siendo un factor que aumenta la autonomia en dificultades comunes como evitar obstaculos.\\
-  
-  %El robot sensa su entorno y reacciona con los comportamientos requeridos.
+  However, it's important to note that there are certainly areas within robotics where metaheuristics have been successfully applied, such as robot path planning in complex environments, swarm robotics, or task allocation in multi-robot systems. Additionally, hybrid approaches that combine metaheuristics with model-based optimization or task-specific algorithms can leverage the strengths of both and provide effective solutions for robotics applications.
   
 \subsection*{Sensores}
 
@@ -1398,13 +1427,14 @@ El art\'{i}culo de \cite{machines2023} investiga el problema de planificaci\'{o}
 \end{enumerate}
 
 \newpage
+\vspace*{3cm}
 \begin{center}
   \begin{tabular}{c@{\hspace{5em}}c}
     {\Large{Fecha de inicio}} & {\Large{Fecha de terminaci\'on}} \\
     % Poner fechas respectivas
     &\\
     Septiembre de 2023 & Agosto de 2024
-  \end{tabular} \vspace{2.5cm} \\
+  \end{tabular} \vspace{3cm} \\
   Firma del alumno: \underline{\hspace{5cm}} \vspace{2cm}\\ \ \\
   {\Large{Comit\'e de aprobaci\'on del tema de tesis}} \vspace{2cm} \\
   \begin{tabular}{p{7cm}p{5cm}}
@@ -1421,6 +1451,7 @@ El art\'{i}culo de \cite{machines2023} investiga el problema de planificaci\'{o}
 \setcitestyle{numbers}
 \bibliographystyle{plainnat}%{abbrvnat}
 \bibliography{referencias.bib}
+
 %\begin{enumerate}
 %\item  H. Shakhatreh et al., 'Unmanned Aerial Vehicles: A Survey on Civil Applications and Key Research Challenges', arXiv:1805.00881, 2018
 %\item P. Daponte et al., 'Metrology for drone and drone for metrology: Measurement systems on small civilian drones', in Metrology for Aerospace (MetroAeroSpace), 2015 IEEE, 2015, pp. 306-311: IEEE.
