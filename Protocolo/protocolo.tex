@@ -90,6 +90,13 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 \usepackage{forloop}
 \usepackage{pdflscape}
 \newcounter{loopcntr}
+
+\let\oldfootnote\footnote
+
+\renewcommand{\footnote}[1]{%
+    \oldfootnote{\rlap{\parbox{\dimexpr\paperwidth-72pt\relax}{#1}}}%
+}
+
 \newcommand{\rpt}[2][1]{%
   \forloop{loopcntr}{0}{\value{loopcntr}<#1}{#2}%
 }
@@ -201,36 +208,33 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 \begin{abstract}
   
   %MEJORAR
-  \st{La importancia de la rob\'{o}tica de servicios hoy en d\'{i}a es innegable. Estos avances estan revolucionando la forma en que interactuamos con el mundo, ofreciendo amplias posibilidades en diversos sectores como en el sector de bodegas y entregas de productos ((CITAR ALGO)) cada vez las tareas repetitivas y pesadas estan siendo delegadas a los robots. La exploraci\'{o}n espacial ha traido consigo soluciones a problemas en la rob\'{o}tica.}\\
+  %\st{La importancia de la rob\'{o}tica de servicios hoy en d\'{i}a es innegable. Estos avances estan revolucionando la forma en que interactuamos con el mundo, ofreciendo amplias posibilidades en diversos sectores como en el sector de bodegas y entregas de productos ((CITAR ALGO)) cada vez las tareas repetitivas y pesadas estan siendo delegadas a los robots. La exploraci\'{o}n espacial ha traido consigo soluciones a problemas en la rob\'{o}tica.}\\
 
- \st{La importancia de la rob\'{o}tica de servicios en la actualidad es innegable. Estos avances est\'{a}n revolucionando la forma en que interactuamos con el mundo, ofreciendo un amplio abanico de aplicaciones en diversos sectores. Desde veh\'{i}culos aut\'{o}nomos, robots m\'{o}viles en l\'{o}gistica, hasta la exploraci\'{o}n espacial, la rob\'{o}tica de servicios ha demostrado ser \'{u}til en entornos donde los seres humanos pueden enfrentar riesgos o dificultades.}\\
+ %\st{La importancia de la rob\'{o}tica de servicios en la actualidad es innegable. Estos avances est\'{a}n revolucionando la forma en que interactuamos con el mundo, ofreciendo un amplio abanico de aplicaciones en diversos sectores. Desde veh\'{i}culos aut\'{o}nomos, robots m\'{o}viles en l\'{o}gistica, hasta la exploraci\'{o}n espacial, la rob\'{o}tica de servicios ha demostrado ser \'{u}til en entornos donde los seres humanos pueden enfrentar riesgos o dificultades.}\\
   
-  \st{Dentro de la rob\'{o}tica m\'{o}vil podemos encontrar robots a\'{e}reos, mejor conocidos como Veh\'{i}culos A\'{e}reos No Tripulados (VANT), estos robots m\'{o}viles tienen la capacidad de volar y acceder a lugares de manera r\'{a}pida y eficiente, convirti\'{e}ndolos en herramientas extremadamente vers\'{a}tiles. Veh\'{i}culos as\'{i} est\'{a}n siendo utilizados por empresas de comercio electr\'{o}nico para entregar productos a los clientes de manera \'{a}gil ((hablar del mTSP)), en la agricultura para monitorear cultivos e identificar problemas con plagas para aplicar pesticidas o fertilizantes de manera precisa. En el \'{a}mbito de la seguridad, pueden utilizarse para la vigilancia de \'{A}reas de dif\'{i}cil acceso o en situaciones de emergencia, proporcionando informaci\'{o}n valiosa en tiempo real a los equipos de rescate.}\\
+  %\st{Dentro de la rob\'{o}tica m\'{o}vil podemos encontrar robots a\'{e}reos, mejor conocidos como Veh\'{i}culos A\'{e}reos No Tripulados (VANT), estos robots m\'{o}viles tienen la capacidad de volar y acceder a lugares de manera r\'{a}pida y eficiente, convirti\'{e}ndolos en herramientas extremadamente vers\'{a}tiles. Veh\'{i}culos as\'{i} est\'{a}n siendo utilizados por empresas de comercio electr\'{o}nico para entregar productos a los clientes de manera \'{a}gil ((hablar del mTSP)), en la agricultura para monitorear cultivos e identificar problemas con plagas para aplicar pesticidas o fertilizantes de manera precisa. En el \'{a}mbito de la seguridad, pueden utilizarse para la vigilancia de \'{A}reas de dif\'{i}cil acceso o en situaciones de emergencia, proporcionando informaci\'{o}n valiosa en tiempo real a los equipos de rescate.}\\
 
-  \st{A pesar de los numerosos avances de la rob\'{o}tica de servicios, existen desaf\'{i}os y problem\'{a}ticas asociadas a la planificaci\'{o}n de trayectorias en ambientes desconocidos y cambiantes.}\\
+  %\st{A pesar de los numerosos avances de la rob\'{o}tica de servicios, existen desaf\'{i}os y problem\'{a}ticas asociadas a la planificaci\'{o}n de trayectorias en ambientes desconocidos y cambiantes.}\\
   %\st{La \textbf{exploraci\'{o}n} implica una serie de tareas y desaf\'{i}os. Estos pueden incluir la \textbf{planificaci\'{o}n de rutas} para cubrir eficientemente el \'{a}rea a explorar, la \textbf{detecci\'{o}n} y \textbf{evaci\'{o}n de obst\'{a}culos}, \textbf{la localizaci\'{o}n y mapeo simult\'{a}neo} (SLAM) y la toma de decisiones para maximizar la informaci\'{o}n.}\\
 
-  \st{La \textbf{coordinaci\'{o}n} y el \textbf{trabajo en equipo} de m\'{u}ltiples-VANT(s) representa un desaf\'{i}o emocionante. La \textbf{colaboraci\'{o}n} de varios VANT(s) puede ser \'{u}til en misiones de b\'{u}squeda y rescate, en donde pueden cubrir \'{a}reas m\'{a}s extensas y realizar tareas m\'{a}s complejas de manera simult\'{a}nea. La coordinaci\'{o}n entre los VANT(s) puede optimizar la eficiencia de las operaciones y aumentar las posibilidades de \'{e}xito.}\\
+  %\st{La \textbf{coordinaci\'{o}n} y el \textbf{trabajo en equipo} de m\'{u}ltiples-VANT(s) representa un desaf\'{i}o emocionante. La \textbf{colaboraci\'{o}n} de varios VANT(s) puede ser \'{u}til en misiones de b\'{u}squeda y rescate, en donde pueden cubrir \'{a}reas m\'{a}s extensas y realizar tareas m\'{a}s complejas de manera simult\'{a}nea. La coordinaci\'{o}n entre los VANT(s) puede optimizar la eficiencia de las operaciones y aumentar las posibilidades de \'{e}xito.}\\
 
-  \st{El objetivo de este trabajo es la propuesta de una arquitectura de software tolerante a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinaci\'{o}n de Veh\'{i}culos A\'{e}reos No Tripulados.}\\
-  \st{El proyecto de investigaci\'{o}n demostrar\'{a} que es posible dise\~{n}ar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboraci\'{o}n multi-VANT.}\\
-  \noindent\hrulefill\\
-
-  La exploraci\'{o}n multi-robot ha surgido como un enfoque prometedor para el mapeo eficiente de entornos desconocidos. Un enfoque colaborativo ofrece una mayor eficiencia de exploraci\'{o}n, una obtenci\'{o}n de informaci\'{o}n m\'{a}s r\'{a}pida y amplias capacidades de cobertura en comparaci\'{o}n con implementaci\'{o}nes donde se se emplean un solo robot. Sin embargo, la exploraci\'{o}n multi-robot plantea diversos desaf\'{i}os que deben abordarse para su implementaci\'{o}n como la localizaci\'{o}n, mapeo y navegaci\'{o}n aut\'{o}noma.\\
-  En la \'{u}ltima decada, se ha tenido un aumento en la investigaci\'{o}n y el desarrollo en el campo de los m\'{u}ltiples V\'{e}hiculos A\'{e}reos No Tripulados (VANT) lo que ha dado lugar a importantes avances e innovaciones. Los sistemas multi-VANT permiten la adquisici\'{o}n simult\'{a}nea de datos desde m\'{u}ltiples puntos de vista, lo que permite mejorar el mapeo y la topograf\'{i}a de entornos desconocidos. El uso de algoritmos de coordinaci\'{o}n inteligente, la toma de decisiones descentralizada; mejora la eficiencia de estos sistemas. Adem\'{a}s, los avances en los protocolos de comunicaci\'{o}n permiten una colaboraci\'{o}n fluida entre los UAV, lo que mejora su capacidad para navegar, explorar y adquirir datos de \'{a}reas grandes y complejas. Adem\'{a}s, la integraci\'{o}n de sensores de \'{u}ltima generaci\'{o}n mejora la precisi\'{o}n y confiabilidad de los sistemas multi-UAV en varios dominios, incluida la gesti\'{o}n de desastres, la agricultura de precisi\'{o}n, el monitoreo ambiental, la inspecci\'{o}n de infraestructura y la vigilancia militar (Shakhatreh et al., 2020; Li et al., 2021; Hussain et al., 2021). Con la investigación y el desarrollo en curso, los sistemas multi-UAV tienen el potencial de revolucionar las tareas de exploración y abordar desafíos críticos en diversos escenarios del mundo real.\\
-  Los Veh\'{i}culos A\'{e}reos no Tripulados (VANT) del ma\~{n}ana deber\'{a}n de navegar en \'{a}reas urbanas de la mejor manera posible y tener la habilidad de trabajar en coordinaci\'{o}n multi-VANT.
-  %\citenum{UAVPRACTICAL2023}
-  \st{En las \'{u}ltimas decadas se ha visto un aumento en el inter\'{e}s de los Veh\'{i}culos A\'{e}reos No Tripulados (conocidos como VANT o coloquialmente drones), a la par que se han introducido nuevas tecnolog\'{i}as de comunicaci\'{o}n, sensores y computaci\'{o}n. Estos avances han sido aplicados al control de VANT, logrando crear diversas soluciones en vigilancia ((CITAR DJI)), b\'{u}squeda y rescate ((CITAR UNO)), propuestas para el problema de la \'{u}ltima milla ((CITAR UNO)), inclusive en espect\'{a}culos a\'{e}reos ((CITAR UNA)). Dichas aplicaciones suelen carecer de autonom\'{i}a. Para que un robot se considere aut\'{o}nomo deber\'{a} tomar decisiones y realizar tareas sin necesidad de que alguien le diga qu\'{e} hacer o guiarlo paso a paso. Tener la capacidad de percibir su entorno y usar la informaci\'{o}n para decidir c\'{o}mo moverse son considerados altos niveles de autonom\'{i}a. Para llegar a ello el robot debe resolver primero problemas como su localizaci\'{o}n, mapeo y navegaci\'{o}n.}\\
-  
   %\st{El objetivo de este trabajo es la propuesta de una arquitectura de software tolerante a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinaci\'{o}n de Veh\'{i}culos A\'{e}reos No Tripulados.}\\
   %\st{El proyecto de investigaci\'{o}n demostrar\'{a} que es posible dise\~{n}ar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboraci\'{o}n multi-VANT.}\\
   %\noindent\hrulefill\\
   
-  \st{Se ha demostrado que es posible dotar de autonom\'{i}a a un robot (m\'{o}vil o a\'{e}reo) ((CITAR)). Dichas soluciones parten de tener el problema de localizaci\'{o}n resuelto al ser aplicaciones en exteriores y poder hacer uso de sistemas de localizaci\'{o}n como el Sistema de Posicionamiento Global (GPS) o Sistema Global de Navegaci\'{o}n por Sat\'{e}lite (Global Navigation Satellite System, GNSS). }
-
-  El enfoque de este trabajo es la propuesta de una arquitectura de software capaz de \textbf{coordinar m\'{u}ltiples Veh\'{i}culos A\'{e}reos No Tripulados} con habilidades para la \textbf{exploraci\'{o}n}, \textbf{mapeo} \'{a}reas desconocidas y planificaci\'{o}n de trayectorias. Siendo la exploraci\'{o}n y coordinaci\'{o}n un desaf\'{i}o en rob\'{o}tica m\'{o}vil buscando coordinar y optimizar el movimiento de varios robots para explorar eficientemente un \'{a}rea de interes. El objetivo pudiera ser maximizar la cobertura del \'{a}rea minimizando el tiempo requerido para completar la exploraci\'{o}n. Este problema implica tomar decisiones complejas, como asignar tareas a los robots, evitar colisiones y planificar rutas \'{o}ptimas. Factores como la comunicaci\'{o}n entre robots, la incertidumbre del entorno y las limitaciones de recursos son considerados en este trabajo.\\ %Como humanidad aun tenemos lugares desconocidos que deseamos explorar (volcanes, ..etc.), entonces a los lugares que a\'{u}n no podemos enviar gente, entonces podremos enviar m\'{a}quinas.\\
+  La exploraci\'{o}n multi-robot ha surgido como un enfoque prometedor para el mapeo eficiente de entornos desconocidos. Un enfoque colaborativo ofrece una mayor eficiencia de exploraci\'{o}n, una obtenci\'{o}n de informaci\'{o}n m\'{a}s r\'{a}pida y amplias capacidades de cobertura en comparaci\'{o}n con implementaci\'{o}nes donde se se emplea un solo robot. Sin embargo, la exploraci\'{o}n multi-robot plantea diversos desaf\'{i}os que deben abordarse para su implementaci\'{o}n como la localizaci\'{o}n, mapeo y navegaci\'{o}n aut\'{o}noma.\\
+  En la \'{u}ltima decada, se ha tenido un aumento en la investigaci\'{o}n y el desarrollo en el campo de los m\'{u}ltiples V\'{e}hiculos A\'{e}reos No Tripulados (VANT) lo que ha dado lugar a importantes avances e innovaciones. Los sistemas multi-VANT permiten la adquisici\'{o}n simult\'{a}nea de datos desde m\'{u}ltiples puntos de vista, lo que permite mejorar el mapeo de entornos desconocidos. El uso de algoritmos de coordinaci\'{o}n inteligente, la toma de decisiones descentralizada mejora la eficiencia de estos sistemas. Adem\'{a}s, los avances en los protocolos de comunicaci\'{o}n permiten una colaboraci\'{o}n fluida, lo que mejora su capacidad para navegar, explorar y adquirir datos de \'{a}reas grandes y complejas. Adem\'{a}s, la integraci\'{o}n de sensores de \'{u}ltima generaci\'{o}n mejora la precisi\'{o}n y confiabilidad de los sistemas multi-VANT en varios dominios, incluida la gesti\'{o}n de desastres, la agricultura de precisi\'{o}n, la inspecci\'{o}n de infraestructura y la vigilancia militar \cite{SHAKHATREH2019} o en espectaculares animaciones a\'{e}reas. \cite{DRONESHOW2023}
+  Dichas aplicaciones suelen carecer de autonom\'{i}a. Para que un robot se considere aut\'{o}nomo deber\'{a} tomar decisiones y realizar tareas sin necesidad de que alguien le diga qu\'{e} hacer o guiarlo paso a paso. Tener la capacidad de percibir su entorno y usar la informaci\'{o}n para decidir c\'{o}mo moverse son considerados altos niveles de autonom\'{i}a. Para llegar a ello el robor debe resolver primero problemas como su localizaci\'{o}n, construir el mapa de su entorno para posteriormente usarlo para navegar dentro de \'{e}l.
+    
+  %\st{El objetivo de este trabajo es la propuesta de una arquitectura de software tolerante a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinaci\'{o}n de Veh\'{i}culos A\'{e}reos No Tripulados.}\\
+  %\st{El proyecto de investigaci\'{o}n demostrar\'{a} que es posible dise\~{n}ar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboraci\'{o}n multi-VANT.}\\
+  %\noindent\hrulefill\\
   
-  Resolver eficazmente este problema permitir\'{i}a mejorar la eficiencia y efectividad en misones de exploraci\'{o}n que son necesarias en diversos campos, como la b\'{u}squeda y rescate, la inspecci\'{o}n de infraestructuras entre otras.\\
+  %\st{Se ha demostrado que es posible dotar de autonom\'{i}a a un robot (m\'{o}vil o a\'{e}reo) ((CITAR)). Dichas soluciones parten de tener el problema de localizaci\'{o}n resuelto al ser aplicaciones en exteriores y poder hacer uso de sistemas de localizaci\'{o}n como el Sistema de Posicionamiento Global (GPS) o Sistema Global de Navegaci\'{o}n por Sat\'{e}lite (Global Navigation Satellite System, GNSS). }
+
+  El enfoque de este trabajo es la propuesta de una arquitectura de software capaz de \textbf{coordinar m\'{u}ltiples Veh\'{i}culos A\'{e}reos No Tripulados} con habilidades para la \textbf{exploraci\'{o}n}, \textbf{mapeo} de \'{a}reas desconocidas y planificaci\'{o}n de trayectorias. Siendo la exploraci\'{o}n y coordinaci\'{o}n un desaf\'{i}o en rob\'{o}tica m\'{o}vil buscando coordinar y optimizar el movimiento de varios robots para explorar eficientemente un \'{a}rea de interes. El objetivo pudiera ser maximizar la cobertura del \'{a}rea minimizando el tiempo requerido para completar la exploraci\'{o}n. Este problema implica tomar decisiones complejas, como asignar tareas a los robots, evitar colisiones y planificar rutas \'{o}ptimas. Factores como la comunicaci\'{o}n entre robots, la incertidumbre del entorno y las limitaciones de recursos son considerados en este trabajo.\\
+  Como humanidad a\'{u}n tenemos lugares desconocidos que deseamos explorar, entonces a los lugares que a\'{u}n no podemos enviar gente, entonces podremos enviar m\'{a}quinas.
   \medskip \\
 
   \noindent \textbf{Palabras claves:} estrategias multi-VANT, exploraci\'{o}n multi-VANT, planificaci\'{o}n de rutas multi-VANT, arquitectura de software multi-VANT.
@@ -259,17 +263,6 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
   %Buscar la mejor soluci\'{o}n, \textbf{optimizar} han sido importante para el progreso de una sociedad.\\
 
   %El hombre, \'{u}nico ser vivo consiente de donde vive, desde muy antiguo ha sentido la necesidad de conocer, descubrir cada lugar que pisa y mirar hacia el horizonte. Desarrollar el sentido de la orientaci\'{o}n a partir de los elementos que le rodean, desde el momento que el hombre comienza a representar las superficies nacen lo que hoy conocemos como mapas.(Fragmentos del documental de divulgaci\'{o}n del Instituto de Estad\'{i}istica y Cartograf\'{i}a de Andaluc\'{i}a)\\
-
-  %\newpage
-  %\noindent\hrulefill IDEAS \noindent\hrulefill\\
-  
-  %\textbf{COSAS DE ESTADO DEL ARTE}\\
-  
-  %Estos problemas ya se han resulto en varios robots terrestres llegando a tener soluciones distribuidas o resultos los problemas de colisi\'{o}n, navegaci\'{o}n, mapeo y se han propuestos buenos algoritmos que formar\'{a}n parte de la arquitectura de software para resolver.\\
-  %Trabajos como el de \cite{CERBERUS2022} han logrado optimizar problemas de alta dimencionalidad con el control de navegaci\'{o}n para un robot con cuatro patas, haciendo uso de aprendizaje por refuerzo con ayuda de simulaciones corriendo en paralelo en un cuarto simulado, logrando obtener los pesos que le ayudan a resolver el problema de navegaci\'{o}n, pero al momento de pasar a efectuar un despliege de software el robot no pudo hace un paso correcto. Los huecos entre la simulaci\'{o}n y la realidad debido a los anchos de banda que sufren las lecturas de sensores, teniendo una comunicaci\'{o}n deficiente en la arquitectura.\\
-  %Tomando en cuenta los ruidos estoc\'{a}sticos y realizando simulaciones hibridas han logrado ganar el DARPA CHALLENGE usando una exploraci\'{o}n basada en grafos y un mapa de ocupaci\'{o}n (OctoMap) para simular el entorno tridimencional.\\
-
-  %Navegaciones interesantes como de la ETH Learning High-Speed Flight in th Wild que propone una arquitectura con capas de proyecci\'{o}n, decisi\'{o}n y control posterior a un procesamiento de imagen con segmentaciones de profundidad con uso de algoritmos Semi-global matching para la estimaci\'{o}n de un mapa de disparidad denso lograr\'{o}n demostrar que pueden navegar en entornos extremadamente complejos a altas velocidades haciendo uso de arquitecturas de tipo sensar, mapear, planear ya que han demostrado buenos resultados en velocidades moderadas con ayuda de una red convolucional entrenada con una muestra previa imitando al experto.\\
   
 \end{abstract}
 
@@ -314,7 +307,7 @@ Direcci\'{o}n:   &   Km. 5.5 carretera Cd. Victoria - Soto la Marina\\
 Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext. 1014 \\ 
 Instituci\'{o}n:    &  CINVESTAV-IPN \\ 
 Departamento adscripci\'{o}n: &  Unidad Tamaulipas\\
-Grado acad\'{e}mico: & Doctorado en Ciencias\\\\
+Grado acad\'{e}mico: & Doctorado en Mec\'{a}nica\\\\
 Nombre:  &   Dr. Eduardo Arturo Rodr\'{i}guez Tello \\
 Direcci\'{o}n:   &   Km. 5.5 carretera Cd. Victoria - Soto la Marina\\
                  &  Parque Cient\'{i}fico y Tecnol\'{o}gico TECNOTAM\\
@@ -322,7 +315,7 @@ Direcci\'{o}n:   &   Km. 5.5 carretera Cd. Victoria - Soto la Marina\\
 Tel\'{e}fono (oficina):    &  (+52) (834) 107 0220 Ext. 1100\\ 
 Instituci\'{o}n:    &  CINVESTAV-IPN \\ 
 Departamento adscripci\'{o}n: &  Unidad Tamaulipas\\
-Grado acad\'{e}mico: & Doctorado en Ciencias
+Grado acad\'{e}mico: & Doctorado en Inform\'{a}tica
 \end{tabular}
 
 \newpage
@@ -616,22 +609,21 @@ La idea de utilizar m\'{u}ltiples robots a\'{e}reos en un sistema coordinado se 
 
 Un modelo del entorno nos ayudar\'{a} a conocer sus variables y reducir rutas inecesarias y asi el computo necesario. Metodos para modelar el ambiente se basan en aproximaciones de espacios, espacios libres, descomposicion por celdas, mapas topologicos y metodos probabilisticos como el PRM (probabilistic roadmap method).\\
 
-Dentro del survey Path Planning for the Mobile Robot\citenum{sym10100450} muestran que el n\'{u}mero de publicaciones para planificadores de trayectoria, los algoritmos basados en Inteligencia Artificial han ganado terreno como soluciones para planificaci\'{o}n de rutas. Esto es en la b\'{u}squeda de la mejor en base a un mapa ya conocido.\\
+Dentro del survey Path Planning for the Mobile Robot\citenum{sym10100450} se\~{n}alan que el n\'{u}mero de publicaciones para planificadores de trayectoria, los algoritmos basados en Inteligencia Artificial han ganado terreno como soluciones para planificaci\'{o}n de trayectorias. Esto es en la b\'{u}squeda de la mejor trayectoria respecto a un mapa ya conocido.\\
 
-Por otra parte el suvey de \cite{PathPlanning2020} se centra en los planificadores de rutas para VANT haciendo tres clasificaciones: T\'{e}cnicas por representacion, t\'{e}cnicas cooperativas y t\'{e}cnicas no cooperativas.\\
-
-%The path planning problem for UAVs is implemented as an optimization problem such that it gains an optimal solution among all the possible ones. There is no exact algorithm that defines an optimal path for the UAVs. The methods and algorithms for these path planning techniques are used to find the exact behavior of the UAVs for finding an optimal solution. \cite{PathPlanning2020}.
+Por otra parte el suvey de \cite{PathPlanning2020} se centra en los planificadores de rutas para VANT haciendo tres clasificaciones: T\'{e}cnicas por representacion, t\'{e}cnicas cooperativas y t\'{e}cnicas no cooperativas. Plantean que el problema de planificaci\'{o}n de trayectorias es considerado como un problema de optimizaci\'{o}n de tal modo que obter una soluci\'{o}n \'{o}ptima entre todas las posibles.\\
+No existe un algoritmo exacto que defina una ruta \'{o}ptima.
 
 Los procesos m\'{a}s comunes para planificaci\'{o}n son:
 
 \begin{itemize}
-\item Representaci\'{o}n del VANT en un entorno 3D mostrando los obstaculos y el espacio libre.
+\item Representaci\'{o}n del VANT en un entorno 3D mostrando los obst\'{a}culos y el espacio libre.
 \item Creaci\'{o}n del mapa o grafo que considere la configuraci\'{o}n y especificaciones del VANT en un entorno 3D.
 \end{itemize}
 
 \cite{XU2023110164} mencionan que la planificaci\'{o}n de trayectorias para multiples VANT es inherente a lo complejo del entorno y los trayectorias que pueda tomar el VANT. La minimizaci\'{o}n de la longitud de las rutas, configuraciones que pueda realizar el VANT y la seguridad del trayecto para todos los multi-VANT durante el vuelo son partes clave cuando se crea un planificador multi-VANT.\\
 
-Apesar de las aproximaciones los planificadores globales se deben descomponer para poder considerar la existencia de obstaculos haciendo que la comunicaci\'{o}n entre ellos pueda ser afectada.\\
+Apesar de las aproximaciones los planificadores globales se deben descomponer para poder considerar la existencia de obst\'{a}culos haciendo que la comunicaci\'{o}n entre ellos pueda ser afectada.\\
 
 Tomando como ejemplo uno de sus deseables usos aut\'{o}nomos para b\'{u}squeda y rescate, supongamos que un VANT encuentra el objetivo, informa a los dem\'{a}s VANT para que vengan a ayudar lo m\'{a}s r\'{a}pido posible, la comunicaci\'{o}n entre ellos no debe perderse para lograr completar la tarea.\\
 Es por ello que el conocimiento de algoritmos capaces de planear rutas cooperativas debe ser considerados.\\
@@ -844,7 +836,7 @@ De manera m\'{a}s espec\'{i}fica, se listan los siguientes objetivos: %espec\'{i
 
 \begin{enumerate}
 
-\item \textbf{Construcci\'{o}n propuesta} Evaluar las soluciones en la literatura asociados con la coordinaci\'{o}n multi-VANT. Enfoc\'{a}ndose en aspectos como la comunicaci\'{o}n, evasi\'{o}n de obst\'{a}culos, asignaci\'{o}n de tareas y sincronizaci\'{o}n de informaci\'{o}n. En base a esta valoraci\'{o}n, construir una arquitectura de software para la coordinaci\'{o}n multi-VANT.
+\item \textbf{Construcci\'{o}n propuesta} Evaluar las soluciones en la literatura asociados con la coordinaci\'{o}n multi-VANT. Enfoc\'{a}ndose en aspectos como la comunicaci\'{o}n, evasi\'{o}n de obst\'{a}culos, asignaci\'{o}n de tareas y sincronizaci\'{o}n de informaci\'{o}n. Bas\'{a}ndose a esta valoraci\'{o}n, construir una arquitectura de software para la coordinaci\'{o}n multi-VANT.
 
 \item \textbf{Valoraci\'{o}n (prueba) propuesta} Emplear una herramienta de simulaci\'{o}n de libre uso para rob\'{o}tica, para el desarrollo y puesta en marcha de una propuesta de arquitectura de software capaz de realizar el control multi-VANT y evaluar el desemple\~{n}o de dicha arquitectura.
   
@@ -870,7 +862,7 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
   \item[] \textbf{E1.A3.} \textbf{Selecci\'{o}n de algoritmos} Seleccionar los algoritmos para planificaci\'{o}n de trayectorias y exploraci\'{o}n en ambientes desconocidos representativos para un entorno de computaci\'{o}n restringida.
   \item[] \textbf{E1.A4.} \textbf{Elaboraci\'{o}n de soluci\'{o}n} Definir la arquitectura de software para escenarios en aplicaciones multi-VANT apegadas a las especificaciones de computadora de placa reducida (Raspberry Pi, Esp32 ... etc.).
   \item[] \textbf{E1.A5.} \textbf{Documentaci\'{o}n Etapa 1} Elaborar la documentaci\'{o}n de la revisi\'{o}n del estado del arte y del trabajo realizado que formar\'{a} parte de la tesis.
-  \item[] \textbf{E1.A6.} \textbf{Revisi\'{o}n de tesis} Revisi\'{o}n y correcci\'{o}n de avances con los asesores.
+  \item[] \textbf{E1.A6.} \textbf{Revisi\'{o}n de tesis Etapa 1} Revisi\'{o}n y correcci\'{o}n de avances con los asesores.
   \end{enumerate}
   
   \subsection*{Etapa 2. Implementaci\'{o}n y validaci\'{o}n}
@@ -881,17 +873,17 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
 
   \begin{enumerate}
   \item[] \textbf{E2.A1.} \textbf{Selecci\'{o}n Simulador} Al tener definida la arquitectura de software y conocer las estructuras de datos que se utilizaran, evaluar los diversos simuladores para rob\'{o}tica de libre uso. (Revisar temas de modelos 3D, din\'{a}mica del robot, representaci\'{o}n del ambiente 3D, simulaci\'{o}n de sensores). 
-  \item[] \textbf{E2.A2.} \textbf{Creaci\'{o}n modelo 3D} Crear un modelo 3D en base al simulador seleccionado apegandose a las dimensiones de un VANT que se pueda replicar.
+  \item[] \textbf{E2.A2.} \textbf{Visualizaci\'{o}n de datos} Conocer las herramientas para la visualizaci\'{o}n y telemetr\'{i}a y creaci\'{o}n de un modelo 3D de acuerdo al simulador seleccionado.
   \item[] \textbf{E2.A3.} \textbf{Control de desplazamientos} Crear movimientos y control de un VANT y m\'{u}ltiples VANT, algoritmos que forman parte de la capa reactiva del VANT.
-  \item[] \textbf{E2.A4.} \textbf{Desarrollo de visualizaci\'{o}n de datos} A partir de la selecci\'{o}n del sensor, se desarrollar\'{a} la forma de representar el entorno 3D dentro del simulador elegido.
-  \item[] \textbf{E2.A5.} \textbf{Desarrollo de algoritmos de exploraci\'{o}n} En base a la revisi\'{o}n del estado del arte se implementar\'{a} el algoritmo propuesto para la exploraci\'{o}n con un VANT
-  \item[] \textbf{E2.A6.} \textbf{Implementaci\'{o}n un solo VANT} Realizar pruebas y corregir errores en base a los desarrollos realizados.
-  \item[] \textbf{E2.A7.} \textbf{Simulaci\'{o}n un solo VANT} Realizar pruebas de simulaci\'{o}n con un solo VANT de la soluci\'{o}n propuesta.
-  \item[] \textbf{E2.A8.} \textbf{Desarrollo de coordinaci\'{o}n} Al contar con la exploraci\'{o}n y navegaci\'{o}n exitosa de un solo VANT, se procede al desarrollo de coordinaci\'{o}n multi-VANT.
-  \item[] \textbf{E2.A9.} \textbf{Implementaci\'{o}n multi-VANT} Realizar pruebas y corregir errores en base a los desarrollos realizados para la coordinaci\'{o}n multi-VANT.
-  \item[] \textbf{E2.A10.} \textbf{Simulaci\'{o}n multi-VANT} Realizar pruebas de simulaci\'{o}n multi-VANT de la soluci\'{o}n propuesta.
-  \item[] \textbf{E2.A11.} \textbf{Documentaci\'{o}n Etapa 2} Elaborar la documentaci\'{o}n del desarrollo e implementaci\'{o}n de la propuesta de arquitectura de software para la coordinaci\'{o}n multi-VANT que formar\'{a} parte de la tesis.
-  \item[] \textbf{E2.A12.} \textbf{Revisi\'{o}n de tesis} Revisi\'{o}n y correcci\'{o}n de cap\'{i}tulos con los asesores.
+  %\item[] \textbf{E2.A4.} \textbf{Desarrollo de visualizaci\'{o}n de datos} A partir de la selecci\'{o}n del sensor, se desarrollar\'{a} la forma de representar el entorno 3D dentro del simulador elegido.
+  \item[] \textbf{E2.A4.} \textbf{Desarrollo de algoritmos de exploraci\'{o}n} De acuerdo con la revisi\'{o}n del estado del arte se implementar\'{a} el algoritmo propuesto para la exploraci\'{o}n con un VANT
+  \item[] \textbf{E2.A5.} \textbf{Implementaci\'{o}n un solo VANT} Realizar pruebas y corregir errores con base a los desarrollos realizados.
+  \item[] \textbf{E2.A6.} \textbf{Simulaci\'{o}n un solo VANT} Realizar pruebas de simulaci\'{o}n con un solo VANT de la soluci\'{o}n propuesta.
+  \item[] \textbf{E2.A7.} \textbf{Desarrollo de coordinaci\'{o}n} Al contar con la exploraci\'{o}n y navegaci\'{o}n exitosa de un solo VANT, se procede al desarrollo de coordinaci\'{o}n multi-VANT.
+  \item[] \textbf{E2.A8.} \textbf{Implementaci\'{o}n multi-VANT} Realizar pruebas y correcci\'{o}n de errores con base a los desarrollos realizados para la coordinaci\'{o}n multi-VANT.
+  \item[] \textbf{E2.A9.} \textbf{Simulaci\'{o}n multi-VANT} Realizar pruebas de simulaci\'{o}n multi-VANT de la soluci\'{o}n propuesta.
+  \item[] \textbf{E2.A10.} \textbf{Documentaci\'{o}n Etapa 2} Elaborar la documentaci\'{o}n del desarrollo e implementaci\'{o}n de la propuesta de arquitectura de software para la coordinaci\'{o}n multi-VANT que formar\'{a} parte de la tesis.
+  \item[] \textbf{E2.A11.} \textbf{Revisi\'{o}n de tesis Etapa 2} Revisi\'{o}n y correcci\'{o}n de cap\'{i}tulos con los asesores.
   \end{enumerate}
   
 
@@ -906,8 +898,8 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
   \item[] \textbf{E3.A2.} \textbf{Recopilaci\'{o}n de resultados} Recabar la informacion de los resultados, realizar su analisis y generar la documentacion correspondiente.
   \item[] \textbf{E3.A3.} \textbf{Documentaci\'{o}n Etapa 3} Elaborar la documentaci\'{o}n de los resultados obtenidos y conclusiones que formar\'{a} parte de la tesis.
   \item[] \textbf{E3.A4.} \textbf{Revisi\'{o}n de tesis} Revisi\'{o}n y correcci\'{o}n de tesis con los asesores.
-  \item[] \textbf{E3.A5.} \textbf{Divulgaci\'{o}n} Escribir un art\'{i}culo cient\'{i}fico, con los hallazgos de esta tesis y participar en actividades de difusi\'{o}n.
-  \item[] \textbf{E3.A6.} \textbf{Proceso de titulaci\'{o}n} Comenzar el proceso de titulaci\'{o}n
+  \item[] \textbf{E3.A5.} \textbf{Divulgaci\'{o}n} De acuerdo a los progresos dentro de la tesis, se estar\'{a} en total disposici\'{o}n a espacios donde se pueda hacer divulgaci\'{o}n cient\'{i}fica dentro del estado cubriendo los requisitos de retribuci\'{o}n social de la instituci\'{o}n.
+  \item[] \textbf{E3.A6.} \textbf{Proceso de titulaci\'{o}n} Comenzar el proceso de titulaci\'{o}n.
   \end{enumerate}
   
 \section*{Cronograma de actividades (plan de trabajo)}
@@ -995,7 +987,7 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
 \textbf{E3.A4.} Revisi\'{o}n de tesis
 \off[10] \on[2] \\
 \hline
-\textbf{E3.A5.} Divulgaci\'{o}n\footnote{Abierto a espacios de divulgaci\'{o}n}
+\textbf{E3.A5.} Divulgaci\'{o}n\footnote{Abierto a espacios de divulgaci\'{o}n de acuerdo con las actividades de retribuci\'{o}n social}
 \off[5]  \on[7] \\
 \hline
 \textbf{E3.A6.} Proceso de titulaci\'{o}n
@@ -1088,6 +1080,7 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
   \end{ganttchart}
 \fi
 
+\newpage
 \section*{Infraestructura}
 
 Para el desarrollo de este proyecto de investigaci\'{o}n, se har\'{a} uso de un equipo de c\'{o}mputo con las siguientes caracter\'{i}sticas:
@@ -1103,6 +1096,15 @@ Para el desarrollo de este proyecto de investigaci\'{o}n, se har\'{a} uso de un 
 \newpage
 \section*{Estado del arte}
 
+\noindent\hrulefill IDEAS \noindent\hrulefill\\
+  
+  \textbf{COSAS DE ESTADO DEL ARTE}\\
+  
+  Estos problemas ya se han resulto en varios robots terrestres llegando a tener soluciones distribuidas o resultos los problemas de colisi\'{o}n, navegaci\'{o}n, mapeo y se han propuestos buenos algoritmos que formar\'{a}n parte de la arquitectura de software para resolver.\\
+  Trabajos como el de \cite{CERBERUS2022} han logrado optimizar problemas de alta dimencionalidad con el control de navegaci\'{o}n para un robot con cuatro patas, haciendo uso de aprendizaje por refuerzo con ayuda de simulaciones corriendo en paralelo en un cuarto simulado, logrando obtener los pesos que le ayudan a resolver el problema de navegaci\'{o}n, pero al momento de pasar a efectuar un despliege de software el robot no pudo hace un paso correcto. Los huecos entre la simulaci\'{o}n y la realidad debido a los anchos de banda que sufren las lecturas de sensores, teniendo una comunicaci\'{o}n deficiente en la arquitectura.\\
+  Tomando en cuenta los ruidos estoc\'{a}sticos y realizando simulaciones hibridas han logrado ganar el DARPA CHALLENGE usando una exploraci\'{o}n basada en grafos y un mapa de ocupaci\'{o}n (OctoMap) para simular el entorno tridimencional.\\
+
+  Navegaciones interesantes como de la ETH Learning High-Speed Flight in th Wild que propone una arquitectura con capas de proyecci\'{o}n, decisi\'{o}n y control posterior a un procesamiento de imagen con segmentaciones de profundidad con uso de algoritmos Semi-global matching para la estimaci\'{o}n de un mapa de disparidad denso lograr\'{o}n demostrar que pueden navegar en entornos extremadamente complejos a altas velocidades haciendo uso de arquitecturas de tipo sensar, mapear, planear ya que han demostrado buenos resultados en velocidades moderadas con ayuda de una red convolucional entrenada con una muestra previa imitando al experto.\\
 
 %Multirobot\\
 %Multi-robot exploration is a popular area of research in robotics, with applications in search and rescue, planetary exploration, and more. The papers present different algorithms and approaches to multi-robot exploration. Pandey 2012 presents an algorithm that takes into account communication constraints between robots and allocates target points to maximize the area explored while minimizing time and distance traveled. Pal 2011 proposes a modification to the A* algorithm for optimal path planning and target allocation strategy. Zlot 2002 presents an approach that uses a market architecture to maximize information gain while minimizing costs, which is reliable and robust to dynamic changes in team members and communication interruptions. Overall, the papers collectively suggest that multi-robot exploration is a complex problem that requires careful consideration of communication constraints, path planning, and target allocation strategies.\\
@@ -1391,8 +1393,26 @@ El art\'{i}culo de \cite{machines2023} investiga el problema de planificaci\'{o}
   \item M\'{e}tricas como tiempo de respuesta, consumo de energ\'{i}a y la capacidad de adaptaci\'{o}n a diferentes escenarios. 
   \end{itemize}
 \item Tesis impresa.
-
+  
 \end{enumerate}
+
+\newpage
+\begin{center}
+  \begin{tabular}{c@{\hspace{5em}}c}
+    {\Large{Fecha de inicio}} & {\Large{Fecha de terminaci\'on}} \\
+    % Poner fechas respectivas
+    &\\
+    Septiembre de 2023 & Agosto de 2024
+  \end{tabular} \vspace{2.5cm} \\
+  Firma del alumno: \underline{\hspace{5cm}} \vspace{2cm}\\ \ \\
+  {\Large{Comit\'e de aprobaci\'on del tema de tesis}} \vspace{2cm} \\
+  \begin{tabular}{p{7cm}p{5cm}}
+    Dr. Jos\'{e} Gabriel Ram\'{i}rez Torres & \underline{\hspace{5cm}} \vspace{1cm} \\
+    Dr. Eduardo Arturo Rodr\'{i}guez Tello   & \underline{\hspace{5cm}} \vspace{1cm} \\
+    Dr. 3 & \underline{\hspace{5cm}} \vspace{1cm} \\
+    Dr. 4 & \underline{\hspace{5cm}} %\vspace{1cm} \\
+  \end{tabular}
+\end{center}
 
 \newpage
 %\onecolumn
@@ -1440,23 +1460,7 @@ El art\'{i}culo de \cite{machines2023} investiga el problema de planificaci\'{o}
 %\end{enumerate}
 
 %\onecolumn
-\newpage
-\begin{center}
-  \begin{tabular}{c@{\hspace{5em}}c}
-{\Large{Fecha de inicio}} & {\Large{Fecha de terminaci\'on}} \\
-% Poner fechas respectivas
-&\\
-Septiembre de 2023 & Agosto de 2024
-\end{tabular} \vspace{2.5cm} \\
-Firma del alumno: \underline{\hspace{5cm}} \vspace{2cm}\\ \ \\
-{\Large{Comit\'e de aprobaci\'on del tema de tesis}} \vspace{2cm} \\
-\begin{tabular}{p{7cm}p{5cm}}
-Dr. Jos\'{e} Gabriel Ram\'{i}rez Torres & \underline{\hspace{5cm}} \vspace{1cm} \\
-Dr. Eduardo Arturo Rodr\'{i}guez Tello   & \underline{\hspace{5cm}} \vspace{1cm} \\
-Dr. 3 & \underline{\hspace{5cm}} \vspace{1cm} \\
-Dr. 4 & \underline{\hspace{5cm}} %\vspace{1cm} \\
-\end{tabular}
-\end{center}
+
 %\newpage
 %\bibliographystyle{plain}
 %\bibliography{c:/RodRuiz/bib}

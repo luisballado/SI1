@@ -1,4 +1,4 @@
-\begin{thebibliography}{66}
+\begin{thebibliography}{69}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -202,6 +202,12 @@ Markus Hehn and Raffaello D'Andrea.
   Automation}, pages 763--770, 2011.
 \newblock \doi{10.1109/ICRA.2011.5980244}.
 
+\bibitem[Hirsch and Merced(2023)]{DRONESHOW2023}
+Lauren Hirsch and Michael J. De~La Merced.
+\newblock Fireworks have a new competitor: Drones, Jul 2023.
+\newblock URL
+  \url{https://www.nytimes.com/2023/07/01/business/dealbook/fourth-of-july-fireworks-drones.html}.
+
 \bibitem[Hornung et~al.(2013)Hornung, Wurm, Bennewitz, Stachniss, and
   Burgard]{ARMIN2013}
 Armin Hornung, Kai~M. Wurm, Maren Bennewitz, Cyrill Stachniss, and Wolfram
@@ -393,13 +399,23 @@ Magnus Selin, Mattias Tiger, Daniel Duberg, Fredrik Heintz, and Patric
   1699--1706, 2019.
 \newblock \doi{10.1109/LRA.2019.2897343}.
 
-\bibitem[Shakhatreh et~al.(2019)Shakhatreh, Sawalmeh, Al-Fuqaha, Dou, Almaita,
-  Khalil, Othman, Khreishah, and Guizani]{UAVCIVIL2019}
+\bibitem[Shakhatreh et~al.(2019{\natexlab{a}})Shakhatreh, Sawalmeh, Al-Fuqaha,
+  Dou, Almaita, Khalil, Othman, Khreishah, and Guizani]{SHAKHATREH2019}
+Hazim Shakhatreh, Ahmad~H. Sawalmeh, Ala Al-Fuqaha, Zuochao Dou, Eyad Almaita,
+  Issa Khalil, Noor~Shamsiah Othman, Abdallah Khreishah, and Mohsen Guizani.
+\newblock Unmanned aerial vehicles ({UAVs}): A survey on civil applications and
+  key research challenges.
+\newblock \emph{{IEEE} Access}, 7:\penalty0 48572--48634, 2019{\natexlab{a}}.
+\newblock \doi{10.1109/access.2019.2909530}.
+\newblock URL \url{https://doi.org/10.1109/access.2019.2909530}.
+
+\bibitem[Shakhatreh et~al.(2019{\natexlab{b}})Shakhatreh, Sawalmeh, Al-Fuqaha,
+  Dou, Almaita, Khalil, Othman, Khreishah, and Guizani]{UAVCIVIL2019}
 Hazim Shakhatreh, Ahmad~H. Sawalmeh, Ala Al-Fuqaha, Zuochao Dou, Eyad Almaita,
   Issa Khalil, Noor~Shamsiah Othman, Abdallah Khreishah, and Mohsen Guizani.
 \newblock Unmanned aerial vehicles (uavs): A survey on civil applications and
   key research challenges.
-\newblock \emph{IEEE Access}, 7:\penalty0 48572--48634, 2019.
+\newblock \emph{IEEE Access}, 7:\penalty0 48572--48634, 2019{\natexlab{b}}.
 \newblock \doi{10.1109/ACCESS.2019.2909530}.
 
 \bibitem[Shen et~al.(2011)Shen, Michael, and Kumar]{SHEN2011}
@@ -439,6 +455,24 @@ Sebastian Thrun, Wolfram Burgard, and Dieter Fox.
   Agents)}.
 \newblock The MIT Press, 2005.
 \newblock ISBN 0262201623.
+
+\bibitem[Tranzatto et~al.(2022)Tranzatto, Mascarich, Bernreiter, Godinho,
+  Camurri, Khattak, Dang, Reijgwart, Loeje, Wisth, Zimmermann, Nguyen, Fehr,
+  Solanka, Buchanan, Bjelonic, Khedekar, Valceschini, Jenelten, Dharmadhikari,
+  Homberger, Petris, Wellhausen, Kulkarni, Miki, Hirsch, Montenegro,
+  Papachristos, Tresoldi, Carius, Valsecchi, Lee, Meyer, Wu, Nieto, Smith,
+  Hutter, Siegwart, Mueller, Fallon, and Alexis]{CERBERUS2022}
+Marco Tranzatto, Frank Mascarich, Lukas Bernreiter, Carolina Godinho, Marco
+  Camurri, Shehryar Khattak, Tung Dang, Victor Reijgwart, Johannes Loeje, David
+  Wisth, Samuel Zimmermann, Huan Nguyen, Marius Fehr, Lukas Solanka, Russell
+  Buchanan, Marko Bjelonic, Nikhil Khedekar, Mathieu Valceschini, Fabian
+  Jenelten, Mihir Dharmadhikari, Timon Homberger, Paolo~De Petris, Lorenz
+  Wellhausen, Mihir Kulkarni, Takahiro Miki, Satchel Hirsch, Markus Montenegro,
+  Christos Papachristos, Fabian Tresoldi, Jan Carius, Giorgio Valsecchi, Joonho
+  Lee, Konrad Meyer, Xiangyu Wu, Juan Nieto, Andy Smith, Marco Hutter, Roland
+  Siegwart, Mark Mueller, Maurice Fallon, and Kostas Alexis.
+\newblock Cerberus: Autonomous legged and aerial robotic exploration in the
+  tunnel and urban circuits of the darpa subterranean challenge, 2022.
 
 \bibitem[Usenko et~al.(2017)Usenko, von Stumberg, Pangercic, and
   Cremers]{USENKO2017}
