@@ -1,4 +1,4 @@
-\begin{thebibliography}{70}
+\begin{thebibliography}{66}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -14,14 +14,6 @@ Shubhani Aggarwal and Neeraj Kumar.
 \newblock \doi{https://doi.org/10.1016/j.comcom.2019.10.014}.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0140366419308539}.
-
-\bibitem[Aljalaud et~al.(2023)Aljalaud, Kurdi, and Youcef-Toumi]{math11102356}
-Faten Aljalaud, Heba Kurdi, and Kamal Youcef-Toumi.
-\newblock Bio-inspired multi-uav path planning heuristics: A review.
-\newblock \emph{Mathematics}, 11\penalty0 (10), 2023.
-\newblock ISSN 2227-7390.
-\newblock \doi{10.3390/math11102356}.
-\newblock URL \url{https://www.mdpi.com/2227-7390/11/10/2356}.
 
 \bibitem[Alsamhi et~al.(2019)Alsamhi, Ma, Ansari, and
   Almalki]{SurveyCollab2019}
@@ -93,14 +85,6 @@ Bor-Sen Chen and Ting-Wei Hung.
   biped robots team system.
 \newblock \emph{IEEE Access}, 11:\penalty0 45888--45909, 2023.
 \newblock \doi{10.1109/ACCESS.2023.3273787}.
-
-\bibitem[Chen et~al.(2014)Chen, Yu, Su, and Luo]{CHEN2014}
-YongBo Chen, JianQiao Yu, XiaoLong Su, and GuanChen Luo.
-\newblock Path planning for multi-{UAV} formation.
-\newblock \emph{Journal of Intelligent and Robotic Systems}, 77\penalty0
-  (1):\penalty0 229--246, July 2014.
-\newblock \doi{10.1007/s10846-014-0077-y}.
-\newblock URL \url{https://doi.org/10.1007/s10846-014-0077-y}.
 
 \bibitem[Cieslewski(2021)]{CIESLEWSKI2021}
 Titus Cieslewski.
@@ -270,16 +254,6 @@ Sertac Karaman and Emilio Frazzoli.
   (7):\penalty0 846--894, June 2011.
 \newblock \doi{10.1177/0278364911406761}.
 \newblock URL \url{https://doi.org/10.1177/0278364911406761}.
-
-\bibitem[Kumar and Kumar(2023)]{KUMAR2023}
-Krishan Kumar and Neeraj Kumar.
-\newblock Region coverage-aware path planning for unmanned aerial vehicles: A
-  systematic review.
-\newblock \emph{Physical Communication}, 59:\penalty0 102073, 2023.
-\newblock ISSN 1874-4907.
-\newblock \doi{https://doi.org/10.1016/j.phycom.2023.102073}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S1874490723000769}.
 
 \bibitem[Li et~al.(2015)Li, Chen, Wang, Liu, Ge, and Song]{7279703}
 Wei Li, Wenwen Chen, Chong Wang, Ming Liu, Yunjian Ge, and Quanjun Song.
@@ -465,24 +439,6 @@ Sebastian Thrun, Wolfram Burgard, and Dieter Fox.
   Agents)}.
 \newblock The MIT Press, 2005.
 \newblock ISBN 0262201623.
-
-\bibitem[Tranzatto et~al.(2022)Tranzatto, Mascarich, Bernreiter, Godinho,
-  Camurri, Khattak, Dang, Reijgwart, Loeje, Wisth, Zimmermann, Nguyen, Fehr,
-  Solanka, Buchanan, Bjelonic, Khedekar, Valceschini, Jenelten, Dharmadhikari,
-  Homberger, Petris, Wellhausen, Kulkarni, Miki, Hirsch, Montenegro,
-  Papachristos, Tresoldi, Carius, Valsecchi, Lee, Meyer, Wu, Nieto, Smith,
-  Hutter, Siegwart, Mueller, Fallon, and Alexis]{CERBERUS2022}
-Marco Tranzatto, Frank Mascarich, Lukas Bernreiter, Carolina Godinho, Marco
-  Camurri, Shehryar Khattak, Tung Dang, Victor Reijgwart, Johannes Loeje, David
-  Wisth, Samuel Zimmermann, Huan Nguyen, Marius Fehr, Lukas Solanka, Russell
-  Buchanan, Marko Bjelonic, Nikhil Khedekar, Mathieu Valceschini, Fabian
-  Jenelten, Mihir Dharmadhikari, Timon Homberger, Paolo~De Petris, Lorenz
-  Wellhausen, Mihir Kulkarni, Takahiro Miki, Satchel Hirsch, Markus Montenegro,
-  Christos Papachristos, Fabian Tresoldi, Jan Carius, Giorgio Valsecchi, Joonho
-  Lee, Konrad Meyer, Xiangyu Wu, Juan Nieto, Andy Smith, Marco Hutter, Roland
-  Siegwart, Mark Mueller, Maurice Fallon, and Kostas Alexis.
-\newblock Cerberus: Autonomous legged and aerial robotic exploration in the
-  tunnel and urban circuits of the darpa subterranean challenge, 2022.
 
 \bibitem[Usenko et~al.(2017)Usenko, von Stumberg, Pangercic, and
   Cremers]{USENKO2017}

@@ -15,7 +15,7 @@ NOTE CLASS
 http://srl.informatik.uni-freiburg.de/teachingdir/ws13/slides/12-RobotMotionPlanning.pdf
 
 PAPERS REVISAR
-
+***https://es.wired.com/articulos/nuevos-robots-de-amazon-revolucionan-la-automatizacion NOTA DE AMAZON ROBOTICS
 ***https://ieeexplore.ieee.org/document/7759784
 ***https://sci-hub.se/https://doi.org/10.1177/0278364911406761
 ***https://ieeexplore.ieee.org/document/10184313
