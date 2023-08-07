@@ -481,21 +481,21 @@ Los controles de bajo nivel responden muy bien a t\'{e}cnicas de teoria de contr
   \item \textbf{Firefly Algorithm (FA)} Propuesto por X. Yang, sigue el modelo de los patrones intermitentes de las luci\'{e}rnagas, el algoritmo emula el comportamiento de atracci\'{o}n y repulsi\'{o}n de las luci\'{e}rnagas.
   \end{enumerate}
 
-  While metaheuristics have proven to be effective in solving a wide range of optimization problems, their adoption in the robotics field has been more limited for several reasons:
-
-  \begin{itemize}
-    \item Complexity and Real-Time Constraints: Robotics often involves real-time decision-making, where robots must respond quickly to changing environments. Metaheuristics typically require extensive computational resources and iterations to converge to an optimal solution, which may not be feasible in real-time robotics applications. Real-time control and planning in robotics often require algorithms with low computational complexity, such as classical planning or reactive control approaches.
-
-    \item Deterministic Solutions: In many robotics applications, especially those involving safety-critical tasks or precise control, deterministic and predictable solutions are preferred over stochastic solutions offered by metaheuristics. Metaheuristics provide approximate solutions with varying degrees of optimality, which may not be suitable for tasks requiring precise control or safety guarantees.
-
-    \item Model-Based Optimization: Many robotics problems can be effectively solved using model-based optimization techniques. With known dynamics models and environmental constraints, model-based methods such as optimal control or trajectory optimization can provide analytical or numerical solutions with guaranteed performance. These approaches can exploit the problem structure and specific constraints, leading to more efficient and reliable solutions compared to general-purpose metaheuristics.
-
-    \item Task-Specific Algorithms: Robotics often involves specific tasks and domains that have been extensively studied, resulting in task-specific algorithms tailored to those domains. These tailored approaches are often more efficient and effective for solving the specific problems addressed in robotics, making general-purpose metaheuristics less attractive.
-
-    \item Hardware and Energy Limitations: Robotics systems typically have limited hardware resources and are often constrained by energy consumption. Metaheuristics, which often require large populations or extensive iterations for convergence, may not be well-suited for resource-constrained robotic platforms.
-  \end{itemize}
+  Las metaheuristicas han demostrado ser efectivas para resolver una amplia gama de problemas de optimizaci\'{o}n, su adopci\'{o}n en el campo de la rob\'{o}tica ha sido limitada por varias razones.
   
-  However, it's important to note that there are certainly areas within robotics where metaheuristics have been successfully applied, such as robot path planning in complex environments, swarm robotics, or task allocation in multi-robot systems. Additionally, hybrid approaches that combine metaheuristics with model-based optimization or task-specific algorithms can leverage the strengths of both and provide effective solutions for robotics applications.
+  \begin{itemize}
+  \item \textbf{Complejidad y restricciones en tiempo real:} la rob\'{o}tica a menudo implica la toma de decisiones en tiempo real, donde los robots deben responder r\'{a}pidamente a entornos cambiantes. Las metaheur\'{i}sticas suelen requerir extensos recursos computacionales e iteraciones para converger en una soluci\'{o}n \'{o}ptima, lo que puede no ser factible en aplicaciones de rob\'{o}tica en tiempo real. El control y la planificaci\'{o}n en tiempo real en rob\'{o}tica a menudo requieren algoritmos de baja complejidad computacional, como la planificaci\'{o}n cl\'{a}sica o los enfoques de control reactivo.
+    
+  \item \textbf{Soluciones deterministas:} en aplicaciones de rob\'{o}tica, especialmente las que involucran tareas cr\'{i}ticas para la seguridad o control preciso, se prefieren las soluciones deterministas y predecibles a las soluciones estoc\'{a}sticas que ofrecen las metaheur\'{i}sticas. Las metaheur\'{i}sticas brindan soluciones aproximadas con diversos grados de optimizaci\'{o}n, que pueden no ser adecuadas para tareas que requieren un control preciso o garant\'{i}as de seguridad.
+
+  \item \textbf{Optimizaci\'{o}n basada en modelos:} muchos problemas de rob\'{o}tica se pueden resolver de manera efectiva utilizando t\'{e}cnicas de optimizaci\'{o}n basadas en modelos. Con modelos din\'{a}micos conocidos y restricciones ambientales, los m\'{e}todos basados en modelos, como el control \'{o}ptimo o la optimizaci\'{o}n de la trayectoria, pueden proporcionar soluciones anal\'{i}ticas o num\'{e}ricas con un rendimiento garantizado. Estos enfoques pueden explotar la estructura del problema y las restricciones espec\'{i}ficas, lo que lleva a soluciones m\'{a}s eficientes y confiables en comparaci\'{o}n con las metaheur\'{i}sticas de prop\'{o}sito general.
+
+  \item \textbf{Algoritmos de tareas específicas:} la rob\'{o}tica a menudo implica tareas y dominios espec\'{i}ficos que se han estudiado ampliamente, lo que da como resultado algoritmos espec\'{i}ficos de tareas adaptados a esos dominios. Estos enfoques personalizados a menudo son m\'{a}s eficientes y efectivos para resolver los problemas espec\'{i}ficos abordados en rob\'{o}tica, lo que hace que las metaheur\'{i}sticas de prop\'{o}sito general sean menos atractivas.
+    
+  \item Limitaciones de hardware y energ\'{i}a: los sistemas de rob\'{o}tica suelen tener recursos de hardware limitados y, a menudo, est\'{a}n limitados por el consumo de energ\'{i}a. Las metaheur\'{i}sticas, que a menudo requieren grandes poblaciones o extensas iteraciones para la convergencia, pueden no ser adecuadas para plataformas rob\'{o}ticas con recursos limitados.
+  \end{itemize}
+
+  Sin embargo, es importante tener en cuenta que ciertamente hay \'{a}reas dentro de la rob\'{o}tica donde las metaheur\'{i}sticas se han aplicado con \'{e}xito, como la planificaci\'{o}n de rutas de robots en entornos complejos, la rob\'{o}tica de enjambres o la asignaci\'{o}n de tareas en sistemas de m\'{u}ltiples robots. Adem\'{s}s, los enfoques h\'{i}bridos que combinan metaheur\'{i}sticas con optimizaci\'{o}n basada en modelos o algoritmos espec\'{i}ficos de tareas pueden aprovechar las fortalezas de ambos y proporcionar soluciones efectivas para aplicaciones de rob\'{o}tica.
   
 \subsection*{Sensores}
 
@@ -606,14 +606,11 @@ Los problemas que emergen de la planificaci\'{o}n de trayectorias es la \textbf{
 
 Considerando mover un VANT en 3D que puede trasladarse y rotar. El problema ser\'{a} en optimizar varios parametros por los 6 DoF (Grados de libertad) que cuenta y si queremos algoritmos que corran en tiempo real (que se ejecuten r\'{a}pido) dentro de dispositivos computacionales limitados.\\
 
-Finalmente habr\'{a} obst\'{a}culos o otros robots en el ambiente que nuestra soluci\'{o}n de arquitectura deba considerar en su planificaci\'{o}n. El robot debe sensar los obst\'{a}culos y evitarlos.\\
+Finalmente habr\'{a} obst\'{a}culos o otros robots en el ambiente que nuestra soluci\'{o}n de arquitectura deba considerar en su planificaci\'{o}n. El robot debe sensar los obst\'{a}culos y evitarlos.
 
 \subsection*{Robots aereos}
 
 \cite{10120941} clasifican los Veh\'{i}culos A\'{e}reos No Tripulados (VANT) principalmente como: \textbf{Ala Fija, Ala Rotatoria y Hibrido}\\
-\textbf{Ala fija} - cuentan con una ala rigida, similar a los aviones comerciales que conocemos. Requieren un area reservada para el despegue\\
-\textbf{Ala rotatoria} - \\
-\textbf{Hibrido} -  \\
 
 %UAVs are typically categorized as fixed-wing, rotary-wing, and hybrid-wing. Fixed-wing UAVs have rigid wings, like conventional human aircraft. They require relative velocity to generate aerodynamic forces and are thus more aero-dynamically efficient; however, fixed-wing UAVs require a runway for takeoff and landing. Vertical takeoff and landing are possible for rotary-wing UAVs because their revolving rotary blades generate adequate aerodynamic thrust. \cite{10120941}
 
@@ -621,18 +618,19 @@ Finalmente habr\'{a} obst\'{a}culos o otros robots en el ambiente que nuestra so
 %Mostrar la tabla 5 \cite{10120941}
 
 Claramente los problemas inherentes al control de vehiculos aereos son diferentes a los que pueda presentar un robot en tierra. Y su control recae en el ajuste de los angulos presentes en los tres ejes (roll, pitch, yaw).\\
-  
-  Millones de Veh\'{i}culos A\'{e}reos No Tripulados, o tambi\'{e}n conocidos como drones, han presentado una adopci\'{o}n masiva en diferentes aplicaciones, desde usos civiles (b\'{u}squeda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares \cite{UAVCIVIL2019}. La popularidad de los VANT es atribuida a su movilidad.\\
 
-La idea de utilizar m\'{u}ltiples robots a\'{e}reos en un sistema coordinado se basa en el comportamiento de los enjambres de animales, como las abejas o los p\'{a}jaros, que trabajan juntos de manera colaborativa para lograr objetivos comunes. Esta inspiraci\'{o}n biol\'{o}gica ha llevado al desarrollo de algoritmos y t\'{e}cnicas para coordinar y controlar m\'{u}ltiples VANT en diferentes aplicaciones.\\
-  
-  El inter\'{e}s en la investigaci\'{o}n e inovaci\'{o}n de soluciones con Veh\'{i}culos A\'{e}reos No Tripulados ha crecido exponencialmente en a\~{n}os recientes \citenum{Daponte2015,UAVPRACTICAL2023,GUPTA2016,VEGETACION2017,ROADS2017}.\\
-  
-  En recientes a\~{n}os, dotar a los VANT de inteligencia para explotar la informaci\'{o}n recolectada de sensores a bordo, ha sido y es un \'{a}rea estudiada en rob\'{o}tica m\'{o}vil \'{a}rea (construcci\'{o}n de mapas)\citenum{SHUKLA2016490}.\\
+%\cite{UAVCIVIL2019}.
+\st{Millones de Veh\'{i}culos A\'{e}reos No Tripulados, o tambi\'{e}n conocidos como drones, han presentado una adopci\'{o}n masiva en diferentes aplicaciones, desde usos civiles (b\'{u}squeda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares. La popularidad de los VANT es atribuida a su movilidad.}\\
 
-  Buscando probar diferentes teor\'{i}as de control, convirti\'{e}ndo los problemas t\'{i}picos de control 2D (p\'{e}ndulo inverso fijo) a un ambiente 3D, teniendo m\'{a}s variables a controlar para mantener el equilibrio del p\'{e}ndulo y al mismo tiempo lograr el movimiento y las maniobras deseadas del dron en el espacio tridimensional \citenum{PENDU2011}.\\
+\st{La idea de utilizar m\'{u}ltiples robots a\'{e}reos en un sistema coordinado se basa en el comportamiento de los enjambres de animales, como las abejas o los p\'{a}jaros, que trabajan juntos de manera colaborativa para lograr objetivos comunes. Esta inspiraci\'{o}n biol\'{o}gica ha llevado al desarrollo de algoritmos y t\'{e}cnicas para coordinar y controlar m\'{u}ltiples VANT en diferentes aplicaciones.}\\
   
-  El despliegue r\'{a}pido de robots en situaciones de riesgo, b\'{u}squeda y rescate ha sido un \'{a}rea ampliamente estudiada en la rob\'{o}tica m\'{o}vil. Donde existen concursos DARPA CHALLENGE donde todos los factores como exploraci\'{o}n, planeaci\'{o}n y coordinaci\'{o}n son clave para lograr los objetivos del Reto  \citenum{DARPA2022}. %se han aplicado teor\'{i}as de grafos para la obtenci\'{o}n de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente aut\'{o}nomo.\\ %Esa percepci\'{o}n que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura de software tolerante a fallas, capaz de coordinar m\'{u}ltiples v\'{e}hiculos a\'{e}reos no trupulados a medida que incrementa o disminuye la oferta de VANT(s) disponibles.\\
+\st{El inter\'{e}s en la investigaci\'{o}n e inovaci\'{o}n de soluciones con Veh\'{i}culos A\'{e}reos No Tripulados ha crecido exponencialmente en a\~{n}os recientes} \citenum{Daponte2015,UAVPRACTICAL2023,GUPTA2016,VEGETACION2017,ROADS2017}.\\
+
+\st{En recientes a\~{n}os, dotar a los VANT de inteligencia para explotar la informaci\'{o}n recolectada de sensores a bordo, ha sido y es un \'{a}rea estudiada en rob\'{o}tica m\'{o}vil \'{a}rea (construcci\'{o}n de mapas)}\citenum{SHUKLA2016490}.\\
+
+\st{Buscando probar diferentes teor\'{i}as de control, convirti\'{e}ndo los problemas t\'{i}picos de control 2D (p\'{e}ndulo inverso fijo) a un ambiente 3D, teniendo m\'{a}s variables a controlar para mantener el equilibrio del p\'{e}ndulo y al mismo tiempo lograr el movimiento y las maniobras deseadas del dron en el espacio tridimensional} \citenum{PENDU2011}.\\
+  
+\st{El despliegue r\'{a}pido de robots en situaciones de riesgo, b\'{u}squeda y rescate ha sido un \'{a}rea ampliamente estudiada en la rob\'{o}tica m\'{o}vil. Donde existen concursos DARPA CHALLENGE donde todos los factores como exploraci\'{o}n, planeaci\'{o}n y coordinaci\'{o}n son clave para lograr los objetivos del Reto.}  \citenum{DARPA2022}. %se han aplicado teor\'{i}as de grafos para la obtenci\'{o}n de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente aut\'{o}nomo.\\ %Esa percepci\'{o}n que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura de software tolerante a fallas, capaz de coordinar m\'{u}ltiples v\'{e}hiculos a\'{e}reos no trupulados a medida que incrementa o disminuye la oferta de VANT(s) disponibles.\\
 
 \subsection*{Panorama de m\'{e}todos de planificaci\'{o}n}
 
@@ -1209,7 +1207,7 @@ La adquisici\'{o}n de datos es el primer paso en la representaci\'{o}n de mapas 
 
 Los VANTs pueden utilizar sensores LiDAR (Light Detection and Ranging) para capturar datos 3D. Los sensores LiDAR emiten pulsos de luz l\'{a}ser y miden el tiempo que tarda en reflejarse en los objetos circundantes. Esto permite obtener informaci\'{o}n precisa sobre la distancia y la posici\'{o}n tridimensional de los objetos en el entorno. Los datos LiDAR pueden combinarse con las im\'{a}genes capturadas para generar mapas 3D completos y detallados.\\
 
-Deacuerdo al Survey de \cite{SurveyCollab2019}, los VANT estÃ¡n preparados para convertirse en una parte integral de las ciudades inteligentes y mejorar la experiencia de vida en general en el sentido de monitorear la contaminaci\'{o}n, investigar accidentes, combatir incendios, entregar paquetes, respaldar las actividades de primeros auxilios, entregar medicamentos, monitorear el tr\'{a}fico y supervisar sitios de construcci\'{o}n.\\
+Deacuerdo al Survey de \cite{SurveyCollab2019}, los VANT est\'{a}n preparados para convertirse en una parte integral de las ciudades inteligentes y mejorar la experiencia de vida en general en el sentido de monitorear la contaminaci\'{o}n, investigar accidentes, combatir incendios, entregar paquetes, respaldar las actividades de primeros auxilios, entregar medicamentos, monitorear el tr\'{a}fico y supervisar sitios de construcci\'{o}n.\\
 Adem\'{a}s, la tecnolog\'{i}a de drones puede conducir a enormes beneficios secundarios, como la reducci\'{o}n del consumo de energ\'{i}a, la conservaci\'{o}n de recursos, la reducci\'{o}n de la contaminaci\'{o}n, el acceso a \'{a}reas peligrosas y de desastre y el aumento de la preparaci\'{o}n para emergencias. \\
 
 Los trabajos de \cite{SHEN2011}, \cite{GRZONKA2012} y \cite{FRAUNDORFER2012} son pioneros en demostrar la navegaci\'{o}n aut\'{o}noma de Veh\'{i}culos A\'{e}reos No Tripulados (VANT). Estos estudios demostraron que los VANT pueden seguir puntos de referencia en el mapa, evitar obst\'{a}culos y llevar a cabo tareas de exploraci\'{o}n en entornos complejos. Sin embargo, aunque mostraron avances significativos, no lograron alcanzar una autonom\'{i}a total. Los primeros carecen de planificaci\'{o}n interna, mientras que los segundos depend\'{i}an de un mapeo previo fuera de l\'{i}nea para su funcionamiento.\\
