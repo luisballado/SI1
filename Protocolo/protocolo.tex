@@ -188,7 +188,7 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
   ([yshift=\lineoffset]vtimeline\thevtml.north east);
   \node[anchor=west,yshift=16pt,font=\large]
    at (vtimeline\thevtml-1-1.north west) 
-   {\textsc{Timeline \thevtml}: \textit{\vtimelinetitle}};
+   {\textsc{Linea de tiempo}: \textit{\vtimelinetitle}};
  \else%
   \relax%
  \fi%
@@ -224,8 +224,8 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
   %\noindent\hrulefill\\
   
   La exploraci\'{o}n multi-robot ha surgido como un enfoque prometedor para el mapeo eficiente de entornos desconocidos. Un enfoque colaborativo ofrece una mayor eficiencia de exploraci\'{o}n, una obtenci\'{o}n de informaci\'{o}n m\'{a}s r\'{a}pida y amplias capacidades de cobertura en comparaci\'{o}n con implementaci\'{o}nes donde se emplea un solo robot. Sin embargo, la exploraci\'{o}n multi-robot plantea diversos desaf\'{i}os que deben abordarse para su correcta implementaci\'{o}n como la localizaci\'{o}n, mapeo y navegaci\'{o}n aut\'{o}noma.\\
-  En la \'{u}ltima decada, se ha tenido un aumento en la investigaci\'{o}n y el desarrollo en el campo de los m\'{u}ltiples V\'{e}hiculos A\'{e}reos No Tripulados (VANT) lo que ha dado lugar a importantes avances e innovaciones. Los sistemas multi-VANT permiten la adquisici\'{o}n simult\'{a}nea de datos desde m\'{u}ltiples puntos de vista, lo que permite mejorar el mapeo de entornos desconocidos. El uso de algoritmos de coordinaci\'{o}n inteligente, la toma de decisiones descentralizada mejora la eficiencia de estos sistemas. Adem\'{a}s, los avances en los protocolos de comunicaci\'{o}n permiten una colaboraci\'{o}n fluida, lo que mejora su capacidad para navegar, explorar y adquirir datos de \'{a}reas grandes y complejas. As\'{i} mismo, la integraci\'{o}n de sensores de \'{u}ltima generaci\'{o}n mejora la precisi\'{o}n y confiabilidad de los sistemas multi-VANT en varios dominios, incluida la gesti\'{o}n de desastres, la agricultura de precisi\'{o}n, la inspecci\'{o}n de infraestructura y la vigilancia militar \citenum{SHAKHATREH2019} \citenum{UAVPRACTICAL2023} o en espectaculares animaciones a\'{e}reas. \citenum{DRONESHOW2023}
-  Dichas aplicaciones suelen carecer de autonom\'{i}a. Para que un robot se considere aut\'{o}nomo deber\'{a} tomar decisiones y realizar tareas sin necesidad de que alguien le diga qu\'{e} hacer o guiarlo paso a paso. Tener la capacidad de percibir su entorno y usar la informaci\'{o}n para decidir c\'{o}mo moverse son considerados altos niveles de autonom\'{i}a. Para llegar a ello el robor debe resolver primero problemas como su localizaci\'{o}n, construir el mapa de su entorno para posteriormente usarlo para navegar dentro de \'{e}l.
+  En la \'{u}ltima decada, se ha tenido un aumento en la investigaci\'{o}n y el desarrollo en el campo de los m\'{u}ltiples V\'{e}hiculos A\'{e}reos No Tripulados (VANT) lo que ha dado lugar a importantes avances e innovaciones. Los sistemas multi-VANT permiten la adquisici\'{o}n simult\'{a}nea de datos desde m\'{u}ltiples puntos de vista, lo que permite mejorar el mapeo de entornos desconocidos. El uso de algoritmos de coordinaci\'{o}n inteligente, la toma de decisiones descentralizada mejora la eficiencia de estos sistemas. Adem\'{a}s, los avances en los protocolos de comunicaci\'{o}n permiten una colaboraci\'{o}n fluida, lo que mejora su capacidad para navegar, explorar y adquirir datos de \'{a}reas grandes y complejas. As\'{i} mismo, la integraci\'{o}n de sensores de \'{u}ltima generaci\'{o}n mejora la precisi\'{o}n y confiabilidad de los sistemas multi-VANT en varios dominios, incluida la gesti\'{o}n de desastres, la agricultura de precisi\'{o}n, la inspecci\'{o}n de infraestructura y la vigilancia militar [\citenum{SHAKHATREH2019},\citenum{UAVPRACTICAL2023}] o en espectaculares animaciones a\'{e}reas [\citenum{DRONESHOW2023}].
+  Dichas aplicaciones suelen carecer de autonom\'{i}a. Para que un robot se considere aut\'{o}nomo deber\'{a} tomar decisiones y realizar tareas sin necesidad de que alguien le diga qu\'{e} hacer o guiarlo paso a paso. Tener la capacidad de percibir su entorno y usar la informaci\'{o}n para decidir c\'{o}mo moverse son considerados altos niveles de autonom\'{i}a. Para llegar a ello el robor debe resolver primero problemas como su localizaci\'{o}n, construir el mapa de su entorno para posteriormente usarlo y navegar dentro de \'{e}l.
     
   %\st{El objetivo de este trabajo es la propuesta de una arquitectura de software tolerante a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinaci\'{o}n de Veh\'{i}culos A\'{e}reos No Tripulados.}\\
   %\st{El proyecto de investigaci\'{o}n demostrar\'{a} que es posible dise\~{n}ar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboraci\'{o}n multi-VANT.}\\
@@ -233,8 +233,10 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
   
   %\st{Se ha demostrado que es posible dotar de autonom\'{i}a a un robot (m\'{o}vil o a\'{e}reo) ((CITAR)). Dichas soluciones parten de tener el problema de localizaci\'{o}n resuelto al ser aplicaciones en exteriores y poder hacer uso de sistemas de localizaci\'{o}n como el Sistema de Posicionamiento Global (GPS) o Sistema Global de Navegaci\'{o}n por Sat\'{e}lite (Global Navigation Satellite System, GNSS). }
 
-  El enfoque de este trabajo es la propuesta de una arquitectura de software capaz de \textbf{coordinar m\'{u}ltiples Veh\'{i}culos A\'{e}reos No Tripulados} con habilidades para la \textbf{exploraci\'{o}n}, \textbf{mapeo} de \'{a}reas desconocidas y \textbf{planificaci\'{o}n de rutas}. Siendo la exploraci\'{o}n y coordinaci\'{o}n un desaf\'{i}o en rob\'{o}tica m\'{o}vil buscando coordinar y optimizar el movimiento de varios robots para explorar eficientemente un \'{a}rea de inter\'{e}s. \st{El objetivo pudiera ser maximizar la cobertura del \'{a}rea minimizando el tiempo requerido para completar la exploraci\'{o}n.} Este problema implica tomar decisiones complejas, como asignar tareas a los robots, evitar colisiones y planificar rutas \'{o}ptimas. Factores como la comunicaci\'{o}n entre robots, la incertidumbre del entorno y las limitaciones de recursos son considerados en este trabajo.\\
-  \st{Como humanidad a\'{u}n tenemos lugares desconocidos que deseamos explorar, entonces a los lugares que a\'{u}n no podemos enviar gente, entonces podremos enviar m\'{a}quinas.}
+  El enfoque de este trabajo es la propuesta de una arquitectura de software capaz de coordinar m\'{u}ltiples Veh\'{i}culos A\'{e}reos No Tripulados con habilidades para la exploraci\'{o}n, mapeo de \'{a}reas desconocidas y planificaci\'{o}n de rutas. Siendo la exploraci\'{o}n y coordinaci\'{o}n un desaf\'{i}o en rob\'{o}tica m\'{o}vil buscando coordinar y optimizar el movimiento de varios robots para explorar eficientemente un \'{a}rea de inter\'{e}s.
+  %\st{El objetivo pudiera ser maximizar la cobertura del \'{a}rea minimizando el tiempo requerido para completar la exploraci\'{o}n.}
+  Este problema implica tomar decisiones complejas, como asignar tareas a los robots, evitar colisiones y planificar rutas \'{o}ptimas. Factores como la comunicaci\'{o}n entre robots, la incertidumbre del entorno y las limitaciones de recursos son considerados en este trabajo.\\
+  %\st{Como humanidad a\'{u}n tenemos lugares desconocidos que deseamos explorar, entonces a los lugares que a\'{u}n no podemos enviar gente, entonces podremos enviar m\'{a}quinas.}
   \medskip \\
 
   \noindent \textbf{Palabras claves:} estrategias multi-VANT, exploraci\'{o}n multi-VANT, planificaci\'{o}n de rutas multi-VANT, arquitectura de software multi-VANT.
@@ -333,11 +335,21 @@ El proyecto de estrategias para la exploraci\'{o}n coordinada multi-VANT se cent
 
 \subsection*{Antecedentes y motivaci\'{o}n para el proyecto}
 
-%La exploraci\'{o}n multi-VANT ofrece varios beneficios, siendo una de ellas la cobertura r\'{a}pida de \'{a}reas siendo \'{u}til en tareas como b\'{u}squeda y rescate, as\'{i} como el estudio de zonas de desastres.\\
+La exploraci\'{o}n de entornos desconocidos juega un papel fundamental en varias aplicaciones, como misiones de b\'{u}squeda y rescate, vigilancia, respuesta a desastres y exploraci\'{o}n planetaria. Los veh\'{i}culos a\'{e}reos no tripulados (VANT) se han convertido en herramientas valiosas para la exploraci\'{o}n eficiente y aut\'{o}noma, gracias a su movilidad, versatilidad y capacidad para acceder a \'{a}reas peligrosas y de dif\'{i}cil acceso.\\
 
-\st{\textbf{\textquestiondown Qu\'{e} es un robot?}} Podemos definir un robot como una m\'{a}quina que sensa, piensa y actua \cite{Bekey2005}. Es por ello que debe de contar con sensores, poder procesar la informaci\'{o}n y actuadores que lo ayuden a su movilidad. Los sensores son necesarios para la obtenci\'{o}n de informaci\'{o}n de su entorno. Comportamientos reactivos que no requieran procesar cierta informaci\'{o}n y una inteligencia para resolver diversos retos retos que se puedan presentar.\\
+Sin embargo, los VANT individuales enfrentan limitaciones en t\'{e}rminos de \'{a}rea de cobertura, rango de detecci\'{o}n, duraci\'{o}n de la bater\'{i}a, as\'{i} como capacidades de procesamiento. La exploraci\'{o}n colaborativa multi-VANT ofrece soluciones prometedoras para superar estas limitaciones y lograr una exploraci\'{o}n eficiente y completa de entornos complejos o a gran escala. Al combinar las fortalezas y los recursos de multi-VANT, la exploraci\'{o}n colaborativa puede mejorar tanto la cobertura como la eficiencia, lo que llevar\'{i}a a un mayor \'{e}xito de la misi\'{o}n.\\
 
-  Existen tres preguntas en Rob\'{o}tica M\'{o}vil que el robot debe responder para tener una autonom\'{i}a:
+La colaboraci\'{o}n multi-VANT para tareas de exploraci\'{o}n plantea varios desaf\'{i}os, incluida la \textbf{asignaci\'{o}n de tareas}, la \textbf{comunicaci\'{o}n}, la \textbf{coordinaci\'{o}n}, la \textbf{planificaci\'{o}n de rutas} y la \textbf{evaci\'{o}n de obst\'{a}culos}. El desarrollo de algoritmos y estrategias efectivos para abordar estos desaf\'{i}os es crucial para garantizar una colaboraci\'{o}n exitosa y mejorar la eficiencia de la exploraci\'{o}n.\\
+
+Adem\'{a}s, simular el comportamiento de m\'{u}ltiples VANT en un entorno controlado y realista es de suma importancia para validar y evaluar el rendimiento del sistema de exploraci\'{o}n colaborativa. Las simulaciones permiten pruebas, an\'{a}lisis y optimizaci\'{o}n de algoritmos y par\'{a}metros, mientras se reducen los riesgos asociados con las pruebas del mundo real.\\
+
+Esta tesis tiene como objetivo abordar los desaf\'{i}os y explorar las oportunidades de la colaboraci\'{o}n de exploraci\'{o}n de m\'{u}ltiples VANT utilizando simulaci\'{o}n. Al diseñar y evaluar un sistema de exploraci\'{o}n colaborativo en una plataforma simulada, contribuir\'{a} al avance de las t\'{e}cnicas de exploraci\'{o}n, la utilizaci\'{o}n de recursos y las estrategias de coordinaci\'{o}n para m\'{u}ltiples VANT. Los resultados de la investigaci\'{o}n proporcionar\'{a}n informaci\'{o}n para el desarrollo de sistemas aut\'{o}nomos capaces de una exploraci\'{o}n eficiente y colaborativa, lo que permitir\'{a} aplicaciones m\'{a}s eficaces en escenarios del mundo real.\\
+
+George A. \cite{Bekey2005} en su libro \textit{Autonomus Robots From Biological Inspiration to Implementation and Control} define un robot como una m\'{a}quina que sensa, piensa y actua. Es por ello que debe de contar con sensores, poder procesar informaci\'{o}n y actuadores que permitan la movilidad. Los sensores son necesarios para la obtenci\'{o}n de informaci\'{o}n de su entorno. Comportamientos reactivos que no requieran procesar informaci\'{o}n y una inteligencia para resolver diversos retos que se puedan presentar.\\
+
+Los robots aut\'{o}nomos son m\'{a}quinas inteligentes capaces de ejecutar diversas tareas en un ambiente por si mismos sin que algui\'{e}n gu\'{i}e sus movimientos \cite{Bekey2005}.\\
+
+Para considerar a un robot aut\'{o}nomo, \'{e}ste deber\'{a} responder tres preguntas
   \begin{multicols}{3}
   
   \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
@@ -347,13 +359,30 @@ El proyecto de estrategias para la exploraci\'{o}n coordinada multi-VANT se cent
   \end{itemize}
   \end{multicols}
 
-  Para responder, el robot debe tener un modelo del ambiente, percibir y analizar el ambiente, planear y ejecutar sus movimientos.\\
-
-  Los robots aut\'{o}nomos son m\'{a}quinas inteligentes capaces de ejecutar diversas tareas en un ambiente por si mismos sin que algui\'{e}n gu\'{i}e sus movimientos \cite{Bekey2005}.\\
+  Para responder, el robot debe tener un modelo del ambiente, percibir y analizar el ambiente, tener la habilidad de planear y ejecutar sus movimientos.\\
 
   Frecuentemente definimos a un robot como una m\'{a}quina capaz de sensar, pensar y actuar. En Inteligencia Artificial dichos sistemas se les conoce como \textbf{agentes}. Los robots se distinguen de los agentes ya que su implementaci\'{o}n se lleva acabo en el mundo real recibiendo informaci\'{o}n del exterior a trav\'{e}s de sensores. Estando sujetos a las leyes que rigen el mundo f\'{i}sico (ya que tienen masa e inercia). Parte escencial de un robot hoy en dia, es el uso de computadoras que incrementan la velocidad de procesamiento con funciones cognitivas complejas \cite{ZOUGANELI2022}.\\
   
-  \st{La autonom\'{i}a de los robots se ha ampliado en diversos aspectos y no es extra\~{n}o tener uno que ayuden en la limpieza del hogar.}
+  %\st{La autonom\'{i}a de los robots se ha ampliado en diversos aspectos y no es extra\~{n}o tener uno que ayuden en la limpieza del hogar.}
+  Los \'{u}ltimos 100 a\~{n}os han sido testigos de un progreso notable en la rob\'{o}tica m\'{o}vil, desde los primeros conceptos y veh\'{i}culos controlados a distancia hasta el desarrollo de robots aut\'{o}nomos capaces de realizar tareas e interacciones complejas. El futuro de la rob\'{o}tica m\'{o}vil tiene un enorme potencial, y se espera que los avances en Inteligencia Artifical, tecnolog\'{i}a de sensores y autonom\'{i}a impulsen innovaciones en varias industrias.\\
+  
+\begin{vtimeline}[description={text width=14cm}, 
+ row sep=8ex, 
+ use timeline header,
+ timeline title={Rob\'{o}tica M\'{o}vil 100 años}]
+1900-1910 & Primeros conceptos en rob\'{o}tica: la idea de seres mec\'{a}nicos y aut\'{o}matas gan\'{o} popularidad durante este per\'{i}odo, alimentando la imaginaci\'{o}n para futuros avances en rob\'{o}tica\endlr
+1920-1930 & Surgimiento de los veh\'{i}culos a control remoto: Los veh\'{i}culos a control remoto, como los modelos de botes y autom\'{o}viles controlados por radio, comenzaron a ganar popularidad, sentando las bases para futuros sistemas rob\'{o}ticos m\'{o}viles.\endlr
+1940-1950 & Primeras investigaciones en rob\'{o}tica: Investigadores como Gray Walter y William Gray Walter comenzaron a experimentar con robots m\'{o}viles aut\'{o}nomos, allanando el camino para el campo de la rob\'{o}tica m\'{o}vil.\endlr
+1960-1970 & Shakey the Robot: desarrollado por el Instituto de Investigación de Stanford, Shakey se convirtió en el primer robot m\'{o}vil aut\'{o}nomo capaz de razonar y navegar a trav\'{e}s de su entorno.\endlr
+1980-1990 & Avances en la planificaci\'{o}n y navegaci\'{o}n de rutas: los estudios se centraron en el desarrollo de algoritmos y m\'{e}todos para la planificaci\'{o}n de rutas, la evasi\'{o}n de obst\'{a}culos y la localizaci\'{o}n y mapeo simult\'{a}neos (SLAM).\endlr
+2000-2010 & La rob\'{o}tica m\'{o}vil se expandi\'{o} a dominios como la atenci\'{o}n m\'{e}dica, la agricultura, el transporte y la exploraci\'{o}n espacial, con robots que ayudan en tareas que van desde la cirug\'{i}a hasta la entrega de paquetes.\endlr
+%Iteracci\'{o}n humano-robot: la investigaci\'{o}n se centr\'{o} en permitir una colaboraci\'{o}n segura y eficaz entre humanos y robots, incluido el procesamiento del lenguaje natural, el reconocimiento de gestos y los comportamientos sociales.\endlr
+2020-actualidad & Robótica de enjambres: los investigadores exploran los comportamientos colectivos y la coordinación entre grandes grupos de robots para realizar tareas complejas. Inteligencia artificial y aprendizaje automático: los robots móviles aprovechan los avances en técnicas de inteligencia artificial y aprendizaje automático para mejorar la percepción, la toma de decisiones y las capacidades de aprendizaje.\endlr
+\end{vtimeline}
+
+\vspace{2cm}
+
+%La exploraci\'{o}n multi-VANT ofrece varios beneficios, siendo una de ellas la cobertura r\'{a}pida de \'{a}reas siendo \'{u}til en tareas como b\'{u}squeda y rescate, as\'{i} como el estudio de zonas de desastres.\\
 
 Los V\'{e}hiculos A\'{e}reos No Tripulados tienen cualidades sobresalientes que los convierten adecuados para la exploraci\'{o}n. La movilidad, una perspectiva privilegiada de su entorno y su dinamismo hacen que el despliege de los VANT sea una tarea sencilla, teniendo acceso r\'{a}pido a zonas afectadas por desastres, permitiendoles llegar a \'{a}reas que pueden ser inaccesibles para otro tipo de robots. El uso adecuado de m\'{u}ltiples V\'{e}hiculos A\'{e}reos No Tripulados (VANT) proporciona robustez, brindando resilencia frente a fallas de un VANT siendo una de las principales ventajas del uso de sistemas multi-robot.\\
 
@@ -391,74 +420,75 @@ Algunas aplicaciones multi-robot \citenum{6320878}:
 %Obteniendo los siguientes resultados cuando el tama\~{n}o del voxel es de 10 cm, OctoMap-RT es 49.3x r\'{a}pido que OctoMap y 8.7x r\'{a}pido que SuperRay
 %Variantes de OctoMap: SuperRay, \textbf{OctoMap-RT}
 
-  \begin{figure}
-  \begin{center}
-    \begin{forest}
-      for tree={%
-        thick,
-        drop shadow,
-        l sep=0.6cm,
-        s sep=0.8cm,
-        node options={draw,font=\sffamily},
-        edge={semithick,-Latex},
-        where level=0{parent}{},
-        where level=1{
-          minimum height=1cm,
-          child,
-          parent anchor=south west,
-          tier=p,
-          l sep=0.25cm,
-          for descendants={%
-            grandchild,
-            minimum height=0.6cm,
-            anchor=150,
-            edge path={
-              \noexpand\path[\forestoption{edge}]
-              (!to tier=p.parent anchor) |-(.child anchor)\forestoption{edge label};
-            },
-          }
-        }{},
-      }
-      [Retos\\multi-VANT, draw=black, top color=white!5, bottom color=white!30
-        [Planificaci\'{o}n\\trayectorias, draw=gray!30, top color=gray!5, bottom color=gray!30
-          [Formaciones \\en enjambre, draw=gray!10, top color=gray!5, bottom color=gray!10
-            [Evasi\'{o}n \\de obst\'{a}culos, draw=gray!10, top color=gray!5, bottom color=gray!10
-              [Multi-objetivos, draw=gray!10, top color=gray!5, bottom color=gray!10]
-            ]
-          ]
-        ]
-        [Percepci\'{o}n, draw=gray!30, top color=gray!5, bottom color=gray!30
-          [Colecci\'{o}n de\\informaci\'{o}n, draw=gray!10, top color=gray!5, bottom color=gray!10
-            [An\'{a}lisis de im\'{a}genes, draw=gray!10, top color=gray!5, bottom color=gray!10
-              [Visualizaci\'{o}n, draw=gray!10, top color=gray!5, bottom color=gray!10]
-            ]
-          ]
-        ]
-        [Comunicaci\'{o}n, draw=gray!30, top color=gray!5, bottom color=gray!30
-          [Conectividad, draw=gray!10, top color=gray!5, bottom color=gray!10
-            [Tolerable a fallos, draw=gray!10, top color=gray!5, bottom color=gray!10
-              [Seguridad, draw=gray!10, top color=gray!5, bottom color=gray!10]
-            ]
-          ]
-        ]
-        [Control de Vuelo, draw=gray!30, top color=gray!5, bottom color=gray!30
-          [Controles tipo PID, draw=gray!10, top color=gray!5, bottom color=gray!10
-            [M\'{e}todos \\basados en aprendizaje, draw=gray!10, top color=gray!5, bottom color=gray!10
-              [Controles\\lineales de vuelo, draw=gray!10, top color=gray!5, bottom color=gray!10]
-            ]
-          ]
-        ]
-      ]
-    \end{forest}
-  \end{center}
-  \caption{Ilustra los retos multi-VANT a desarrollar en esta tesis}\label{fig:retos}
-  \end{figure}
+%
+%  \begin{figure}
+%  \begin{center}
+%    \begin{forest}
+%      for tree={%
+%        thick,
+%        drop shadow,
+%        l sep=0.6cm,
+%        s sep=0.8cm,
+%        node options={draw,font=\sffamily},
+%        edge={semithick,-Latex},
+%        where level=0{parent}{},
+%        where level=1{
+%          minimum height=1cm,
+%          child,
+%          parent anchor=south west,
+%          tier=p,
+%          l sep=0.25cm,
+%          for descendants={%
+%            grandchild,
+%            minimum height=0.6cm,
+%            anchor=150,
+%            edge path={
+%              \noexpand\path[\forestoption{edge}]
+%              (!to tier=p.parent anchor) |-(.child anchor)\forestoption{edge label};
+%            },
+%          }
+%        }{},
+%      }
+%      [Retos\\multi-VANT, draw=black, top color=white!5, bottom color=white!30
+%        [Planificaci\'{o}n\\trayectorias, draw=gray!30, top color=gray!5, bottom color=gray!30
+%          [Formaciones \\en enjambre, draw=gray!10, top color=gray!5, bottom color=gray!10
+%            [Evasi\'{o}n \\de obst\'{a}culos, draw=gray!10, top color=gray!5, bottom color=gray!10
+%              [Multi-objetivos, draw=gray!10, top color=gray!5, bottom color=gray!10]
+%            ]
+%          ]
+%        ]
+%        [Percepci\'{o}n, draw=gray!30, top color=gray!5, bottom color=gray!30
+%          [Colecci\'{o}n de\\informaci\'{o}n, draw=gray!10, top color=gray!5, bottom color=gray!10
+%            [An\'{a}lisis de im\'{a}genes, draw=gray!10, top color=gray!5, bottom color=gray!10
+%              [Visualizaci\'{o}n, draw=gray!10, top color=gray!5, bottom color=gray!10]
+%            ]
+%          ]
+%        ]
+%        [Comunicaci\'{o}n, draw=gray!30, top color=gray!5, bottom color=gray!30
+%          [Conectividad, draw=gray!10, top color=gray!5, bottom color=gray!10
+%            [Tolerable a fallos, draw=gray!10, top color=gray!5, bottom color=gray!10
+%              [Seguridad, draw=gray!10, top color=gray!5, bottom color=gray!10]
+%            ]
+%          ]
+%        ]
+%        [Control de Vuelo, draw=gray!30, top color=gray!5, bottom color=gray!30
+%          [Controles tipo PID, draw=gray!10, top color=gray!5, bottom color=gray!10
+%            [M\'{e}todos \\basados en aprendizaje, draw=gray!10, top color=gray!5, bottom color=gray!10
+%              [Controles\\lineales de vuelo, draw=gray!10, top color=gray!5, bottom color=gray!10]
+%            ]
+%          ]
+%        ]
+%      ]
+%    \end{forest}
+%  \end{center}
+%  \caption{Ilustra los retos multi-VANT a desarrollar en esta tesis}\label{fig:retos}
+%  \end{figure}
 
   
 
-\subsection*{\textquestiondown Qu\'{e} es la autonom\'{i}a?}
+%\subsection*{\textquestiondown Qu\'{e} es la autonom\'{i}a?}
 
-Autonom\'{i}a es referente a sistemas capaces de operar en el mundo como lo conocemos sin un control que lo gobierne, siendo este un campo activo de investigaci\'{o}n lo que ha causado que la autonom\'{i}a de los robots se vea incrementada as\'{i} como su inteligencia.
+%Autonom\'{i}a es referente a sistemas capaces de operar en el mundo como lo conocemos sin un control que lo gobierne, siendo este un campo activo de investigaci\'{o}n lo que ha causado que la autonom\'{i}a de los robots se vea incrementada as\'{i} como su inteligencia.
 
 \subsection*{Problemas de control}
 
@@ -498,27 +528,27 @@ Los controles de bajo nivel responden muy bien a t\'{e}cnicas de teoria de contr
   \item Limitaciones de hardware y energ\'{i}a: los sistemas de rob\'{o}tica suelen tener recursos de hardware limitados y, a menudo, est\'{a}n limitados por el consumo de energ\'{i}a. Las metaheur\'{i}sticas, que a menudo requieren grandes poblaciones o extensas iteraciones para la convergencia, pueden no ser adecuadas para plataformas rob\'{o}ticas con recursos limitados.
   \end{itemize}
 
-  Sin embargo, es importante tener en cuenta que ciertamente hay \'{a}reas dentro de la rob\'{o}tica donde las metaheur\'{i}sticas se han aplicado con \'{e}xito, como la planificaci\'{o}n de rutas de robots en entornos complejos, la rob\'{o}tica de enjambres o la asignaci\'{o}n de tareas en sistemas de m\'{u}ltiples robots. Adem\'{s}s, los enfoques h\'{i}bridos que combinan metaheur\'{i}sticas con optimizaci\'{o}n basada en modelos o algoritmos espec\'{i}ficos de tareas pueden aprovechar las fortalezas de ambos y proporcionar soluciones efectivas para aplicaciones de rob\'{o}tica.
+  Sin embargo, es importante tener en cuenta que ciertamente hay \'{a}reas dentro de la rob\'{o}tica donde las metaheur\'{i}sticas se han aplicado con \'{e}xito, como la planificaci\'{o}n de rutas de robots en entornos complejos, la rob\'{o}tica de enjambres o la asignaci\'{o}n de tareas en sistemas de m\'{u}ltiples robots. Adem\'{s}s, los enfoques h\'{i}bridos que combinan metaheur\'{i}sticas con optimizaci\'{o}n basada en modelos o algoritmos espec\'{i}ficos de tareas pueden aprovechar las fortalezas de ambos y proporcionar soluciones efectivas para aplicaciones de rob\'{o}tica.\\
   
-\subsection*{Sensores}
+%\subsection*{Sensores}
 
-  Percibir informaci\'{o}n del entorno es una tarea que deben realizar constantemente los robots y la implementaci\'{o}n de diversos sensores es necesaria. Diversos robots cuentan con sensores para detectar obstaculos en su camino siendo los sensores de tipo ultrasonico o lasers los mas implementados, en los a\~{n}os recientes la incorporaci\'{o}n y uso de c\'{a}maras son ampliamente utilizados buscando disminuir la cantidad de sensores que deba contar un robot aut\'{o}nomo.
+%  Percibir informaci\'{o}n del entorno es una tarea que deben realizar constantemente los robots y la implementaci\'{o}n de diversos sensores es necesaria. Diversos robots cuentan con sensores para detectar obstaculos en su camino siendo los sensores de tipo ultrasonico o lasers los mas implementados, en los a\~{n}os recientes la incorporaci\'{o}n y uso de c\'{a}maras son ampliamente utilizados buscando disminuir la cantidad de sensores que deba contar un robot aut\'{o}nomo.
   
-\subsection*{Inteligencia}
+%\subsection*{Inteligencia}
   
-  Decimos que un robot es una maquina que sensa, piensa y actua. Las computadoras son el cerebro de los robots, convirtiendose en elementos escenciales. Los avances en la tecnologia han logrado disminuir los tama\~{n}os de los microprocesadores asi como incrementado su velocidad y memoria.\\
+%  Decimos que un robot es una maquina que sensa, piensa y actua. Las computadoras son el cerebro de los robots, convirtiendose en elementos escenciales. Los avances en la tecnologia han logrado disminuir los tama\~{n}os de los microprocesadores asi como incrementado su velocidad y memoria.\\
   
-  La RAE define Inteligencia como la capacidad de resolver problemas, para considerar un robot inteligente este debe cumplir diversos puntos:\\
+%  La RAE define Inteligencia como la capacidad de resolver problemas, para considerar un robot inteligente este debe cumplir diversos puntos:\\
   
-  \begin{enumerate}
-  \item \textbf{Procesar Informacion (Sensar)} Las lecturas provenientes de un sensor no son utiles para el control de un robot, sera necesaria una capa de procesamiento que reduzca la carga del control principal.\\
+%  \begin{enumerate}
+%  \item \textbf{Procesar Informacion (Sensar)} Las lecturas provenientes de un sensor no son utiles para el control de un robot, sera necesaria una capa de procesamiento que reduzca la carga del control principal.\\
     
-  \item \textbf{Reflejos} Sistemas vivientes presentan un nivel alto de reaccion (reflejos) que no involucran el procesar lo que esta sucediendo.\\
+%  \item \textbf{Reflejos} Sistemas vivientes presentan un nivel alto de reaccion (reflejos) que no involucran el procesar lo que esta sucediendo.\\
     
-  \item \textbf{Programas con propositos especificos} Soluciones para la navegacion, localizacion y evasi\'{o}n de obst\'{a}culos deben de ser considerados en el software de un robot inteligente.\\
+%  \item \textbf{Programas con propositos especificos} Soluciones para la navegacion, localizacion y evasi\'{o}n de obst\'{a}culos deben de ser considerados en el software de un robot inteligente.\\
 
-  \item \textbf{Funciones Cognitivas} La inteligencia aritficial esta proviendo un gran numero de funciones cognitivas como aprender y planear \cite{ZOUGANELI2022}.\\
-  \end{enumerate}
+%  \item \textbf{Funciones Cognitivas} La inteligencia aritficial esta proviendo un gran numero de funciones cognitivas como aprender y planear \cite{ZOUGANELI2022}.\\
+%  \end{enumerate}
   
   La organizacion de estos componentes de control se conoce como \textbf{Arquitectura de Software de un Robot.} Generalmente en una estructura gerarquica con una capa de componentes reactivos en su capa de nivel mas baja y componentes que involucran planificacion y aprendizaje en su nivel mas alto.\\
   
@@ -526,14 +556,16 @@ Los controles de bajo nivel responden muy bien a t\'{e}cnicas de teoria de contr
   
   %Por un lado encontramos la robotica industrial, su desarrollo comenzo para facilitar la remocion de materiales radioactivos despues de la Segunda Guerra Mundial. Comunmente los robots manipuladores no cuentan con sensores, teniendo preprogramadas las trayectorias que debe seguir. Robots industriales recientes hacen uso diversos sensores que les permiten contar con mayor autonomia.\\
   %Por otro lado la robotica de servicios, que generalmente encontramos robots que cuenten con cierto grado de movilidad (ruedas, voladores, patas ..etc).\\
-  
-  \textbf{\textquestiondown Qu\'{e} es Planificaci\'{o}n?} Es encontrar una secuencia de configuraci\'{o}n v\'{a}lidas para mover al robot de un punto A $\rightarrow$ B\\
+
+  \subsection*{Planificaci\'{o}n}
+
+  Es encontrar una secuencia de configuraci\'{o}n v\'{a}lidas para mover al robot de un punto A $\rightarrow$ B\\
 
   Dados los siguientes par\'{a}metros:\\
   \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
   \item Configuraci\'{o}n inicial
   \item Configuraci\'{o}n del robot
-  \item Modelo del robot (Cinematica, Geometria del robot)
+  \item Modelo del robot (cinem\'{a}tica, din\'{a}mica y geometria del robot)
   \item Mapa del ambiente
   \end{itemize}
   \vspace{0.3cm}
@@ -541,7 +573,9 @@ Los controles de bajo nivel responden muy bien a t\'{e}cnicas de teoria de contr
   
   Anal\'{o}gicamente, es como ir al supermercado con el carrito de compras evitando chocar con cosas mientras navegamos dentro de la tienda. Esto es f\'{a}cil para nosotros los humanos, pero para los robots es complicado.\\
   
-  Tener un planificador de rutas optimizado para un robot m\'{o}vil, no solo nos ahorrara tiempo en su desplazamiento, si no tambi\'{e}n los recursos empleados en el desplazamiento. Diversas metodolog\'{i}as para abordar el problema de planificaci\'{o}n de trayectorias se han propuesto en la literatura. Sin embargo esos m\'{e}todos no garantizan una soluci\'{o}n \'{o}ptima. En el survey de \cite{sym10100450} revisan los diferentes modelos y criterios de optimizaci\'{o}n propuestos como, Algoritmos Gen\'{e}ticos, PSO (Partical Swarm Optimization), APF (Artificial Potential Field), ACO (Ant Colony Optimization) han sido los m\'{a}s empleados para la creaci\'{o}n de un planificador de rutas offline\\
+  Tener un planificador de rutas optimizado para un robot m\'{o}vil, no solo nos ahorrara tiempo en su desplazamiento, si no tambi\'{e}n los recursos empleados en el desplazamiento. Diversas metodolog\'{i}as para abordar el problema de planificaci\'{o}n de trayectorias se han propuesto en la literatura. Sin embargo esos m\'{e}todos no garantizan una soluci\'{o}n \'{o}ptima.
+
+  %En el survey de \cite{sym10100450} revisan los diferentes modelos y criterios de optimizaci\'{o}n propuestos como, Algoritmos Gen\'{e}ticos, PSO (Partical Swarm Optimization), APF (Artificial Potential Field), ACO (Ant Colony Optimization) han sido los m\'{a}s empleados para la creaci\'{o}n de un planificador de rutas offline\\
   
   %Partimos que el robot cuenta con una configuraci\'{o}n global, modelo del robot, y mapa del ambiente.\\
   
@@ -562,8 +596,8 @@ Los controles de bajo nivel responden muy bien a t\'{e}cnicas de teoria de contr
   % \end{minipage}
   %\end{figure}
 
-\textbf{Espacio de configuraciones}: Es el espacio de todas las posibles configuraciones.\\
-
+  \subsection*{Espacio de configuraciones}
+  
 %\begin{figure}[!htb]
 %   \begin{minipage}{0.48\textwidth}
 %     \centering
@@ -577,7 +611,7 @@ Los controles de bajo nivel responden muy bien a t\'{e}cnicas de teoria de contr
 %   \end{minipage}
 %\end{figure}
 
-Es el espacio de configuraciones esta compuesto por los espacios libres ($C_{free}$) y espacios ocupado (con obstaculos) $C_{obs}$.\\
+Es el espacio de todas las posibles configuraciones, esta compuesto por los espacios libres ($C_{free}$) y espacios ocupado (con obstaculos) $C_{obs}$.\\
 
 Sea $\mathcal{W} = \mathbb{R}^{m}$, $\mathcal{O} \in \mathcal{W}$ el conjunto de obstaculos, $\mathcal{A}(q)$ las configuraciones del robot $q \in \mathcal{C}$
 
@@ -611,29 +645,29 @@ Considerando mover un VANT en 3D que puede trasladarse y rotar. El problema ser\
 
 Finalmente habr\'{a} obst\'{a}culos o otros robots en el ambiente que nuestra soluci\'{o}n de arquitectura deba considerar en su planificaci\'{o}n. El robot debe sensar los obst\'{a}culos y evitarlos.
 
-\subsection*{Robots aereos}
+%\subsection*{Robots aereos}
 
-\cite{10120941} clasifican los Veh\'{i}culos A\'{e}reos No Tripulados (VANT) principalmente en tres grups \textbf{Ala Fija, Ala Rotatoria y Hibrido}\\
+%\cite{10120941} clasifican los Veh\'{i}culos A\'{e}reos No Tripulados (VANT) principalmente en tres grups \textbf{Ala Fija, Ala Rotatoria y Hibrido}\\
 
 %UAVs are typically categorized as fixed-wing, rotary-wing, and hybrid-wing. Fixed-wing UAVs have rigid wings, like conventional human aircraft. They require relative velocity to generate aerodynamic forces and are thus more aero-dynamically efficient; however, fixed-wing UAVs require a runway for takeoff and landing. Vertical takeoff and landing are possible for rotary-wing UAVs because their revolving rotary blades generate adequate aerodynamic thrust. \cite{10120941}
 
 %Mostrar la figura 1 de \cite{10120941}, mostrar la figura 2 \cite{10120941}\\
 %Mostrar la tabla 5 \cite{10120941}
 
-Claramente los problemas inherentes al control de vehiculos aereos son diferentes a los que pueda presentar un robot en tierra. Y su control recae en el ajuste de los angulos presentes en los tres ejes (roll, pitch, yaw).\\
+%Claramente los problemas inherentes al control de vehiculos aereos son diferentes a los que pueda presentar un robot en tierra. Y su control recae en el ajuste de los angulos presentes en los tres ejes (roll, pitch, yaw).\\
 
 %\cite{UAVCIVIL2019}.
-\st{Millones de Veh\'{i}culos A\'{e}reos No Tripulados, o tambi\'{e}n conocidos como drones, han presentado una adopci\'{o}n masiva en diferentes aplicaciones, desde usos civiles (b\'{u}squeda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares. La popularidad de los VANT es atribuida a su movilidad.}\\
+%\st{Millones de Veh\'{i}culos A\'{e}reos No Tripulados, o tambi\'{e}n conocidos como drones, han presentado una adopci\'{o}n masiva en diferentes aplicaciones, desde usos civiles (b\'{u}squeda y rescate, monitoreo industrial, vigilancia), hasta aplicaciones militares. La popularidad de los VANT es atribuida a su movilidad.}\\
 
-\st{La idea de utilizar m\'{u}ltiples robots a\'{e}reos en un sistema coordinado se basa en el comportamiento de los enjambres de animales, como las abejas o los p\'{a}jaros, que trabajan juntos de manera colaborativa para lograr objetivos comunes. Esta inspiraci\'{o}n biol\'{o}gica ha llevado al desarrollo de algoritmos y t\'{e}cnicas para coordinar y controlar m\'{u}ltiples VANT en diferentes aplicaciones.}\\
+%\st{La idea de utilizar m\'{u}ltiples robots a\'{e}reos en un sistema coordinado se basa en el comportamiento de los enjambres de animales, como las abejas o los p\'{a}jaros, que trabajan juntos de manera colaborativa para lograr objetivos comunes. Esta inspiraci\'{o}n biol\'{o}gica ha llevado al desarrollo de algoritmos y t\'{e}cnicas para coordinar y controlar m\'{u}ltiples VANT en diferentes aplicaciones.}\\
   
-\st{El inter\'{e}s en la investigaci\'{o}n e inovaci\'{o}n de soluciones con Veh\'{i}culos A\'{e}reos No Tripulados ha crecido exponencialmente en a\~{n}os recientes} \citenum{Daponte2015,UAVPRACTICAL2023,GUPTA2016,VEGETACION2017,ROADS2017}.\\
+%\st{El inter\'{e}s en la investigaci\'{o}n e inovaci\'{o}n de soluciones con Veh\'{i}culos A\'{e}reos No Tripulados ha crecido exponencialmente en a\~{n}os recientes} \citenum{Daponte2015,UAVPRACTICAL2023,GUPTA2016,VEGETACION2017,ROADS2017}.\\
 
-\st{En recientes a\~{n}os, dotar a los VANT de inteligencia para explotar la informaci\'{o}n recolectada de sensores a bordo, ha sido y es un \'{a}rea estudiada en rob\'{o}tica m\'{o}vil \'{a}rea (construcci\'{o}n de mapas)}\citenum{SHUKLA2016490}.\\
+%\st{En recientes a\~{n}os, dotar a los VANT de inteligencia para explotar la informaci\'{o}n recolectada de sensores a bordo, ha sido y es un \'{a}rea estudiada en rob\'{o}tica m\'{o}vil \'{a}rea (construcci\'{o}n de mapas)}\citenum{SHUKLA2016490}.\\
 
-\st{Buscando probar diferentes teor\'{i}as de control, convirti\'{e}ndo los problemas t\'{i}picos de control 2D (p\'{e}ndulo inverso fijo) a un ambiente 3D, teniendo m\'{a}s variables a controlar para mantener el equilibrio del p\'{e}ndulo y al mismo tiempo lograr el movimiento y las maniobras deseadas del dron en el espacio tridimensional} \citenum{PENDU2011}.\\
+%\st{Buscando probar diferentes teor\'{i}as de control, convirti\'{e}ndo los problemas t\'{i}picos de control 2D (p\'{e}ndulo inverso fijo) a un ambiente 3D, teniendo m\'{a}s variables a controlar para mantener el equilibrio del p\'{e}ndulo y al mismo tiempo lograr el movimiento y las maniobras deseadas del dron en el espacio tridimensional} \citenum{PENDU2011}.\\
   
-\st{El despliegue r\'{a}pido de robots en situaciones de riesgo, b\'{u}squeda y rescate ha sido un \'{a}rea ampliamente estudiada en la rob\'{o}tica m\'{o}vil. Donde existen concursos DARPA CHALLENGE donde todos los factores como exploraci\'{o}n, planeaci\'{o}n y coordinaci\'{o}n son clave para lograr los objetivos del Reto.}  \citenum{DARPA2022}. %se han aplicado teor\'{i}as de grafos para la obtenci\'{o}n de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente aut\'{o}nomo.\\ %Esa percepci\'{o}n que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura de software tolerante a fallas, capaz de coordinar m\'{u}ltiples v\'{e}hiculos a\'{e}reos no trupulados a medida que incrementa o disminuye la oferta de VANT(s) disponibles.\\
+%\st{El despliegue r\'{a}pido de robots en situaciones de riesgo, b\'{u}squeda y rescate ha sido un \'{a}rea ampliamente estudiada en la rob\'{o}tica m\'{o}vil. Donde existen concursos DARPA CHALLENGE donde todos los factores como exploraci\'{o}n, planeaci\'{o}n y coordinaci\'{o}n son clave para lograr los objetivos del Reto.}  \citenum{DARPA2022}. %se han aplicado teor\'{i}as de grafos para la obtenci\'{o}n de la mejor ruta. Los comportamientos reactivos son primordiales si pensamos en un agente aut\'{o}nomo.\\ %Esa percepci\'{o}n que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura de software tolerante a fallas, capaz de coordinar m\'{u}ltiples v\'{e}hiculos a\'{e}reos no trupulados a medida que incrementa o disminuye la oferta de VANT(s) disponibles.\\
 
 \subsection*{Panorama de m\'{e}todos de planificaci\'{o}n}
 
@@ -641,8 +675,7 @@ Un modelo del entorno nos ayudar\'{a} a conocer sus variables y reducir rutas in
 
 Dentro del survey Path Planning for the Mobile Robot\citenum{sym10100450} se\~{n}alan que el n\'{u}mero de publicaciones para planificadores de trayectoria, los algoritmos basados en Inteligencia Artificial han ganado terreno como soluciones para planificaci\'{o}n de trayectorias. Esto es en la b\'{u}squeda de la mejor trayectoria respecto a un mapa ya conocido.\\
 
-Por otra parte el suvey de \cite{PathPlanning2020} se centra en los planificadores de rutas para VANT haciendo tres clasificaciones: T\'{e}cnicas por representacion, t\'{e}cnicas cooperativas y t\'{e}cnicas no cooperativas. Plantean que el problema de planificaci\'{o}n de trayectorias es considerado como un problema de optimizaci\'{o}n de tal modo que obter una soluci\'{o}n \'{o}ptima entre todas las posibles.\\
-No existe un algoritmo exacto que defina una ruta \'{o}ptima.
+Por otra parte el suvey de \cite{PathPlanning2020} se centra en los planificadores de rutas para VANT haciendo tres clasificaciones: T\'{e}cnicas por representacion, t\'{e}cnicas cooperativas y t\'{e}cnicas no cooperativas. Plantean que el problema de planificaci\'{o}n de trayectorias es considerado como un problema de optimizaci\'{o}n de tal modo de obter una soluci\'{o}n factible entre todas las posibles. \textit{No existe un algoritmo exacto que defina una ruta \'{o}ptima}.\\
 
 Los procesos m\'{a}s comunes para planificaci\'{o}n son:
 
@@ -696,7 +729,6 @@ Varios metodos de Inteligencia Computacional se han propuesto para el problema d
 %    \end{itemize}
 %\end{itemize}
 
-\newpage
 %La siguiente tabla muestra los m\'{e}todos de planificaci\'{o}n de trayectorias.\\
 
 \begin{table}[h!]
@@ -743,7 +775,7 @@ RRT & \ding{51} & \ding{55} & \ding{51} & \begin{itemize}[left=0pt,topsep=0pt]
 \hline
 \end{tabular}
 \setlength\tabcolsep{0pt}
-\caption[mnodels pathsummary]{M\'{e}todos para planificaci\'{o}n de trayectorias usados en rob\'{o}tica}\label{tab:pathsummary}
+\caption[mnodels pathsummary]{M\'{e}todos para planificaci\'{o}n de trayectorias usados en rob\'{o}tica m\'{o}vil}\label{tab:pathsummary}
 \end{table}%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -878,7 +910,7 @@ De manera m\'{a}s espec\'{i}fica, se listan los siguientes objetivos: %espec\'{i
 \newpage
 \section*{Metodolog\'{\i}a}
 
-La metodolog\'{i}a propuesta se divide en tres etapas, iniciando en septiembre del 2023. A continuaci\'{o}n se detallan cada una de las actividades que se plantean realizar en cada una.
+La metodolog\'{i}a propuesta se divide en tres etapas, iniciando en septiembre del 2023 y terminando en agosto del 2024. A continuaci\'{o}n se detallan cada una de las actividades que se plantean realizar en cada una.
 
 \subsection*{Etapa 1. An\'{a}lisis y dise\~{n}o de la soluci\'{o}n propuesta}
 
@@ -940,9 +972,9 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
 % The top line
 %\diagbox[width=12.5em]{Actividades}{Cuatrimestres}
 \hline
-& \multicolumn{4}{c|}{\textbf{Cuatrimestre 1}} 
-& \multicolumn{4}{c|}{\textbf{Cuatrimestre 2}}  
-& \multicolumn{4}{c|}{\textbf{Cuatrimestre 3}}\\
+& \multicolumn{4}{c|}{\textbf{Cuatrimestre 1\footnote{Cuatrimestre correspondiente a los meses de Septiembre, Octubre, Noviembre, Diciembre del 2023}}} 
+& \multicolumn{4}{c|}{\textbf{Cuatrimestre 2\footnote{Cuatrimestre correspondiente a los meses de Enero, Febrero, Marzo, Abril del 2024}}}   
+& \multicolumn{4}{c|}{\textbf{Cuatrimestre 3\footnote{Cuatrimestre correspondiente a los meses Mayo, Junio, Julio, Agosto del 2024}}}\\
 \hline
 % The second line, with its five years of four quarters
 %\textcolor{black}{\textbf{Etapas}}
@@ -953,19 +985,19 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
 %\specialcell{Actividad 1\\espacio}        \on[0] \off[12] \\
 %Actividad 1    \on[0] \off[12]\\
 \hline
-\textbf{E1.A1.} Revisi\'{o}n estado del arte\footnote{Revisi\'{o}n de alertas de trabajos relacionados}
+\textbf{E1.A1.} Revisi\'{o}n literatura relevante\footnote{Revisi\'{o}n de alertas de trabajos relacionados sobre la exploraci\'{o}n y colaboraci\'{o}n multi-VANT, evaluaci\'{o}n de aptitudes para trabajos recientes}
 %en exploraci\'{o}n multi-VANT, estrategias de exploraci\'{o}n, algoritmos de coordinaci\'{o}n y evaci\'{o}n de obst\'{a}culos
 \on[12] \\
 \hline
-\textbf{E1.A2.} Evaluaci\'{o}n de aptitudes\footnote{Evaluaci\'{o}n a partir de los nuevos trabajos}     \on[12] \\
+%\textbf{E1.A2.} Evaluaci\'{o}n de aptitudes\footnote{Evaluaci\'{o}n a partir de los nuevos trabajos}     \on[12] \\
+%\hline
+\textbf{E1.A2.} Selecci\'{o}n de algoritmos \on[2] \off[10] \\
 \hline
-\textbf{E1.A3.} Selecci\'{o}n de algoritmos \on[2] \off[10] \\
+\textbf{E1.A3.} Dise\~{n}o de la arquitectura de software \off[1] \on[3] \off[8] \\
 \hline
-\textbf{E1.A4.} Elaboraci\'{o}n de soluci\'{o}n \off[1] \on[3] \off[8] \\
+\textbf{E1.A4.} Documentaci\'{o}n Etapa 1 \on[4]  \off[8] \\
 \hline
-\textbf{E1.A5.} Documentaci\'{o}n Etapa 1 \on[4]  \off[8] \\
-\hline
-\textbf{E1.A6.} Revisi\'{o}n de tesis Etapa 1 \off[3] \on[1]  \off[8] \\
+\textbf{E1.A5.} Revisi\'{o}n de tesis Etapa 1 \off[3] \on[1]  \off[8] \\
 \hline
 % using the on macro followed by the off macro
 \rowcolor{black!5}{\textbf{Etapa 2}}\\
@@ -979,29 +1011,28 @@ Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
 \textbf{E2.A3.} Control de desplazamientos\footnote{Un VANT}
 \off[2] \on[2]  \off[8] \\
 \hline
-
-\textbf{E2.A3.} Desarrollo de algoritmo de exploraci\'{o}n
+\textbf{E2.A4.} Desarrollo de algoritmo de exploraci\'{o}n
 \off[3] \on[2] \off[7] \\
 \hline
-\textbf{E2.A4.} Implementaci\'{o}n un solo VANT\footnote{Se considera un solo agente que resuelva la tarea de exploraci\'{o}n aut\'{o}noma con evaci\'{o}n de obst\'{a}culos}
+\textbf{E2.A5.} Implementaci\'{o}n y simulaci\'{o}n\footnote{Se considera un solo agente que resuelva la tarea de exploraci\'{o}n aut\'{o}noma con evaci\'{o}n de obst\'{a}culos}
 \off[3] \on[2] \off[7] \\
 \hline
-\textbf{E2.A6.} Simulaci\'{o}n un solo VANT
-\off[4] \on[1] \off[7] \\
-\hline
-\textbf{E2.A7.} Desarrollo de coordinaci\'{o}n
+%\textbf{E2.A6.} Simulaci\'{o}n un solo VANT
+%\off[4] \on[1] \off[7] \\
+%\hline
+\textbf{E2.A6.} Desarrollo de coordinaci\'{o}n
 \off[4] \on[3] \off[5] \\
 \hline
-\textbf{E2.A8.} Implementaci\'{o}n multi-VANT
+\textbf{E2.A7.} Implementaci\'{o}n y sumulaci\'{o}n\footnote{Se consider\'{a}n los m\'{u}ltiples-VANT que resuelva la tarea de exploraci\'{o}n aut\'{o}noma con evaci\'{o}n de obst\'{a}culos}
 \off[6] \on[2] \off[4] \\
 \hline
-\textbf{E2.A9.} Simulaci\'{o}n multi-VANT
-\off[6] \on[1] \off[5] \\
-\hline
-\textbf{E2.A10.} Documentaci\'{o}n Etapa 2
+%\textbf{E2.A9.} Simulaci\'{o}n multi-VANT
+%\off[6] \on[1] \off[5] \\
+%\hline
+\textbf{E2.A8.} Documentaci\'{o}n Etapa 2
 \off[4] \on[4] \off[4] \\
 \hline
-\textbf{E2.A11.} Revisi\'{o}n de tesis Etapa 2
+\textbf{E2.A9.} Revisi\'{o}n de tesis Etapa 2
 \off[7] \on[1] \off[4] \\
 \hline
 \rowcolor{black!5}{\textbf{Etapa 3}}\\
@@ -1124,7 +1155,6 @@ Para el desarrollo de este proyecto de investigaci\'{o}n, se har\'{a} uso de un 
 \item Almacenamiento 1 TB
 \end{itemize}
 
-\newpage
 \section*{Estado del arte}
 
 \noindent\hrulefill ((IDEAS INICIO)) \noindent\hrulefill\\

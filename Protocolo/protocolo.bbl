@@ -1,4 +1,4 @@
-\begin{thebibliography}{69}
+\begin{thebibliography}{65}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -208,17 +208,6 @@ Lauren Hirsch and Michael J. De~La Merced.
 \newblock URL
   \url{https://www.nytimes.com/2023/07/01/business/dealbook/fourth-of-july-fireworks-drones.html}.
 
-\bibitem[Hornung et~al.(2013)Hornung, Wurm, Bennewitz, Stachniss, and
-  Burgard]{ARMIN2013}
-Armin Hornung, Kai~M. Wurm, Maren Bennewitz, Cyrill Stachniss, and Wolfram
-  Burgard.
-\newblock {OctoMap}: An efficient probabilistic {3D} mapping framework based on
-  octrees.
-\newblock \emph{Autonomous Robots}, 2013.
-\newblock \doi{10.1007/s10514-012-9321-0}.
-\newblock URL \url{https://octomap.github.io}.
-\newblock Software available at \url{https://octomap.github.io}.
-
 \bibitem[Huang et~al.(2020)Huang, Chen, and Pan]{9031752}
 Zhengrui Huang, Chongcheng Chen, and Miaoxin Pan.
 \newblock Multiobjective uav path planning for emergency information collection
@@ -293,19 +282,6 @@ K.~N. McGuire, C.~De Wagter, K.~Tuyls, H.~J. Kappen, and G.~C. H.~E. de~Croon.
 \newblock \doi{10.1126/scirobotics.aaw9710}.
 \newblock URL
   \url{https://www.science.org/doi/abs/10.1126/scirobotics.aaw9710}.
-
-\bibitem[Meagher(1982)]{DONALD1982}
-Donald Meagher.
-\newblock Geometric modeling using octree encoding.
-\newblock \emph{Computer Graphics and Image Processing}, 19\penalty0
-  (2):\penalty0 129--147, June 1982.
-\newblock \doi{10.1016/0146-664x(82)90104-6}.
-\newblock URL \url{https://doi.org/10.1016/0146-664x(82)90104-6}.
-
-\bibitem[Min et~al.(2020)Min, Han, and Kim]{min2020accelerating}
-Heajung Min, Kyung~Min Han, and Young~J. Kim.
-\newblock Accelerating probabilistic volumetric mapping using ray-tracing
-  graphics hardware, 2020.
 
 \bibitem[Mohsan et~al.(2023)Mohsan, Othman, Li, H., and Khan]{UAVPRACTICAL2023}
 Syed Agha~Hassnain Mohsan, Nawaf Qasem~Hamood Othman, Alsharif Li, Yanlong,
@@ -399,24 +375,15 @@ Magnus Selin, Mattias Tiger, Daniel Duberg, Fredrik Heintz, and Patric
   1699--1706, 2019.
 \newblock \doi{10.1109/LRA.2019.2897343}.
 
-\bibitem[Shakhatreh et~al.(2019{\natexlab{a}})Shakhatreh, Sawalmeh, Al-Fuqaha,
-  Dou, Almaita, Khalil, Othman, Khreishah, and Guizani]{SHAKHATREH2019}
+\bibitem[Shakhatreh et~al.(2019)Shakhatreh, Sawalmeh, Al-Fuqaha, Dou, Almaita,
+  Khalil, Othman, Khreishah, and Guizani]{SHAKHATREH2019}
 Hazim Shakhatreh, Ahmad~H. Sawalmeh, Ala Al-Fuqaha, Zuochao Dou, Eyad Almaita,
   Issa Khalil, Noor~Shamsiah Othman, Abdallah Khreishah, and Mohsen Guizani.
 \newblock Unmanned aerial vehicles ({UAVs}): A survey on civil applications and
   key research challenges.
-\newblock \emph{{IEEE} Access}, 7:\penalty0 48572--48634, 2019{\natexlab{a}}.
+\newblock \emph{{IEEE} Access}, 7:\penalty0 48572--48634, 2019.
 \newblock \doi{10.1109/access.2019.2909530}.
 \newblock URL \url{https://doi.org/10.1109/access.2019.2909530}.
-
-\bibitem[Shakhatreh et~al.(2019{\natexlab{b}})Shakhatreh, Sawalmeh, Al-Fuqaha,
-  Dou, Almaita, Khalil, Othman, Khreishah, and Guizani]{UAVCIVIL2019}
-Hazim Shakhatreh, Ahmad~H. Sawalmeh, Ala Al-Fuqaha, Zuochao Dou, Eyad Almaita,
-  Issa Khalil, Noor~Shamsiah Othman, Abdallah Khreishah, and Mohsen Guizani.
-\newblock Unmanned aerial vehicles (uavs): A survey on civil applications and
-  key research challenges.
-\newblock \emph{IEEE Access}, 7:\penalty0 48572--48634, 2019{\natexlab{b}}.
-\newblock \doi{10.1109/ACCESS.2019.2909530}.
 
 \bibitem[Shen et~al.(2011)Shen, Michael, and Kumar]{SHEN2011}
 Shaojie Shen, Nathan Michael, and Vijay Kumar.
