@@ -333,9 +333,9 @@ El proyecto de estrategias para la exploraci\'{o}n coordinada multi-VANT se cent
 
 Un VANT, tambi\'{e}n conocido como dron o sistema a\'{e}reo no tripulado (UAS), se refiere a una aeronave que opera sin un piloto humano a bordo. Los VANT est\'{a}n equipados con varios sensores, sistemas de comunicaci\'{o}n y computadoras a bordo que les permiten operar de forma aut\'{o}noma o bajo control remoto. Estos aviones pueden ser de diferentes tama\~{n}os, desde peque\~{n}os modelos hasta m\'{a}quinas comerciales o militares m\'{a}s grandes.\\
 
-Los VANT se han vuelto cada vez m\'{a}s populares debido a su versatilidad y potencial en una amplia gama de aplicaciones. Son capaces de capturar imágenes a\'{e}reas, realizar vigilancia, realizar inspecciones, brindar una respuesta r\'{a}pida en situaciones de emergencia y mucho m\'{a}s. Su capacidad para acceder a entornos desafiantes o peligrosos, junto con los avances tecnol\'{o}gicos, ha ampliado su uso.\\
+%Los VANT se han vuelto cada vez m\'{a}s populares debido a su versatilidad y potencial en una amplia gama de aplicaciones. Son capaces de capturar imágenes a\'{e}reas, realizar vigilancia, realizar inspecciones, brindar una respuesta r\'{a}pida en situaciones de emergencia y mucho m\'{a}s. Su capacidad para acceder a entornos desafiantes o peligrosos, junto con los avances tecnol\'{o}gicos, ha ampliado su uso.\\
 
-En el contexto del proyecto de exploraci\'{o}n multi-VANT, estos VANT aut\'{o}nomos se utilizar\'{a}n para navegar y explorar entornos desconocidos. Al trabajar juntos de manera coordinada, los VANT compartir\'{a}n informaci\'{o}n, tareas y recursos, optimizando el proceso de exploraci\'{o}n para una mayor eficiencia y una cobertura integral. El proyecto tiene como objetivo desarrollar algoritmos, protocolos y estrategias que permitan que estos VANT se comuniquen de manera efectiva, asignen tareas, eviten obst\'{a}culos y exploren en colaboraci\'{o}n el entorno dado.\\
+En el contexto del proyecto de exploraci\'{o}n multi-VANT, se utilizar\'{a}n para navegar y explorar entornos desconocidos. Al trabajar juntos de manera coordinada, los VANT compartir\'{a}n informaci\'{o}n, optimizando el proceso de exploraci\'{o}n para una mayor eficiencia y una cobertura. El proyecto tiene como objetivo desarrollar algoritmos, protocolos y estrategias que permitan que estos VANT se comuniquen de manera efectiva, asignen tareas, eviten obst\'{a}culos y exploren en colaboraci\'{o}n el entorno dado.\\
 
 En general, el proyecto busca aprovechar las capacidades de los VANT para facilitar la exploraci\'{o}n eficiente y colaborativa de territorios desconocidos, al tiempo que mejora su autonom\'{i}a y coordinaci\'{o}n. Al aprovechar el potencial de la colaboraci\'{o}n multi-VANT, el proyecto tiene como objetivo contribuir a los avances en las estrategias de exploraci\'{o}n y expandir a\'{u}n m\'{a}s las aplicaciones de los VANT en varios dominios.\\
 
@@ -347,11 +347,30 @@ En general, el proyecto busca aprovechar las capacidades de los VANT para facili
 
 \subsection*{Antecedentes y motivaci\'{o}n para el proyecto}
 
+Los avances tecnol\'{o}gicos son una secuencia de conocimientos y experiencia a lo largo del tiempo, ya no nos sorprende observar los veh\'{i}culos a\'{e}reos no tripulados (VANT) hoy en d\'{i}a, convirti\'{e}ndose en una herramienta que emerge principalmente de la milicia. Se reporta en la literatura el uso temprano de globos de helio con cargas explosivas usado por el ejercito austriaco como t\'{e}cnicas militares. Por otra parte, los trabajos de los hermanos br\'{e}guet en 1907 remontan la idea e implementaci\'{o}n del concepto de multi-rotor, no obstante a pesar que solo pudo levantarse pocos cent\'{i}metros del suelo, no fue hasta 1917 que el primer VANT de ala fija fu\'{e} presentado, \'{e}ste avance incorpor\'{o} tecnol\'{o}gia de radio control desarrollada por Nikola Tesla en 1898 convirti\'{e}ndose en el primer avi\'{o}n piloteado remotamente de la historia. A pesar de que su invento fu\'{e} con fines militares, nunca se hizo uso de \'{e}l.\\
+
+Los avances tecnol\'{o}gicos en electr\'{o}nica impulsados por la introducci\'{o}n del transistor permitieron la reducci\'{o}n de componentes electr\'{o}nicos, comenzando a ser cada vez m\'{a}s populares los aviones de radio control para uso recreativo.\\
+Diversos emprendimientos emergieron a ra\'{i}z de los hobbys de radio control siendo uno de ellos la empresa alemana Micro-Drones que dentro de su portal remonta los origenes de la empresa al a\~{n}o 2001 con el prototipo de unVANT multi-rotor controlado a distancia, 2009 por el mexicano Jordi Mu\~{n}oz con capital extranjero crea la empresa 3DR.\\
+
+En el a\~{n}o 2010 a ra\'{i}z de la introducci\'{o}n  del AR-DRONE cuya conectividad v\'{i}a WIFI y bajos costos, permitier\'{o}n inovar y pensar en dotar de autonom\'{i}a. A ra\'{i}z de la fuerte adopci\'{o}n de esta tecnolog\'{i}a para uso civil, se han presentado diversas regulaciones de vuelo con la intenci\'{o}n de minimizar los accidentes a\'{e}reos.\\
+
+Los primeros trabajos de autonom\'{i}a con veh\'{i}culos a\'{e}reos no tripulados a partir del uso de AR-Drone considerada una plataforma para la investigaci\'{o}n y educaci\'{o}n \cite{ARDRONE2011} fueron sencillos, detectar colores con el uso de las c\'{a}maras del VANT, seguir marcadores, aterrizar al detectar ciertos tags, crear mapas con fotograf\'{i}as e inclusive crear controles de vuelo a partir de l\'{o}gica difusa. Ampliando el panorama de las posibles aplicaciones civiles que un VANT puede proporcionar.\\
+Debido a su poca autonom\'{i}a de vuelo y limitados sensores, los avances en el \'{a}rea migraron a plataformas m\'{a}s complejas y soluciones a la medida.\\
+
+En 2013, Amazon Prime present\'{o} su inter\'{e}s para la entrega r\'{a}pida de productos. Siendo un proyecto prometedor, pero debido a las capacidades tecnol\'{o}gicas el proyecto no se culmin\'{o} y qued\'{o} descontinuado. El c\'{o}mo dotar de autonom\'{i}a a un VANT es un campo activo de investigaci\'{o}n. \cite{Bekey2005} en su libro define un robot aut\'{o}nomo como una  m\'{a}quina inteligente capaz de ejecutar diversas tareas en un ambiente por si mismo, sin que algui\'{e}n gu\'{i}e sus movimientos.\\
+
+La navegaci\'{o}n aut\'{o}noma ha sido un campo activo en rob\'{o}tica m\'{o}vil por m\'{a}s de 60 a\~{n}os, tendiendo grandes avances en autonom\'{i}a, percepci\'{o}n de informaci\'{o}n y controles reactivos, emergiendo algoritmos de exploraci\'{o}n y navegaci\'{o}n, conceptos como mapeo y localizaci\'{o}n simult\'{a}neos y arquitecturas de control simples.\\
+
+Debido a que un veh\'{i}culo aereo no tripulado multi-rotor es marginalmente estable el progreso de autonom\'{i}a tom\'{o} como primera etapa controlar y estabilizar el VANT en el aire con algoritmos r\'{a}pidos que permitieron crear maniobras cada vez m\'{a}s complejas y agresivas. Avances en evaci\'{o}n de obst\'{a}culos, planificaci\'{o}n de trayectorias, el mapeo de su entorno con diversos sensores han permitido dotar de autonom\'{i}a sin necesidad de GPS.\\
+
+%Buscar la mejor soluci\'{o}n, \textbf{optimizar} han sido importante para el progreso de una sociedad.\\
+El hombre, \'{u}nico ser vivo consiente de donde vive, desde muy antiguo ha sentido la necesidad de conocer, descubrir cada lugar que pisa y mirar hacia el horizonte. Desarrollar el sentido de la orientaci\'{o}n a partir de los elementos que le rodean, desde el momento que el hombre comienza a representar las superficies nacen lo que hoy conocemos como mapas.(Fragmentos del documental de divulgaci\'{o}n del Instituto de Estad\'{i}istica y Cartograf\'{i}a de Andaluc\'{i}a)\\
+
 La exploraci\'{o}n de entornos desconocidos juega un papel fundamental en varias aplicaciones, como misiones de b\'{u}squeda y rescate, vigilancia, respuesta a desastres y exploraci\'{o}n planetaria. Los veh\'{i}culos a\'{e}reos no tripulados (VANT) se han convertido en herramientas valiosas gracias a su movilidad, versatilidad y capacidad para acceder a \'{a}reas peligrosas y de dif\'{i}cil acceso.\\
 
-Sin embargo, los VANT individuales enfrentan limitaciones en t\'{e}rminos de \'{a}rea de cobertura, duraci\'{o}n de la bater\'{i}a, as\'{i} como capacidades de procesamiento. La exploraci\'{o}n colaborativa multi-VANT ofrece soluciones prometedoras para superar estas limitaciones y lograr una exploraci\'{o}n eficiente y completa de entornos complejos a gran escala. Al combinar las fortalezas y los recursos de multi-VANT, la exploraci\'{o}n colaborativa puede mejorar tanto la cobertura como la eficiencia, lo que llevar\'{i}a a un mayor \'{e}xito de la misi\'{o}n.\\
+Sin embargo, los VANT individuales enfrentan limitaciones en t\'{e}rminos de \'{a}rea de cobertura, duraci\'{o}n de la bater\'{i}a, as\'{i} como capacidades de procesamiento. La exploraci\'{o}n colaborativa multi-VANT ofrece soluciones prometedoras para superar estas limitaciones y lograr una exploraci\'{o}n eficiente y completa de entornos complejos a gran escala. Al combinar las fortalezas y los recursos multi-VANT, la exploraci\'{o}n colaborativa puede mejorar tanto la cobertura como la eficiencia, lo que llevar\'{i}a a un mayor \'{e}xito de la misi\'{o}n.\\
 
-La colaboraci\'{o}n multi-VANT para tareas de exploraci\'{o}n plantea varios desaf\'{i}os, incluida la \textbf{asignaci\'{o}n de tareas}, la \textbf{comunicaci\'{o}n}, la \textbf{coordinaci\'{o}n}, la \textbf{planificaci\'{o}n de rutas} y la \textbf{evaci\'{o}n de obst\'{a}culos}. El desarrollo de algoritmos y estrategias efectivos para abordar estos desaf\'{i}os es crucial para garantizar una colaboraci\'{o}n exitosa y mejorar la eficiencia.\\
+La colaboraci\'{o}n multi-VANT para tareas de exploraci\'{o}n plantea varios desaf\'{i}os, incluida la \textbf{asignaci\'{o}n de tareas}, la \textbf{comunicaci\'{o}n}, la \textbf{coordinaci\'{o}n}, la \textbf{planificaci\'{o}n de rutas} y la \textbf{evaci\'{o}n de obst\'{a}culos}. El desarrollo de algoritmos y estrategias efectivos para abordar estos desaf\'{i}os es crucial para garantizar una colaboraci\'{o}n exitosa.\\ % y mejorar la eficiencia.\\
 
 Simular el comportamiento de m\'{u}ltiples VANT en un entorno controlado y realista es de suma importancia para validar y evaluar el rendimiento del sistema de exploraci\'{o}n colaborativa. Las simulaciones permiten pruebas, an\'{a}lisis y optimizaci\'{o}n de algoritmos y par\'{a}metros, mientras se reducen los riesgos asociados con las pruebas del mundo real.\\
 
@@ -359,8 +378,7 @@ Esta tesis tiene como objetivo abordar los desaf\'{i}os y explorar las oportunid
 
 George A. \cite{Bekey2005} en su libro \textit{Autonomus Robots From Biological Inspiration to Implementation and Control} define un robot como una m\'{a}quina que sensa, piensa y act\'{u}a. Es por ello que debe de contar con sensores, poder procesar informaci\'{o}n para la toma de decisiones y actuadores que permitan la movilidad. Los sensores son necesarios para la obtenci\'{o}n de informaci\'{o}n de su entorno. \st{Comportamientos reactivos que no requieran procesar informaci\'{o}n y una inteligencia para resolver diversos retos que se puedan presentar.}\\
 
-Los robots aut\'{o}nomos son m\'{a}quinas inteligentes capaces de ejecutar diversas tareas en un ambiente por si mismos sin que algui\'{e}n gu\'{i}e sus movimientos \cite{Bekey2005}.\\
-
+%Los robots aut\'{o}nomos son m\'{a}quinas inteligentes capaces de ejecutar diversas tareas en un ambiente por si mismos sin que algui\'{e}n gu\'{i}e sus movimientos \cite{Bekey2005}.\\
 Para considerar a un robot aut\'{o}nomo, \'{e}ste deber\'{a} responder tres preguntas
   \begin{multicols}{3}
   
@@ -373,54 +391,71 @@ Para considerar a un robot aut\'{o}nomo, \'{e}ste deber\'{a} responder tres preg
 
   Para responder, el robot debe tener un modelo del ambiente, percibir y analizar el ambiente, tener la habilidad de planear y ejecutar sus movimientos.\\
 
-  Frecuentemente definimos a un robot como una m\'{a}quina capaz de sensar, pensar y actuar. En Inteligencia Artificial dichos sistemas se les conoce como \textbf{agentes}. Los robots se distinguen de los agentes ya que su implementaci\'{o}n se lleva acabo en el mundo real recibiendo informaci\'{o}n del exterior a trav\'{e}s de sensores. Estando sujetos a las leyes que rigen el mundo f\'{i}sico (ya que tienen masa e inercia). Parte escencial de un robot hoy en dia, es el uso de computadoras que incrementan la velocidad de procesamiento con funciones cognitivas complejas \cite{ZOUGANELI2022}.\\
+  %Frecuentemente definimos a un robot como una m\'{a}quina capaz de sensar, pensar y actuar. En Inteligencia Artificial dichos sistemas se les conoce como \textbf{agentes}. Los robots se distinguen de los agentes ya que su implementaci\'{o}n se lleva acabo en el mundo real recibiendo informaci\'{o}n del exterior a trav\'{e}s de sensores. Estando sujetos a las leyes que rigen el mundo f\'{i}sico (ya que tienen masa e inercia). Parte escencial de un robot hoy en dia, es el uso de computadoras que incrementan la velocidad de procesamiento con funciones cognitivas complejas \cite{ZOUGANELI2022}.\\
 
-  Los V\'{e}hiculos A\'{e}reos No Tripulados tienen cualidades sobresalientes que los convierten adecuados para la exploraci\'{o}n. La movilidad, una perspectiva privilegiada de su entorno y su dinamismo hacen que el despliege de los VANT sea una tarea sencilla, teniendo acceso r\'{a}pido a zonas afectadas por desastres, permitiendoles llegar a \'{a}reas que pueden ser inaccesibles para otro tipo de robots. El uso adecuado de m\'{u}ltiples V\'{e}hiculos A\'{e}reos No Tripulados (VANT) proporciona robustez, brindando resilencia frente a fallas de un VANT siendo una de las principales ventajas del uso de sistemas multi-robot.\\
+  Los v\'{e}hiculos a\'{e}reos no tripulados tienen cualidades sobresalientes que los vuelven adecuados para la exploraci\'{o}n. La movilidad, una perspectiva privilegiada de su entorno y su dinamismo, teniendo acceso r\'{a}pido a zonas afectadas por desastres, permiti\'{e}ndoles llegar a \'{a}reas que pueden ser inaccesibles para otro tipo de robot. El uso adecuado de m\'{u}ltiples v\'{e}hiculos a\'{e}reos no tripulados (VANT) proporciona robustez, brindando resilencia frente a fallas de un VANT siendo una de las principales ventajas del uso de sistemas multi-robot.\\
   
   %\st{La autonom\'{i}a de los robots se ha ampliado en diversos aspectos y no es extra\~{n}o tener uno que ayuden en la limpieza del hogar.}
-  Los \'{u}ltimos 100 a\~{n}os han sido testigos de un progreso notable en la rob\'{o}tica m\'{o}vil, desde los primeros conceptos y veh\'{i}culos controlados a distancia hasta el desarrollo de robots aut\'{o}nomos capaces de realizar tareas e interacciones complejas. El futuro de la rob\'{o}tica m\'{o}vil tiene un enorme potencial, y se espera que los avances en Inteligencia Artifical, tecnolog\'{i}a de sensores y autonom\'{i}a impulsen innovaciones en varias industrias.\\
+  %Los \'{u}ltimos 100 a\~{n}os han sido testigos de un progreso notable en la rob\'{o}tica m\'{o}vil, desde los primeros conceptos y veh\'{i}culos controlados a distancia hasta el desarrollo de robots aut\'{o}nomos capaces de realizar tareas e interacciones complejas. El futuro de la rob\'{o}tica m\'{o}vil tiene un enorme potencial, y se espera que los avances en Inteligencia Artifical, tecnolog\'{i}a de sensores y autonom\'{i}a impulsen innovaciones en varias industrias.\\
   
+%\begin{vtimeline}[description={text width=14cm}, 
+% row sep=8ex, 
+% use timeline header,
+% timeline title={Rob\'{o}tica M\'{o}vil 100 años}]
+%1900-1910 & Primeros conceptos en rob\'{o}tica: la idea de seres mec\'{a}nicos y aut\'{o}matas gan\'{o} popularidad durante este per\'{i}odo, alimentando la imaginaci\'{o}n para futuros avances en rob\'{o}tica\endlr
+%1920-1930 & Surgimiento de los veh\'{i}culos a control remoto: Los veh\'{i}culos a control remoto, como los modelos de botes y autom\'{o}viles controlados por radio, comenzaron a ganar popularidad, sentando las bases para futuros sistemas rob\'{o}ticos m\'{o}viles.\endlr
+%1940-1950 & Primeras investigaciones en rob\'{o}tica: Investigadores como Gray Walter y William Gray Walter comenzaron a experimentar con robots m\'{o}viles aut\'{o}nomos, allanando el camino para el campo de la rob\'{o}tica m\'{o}vil.\endlr
+%1960-1970 & Shakey the Robot: desarrollado por el Instituto de Investigación de Stanford, Shakey se convirtió en el primer robot m\'{o}vil aut\'{o}nomo capaz de razonar y navegar a trav\'{e}s de su entorno.\endlr
+%1980-1990 & Avances en la planificaci\'{o}n y navegaci\'{o}n de rutas: los estudios se centraron en el desarrollo de algoritmos y m\'{e}todos para la planificaci\'{o}n de rutas, la evasi\'{o}n de obst\'{a}culos y la localizaci\'{o}n y mapeo simult\'{a}neos (SLAM).\endlr
+%2000-2010 & La rob\'{o}tica m\'{o}vil se expandi\'{o} a dominios como la atenci\'{o}n m\'{e}dica, la agricultura, el transporte y la exploraci\'{o}n espacial, con robots que ayudan en tareas que van desde la cirug\'{i}a hasta la entrega de paquetes.\endlr
+%Iteracci\'{o}n humano-robot: la investigaci\'{o}n se centr\'{o} en permitir una colaboraci\'{o}n segura y eficaz entre humanos y robots, incluido el procesamiento del lenguaje natural, el reconocimiento de gestos y los comportamientos sociales.\endlr
+%2020-actualidad & Robótica de enjambres: los investigadores exploran los comportamientos colectivos y la coordinación entre grandes grupos de robots para realizar tareas complejas. Inteligencia artificial y aprendizaje automático: los robots móviles aprovechan los avances en técnicas de inteligencia artificial y aprendizaje automático para mejorar la percepción, la toma de decisiones y las capacidades de aprendizaje.\endlr
+%\end{vtimeline}
+
 \begin{vtimeline}[description={text width=14cm}, 
  row sep=8ex, 
  use timeline header,
- timeline title={Rob\'{o}tica M\'{o}vil 100 años}]
-1900-1910 & Primeros conceptos en rob\'{o}tica: la idea de seres mec\'{a}nicos y aut\'{o}matas gan\'{o} popularidad durante este per\'{i}odo, alimentando la imaginaci\'{o}n para futuros avances en rob\'{o}tica\endlr
-1920-1930 & Surgimiento de los veh\'{i}culos a control remoto: Los veh\'{i}culos a control remoto, como los modelos de botes y autom\'{o}viles controlados por radio, comenzaron a ganar popularidad, sentando las bases para futuros sistemas rob\'{o}ticos m\'{o}viles.\endlr
-1940-1950 & Primeras investigaciones en rob\'{o}tica: Investigadores como Gray Walter y William Gray Walter comenzaron a experimentar con robots m\'{o}viles aut\'{o}nomos, allanando el camino para el campo de la rob\'{o}tica m\'{o}vil.\endlr
-1960-1970 & Shakey the Robot: desarrollado por el Instituto de Investigación de Stanford, Shakey se convirtió en el primer robot m\'{o}vil aut\'{o}nomo capaz de razonar y navegar a trav\'{e}s de su entorno.\endlr
-1980-1990 & Avances en la planificaci\'{o}n y navegaci\'{o}n de rutas: los estudios se centraron en el desarrollo de algoritmos y m\'{e}todos para la planificaci\'{o}n de rutas, la evasi\'{o}n de obst\'{a}culos y la localizaci\'{o}n y mapeo simult\'{a}neos (SLAM).\endlr
-2000-2010 & La rob\'{o}tica m\'{o}vil se expandi\'{o} a dominios como la atenci\'{o}n m\'{e}dica, la agricultura, el transporte y la exploraci\'{o}n espacial, con robots que ayudan en tareas que van desde la cirug\'{i}a hasta la entrega de paquetes.\endlr
-%Iteracci\'{o}n humano-robot: la investigaci\'{o}n se centr\'{o} en permitir una colaboraci\'{o}n segura y eficaz entre humanos y robots, incluido el procesamiento del lenguaje natural, el reconocimiento de gestos y los comportamientos sociales.\endlr
-2020-actualidad & Robótica de enjambres: los investigadores exploran los comportamientos colectivos y la coordinación entre grandes grupos de robots para realizar tareas complejas. Inteligencia artificial y aprendizaje automático: los robots móviles aprovechan los avances en técnicas de inteligencia artificial y aprendizaje automático para mejorar la percepción, la toma de decisiones y las capacidades de aprendizaje.\endlr
+ timeline title={VANT Autonomía}]
+2010 & Aparici\'{o}n de los primeros VANT comerciales de bajo costo con funciones b\'{a}sicas y control por WIFI.\endlr
+2011 & Mejoras en la estabilizaci\'{o}n y el control de vuelo.\endlr
+2012 & Integraci\'{o}n de tecnolog\'{i}as de visi\'{o}n por computadora permitiendo realizar el reconocimiento y seguimiento de objetos.\endlr
+2013 & Los sistemas de detecci\'{o}n y evasi\'{o}n de obst\'{a}culos equipan a los VANT con la capacidad de navegar de forma aut\'{o}noma alrededor de los obst\'{a}culos en su trayectoria de vuelo.\endlr
+2014 & Con el uso de algoritmos para SLAM, los VANT pueden construir mapas de su entorno en tiempo real mientras estiman sus propias posiciones.\endlr
+2015 & Avances significativos en el control de m\'{u}ltiples VANT.\endlr
+2016 & Desarrollo de planificaci\'{o}n de rutas que permite a los VANT naveguen de forma aut\'{o}noma a trav\'{e}s de entornos complejos y din\'{a}micos.\endlr
+2017 & Adopci\'{o}n de algoritmos de aprendizaje profundo mejora el reconocimiento y el seguimiento de objetos, lo que permite que los VANT detecten y sigan objetivos espec\'{i}ficos u objetos de inter\'{e}s de forma aut\'{o}noma.\endlr
+2018 & T\'{e}cnicas de aprendizaje autom\'{a}tico e inteligencia artificial que permiten mejorar las capacidades de toma de decisiones, permitiendo adaptarse a las condiciones cambiantes y tomen decisiones inteligentes en tiempo real.\endlr
+2019 & Integraci\'{o}n de t\'{e}cnicas avanzadas de fusi\'{o}n de sensores, combinando datos de m\'{u}ltiples sensores, mejora la percepci\'{o}n y el conocimiento de la situaci\'{o}n de los VANT, mejorando sus capacidades de vuelo aut\'{o}nomo en diversos entornos.\endlr
+2020 & Los avances continuos en la autonom\'{i}a de los VANT incluyen el uso de computaci\'{o}n a bordo con sistemas capaces de manejar tareas de procesamiento complejas, reduciendo la dependencia de recursos computacionales externos.\endlr
+2021 & La investigación en curso se centra en el desarrollo de sistemas de VANT autónomos con capacidades mejoradas de comunicación y colaboración, lo que permite que los VANT trabajen juntos sin problemas para misiones complejas, como búsqueda y rescate o inspección de infraestructura.\endlr
 \end{vtimeline}
 
-\vspace{2cm}
+%\vspace{2cm}
 
 %La exploraci\'{o}n multi-VANT ofrece varios beneficios, siendo una de ellas la cobertura r\'{a}pida de \'{a}reas siendo \'{u}til en tareas como b\'{u}squeda y rescate, as\'{i} como el estudio de zonas de desastres.\\
 
+\phantom{La colaboraci\'{o}n entre robots de manera coordinada ofrece ventajas en comparaci\'{o}n con el uso de un solo robot como la distribuci\'{o}n de tareas, redundancia de informaci\'{o}n, cubir mayores \'{a}reas. Pero la coordinaci\'{o}n y comunicaci\'{o}n entre ellos puede aumentar la complejidad del sistema, para ello debemos de dotarlos de algoritmos r\'{a}pidos para garantizar una operaci\'{o}n eficiente.\\}
 
-La colaboraci\'{o}n entre robots de manera coordinada ofrece ventajas en comparaci\'{o}n con el uso de un solo robot como la distribuci\'{o}n de tareas, redundancia de informaci\'{o}n, cubir mayores \'{a}reas. Pero la coordinaci\'{o}n y comunicaci\'{o}n entre ellos puede aumentar la complejidad del sistema, para ello debemos de dotarlos de algoritmos r\'{a}pidos para garantizar una operaci\'{o}n eficiente.\\
+\phantom{Existen desaf\'{i}os inherentes con la exploraci\'{o}n multi-VANT. Una coordinaci\'{o}n que garantice no colisonar entre ellos, manteniendo una distancia que no comprometa la integridad de los m\'{u}ltiples VANT y la comunicaci\'{o}n efectiva con sus vecinos son desaf\'{i}os que deben abordarse.\\}
 
-Existen desaf\'{i}os inherentes con la exploraci\'{o}n multi-VANT. Una coordinaci\'{o}n que garantice no colisonar entre ellos, manteniendo una distancia que no comprometa la integridad de los m\'{u}ltiples VANT y la comunicaci\'{o}n efectiva con sus vecinos son desaf\'{i}os que deben abordarse.\\
-
-El \'{e}xito de sus misiones dependen de alcanzar un determinado lugar para que puedan realizar ciertas acciones.\\
+\phantom{El \'{e}xito de sus misiones dependen de alcanzar un determinado lugar para que puedan realizar ciertas acciones.\\}
 
 %Buscamos crear una arquitectura multi-robot que logre el \'{e}xito de sus misiones de una forma segura y confiable.\\
 
-Algunas aplicaciones multi-robot \citenum{6320878}:
-\begin{multicols}{2}
+%Algunas aplicaciones multi-robot \citenum{6320878}:
+%\begin{multicols}{2}
   
-  \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
-  \item Almacenes automatizados
-  \item Log\'{i}stica colaborativa
-  \item Inspecci\'{o}n de infraestructuras
-  \item Vigilancia de \'{a}reas de inter\'{e}s
-  \item B\'{u}squeda y rescate
-  \item Agricultura de presici\'{o}n
-  \item Limpieza y saneamiento
-  \item Monitoreo ambiental
-  \end{itemize}
-\end{multicols}
+%  \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+%  \item Almacenes automatizados
+%  \item Log\'{i}stica colaborativa
+%  \item Inspecci\'{o}n de infraestructuras
+%  \item Vigilancia de \'{a}reas de inter\'{e}s
+%  \item B\'{u}squeda y rescate
+%  \item Agricultura de presici\'{o}n
+%  \item Limpieza y saneamiento
+%  \item Monitoreo ambiental
+%  \end{itemize}
+%\end{multicols}
 
 % ESTE TEXTO ES BUENO
 %Con la llegada de las primeras c\'{a}maras 3D capaces de obtener valores de profundidad (RGB-D), mayores capacidades de almacenamiento en menos espacio nos permiten ver el entorno como realmente es $\mathbb{R}^{3}$.\\
@@ -430,8 +465,7 @@ Algunas aplicaciones multi-robot \citenum{6320878}:
 %En 2013 se introduj\'{o} un nuevo concepto para la representaci\'{o}n de mapas 3D basados en los principios de los trabajos de \cite{DONALD1982}, haciendo que la representaci\'{o}n de ocupaci\'{o}n en entornos 3D se realice de manera eficiente para aplicaciones en rob\'{o}tica donde se necesitan algoritmos r\'{a}pidos.\\
 
 %Los Mapas Volumetricos Probabilisticos (PVM) representan un entorno 3D usado para tareas de navegaci\'{o}n autonoma. Los trabajos de \cite{ARMIN2013} (OctoMap) es una extensi\'{o}n espec\'{i}fica del Octree que se utiliza principalmente para representar mapas tridimensionales ocupados y desconocidos en entornos de rob\'{o}tica y navegaci\'{o}n. En lugar de simplemente dividir el espacio en octantes, el OctoMap utiliza el Octree para modelar la probabilidad de ocupaci\'{o}n en diferentes regiones del espacio. En recientes trabajos \cite{min2020accelerating} proponen dar soluci\'{o}n a los cuellos de botella que se presentan en el OctoMap para determinar la ocupaci\'{o}n en el grid de voxel volumetricos mostrando acelerar el tiempo de computo en la construcci\'{o}n de mapas con la implementaci\'{o}n de Aceleradores Gr\'{a}ficos GPU.\\
-%Obteniendo los siguientes resultados cuando el tama\~{n}o del voxel es de 10 cm, OctoMap-RT es 49.3x r\'{a}pido que OctoMap y 8.7x r\'{a}pido que SuperRay
-%Variantes de OctoMap: SuperRay, \textbf{OctoMap-RT}
+%Obteniendo los siguientes resultados cuando el tama\~{n}o del voxel es de 10 cm, OctoMap-RT es 49.3x r\'{a}pido que OctoMap y 8.7x r\'{a}pido que SuperRay Variantes de OctoMap: SuperRay, \textbf{OctoMap-RT}
 
 %
 %  \begin{figure}
@@ -503,6 +537,9 @@ Algunas aplicaciones multi-robot \citenum{6320878}:
 
 %Autonom\'{i}a es referente a sistemas capaces de operar en el mundo como lo conocemos sin un control que lo gobierne, siendo este un campo activo de investigaci\'{o}n lo que ha causado que la autonom\'{i}a de los robots se vea incrementada as\'{i} como su inteligencia.
 
+
+
+\newpage
 \subsection*{Problemas de control}
 
 La organizaci\'{o}n de software asociada con los niveles de control tiene el nombre de \textbf{Arquitectura Software de control} de un robot.\\

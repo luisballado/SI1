@@ -1,4 +1,4 @@
-\begin{thebibliography}{65}
+\begin{thebibliography}{60}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -117,15 +117,6 @@ Yangjie Cui, Xin Dong, Daochun Li, and Zhan Tu.
   Engineering (ICRAE)}, pages 100--104, 2022.
 \newblock \doi{10.1109/ICRAE56463.2022.10056204}.
 
-\bibitem[Daponte et~al.(2015)Daponte, Vito, Mazzilli, Picariello, Rapuano, and
-  Riccio]{Daponte2015}
-Pasquale Daponte, Luca~De Vito, Gianluca Mazzilli, Francesco Picariello, Sergio
-  Rapuano, and Maria Riccio.
-\newblock Metrology for drone and drone for metrology: Measurement systems on
-  small civilian drones.
-\newblock \emph{2015 IEEE Metrology for Aerospace (MetroAeroSpace)}, pages
-  306--311, 2015.
-
 \bibitem[Deng et~al.(2023)Deng, Chen, Zhang, and Liu]{DENG2023}
 Lixia Deng, Huanyu Chen, Xiaoyiqun Zhang, and Haiying Liu.
 \newblock Three-dimensional path planning of uav based on improved particle
@@ -188,25 +179,22 @@ Jianjun Gui, Tianyou Yu, Baosong Deng, Xiaozhou Zhu, and Wen Yao.
 \newblock \doi{10.3390/drones7060337}.
 \newblock URL \url{https://www.mdpi.com/2504-446X/7/6/337}.
 
-\bibitem[Gupta et~al.(2016)Gupta, Jain, and Vaszkun]{GUPTA2016}
-Lav Gupta, Raj Jain, and Gabor Vaszkun.
-\newblock Survey of important issues in uav communication networks.
-\newblock \emph{IEEE Communications Surveys and Tutorials}, 18\penalty0
-  (2):\penalty0 1123--1152, 2016.
-\newblock \doi{10.1109/COMST.2015.2495297}.
-
-\bibitem[Hehn and D'Andrea(2011)]{PENDU2011}
-Markus Hehn and Raffaello D'Andrea.
-\newblock A flying inverted pendulum.
-\newblock In \emph{2011 IEEE International Conference on Robotics and
-  Automation}, pages 763--770, 2011.
-\newblock \doi{10.1109/ICRA.2011.5980244}.
-
 \bibitem[Hirsch and Merced(2023)]{DRONESHOW2023}
 Lauren Hirsch and Michael J. De~La Merced.
 \newblock Fireworks have a new competitor: Drones, Jul 2023.
 \newblock URL
   \url{https://www.nytimes.com/2023/07/01/business/dealbook/fourth-of-july-fireworks-drones.html}.
+
+\bibitem[Hornung et~al.(2013)Hornung, Wurm, Bennewitz, Stachniss, and
+  Burgard]{ARMIN2013}
+Armin Hornung, Kai~M. Wurm, Maren Bennewitz, Cyrill Stachniss, and Wolfram
+  Burgard.
+\newblock {OctoMap}: An efficient probabilistic {3D} mapping framework based on
+  octrees.
+\newblock \emph{Autonomous Robots}, 2013.
+\newblock \doi{10.1007/s10514-012-9321-0}.
+\newblock URL \url{https://octomap.github.io}.
+\newblock Software available at \url{https://octomap.github.io}.
 
 \bibitem[Huang et~al.(2020)Huang, Chen, and Pan]{9031752}
 Zhengrui Huang, Chongcheng Chen, and Miaoxin Pan.
@@ -215,14 +203,6 @@ Zhengrui Huang, Chongcheng Chen, and Miaoxin Pan.
 \newblock \emph{IEEE Internet of Things Journal}, 7\penalty0 (8):\penalty0
   6993--7009, 2020.
 \newblock \doi{10.1109/JIOT.2020.2979521}.
-
-\bibitem[J.~Senthilnath(2017)]{VEGETACION2017}
-Akanksha~Dokania J.~Senthilnath, Manasa~Kandukuri.
-\newblock Application of uav imaging platform for vegetation analysis based on
-  spectral-spatial methods.
-\newblock \emph{Computers and Electronics in Agriculture}, Volume 140\penalty0
-  (0168-1699):\penalty0 8--24, 2017.
-\newblock \doi{10.1016/j.compag.2017.05.027}.
 
 \bibitem[Jinqiang et~al.(2021)Jinqiang, Husheng, Renjun, Rafik, and
   Xuanwu]{9679714}
@@ -249,6 +229,16 @@ Sertac Karaman and Emilio Frazzoli.
   (7):\penalty0 846--894, June 2011.
 \newblock \doi{10.1177/0278364911406761}.
 \newblock URL \url{https://doi.org/10.1177/0278364911406761}.
+
+\bibitem[Krajn{\'{\i}}k et~al.(2011)Krajn{\'{\i}}k, Von{\'{a}}sek, Fi{\v{s}}er,
+  and Faigl]{ARDRONE2011}
+Tom{\'{a}}{\v{s}} Krajn{\'{\i}}k, Vojt{\v{e}}ch Von{\'{a}}sek, Daniel
+  Fi{\v{s}}er, and Jan Faigl.
+\newblock {AR}-drone as a platform for robotic research and education.
+\newblock In \emph{Communications in Computer and Information Science}, pages
+  172--186. Springer Berlin Heidelberg, 2011.
+\newblock \doi{10.1007/978-3-642-21975-7_16}.
+\newblock URL \url{https://doi.org/10.1007/978-3-642-21975-7_16}.
 
 \bibitem[Li et~al.(2015)Li, Chen, Wang, Liu, Ge, and Song]{7279703}
 Wei Li, Wenwen Chen, Chong Wang, Ming Liu, Yunjian Ge, and Quanjun Song.
@@ -282,6 +272,19 @@ K.~N. McGuire, C.~De Wagter, K.~Tuyls, H.~J. Kappen, and G.~C. H.~E. de~Croon.
 \newblock \doi{10.1126/scirobotics.aaw9710}.
 \newblock URL
   \url{https://www.science.org/doi/abs/10.1126/scirobotics.aaw9710}.
+
+\bibitem[Meagher(1982)]{DONALD1982}
+Donald Meagher.
+\newblock Geometric modeling using octree encoding.
+\newblock \emph{Computer Graphics and Image Processing}, 19\penalty0
+  (2):\penalty0 129--147, June 1982.
+\newblock \doi{10.1016/0146-664x(82)90104-6}.
+\newblock URL \url{https://doi.org/10.1016/0146-664x(82)90104-6}.
+
+\bibitem[Min et~al.(2020)Min, Han, and Kim]{min2020accelerating}
+Heajung Min, Kyung~Min Han, and Young~J. Kim.
+\newblock Accelerating probabilistic volumetric mapping using ray-tracing
+  graphics hardware, 2020.
 
 \bibitem[Mohsan et~al.(2023)Mohsan, Othman, Li, H., and Khan]{UAVPRACTICAL2023}
 Syed Agha~Hassnain Mohsan, Nawaf Qasem~Hamood Othman, Alsharif Li, Yanlong,
@@ -340,25 +343,6 @@ Gabriel Ramirez and Said Zeghloul.
 \newblock \emph{Robotica}, 19\penalty0 (5):\penalty0 543--555, 2001.
 \newblock \doi{10.1017/S0263574701003484}.
 
-\bibitem[Rou\v{c}ek et~al.(2022)Rou\v{c}ek, Pecka, \v{C}\'{\i}\v{z}ek,
-  Pet\v{r}\'\i\v{c}ek, Bayer, \v{S}alansk\'{y}, Azayev, He\v{r}t, Petrl\'{i}k,
-  B\'{a}\v{c}a, Spurn\'y, Kr\'{a}tky\'{y}, Petr\'{a}\v{c}ek, Baril, Vaidis,
-  Kubelka, Pomerleau, Faigl, Zimmermann, Saska, Svoboda, and
-  Krajn\'{i}k]{DARPA2022}
-Tom\'{a}\v{s} Rou\v{c}ek, Martin Pecka, Petr \v{C}\'{\i}\v{z}ek, Tom\'{a}\v{s}
-  Pet\v{r}\'\i\v{c}ek, Jan Bayer, Vojt\v{e}ch \v{S}alansk\'{y}, Teymur Azayev,
-  Daniel He\v{r}t, Mat\v{e}j Petrl\'{i}k, Tom\'{a}\v{s} B\'{a}\v{c}a, Vojtech
-  Spurn\'y, V\'{i}t Kr\'{a}tky\'{y}, Pavel Petr\'{a}\v{c}ek, Dominic Baril,
-  Maxime Vaidis, Vladim\'{i}r Kubelka, Fran\c{c}ois Pomerleau, Jan Faigl, Karel
-  Zimmermann, Martin Saska, Tom\'{a}\v{s} Svoboda, and Tom\'{a}\v{s}
-  Krajn\'{i}k.
-\newblock System for multi-robotic exploration of underground environments
-  {CTU}-{CRAS}-{NORLAB} in the {DARPA} subterranean challenge.
-\newblock \emph{Field Robotics}, 2\penalty0 (1):\penalty0 1779--1818, March
-  2022.
-\newblock \doi{10.55417/fr.2022055}.
-\newblock URL \url{https://doi.org/10.55417/fr.2022055}.
-
 \bibitem[Sandoval~Garc\'{i}a(2013)]{CINVES2013}
 Humberto Sandoval~Garc\'{i}a.
 \newblock Generaci\'{o}n de mapas utilizando veh\'{i}culos a\'{e}reos no
@@ -393,28 +377,11 @@ Shaojie Shen, Nathan Michael, and Vijay Kumar.
   Automation}, pages 20--25, 2011.
 \newblock \doi{10.1109/ICRA.2011.5980357}.
 
-\bibitem[Shukla and Karki(2016)]{SHUKLA2016490}
-Amit Shukla and Hamad Karki.
-\newblock Application of robotics in onshore oil and gas industry - a review
-  part i.
-\newblock \emph{Robotics and Autonomous Systems}, 75:\penalty0 490--507, 2016.
-\newblock ISSN 0921-8890.
-\newblock \doi{https://doi.org/10.1016/j.robot.2015.09.012}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0921889015002006}.
-
 \bibitem[Subahani et~al.(2020)Subahani, Kathiresh, and Sanjeev]{Subahani2020}
 A.~Mahaboob Subahani, M.~Kathiresh, and S.~Sanjeev.
 \newblock Transmission line inspection using unmanned aerial vehicle, July
   2020.
 \newblock URL \url{https://doi.org/10.1002/9781119681328.ch6}.
-
-\bibitem[Tahir et~al.(2023)Tahir, Mir, and Islam]{10120941}
-Muhammad~Amir Tahir, Imran Mir, and Tauqeer~Ul Islam.
-\newblock A review of uav platforms for autonomous applications: Comprehensive
-  analysis and future directions.
-\newblock \emph{IEEE Access}, 11:\penalty0 52540--52554, 2023.
-\newblock \doi{10.1109/ACCESS.2023.3273780}.
 
 \bibitem[Thrun et~al.(2005)Thrun, Burgard, and Fox]{THRUN2005}
 Sebastian Thrun, Wolfram Burgard, and Dieter Fox.
@@ -529,26 +496,10 @@ Boyu Zhou, Hao Xu, and Shaojie Shen.
   1816--1835, 2023.
 \newblock \doi{10.1109/TRO.2023.3236945}.
 
-\bibitem[Zhou et~al.(2017)Zhou, Kong, Wei, Creighton, and Nahavandi]{ROADS2017}
-Hailing Zhou, Hui Kong, Lei Wei, Douglas Creighton, and Saeid Nahavandi.
-\newblock On detecting road regions in a single uav image.
-\newblock \emph{IEEE Transactions on Intelligent Transportation Systems},
-  18\penalty0 (7):\penalty0 1713--1722, 2017.
-\newblock \doi{10.1109/TITS.2016.2622280}.
-
 \bibitem[Zhou et~al.(2021)Zhou, Wang, Wen, Zhu, Xu, and
   Gao]{zhou2021decentralized}
 Xin Zhou, Zhepei Wang, Xiangyong Wen, Jiangchao Zhu, Chao Xu, and Fei Gao.
 \newblock Decentralized spatial-temporal trajectory planning for multicopter
   swarms, 2021.
-
-\bibitem[Zouganeli and Lentzas(2022)]{ZOUGANELI2022}
-Evi Zouganeli and Athanasios Lentzas.
-\newblock Cognitive robotics - towards the development of next-generation
-  robotics and~intelligent systems.
-\newblock In \emph{Communications in Computer and Information Science}, pages
-  16--25. Springer International Publishing, 2022.
-\newblock \doi{10.1007/978-3-031-17030-0_2}.
-\newblock URL \url{https://doi.org/10.1007/978-3-031-17030-0_2}.
 
 \end{thebibliography}
