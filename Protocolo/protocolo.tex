@@ -23,18 +23,6 @@
 
 \def\figurename{Figura}
 
-%--SE LOS QUITE--
-%\pagestyle{empty}
-%\pagestyle{plain}
-%\usepackage{graphicx,moreverb}
-%\newcommand{\pp}[1]{$\langle$#1$\rangle$}
-%\textheight=244mm
-%\columnsep=20pt
-%\usepackage{dingbat}
-%\usepackage{diagbox}
-%\usepackage{pgfgantt}
-%--SE LOS QUITE--
-
 \textwidth 6.5in
 \textheight 8.4in %ancho en footer
 \oddsidemargin 0in
@@ -207,32 +195,11 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
 \maketitle
 \begin{abstract}
   
-  %MEJORAR
-  %\st{La importancia de la rob\'{o}tica de servicios hoy en d\'{i}a es innegable. Estos avances estan revolucionando la forma en que interactuamos con el mundo, ofreciendo amplias posibilidades en diversos sectores como en el sector de bodegas y entregas de productos ((CITAR ALGO)) cada vez las tareas repetitivas y pesadas estan siendo delegadas a los robots. La exploraci\'{o}n espacial ha traido consigo soluciones a problemas en la rob\'{o}tica.}\\
-
- %\st{La importancia de la rob\'{o}tica de servicios en la actualidad es innegable. Estos avances est\'{a}n revolucionando la forma en que interactuamos con el mundo, ofreciendo un amplio abanico de aplicaciones en diversos sectores. Desde veh\'{i}culos aut\'{o}nomos, robots m\'{o}viles en l\'{o}gistica, hasta la exploraci\'{o}n espacial, la rob\'{o}tica de servicios ha demostrado ser \'{u}til en entornos donde los seres humanos pueden enfrentar riesgos o dificultades.}\\
-  
-  %\st{Dentro de la rob\'{o}tica m\'{o}vil podemos encontrar robots a\'{e}reos, mejor conocidos como Veh\'{i}culos A\'{e}reos No Tripulados (VANT), estos robots m\'{o}viles tienen la capacidad de volar y acceder a lugares de manera r\'{a}pida y eficiente, convirti\'{e}ndolos en herramientas extremadamente vers\'{a}tiles. Veh\'{i}culos as\'{i} est\'{a}n siendo utilizados por empresas de comercio electr\'{o}nico para entregar productos a los clientes de manera \'{a}gil ((hablar del mTSP)), en la agricultura para monitorear cultivos e identificar problemas con plagas para aplicar pesticidas o fertilizantes de manera precisa. En el \'{a}mbito de la seguridad, pueden utilizarse para la vigilancia de \'{A}reas de dif\'{i}cil acceso o en situaciones de emergencia, proporcionando informaci\'{o}n valiosa en tiempo real a los equipos de rescate.}\\
-
-  %\st{A pesar de los numerosos avances de la rob\'{o}tica de servicios, existen desaf\'{i}os y problem\'{a}ticas asociadas a la planificaci\'{o}n de trayectorias en ambientes desconocidos y cambiantes.}\\
-  %\st{La \textbf{exploraci\'{o}n} implica una serie de tareas y desaf\'{i}os. Estos pueden incluir la \textbf{planificaci\'{o}n de rutas} para cubrir eficientemente el \'{a}rea a explorar, la \textbf{detecci\'{o}n} y \textbf{evaci\'{o}n de obst\'{a}culos}, \textbf{la localizaci\'{o}n y mapeo simult\'{a}neo} (SLAM) y la toma de decisiones para maximizar la informaci\'{o}n.}\\
-
-  %\st{La \textbf{coordinaci\'{o}n} y el \textbf{trabajo en equipo} de m\'{u}ltiples-VANT(s) representa un desaf\'{i}o emocionante. La \textbf{colaboraci\'{o}n} de varios VANT(s) puede ser \'{u}til en misiones de b\'{u}squeda y rescate, en donde pueden cubrir \'{a}reas m\'{a}s extensas y realizar tareas m\'{a}s complejas de manera simult\'{a}nea. La coordinaci\'{o}n entre los VANT(s) puede optimizar la eficiencia de las operaciones y aumentar las posibilidades de \'{e}xito.}\\
-
-  %\st{El objetivo de este trabajo es la propuesta de una arquitectura de software tolerante a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinaci\'{o}n de Veh\'{i}culos A\'{e}reos No Tripulados.}\\
-  %\st{El proyecto de investigaci\'{o}n demostrar\'{a} que es posible dise\~{n}ar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboraci\'{o}n multi-VANT.}\\
-  %\noindent\hrulefill\\
-  
   La exploraci\'{o}n multi-robot ha surgido como un enfoque prometedor para el mapeo eficiente de entornos desconocidos. Un enfoque colaborativo ofrece una mayor eficiencia de exploraci\'{o}n, una obtenci\'{o}n de informaci\'{o}n m\'{a}s r\'{a}pida y amplias capacidades de cobertura en comparaci\'{o}n con implementaciones donde se emplea un \'{u}nico robot. Sin embargo, la exploraci\'{o}n multi-robot plantea diversos desaf\'{i}os que deben abordarse para su correcta implementaci\'{o}n, como la localizaci\'{o}n, el manejo de mapas y la navegaci\'{o}n aut\'{o}noma.\\
-  En la \'{u}ltima decada se ha tenido un aumento en la investigaci\'{o}n y el desarrollo en el campo de los V\'{e}hiculos A\'{e}reos No Tripulados (VANT), lo que ha dado lugar a importantes avances e innovaciones en esta \'{a}rea. Los sistemas multi-VANT permiten la adquisici\'{o}n simult\'{a}nea de datos desde m\'{u}ltiples puntos de vista, lo que permite mejorar la generaci\'{o}n de mapas de entornos desconocidos. El uso de algoritmos de coordinaci\'{o}n inteligente, la toma de decisiones descentralizada mejora la eficiencia de estos sistemas. Adem\'{a}s, los avances en los protocolos de comunicaci\'{o}n permiten una colaboraci\'{o}n fluida, lo que mejora su capacidad para navegar, explorar y adquirir datos de \'{a}reas grandes y complejas. Asimismo, la integraci\'{o}n de sensores de \'{u}ltima generaci\'{o}n mejora la precisi\'{o}n y confiabilidad de los sistemas multi-VANT en varios dominios, incluida la gesti\'{o}n de desastres, la agricultura de precisi\'{o}n, la inspecci\'{o}n de infraestructura y la vigilancia militar [\citenum{SHAKHATREH2019},\citenum{UAVPRACTICAL2023}] o en espectaculares animaciones a\'{e}reas [\citenum{DRONESHOW2023}].
-  Dichas aplicaciones suelen carecer de autonom\'{i}a. Para que un robot se considere aut\'{o}nomo deber\'{a} tomar decisiones y realizar tareas sin necesidad de que alguien le diga qu\'{e} hacer o guiarlo paso a paso. Tener la capacidad de percibir su entorno y usar la informaci\'{o}n para decidir c\'{o}mo moverse son considerados altos niveles de autonom\'{i}a. Para llegar a ello, el robot debe resolver primero problemas como su localizaci\'{o}n, construir el mapa de su entorno y posteriormente usarlo y navegar dentro de \'{e}l.
-    
-  %\st{El objetivo de este trabajo es la propuesta de una arquitectura de software tolerante a fallas, capaz de explorar ambientes desconocidos y cambiantes para la coordinaci\'{o}n de Veh\'{i}culos A\'{e}reos No Tripulados.}\\
-  %\st{El proyecto de investigaci\'{o}n demostrar\'{a} que es posible dise\~{n}ar algoritmos inteligentes de poca memoria capaces de resolver tareas en colaboraci\'{o}n multi-VANT.}\\
-  %\noindent\hrulefill\\
   
-  %\st{Se ha demostrado que es posible dotar de autonom\'{i}a a un robot (m\'{o}vil o a\'{e}reo) ((CITAR)). Dichas soluciones parten de tener el problema de localizaci\'{o}n resuelto al ser aplicaciones en exteriores y poder hacer uso de sistemas de localizaci\'{o}n como el Sistema de Posicionamiento Global (GPS) o Sistema Global de Navegaci\'{o}n por Sat\'{e}lite (Global Navigation Satellite System, GNSS). }
-
+  En la \'{u}ltima decada se ha tenido un aumento en la investigaci\'{o}n y el desarrollo en el campo de los V\'{e}hiculos A\'{e}reos No Tripulados (VANT), lo que ha dado lugar a importantes avances e innovaciones en esta \'{a}rea. Los sistemas multi-VANT permiten la adquisici\'{o}n simult\'{a}nea de datos desde m\'{u}ltiples puntos de vista, lo que permite mejorar la generaci\'{o}n de mapas de entornos desconocidos. El uso de algoritmos de coordinaci\'{o}n inteligente, la toma de decisiones descentralizada mejora la eficiencia de estos sistemas. Adem\'{a}s, los avances en los protocolos de comunicaci\'{o}n permiten una colaboraci\'{o}n fluida, lo que mejora su capacidad para navegar, explorar y adquirir datos de \'{a}reas grandes y complejas. Asimismo, la integraci\'{o}n de sensores de \'{u}ltima generaci\'{o}n mejora la precisi\'{o}n y confiabilidad de los sistemas multi-VANT en varios dominios, incluida la gesti\'{o}n de desastres, la agricultura de precisi\'{o}n, la inspecci\'{o}n de infraestructura y la vigilancia militar [\citenum{SHAKHATREH2019},\citenum{UAVPRACTICAL2023}] o en espectaculares animaciones a\'{e}reas [\citenum{DRONESHOW2023}].
+  Dichas aplicaciones suelen carecer de autonom\'{i}a. Para que un robot se considere aut\'{o}nomo deber\'{a} tomar decisiones y realizar tareas sin necesidad de que alguien le diga qu\'{e} hacer o guiarlo paso a paso. Tener la capacidad de percibir su entorno y usar la informaci\'{o}n para decidir c\'{o}mo moverse son considerados altos niveles de autonom\'{i}a. Para llegar a ello, el robot debe resolver primero problemas como su localizaci\'{o}n, construir el mapa de su entorno y posteriormente usarlo y navegar dentro de \'{e}l.\\
+    
   El enfoque de este trabajo es la propuesta de una arquitectura de software capaz de coordinar m\'{u}ltiples Veh\'{i}culos A\'{e}reos No Tripulados con habilidades para la exploraci\'{o}n, generaci\'{o}n de mapas de \'{a}reas desconocidas y planificaci\'{o}n de rutas para explorar eficientemente un \'{a}rea de inter\'{e}s.
   %\st{El objetivo pudiera ser maximizar la cobertura del \'{a}rea minimizando el tiempo requerido para completar la exploraci\'{o}n.}
   Este problema implica tomar decisiones complejas, como asignar tareas de exploraci\'{o}n a los robots, evitar colisiones y planificar rutas \'{o}ptimas. Factores como la comunicaci\'{o}n entre robots, la incertidumbre del entorno y las limitaciones de recursos son considerados en este trabajo.\\
@@ -240,31 +207,6 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
   \medskip \\
 
   \noindent \textbf{Palabras claves:} estrategias multi-VANT, exploraci\'{o}n multi-VANT, planificaci\'{o}n de rutas multi-VANT, arquitectura de software multi-VANT.
-
-  \newpage
-  %\noindent\hrulefill IDEAS \noindent\hrulefill\\
-      
-  %Los robots cooperativos multi-robot han tenido recientemente mucha atenci\'{o}n debido a los avances en tecnlog\'{i}a. Son soluciones interesantes para tareas que tienen el potencial de ser resultas con m\'{a}s de un robot. Un claro ejemplo es en los escenarios de b\'{u}squeda y rescate, donde m\'{u}ltiples robots pueden cubrir el \'{a}rea de exploraci\'{o}n para la b\'{u}squeda del objetivo en un corto tiempo. Otras aplicaciones pueden se para inspecci\'{o}n industrial y construcciones (Jordan et al, 2018) y cinematograf\'{i}a a\'{e}rea.\\
-  %Debido a su tama\~{n}o y peso, los VANT tienen mayor acceso donde los humanos pueden llegar.\\
-  %Desafortunadamente escenarios con rangos de comunicaci\'{o}n limitados, restricciones de carga, espacios cerrados, duraci\'{o}n de bateria hacen la autonom\'{i}a en VANT peque\~{n}os un problema retador.\\
-  %Sistemas aut\'{o}nomos para VANT generalmente est\'{a}n compuestos por tres componentes: \textbf{mapeo, evaci\'{o}n de obt\'{a}culos y planificaci\'{o}n de trayectoria.}\\
-  %Los VANT dotados de autonom\'{i}a generalmente son grandes teniendo aplicaciones generalmente en exteriores podemos ver aplicaciones de vigilancia y agricultura de precisi\'{o}n.\\
-  %Aplicaciones donde los espacios son reducidos, los VANT grandes son limitados, pero siguen teniendo los mismos problemas de navegaci\'{o}n.\\
-  %Este trabajo se centra en el desarrollo de un framework proponiendo los mejores algoritmos en el estado de arte.\\
-  %Permitir m\'{u}ltiples VANT navegar en ambientes desconocidos de manera aut\'{o}noma requiere dotar de habilidades como construcci\'{o}n de mapas, planificador de trayectorias, evitar obst\'{a}culos.\\
-  %\textbf{Percepci\'{o}n} es obtener informaci\'{o}n de sensores\\
-  %\textbf{Toma de decisiones} es el realizar decisiones a partir de la informaci\'{o}n de los sensores y el \textbf{control} aplicar\'{a} la desici\'{o}n a trav\'{e}s de sus actuadores.\\
-
-  %Los principales retos para crear sistemas cooperativos son: \textbf{ubicaci\'{o}n, planificadores de rutas, y el sistema de control} dado que existen m\'{a}s de un VANT, se esperan que existan m\'{u}ltiples tareas, m\'{u}ltiples rutas.\\
-  
-  %\noindent\hrulefill IDEAS \noindent\hrulefill\\
-      
-  %Los robots en industrias como en la log\'{i}stica han incrementado la eficiencia, as\'{i} como la seguridad en bodegas. Tecnolog\'{i}as como estas nos permiten efectuar optimizaciones y conocer los cuellos de botellas existentes. A\'{u}n as\'{i} para empacar los paquetes, al ser un problema de grano fino se sigue haciendo uso de mano de obra para elaborarlos.\\
-  %Cada vez muchas soluciones han salido a la luz haciendo uso de infraestructuras existentes como montacargas automatizados \textbf{(CITAR LARs)}, generalmente estos sistemas tienen \'{a}reas restringidas como \textbf{((MUELLES AUTOMATIZADOS)),((KIVA DU-1000 DU-3000 PEGASUS)),((OCADOs grocery robots))}.\\
-
-  %Buscar la mejor soluci\'{o}n, \textbf{optimizar} han sido importante para el progreso de una sociedad.\\
-
-  %El hombre, \'{u}nico ser vivo consiente de donde vive, desde muy antiguo ha sentido la necesidad de conocer, descubrir cada lugar que pisa y mirar hacia el horizonte. Desarrollar el sentido de la orientaci\'{o}n a partir de los elementos que le rodean, desde el momento que el hombre comienza a representar las superficies nacen lo que hoy conocemos como mapas.(Fragmentos del documental de divulgaci\'{o}n del Instituto de Estad\'{i}istica y Cartograf\'{i}a de Andaluc\'{i}a)\\
   
 \end{abstract}
 
@@ -323,57 +265,32 @@ Grado acad\'{e}mico: & Doctorado en Inform\'{a}tica
 \newpage
 \section*{Descripci\'{o}n del proyecto}
 
-\noindent\hrulefill\\
+El proyecto se centra en la colaboraci\'{o}n de múltiples veh\'{i}culos a\'{e}reos no tripulados (VANTS) para tareas de exploraci\'{o}n, con el objetivo de desarrollar y evaluar una arquitectura de sof
+tware descentralizada en el que varios veh\'{i}culos a\'{e}reos no tripulados trabajen independientes y aut\'{o}nomos para explorar entornos desconocidos de manera eficiente.\\
 
+Antes de profundizar en los detalles del proyecto, es fundamental definir qu\'{e} es un VANT. Un VANT, tambi\'{e}n conocido como dron o \'{u}ltimamente como sistema a\'{e}reo no tripulado (UAS), se refiere a una aeronave que opera sin un piloto humano a bordo. Los VANT est\'{a}n equipados con varios sensores, sistemas de comunicaci\'{o}n y computadoras a bordo que les permiten operar de forma aut\'{o}noma o bajo control remoto. Estos aviones pueden ser de diferentes tama\~{n}os, desde peque\~{n}os modelos hasta m\'{a}quinas comerciales o militares m\'{a}s grandes.\\
 
-\textbf{DESCRIPCION DE LA PROPUESTA::: EN QU\'{E} CONSISTE Y PARA QU\'{E}}\\
+En el contexto del proyecto de colaboraci\'{o}n multi-VANT para tareas de exploraci\'{o}n descentralizado, estos VANTS aut\'{o}nomos se utilizar\'{a}n para navegar y explorar entornos desconocidos. Al trabajar juntos de manera coordinada, los VANT compartir\'{a}n informaci\'{o}n, tareas y recursos, optimizando el proceso de exploraci\'{o}n para una mayor eficiencia y una cobertura integral.\\
 
-El proyecto se centra en la colaboraci\'{o}n de múltiples VANT para tareas de exploraci\'{o}n, con el objetivo de desarrollar y evaluar una arquitectura de software descentralizada en el que varios veh\'{i}culos a\'{e}reos no tripulados trabajen independientes y aut\'{o}nomos para explorar entornos desconocidos de manera eficiente.\\
+El proyecto tiene como objetivo desarrollar algoritmos, protocolos y estrategias que permitan que estos VANTS se comuniquen de manera efectiva, asignen tareas, eviten obst\'{a}culos y exploren en colaboraci\'{o}n el entorno dado.\\
 
-En el contexto del proyecto de colaboraci\'{o}n multi-VANT para tareas de exploraci\'{o}n descentralizado, estos VANT aut\'{o}nomos se utilizar\'{a}n para navegar y explorar entornos desconocidos. Al trabajar juntos de manera coordinada, los VANT compartir\'{a}n informaci\'{o}n, tareas y recursos, optimizando el proceso de exploraci\'{o}n para una mayor eficiencia y una cobertura integral.\\
-
-El proyecto tiene como objetivo desarrollar algoritmos, protocolos y estrategias que permitan que estos VANT se comuniquen de manera efectiva, asignen tareas, eviten obst\'{a}culos y exploren en colaboraci\'{o}n el entorno dado.\\
-
-%En general, el proyecto busca aprovechar las capacidades de los VANT para facilitar la exploraci\'{o}n eficiente y colaborativa de territorios desconocidos, al tiempo que mejora su autonom\'{i}a y coordinaci\'{o}n.
 Al aprovechar el potencial de la colaboraci\'{o}n multi-VANT, el proyecto tiene como objetivo contribuir a los avances en las t\'{e}cnicas de exploraci\'{o}n distribuida con agentes aut\'{o}nomos y expandir las aplicaciones potenciales de los VANT en varios dominios.
 
-\noindent\hrulefill\\
-
-%El proyecto de \textbf{estrategias para la exploraci\'{o}n coordinada multi-VANT} se centra en la recopilaci\'{o}n de algoritmos que den autonomia a la tarea de exploraci\'{o}n, coordinaci\'{o}n y planificaci\'{o}n.
-
-%\st{Un veh\'{i}culo a\'{e}reo no tripulado (VANT), com\'{u}nmente conocido como dron, hace referencia a una aeronave sin tripulaci\'{o}n, la cual ejerce su funci\'{o}n remotamente o controlada de forma aut\'{o}noma.}\\
-
-%El proyecto de estrategias para la exploraci\'{o}n coordinada multi-VANT se centra en las ventajas de utilizar m\'{u}ltiples VANT trabajando en conjunto para mejorar la eficiencia y cobertura de la exploraci\'{o}n de un \'{a}rea de inter\'{e}s, proponiendo una arquitectura de software descentralizada con algoritmos eficientes capaces de coordinar y planificar trayectorias considerando la incertidumbre de obst\'{a}culos dentro de entornos desconocidos y cambiantes. Antes de profundizar en los detalles del proyecto, es fundamental definir qu\'{e} es un VANT.\\
-
-%\st{El proyecto se centra en la colaboraci\'{o}n de exploraci\'{o}n de m\'{u}ltiples VANT, con el objetivo de desarrollar y evaluar un sistema en el que varios veh\'{i}culos a\'{e}reos no tripulados (VANT) trabajen juntos para explorar entornos desconocidos de manera eficiente. Antes de profundizar en los detalles del proyecto, es fundamental definir qu\'{e} es un VANT.}\\
-
-%Un VANT, tambi\'{e}n conocido como dron o sistema a\'{e}reo no tripulado (UAS), se refiere a una aeronave que opera sin un piloto humano a bordo. Los VANT est\'{a}n equipados con varios sensores, sistemas de comunicaci\'{o}n y computadoras a bordo que les permiten operar de forma aut\'{o}noma o bajo control remoto. Estos aviones pueden ser de diferentes tama\~{n}os, desde peque\~{n}os modelos hasta m\'{a}quinas comerciales o militares m\'{a}s grandes.\\
-
-%Los VANT se han vuelto cada vez m\'{a}s populares debido a su versatilidad y potencial en una amplia gama de aplicaciones. Son capaces de capturar imágenes a\'{e}reas, realizar vigilancia, realizar inspecciones, brindar una respuesta r\'{a}pida en situaciones de emergencia y mucho m\'{a}s. Su capacidad para acceder a entornos desafiantes o peligrosos, junto con los avances tecnol\'{o}gicos, ha ampliado su uso.\\
-
-%En el contexto del proyecto de exploraci\'{o}n multi-VANT, se utilizar\'{a}n para navegar y explorar entornos desconocidos. Al trabajar juntos de manera coordinada, los VANT compartir\'{a}n informaci\'{o}n, optimizando el proceso de exploraci\'{o}n para una mayor eficiencia y una cobertura. El proyecto tiene como objetivo desarrollar algoritmos, protocolos y estrategias que permitan que estos VANT se comuniquen de manera efectiva, asignen tareas, eviten obst\'{a}culos y exploren en colaboraci\'{o}n el entorno dado.\\
-
-%En general, el proyecto busca aprovechar las capacidades de los VANT para facilitar la exploraci\'{o}n eficiente y colaborativa de territorios desconocidos, al tiempo que mejora su autonom\'{i}a y coordinaci\'{o}n. Al aprovechar el potencial de la colaboraci\'{o}n multi-VANT, el proyecto tiene como objetivo contribuir a los avances en las estrategias de exploraci\'{o}n y expandir a\'{u}n m\'{a}s las aplicaciones de los VANT en varios dominios.\\
-
-%Crear una arquitectura de software con algoritmos eficientes y r\'{a}pidos capaces de completar una tarea complicada como lo es la exploraci\'{o}n y coordinaci\'{o}n.
-
-%Supongamos que tengo un VANT y lo deseo mover de un punto A a un punto B. Para que el dron se pueda desplazar el dron debe cambiar las velocidades de sus propelas, cambiando estas velocidades lograr\'{a}n desplazar el dron deacuerdo a cierta \textbf{configuraci\'{o}n}. Est\'{o} podr\'{a} ser la respuesta de la salida de un algoritmo genetico.\\
-
-%\textbf{Â¿C\'{o}mo podemos generar un modelo matem\'{a}tico que nos permita controlar y manipular nuestro objeto es el espacio?}. A simples palabras en la cantidad de fuerza de momento es requerida para ir de un punto dado. Asi que particularmente depende de una masa que rota.\\
-
-\newpage
 \subsection*{Antecedentes y motivaci\'{o}n para el proyecto}
 
-Los robots de servicio se est\'{a}n convirtiendo r\'{a}pidamente en una parte esencial de las empresas centradas en el servicio que buscan formas innovadoras de atender a los clientes mientras mejoran sus resultados. Los \textbf{robots de servicio} generalmente se utilizan para ayudar a los empleados en sus tareas diarias para que puedan concentrarse en el trabajo m\'{a}s valioso centrado en el cliente \textit{(https://www.intel.la/content/www/xl/es/robotics/service-robot.html)}. Entre ellos los VANTS, se han vuelto cada vez m\'{a}s frecuentes verlos en el mundo actual, encontrando aplicaciones en una amplia gama de industrias. En fotograf\'{i}a y video a\'{e}reas, puede obtener tomas a\'{e}reas sorprendentes e inmersivas para fines de filmaci\'{o}n, bienes ra\'{i}ces, turismo y entretenimiento. En la agricultura, los drones se utilizan para el control de cultivos, la fumigaci\'{o}n de precisi\'{o}n y la evaluaci\'{o}n del rendimiento, lo que mejora la productividad y la gesti\'{o}n de los recursos. En el mantenimiento de infraestructuras, los drones juegan un papel importante, ayudando en la inspeci\'{o}n de puentes, edificios, l\'{i}neas el\'{e}ctricas y tuber\'{i}as, reduciendo as\'{i} los riesgos y costos asociados con las inspecciones manuales. En misiones de b\'{u}squeda y rescate, donde ayudan en la localizaci\'{o}n de personas desaparecidas o en evaluaciones posteriores a un desastre, los drones han demostrado ser muy \'{u}tiles. Los estudios de vida silvestre, el mapeo de ecosistemas y el monitoreo de la salud de los bosques son algunas de las aplicaciones de los drones.\\ 
+Los robots de servicio se est\'{a}n convirtiendo r\'{a}pidamente en una parte esencial de las empresas \st{centradas en el servicio} que buscan formas innovadoras de atender a los clientes mientras mejoran sus resultados de productividad. Los \textbf{robots de servicio} generalmente se utilizan para ayudar a los empleados en sus tareas diarias para que puedan concentrarse en el trabajo m\'{a}s valioso centrado en el cliente \textit{(https://www.intel.la/content/www/xl/es/robotics/service-robot.html)}. Entre ellos los VANTS, se han vuelto cada vez m\'{a}s frecuentes verlos en el mundo actual, encontrando aplicaciones en una amplia gama de industrias. En fotograf\'{i}a y video a\'{e}reas, puede obtener tomas a\'{e}reas sorprendentes e inmersivas para fines de filmaci\'{o}n, bienes ra\'{i}ces, turismo y entretenimiento.\\
+
+En la agricultura, los drones se utilizan para el control de cultivos, la fumigaci\'{o}n de precisi\'{o}n y la evaluaci\'{o}n del rendimiento, lo que mejora la productividad y la gesti\'{o}n de los recursos. En el mantenimiento de infraestructuras, los drones juegan un papel importante, ayudando en la inspeci\'{o}n de puentes, edificios, l\'{i}neas el\'{e}ctricas y tuber\'{i}as, reduciendo as\'{i} los riesgos y costos asociados con las inspecciones manuales. En misiones de b\'{u}squeda y rescate, donde ayudan en la localizaci\'{o}n de personas desaparecidas o en evaluaciones posteriores a un desastre, los drones han demostrado ser muy \'{u}tiles. Los estudios de vida silvestre, el mapeo de ecosistemas y el monitoreo de la salud de los bosques son algunas de las aplicaciones de los drones.\\ 
 La mayoria de las aplicaciones son sencillas, est\'{a}ticas, en espacios controlados y rutas predeterminadas. Para aplicaciones m\'{a}s complejas, donde el robot debe responder de manera aut\'{o}noma (con m\'{i}nima intervenci\'{o}n humana) a los cambios del medio ambiente, se requiere que el robot cuente con habilidades de identificaci\'{o}n de contextos, planificaci\'{o}n de tareas y manejo de mapas.\\
 
-\textbf{HABLAR IMPORTANCIA DE EXPLORACION}\\
+La importancia de la exploraci\'{o}n con robots radica en su capacidad para superar las limitaciones que enfrentan los humanos al aventurarse en entornos desconocidos y peligrosos. Los robots se pueden dise\~{n}ar para sobrevivir en condiciones extremas, como la exploraci\'{o}n de aguas profundas, las misiones en el espacio exterior o las \'{a}reas afectadas por desastres, donde la presencia humana puede ser riesgosa. Pueden acceder a lugares de dif\'{i}cil acceso, explorar entornos con altos niveles de radiaci\'{o}n o toxicidad y sobrevivir a temperaturas o presiones extremas. La exploración con robots abre nuevas fronteras, ampl\'{i}a nuestro conocimiento e impulsa la innovaci\'{o}n, lo que ofrece una importancia inmensa para mejorar nuestra comprensi\'{o}n del mundo que nos rodea.\\
 
-Antes de profundizar en los detalles del proyecto, es fundamental definir qu\'{e} es un VANT.
-Un VANT, tambi\'{e}n conocido como dron o \'{u}ltimamente como sistema a\'{e}reo no tripulado (UAS), se refiere a una aeronave que opera sin un piloto humano a bordo. Los VANT est\'{a}n equipados con varios sensores, sistemas de comunicaci\'{o}n y computadoras a bordo que les permiten operar de forma aut\'{o}noma o bajo control remoto. Estos aviones pueden ser de diferentes tama\~{n}os, desde peque\~{n}os modelos hasta m\'{a}quinas comerciales o militares m\'{a}s grandes.\\
+%Hay muchas ventajas en el uso de m\'{u}ltiples robots en la exploraci\'{o}n. La capacidad de cubrir \'{a}reas m\'{a}s grandes es un beneficio clave. Se puede lograr una comprensi\'{o}n m\'{a}s profunda del entorno que se est\'{a} explorando con el despliegue de m\'{u}ltiples robots. Se puede lograr una mayor eficiencia y especializaci\'{o}n de tareas mediante la colaboraci\'{o}n y coordinaci\'{o}n entre m\'{u}ltiples robots. Para una divisi\'{o}n \'{o}ptima del trabajo y una recopilaci\'{o}n de datos m\'{a}s eficiente, a cada robot se le pueden asignar tareas específicas o \'{a}reas de enfoque. La exploraci\'{o}n de varios robots proporciona una mejora de la solidez de la misi\'{o}n. En caso de falla del robot, otros robots pueden continuar la exploraci\'{o}n, asegurando la continuidad de la misi\'{o}n y reduciendo el riesgo de falla de la misi\'{o}n. La fusi\'{o}n de datos de diferentes fuentes conduce a conocimientos m\'{a}s precisos y completos. Se puede establecer una visi\'{o}n del entorno mediante la combinaci\'{o}n de datos recopilados por robots individuales. El uso de m\'{u}ltiples robots en la exploraci\'{o}n conduce a misiones de exploraci\'{o}n m\'{a}s exitosas.\\
 
-Algunos desarrollos importantes en estas \'{a}reas de investigaci\'{o}n se han centrado principalmente en sistemas con un \'{u}nico robot. No se puede subestimar la importancia de utilizar m\'{u}ltiples robots en las actividades de exploraci\'{o}n. Estos sistemas de m\'{u}ltiples robots ofrecen mayores beneficios que mejoran significativamente la efectividad y la eficiencia en tareas como la exploraci\'{o}n. En primer lugar, m\'{u}ltiples robots permiten la cobertura simult\'{a}nea de un \'{a}rea m\'{a}s grande, lo que permite una exploraci\'{o}n m\'{a}s eficiente del entorno.\\
-A cada dron se le pueden asignar tareas o recibir \'{a}reas espec\'{i}ficas para enfocarse, asegurando que ninguna parte de la regi\'{o}n quede sin explorar. Esta cobertura integral conduce a una mejor comprensi\'{o}n del entorno y la capacidad de recopilar diversa informaci\'{o}n.\\
+Algunos desarrollos importantes en estas \'{a}reas de investigaci\'{o}n se han centrado principalmente en sistemas con un \'{u}nico robot. No se puede subestimar la importancia de utilizar m\'{u}ltiples robots en las actividades de exploraci\'{o}n. Estos sistemas de m\'{u}ltiples robots ofrecen mayores beneficios que mejoran significativamente la efectividad y la eficiencia en tareas como la exploraci\'{o}n. M\'{u}ltiples robots permiten la cobertura simult\'{a}nea de un \'{a}rea m\'{a}s grande, lo que permite una exploraci\'{o}n m\'{a}s eficiente del entorno.\\
+
+\st{A cada dron se le pueden asignar tareas o recibir \'{a}reas espec\'{i}ficas para enfocarse, asegurando que ninguna parte de la regi\'{o}n quede sin explorar. Esta cobertura integral conduce a una mejor comprensi\'{o}n del entorno y la capacidad de recopilar diversa informaci\'{o}n.}\\
+
 Adem\'{a}s, los sistemas de m\'{u}ltiples robots permiten la ejecuci\'{o}n paralela de tareas, lo que reduce el tiempo de exploraci\'{o}n y maximiza la eficiencia. Los drones pueden colaborar, intercambiar informaci\'{o}n y optimizar sus rutas para minimizar la redundancia y agilizar el proceso de exploraci\'{o}n. Adem\'{a}s, el uso de m\'{u}ltiples drones mejora la solidez de la misi\'{o}n, que proporciona redundancia en caso de fallas de alg\'{u}n robot. Si un dron encuentra dificultades, otros drones pueden continuar la exploraci\'{o}n, asegurando la continuidad de la misi\'{o}n y reduciendo el riesgo de falla. Adem\'{a}s, los sistemas de drones m\'{u}ltiples permiten la especializaci\'{o}n de tareas, donde diferentes drones pueden equiparse con sensores o instrumentos especializados para recopilar tipos espec\'{i}ficos de datos.La colaboraci\'{o}n entre drones debe tomar en cuenta estas tareas especializadas.\\
 
 La escalabilidad y adaptabilidad de los sistemas de drones m\'{u}ltiples los hace muy adecuados para actividades de exploraci\'{o}n en varios escenarios y entornos, que van desde misiones de peque\~{n}a escala a gran escala o complejas.\\ 
@@ -382,68 +299,68 @@ El uso de sistemas multirobot traen consigo retos inherentes que deben abordarse
 
 
 
-\begin{figure}
-  \begin{center}
-    \begin{forest}
-      for tree={%
-        thick,
-        drop shadow,
-        l sep=0.6cm,
-        s sep=0.8cm,
-        node options={draw,font=\sffamily},
-        edge={semithick,-Latex},
-        where level=0{parent}{},
-        where level=1{
-          minimum height=1cm,
-          child,
-          parent anchor=south west,
-          tier=p,
-          l sep=0.25cm,
-          for descendants={%
-            grandchild,
-            minimum height=0.6cm,
-            anchor=150,
-            edge path={
-              \noexpand\path[\forestoption{edge}]
-              (!to tier=p.parent anchor) |-(.child anchor)\forestoption{edge label};
-            },
-          }
-        }{},
-      }
-      [Retos\\multi-VANT, draw=black, top color=white!5, bottom color=white!30
-        [Planificaci\'{o}n\\trayectorias, draw=gray!30, top color=gray!5, bottom color=gray!30
-          [Formaciones \\en enjambre, draw=gray!10, top color=gray!5, bottom color=gray!10
-            [Evasi\'{o}n \\de obst\'{a}culos, draw=gray!10, top color=gray!5, bottom color=gray!10
-              [Multi-objetivos, draw=gray!10, top color=gray!5, bottom color=gray!10]
-            ]
-          ]
-        ]
-        [Percepci\'{o}n, draw=gray!30, top color=gray!5, bottom color=gray!30
-          [Colecci\'{o}n de\\informaci\'{o}n, draw=gray!10, top color=gray!5, bottom color=gray!10
-            [An\'{a}lisis de im\'{a}genes, draw=gray!10, top color=gray!5, bottom color=gray!10
-              [Visualizaci\'{o}n, draw=gray!10, top color=gray!5, bottom color=gray!10]
-            ]
-          ]
-        ]
-        [Comunicaci\'{o}n, draw=gray!30, top color=gray!5, bottom color=gray!30
-          [Conectividad, draw=gray!10, top color=gray!5, bottom color=gray!10
-            [Tolerable a fallos, draw=gray!10, top color=gray!5, bottom color=gray!10
-              [Seguridad, draw=gray!10, top color=gray!5, bottom color=gray!10]
-            ]
-          ]
-        ]
-        [Control de Vuelo, draw=gray!30, top color=gray!5, bottom color=gray!30
-          [Controles tipo PID, draw=gray!10, top color=gray!5, bottom color=gray!10
-            [M\'{e}todos \\basados en aprendizaje, draw=gray!10, top color=gray!5, bottom color=gray!10
-              [Controles\\lineales de vuelo, draw=gray!10, top color=gray!5, bottom color=gray!10]
-            ]
-          ]
-        ]
-      ]
-    \end{forest}
-  \end{center}
-  \caption{Ilustra los retos multi-VANT a desarrollar en esta tesis}\label{fig:retos}
-\end{figure}
+%\begin{figure}
+%  \begin{center}
+%    \begin{forest}
+%      for tree={%
+%        thick,
+%        drop shadow,
+%        l sep=0.6cm,
+%        s sep=0.8cm,
+%        node options={draw,font=\sffamily},
+%        edge={semithick,-Latex},
+%        where level=0{parent}{},
+%        where level=1{
+%          minimum height=1cm,
+%          child,
+%          parent anchor=south west,
+%          tier=p,
+%          l sep=0.25cm,
+%          for descendants={%
+%            grandchild,
+%            minimum height=0.6cm,
+%            anchor=150,
+%            edge path={
+%              \noexpand\path[\forestoption{edge}]
+%              (!to tier=p.parent anchor) |-(.child anchor)\forestoption{edge label};
+%            },
+%          }
+%        }{},
+%      }
+%      [Retos\\multi-VANT, draw=black, top color=white!5, bottom color=white!30
+%        [Planificaci\'{o}n\\trayectorias, draw=gray!30, top color=gray!5, bottom color=gray!30
+%          [Formaciones \\en enjambre, draw=gray!10, top color=gray!5, bottom color=gray!10
+%            [Evasi\'{o}n \\de obst\'{a}culos, draw=gray!10, top color=gray!5, bottom color=gray!10
+%              [Multi-objetivos, draw=gray!10, top color=gray!5, bottom color=gray!10]
+%            ]
+%          ]
+%        ]
+%        [Percepci\'{o}n, draw=gray!30, top color=gray!5, bottom color=gray!30
+%          [Colecci\'{o}n de\\informaci\'{o}n, draw=gray!10, top color=gray!5, bottom color=gray!10
+%            [An\'{a}lisis de im\'{a}genes, draw=gray!10, top color=gray!5, bottom color=gray!10
+%              [Visualizaci\'{o}n, draw=gray!10, top color=gray!5, bottom color=gray!10]
+%            ]
+%          ]
+%        ]
+%        [Comunicaci\'{o}n, draw=gray!30, top color=gray!5, bottom color=gray!30
+%          [Conectividad, draw=gray!10, top color=gray!5, bottom color=gray!10
+%            [Tolerable a fallos, draw=gray!10, top color=gray!5, bottom color=gray!10
+%              [Seguridad, draw=gray!10, top color=gray!5, bottom color=gray!10]
+%            ]
+%          ]
+%        ]
+%        [Control de Vuelo, draw=gray!30, top color=gray!5, bottom color=gray!30
+%          [Controles tipo PID, draw=gray!10, top color=gray!5, bottom color=gray!10
+%            [M\'{e}todos \\basados en aprendizaje, draw=gray!10, top color=gray!5, bottom color=gray!10
+%              [Controles\\lineales de vuelo, draw=gray!10, top color=gray!5, bottom color=gray!10]
+%            ]
+%          ]
+%        ]
+%      ]
+%    \end{forest}
+%  \end{center}
+%  \caption{Ilustra los retos multi-VANT a desarrollar en esta tesis}\label{fig:retos}
+%\end{figure}
 
 
 %\subsection*{\textquestiondown Qu\'{e} es la autonom\'{i}a?}
