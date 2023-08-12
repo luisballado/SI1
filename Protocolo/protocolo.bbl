@@ -1,19 +1,9 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{54}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Aggarwal and Kumar(2020)]{PathPlanning2020}
-Shubhani Aggarwal and Neeraj Kumar.
-\newblock Path planning techniques for unmanned aerial vehicles: A review,
-  solutions, and challenges.
-\newblock \emph{Computer Communications}, 149:\penalty0 270--299, 2020.
-\newblock ISSN 0140-3664.
-\newblock \doi{https://doi.org/10.1016/j.comcom.2019.10.014}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0140366419308539}.
 
 \bibitem[Alsamhi et~al.(2019)Alsamhi, Ma, Ansari, and
   Almalki]{SurveyCollab2019}
@@ -23,34 +13,12 @@ Saeed~H. Alsamhi, Ou~Ma, Mohammad~Samar Ansari, and Faris~A. Almalki.
 \newblock \emph{IEEE Access}, 7:\penalty0 128125--128152, 2019.
 \newblock \doi{10.1109/ACCESS.2019.2934998}.
 
-\bibitem[Arkin(1998)]{ARKIN1998}
-Ronald~C. Arkin, editor.
-\newblock \emph{Behavior-Based Robotics}.
-\newblock MIT Press, 1998.
-\newblock \doi{10.1007/978-3-319-32552-1}.
-\newblock URL
-  \url{https://mitpress.mit.edu/9780262529204/behavior-based-robotics/}.
-
 \bibitem[Bartolomei et~al.(2023)Bartolomei, Teixeira, and Chli]{BARTOLOMEI2023}
 Luca Bartolomei, Lucas Teixeira, and Margarita Chli.
 \newblock Fast multi-uav decentralized exploration of forests.
 \newblock \emph{IEEE Robotics and Automation Letters}, 8\penalty0 (9):\penalty0
   5576--5583, 2023.
 \newblock \doi{10.1109/LRA.2023.3296037}.
-
-\bibitem[Bekey(2005)]{Bekey2005}
-George~A. Bekey.
-\newblock \emph{Autonomus Robots From Biological Inspiration to Implementation
-  and Control}.
-\newblock MIT Press, 1st edition, 2005.
-\newblock ISBN 9780262534185.
-
-\bibitem[Brooks(1986)]{BROOKS1986}
-R.~Brooks.
-\newblock A robust layered control system for a mobile robot.
-\newblock \emph{IEEE Journal on Robotics and Automation}, 2\penalty0
-  (1):\penalty0 14--23, 1986.
-\newblock \doi{10.1109/JRA.1986.1087032}.
 
 \bibitem[Cai and Yang(2012)]{6320878}
 Yifan Cai and Simon~X. Yang.
@@ -85,6 +53,24 @@ Bor-Sen Chen and Ting-Wei Hung.
   biped robots team system.
 \newblock \emph{IEEE Access}, 11:\penalty0 45888--45909, 2023.
 \newblock \doi{10.1109/ACCESS.2023.3273787}.
+
+\bibitem[Chen et~al.(2017)Chen, Li, and Chen]{Chen2017}
+Xia Chen, Guang-yao Li, and Xiang-min Chen.
+\newblock Path planning and cooperative control for multiple uavs based on
+  consistency theory and voronoi diagram.
+\newblock In \emph{2017 29th Chinese Control And Decision Conference (CCDC)},
+  pages 881--886, 2017.
+\newblock \doi{10.1109/CCDC.2017.7978644}.
+
+\bibitem[Chronis et~al.(2023)Chronis, Anagnostopoulos, Politi, Garyfallou,
+  Varlamis, and Dimitrakopoulos]{Chronis2023}
+Christos Chronis, Georgios Anagnostopoulos, Elena Politi, Antonios Garyfallou,
+  Iraklis Varlamis, and George Dimitrakopoulos.
+\newblock Path planning of autonomous uavs using reinforcement learning.
+\newblock \emph{Journal of Physics: Conference Series}, 2526\penalty0
+  (1):\penalty0 012088, jun 2023.
+\newblock \doi{10.1088/1742-6596/2526/1/012088}.
+\newblock URL \url{https://dx.doi.org/10.1088/1742-6596/2526/1/012088}.
 
 \bibitem[Cieslewski(2021)]{CIESLEWSKI2021}
 Titus Cieslewski.
@@ -185,17 +171,6 @@ Lauren Hirsch and Michael J. De~La Merced.
 \newblock URL
   \url{https://www.nytimes.com/2023/07/01/business/dealbook/fourth-of-july-fireworks-drones.html}.
 
-\bibitem[Hornung et~al.(2013)Hornung, Wurm, Bennewitz, Stachniss, and
-  Burgard]{ARMIN2013}
-Armin Hornung, Kai~M. Wurm, Maren Bennewitz, Cyrill Stachniss, and Wolfram
-  Burgard.
-\newblock {OctoMap}: An efficient probabilistic {3D} mapping framework based on
-  octrees.
-\newblock \emph{Autonomous Robots}, 2013.
-\newblock \doi{10.1007/s10514-012-9321-0}.
-\newblock URL \url{https://octomap.github.io}.
-\newblock Software available at \url{https://octomap.github.io}.
-
 \bibitem[Huang et~al.(2020)Huang, Chen, and Pan]{9031752}
 Zhengrui Huang, Chongcheng Chen, and Miaoxin Pan.
 \newblock Multiobjective uav path planning for emergency information collection
@@ -203,6 +178,16 @@ Zhengrui Huang, Chongcheng Chen, and Miaoxin Pan.
 \newblock \emph{IEEE Internet of Things Journal}, 7\penalty0 (8):\penalty0
   6993--7009, 2020.
 \newblock \doi{10.1109/JIOT.2020.2979521}.
+
+\bibitem[Jarray et~al.(2022)Jarray, Bouallègue, Rezk, and
+  Al-Dhaifallah]{drones2022}
+Raja Jarray, Soufiene Bouallègue, Hegazy Rezk, and Mujahed Al-Dhaifallah.
+\newblock Parallel multiobjective multiverse optimizer for path planning of
+  unmanned aerial vehicles in a dynamic environment with moving obstacles.
+\newblock \emph{Drones}, 6\penalty0 (12), 2022.
+\newblock ISSN 2504-446X.
+\newblock \doi{10.3390/drones6120385}.
+\newblock URL \url{https://www.mdpi.com/2504-446X/6/12/385}.
 
 \bibitem[Jinqiang et~al.(2021)Jinqiang, Husheng, Renjun, Rafik, and
   Xuanwu]{9679714}
@@ -229,16 +214,6 @@ Sertac Karaman and Emilio Frazzoli.
   (7):\penalty0 846--894, June 2011.
 \newblock \doi{10.1177/0278364911406761}.
 \newblock URL \url{https://doi.org/10.1177/0278364911406761}.
-
-\bibitem[Krajn{\'{\i}}k et~al.(2011)Krajn{\'{\i}}k, Von{\'{a}}sek, Fi{\v{s}}er,
-  and Faigl]{ARDRONE2011}
-Tom{\'{a}}{\v{s}} Krajn{\'{\i}}k, Vojt{\v{e}}ch Von{\'{a}}sek, Daniel
-  Fi{\v{s}}er, and Jan Faigl.
-\newblock {AR}-drone as a platform for robotic research and education.
-\newblock In \emph{Communications in Computer and Information Science}, pages
-  172--186. Springer Berlin Heidelberg, 2011.
-\newblock \doi{10.1007/978-3-642-21975-7_16}.
-\newblock URL \url{https://doi.org/10.1007/978-3-642-21975-7_16}.
 
 \bibitem[Li et~al.(2015)Li, Chen, Wang, Liu, Ge, and Song]{7279703}
 Wei Li, Wenwen Chen, Chong Wang, Ming Liu, Yunjian Ge, and Quanjun Song.
@@ -272,19 +247,6 @@ K.~N. McGuire, C.~De Wagter, K.~Tuyls, H.~J. Kappen, and G.~C. H.~E. de~Croon.
 \newblock \doi{10.1126/scirobotics.aaw9710}.
 \newblock URL
   \url{https://www.science.org/doi/abs/10.1126/scirobotics.aaw9710}.
-
-\bibitem[Meagher(1982)]{DONALD1982}
-Donald Meagher.
-\newblock Geometric modeling using octree encoding.
-\newblock \emph{Computer Graphics and Image Processing}, 19\penalty0
-  (2):\penalty0 129--147, June 1982.
-\newblock \doi{10.1016/0146-664x(82)90104-6}.
-\newblock URL \url{https://doi.org/10.1016/0146-664x(82)90104-6}.
-
-\bibitem[Min et~al.(2020)Min, Han, and Kim]{min2020accelerating}
-Heajung Min, Kyung~Min Han, and Young~J. Kim.
-\newblock Accelerating probabilistic volumetric mapping using ray-tracing
-  graphics hardware, 2020.
 
 \bibitem[Mohsan et~al.(2023)Mohsan, Othman, Li, H., and Khan]{UAVPRACTICAL2023}
 Syed Agha~Hassnain Mohsan, Nawaf Qasem~Hamood Othman, Alsharif Li, Yanlong,
@@ -336,13 +298,6 @@ Christos Papachristos, Shehryar Khattak, and Kostas Alexis.
   Automation (ICRA)}, pages 4568--4575, 2017.
 \newblock \doi{10.1109/ICRA.2017.7989531}.
 
-\bibitem[Ramirez and Zeghloul(2001)]{ramirez2001}
-Gabriel Ramirez and Said Zeghloul.
-\newblock Collision-free path planning for nonholonomic mobile robots using a
-  new obstacle representation in the velocity space.
-\newblock \emph{Robotica}, 19\penalty0 (5):\penalty0 543--555, 2001.
-\newblock \doi{10.1017/S0263574701003484}.
-
 \bibitem[Sandoval~Garc\'{i}a(2013)]{CINVES2013}
 Humberto Sandoval~Garc\'{i}a.
 \newblock Generaci\'{o}n de mapas utilizando veh\'{i}culos a\'{e}reos no
@@ -376,6 +331,13 @@ Shaojie Shen, Nathan Michael, and Vijay Kumar.
 \newblock In \emph{2011 IEEE International Conference on Robotics and
   Automation}, pages 20--25, 2011.
 \newblock \doi{10.1109/ICRA.2011.5980357}.
+
+\bibitem[Siciliano and Khatib(2016)]{HandBookRobotics2016}
+Bruno Siciliano and Oussama Khatib, editors.
+\newblock \emph{Springer Handbook of Robotics}.
+\newblock Springer International Publishing, 2016.
+\newblock \doi{10.1007/978-3-319-32552-1}.
+\newblock URL \url{https://doi.org/10.1007/978-3-319-32552-1}.
 
 \bibitem[Subahani et~al.(2020)Subahani, Kathiresh, and Sanjeev]{Subahani2020}
 A.~Mahaboob Subahani, M.~Kathiresh, and S.~Sanjeev.
@@ -457,14 +419,6 @@ Danyang Zhang, Zhaolong Xuan, Yang Zhang, Jiangyi Yao, Xi~Li, and Xiongwei Li.
 \newblock \doi{10.3390/machines11010108}.
 \newblock URL \url{https://www.mdpi.com/2075-1702/11/1/108}.
 
-\bibitem[Zhang et~al.(2018)Zhang, Lin, and Chen]{sym10100450}
-Han-ye Zhang, Wei-ming Lin, and Ai-xia Chen.
-\newblock Path planning for the mobile robot: A review.
-\newblock \emph{Symmetry}, 10\penalty0 (10), 2018.
-\newblock ISSN 2073-8994.
-\newblock \doi{10.3390/sym10100450}.
-\newblock URL \url{https://www.mdpi.com/2073-8994/10/10/450}.
-
 \bibitem[Zhang et~al.(2023{\natexlab{b}})Zhang, Hao, Zhang, and Li]{Zhang2023}
 Ran Zhang, Guangbo Hao, Kong Zhang, and Zili Li.
 \newblock Unmanned aerial vehicle navigation in underground structure
@@ -481,13 +435,6 @@ Chunhui Zhao, Sijia Li, Jinwen Hu, Quan Pan, Zhao Xu, Yang Lvy, and Wei Meng.
   8743--8747, 2017.
 \newblock \doi{10.23919/ChiCC.2017.8028745}.
 
-\bibitem[Zhao(2020)]{ZHAO2020}
-Hong Zhao.
-\newblock Optimal path planning for robot based on ant colony algorithm.
-\newblock In \emph{2020 International Wireless Communications and Mobile
-  Computing (IWCMC)}, pages 671--675, 2020.
-\newblock \doi{10.1109/IWCMC48107.2020.9148277}.
-
 \bibitem[Zhou et~al.(2023)Zhou, Xu, and Shen]{RACER2022}
 Boyu Zhou, Hao Xu, and Shaojie Shen.
 \newblock Racer: Rapid collaborative exploration with a decentralized multi-uav
@@ -501,5 +448,14 @@ Boyu Zhou, Hao Xu, and Shaojie Shen.
 Xin Zhou, Zhepei Wang, Xiangyong Wen, Jiangchao Zhu, Chao Xu, and Fei Gao.
 \newblock Decentralized spatial-temporal trajectory planning for multicopter
   swarms, 2021.
+
+\bibitem[Zu et~al.(2018)Zu, Fan, Gao, Ma, Zhang, and
+  Zeng]{MultiPathPlanning2018}
+Wei Zu, Guoliang. Fan, Yang Gao, Yao Ma, Haiying Zhang, and Haitao Zeng.
+\newblock Multi-uavs cooperative path planning method based on improved rrt
+  algorithm.
+\newblock In \emph{2018 IEEE International Conference on Mechatronics and
+  Automation (ICMA)}, pages 1563--1567, 2018.
+\newblock \doi{10.1109/ICMA.2018.8484400}.
 
 \end{thebibliography}

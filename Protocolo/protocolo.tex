@@ -200,7 +200,7 @@ Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
   En la \'{u}ltima decada se ha tenido un aumento en la investigaci\'{o}n y el desarrollo en el campo de los V\'{e}hiculos A\'{e}reos No Tripulados (VANT), lo que ha dado lugar a importantes avances e innovaciones en esta \'{a}rea. Los sistemas multi-VANT permiten la adquisici\'{o}n simult\'{a}nea de datos desde m\'{u}ltiples puntos de vista, lo que permite mejorar la generaci\'{o}n de mapas de entornos desconocidos. El uso de algoritmos de coordinaci\'{o}n inteligente, la toma de decisiones descentralizada mejora la eficiencia de estos sistemas. Adem\'{a}s, los avances en los protocolos de comunicaci\'{o}n permiten una colaboraci\'{o}n fluida, lo que mejora su capacidad para navegar, explorar y adquirir datos de \'{a}reas grandes y complejas. Asimismo, la integraci\'{o}n de sensores de \'{u}ltima generaci\'{o}n mejora la precisi\'{o}n y confiabilidad de los sistemas multi-VANT en varios dominios, incluida la gesti\'{o}n de desastres, la agricultura de precisi\'{o}n, la inspecci\'{o}n de infraestructura y la vigilancia militar [\citenum{SHAKHATREH2019},\citenum{UAVPRACTICAL2023}] o en espectaculares animaciones a\'{e}reas [\citenum{DRONESHOW2023}].
   Dichas aplicaciones suelen carecer de autonom\'{i}a. Para que un robot se considere aut\'{o}nomo deber\'{a} tomar decisiones y realizar tareas sin necesidad de que alguien le diga qu\'{e} hacer o guiarlo paso a paso. Tener la capacidad de percibir su entorno y usar la informaci\'{o}n para decidir c\'{o}mo moverse son considerados altos niveles de autonom\'{i}a. Para llegar a ello, el robot debe resolver primero problemas como su localizaci\'{o}n, construir el mapa de su entorno y posteriormente usarlo y navegar dentro de \'{e}l.\\
     
-  El enfoque de este trabajo es la propuesta de una arquitectura de software capaz de coordinar m\'{u}ltiples Veh\'{i}culos A\'{e}reos No Tripulados con habilidades para la exploraci\'{o}n, generaci\'{o}n de mapas de \'{a}reas desconocidas y planificaci\'{o}n de rutas para explorar eficientemente un \'{a}rea de inter\'{e}s.
+  El enfoque de este trabajo es la propuesta de una arquitectura de software capaz de coordinar m\'{u}ltiples veh\'{i}culos a\'{e}reos no tripulados (VANTS) con habilidades para la exploraci\'{o}n, generaci\'{o}n de mapas de \'{a}reas desconocidas y planificaci\'{o}n de rutas para explorar eficientemente un \'{a}rea de inter\'{e}s.
   %\st{El objetivo pudiera ser maximizar la cobertura del \'{a}rea minimizando el tiempo requerido para completar la exploraci\'{o}n.}
   Este problema implica tomar decisiones complejas, como asignar tareas de exploraci\'{o}n a los robots, evitar colisiones y planificar rutas \'{o}ptimas. Factores como la comunicaci\'{o}n entre robots, la incertidumbre del entorno y las limitaciones de recursos son considerados en este trabajo.\\
   %\st{Como humanidad a\'{u}n tenemos lugares desconocidos que deseamos explorar, entonces a los lugares que a\'{u}n no podemos enviar gente, entonces podremos enviar m\'{a}quinas.}
@@ -300,68 +300,68 @@ El uso de sistemas multirobot traen consigo retos inherentes que deben abordarse
 
 
 
-%\begin{figure}
-%  \begin{center}
-%    \begin{forest}
-%      for tree={%
-%        thick,
-%        drop shadow,
-%        l sep=0.6cm,
-%        s sep=0.8cm,
-%        node options={draw,font=\sffamily},
-%        edge={semithick,-Latex},
-%        where level=0{parent}{},
-%        where level=1{
-%          minimum height=1cm,
-%          child,
-%          parent anchor=south west,
-%          tier=p,
-%          l sep=0.25cm,
-%          for descendants={%
-%            grandchild,
-%            minimum height=0.6cm,
-%            anchor=150,
-%            edge path={
-%              \noexpand\path[\forestoption{edge}]
-%              (!to tier=p.parent anchor) |-(.child anchor)\forestoption{edge label};
-%            },
-%          }
-%        }{},
-%      }
-%      [Retos\\multi-VANT, draw=black, top color=white!5, bottom color=white!30
-%        [Planificaci\'{o}n\\trayectorias, draw=gray!30, top color=gray!5, bottom color=gray!30
-%          [Formaciones \\en enjambre, draw=gray!10, top color=gray!5, bottom color=gray!10
-%            [Evasi\'{o}n \\de obst\'{a}culos, draw=gray!10, top color=gray!5, bottom color=gray!10
-%              [Multi-objetivos, draw=gray!10, top color=gray!5, bottom color=gray!10]
-%            ]
-%          ]
-%        ]
-%        [Percepci\'{o}n, draw=gray!30, top color=gray!5, bottom color=gray!30
-%          [Colecci\'{o}n de\\informaci\'{o}n, draw=gray!10, top color=gray!5, bottom color=gray!10
-%            [An\'{a}lisis de im\'{a}genes, draw=gray!10, top color=gray!5, bottom color=gray!10
-%              [Visualizaci\'{o}n, draw=gray!10, top color=gray!5, bottom color=gray!10]
-%            ]
-%          ]
-%        ]
-%        [Comunicaci\'{o}n, draw=gray!30, top color=gray!5, bottom color=gray!30
-%          [Conectividad, draw=gray!10, top color=gray!5, bottom color=gray!10
-%            [Tolerable a fallos, draw=gray!10, top color=gray!5, bottom color=gray!10
-%              [Seguridad, draw=gray!10, top color=gray!5, bottom color=gray!10]
-%            ]
-%          ]
-%        ]
-%        [Control de Vuelo, draw=gray!30, top color=gray!5, bottom color=gray!30
-%          [Controles tipo PID, draw=gray!10, top color=gray!5, bottom color=gray!10
-%            [M\'{e}todos \\basados en aprendizaje, draw=gray!10, top color=gray!5, bottom color=gray!10
-%              [Controles\\lineales de vuelo, draw=gray!10, top color=gray!5, bottom color=gray!10]
-%            ]
-%          ]
-%        ]
-%      ]
-%    \end{forest}
-%  \end{center}
-%  \caption{Ilustra los retos multi-VANT a desarrollar en esta tesis}\label{fig:retos}
-%\end{figure}
+\begin{figure}
+  \begin{center}
+    \begin{forest}
+      for tree={%
+        thick,
+        drop shadow,
+        l sep=0.6cm,
+        s sep=0.8cm,
+        node options={draw,font=\sffamily},
+        edge={semithick,-Latex},
+        where level=0{parent}{},
+        where level=1{
+          minimum height=1cm,
+          child,
+          parent anchor=south west,
+          tier=p,
+          l sep=0.25cm,
+          for descendants={%
+            grandchild,
+            minimum height=0.6cm,
+            anchor=150,
+            edge path={
+              \noexpand\path[\forestoption{edge}]
+              (!to tier=p.parent anchor) |-(.child anchor)\forestoption{edge label};
+            },
+          }
+        }{},
+      }
+      [Retos\\multi-VANT, draw=black, top color=white!5, bottom color=white!30
+        [Planificaci\'{o}n\\trayectorias, draw=gray!30, top color=gray!5, bottom color=gray!30
+          [Formaciones \\en enjambre, draw=gray!10, top color=gray!5, bottom color=gray!10
+            [Evasi\'{o}n \\de obst\'{a}culos, draw=gray!10, top color=gray!5, bottom color=gray!10
+              [Multi-objetivos, draw=gray!10, top color=gray!5, bottom color=gray!10]
+            ]
+          ]
+        ]
+        [Percepci\'{o}n, draw=gray!30, top color=gray!5, bottom color=gray!30
+          [Colecci\'{o}n de\\informaci\'{o}n, draw=gray!10, top color=gray!5, bottom color=gray!10
+            [An\'{a}lisis de im\'{a}genes, draw=gray!10, top color=gray!5, bottom color=gray!10
+              [Visualizaci\'{o}n, draw=gray!10, top color=gray!5, bottom color=gray!10]
+            ]
+          ]
+        ]
+        [Comunicaci\'{o}n, draw=gray!30, top color=gray!5, bottom color=gray!30
+          [Conectividad, draw=gray!10, top color=gray!5, bottom color=gray!10
+            [Tolerable a fallos, draw=gray!10, top color=gray!5, bottom color=gray!10
+              [Cifrado de datos (seguridad de datos), draw=gray!10, top color=gray!5, bottom color=gray!10]
+            ]
+          ]
+        ]
+        [Control de Vuelo, draw=gray!30, top color=gray!5, bottom color=gray!30
+          [Controles tipo PID, draw=gray!10, top color=gray!5, bottom color=gray!10
+            [M\'{e}todos \\basados en aprendizaje, draw=gray!10, top color=gray!5, bottom color=gray!10
+              [Controles\\lineales de vuelo, draw=gray!10, top color=gray!5, bottom color=gray!10]
+            ]
+          ]
+        ]
+      ]
+    \end{forest}
+  \end{center}
+  \caption{Ilustra los retos multi-VANT a desarrollar en esta tesis}\label{fig:retos}
+\end{figure}
 
 
 %\subsection*{\textquestiondown Qu\'{e} es la autonom\'{i}a?}
@@ -715,7 +715,7 @@ El uso de sistemas multirobot traen consigo retos inherentes que deben abordarse
 \section*{Planteamiento del problema}
 
 Desarrollar una estrategia de exploraci\'{o}n multi-VANT que reduzca el tiempo total de exploraci\'{o}n dado un conjunto de $\mathcal{N}$ veh\'{i}culos a\'{e}reos no tripulados.\\
-Las capacidades limitadas de energ\'{i}a y sensores de los drones les permiten navegar de forma aut\'{o}noma dentro de los l\'{i}mites definidos. Teniendo en cuenta sus limitaciones de energia y la necesidad de una exploraci\'{o}n eficiente, el objetivo es determinar la trayectoria, las rutas y la asignaci\'{o}n de tareas \'{o}ptimas.\\
+Las capacidades limitadas de energ\'{i}a y sensores de los drones les permiten navegar de forma aut\'{o}noma dentro de los l\'{i}mites definidos. Teniendo en cuenta sus limitaciones de energ\'{i}a y la necesidad de una exploraci\'{o}n eficiente, el objetivo es determinar la trayectoria, las rutas y la asignaci\'{o}n de tareas \'{o}ptimas.\\
 
 El espacio de todas las posibles configuraciones, esta compuesto por los espacios libres ($C_{free}$) y espacios ocupado (con obst\'{a}culos) $C_{obs}$.\\
 
@@ -724,7 +724,7 @@ $\mathcal{A}(q)$ las configuraciones del robot $q \in \mathcal{C}$
 
 \begin{itemize}
   \item $C_{free} = \{q \in \mathcal{C}|\mathcal{A}(q)\cap\mathcal{O} = \emptyset\}$
-  \item $C_{obs} = C/C_{free}$
+  \item $C_{obs} = C\C_{free}$ MODIFICAR poner el slash invertido
 \end{itemize}
 
 donde $\mathcal{W} = \mathbb{R}^{3}$ es el espacio de trabajo del robot, $\mathcal{O} \in \mathcal{W}$ es el conjunto de obst\'{a}culos, y $\mathcal{A}(q)$ son las configuraciones del robot $q \in \mathcal{C}$ .\\
@@ -1178,28 +1178,28 @@ El art\'{i}culo de \cite{machines2023} investiga el problema de planificaci\'{o}
 
 %Recently, unmanned aerial vehicles (UAVs) or drones have emerged as a ubiquitous and integral part of our society. They appear in great diversity in a multiplicity of applications for economic, commercial, leisure, military and academic purposes. The drone industry has seen a sharp uptake in the last decade as a model to manufacture and deliver convergence, offering synergy by incorporating multiple technologies. It is due to technological trends and rapid advancements in control, miniaturization, and computerization, which culminate in secure, lightweight, robust, more-accessible and cost-efficient UAVs. UAVs support implicit particularities including access to disaster-stricken zones, swift mobility, airborne missions and payload features. Despite these appealing benefits, UAVs face limitations in operability due to several critical concerns in terms of flight autonomy, path planning, battery endurance, flight time and limited payload carrying capability, as intuitively it is not recommended to load heavy objects such as batteries. As a result, the primary goal of this research is to provide insights into the potentials of UAVs, as well as their characteristics and functionality issues. This study provides a comprehensive review of UAVs, types, swarms, classifications, charging methods and regulations. Moreover, application scenarios, potential challenges and security issues are also examined. Finally, future research directions are identified to further hone the research work. We believe these insights will serve as guidelines and motivations for relevant researchers \cite{UAVPRACTICAL2023}.\\
 
-%TEXTOS DEL HANDBOOK \cite{HandBookRobotics2016}.
+TEXTOS DEL HANDBOOK \cite{HandBookRobotics2016}.
 
-%Path planning with collision avoidance for unmanned aerial vehicles (UAVs) in environments with moving obstacles is a complex process of navigation, often considered a hard optimization problem. Ordinary resolution algorithms may fail to provide flyable and collision-free paths under the time-consumption constraints required by the dynamic 3D environment. In this paper, a new parallel multiobjective multiverse optimizer (PMOMVO) is proposed and successfully applied to deal with the increased computation time of the UAV path planning problem in dynamic 3D environments. Collision constraints with moving obstacles and narrow pass zones were established based on a mathematical characterization of any intersection with lines connecting two consecutive drones positions. For the implementation, a multicore central processing unit (CPU) architecture was proposed according to the concept of master-slave processing parallelization. Each subswarm of the entire PMOMVO population was granted to a corresponding slave, and representative solutions were selected and shared with the master core. Slaves sent their local Pareto fronts to the CPU core representing the master that merged the received set of nondominated solutions and built a global Pareto front. Demonstrative results and nonparametric ANOVA statistical analyses were carried out to show the effectiveness and superiority of the proposed PMOMVO algorithm compared to other homologous, multiobjective metaheuristics \cite{drones2022}
+Path planning with collision avoidance for unmanned aerial vehicles (UAVs) in environments with moving obstacles is a complex process of navigation, often considered a hard optimization problem. Ordinary resolution algorithms may fail to provide flyable and collision-free paths under the time-consumption constraints required by the dynamic 3D environment. In this paper, a new parallel multiobjective multiverse optimizer (PMOMVO) is proposed and successfully applied to deal with the increased computation time of the UAV path planning problem in dynamic 3D environments. Collision constraints with moving obstacles and narrow pass zones were established based on a mathematical characterization of any intersection with lines connecting two consecutive drones positions. For the implementation, a multicore central processing unit (CPU) architecture was proposed according to the concept of master-slave processing parallelization. Each subswarm of the entire PMOMVO population was granted to a corresponding slave, and representative solutions were selected and shared with the master core. Slaves sent their local Pareto fronts to the CPU core representing the master that merged the received set of nondominated solutions and built a global Pareto front. Demonstrative results and nonparametric ANOVA statistical analyses were carried out to show the effectiveness and superiority of the proposed PMOMVO algorithm compared to other homologous, multiobjective metaheuristics \cite{drones2022}
 
-%Path planning is one of the most important problems to be explored in unmanned aerial vehicles (UAVs) for finding an optimal path between source and destination. Although, in literature, a lot of research proposals exist on the path planning problems of UAVs but still issues of target location and identification persist keeping in view of the high mobility of UAVs. To solve these issues in UAVs path planning, optimal decisions need to be taken for various mission-critical operations performed by UAVs. These decisions require a map or graph of the mission environment so that UAVs are aware of their locations with respect to the map or graph. Keeping focus on the aforementioned points, this paper analyzes various UAVs path planning techniques used over the past many years. The aim of path planning techniques is not only to find an optimal and shortest path but also to provide the collision-free environment to the UAVs. It is important to have path planning techniques to compute a safe path in the shortest possible time to the final destination. In this paper, various path planning techniques for UAVs are classified into three broad categories, i.e., representative techniques, cooperative techniques, and non-cooperative techniques. With these techniques, coverage and connectivity of the UAVs network communication are discussed and analyzed. Based on each category of UAVs path planning, a critical analysis of the existing proposals has also been done. For better understanding, various comparison tables using parameters such as-path length, optimality, completeness, cost-efficiency, time efficiency, energy-efficiency, robustness and collision avoidance are also included in the text. In addition, a number of open research problems based on UAVs path planning and UAVs network communication are explored to provide deep insights to the readers \cite{PathPlanning2022}\\
+Path planning is one of the most important problems to be explored in unmanned aerial vehicles (UAVs) for finding an optimal path between source and destination. Although, in literature, a lot of research proposals exist on the path planning problems of UAVs but still issues of target location and identification persist keeping in view of the high mobility of UAVs. To solve these issues in UAVs path planning, optimal decisions need to be taken for various mission-critical operations performed by UAVs. These decisions require a map or graph of the mission environment so that UAVs are aware of their locations with respect to the map or graph. Keeping focus on the aforementioned points, this paper analyzes various UAVs path planning techniques used over the past many years. The aim of path planning techniques is not only to find an optimal and shortest path but also to provide the collision-free environment to the UAVs. It is important to have path planning techniques to compute a safe path in the shortest possible time to the final destination. In this paper, various path planning techniques for UAVs are classified into three broad categories, i.e., representative techniques, cooperative techniques, and non-cooperative techniques. With these techniques, coverage and connectivity of the UAVs network communication are discussed and analyzed. Based on each category of UAVs path planning, a critical analysis of the existing proposals has also been done. For better understanding, various comparison tables using parameters such as-path length, optimality, completeness, cost-efficiency, time efficiency, energy-efficiency, robustness and collision avoidance are also included in the text. In addition, a number of open research problems based on UAVs path planning and UAVs network communication are explored to provide deep insights to the readers 
 
-%In order to solve the path planning problem about multiple unmanned aerial vehicles (UAVs) attacking multiple targets under static environment, the method based on consistency theory is proposed in this paper. The Voronoi diagram method is used to create threat field and the total path cost is established firstly. Then, path planning model is constructed and the payment function of multiple UAVs path planning is designed. The idea that multiple UAVs cooperatively seek the optimal path based on consistency theory is further defined by establishing the path solving framework, the purpose of which is that multiple UAVs take off and arrive at prescribed target points at the same time. Finally, the simulation experiment is conducted, the results of which demonstrate that using the consistency theory combined with Voronoi diagram can guarantee the optimal path of UAVs and complete multiple UAVs cooperatively attacking multiple targets \cite{Chen2017}\\
+In order to solve the path planning problem about multiple unmanned aerial vehicles (UAVs) attacking multiple targets under static environment, the method based on consistency theory is proposed in this paper. The Voronoi diagram method is used to create threat field and the total path cost is established firstly. Then, path planning model is constructed and the payment function of multiple UAVs path planning is designed. The idea that multiple UAVs cooperatively seek the optimal path based on consistency theory is further defined by establishing the path solving framework, the purpose of which is that multiple UAVs take off and arrive at prescribed target points at the same time. Finally, the simulation experiment is conducted, the results of which demonstrate that using the consistency theory combined with Voronoi diagram can guarantee the optimal path of UAVs and complete multiple UAVs cooperatively attacking multiple targets \cite{Chen2017}\\
 
-%so developed. For RRT planning method, most time has been spent on collision. Numerous works are focused on 3D scenario. In [7], an improved RRT algorithm is implemented for UAV navigation in field environments. The initial path was created by RRT method and then the path was pruned to fit the motion constrain of UAV. Simple RRT only gives optimal result when the sample iteration reaches infinity though we can stop at required resolution. Recently various optimal RRT path planning algorithms have been developed towards reducing planning time, cost of the path or requirement of the motion constrain[8]. However, few of these try to solve the planning problem in multiple UAVs traversing environment, especially for the problems that contain rich static and pop-up obstacles [9][11].
+so developed. For RRT planning method, most time has been spent on collision. Numerous works are focused on 3D scenario. In [7], an improved RRT algorithm is implemented for UAV navigation in field environments. The initial path was created by RRT method and then the path was pruned to fit the motion constrain of UAV. Simple RRT only gives optimal result when the sample iteration reaches infinity though we can stop at required resolution. Recently various optimal RRT path planning algorithms have been developed towards reducing planning time, cost of the path or requirement of the motion constrain[8]. However, few of these try to solve the planning problem in multiple UAVs traversing environment, especially for the problems that contain rich static and pop-up obstacles [9][11].
 
-%In this paper, we develop a path planning algorithm for multiple UAVs traversing from their starting locations to corresponding goal locations in the presence of both static and dynamic obstacles. When a UAV detects a new obstacle, a new path is first found quickly and then depending on the cooperative path planning strategy is run to produce a better path. \cite{MultiPathPlanning2018}\\
+In this paper, we develop a path planning algorithm for multiple UAVs traversing from their starting locations to corresponding goal locations in the presence of both static and dynamic obstacles. When a UAV detects a new obstacle, a new path is first found quickly and then depending on the cooperative path planning strategy is run to produce a better path. \cite{MultiPathPlanning2018}\\
 
-%Autonomous BVLOS Unmanned Aerial Vehicles (UAVs) are gradually gaining their share in the drone market. Together with the demand for extended levels of autonomy comes the necessity for high-performance obstacle avoidance and navigation algorithms that will allow autonomous drones to operate with minimum or no human intervention. Traditional AI algorithms have been extensively used in the literature for finding the shortest path in 2-D or 3-D environments and navigating the drones successfully through a known and stable environment. However, the situation can become much more complicated when the environment is changing or not known in advance. In this work, we explore the use of advanced artificial intelligence techniques, such as reinforcement learning, to successfully navigate a drone within unspecified environments. We compare our approach against traditional AI algoriths in a set of validation experiments on a simulation environment, and the results show that using only a couple of low-cost distance sensors it is possible to successfully navigate the drone beyond the obstacles \cite{Chronis2023}.\\
+Autonomous BVLOS Unmanned Aerial Vehicles (UAVs) are gradually gaining their share in the drone market. Together with the demand for extended levels of autonomy comes the necessity for high-performance obstacle avoidance and navigation algorithms that will allow autonomous drones to operate with minimum or no human intervention. Traditional AI algorithms have been extensively used in the literature for finding the shortest path in 2-D or 3-D environments and navigating the drones successfully through a known and stable environment. However, the situation can become much more complicated when the environment is changing or not known in advance. In this work, we explore the use of advanced artificial intelligence techniques, such as reinforcement learning, to successfully navigate a drone within unspecified environments. We compare our approach against traditional AI algoriths in a set of validation experiments on a simulation environment, and the results show that using only a couple of low-cost distance sensors it is possible to successfully navigate the drone beyond the obstacles \cite{Chronis2023}.\\
 
-%Drones are poised to become an integral part of smart cities and improve overall life experience in the sense of monitoring pollution, accident investigation, fire-fighting, package delivery, supporting first responder activities, delivering medicine, monitoring traffic, and supervising construction sites. Drone technology can further lead to enormous secondary benefits such as reducing power consumption, conserving resources, reducing pollution, accessing hazardous and disaster areas, and increasing preparedness for emergencies \cite{SurveyCollab2019}.\\
+Drones are poised to become an integral part of smart cities and improve overall life experience in the sense of monitoring pollution, accident investigation, fire-fighting, package delivery, supporting first responder activities, delivering medicine, monitoring traffic, and supervising construction sites. Drone technology can further lead to enormous secondary benefits such as reducing power consumption, conserving resources, reducing pollution, accessing hazardous and disaster areas, and increasing preparedness for emergencies \cite{SurveyCollab2019}.\\
 
-%This paper presents a method for online trajectory planning in known environments. The proposed algorithm is a fusion of sampling-based techniques and model-based optimization via quadratic programming. The former is used to efficiently generate an obstacle-free path while the latter takes into account the robot dynamical constraints to generate a time-dependent trajectory. The main contribution of this work lies on the formulation of a convex optimization problem over the generated obstacle-free path that is guaranteed to be feasible. Thus, in contrast with previously proposed methods, iterative formulations are not required. The proposed method has been compared with state-of-the-art approaches showing a significant improvement in success rate and computation time. To illustrate the effectiveness of this approach for online planning, the proposed method was applied to the fluid autonomous navigation of a quadcopter in multiple environments consisting of up to 200 obstacles. The scenarios hereinafter presented are some of the most densely cluttered experiments for online planning and navigation reported to date 
+This paper presents a method for online trajectory planning in known environments. The proposed algorithm is a fusion of sampling-based techniques and model-based optimization via quadratic programming. The former is used to efficiently generate an obstacle-free path while the latter takes into account the robot dynamical constraints to generate a time-dependent trajectory. The main contribution of this work lies on the formulation of a convex optimization problem over the generated obstacle-free path that is guaranteed to be feasible. Thus, in contrast with previously proposed methods, iterative formulations are not required. The proposed method has been compared with state-of-the-art approaches showing a significant improvement in success rate and computation time. To illustrate the effectiveness of this approach for online planning, the proposed method was applied to the fluid autonomous navigation of a quadcopter in multiple environments consisting of up to 200 obstacles. The scenarios hereinafter presented are some of the most densely cluttered experiments for online planning and navigation reported to date 
 
 
-%The works of Shen, Michael, and Kumar (2011) and Fraundorfer et al. (2012) are among the earliest demonstrating autonomous MAV navigation. They showed that MAVs could follow waypoints in the currently estimated map, avoid obstacles, and complete exploration tasks in cluttered environments. Nonetheless, those early works fell short of demonstrating full autonomy since the former lacked onboard planning while the latter relied online mapping.\\
+The works of Shen, Michael, and Kumar (2011) and Fraundorfer et al. (2012) are among the earliest demonstrating autonomous MAV navigation. They showed that MAVs could follow waypoints in the currently estimated map, avoid obstacles, and complete exploration tasks in cluttered environments. Nonetheless, those early works fell short of demonstrating full autonomy since the former lacked onboard planning while the latter relied online mapping.\\
 
-%Advances in computing hardware and software, availability of robust yet lightweight sensors, such as depth cameras, and integrated vision-based localization modules, coupled with algorithmic developments, have recently enabled precise, aggressive maneuvers and navigation of MAVs in unknown environments, like the methods proposed by Thrun, Burgard, and Fox (2006); Tsardoulias, Iliakopoulou, Kargakos, and Petrou (2016), and by Cadena et al. (2016). Nevertheless, a framework combining elements from these fields to warrant fully autonomous navigation in general environments for compute-constrained MAVs is still missing since it has not been demonstrated to date.\\
+Advances in computing hardware and software, availability of robust yet lightweight sensors, such as depth cameras, and integrated vision-based localization modules, coupled with algorithmic developments, have recently enabled precise, aggressive maneuvers and navigation of MAVs in unknown environments, like the methods proposed by Thrun, Burgard, and Fox (2006); Tsardoulias, Iliakopoulou, Kargakos, and Petrou (2016), and by Cadena et al. (2016). Nevertheless, a framework combining elements from these fields to warrant fully autonomous navigation in general environments for compute-constrained MAVs is still missing since it has not been demonstrated to date.\\
 
 %\textbf{Mapeo}\\
 
