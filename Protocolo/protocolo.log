@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  12 AUG 2023 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  13 AUG 2023 01:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1231,115 +1231,210 @@ Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 36
-2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 61
+9.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 362.
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 507--508
+(Font)              scaled to size 10.40245pt on input line 619.
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 628--629
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 509--510
+Underfull \hbox (badness 10000) in paragraph at lines 630--631
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--521
+Underfull \hbox (badness 10000) in paragraph at lines 640--641
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--523
+Underfull \hbox (badness 10000) in paragraph at lines 646--647
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--525
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 672--673
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--675
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 684--685
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 690--691
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 692--693
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 738--739
+Underfull \hbox (badness 10000) in paragraph at lines 694--695
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 767--768
+Underfull \hbox (badness 10000) in paragraph at lines 723--724
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 783--784
+Underfull \hbox (badness 10000) in paragraph at lines 739--740
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 805--806
+Underfull \hbox (badness 10000) in paragraph at lines 761--762
 
  []
 
 [8]
-Overfull \hbox (241.24544pt too wide) in paragraph at lines 835--923
+Overfull \hbox (241.24544pt too wide) in paragraph at lines 791--879
 [] 
  []
 
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 1012--1013
+Underfull \hbox (badness 10000) in paragraph at lines 968--969
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1014--1015
+Underfull \hbox (badness 10000) in paragraph at lines 970--971
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 972--973
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 974--975
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 976--977
+
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 1003--1004
+[]\T1/bch/m/n/10.95 Más rá-pi-do que la
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1004
+\T1/bch/m/n/10.95 bús-que-da des-in-for-
+ []
+
+
+Underfull \hbox (badness 3735) in paragraph at lines 1004--1005
+\T1/bch/m/n/10.95 heu-rís-ti-ca pa-ra im-
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 1004--1005
+\T1/bch/m/n/10.95 pul-sar la bús-que-da
+ []
+
+
+Underfull \hbox (badness 5374) in paragraph at lines 1009--1010
+[]\T1/bch/m/n/10.95 Eficiente pa-ra pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1011
+[]\T1/bch/m/n/10.95 Completez pro-ba-bi-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1016--1017
-
+[]\T1/bch/m/n/10.95 Completez pro-ba-bi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1018--1019
-
+Overfull \hbox (41.36052pt too wide) in paragraph at lines 980--1022
+ [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1049
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1054
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1059
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1061
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1064
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1066
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1067--1068
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1070
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
+
+ []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
@@ -1347,42 +1442,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1090--1091
+Underfull \hbox (badness 10000) in paragraph at lines 1075--1076
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1092--1093
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 1097--1098
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1102--1103
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1104--1105
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1106--1108
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 1109--1110
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1111--1112
+Underfull \hbox (badness 10000) in paragraph at lines 1135--1136
 
  []
 
@@ -1391,60 +1466,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 1144--1145
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1147
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1150
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 1150--1151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1151--1152
+Underfull \hbox (badness 10000) in paragraph at lines 1152--1161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1153--1154
+Underfull \hbox (badness 10000) in paragraph at lines 1162--1163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1155--1156
+Underfull \hbox (badness 10000) in paragraph at lines 1164--1170
 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 1157--1158
+[16] [17] [18
 
- []
+] [19
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1161--1163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1174--1175
-
- []
-
-
-Package natbib Warning: Citation `KUMAR2023' on page 14 undefined on input line
- 1180.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1180--1181
-
- []
-
-[14] [15] [16
-
-] [17
-
-] [18] (./protocolo.bbl
+] [20] (./protocolo.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 6.
 
@@ -1468,35 +1514,39 @@ Underfull \hbox (badness 1515) in paragraph at lines 33--39
 o-logy.  In \T1/bch/m/it/10.95 Hand-book of Un-man-
  []
 
-[19{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
-}] [20]
+[21{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+}] [22]
 LaTeX Font Info:    Trying to load font information for TS1+bch on input line 2
-21.
+65.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1bch.fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
-[21] [22] [23])
+Underfull \hbox (badness 5519) in paragraph at lines 273--279
+[]\T1/bch/m/n/10.95 Ronald C. Ar-kin, edi-tor.  \T1/bch/m/it/10.95 Behavior-Bas
+ed Ro-bo-tics\T1/bch/m/n/10.95 .  MIT Press, 1998.  doi:
+ []
 
-Package natbib Warning: There were undefined citations.
 
-[24] (./protocolo.aux
+Underfull \hbox (badness 10000) in paragraph at lines 273--279
+\T1/bch/m/n/10.95 10 . 1007 / 978-[]3-[]319-[]32552-[]1$.  URL []$\T1/cmtt/m/n/
+10.95 https : / / mitpress . mit . edu / 9780262529204 /
+ []
+
+[23] [24]) [25] (./protocolo.aux
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `protocolo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 39154 strings out of 476025
- 834322 string characters out of 5790017
- 1930388 words of memory out of 5000000
- 58850 multiletter control sequences out of 15000+600000
+ 39093 strings out of 476025
+ 833212 string characters out of 5790017
+ 1917388 words of memory out of 5000000
+ 58798 multiletter control sequences out of 15000+600000
  571577 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 158i,19n,156p,2277b,2386s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 158i,19n,156p,2250b,2386s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><
 /usr/local/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></us
 r/local/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/
@@ -1509,10 +1559,10 @@ live/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
 /texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/t
 exlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/
 2023/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on protocolo.pdf (24 pages, 234399 bytes).
+Output written on protocolo.pdf (25 pages, 228717 bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
- 420 compressed objects within 5 object streams
- 132 named destinations out of 1000 (max. 500000)
+ 526 PDF objects out of 1000 (max. 8388607)
+ 451 compressed objects within 5 object streams
+ 123 named destinations out of 1000 (max. 500000)
  127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
