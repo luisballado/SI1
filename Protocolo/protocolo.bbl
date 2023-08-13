@@ -1,4 +1,4 @@
-\begin{thebibliography}{55}
+\begin{thebibliography}{53}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -455,18 +455,5 @@ Boyu Zhou, Hao Xu, and Shaojie Shen.
 \newblock \emph{IEEE Transactions on Robotics}, 39\penalty0 (3):\penalty0
   1816--1835, 2023.
 \newblock \doi{10.1109/TRO.2023.3236945}.
-
-\bibitem[Westheider et~al.(2023)Westheider, R{\"u}ckin, and
-  Popovi{\.c}]{WESTHEIDER2023}
-Jonas Westheider, Julius R{\"u}ckin, and Marija Popovi{\.c}.
-\newblock Multi-uav adaptive path planning using deep reinforcement learning,
-  2023.
-
-\bibitem[Bartolomei et~al.(2023)Bartolomei, Teixeira, and Chli]{BARTOLOMEI2023}
-Luca Bartolomei, Lucas Teixeira, and Margarita Chli.
-\newblock Fast multi-uav decentralized exploration of forests.
-\newblock \emph{IEEE Robotics and Automation Letters}, 8\penalty0 (9):\penalty0
-  5576--5583, 2023.
-\newblock \doi{10.1109/LRA.2023.3296037}.
 
 \end{thebibliography}

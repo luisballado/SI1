@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  13 AUG 2023 01:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  13 AUG 2023 03:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1472,7 +1472,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 1150--1151
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1152--1161
+Underfull \hbox (badness 10000) in paragraph at lines 1152--1153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1154--1155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1156--1157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1158--1159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1160--1161
 
  []
 
@@ -1482,11 +1502,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 1162--1163
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1170
+Underfull \hbox (badness 10000) in paragraph at lines 1164--1165
 
  []
 
-[16] [17] [18
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 1166--1167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1168--1169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+
+ []
+
+[17] [18
 
 ] [19
 
@@ -1540,10 +1595,10 @@ Package rerunfilecheck Info: File `protocolo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 39093 strings out of 476025
- 833212 string characters out of 5790017
+ 39086 strings out of 476025
+ 833067 string characters out of 5790017
  1917388 words of memory out of 5000000
- 58798 multiletter control sequences out of 15000+600000
+ 58793 multiletter control sequences out of 15000+600000
  571577 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  158i,19n,156p,2250b,2386s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1559,10 +1614,10 @@ live/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
 /texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/t
 exlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/
 2023/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on protocolo.pdf (25 pages, 228717 bytes).
+Output written on protocolo.pdf (25 pages, 228996 bytes).
 PDF statistics:
- 526 PDF objects out of 1000 (max. 8388607)
- 451 compressed objects within 5 object streams
- 123 named destinations out of 1000 (max. 500000)
+ 514 PDF objects out of 1000 (max. 8388607)
+ 439 compressed objects within 5 object streams
+ 121 named destinations out of 1000 (max. 500000)
  127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
