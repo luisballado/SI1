@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  14 AUG 2023 10:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  14 AUG 2023 13:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1357,413 +1357,433 @@ LaTeX Info: Redefining \% on input line 1.
 ) [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 258
+<Images//turquia1.jpg, id=145, 1203.49625pt x 676.5275pt>
+File: Images//turquia1.jpg Graphic file (type jpg)
+<use Images//turquia1.jpg>
+Package pdftex.def Info: Images//turquia1.jpg  used on input line 267.
+(pdftex.def)             Requested size: 136.91603pt x 76.9577pt.
+LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 267.
+LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 267.
+<Images//turquia2.jpg, id=146, 1203.49625pt x 676.5275pt>
+File: Images//turquia2.jpg Graphic file (type jpg)
+<use Images//turquia2.jpg>
+Package pdftex.def Info: Images//turquia2.jpg  used on input line 267.
+(pdftex.def)             Requested size: 171.14764pt x 96.1997pt.
+ [3
+
+ <./Images//turquia1.jpg> <./Images//turquia2.jpg>] (./template.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [4
+
+]
+<Images//multiuab.png, id=212, 724.7075pt x 543.02875pt>
+File: Images//multiuab.png Graphic file (type png)
+<use Images//multiuab.png>
+Package pdftex.def Info: Images//multiuab.png  used on input line 282.
+(pdftex.def)             Requested size: 170.71544pt x 156.48827pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 282
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 258
+LaTeX Font Info:    Trying to load font information for U+msb on input line 282
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
-58.
+82.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 258.
+(Font)              scaled to size 9.49997pt on input line 282.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 258.
+(Font)              scaled to size 6.64998pt on input line 282.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 258.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 258.
-LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 10.40245pt on input line 258.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 258.
-LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 7.59998pt on input line 258.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 258.
-LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 5.69998pt on input line 258.
- [3
-
-]
-<Images//fuerzas_drone.png, id=168, 552.0625pt x 445.665pt>
-File: Images//fuerzas_drone.png Graphic file (type png)
-<use Images//fuerzas_drone.png>
-Package pdftex.def Info: Images//fuerzas_drone.png  used on input line 267.
-(pdftex.def)             Requested size: 170.71642pt x 156.4883pt.
-LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 267.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 267.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 267.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 267.
+(Font)              scaled to size 4.74998pt on input line 282.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 267.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 282.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 267.
+(Font)              scaled to size 9.49997pt on input line 282.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 267.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 282.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 6.64998pt on input line 267.
+(Font)              scaled to size 6.64998pt on input line 282.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <5> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 267.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 282.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 4.74998pt on input line 267.
+(Font)              scaled to size 4.74998pt on input line 282.
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 267.
-LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 267.
+(Font)              scaled to size 7.0pt on input line 282.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 267.
+(Font)              scaled to size 8.54997pt on input line 282.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 5.69998pt on input line 282.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 267.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 282.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 8.54997pt on input line 267.
- [4
-
- <./Images//fuerzas_drone.png>]
-<Images//control_drone.png, id=196, 853.1875pt x 310.15875pt>
-File: Images//control_drone.png Graphic file (type png)
-<use Images//control_drone.png>
-Package pdftex.def Info: Images//control_drone.png  used on input line 279.
-(pdftex.def)             Requested size: 270.30469pt x 128.03671pt.
+(Font)              scaled to size 8.54997pt on input line 282.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 282.
+LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
+(Font)              scaled to size 5.69998pt on input line 282.
  [5
 
- <./Images//control_drone.png>]
-LaTeX Font Info:    Font shape `OT1/opensans-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 296.
-LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 296.
- [6
+ <./Images//multiuab.png>] (./template.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [6
 
 ]
-<Images//arquitectura_robot.jpg, id=252, 516.93124pt x 408.52625pt>
-File: Images//arquitectura_robot.jpg Graphic file (type jpg)
-<use Images//arquitectura_robot.jpg>
-Package pdftex.def Info: Images//arquitectura_robot.jpg  used on input line 306
-.
-(pdftex.def)             Requested size: 270.31235pt x 128.03815pt.
- [7
-
- <./Images//arquitectura_robot.jpg>] [8
-
-]
-<Images//rrt.png, id=307, 747.54282pt x 576.65437pt>
-File: Images//rrt.png Graphic file (type png)
-<use Images//rrt.png>
-Package pdftex.def Info: Images//rrt.png  used on input line 328.
-(pdftex.def)             Requested size: 270.3015pt x 128.03462pt.
- [9
-
- <./Images//rrt.png>]
-<Images//bug_algo.png, id=334, 297.11pt x 170.6375pt>
-File: Images//bug_algo.png Graphic file (type png)
-<use Images//bug_algo.png>
-Package pdftex.def Info: Images//bug_algo.png  used on input line 339.
-(pdftex.def)             Requested size: 170.72357pt x 85.36018pt.
- [10
-
- <./Images//bug_algo.png>]
-[11
-
-]
-<Images//control_autonomo.png, id=389, 334.24875pt x 151.56625pt>
+<Images//control_autonomo.png, id=276, 334.24875pt x 151.56625pt>
 File: Images//control_autonomo.png Graphic file (type png)
 <use Images//control_autonomo.png>
-Package pdftex.def Info: Images//control_autonomo.png  used on input line 363.
+Package pdftex.def Info: Images//control_autonomo.png  used on input line 298.
 (pdftex.def)             Requested size: 199.17372pt x 113.81316pt.
- [12
+ [7
 
  <./Images//control_autonomo.png>]
-<Images//sensar_planear_actuar.png, id=417, 852.18375pt x 487.8225pt>
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 10.40245pt on input line 326.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 7.59998pt on input line 326.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 326.
+LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
+(Font)              scaled to size 10.40245pt on input line 326.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 326.
+LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
+(Font)              scaled to size 7.59998pt on input line 326.
+
+[8
+
+]
+Overfull \hbox (4.53047pt too wide) in paragraph at lines 349--349
+[]|\OT1/opensans-TLF/m/n/6 Completo| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+[]|\OT1/opensans-TLF/m/n/6 Diagramas de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+[]|\OT1/opensans-TLF/m/n/6 Depende
+ []
+
+[9
+
+]
+<Images//octomaps.png, id=360, 1133.23375pt x 631.35875pt>
+File: Images//octomaps.png Graphic file (type png)
+<use Images//octomaps.png>
+Package pdftex.def Info: Images//octomaps.png  used on input line 360.
+(pdftex.def)             Requested size: 341.42525pt x 156.49057pt.
+ [10
+
+ <./Images//octomaps.png>] (./template.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [11
+
+] [12
+
+] [13
+
+] [14
+
+]
+LaTeX Font Info:    Font shape `OT1/opensans-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 390.
+ [15
+
+]
+[16
+
+] (./template.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [17
+
+] [18
+
+] [19
+
+] [20
+
+] [21
+
+] (./template.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [22
+
+] [23
+
+]
+[24
+
+] [25
+
+] [26
+
+]
+LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 476.
+ [27
+
+] [28
+
+]
+<Images//fuerzas_drone.png, id=907, 552.0625pt x 445.665pt>
+File: Images//fuerzas_drone.png Graphic file (type png)
+<use Images//fuerzas_drone.png>
+Package pdftex.def Info: Images//fuerzas_drone.png  used on input line 495.
+(pdftex.def)             Requested size: 170.71642pt x 156.4883pt.
+ [29
+
+ <./Images//fuerzas_drone.png>]
+<Images//control_drone.png, id=936, 853.1875pt x 310.15875pt>
+File: Images//control_drone.png Graphic file (type png)
+<use Images//control_drone.png>
+Package pdftex.def Info: Images//control_drone.png  used on input line 507.
+(pdftex.def)             Requested size: 270.30469pt x 128.03671pt.
+ [30
+
+ <./Images//control_drone.png>]
+LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 524.
+ [31
+
+]
+<Images//arquitectura_robot.jpg, id=992, 516.93124pt x 408.52625pt>
+File: Images//arquitectura_robot.jpg Graphic file (type jpg)
+<use Images//arquitectura_robot.jpg>
+Package pdftex.def Info: Images//arquitectura_robot.jpg  used on input line 534
+.
+(pdftex.def)             Requested size: 270.31235pt x 128.03815pt.
+ [32
+
+ <./Images//arquitectura_robot.jpg>] [33
+
+]
+<Images//rrt.png, id=1046, 747.54282pt x 576.65437pt>
+File: Images//rrt.png Graphic file (type png)
+<use Images//rrt.png>
+Package pdftex.def Info: Images//rrt.png  used on input line 556.
+(pdftex.def)             Requested size: 270.3015pt x 128.03462pt.
+ [34
+
+ <./Images//rrt.png>]
+<Images//bug_algo.png, id=1073, 297.11pt x 170.6375pt>
+File: Images//bug_algo.png Graphic file (type png)
+<use Images//bug_algo.png>
+Package pdftex.def Info: Images//bug_algo.png  used on input line 567.
+(pdftex.def)             Requested size: 170.72357pt x 85.36018pt.
+ [35
+
+ <./Images//bug_algo.png>] [36
+
+]
+File: Images//control_autonomo.png Graphic file (type png)
+<use Images//control_autonomo.png>
+Package pdftex.def Info: Images//control_autonomo.png  used on input line 591.
+(pdftex.def)             Requested size: 199.17372pt x 113.81316pt.
+ [37
+
+]
+<Images//sensar_planear_actuar.png, id=1155, 852.18375pt x 487.8225pt>
 File: Images//sensar_planear_actuar.png Graphic file (type png)
 <use Images//sensar_planear_actuar.png>
 Package pdftex.def Info: Images//sensar_planear_actuar.png  used on input line 
-373.
+601.
 (pdftex.def)             Requested size: 342.2978pt x 156.48601pt.
- [13
+ [38
 
  <./Images//sensar_planear_actuar.png>]
-<Images//path.jpg, id=445, 687.56876pt x 506.89375pt>
+<Images//path.jpg, id=1182, 687.56876pt x 506.89375pt>
 File: Images//path.jpg Graphic file (type jpg)
 <use Images//path.jpg>
-Package pdftex.def Info: Images//path.jpg  used on input line 398.
+Package pdftex.def Info: Images//path.jpg  used on input line 626.
 (pdftex.def)             Requested size: 154.02484pt x 156.48573pt.
- [14
+ [39
 
  <./Images//path.jpg>]
 File: Images//path.jpg Graphic file (type jpg)
 <use Images//path.jpg>
-Package pdftex.def Info: Images//path.jpg  used on input line 398.
+Package pdftex.def Info: Images//path.jpg  used on input line 626.
 (pdftex.def)             Requested size: 154.02484pt x 156.48573pt.
- [15
+ [40
 
 ]
-<Images//global_local.jpg, id=499, 853.1875pt x 529.98pt>
+<Images//global_local.jpg, id=1235, 853.1875pt x 529.98pt>
 File: Images//global_local.jpg Graphic file (type jpg)
 <use Images//global_local.jpg>
-Package pdftex.def Info: Images//global_local.jpg  used on input line 407.
+Package pdftex.def Info: Images//global_local.jpg  used on input line 635.
 (pdftex.def)             Requested size: 342.29742pt x 156.4883pt.
- [16
+ [41
 
  <./Images//global_local.jpg>]
-<Images//path2.png, id=526, 688.5725pt x 347.2975pt>
+<Images//path2.png, id=1263, 688.5725pt x 347.2975pt>
 File: Images//path2.png Graphic file (type png)
 <use Images//path2.png>
-Package pdftex.def Info: Images//path2.png  used on input line 448.
+Package pdftex.def Info: Images//path2.png  used on input line 676.
 (pdftex.def)             Requested size: 154.02904pt x 142.2657pt.
-
-[17
+ [42
 
  <./Images//path2.png>]
-<Images//path_plan.png, id=558, 1084.05pt x 405.515pt>
+<Images//path_plan.png, id=1291, 1084.05pt x 405.515pt>
 File: Images//path_plan.png Graphic file (type png)
 <use Images//path_plan.png>
-Package pdftex.def Info: Images//path_plan.png  used on input line 457.
+Package pdftex.def Info: Images//path_plan.png  used on input line 685.
 (pdftex.def)             Requested size: 1084.04736pt x 405.51399pt.
- [18
+ [43
 
- <./Images//path_plan.png>] [19
+ <./Images//path_plan.png>] [44
 
 ]
-<Images//path_graph.png, id=614, 1198.4775pt x 579.16376pt>
+<Images//path_graph.png, id=1345, 1198.4775pt x 579.16376pt>
 File: Images//path_graph.png Graphic file (type png)
 <use Images//path_graph.png>
-Package pdftex.def Info: Images//path_graph.png  used on input line 539.
+Package pdftex.def Info: Images//path_graph.png  used on input line 767.
 (pdftex.def)             Requested size: 1198.47458pt x 579.16234pt.
 
-Overfull \hbox (21.90005pt too wide) in paragraph at lines 539--539
+Overfull \hbox (21.90005pt too wide) in paragraph at lines 767--767
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 539--539
+Underfull \hbox (badness 10000) in paragraph at lines 767--767
 
  []
 
 
-Overfull \vbox (5.30728pt too high) detected at line 539
+Overfull \vbox (5.30728pt too high) detected at line 767
  []
 
-[20
+[45
 
  <./Images//path_graph.png>]
-<Images//visibilidad.png, id=642, 274.02374pt x 185.69376pt>
+<Images//visibilidad.png, id=1374, 274.02374pt x 185.69376pt>
 File: Images//visibilidad.png Graphic file (type png)
 <use Images//visibilidad.png>
-Package pdftex.def Info: Images//visibilidad.png  used on input line 552.
+Package pdftex.def Info: Images//visibilidad.png  used on input line 780.
 (pdftex.def)             Requested size: 170.71652pt x 115.68996pt.
- [21
+ [46
 
  <./Images//visibilidad.png>]
-<Images//voronoi.png, id=670, 725.71124pt x 511.9125pt>
+<Images//voronoi.png, id=1402, 725.71124pt x 511.9125pt>
 File: Images//voronoi.png Graphic file (type png)
 <use Images//voronoi.png>
-Package pdftex.def Info: Images//voronoi.png  used on input line 563.
+Package pdftex.def Info: Images//voronoi.png  used on input line 791.
 (pdftex.def)             Requested size: 170.71652pt x 120.41661pt.
- [22
+ [47
 
  <./Images//voronoi.png>]
 File: Images//voronoi.png Graphic file (type png)
 <use Images//voronoi.png>
-Package pdftex.def Info: Images//voronoi.png  used on input line 582.
+Package pdftex.def Info: Images//voronoi.png  used on input line 810.
 (pdftex.def)             Requested size: 170.71652pt x 120.41661pt.
- [23
+ [48
 
 ]
-<Images//potential-field1_robot.jpg, id=725, 551.05875pt x 163.3603pt>
+<Images//potential-field1_robot.jpg, id=1456, 551.05875pt x 163.3603pt>
 File: Images//potential-field1_robot.jpg Graphic file (type jpg)
 <use Images//potential-field1_robot.jpg>
 Package pdftex.def Info: Images//potential-field1_robot.jpg  used on input line
- 596.
+ 824.
 (pdftex.def)             Requested size: 227.62204pt x 67.47917pt.
- [24
+ [49
 
  <./Images//potential-field1_robot.jpg>]
 File: Images//potential-field1_robot.jpg Graphic file (type jpg)
 <use Images//potential-field1_robot.jpg>
 Package pdftex.def Info: Images//potential-field1_robot.jpg  used on input line
- 611.
+ 839.
 (pdftex.def)             Requested size: 227.62204pt x 67.47917pt.
- [25
+ [50
 
-] [26
+] [51
 
 ]
-<Images//graph_robot.png, id=805, 3791.16376pt x 1301.86375pt>
+<Images//graph_robot.png, id=1537, 3791.16376pt x 1301.86375pt>
 File: Images//graph_robot.png Graphic file (type png)
 <use Images//graph_robot.png>
-Package pdftex.def Info: Images//graph_robot.png  used on input line 647.
+Package pdftex.def Info: Images//graph_robot.png  used on input line 875.
 (pdftex.def)             Requested size: 199.16928pt x 68.3747pt.
 
-[27
+[52
 
  <./Images//graph_robot.png>]
-<Images//bfs.jpg, id=834, 1987.425pt x 632.3625pt>
+<Images//bfs.jpg, id=1565, 1987.425pt x 632.3625pt>
 File: Images//bfs.jpg Graphic file (type jpg)
 <use Images//bfs.jpg>
-Package pdftex.def Info: Images//bfs.jpg  used on input line 658.
+Package pdftex.def Info: Images//bfs.jpg  used on input line 886.
 (pdftex.def)             Requested size: 227.62204pt x 72.41621pt.
- [28
+ [53
 
  <./Images//bfs.jpg>]
-<Images//cinvestavlogo.png, id=861, 100.375pt x 100.375pt>
+<Images//cinvestavlogo.png, id=1593, 100.375pt x 100.375pt>
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 666.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 894.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
- [29
+ [54
 
  <./Images//cinvestavlogo.png>]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 674.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 902.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
- [30
+ [55
 
 ]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 685.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 913.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 685.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 913.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
 
-Overfull \vbox (25.11276pt too high) detected at line 685
+Overfull \vbox (25.11276pt too high) detected at line 913
  []
 
-[31
+[56
 
 ]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 693.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 921.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
- [32
-
-]
-Overfull \hbox (4.53047pt too wide) in paragraph at lines 716--716
-[]|\OT1/opensans-TLF/m/n/6 Completo| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 716--716
-[]|\OT1/opensans-TLF/m/n/6 Potential
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 716--716
-[]|\OT1/opensans-TLF/m/n/6 Depende
- []
-
-
-Overfull \hbox (2.18318pt too wide) in paragraph at lines 716--716
-[]|\OT1/opensans-TLF/m/n/6 Dijkstra/A*| 
- []
-
-[33
+ [57
 
 ]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 734.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 941.
 (pdftex.def)             Requested size: 82.15013pt x 82.15486pt.
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 734.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 941.
 (pdftex.def)             Requested size: 82.15013pt x 82.15486pt.
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 734.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 941.
 (pdftex.def)             Requested size: 82.15013pt x 82.15486pt.
- [34
+ [58
 
-] [35
-
-] [36
-
-] [37
-
-] [38
-
-] [39
-
-] [40
-
-]
-<example-image.pdf, id=1180, 321.2pt x 240.9pt>
-File: example-image.pdf Graphic file (type pdf)
-<use example-image.pdf>
-Package pdftex.def Info: example-image.pdf  used on input line 943.
-(pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
- [41
-
- </usr/local/texlive/2022/texmf-dist/tex/latex/mwe/example-image.pdf>] [42
-
-]
-LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 1024.
- [43
-
-] (./template.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [44
-
-] [45
-
-]
-[46
-
-] [47
-
-] (./template.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [48
-
-] [49
-
-] [50
-
-] [51
-
-] [52
-
-] [53
-
-] (./template.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-[54
-
-] [55
-
-] [56
-
-] [57
-
-] [58
-
-] (./template.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [59
+] [59
 
 ] [60
 
@@ -1773,33 +1793,46 @@ LaTeX Info: Redefining \% on input line 1.
 
 ] [63
 
+] [64
+
 ]
-(./template.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [64
+<example-image.pdf, id=1885, 321.2pt x 240.9pt>
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+Package pdftex.def Info: example-image.pdf  used on input line 1133.
+(pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
+ [65
 
-] [65
-
-] [66
+ </usr/local/texlive/2022/texmf-dist/tex/latex/mwe/example-image.pdf>] [66
 
 ] [67
-
-] [68
-
-] [69
 
 ] (./template.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [70
+) [68
+
+]
+[69
+
+] [70
 
 ] [71
 
-]
-[72
+] [72
 
 ] [73
+
+] (./template.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [74
+
+] [75
+
+] [76
+
+] [77
 
 ] (./template.bbl
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
@@ -1814,10 +1847,10 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ))
-Overfull \vbox (716.25996pt too high) detected at line 1209
+Overfull \vbox (947.46007pt too high) detected at line 1246
  []
 
-[74
+[78
 
 ]
 \tf@nav=\write6
@@ -1834,50 +1867,34 @@ LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: C6D38CA04D1241E3135314D0F5B6BC0B;1280.
+(rerunfilecheck)             Checksum: D23E2C17118F80C4E1FBCEB02CAB8E94;1551.
  ) 
 Here is how much of TeX's memory you used:
- 34948 strings out of 478268
- 717604 string characters out of 5846348
- 1079533 words of memory out of 5000000
- 52218 multiletter control sequences out of 15000+600000
+ 35017 strings out of 478268
+ 718989 string characters out of 5846348
+ 1084080 words of memory out of 5000000
+ 52273 multiletter control sequences out of 15000+600000
  501185 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,131p,604b,1162s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Navigation75} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Navigation78} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Navigation79} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Navigation83} has been referenced but does not exis
-t, replaced by a fixed one
-
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/tex
-live/2022/texmf-dist/fonts/enc/dvips/opensans/a_iz27ck.enc}{/usr/local/texlive/
-2022/texmf-dist/fonts/enc/dvips/opensans/a_n3lhbv.enc}</usr/local/texlive/2022/
-texmf-dist/fonts/type1/ascender/opensans/OpenSans-Bold.pfb></usr/local/texlive/
-2022/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Italic.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
-local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texliv
-e/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2022/t
-exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-dist/fon
-ts/type1/urw/palatino/uplr8a.pfb>
-Output written on template.pdf (74 pages, 2173274 bytes).
+ 128i,16n,131p,604b,1164s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
+exlive/2022/texmf-dist/fonts/enc/dvips/opensans/a_iz27ck.enc}{/usr/local/texliv
+e/2022/texmf-dist/fonts/enc/dvips/opensans/a_n3lhbv.enc}</usr/local/texlive/202
+2/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Bold.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Italic.pfb></usr/local
+/texlive/2022/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr
+/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2022
+/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-
+dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-dist/f
+onts/type1/urw/palatino/uplr8a.pfb>
+Output written on template.pdf (78 pages, 3980513 bytes).
 PDF statistics:
- 2263 PDF objects out of 2487 (max. 8388607)
- 2086 compressed objects within 21 object streams
- 177 named destinations out of 1000 (max. 500000)
- 340 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2417 PDF objects out of 2487 (max. 8388607)
+ 2228 compressed objects within 23 object streams
+ 189 named destinations out of 1000 (max. 500000)
+ 368 words of extra memory for PDF output out of 10000 (max. 10000000)
 
