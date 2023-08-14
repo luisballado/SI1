@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  14 AUG 2023 11:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  14 AUG 2023 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1144,17 +1144,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 196
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--208
+Underfull \hbox (badness 10000) in paragraph at lines 204--207
 
  []
 
@@ -1162,12 +1157,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--208
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--272
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
@@ -1182,52 +1172,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--276
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
+Underfull \hbox (badness 10000) in paragraph at lines 287--289
 
  []
 
-[3]
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--299
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 467--470
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
 
@@ -1236,130 +1231,140 @@ Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--477
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 61
-9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--481
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 62
+8.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 619.
+(Font)              scaled to size 10.40245pt on input line 628.
  [5]
-Underfull \hbox (badness 10000) in paragraph at lines 628--629
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--631
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--641
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 646--647
+Underfull \hbox (badness 10000) in paragraph at lines 655--656
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 648--649
+Underfull \hbox (badness 10000) in paragraph at lines 657--658
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 694--695
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--724
+Underfull \hbox (badness 10000) in paragraph at lines 732--733
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 739--740
+Underfull \hbox (badness 10000) in paragraph at lines 748--749
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--762
+Underfull \hbox (badness 10000) in paragraph at lines 770--771
 
  []
 
 [8]
-Overfull \hbox (241.24544pt too wide) in paragraph at lines 791--879
+Overfull \hbox (241.24544pt too wide) in paragraph at lines 800--888
 [] 
  []
 
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 968--969
+Underfull \hbox (badness 10000) in paragraph at lines 977--978
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 970--971
+Underfull \hbox (badness 10000) in paragraph at lines 979--980
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 972--973
+Underfull \hbox (badness 10000) in paragraph at lines 981--982
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 974--975
+Underfull \hbox (badness 10000) in paragraph at lines 984--985
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 976--977
+Underfull \hbox (badness 10000) in paragraph at lines 986--987
 
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 1003--1004
+Underfull \hbox (badness 2698) in paragraph at lines 1013--1014
 []\T1/bch/m/n/10.95 Más rá-pi-do que la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1004
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1014
 \T1/bch/m/n/10.95 bús-que-da des-in-for-
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 1004--1005
+Underfull \hbox (badness 3735) in paragraph at lines 1014--1015
 \T1/bch/m/n/10.95 heu-rís-ti-ca pa-ra im-
  []
 
 
-Underfull \hbox (badness 3646) in paragraph at lines 1004--1005
+Underfull \hbox (badness 3646) in paragraph at lines 1014--1015
 \T1/bch/m/n/10.95 pul-sar la bús-que-da
  []
 
 
-Underfull \hbox (badness 5374) in paragraph at lines 1009--1010
+Underfull \hbox (badness 5374) in paragraph at lines 1019--1020
 []\T1/bch/m/n/10.95 Eficiente pa-ra pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1010--1011
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
 []\T1/bch/m/n/10.95 Completez pro-ba-bi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1016--1017
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1027
 []\T1/bch/m/n/10.95 Completez pro-ba-bi-
  []
 
 
-Overfull \hbox (41.36052pt too wide) in paragraph at lines 980--1022
+Overfull \hbox (41.36052pt too wide) in paragraph at lines 990--1032
  [][] 
  []
 
@@ -1367,22 +1372,12 @@ Overfull \hbox (41.36052pt too wide) in paragraph at lines 980--1022
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
+Underfull \hbox (badness 10000) in paragraph at lines 1039--1040
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 1048--1049
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 1053--1054
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1057
 
  []
 
@@ -1391,38 +1386,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 1058--1059
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1061
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1062--1064
+[11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 1063--1064
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1065--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1069
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1067--1068
+Underfull \hbox (badness 10000) in paragraph at lines 1070--1071
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1069--1070
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1074
 
  []
 
@@ -1431,33 +1411,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 1075--1076
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1078
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1080
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 1081--1082
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1084
+
+ []
+
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 1100--1101
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1133--1134
+Underfull \hbox (badness 10000) in paragraph at lines 1143--1144
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1135--1136
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1144--1145
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 1150--1151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1152--1153
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1146
 
  []
 
@@ -1467,26 +1452,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 1154--1155
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1156--1157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1158--1159
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1160--1161
 
  []
 
-
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 1162--1163
 
  []
 
-[16]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1164--1165
 
  []
@@ -1521,8 +1496,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 1176--1177
 
  []
 
-
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1186--1187
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1188--1189
 
  []
 
@@ -1581,7 +1581,7 @@ Package rerunfilecheck Info: File `protocolo.out' has not changed.
 Here is how much of TeX's memory you used:
  38900 strings out of 478268
  827931 string characters out of 5846348
- 1261344 words of memory out of 5000000
+ 1260481 words of memory out of 5000000
  56375 multiletter control sequences out of 15000+600000
  528549 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1600,7 +1600,7 @@ ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/tex
 mf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2022/texmf
 -dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/f
 onts/type1/urw/zapfding/uzdr.pfb>
-Output written on protocolo.pdf (25 pages, 230580 bytes).
+Output written on protocolo.pdf (25 pages, 229818 bytes).
 PDF statistics:
  570 PDF objects out of 1000 (max. 8388607)
  495 compressed objects within 5 object streams
