@@ -171,6 +171,12 @@ Humberto Sandoval~Garc\'{i}a.
   tripulados de baja altitud.
 \newblock Master's thesis, CINVESTAV Unidad Tamaulipas, Febrero 2013.
 
+\bibitem[Villanueva~Grijalva(2015)]{CINVES2015}
+Omar~Abraham Villanueva~Grijalva.
+\newblock Control de un veh\'{i}culo a\'{e}reo no tripulado (auv) para
+  reconocimiento en interiores.
+\newblock Master's thesis, CINVESTAV Unidad Guadalajara, Septiembre 2015.
+
 \bibitem[Campos-Mac\'{i}as et~al.(2020)Campos-Mac\'{i}as, Aldana-L\'{o}pez,
   Guardia, Parra-Vilchis, and G\'{o}mez-Guti\'{e}rrez]{CINVES2021}
 Leobardo Campos-Mac\'{i}as, Rodrigo Aldana-L\'{o}pez, Rafael Guardia,
@@ -180,12 +186,6 @@ Leobardo Campos-Mac\'{i}as, Rodrigo Aldana-L\'{o}pez, Rafael Guardia,
   may 2020.
 \newblock \doi{10.1002/rob.21959}.
 \newblock URL \url{https://doi.org/10.1002/rob.21959}.
-
-\bibitem[Villanueva~Grijalva(2015)]{CINVES2015}
-Omar~Abraham Villanueva~Grijalva.
-\newblock Control de un veh\'{i}culo a\'{e}reo no tripulado (auv) para
-  reconocimiento en interiores.
-\newblock Master's thesis, CINVESTAV Unidad Guadalajara, Septiembre 2015.
 
 \bibitem[Alsamhi et~al.(2019)Alsamhi, Ma, Ansari, and
   Almalki]{SurveyCollab2019}

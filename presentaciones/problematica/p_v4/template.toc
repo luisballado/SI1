@@ -3,7 +3,7 @@
 \beamer@sectionintoc {2}{Descripción del proyecto}{4}{0}{2}
 \beamer@sectionintoc {3}{Antecedentes y motivación para el proyecto}{6}{0}{3}
 \beamer@sectionintoc {4}{Planteamiento del problema}{11}{0}{4}
-\beamer@sectionintoc {5}{Objetivos generales y específicos del proyecto}{17}{0}{5}
-\beamer@sectionintoc {6}{Metodología}{22}{0}{6}
-\beamer@sectionintoc {7}{Estado del Arte}{68}{0}{7}
-\beamer@sectionintoc {8}{Contribuciones o resultados esperados}{74}{0}{8}
+\beamer@sectionintoc {5}{Objetivos generales y específicos del proyecto}{16}{0}{5}
+\beamer@sectionintoc {6}{Metodología}{20}{0}{6}
+\beamer@sectionintoc {7}{Estado del Arte}{25}{0}{7}
+\beamer@sectionintoc {8}{Contribuciones o resultados esperados}{27}{0}{8}
