@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  23 JUL 2023 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  14 AUG 2023 00:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1179,69 +1179,9 @@ Package: hanging 2009/09/02 v1.2b hanging paragraphs and punctuation
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamerinnerthemecircles.st
 y)
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@centercr' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightskip' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@flushglue' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leftskip' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@flushglue' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\finalhyphendemerits' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\parindent' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\parfillskip' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@skip' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\includegraphics' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 212.
-
 LaTeX Font Info:    Trying to load font information for OT1+opensans-TLF on inp
 ut line 212.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/opensans/OT1opensans-TLF.fd
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/opensans/OT1opensans-TLF.fd
 File: OT1opensans-TLF.fd 2019/06/24 Font definitions for OT1/opensans-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
@@ -1412,11 +1352,6 @@ LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 212.
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 220.
-<Images//swarm_drones.png, id=70, 1282.7925pt x 353.32pt>
-File: Images//swarm_drones.png Graphic file (type png)
-<use Images//swarm_drones.png>
-Package pdftex.def Info: Images//swarm_drones.png  used on input line 220.
-(pdftex.def)             Requested size: 284.52756pt x 78.36679pt.
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 220.
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
@@ -1424,430 +1359,425 @@ LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
  [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2023/texmf-dist/fonts/enc/dvips/opensans/a_n3lhbv.enc} <./Images//sw
-arm_drones.png>] (./template.toc
+al/texlive/2023/texmf-dist/fonts/enc/dvips/opensans/a_n3lhbv.enc}] (./template.
+toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
-[2
+) [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 258
+LaTeX Font Info:    Trying to load font information for U+msa on input line 257
 .
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 258
+LaTeX Font Info:    Trying to load font information for U+msb on input line 257
 .
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
-58.
+57.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 258.
+(Font)              scaled to size 10.40245pt on input line 257.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 258.
+(Font)              scaled to size 7.59998pt on input line 257.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 258.
+(Font)              scaled to size 5.69998pt on input line 257.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 258.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 257.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 10.40245pt on input line 258.
+(Font)              scaled to size 10.40245pt on input line 257.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 258.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 257.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 7.59998pt on input line 258.
+(Font)              scaled to size 7.59998pt on input line 257.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 258.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 257.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 5.69998pt on input line 258.
+(Font)              scaled to size 5.69998pt on input line 257.
  [3
 
+] [4
+
 ]
-<example-image.pdf, id=171, 321.2pt x 240.9pt>
+[5
+
+] [6
+
+] [7
+
+]
+LaTeX Font Info:    Font shape `OT1/opensans-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 282.
+LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 282.
+ [8
+
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/opensans/a_iz27ck.enc}] [9
+
+] [10
+
+] [11
+
+] [12
+
+] [13
+
+] [14
+
+]
+<example-image.pdf, id=460, 321.2pt x 240.9pt>
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
-Package pdftex.def Info: example-image.pdf  used on input line 267.
+Package pdftex.def Info: example-image.pdf  used on input line 334.
 (pdftex.def)             Requested size: 342.30339pt x 156.49492pt.
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 267.
+(Font)              scaled to size 10.0pt on input line 334.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 267.
+(Font)              scaled to size 9.49997pt on input line 334.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 267.
+(Font)              scaled to size 6.64998pt on input line 334.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 267.
+(Font)              scaled to size 4.74998pt on input line 334.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 267.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 334.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 267.
+(Font)              scaled to size 9.49997pt on input line 334.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 267.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 334.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 6.64998pt on input line 267.
+(Font)              scaled to size 6.64998pt on input line 334.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <5> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 267.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 334.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 4.74998pt on input line 267.
+(Font)              scaled to size 4.74998pt on input line 334.
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 267.
+(Font)              scaled to size 7.0pt on input line 334.
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 267.
+(Font)              scaled to size 9.0pt on input line 334.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 267.
+(Font)              scaled to size 8.54997pt on input line 334.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 267.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 334.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 8.54997pt on input line 267.
- [4
+(Font)              scaled to size 8.54997pt on input line 334.
+ [15
 
  </usr/local/texlive/2023/texmf-dist/tex/latex/mwe/example-image.pdf>]
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
-Package pdftex.def Info: example-image.pdf  used on input line 274.
+Package pdftex.def Info: example-image.pdf  used on input line 341.
 (pdftex.def)             Requested size: 342.30339pt x 156.49492pt.
- [5
+ [16
 
 ]
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
-Package pdftex.def Info: example-image.pdf  used on input line 299.
+Package pdftex.def Info: example-image.pdf  used on input line 366.
 (pdftex.def)             Requested size: 154.03702pt x 156.49492pt.
- [6
+ [17
 
 ]
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
-Package pdftex.def Info: example-image.pdf  used on input line 299.
+Package pdftex.def Info: example-image.pdf  used on input line 366.
 (pdftex.def)             Requested size: 154.03702pt x 156.49492pt.
- [7
+ [18
 
 ]
-<Images//cinvestavlogo.png, id=284, 100.375pt x 100.375pt>
+<Images//cinvestavlogo.png, id=572, 100.375pt x 100.375pt>
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 309.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 376.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 309.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 376.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
-
-[8
+ [19
 
  <./Images//cinvestavlogo.png>]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 309.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 376.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 309.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 376.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
- [9
+ [20
 
 ]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 320.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 387.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 320.
-(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
- [10
-
-]
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 320.
-(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 320.
-(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
- [11
-
-]
-File: example-image.pdf Graphic file (type pdf)
-<use example-image.pdf>
-Package pdftex.def Info: example-image.pdf  used on input line 342.
-(pdftex.def)             Requested size: 154.03702pt x 156.49492pt.
- [12
-
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 350.
-(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
- [13
-
-] [14
-
-] [15
-
-]
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 427.
-(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
- [16
-
-]
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 439.
-(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
- [17
-
-]
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 449.
-(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
- [18
-
-]
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 467.
-(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
- [19
-
-]
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 481.
-(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
-
-[20
-
-]
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 495.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 387.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
  [21
 
 ]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 513.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 387.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 513.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 387.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
  [22
 
 ]
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 530.
-(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+Package pdftex.def Info: example-image.pdf  used on input line 409.
+(pdftex.def)             Requested size: 154.03702pt x 156.49492pt.
  [23
 
-]
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 540.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 417.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
  [24
 
-]
-LaTeX Font Info:    Font shape `OT1/opensans-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 548.
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 548.
-(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
- [25
+] [25
 
 ]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 556.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 494.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
  [26
 
 ]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 567.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 506.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 567.
-(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
-
-Overfull \vbox (25.11276pt too high) detected at line 567
- []
-
-[27
+ [27
 
 ]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 575.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 516.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
  [28
 
 ]
-Overfull \hbox (4.53047pt too wide) in paragraph at lines 598--598
-[]|\OT1/opensans-TLF/m/n/6 Completo| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
-[]|\OT1/opensans-TLF/m/n/6 Potential
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
-[]|\OT1/opensans-TLF/m/n/6 Depende
- []
-
-
-Overfull \hbox (2.18318pt too wide) in paragraph at lines 598--598
-[]|\OT1/opensans-TLF/m/n/6 Dijkstra/A*| 
- []
-
-[29
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 534.
+(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
+ [29
 
 ]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 616.
-(pdftex.def)             Requested size: 82.15013pt x 82.15486pt.
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 616.
-(pdftex.def)             Requested size: 82.15013pt x 82.15486pt.
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 616.
-(pdftex.def)             Requested size: 82.15013pt x 82.15486pt.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 548.
+(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
  [30
 
-] [31
-
-] [32
-
-] [33
-
-] [34
-
-] [35
-
-] [36
+]
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 562.
+(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
+ [31
 
 ]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 724.
-(pdftex.def)             Requested size: 68.45801pt x 68.46237pt.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 580.
+(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 724.
-(pdftex.def)             Requested size: 136.91603pt x 136.93549pt.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 580.
+(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
+ [32
 
-Overfull \vbox (11.79294pt too high) detected at line 724
+]
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 597.
+(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
+ [33
+
+]
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 607.
+(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
+ [34
+
+]
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 615.
+(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
+ [35
+
+]
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 623.
+(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
+ [36
+
+]
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 634.
+(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 634.
+(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
+
+Overfull \vbox (25.11276pt too high) detected at line 634
  []
 
 [37
 
-] [38
+]
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 642.
+(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
+ [38
 
-] [39
+]
+Overfull \hbox (4.53047pt too wide) in paragraph at lines 665--665
+[]|\OT1/opensans-TLF/m/n/6 Completo| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+[]|\OT1/opensans-TLF/m/n/6 Potential
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+[]|\OT1/opensans-TLF/m/n/6 Depende
+ []
+
+
+Overfull \hbox (2.18318pt too wide) in paragraph at lines 665--665
+[]|\OT1/opensans-TLF/m/n/6 Dijkstra/A*| 
+ []
+
+[39
 
 ]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 746.
-(pdftex.def)             Requested size: 113.81102pt x 113.81909pt.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 683.
+(pdftex.def)             Requested size: 82.15013pt x 82.15486pt.
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 746.
-(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 683.
+(pdftex.def)             Requested size: 82.15013pt x 82.15486pt.
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 683.
+(pdftex.def)             Requested size: 82.15013pt x 82.15486pt.
  [40
 
-]
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 757.
-(pdftex.def)             Requested size: 50.18736pt x 50.18736pt.
- [41
+] [41
 
 ] [42
 
-]
-File: Images//cinvestavlogo.png Graphic file (type png)
-<use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 784.
-(pdftex.def)             Requested size: 50.18736pt x 50.18736pt.
- [43
+] [43
+
+] [44
+
+] [45
+
+] [46
 
 ]
 File: Images//cinvestavlogo.png Graphic file (type png)
 <use Images//cinvestavlogo.png>
-Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 801.
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 791.
+(pdftex.def)             Requested size: 68.45801pt x 68.46237pt.
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 791.
+(pdftex.def)             Requested size: 136.91603pt x 136.93549pt.
+
+Overfull \vbox (11.79294pt too high) detected at line 791
+ []
+
+[47
+
+] [48
+
+] [49
+
+]
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 813.
+(pdftex.def)             Requested size: 113.81102pt x 113.81909pt.
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 813.
+(pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
+ [50
+
+]
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 824.
+(pdftex.def)             Requested size: 50.18736pt x 50.18736pt.
+ [51
+
+] [52
+
+]
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 851.
+(pdftex.def)             Requested size: 50.18736pt x 50.18736pt.
+ [53
+
+]
+File: Images//cinvestavlogo.png Graphic file (type png)
+<use Images//cinvestavlogo.png>
+Package pdftex.def Info: Images//cinvestavlogo.png  used on input line 868.
 (pdftex.def)             Requested size: 119.80283pt x 119.8107pt.
- [44
+ [54
 
 ]
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
-Package pdftex.def Info: example-image.pdf  used on input line 826.
+Package pdftex.def Info: example-image.pdf  used on input line 893.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
- [45
-
-] [46
-
-] [47
-
-]
-LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 908.
- [48
-
-] (./template.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-[49
-
-] [50
-
-] [51
-
-] [52
-
-] (./template.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [53
-
-] [54
-
-] [55
+ [55
 
 ] [56
 
 ] [57
 
-] [58
-
 ]
-(./template.toc
+LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 974.
+ [58
+
+] (./template.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [59
+)
+[59
 
 ] [60
 
@@ -1855,38 +1785,28 @@ LaTeX Info: Redefining \% on input line 1.
 
 ] [62
 
-] [63
-
 ] (./template.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [64
+) [63
+
+] [64
 
 ] [65
 
 ] [66
 
-]
-[67
+] [67
 
 ] [68
 
-] (./template.toc
+]
+(./template.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 ) [69
 
-]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-074.
-
-(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Overfull \vbox (3.76991pt too high) detected at line 1074
- []
-
-[70
+] [70
 
 ] [71
 
@@ -1894,52 +1814,26 @@ Overfull \vbox (3.76991pt too high) detected at line 1074
 
 ] [73
 
-] [74
+] (./template.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [74
+
+] [75
+
+] [76
 
 ]
-<Images//drones.png, id=2136, 770.88pt x 332.74312pt>
-File: Images//drones.png Graphic file (type png)
-<use Images//drones.png>
-Package pdftex.def Info: Images//drones.png  used on input line 1112.
-(pdftex.def)             Requested size: 308.06367pt x 132.97302pt.
- [75
-
- <./Images//drones.png>]
-<Images//d4.png, id=2164, 301.125pt x 225.84375pt>
-File: Images//d4.png Graphic file (type png)
-<use Images//d4.png>
-Package pdftex.def Info: Images//d4.png  used on input line 1124.
-(pdftex.def)             Requested size: 171.14764pt x 128.36697pt.
-<Images//d5.png, id=2165, 330.23375pt x 247.92625pt>
-File: Images//d5.png Graphic file (type png)
-<use Images//d5.png>
-Package pdftex.def Info: Images//d5.png  used on input line 1124.
-(pdftex.def)             Requested size: 171.14764pt x 128.4949pt.
-
-Overfull \vbox (32.38184pt too high) detected at line 1124
- []
-
-[76
-
- <./Images//d4.png> <./Images//d5.png>] [77
+[77
 
 ] [78
 
-]
-LaTeX Font Info:    Font shape `OT1/opensans-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 1162.
-<Images//maps.png, id=2246, 840.13875pt x 209.78375pt>
-File: Images//maps.png Graphic file (type png)
-<use Images//maps.png>
-Package pdftex.def Info: Images//maps.png  used on input line 1162.
-(pdftex.def)             Requested size: 273.83728pt x 68.37737pt.
- [79
-
- <./Images//maps.png>]
-(./template.toc
+] (./template.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [80
+) [79
+
+] [80
 
 ] [81
 
@@ -1947,23 +1841,45 @@ LaTeX Info: Redefining \% on input line 1.
 
 ] [83
 
+] [84
+
+] (./template.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+[85
+
+] [86
+
+] [87
+
+] [88
+
 ] (./template.bbl
-LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 12.
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
 3.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
+3.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
 pdfTeX warning (ext4): destination with the same identifier (name{cite.james}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 ...2023)Zahroof, Liu, Zhou, and Kumar]{james}
-                                                  ) [84
+l.127 ...023)Zahroof, Liu, Zhou, and Kumar]{james}
+                                                  )
+Overfull \vbox (716.25996pt too high) detected at line 1159
+ []
 
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/opensans/a_iz27ck.enc}]
+[89
+
+]
 \tf@nav=\write6
 \openout6 = `template.nav'.
 
@@ -1981,11 +1897,11 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: C6D38CA04D1241E3135314D0F5B6BC0B;1280.
  ) 
 Here is how much of TeX's memory you used:
- 35021 strings out of 476025
- 718180 string characters out of 5790017
- 1873388 words of memory out of 5000000
- 54519 multiletter control sequences out of 15000+600000
- 544809 words of font info for 114 fonts, out of 8000000 for 9000
+ 34990 strings out of 476025
+ 717199 string characters out of 5790017
+ 1882388 words of memory out of 5000000
+ 54469 multiletter control sequences out of 15000+600000
+ 544213 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,131p,604b,1150s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Bo
@@ -1994,17 +1910,15 @@ ns-Italic.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/ascender/opensans
 /OpenSans-Regular.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss17
-.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></u
-sr/local/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/loca
-l/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texl
-ive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on template.pdf (84 pages, 1315472 bytes).
+onts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lm
+ss17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
+></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
+local/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/
+texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on template.pdf (89 pages, 326883 bytes).
 PDF statistics:
- 2512 PDF objects out of 2984 (max. 8388607)
- 2334 compressed objects within 24 object streams
- 186 named destinations out of 1000 (max. 500000)
- 280 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2660 PDF objects out of 2984 (max. 8388607)
+ 2490 compressed objects within 25 object streams
+ 210 named destinations out of 1000 (max. 500000)
+ 255 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,8 +1,8 @@
 \babel@toc {spanish}{}\relax 
 \beamer@sectionintoc {1}{Resumen}{2}{0}{1}
-\beamer@sectionintoc {2}{Descripción del proyecto}{49}{0}{2}
-\beamer@sectionintoc {3}{Planteamiento del problema}{53}{0}{3}
-\beamer@sectionintoc {4}{Objetivos generales y específicos del proyecto}{59}{0}{4}
-\beamer@sectionintoc {5}{Metodología}{64}{0}{5}
-\beamer@sectionintoc {6}{Estado del Arte}{69}{0}{6}
-\beamer@sectionintoc {7}{Contribuciones o resultados esperados}{80}{0}{7}
+\beamer@sectionintoc {2}{Descripción del proyecto}{59}{0}{2}
+\beamer@sectionintoc {3}{Planteamiento del problema}{63}{0}{3}
+\beamer@sectionintoc {4}{Objetivos generales y específicos del proyecto}{69}{0}{4}
+\beamer@sectionintoc {5}{Metodología}{74}{0}{5}
+\beamer@sectionintoc {6}{Estado del Arte}{79}{0}{6}
+\beamer@sectionintoc {7}{Contribuciones o resultados esperados}{85}{0}{7}

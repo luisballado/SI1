@@ -185,7 +185,7 @@
 %	PRESENTATION INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title[SEMINARIO DE INVESTIGACIÓN I]{\centering\includegraphics[width=10cm]{swarm_drones}\\
+\title[SEMINARIO DE INVESTIGACIÓN I]{%\centering\includegraphics[width=10cm]{swarm_drones}\\
   Estrategias para la exploración coordinada multi-VANT} % The short title in the optional parameter appears at the bottom of every slide, the full title in the main parameter is only on the title page
 
 %\subtitle{Optional Subtitle} % Presentation subtitle, remove this command if a subtitle isn't required
@@ -247,17 +247,84 @@
 
 \section{Resumen}
 
-\begin{frame}{Problemas en la rob\'{o}tica}
+\begin{frame}{Robots A\'{e}reos}
+  Actualmente vemos VANTS o coloquialmente como drones, a los que se le pueden pasar rutas de puntos GPS para que recorra, pero no est\'{a} siendo aut\'{o}nomo, sólo el piloto es reemplazado por un piloto autom\'{a}tico.
   \begin{itemize}
-  \item Encontrar la ruta m\'{a}s corta
-  \item Physical robot constrains
-  \item Uncertainties: Sensing and actuation
-  \item Escalabilidad y eficiencia computacional
-  \item Obst\'{a}culos din\'{a}micos y en movimiento
+  \item Ala fija (tipo avi\'{o}n)
+  \item Ala rotatoria coaxial (tipo helic\'{o}ptero)
+  \item Alas rotatorias no coaxiales
   \end{itemize}
 \end{frame}
 
+\begin{frame}{¿C\'{o}mo funciona un cuadric\'{o}ptero?}
+  IMAGEN
+\end{frame}
+
+\begin{frame}{Control de cuadric\'{o}ptero}
+  Control independiente (desacoplado) de la altura, el avance, desplazamiento lateral y el cabeceo por medio de una combinaci\'{o}n intuitiva de la velocidad de giro de los rotores (CITAR controles 2011)
+\end{frame}
+
+\begin{frame}{}
+  Lograr que un multic\'{o}ptero mantenga una posici\'{o}n estable no es una tarea f\'{a}cil y se han propuesto diversas t\'{e}cnicas (CITAR control difuso, MPC, programacionn genetica..)
+\end{frame}
+
+\begin{frame}{}
+  Diversas t\'{e}cnicas buscan proporcionar un sistema de control robusto, pero resultan ser t\'{e}cnicas con alto costo computacional, y los VANTS que vemos, los fabricantes hacen uso de controles ya conocidos como PID. Por la complejidad de estabilizar un VANT en el aire, se se aprovecha el desacople para realizar un control en cascada para encontrar la secuencia a aplicar al VANT 
+\end{frame}
+
+
+\begin{frame}{Arquitectura de control}
+  Las estructuras de \textbf{control reactivas} permiten, a tr\'{a}ves de relaciones simples de tipo \textbf{estimulo-respuesta} conocidas como \textit{comportamientos.} De esta forma se logra separar los problemas del robot en sub-problemas (alta modularidad). permitiendo respuestas r\'{a}pidas y robustas a los cambios que puedan efectuarse en el medio ambiente. Todo esto sin un modelo en memoria de su entorno.\\
+  Con este tipo de control no es posible garantizar que el robot sea capaz de encontrar una soluci\'{o}n a un problema. Al no tener memoria no es posible resolver problemas que consideren estados pasados del robot.\\
+
+  IMAGEN DE ROMBA
+  
+\end{frame}
+
+\begin{frame}{}
+  La \textbf{arquitectura hibrida} reemplaza la planificaci\'{o}n reactiva, por una ejecuci\'{o}n reactiva. En lugar de tener secuencias, se emplean representaciones en memoria para elaborar un plan previo y s\'{o}lo se vigila en tiempo real la correcta activaci\'{o}n y ejecuci\'{o}n de comportamientos.\\
+  IMAGEN
+\end{frame}
+
+\begin{frame}{}
+  De esta forma, los tres m\'{o}dulos o capas de control son propuestos para el problema de autonom\'{i}a.
+  \begin{itemize}
+  \item Un Planificador - Elabora un plan de ejecuci\'{o}n para alcanzar el objetivo deseado
+  \item Habilidades reactivas - Para resolver situaciones precisas
+  \item Secuenciador - que conecta las dos anteriores
+  \end{itemize}
+  IMAGEN  
+\end{frame}
+
+\begin{frame}{Planificaci\'{o}n de trayectorias}
+  Es un proceso de alto nivel que consume un gran tiempo de c\'{o}mputo. Generalmente no se hace en un tiempo real, apesar que no existe un l\'{i}mite para la complejidad de la soluci\'{o}n, generalmente se emplean lenguajes de alto nivel en esta parte.\\
+  IMAGE
+\end{frame}
+
+\begin{frame}{Controles Primitivos}
+  Los controles de bajo nivel son un conjunto de funciones entre el estimulo recogido por los sensores y las acciones efectuadas por el robot. Siendo este un comportamiento o habilidad del robot.\\
+  IMAGE\\
+  Permiten resolver problemas como evadir obst\'{a}culos. Aqu\'{i} se buscan soluciones y algoritmos en tiempo real.
+\end{frame}
+
+\begin{frame}{Secuenciador}
+  Tiene acceso a la memoria, este recibe el plan desarrollado por la capa deliberativa (Planificador) y selecciona el comportamiento estableciendo los par\'{a}metros m\'{a}s adecuados deacuerdo a su contexto. Podemos encontrar programas ejecutandose en paralelo, hace uso de interrupciones para tratar situaciones que no se puedan resolver con el programa principal.\\
+  IMAGE\\
+  
+\end{frame}
+
+\begin{frame}{}
+  De esta forma, los tres m\'{o}dulos o capas de control son propuestos para el problema de autonom\'{i}a.
+  \begin{itemize}
+  \item Un Planificador - Elabora un plan de ejecuci\'{o}n para alcanzar el objetivo deseado
+  \item Habilidades reactivas - Para resolver situaciones precisas
+  \item Secuenciador - que conecta las dos anteriores
+  \end{itemize}
+  IMAGEN
+\end{frame}
+
 \begin{frame}{Sistema Aut\'{o}nomo}
+  
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth, height=5.5cm]{example-image}
@@ -349,40 +416,40 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Consideraciones}
-  \centering
-  \fbox{\parbox[t]{10em}{
-      \begin{itemize}
-        \tiny \item Caracteristicas Robot
-        \begin{itemize}
-        \tiny \item Grados de libertad
-        \tiny \item Fisica del robot
-        \tiny \item limitaciones en Mobilidad
-        \tiny\item limitaciones en Dinamica
-        \end{itemize}
-      \end{itemize}
-    }
-  }%
-  \raisebox{-4ex}{$\to$}%
-  \fbox{\parbox[t]{10em}{
-      \begin{itemize}
-      \tiny \item Propiedades del algortimo
-        \begin{itemize}
-        \tiny \item Optimalidad
-        \tiny \item Costo Computacional
-        \tiny \item Costo en memoria
-        \tiny \item Completez
-        \tiny \item Online vs. Offline
-        \tiny \item Anytime
-        \tiny \item Caminos vs. trayectorias
-        \tiny \item Exactos vs. aproximados
-        
-        \end{itemize}
-      \end{itemize}
-    }
-  }
-  \obeylines\\
-\end{frame}
+%\begin{frame}{Consideraciones}
+%  \centering
+%  \fbox{\parbox[t]{10em}{
+%      \begin{itemize}
+%        \tiny \item Caracteristicas Robot
+%        \begin{itemize}
+%        \tiny \item Grados de libertad
+%        \tiny \item Fisica del robot
+%        \tiny \item limitaciones en Mobilidad
+%        \tiny\item limitaciones en Dinamica
+%        \end{itemize}
+%      \end{itemize}
+%    }
+%  }%
+%  \raisebox{-4ex}{$\to$}%
+%  \fbox{\parbox[t]{10em}{
+%      \begin{itemize}
+%      \tiny \item Propiedades del algortimo
+%        \begin{itemize}
+%        \tiny \item Optimalidad
+%        \tiny \item Costo Computacional
+%        \tiny \item Costo en memoria
+%        \tiny \item Completez
+%        \tiny \item Online vs. Offline
+%        \tiny \item Anytime
+%        \tiny \item Caminos vs. trayectorias
+%        \tiny \item Exactos vs. aproximados
+%%        
+%        \end{itemize}
+%      \end{itemize}
+%    }
+%  }
+%  \obeylines\\
+%\end{frame}
 
 \begin{frame}{Panorama de m\'{e}todos de planificaci\'{o}n}
   \begin{itemize}
@@ -1047,133 +1114,29 @@ first figure I have inserted in beamer.
 \section{Estado del Arte}
 
 \begin{frame}
-
-  %\frametitle{Estado del Arte}
-  {\color{blue} Estado del Arte}
-  \dirtree{%
-    .1 Robótica Móvil.
-    .2 Robótica Móvil Terrestre.
-    .2 Robótica Móvil Aérea.
-    .3 Dinámica de un Vehículo Aéreo No Tripulado.
-    .3 Control de un Vehículo Aéreo No Tripulado.
-    .2 Problemas en la Robótica Móvil.
-    .3 Mapas.
-    .4 Construcción y representación de mapas 3D.
-    .5 Percepción.
-    .6 Sensores LiDAR.
-    .6 Sensores Cámaras (Odometría Visual).
-    .3 Localización.
-    .3 Planificación de trayectorias.
-    .2 Robótica Colaborativa (múltiples robots).
-    .3 Exploración.
-    .3 Coordinación.
-    .3 Colaboración.
-    .2 Arquitectura de Software en robótica.
-  }
-\end{frame}
-
-\begin{frame}
-
-  La \textbf{robótica móvil} ha experimentado avances significativos en los últimos años, transformando múltiples sectores y abriendo nuevas posibilidades en la automatización.\\
-  Los robots móviles se pueden ver como sistemas autónomos capaces de moverse y operar en entornos cambiantes y complejos sin la necesidad de guías físicas.\\
-  
-\bigskip % Vertical whitespace
-
-En cuanto a la navegación, se han desarrollado técnicas de localización y mapeo simultáneos (SLAM) más precisas y eficientes, permitiendo construir mapas detallados de su entorno y ubicarse con mayor precisión en tiempo real. Además, se han mejorado los algoritmos de planificación de trayectorias para garantizar movimientos seguros y eficientes en entornos dinámicos.\\
+  \cite{CIESLEWSKI2017}\\
+  \cite{USENKO2017}\\
+  \cite{MOHTA2017}\\
 \end{frame}
 \begin{frame}
-Robótica Móvil
-\begin{itemize}
-\item <1-> Robótica Móvil Terrestre (con ruedas)\\
-  \begin{itemize}
-  \item Ackerman
-  \item Triciclo clásico
-  \item Omnidireccionales
-  \item Diferenciales
-  \end{itemize}
-\item <2-> Robótica Móvil Aérea\\
-  \begin{itemize}
-  \item Ala fija
-  \item Rotores
-    \begin{itemize}
-    \item Rotor único
-    \item Multi-rotor
-    \end{itemize}
-  \end{itemize}
-  \item <3-> Hibridos VTOL
-\end{itemize}
+  \cite{LIN2017}\\
+  \cite{PAPACHRISTOS2017}\\
+  \cite{OLEYNIKOVA2018}\\
 \end{frame}
-
 \begin{frame}
-  \begin{figure}
-    \includegraphics[width=0.9\linewidth]{drones.png}
-  \end{figure}
+  \cite{GAO2018}\\
+  \cite{FLORENCE2018}\\
+  \cite{SELIN2019}\\
 \end{frame}
-
 \begin{frame}
-  \textbf{Dinámica de un Vehículo Aéreo No Tripulado}
-
-  \begin{figure}
-    \includegraphics[width=0.5\linewidth]{d4.png}
-  \end{figure}
-
-  \begin{figure}
-    \includegraphics[width=0.5\linewidth]{d5.png}
-  \end{figure}
+  \cite{COLLINS2019}\\
+  \cite{CINVES2021}\\
+  \cite{RACER2022}\\
 \end{frame}
-
 \begin{frame}
-  Problemas en la Robótica móvil
-  \begin{itemize}
-  \item Mapas
-  \item Localización
-  \item Planificación de trayectorias
-  \end{itemize}
+  \cite{WESTHEIDER2023}\\
+  \cite{BARTOLOMEI2023}\\
 \end{frame}
-
-
-\begin{frame}
-  Construcción y representación de mapas 3D\\
-  Percepción
-  \begin{itemize}
-  \item Sensores LiDAR
-  \item Sensores Cámaras (Odometría Visual)
-  \end{itemize}
-\end{frame}
-
-%\begin{frame}
-%  Localización 
-%\end{frame}
-
-\begin{frame}
-  \textbf{Planificación de trayectorias}\\
-         {\footnotesize
-  Dentro de la literatura a esta problemática se encuentran estudios que minimizan el tiempo de vuelo [16], la altitud de vuelo [17], y la velocidad del dron [18]. Podemos categorizar los panificadores de trayectoria dos grupos \textbf{offline y online}\\
-  Los planificadores Online dado que utilizan sensores y reaccionan a obstáculos no garantizan en dar el camino más óptimo.\\
-
-  Apesar que existen múltiples estudios donde reducen el problema de 3D a 2D [19,20]. Limitando la movilidad del VANT haciendo que los algoritmos propuestos para robótica móvil terrestre puedan ser aplicados directamente. 
-  }
-  \begin{figure}
-    \includegraphics[width=0.8\linewidth]{maps.png}
-    \caption{Representación del medio ambiente}
-  \end{figure}
-  
-\end{frame}
-
-%\begin{frame}
-%  Robótica Colaborativa
-
-%  \begin{itemize}
-%  \item Exploración
-%  \item Coordinación
-%  \item Colaboración
-%  \end{itemize}
-  
-%\end{frame}
-
-%\begin{frame}
-%  Arquitectura de software en robótica
-%\end{frame}
 
 \section{Contribuciones o resultados esperados}
 
