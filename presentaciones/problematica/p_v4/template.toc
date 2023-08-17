@@ -6,4 +6,4 @@
 \beamer@sectionintoc {5}{Objetivos generales y específicos del proyecto}{15}{0}{5}
 \beamer@sectionintoc {6}{Metodología}{19}{0}{6}
 \beamer@sectionintoc {7}{Estado del Arte}{24}{0}{7}
-\beamer@sectionintoc {8}{Contribuciones o resultados esperados}{26}{0}{8}
+\beamer@sectionintoc {8}{Contribuciones o resultados esperados}{27}{0}{8}
