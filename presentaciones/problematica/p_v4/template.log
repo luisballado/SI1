@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  16 AUG 2023 18:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  17 AUG 2023 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1540,17 +1540,17 @@ LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
 [8
 
 ]
-Overfull \hbox (4.53047pt too wide) in paragraph at lines 332--332
+Overfull \hbox (4.53047pt too wide) in paragraph at lines 333--333
 []|\OT1/opensans-TLF/m/n/6 Completo| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--332
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
 []|\OT1/opensans-TLF/m/n/6 Diagramas de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--332
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
 []|\OT1/opensans-TLF/m/n/6 Depende
  []
 
@@ -1560,7 +1560,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--332
 <Images//octomaps.png, id=369, 1133.23375pt x 631.35875pt>
 File: Images//octomaps.png Graphic file (type png)
 <use Images//octomaps.png>
-Package pdftex.def Info: Images//octomaps.png  used on input line 343.
+Package pdftex.def Info: Images//octomaps.png  used on input line 344.
 (pdftex.def)             Requested size: 341.42525pt x 156.49057pt.
  [10
 
@@ -1602,10 +1602,10 @@ LaTeX Info: Redefining \% on input line 1.
 <Images//cronograma.png, id=751, 817.0525pt x 709.65125pt>
 File: Images//cronograma.png Graphic file (type png)
 <use Images//cronograma.png>
-Package pdftex.def Info: Images//cronograma.png  used on input line 441.
+Package pdftex.def Info: Images//cronograma.png  used on input line 439.
 (pdftex.def)             Requested size: 341.43924pt x 256.08064pt.
 
-Overfull \vbox (23.44223pt too high) detected at line 441
+Overfull \vbox (23.44223pt too high) detected at line 439
  []
 
 [23
@@ -1619,300 +1619,300 @@ LaTeX Info: Redefining \% on input line 1.
 <Images//video-0.png, id=816, 602.25pt x 300.12125pt>
 File: Images//video-0.png Graphic file (type png)
 <use Images//video-0.png>
-Package pdftex.def Info: Images//video-0.png  used on input line 449.
+Package pdftex.def Info: Images//video-0.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-0.png>
 <a0,fr0>
 <Images//video-1.png, id=820, 602.25pt x 300.12125pt>
 File: Images//video-1.png Graphic file (type png)
 <use Images//video-1.png>
-Package pdftex.def Info: Images//video-1.png  used on input line 449.
+Package pdftex.def Info: Images//video-1.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-1.png> <a0,fr1>
 <Images//video-2.png, id=824, 602.25pt x 300.12125pt>
 File: Images//video-2.png Graphic file (type png)
 <use Images//video-2.png>
-Package pdftex.def Info: Images//video-2.png  used on input line 449.
+Package pdftex.def Info: Images//video-2.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-2.png> <a0,fr2>
 <Images//video-3.png, id=828, 602.25pt x 300.12125pt>
 File: Images//video-3.png Graphic file (type png)
 <use Images//video-3.png>
-Package pdftex.def Info: Images//video-3.png  used on input line 449.
+Package pdftex.def Info: Images//video-3.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-3.png> <a0,fr3>
 <Images//video-4.png, id=832, 602.25pt x 300.12125pt>
 File: Images//video-4.png Graphic file (type png)
 <use Images//video-4.png>
-Package pdftex.def Info: Images//video-4.png  used on input line 449.
+Package pdftex.def Info: Images//video-4.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-4.png> <a0,fr4>
 <Images//video-5.png, id=836, 602.25pt x 300.12125pt>
 File: Images//video-5.png Graphic file (type png)
 <use Images//video-5.png>
-Package pdftex.def Info: Images//video-5.png  used on input line 449.
+Package pdftex.def Info: Images//video-5.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-5.png> <a0,fr5>
 <Images//video-6.png, id=840, 602.25pt x 300.12125pt>
 File: Images//video-6.png Graphic file (type png)
 <use Images//video-6.png>
-Package pdftex.def Info: Images//video-6.png  used on input line 449.
+Package pdftex.def Info: Images//video-6.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-6.png> <a0,fr6>
 <Images//video-7.png, id=844, 602.25pt x 300.12125pt>
 File: Images//video-7.png Graphic file (type png)
 <use Images//video-7.png>
-Package pdftex.def Info: Images//video-7.png  used on input line 449.
+Package pdftex.def Info: Images//video-7.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-7.png>
 <a0,fr7>
 <Images//video-8.png, id=848, 602.25pt x 300.12125pt>
 File: Images//video-8.png Graphic file (type png)
 <use Images//video-8.png>
-Package pdftex.def Info: Images//video-8.png  used on input line 449.
+Package pdftex.def Info: Images//video-8.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-8.png> <a0,fr8>
 <Images//video-9.png, id=852, 602.25pt x 300.12125pt>
 File: Images//video-9.png Graphic file (type png)
 <use Images//video-9.png>
-Package pdftex.def Info: Images//video-9.png  used on input line 449.
+Package pdftex.def Info: Images//video-9.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-9.png> <a0,fr9>
 <Images//video-10.png, id=856, 602.25pt x 300.12125pt>
 File: Images//video-10.png Graphic file (type png)
 <use Images//video-10.png>
-Package pdftex.def Info: Images//video-10.png  used on input line 449.
+Package pdftex.def Info: Images//video-10.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-10.png> <a0,fr10>
 <Images//video-11.png, id=860, 602.25pt x 300.12125pt>
 File: Images//video-11.png Graphic file (type png)
 <use Images//video-11.png>
-Package pdftex.def Info: Images//video-11.png  used on input line 449.
+Package pdftex.def Info: Images//video-11.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-11.png> <a0,fr11>
 <Images//video-12.png, id=864, 602.25pt x 300.12125pt>
 File: Images//video-12.png Graphic file (type png)
 <use Images//video-12.png>
-Package pdftex.def Info: Images//video-12.png  used on input line 449.
+Package pdftex.def Info: Images//video-12.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-12.png> <a0,fr12>
 <Images//video-13.png, id=868, 602.25pt x 300.12125pt>
 File: Images//video-13.png Graphic file (type png)
 <use Images//video-13.png>
-Package pdftex.def Info: Images//video-13.png  used on input line 449.
+Package pdftex.def Info: Images//video-13.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-13.png> <a0,fr13>
 <Images//video-14.png, id=872, 602.25pt x 300.12125pt>
 File: Images//video-14.png Graphic file (type png)
 <use Images//video-14.png>
-Package pdftex.def Info: Images//video-14.png  used on input line 449.
+Package pdftex.def Info: Images//video-14.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-14.png> <a0,fr14>
 <Images//video-15.png, id=876, 602.25pt x 300.12125pt>
 File: Images//video-15.png Graphic file (type png)
 <use Images//video-15.png>
-Package pdftex.def Info: Images//video-15.png  used on input line 449.
+Package pdftex.def Info: Images//video-15.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-15.png> <a0,fr15>
 <Images//video-16.png, id=880, 602.25pt x 300.12125pt>
 File: Images//video-16.png Graphic file (type png)
 <use Images//video-16.png>
-Package pdftex.def Info: Images//video-16.png  used on input line 449.
+Package pdftex.def Info: Images//video-16.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-16.png>
 <a0,fr16>
 <Images//video-17.png, id=884, 602.25pt x 300.12125pt>
 File: Images//video-17.png Graphic file (type png)
 <use Images//video-17.png>
-Package pdftex.def Info: Images//video-17.png  used on input line 449.
+Package pdftex.def Info: Images//video-17.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-17.png> <a0,fr17>
 <Images//video-18.png, id=888, 602.25pt x 300.12125pt>
 File: Images//video-18.png Graphic file (type png)
 <use Images//video-18.png>
-Package pdftex.def Info: Images//video-18.png  used on input line 449.
+Package pdftex.def Info: Images//video-18.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-18.png>
 <a0,fr18>
 <Images//video-19.png, id=892, 602.25pt x 300.12125pt>
 File: Images//video-19.png Graphic file (type png)
 <use Images//video-19.png>
-Package pdftex.def Info: Images//video-19.png  used on input line 449.
+Package pdftex.def Info: Images//video-19.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-19.png> <a0,fr19>
 <Images//video-20.png, id=896, 602.25pt x 300.12125pt>
 File: Images//video-20.png Graphic file (type png)
 <use Images//video-20.png>
-Package pdftex.def Info: Images//video-20.png  used on input line 449.
+Package pdftex.def Info: Images//video-20.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-20.png>
 <a0,fr20>
 <Images//video-21.png, id=900, 602.25pt x 300.12125pt>
 File: Images//video-21.png Graphic file (type png)
 <use Images//video-21.png>
-Package pdftex.def Info: Images//video-21.png  used on input line 449.
+Package pdftex.def Info: Images//video-21.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-21.png> <a0,fr21>
 <Images//video-22.png, id=904, 602.25pt x 300.12125pt>
 File: Images//video-22.png Graphic file (type png)
 <use Images//video-22.png>
-Package pdftex.def Info: Images//video-22.png  used on input line 449.
+Package pdftex.def Info: Images//video-22.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-22.png>
 <a0,fr22>
 <Images//video-23.png, id=908, 602.25pt x 300.12125pt>
 File: Images//video-23.png Graphic file (type png)
 <use Images//video-23.png>
-Package pdftex.def Info: Images//video-23.png  used on input line 449.
+Package pdftex.def Info: Images//video-23.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-23.png> <a0,fr23>
 <Images//video-24.png, id=912, 602.25pt x 300.12125pt>
 File: Images//video-24.png Graphic file (type png)
 <use Images//video-24.png>
-Package pdftex.def Info: Images//video-24.png  used on input line 449.
+Package pdftex.def Info: Images//video-24.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-24.png>
 <a0,fr24>
 <Images//video-25.png, id=916, 602.25pt x 300.12125pt>
 File: Images//video-25.png Graphic file (type png)
 <use Images//video-25.png>
-Package pdftex.def Info: Images//video-25.png  used on input line 449.
+Package pdftex.def Info: Images//video-25.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-25.png> <a0,fr25>
 <Images//video-26.png, id=920, 602.25pt x 300.12125pt>
 File: Images//video-26.png Graphic file (type png)
 <use Images//video-26.png>
-Package pdftex.def Info: Images//video-26.png  used on input line 449.
+Package pdftex.def Info: Images//video-26.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-26.png>
 <a0,fr26>
 <Images//video-27.png, id=924, 602.25pt x 300.12125pt>
 File: Images//video-27.png Graphic file (type png)
 <use Images//video-27.png>
-Package pdftex.def Info: Images//video-27.png  used on input line 449.
+Package pdftex.def Info: Images//video-27.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-27.png> <a0,fr27>
 <Images//video-28.png, id=928, 602.25pt x 300.12125pt>
 File: Images//video-28.png Graphic file (type png)
 <use Images//video-28.png>
-Package pdftex.def Info: Images//video-28.png  used on input line 449.
+Package pdftex.def Info: Images//video-28.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-28.png>
 <a0,fr28>
 <Images//video-29.png, id=932, 602.25pt x 300.12125pt>
 File: Images//video-29.png Graphic file (type png)
 <use Images//video-29.png>
-Package pdftex.def Info: Images//video-29.png  used on input line 449.
+Package pdftex.def Info: Images//video-29.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-29.png> <a0,fr29>
 <Images//video-30.png, id=936, 602.25pt x 300.12125pt>
 File: Images//video-30.png Graphic file (type png)
 <use Images//video-30.png>
-Package pdftex.def Info: Images//video-30.png  used on input line 449.
+Package pdftex.def Info: Images//video-30.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-30.png>
 <a0,fr30>
 <Images//video-31.png, id=940, 602.25pt x 300.12125pt>
 File: Images//video-31.png Graphic file (type png)
 <use Images//video-31.png>
-Package pdftex.def Info: Images//video-31.png  used on input line 449.
+Package pdftex.def Info: Images//video-31.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-31.png> <a0,fr31>
 <Images//video-32.png, id=944, 602.25pt x 300.12125pt>
 File: Images//video-32.png Graphic file (type png)
 <use Images//video-32.png>
-Package pdftex.def Info: Images//video-32.png  used on input line 449.
+Package pdftex.def Info: Images//video-32.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-32.png>
 <a0,fr32>
 <Images//video-33.png, id=948, 602.25pt x 300.12125pt>
 File: Images//video-33.png Graphic file (type png)
 <use Images//video-33.png>
-Package pdftex.def Info: Images//video-33.png  used on input line 449.
+Package pdftex.def Info: Images//video-33.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-33.png> <a0,fr33>
 <Images//video-34.png, id=952, 602.25pt x 300.12125pt>
 File: Images//video-34.png Graphic file (type png)
 <use Images//video-34.png>
-Package pdftex.def Info: Images//video-34.png  used on input line 449.
+Package pdftex.def Info: Images//video-34.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-34.png>
 <a0,fr34>
 <Images//video-35.png, id=956, 602.25pt x 300.12125pt>
 File: Images//video-35.png Graphic file (type png)
 <use Images//video-35.png>
-Package pdftex.def Info: Images//video-35.png  used on input line 449.
+Package pdftex.def Info: Images//video-35.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-35.png> <a0,fr35>
 <Images//video-36.png, id=960, 602.25pt x 300.12125pt>
 File: Images//video-36.png Graphic file (type png)
 <use Images//video-36.png>
-Package pdftex.def Info: Images//video-36.png  used on input line 449.
+Package pdftex.def Info: Images//video-36.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-36.png>
 <a0,fr36>
 <Images//video-37.png, id=964, 602.25pt x 300.12125pt>
 File: Images//video-37.png Graphic file (type png)
 <use Images//video-37.png>
-Package pdftex.def Info: Images//video-37.png  used on input line 449.
+Package pdftex.def Info: Images//video-37.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-37.png> <a0,fr37>
 <Images//video-38.png, id=968, 602.25pt x 300.12125pt>
 File: Images//video-38.png Graphic file (type png)
 <use Images//video-38.png>
-Package pdftex.def Info: Images//video-38.png  used on input line 449.
+Package pdftex.def Info: Images//video-38.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-38.png>
 <a0,fr38>
 <Images//video-39.png, id=972, 602.25pt x 300.12125pt>
 File: Images//video-39.png Graphic file (type png)
 <use Images//video-39.png>
-Package pdftex.def Info: Images//video-39.png  used on input line 449.
+Package pdftex.def Info: Images//video-39.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-39.png> <a0,fr39>
 <Images//video-40.png, id=976, 602.25pt x 300.12125pt>
 File: Images//video-40.png Graphic file (type png)
 <use Images//video-40.png>
-Package pdftex.def Info: Images//video-40.png  used on input line 449.
+Package pdftex.def Info: Images//video-40.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-40.png>
 <a0,fr40>
 <Images//video-41.png, id=980, 602.25pt x 300.12125pt>
 File: Images//video-41.png Graphic file (type png)
 <use Images//video-41.png>
-Package pdftex.def Info: Images//video-41.png  used on input line 449.
+Package pdftex.def Info: Images//video-41.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-41.png> <a0,fr41>
 <Images//video-42.png, id=984, 602.25pt x 300.12125pt>
 File: Images//video-42.png Graphic file (type png)
 <use Images//video-42.png>
-Package pdftex.def Info: Images//video-42.png  used on input line 449.
+Package pdftex.def Info: Images//video-42.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-42.png>
 <a0,fr42>
 <Images//video-43.png, id=988, 602.25pt x 300.12125pt>
 File: Images//video-43.png Graphic file (type png)
 <use Images//video-43.png>
-Package pdftex.def Info: Images//video-43.png  used on input line 449.
+Package pdftex.def Info: Images//video-43.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-43.png> <a0,fr43>
 <Images//video-44.png, id=992, 602.25pt x 300.12125pt>
 File: Images//video-44.png Graphic file (type png)
 <use Images//video-44.png>
-Package pdftex.def Info: Images//video-44.png  used on input line 449.
+Package pdftex.def Info: Images//video-44.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-44.png>
 <a0,fr44>
 <Images//video-45.png, id=996, 602.25pt x 300.12125pt>
 File: Images//video-45.png Graphic file (type png)
 <use Images//video-45.png>
-Package pdftex.def Info: Images//video-45.png  used on input line 449.
+Package pdftex.def Info: Images//video-45.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-45.png> <a0,fr45>
 <Images//video-46.png, id=1000, 602.25pt x 300.12125pt>
 File: Images//video-46.png Graphic file (type png)
 <use Images//video-46.png>
-Package pdftex.def Info: Images//video-46.png  used on input line 449.
+Package pdftex.def Info: Images//video-46.png  used on input line 447.
 (pdftex.def)             Requested size: 602.24852pt x 300.12051pt.
  <./Images//video-46.png>
 <a0,fr46> [25
@@ -1921,7 +1921,7 @@ Package pdftex.def Info: Images//video-46.png  used on input line 449.
 <Images//estado_del_arte.png, id=1083, 996.72375pt x 314.17375pt>
 File: Images//estado_del_arte.png Graphic file (type png)
 <use Images//estado_del_arte.png>
-Package pdftex.def Info: Images//estado_del_arte.png  used on input line 457.
+Package pdftex.def Info: Images//estado_del_arte.png  used on input line 455.
 (pdftex.def)             Requested size: 284.52548pt x 170.71553pt.
  [26
 
@@ -1951,11 +1951,23 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-))
-Overfull \vbox (732.88603pt too high) detected at line 482
- []
+)) [31
 
-[31
+] [32
+
+
+]
+[33
+
+
+] [34
+
+
+] [35
+
+
+] [36
+
 
 ]
 \tf@nav=\write6
@@ -1975,10 +1987,10 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: D23E2C17118F80C4E1FBCEB02CAB8E94;1551.
  ) 
 Here is how much of TeX's memory you used:
- 36320 strings out of 478268
- 745758 string characters out of 5846348
- 1126745 words of memory out of 5000000
- 53605 multiletter control sequences out of 15000+600000
+ 36351 strings out of 478268
+ 746354 string characters out of 5846348
+ 1111743 words of memory out of 5000000
+ 53626 multiletter control sequences out of 15000+600000
  494037 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,131p,491b,908s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1990,10 +2002,10 @@ ive/2022/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular.pfb></usr/lo
 cal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on template.pdf (31 pages, 4993481 bytes).
+Output written on template.pdf (36 pages, 5002779 bytes).
 PDF statistics:
- 1329 PDF objects out of 1440 (max. 8388607)
- 1097 compressed objects within 11 object streams
- 95 named destinations out of 1000 (max. 500000)
+ 1468 PDF objects out of 1728 (max. 8388607)
+ 1229 compressed objects within 13 object streams
+ 105 named destinations out of 1000 (max. 500000)
  775 words of extra memory for PDF output out of 10000 (max. 10000000)
 
