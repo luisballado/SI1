@@ -1,43 +1,27 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Bartolomei et~al.(2023)Bartolomei, Teixeira, and Chli]{BARTOLOMEI2023}
-L.~Bartolomei, L.~Teixeira, and M.~Chli.
-\newblock Fast multi-uav decentralized exploration of forests.
-\newblock \emph{IEEE Robotics and Automation Letters}, 8\penalty0 (9):\penalty0
-  5576--5583, 2023.
-\newblock \doi{10.1109/LRA.2023.3296037}.
+\bibitem[Curiel-Ramirez et~al.(2019)Curiel-Ramirez, Ramirez-Mendoza,
+  Izquierdo-Reyes, Bustamante-Bello, and Navarro-Tuch]{CurielRamirez2019}
+L.~A. Curiel-Ramirez, R.~A. Ramirez-Mendoza, J.~Izquierdo-Reyes, M.~R.
+  Bustamante-Bello, and S.~A. Navarro-Tuch.
+\newblock Hardware in the loop framework proposal for a semi-autonomous car
+  architecture in a closed route environment.
+\newblock \emph{International Journal on Interactive Design and Manufacturing
+  ({IJIDeM})}, 13\penalty0 (4):\penalty0 1647--1658, Oct. 2019.
+\newblock \doi{10.1007/s12008-019-00619-x}.
+\newblock URL \url{https://doi.org/10.1007/s12008-019-00619-x}.
 
-\bibitem[Campos-Mac\'{i}as et~al.(2020)Campos-Mac\'{i}as, Aldana-L\'{o}pez,
-  Guardia, Parra-Vilchis, and G\'{o}mez-Guti\'{e}rrez]{CINVES2021}
-L.~Campos-Mac\'{i}as, R.~Aldana-L\'{o}pez, R.~Guardia, J.~I. Parra-Vilchis, and
-  D.~G\'{o}mez-Guti\'{e}rrez.
-\newblock Autonomous navigation of {MAVs} in unknown cluttered environments.
-\newblock \emph{Journal of Field Robotics}, 38\penalty0 (2):\penalty0 307--326,
-  may 2020.
-\newblock \doi{10.1002/rob.21959}.
-\newblock URL \url{https://doi.org/10.1002/rob.21959}.
-
-\bibitem[Cieslewski et~al.(2017)Cieslewski, Kaufmann, and
-  Scaramuzza]{CIESLEWSKI2017}
-T.~Cieslewski, E.~Kaufmann, and D.~Scaramuzza.
-\newblock Rapid exploration with multi-rotors: A frontier selection method for
-  high speed flight.
-\newblock In \emph{2017 IEEE/RSJ International Conference on Intelligent Robots
-  and Systems (IROS)}, pages 2135--2142, 2017.
-\newblock \doi{10.1109/IROS.2017.8206030}.
-
-\bibitem[Collins and Michael(2020)]{COLLINS2019}
-M.~Collins and N.~Michael.
-\newblock Efficient planning for high-speed mav flight in unknown environments
-  using online sparse topological graphs.
-\newblock In \emph{2020 IEEE International Conference on Robotics and
-  Automation (ICRA)}, pages 11450--11456, 2020.
-\newblock \doi{10.1109/ICRA40945.2020.9197167}.
+\bibitem[Dieudonné et~al.(2010)Dieudonné, Labbani-Igbida, and Petit]{5427034}
+Y.~Dieudonné, O.~Labbani-Igbida, and F.~Petit.
+\newblock Deterministic robot-network localization is hard.
+\newblock \emph{IEEE Transactions on Robotics}, 26\penalty0 (2):\penalty0
+  331--339, 2010.
+\newblock \doi{10.1109/TRO.2010.2042753}.
 
 \bibitem[Erickson and LaValle(2013)]{nphard}
 L.~H. Erickson and S.~M. LaValle.
@@ -45,126 +29,14 @@ L.~H. Erickson and S.~M. LaValle.
 \newblock In \emph{Proceedings of the Twenty-Seventh AAAI Conference on
   Artificial Intelligence}, AAAI'13, page 1388–1393. AAAI Press, 2013.
 
-\bibitem[Florence et~al.(2018)Florence, Carter, Ware, and
-  Tedrake]{FLORENCE2018}
-P.~R. Florence, J.~Carter, J.~Ware, and R.~Tedrake.
-\newblock Nanomap: Fast, uncertainty-aware proximity queries with lazy search
-  over local 3d data, 2018.
-
-\bibitem[Gao et~al.(2018)Gao, Wu, Lin, and Shen]{GAO2018}
-F.~Gao, W.~Wu, Y.~Lin, and S.~Shen.
-\newblock Online safe trajectory generation for quadrotors using fast marching
-  method and bernstein basis polynomial.
-\newblock In \emph{2018 IEEE International Conference on Robotics and
-  Automation (ICRA)}, pages 344--351, 2018.
-\newblock \doi{10.1109/ICRA.2018.8462878}.
-
-\bibitem[Lin et~al.(2017)Lin, Gao, Qin, Gao, Liu, Wu, Yang, and Shen]{LIN2017}
-Y.~Lin, F.~Gao, T.~Qin, W.~Gao, T.~Liu, W.~Wu, Z.~Yang, and S.~Shen.
-\newblock Autonomous aerial navigation using monocular visual-inertial fusion.
-\newblock \emph{Journal of Field Robotics}, 35\penalty0 (1):\penalty0 23--51,
-  July 2017.
-\newblock \doi{10.1002/rob.21732}.
-\newblock URL \url{https://doi.org/10.1002/rob.21732}.
-
-\bibitem[Mohta et~al.(2017)Mohta, Watterson, Mulgaonkar, Liu, Qu, Makineni,
-  Saulnier, Sun, Zhu, Delmerico, Karydis, Atanasov, Loianno, Scaramuzza,
-  Daniilidis, Taylor, and Kumar]{MOHTA2017}
-K.~Mohta, M.~Watterson, Y.~Mulgaonkar, S.~Liu, C.~Qu, A.~Makineni, K.~Saulnier,
-  K.~Sun, A.~Zhu, J.~Delmerico, K.~Karydis, N.~Atanasov, G.~Loianno,
-  D.~Scaramuzza, K.~Daniilidis, C.~J. Taylor, and V.~Kumar.
-\newblock Fast, autonomous flight in {GPS}-denied and cluttered environments.
-\newblock \emph{Journal of Field Robotics}, 35\penalty0 (1):\penalty0 101--120,
-  Dec. 2017.
-\newblock \doi{10.1002/rob.21774}.
-\newblock URL \url{https://doi.org/10.1002/rob.21774}.
-
-\bibitem[Oleynikova et~al.(2018)Oleynikova, Taylor, Siegwart, and
-  Nieto]{OLEYNIKOVA2018}
-H.~Oleynikova, Z.~Taylor, R.~Siegwart, and J.~Nieto.
-\newblock Safe local exploration for replanning in cluttered unknown
-  environments for microaerial vehicles.
-\newblock \emph{{IEEE} Robotics and Automation Letters}, 3\penalty0
-  (3):\penalty0 1474--1481, jul 2018.
-\newblock \doi{10.1109/lra.2018.2800109}.
-\newblock URL \url{https://doi.org/10.1109/lra.2018.2800109}.
-
-\bibitem[Papachristos et~al.(2017)Papachristos, Khattak, and
-  Alexis]{PAPACHRISTOS2017}
-C.~Papachristos, S.~Khattak, and K.~Alexis.
-\newblock Uncertainty-aware receding horizon exploration and mapping using
-  aerial robots.
-\newblock In \emph{2017 IEEE International Conference on Robotics and
-  Automation (ICRA)}, pages 4568--4575, 2017.
-\newblock \doi{10.1109/ICRA.2017.7989531}.
-
-\bibitem[Schuster et~al.(2020)Schuster, Muller, Brunner, Lehner, Lehner,
-  Sakagami, Domel, Meyer, Vodermayer, Giubilato, Vayugundla, Reill, Steidle,
-  von Bargen, Bussmann, Belder, Lutz, Sturzl, Smisek, Maier, Stoneman, Prince,
-  Rebele, Durner, Staudinger, Zhang, Pohlmann, Bischoff, Braun, Schroder,
-  Dietz, Frohmann, Borner, Hubers, Foing, Triebel, Albu-Schaffer, and
-  Wedler]{DLR2020}
-M.~J. Schuster, M.~G. Muller, S.~G. Brunner, H.~Lehner, P.~Lehner, R.~Sakagami,
-  A.~Domel, L.~Meyer, B.~Vodermayer, R.~Giubilato, M.~Vayugundla, J.~Reill,
-  F.~Steidle, I.~von Bargen, K.~Bussmann, R.~Belder, P.~Lutz, W.~Sturzl,
-  M.~Smisek, M.~Maier, S.~Stoneman, A.~F. Prince, B.~Rebele, M.~Durner,
-  E.~Staudinger, S.~Zhang, R.~Pohlmann, E.~Bischoff, C.~Braun, S.~Schroder,
-  E.~Dietz, S.~Frohmann, A.~Borner, H.-W. Hubers, B.~Foing, R.~Triebel, A.~O.
-  Albu-Schaffer, and A.~Wedler.
-\newblock The {ARCHES} space-analogue demonstration mission: Towards
-  heterogeneous teams of autonomous robots for collaborative scientific
-  sampling in planetary exploration.
-\newblock \emph{{IEEE} Robotics and Automation Letters}, 5\penalty0
-  (4):\penalty0 5315--5322, Oct. 2020.
-\newblock \doi{10.1109/lra.2020.3007468}.
-\newblock URL \url{https://doi.org/10.1109/lra.2020.3007468}.
-
-\bibitem[Selin et~al.(2019)Selin, Tiger, Duberg, Heintz, and
-  Jensfelt]{SELIN2019}
-M.~Selin, M.~Tiger, D.~Duberg, F.~Heintz, and P.~Jensfelt.
-\newblock Efficient autonomous exploration planning of large-scale 3-d
-  environments.
-\newblock \emph{IEEE Robotics and Automation Letters}, 4\penalty0 (2):\penalty0
-  1699--1706, 2019.
-\newblock \doi{10.1109/LRA.2019.2897343}.
-
-\bibitem[Usenko et~al.(2017)Usenko, von Stumberg, Pangercic, and
-  Cremers]{USENKO2017}
-V.~Usenko, L.~von Stumberg, A.~Pangercic, and D.~Cremers.
-\newblock Real-time trajectory replanning for {MAVs} using uniform b-splines
-  and a 3d circular buffer.
-\newblock In \emph{2017 {IEEE}/{RSJ} International Conference on Intelligent
-  Robots and Systems ({IROS})}. {IEEE}, sep 2017.
-\newblock \doi{10.1109/iros.2017.8202160}.
-\newblock URL \url{https://doi.org/10.1109/iros.2017.8202160}.
-
-\bibitem[Westheider et~al.(2023)Westheider, R{\"u}ckin, and
-  Popovi{\.c}]{WESTHEIDER2023}
-J.~Westheider, J.~R{\"u}ckin, and M.~Popovi{\.c}.
-\newblock Multi-uav adaptive path planning using deep reinforcement learning,
-  2023.
-
-\bibitem[Xiao et~al.(2018)Xiao, Zhu, Wang, and Miao]{8478368}
-Z.~Xiao, B.~Zhu, Y.~Wang, and P.~Miao.
-\newblock Low-complexity path planning algorithm for unmanned aerial vehicles
-  in complicated scenarios.
-\newblock \emph{IEEE Access}, 6:\penalty0 57049--57055, 2018.
-\newblock \doi{10.1109/ACCESS.2018.2873084}.
-
-\bibitem[Zahroof et~al.(2023)Zahroof, Liu, Zhou, and Kumar]{james}
-R.~Zahroof, J.~Liu, L.~Zhou, and V.~Kumar.
-\newblock Multi-robot localization and target tracking with connectivity
-  maintenance and collision avoidance.
-\newblock In \emph{2023 American Control Conference (ACC)}, pages 1331--1338,
-  2023.
-\newblock \doi{10.23919/ACC55779.2023.10155978}.
-
-\bibitem[Zhou et~al.(2023)Zhou, Xu, and Shen]{RACER2022}
-B.~Zhou, H.~Xu, and S.~Shen.
-\newblock Racer: Rapid collaborative exploration with a decentralized multi-uav
-  system.
-\newblock \emph{IEEE Transactions on Robotics}, 39\penalty0 (3):\penalty0
-  1816--1835, 2023.
-\newblock \doi{10.1109/TRO.2023.3236945}.
+\bibitem[S{\'{a}}nchez-Ib{\'{a}}{\~{n}}ez
+  et~al.(2021)S{\'{a}}nchez-Ib{\'{a}}{\~{n}}ez, del Pulgar, and
+  Garc{\'{\i}}a-Cerezo]{SnchezIbez2021}
+J.~R. S{\'{a}}nchez-Ib{\'{a}}{\~{n}}ez, C.~J.~P. del Pulgar, and
+  A.~Garc{\'{\i}}a-Cerezo.
+\newblock Path planning for autonomous mobile robots: A review.
+\newblock \emph{Sensors}, 21\penalty0 (23):\penalty0 7898, Nov. 2021.
+\newblock \doi{10.3390/s21237898}.
+\newblock URL \url{https://doi.org/10.3390/s21237898}.
 
 \end{thebibliography}

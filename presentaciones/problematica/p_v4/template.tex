@@ -126,16 +126,23 @@
 }
 
 \usepackage{tikz}
-\usetikzlibrary{arrows,shapes,positioning,shadows,trees,quotes}
+%\usetikzlibrary{arrows,shapes,positioning,shadows,trees,quotes}
 
-\tikzset{
-  basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
-  root/.style   = {basic, rounded corners=2pt, thin, align=center,
-                   fill=green!30},
-  level 2/.style = {basic, rounded corners=6pt, thin,align=center, fill=green!60,
-                   text width=8em},
-  level 3/.style = {basic, thin, align=left, fill=pink!60, text width=6.5em}
-}
+
+%\tikzset{
+%  basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
+%  root/.style   = {basic, rounded corners=2pt, thin, align=center,
+%                   fill=green!30},
+%  level 2/.style = {basic, rounded corners=6pt, thin,align=center, fill=green!60,
+%                   text width=8em},
+%  level 3/.style = {basic, thin, align=left, fill=pink!60, text width=6.5em}
+%}
+
+\usetikzlibrary{calc}
+
+\tikzstyle{part} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,     align=center, draw=black]
+\tikzstyle{chapter} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,     align=center, draw=black, text width=3.5cm]
+\tikzstyle{arrow} = [thick, ->]
 
 \usepackage{array} % needed for \arraybackslash
 \usepackage{graphicx}
@@ -288,15 +295,16 @@
 \begin{frame}{Arquitectura híbrida}
   \begin{figure}
     \centering
-    \includegraphics[width=7cm, height=4cm]{control_autonomo}
-    \caption[Caption for LOF]{Control Aut\'{o}nomo\protect\footnotemark}
+    \includegraphics[width=7cm, height=4cm]{control_autonomo2}
+    \caption[Caption for LOF]{Control Vehículo autonomo\protect\footnotemark}
   \end{figure}
-  \footnotetext{Software System of Autonomous Vehicles. Guo et al. 2020}
+  \footnotetext{Hardware in the loop framework proposal for a semi-autonomous car
+architecture in a closed route environment \cite{CurielRamirez2019}}
 \end{frame}
 
 \begin{frame}{Planificación de trayectorias}
 
-  \cite{nphard}[\citenum{nphard}] Calcular la ruta más corta entre dos puntos en un ambiente 3D es un problema NP-HARD. La mayoria de planificadores de rutas hacen uso de heuristicas y metaheuristicas para generar el óptimo más cercano \\
+  \cite{nphard}[\citenum{nphard}] \cite{5427034}[\citenum{5427034}]Calcular la ruta más corta entre dos puntos en un ambiente 3D es un problema NP-HARD. La mayoria de planificadores de rutas hacen uso de heuristicas y metaheuristicas para generar el óptimo más cercano \\
   \bigskip % Vertical whitespace
   Beneficios coordinación múlti-VANT
   \begin{itemize}
@@ -308,37 +316,58 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{}
-  \centering
-  \begin{tabular}{ |p{1.5cm}||p{0.8cm}|p{0.8cm}|p{1.2cm}|p{5cm}|  }
-    \hline
-    \multicolumn{5}{|c|}{\tiny Comparaci\'{o}n de m\'{e}todos} \\
-    \hline 
-    \tiny Metodo& \tiny Completo & \tiny \'{O}ptimo& \tiny Escalable& \tiny Notas \\
-    \hline
-    \tiny Grafo de Visibilidad   & \tiny Si    & \tiny Si&   \tiny No& \tiny Poca escalabilidad, el robot pasa cerca de los obstaculos\\
-    \hline
-    \tiny Diagramas de Voronoi   & \tiny Si    & \tiny No&   \tiny No& \tiny Poca escalabilidad\\
-    \hline
-    \tiny Campo de potencial artificial & \tiny Si    & \tiny No&   \tiny Depende del ambiente& \tiny F\'{a}cil de implementar, suceptible a minimos locales\\
-    \hline
-    \tiny Dijkstra/A*/D* & \tiny Si    & \tiny Grafo&   \tiny No& \tiny A* usa una función heuristica que guía la búsqueda más eficiente, Poca escalabilidad\\
-    \hline
-    \tiny PRM   & \tiny Si    & \tiny Grafo&   \tiny Si&  \tiny Eficiente para multi-busquedas, completez probabilistica \\
-    \hline
-    \tiny RRT   & \tiny Si    & \tiny No&   \tiny Si&  \tiny Eficiente para problemas simples, completez probabilistica\\
-    \hline
-  \end{tabular}  
+\begin{frame}
+  \begin{tikzpicture}
+  \def \yspc {-2cm}
+  \def \xpsc {4cm}
+  \node[part, fill=red!30] (P1) {Part 1: \\ Introduction};
+  \node[chapter, fill=red!30, right of=P1, xshift=\xpsc] (C1) {Chapter 1: \\ Introduction};
+  \draw[arrow] (P1) -- (C1);
+
+  \node[part, fill=green!30, below of=P1, yshift=\yspc] (P2) {Part II: \\ Background};
+  \node[chapter, fill=green!30, right of=P2, xshift=\xpsc] (C2) {Chapter 2: \\ Wireless Sensor     Networks};
+  \node[chapter, fill=green!30, right of=C2, xshift=\xpsc] (C3) {Chapter 3: \\ Attacks on WSNs};
+  \node[chapter, fill=green!30, right of=C3, xshift=\xpsc] (C4) {Chapter 4: \\ Digital Forensics \\     and \\ Digital Forensic Readiness};
+  \draw[arrow] (C1) |- ($(P1)!.5!(P2)$) -- (P2);
+  \draw[arrow] (P2) -- (C2);
+  \draw[arrow] (C2) -- (C3);
+  \draw[arrow] (C3) -- (C4);
+
+  \node[part, fill=purple!30, below of=P2, yshift=\yspc] (P3) {Part III: \\ Model};
+  \node[chapter, fill=purple!30, right of=P3, xshift=\xpsc] (C5) {Chapter 5: \\ Model Requirements}    ;
+  \node[chapter, fill=purple!30, right of=C5, xshift=\xpsc] (C6) {Chapter 6: \\ Proposed Model};
+  \draw[arrow] (C4) |- ($(P2)!.5!(P3)$) -- (P3);
+  \draw[arrow] (P3) -- (C5);
+  \draw[arrow] (C5) -- (C6);
+
+  \node[part, fill=blue!30, below of=P3, yshift=\yspc] (P4) {Part IV: \\ Prototype};
+  \node[chapter, fill=blue!30, right of=P4, xshift=\xpsc] (C7) {Chapter 7: \\ Prototype Equipment};
+  \node[chapter, fill=blue!30, right of=C7, xshift=\xpsc] (C8) {Chapter 8: \\ Prototype Overview};
+  \node[chapter, fill=blue!30, right of=C8, xshift=\xpsc] (C9) {Chapter 9: \\ Prototype Setup};
+  \draw[arrow] (C6) |- ($(P3)!.5!(P4)$) -- (P4);
+  \draw[arrow] (P4) -- (C7);
+  \draw[arrow] (C7) -- (C8);
+  \draw[arrow] (C8) -- (C9);
+
+  
+  \node[part, fill=orange!30, below of=P4, yshift=\yspc] (P5) {Part V: \\ Conclusion};
+  \node[chapter, fill=orange!30, right of=P5, xshift=\xpsc] (C10) {Chapter 10: \\ Blah Blah Blah};
+  \node[chapter, fill=orange!30, right of=C10, xshift=\xpsc] (C11) {Chapter 11: \\ Conclusion};
+  \draw[arrow] (C9) |- ($(P4)!.5!(P5)$) -- (P5);
+  \draw[arrow] (P5) -- (C10);
+  \draw[arrow] (C10) -- (C11);
+  \end{tikzpicture}
 \end{frame}
+
 
 \begin{frame}{Representación del ambiente}
 
   \begin{figure}
     \centering
-    \includegraphics[width=12cm, height=5.5cm]{octomaps}
+    \includegraphics[width=12cm, height=5.5cm]{panorama_planning}
     \caption[Caption for LOF]{Mapa probabilistico 3D\protect\footnotemark}
   \end{figure}
-  \footnotetext{Cooperación en robots heterogeneos \cite{DLR2020}}
+  \footnotetext{Cooperación en robots heterogeneos \cite{SnchezIbez2021}}
   
 \end{frame}
 
