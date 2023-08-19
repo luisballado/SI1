@@ -18,7 +18,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 \documentclass[
-	11pt, % Set the default font size, options include: 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
+	12pt, % Set the default font size, options include: 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
 	%t, % Uncomment to vertically align all slide content to the top of the slide, rather than the default centered
 	aspectratio=169, % Uncomment to set the aspect ratio to a 16:9 ratio which matches the aspect ratio of 1080p and 4K screens and projectors
 ]{beamer}
@@ -187,9 +187,9 @@
 %\useoutertheme{smoothtree}
 
 %\setbeamertemplate{footline} % Uncomment this line to remove the footer line in all slides
-%\setbeamertemplate{footline}[page number] % Uncomment this line to replace the footer line in all slides with a simple slide count
-\setbeamertemplate{caption}[numbered]
-%\setbeamertemplate{navigation symbols}{} % Uncomment this line to remove the navigation symbols from the bottom of all slides
+\setbeamertemplate{footline}[page number] % Uncomment this line to replace the footer line in all slides with a simple slide count
+%\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{navigation symbols}{} % Uncomment this line to remove the navigation symbols from the bottom of all slides
 
 %----------------------------------------------------------------------------------------
 %	PRESENTATION INFORMATION
@@ -277,14 +277,53 @@
 \end{frame}
 
 \section{Descripción del proyecto}
+
 \begin{frame}{Descripción del proyecto}
   
-  \begin{figure}
+  \begin{itemize}
+  \item<1-> Colaboracion
+  \item<2-> Colaboracion
+  \item<3-> Colaboracion
+  \end{itemize}
+
+  \only<1>{
+
+    
+
+    \begin{example}
+      \begin{figure}
+      \centering
+      \includegraphics[width=6cm, height=5.5cm]{multiuab}
+      \caption[Caption for LOF]{Cuadric\'{o}pteros en una red descentralizada\protect\footnotemark}
+      \end{figure}
+      \footnotetext{Tomar en cuenta la complejidad en la escalabilidad}
+    \end{example}
+    
+  }
+
+  \only<2>{
+
+    \begin{figure}
     \centering
     \includegraphics[width=6cm, height=5.5cm]{multiuab}
     \caption[Caption for LOF]{Cuadric\'{o}pteros en una red descentralizada\protect\footnotemark}
   \end{figure}
   \footnotetext{Tomar en cuenta la complejidad en la escalabilidad}
+    
+  }
+
+  \only<3>{
+
+    \begin{figure}
+    \centering
+    \includegraphics[width=6cm, height=5.5cm]{multiuab}
+    %\caption[Caption for LOF]{Cuadric\'{o}pteros en una red descentralizada\protect\footnotemark}
+  \end{figure}
+  %\footnotetext{Tomar en cuenta la complejidad en la escalabilidad}
+    
+  }
+  
+  
     
   %{\footnotesize
   %El proyecto de estrategias para la exploración coordinada múlti-VANT se centra en las ventajas de tener múltiples-VANT(s) trabajando en conjunto para mejorar la eficiencia y cobertura de la exploración proponiendo una arquitectura de software que con ayuda de algoritmos que permitan la coordinación eficiente de múltiples-VANT(s) para llevar a cabo tareas de exploración en entornos desconocidos y cambiantes.}
@@ -295,8 +334,9 @@
 \begin{frame}{Arquitectura híbrida}
   \begin{figure}
     \centering
-    \includegraphics[width=7cm, height=4cm]{control_autonomo2}
-    \caption[Caption for LOF]{Control Vehículo autonomo\protect\footnotemark}
+    \includegraphics[scale=0.30]{control_autonomo2}$^\dag$
+    \rule{0in}{1.2em}$^\dag$\scriptsize This is the footnote text\\
+    
   \end{figure}
   \footnotetext{Hardware in the loop framework proposal for a semi-autonomous car
 architecture in a closed route environment \cite{CurielRamirez2019}}
@@ -341,11 +381,22 @@ architecture in a closed route environment \cite{CurielRamirez2019}}
 \end{frame}
 
 
+\begin{frame}{Panorama Planificación de trayectorias}
+
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.60]{panorama_planning}
+    \caption[Caption for LOF]{\footnotemark}
+  \end{figure}
+  \footnotetext{Cooperación en robots heterogeneos \cite{SnchezIbez2021}}
+  
+\end{frame}
+
 \begin{frame}{Representación del ambiente}
 
   \begin{figure}
     \centering
-    \includegraphics[width=12cm, height=5.5cm]{panorama_planning}
+    \includegraphics[scale=0.60]{panorama_planning}
     \caption[Caption for LOF]{Mapa probabilistico 3D\protect\footnotemark}
   \end{figure}
   \footnotetext{Cooperación en robots heterogeneos \cite{SnchezIbez2021}}
