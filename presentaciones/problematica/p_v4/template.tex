@@ -162,7 +162,7 @@
 \usepackage{multicol}
 \usepackage{tabularx,booktabs}
 \usepackage{forloop}
-
+\usepackage{ragged2e}
 \newcounter{loopcntr}
 %----------------------------------------------------------------------------------------
 %	SELECT INNER THEME
@@ -316,110 +316,25 @@
   \captionof{figure}{Nice overview! Let's look get into more detail on each image.}
 \end{frame}
 
+\section{Descripción del proyecto}
+
 \begin{frame}{Descripción del proyecto}
-\begin{minipage}{0.47\textwidth}
+  \begin{minipage}{0.47\textwidth}
     \begin{itemize}
-        \item First item
-        \item Second item
-        \item Third item
-        \item Four
-        \item Five
+    \item<1-> First item
+    \item<2-> Second item
+    \item<3-> Third item
+    \item<4-> Four
+    \item<5-> Five
     \end{itemize}
-\end{minipage}
-\begin{minipage}{0.5\textwidth}
-  \includegraphics[width=\textwidth]{turquia2}
-\end{minipage}
-\end{frame}
-
-\begin{frame}{Frame 1}  
-  \begin{multicols}{2}
-    \begin{minipage}[b][20ex][t]{\linewidth}
-      Section 1
-      \begin{itemize}
-      \item<1-> Item 1
-      \item<2-> Item 2
-      \item<3-> Item 3
-      \end{itemize}
-    \end{minipage}
-    \begin{minipage}[b][20ex][t]{\linewidth}
-      Section 2
-      \only<1>{
-        Content 1 in section 2
-      }
-      \only<2>{
-        Content 2 in section 2
-      }
-      \only<3>{
-        Content 3 in section 2
-      }
-    \end{minipage}
-    
-    \begin{minipage}[b][40ex][t]{\linewidth}
-      Section 3
-      
-      \only<1>{
-        Content 1 in section 3
-      }
-      \only<2>{
-        Content 2 in section 3
-      }
-      \only<3>{
-        Content 3 in section 3
-      }
-    \end{minipage}
-  \end{multicols}
-\end{frame}
-
-\begin{frame}{Descripción del proyecto}
-  
-  \begin{itemize}
-  \item<1-> Colaboracion
-  \item<2-> Colaboracion
-  \item<3-> Colaboracion
-  \end{itemize}
-
-  \only<1>{
-
-    
-
-    \begin{example}
-      \begin{figure}
-      \centering
-      \includegraphics[width=6cm, height=5.5cm]{multiuab}
-      \caption[Caption for LOF]{Cuadric\'{o}pteros en una red descentralizada\protect\footnotemark}
-      \end{figure}
-      \footnotetext{Tomar en cuenta la complejidad en la escalabilidad}
-    \end{example}
-    
-  }
-
-  \only<2>{
-
-    \begin{figure}
-    \centering
-    \includegraphics[width=6cm, height=5.5cm]{multiuab}
-    \caption[Caption for LOF]{Cuadric\'{o}pteros en una red descentralizada\protect\footnotemark}
-  \end{figure}
-  \footnotetext{Tomar en cuenta la complejidad en la escalabilidad}
-    
-  }
-
-  \only<3>{
-
-    \begin{figure}
-    \centering
-    \includegraphics[width=6cm, height=5.5cm]{multiuab}
-    %\caption[Caption for LOF]{Cuadric\'{o}pteros en una red descentralizada\protect\footnotemark}
-  \end{figure}
-  %\footnotetext{Tomar en cuenta la complejidad en la escalabilidad}
-    
-  }
-  
-  
-    
-  %{\footnotesize
-  %El proyecto de estrategias para la exploración coordinada múlti-VANT se centra en las ventajas de tener múltiples-VANT(s) trabajando en conjunto para mejorar la eficiencia y cobertura de la exploración proponiendo una arquitectura de software que con ayuda de algoritmos que permitan la coordinación eficiente de múltiples-VANT(s) para llevar a cabo tareas de exploración en entornos desconocidos y cambiantes.}
-      
+  \end{minipage}
+  \begin{minipage}{0.5\textwidth}
+    \only<1>{\includegraphics[width=\textwidth]{turquia1}}
+    \only<2>{\includegraphics[width=\textwidth]{turquia2}}
+    \only<3>{\includegraphics[width=\textwidth]{turquia1}}
+    \only<4>{\includegraphics[width=\textwidth]{turquia2}}
+    \only<5>{\includegraphics[width=\textwidth]{turquia1}}
+  \end{minipage}
 \end{frame}
 
 \section{Antecedentes y motivación para el proyecto}
@@ -512,14 +427,21 @@
 
 \begin{frame}
   \frametitle{Planteamiento del problema}
-  Desarrollar una estrategia de exploración multi-VANT que reduzca el tiempo total de exploración dado un conjunto de $\mathcal{V}$ vehículos aéreos no tripulados. Las capacidades limitadas de energía y sensores abordo de los VANTS les permiten navegar de forma autónoma. Teniendo en cuenta sus limitaciones de energía y la necesidad de una exploración eficiente, el objetivo es determinar la trayectoria, las rutas y la asignación de tareas óptimas ó sub-óptimas.
-  \bigskip % Vertical whitespace 
-  \begin{itemize}
-  \item<1-> Coordinación - Establecer comunicación efectiva entre los múltiples VANTs. Intercambiar información relevante. Tener baja latencia en su comunicación.
-  \item<2-> Planificación - Los VANTs deben coordinar sus movimientos para evitar colisiones y lograr una cobertura eficiente del área objetivo.
-  \item<3-> Asignación de tareas - Se busca evitar la duplicación de esfuerzos optimizando el uso de recursos disponibles.
-  \end{itemize}
-  
+  \begin{columns}
+    \column{0.5\textwidth}
+    \justifying
+    \small Desarrollar una estrategia de exploración multi-VANT que reduzca el tiempo total de exploración dado un conjunto de $\mathcal{V}$ vehículos aéreos no tripulados. Las capacidades limitadas de energía y sensores abordo de los VANTS les permiten navegar de forma autónoma. Teniendo en cuenta sus limitaciones de energía y la necesidad de una exploración eficiente, el objetivo es determinar la trayectoria, las rutas y la asignación de tareas óptimas ó sub-óptimas.
+    \column{0.5\textwidth}\\
+    \pause
+    \centering
+    \small Retos multi-VANT
+    \pause
+    \begin{itemize}
+    \small \item<1-> Coordinación - Establecer comunicación efectiva entre los múltiples VANTs. Intercambiar información relevante. Tener baja latencia en su comunicación.
+    \small \item<2-> Planificación - Los VANTs deben coordinar sus movimientos para evitar colisiones y lograr una cobertura eficiente del área objetivo.
+    \small \item<3-> Asignación de tareas - Se busca evitar la duplicación de esfuerzos optimizando el uso de recursos disponibles.
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 %\begin{frame}
@@ -554,15 +476,15 @@
 
   \begin{enumerate}
   \item<1-> General \\
-
     Diseñar una arquitectura de software descentralizada capaz de resolver los problemas de localización y coordinación multi-VANT en ambientes desconocidos y dinámicos para tareas de exploración en interiores.
-        
+    \pause
   \item<2-> Particulares\\
-
     \begin{itemize}
-    \item<1-> Construcción de solución en base a los algoritmos reportados en la literatura.
-    \item<2-> Valoración propuesta (simulación de propuesta).
-    \item<3-> Comparación y análisis (escalabilidad, robustez y recursos computacionales).
+    \item Construcción de solución en base a los algoritmos reportados en la literatura.
+      \pause
+    \item Valoración propuesta (simulación de propuesta).
+      \pause
+    \item Comparación y análisis (escalabilidad, robustez y recursos computacionales).
     \end{itemize}
     
   \end{enumerate}
@@ -615,7 +537,7 @@
 \end{frame}
 
 \begin{frame}[allowframebreaks,noframenumbering]
-  \frametitle{Bibliography}
+  \frametitle{Bibliografía}
   \bibliographystyle{abbrvnat}
   \bibliography{test}
 \end{frame}

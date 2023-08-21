@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{2}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -26,28 +26,5 @@ S.~K. Debnath, R.~Omar, S.~Bagchi, E.~N. Sabudin, M.~H. A.~S. Kandar,
   Springer Nature Singapore, July 2020.
 \newblock \doi{10.1007/978-981-15-5281-6_8}.
 \newblock URL \url{https://doi.org/10.1007/978-981-15-5281-6_8}.
-
-\bibitem[Dieudonné et~al.(2010)Dieudonné, Labbani-Igbida, and Petit]{5427034}
-Y.~Dieudonné, O.~Labbani-Igbida, and F.~Petit.
-\newblock Deterministic robot-network localization is hard.
-\newblock \emph{IEEE Transactions on Robotics}, 26\penalty0 (2):\penalty0
-  331--339, 2010.
-\newblock \doi{10.1109/TRO.2010.2042753}.
-
-\bibitem[Erickson and LaValle(2013)]{nphard}
-L.~H. Erickson and S.~M. LaValle.
-\newblock A simple, but np-hard, motion planning problem.
-\newblock In \emph{Proceedings of the Twenty-Seventh AAAI Conference on
-  Artificial Intelligence}, AAAI'13, page 1388–1393. AAAI Press, 2013.
-
-\bibitem[S{\'{a}}nchez-Ib{\'{a}}{\~{n}}ez
-  et~al.(2021)S{\'{a}}nchez-Ib{\'{a}}{\~{n}}ez, del Pulgar, and
-  Garc{\'{\i}}a-Cerezo]{SnchezIbez2021}
-J.~R. S{\'{a}}nchez-Ib{\'{a}}{\~{n}}ez, C.~J.~P. del Pulgar, and
-  A.~Garc{\'{\i}}a-Cerezo.
-\newblock Path planning for autonomous mobile robots: A review.
-\newblock \emph{Sensors}, 21\penalty0 (23):\penalty0 7898, Nov. 2021.
-\newblock \doi{10.3390/s21237898}.
-\newblock URL \url{https://doi.org/10.3390/s21237898}.
 
 \end{thebibliography}
