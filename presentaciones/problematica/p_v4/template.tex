@@ -361,7 +361,7 @@
     \item Redundancia y tolerancia a fallos
     \item Adaptabilidad a entornos dinámicos
     \item Distribución de carga de trabajo
-    \item Aprendizaje colaborativo
+    \item Esfuerzo colaborativo
     \end{itemize}
     \column{0.5\textwidth}
     \includegraphics[width=\textwidth]{drone_swarm}
@@ -416,7 +416,7 @@
   
 \end{frame}
 
-\begin{frame}{Representación del ambiente}
+\begin{frame}{Representación del ambiente 3D}
   %MOSTRAR OCTOMAP
   %MOSTRAR MAPA 3D
   \begin{figure}
@@ -480,11 +480,11 @@
 
   \begin{enumerate}
   \item<1-> General \\
-    Diseñar una arquitectura de software descentralizada capaz de resolver los problemas de localización y coordinación multi-VANT en ambientes desconocidos y dinámicos para tareas de exploración en interiores.
+    Diseñar una arquitectura de software descentralizada para implementar una estrategia multi-VANT capaz de resolver los problemas de localización y coordinación en ambientes desconocidos y dinámicos para tareas de exploración en interiores.
     \pause
   \item<2-> Particulares\\
     \begin{itemize}
-    \item Construcción de solución en base a los algoritmos reportados en la literatura.
+    \item Diseño de solución en base a los algoritmos reportados en la literatura.
       \pause
     \item Valoración propuesta (simulación de propuesta).
       \pause
@@ -518,8 +518,8 @@
   \begin{tabular}{ | p{4cm} | p{3cm} | p{2.5cm} | p{3.5cm}|}
     \hline
     \scriptsize REFERENCIA&
-    \scriptsize MAPA&
-    \scriptsize Planificador de rutas&
+    \scriptsize REPRESENTACION&
+    \scriptsize BUSQUEDA&
     \scriptsize Control de trayectoria\\
     \hline
     \hline
@@ -637,7 +637,7 @@
     \item Algoritmo para la planificación de rutas multi-VANT
     \item Protocolo de comunicación y coordinación descentralizados multi-VANT que formaran parte de la arquitectura de software
     \end{itemize}
-  \item<2-> Simulación de la solución
+  \item<2-> Validación de la solución en un simulador
   \item<3-> Tesis impresa
   \end{enumerate}
   
