@@ -163,6 +163,10 @@
 \usepackage{tabularx,booktabs}
 \usepackage{forloop}
 \usepackage{ragged2e}
+
+\usepackage{bbding} %palomitas checkmark
+\usepackage{pifont}
+
 \newcounter{loopcntr}
 %----------------------------------------------------------------------------------------
 %	SELECT INNER THEME
@@ -511,10 +515,117 @@
 
 
 \begin{frame}
-\begin{figure}
+  
   \centering
-  \includegraphics[width=10cm, height=6cm]{estado_del_arte}
-\end{figure}
+  \begin{tabular}{ | p{4cm} | p{3cm} | p{3cm} | p{3cm}|}
+    \hline
+    \hline
+    \small REFERENCIA&
+    \small MAPA&
+    \small Planificador de rutas&
+    \small Control de trayectoria\\
+    \hline
+    \hline
+    %--------------------------
+    \small \cite{CIESLEWSKI2017}[\citenum{CIESLEWSKI2017}]&
+    \small Octomap&
+    \small Basado en fronteras&
+    \small Control directo de velocidad\\ \hline
+    %--------------------------
+    \small \cite{USENKO2017}[\citenum{USENKO2017}]&
+    \small Cuadr\'{i}cula egoc\'{e}ntrica&
+    \small Offline RRT*&
+    \small Curvas de Bezier\\ \hline 
+    %--------------------------
+    \small \cite{MOHTA2017}[\citenum{MOHTA2017}]&
+    \small mapa 3D-Local y 2D-Global&
+    \small A*&
+    \small Prograci\'{o}n cuadr\'{a}tica \\ \hline 
+    %--------------------------
+    \small \cite{LIN2017}[\citenum{LIN2017}]&
+    \small 3D voxel array TSDF&
+    \small A*&
+    \small Optimizaci\'{o}n cuadr\'{a}tica \\ \hline
+    %--------------------------
+    \small \cite{PAPACHRISTOS2017}[\citenum{PAPACHRISTOS2017}]&
+    \small Octomap&
+    \small NBVP&
+    \small Control directo de velocidad \\ \hline
+    %--------------------------
+    \small \cite{OLEYNIKOVA2018}[\citenum{OLEYNIKOVA2018}]&
+    \small Voxel Hashing TSDF&
+    \small NBVP&
+    \small Optimizaci\'{o}n cuadr\'{a}tica \\ \hline
+    %--------------------------
+    \small \cite{GAO2018}[\citenum{GAO2018}]&
+    \small Mapa de cuadr\'{i}cula&
+    \small M\'{e}todo de marcha r\'{a}pida&
+    \small Optimizaci\'{o}n cuadr\'{a}tica \\ \hline
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  
+  \centering
+  \begin{tabular}{ | p{4cm} | p{3cm} | p{3cm} | p{3cm}|}
+    \hline
+    \hline
+    \small REFERENCIA&
+    \small MAPA&
+    \small Planificador de rutas&
+    \small Control trayectoria\\
+    \hline
+    \hline
+    %--------------------------
+    \small \cite{FLORENCE2018}[\citenum{FLORENCE2018}]&
+    \small Busqueda basada en visibilidad&
+    \small 2D A*&
+    \small Control MPC \\ \hline
+    %--------------------------
+    \small \cite{SELIN2019}[\citenum{SELIN2019}]&
+    \small Octomap&
+    \small NBVP&
+    \small Control directo de velocidad \\ \hline
+    %--------------------------
+    \small \cite{BUG2019}[\citenum{BUG2019}]&
+    \small NA&
+    \small SGBA&
+    \small Control directo de velocidad \\ \hline
+    %--------------------------
+    \small \cite{COLLINS2019}[\citenum{COLLINS2019}]&
+    \small KD Tree $+$ Mapa en Voxel&
+    \small B\'{u}squeda en Grafo&
+    \small Movimientos suaves \\ \hline
+    %--------------------------
+    \small \cite{CINVES2021}[\citenum{CINVES2021}]&
+    \small Octree&
+    \small RRT&
+    \small Basado en contornos \\ \hline
+    %--------------------------
+    \small \cite{RACER2022}[\citenum{RACER2022}]&
+    \small Octomap HGrid&
+    \small NBVP&
+    \small Control directo de velocidad \\ \hline
+    %--------------------------
+    %\cite{WESTHEIDER2023}&
+    %Mapa de cuadr\'{i}cula&
+    %Deep Learning&
+    %Control directo de velocidad&
+    %\ding{51}\\ \hline
+    %--------------------------
+    %\cite{BARTOLOMEI2023}&
+    %Mapa de cuadr\'{i}cula&
+    %NBVP&
+    %Control directo de velocidad&
+    %\ding{51}\\ \hline
+  \end{tabular}
+  
+  
+  
+%\begin{figure}
+%  \centering
+%  \includegraphics[width=10cm, height=6cm]{estado_del_arte}
+%\end{figure}
 \end{frame}
 
 \section{Contribuciones o resultados esperados}
