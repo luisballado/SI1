@@ -155,9 +155,15 @@
 \usepackage{lipsum}% http://ctan.org/pkg/lipsum
 \usepackage{hanging}% http://ctan.org/pkg/hanging
 
-\usepackage{animate}
+\usepackage{xcolor,colortbl}
+\usepackage{multirow}
 
+\usepackage{animate}
+\usepackage{multicol}
 \usepackage{tabularx,booktabs}
+\usepackage{forloop}
+
+\newcounter{loopcntr}
 %----------------------------------------------------------------------------------------
 %	SELECT INNER THEME
 %----------------------------------------------------------------------------------------
@@ -219,6 +225,29 @@
 \newcommand\footcite[1]{\footnote{\bibentry{#1}}\label{\thepage:#1}}
 \newcommand\secondcite[1]{\textsuperscript{\ref{\thepage:#1}}}
 
+\newcommand{\rpt}[2][1]{%
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{#2}%
+}
+\newcommand{\on}[1][1]{
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&\cellcolor{gray}}
+}
+\newcommand{\off}[1][1]{
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&}
+}
+
+\addtolength{\textheight}{90pt}
+
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -259,24 +288,87 @@
 
 \begin{frame}{Problemática}
   %Desastres Naturales \ref{fig:images} Terremoto Turquía y norte de Siria Febrero 2023, \ref{fig:nature1} and \ref{fig:nature2}, that I can reference independently.
-  \begin{figure}
-    \centering
-    \begin{subfigure}[t]{0.4\textwidth}
-      \includegraphics[width=\textwidth]{turquia1}
-      \caption{Trabajos contra reloj en búsqueda de sobrevivientes.}
-      \label{fig:nature1}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.5\textwidth}
-      \includegraphics[width=\textwidth]{turquia2}
-      \caption{Desastre ocurrido 4:17 am. de un Lunes por la mañana según medios internacionales.}
-      \label{fig:nature2}
-    \end{subfigure}
-    \caption{Terremoto Turquía y norte de Siria Febrero 2023.}
-    \label{fig:images}
-  \end{figure}
+
+  %\begin{figure}
+  %  \centering
+  %  \begin{subfigure}[t]{0.4\textwidth}
+  %    \includegraphics[width=\textwidth]{turquia1}
+  %    \caption{Trabajos contra reloj en búsqueda de sobrevivientes.}
+  %    \label{fig:nature1}
+  %  \end{subfigure}
+  %  \begin{subfigure}[b]{0.5\textwidth}
+  %    \includegraphics[width=\textwidth]{turquia2}
+  %    \caption{Desastre ocurrido 4:17 am. de un Lunes por la mañana según medios internacionales.}
+  %    \label{fig:nature2}
+  %  \end{subfigure}
+  %  \caption{Terremoto Turquía y norte de Siria Febrero 2023.}
+  %  \label{fig:images}
+  %\end{figure}
+
+  \centering
+  \includegraphics[width=0.45\textwidth,height=0.35\textheight]{turquia2}
+  %\hfil
+  \includegraphics[width=0.45\textwidth,height=0.35\textheight]{turquia2}
+  %\vspace{9pt}
+  \includegraphics[width=0.45\textwidth,height=0.35\textheight]{turquia2}
+  %\hfil
+  \includegraphics[width=0.45\textwidth,height=0.35\textheight]{turquia2}
+  \captionof{figure}{Nice overview! Let's look get into more detail on each image.}
 \end{frame}
 
-\section{Descripción del proyecto}
+\begin{frame}{Descripción del proyecto}
+\begin{minipage}{0.47\textwidth}
+    \begin{itemize}
+        \item First item
+        \item Second item
+        \item Third item
+        \item Four
+        \item Five
+    \end{itemize}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+  \includegraphics[width=\textwidth]{turquia2}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{Frame 1}  
+  \begin{multicols}{2}
+    \begin{minipage}[b][20ex][t]{\linewidth}
+      Section 1
+      \begin{itemize}
+      \item<1-> Item 1
+      \item<2-> Item 2
+      \item<3-> Item 3
+      \end{itemize}
+    \end{minipage}
+    \begin{minipage}[b][20ex][t]{\linewidth}
+      Section 2
+      \only<1>{
+        Content 1 in section 2
+      }
+      \only<2>{
+        Content 2 in section 2
+      }
+      \only<3>{
+        Content 3 in section 2
+      }
+    \end{minipage}
+    
+    \begin{minipage}[b][40ex][t]{\linewidth}
+      Section 3
+      
+      \only<1>{
+        Content 1 in section 3
+      }
+      \only<2>{
+        Content 2 in section 3
+      }
+      \only<3>{
+        Content 3 in section 3
+      }
+    \end{minipage}
+  \end{multicols}
+\end{frame}
 
 \begin{frame}{Descripción del proyecto}
   
@@ -334,72 +426,85 @@
 \begin{frame}{Arquitectura híbrida}
   \begin{figure}
     \centering
-    \includegraphics[scale=0.30]{control_autonomo2}$^\dag$
-    \rule{0in}{1.2em}$^\dag$\scriptsize This is the footnote text\\
+    \includegraphics[scale=0.30]{control_autonomo2}$^\dag$\\
+    \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}\\
     
   \end{figure}
-  \footnotetext{Hardware in the loop framework proposal for a semi-autonomous car
-architecture in a closed route environment \cite{CurielRamirez2019}}
+  %\footnotetext{Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}}
 \end{frame}
 
-\begin{frame}{Planificación de trayectorias}
-
-  \cite{nphard}[\citenum{nphard}] \cite{5427034}[\citenum{5427034}]Calcular la ruta más corta entre dos puntos en un ambiente 3D es un problema NP-HARD. La mayoria de planificadores de rutas hacen uso de heuristicas y metaheuristicas para generar el óptimo más cercano \\
-  \bigskip % Vertical whitespace
-  Beneficios coordinación múlti-VANT
-  \begin{itemize}
-  \item Eficiencia y cobertura
-  \item Redundancia y tolerancia a fallos
-  \item Adaptabilidad a entornos dinámicos
-  \item Distribución de carga de trabajo
-  \item Aprendizaje colaborativo
-  \end{itemize}
+\begin{frame}{Multi-robots}
+  \begin{columns}
+    \column{0.5\textwidth}
+    Beneficios coordinación multi-VANT
+    \begin{itemize}
+    \item Eficiencia y cobertura
+    \item Redundancia y tolerancia a fallos
+    \item Adaptabilidad a entornos dinámicos
+    \item Distribución de carga de trabajo
+    \item Aprendizaje colaborativo
+    \end{itemize}
+    \column{0.5\textwidth}
+    Retos multi-VANT
+    \begin{itemize}
+    \item Eficiencia y cobertura
+    \item Redundancia y tolerancia a fallos
+    \item Adaptabilidad a entornos dinámicos
+    \item Distribución de carga de trabajo
+    \item Aprendizaje colaborativo
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 %COMPARACION DE METODOS, USAR INFOGRAFIA
-\begin{frame}{}
-  \centering
-  \begin{tabular}{ |p{1.5cm}||p{0.8cm}|p{0.8cm}|p{1.2cm}|p{5cm}|  }
-    \hline
-    \multicolumn{5}{|c|}{\tiny Comparaci\'{o}n de m\'{e}todos} \\
-    \hline 
-    \tiny Metodo& \tiny Completo & \tiny \'{O}ptimo& \tiny Escalable& \tiny Notas \\
-    \hline
-    \tiny Grafo de Visibilidad   & \tiny Si    & \tiny Si&   \tiny No& \tiny Poca escalabilidad, el robot pasa cerca de los obstaculos\\
-    \hline
-    \tiny Diagramas de Voronoi   & \tiny Si    & \tiny No&   \tiny No& \tiny Poca escalabilidad\\
-    \hline
-    \tiny Campo de potencial artificial & \tiny Si    & \tiny No&   \tiny Depende del ambiente& \tiny F\'{a}cil de implementar, suceptible a minimos locales\\
-    \hline
-    \tiny Dijkstra/A*/D* & \tiny Si    & \tiny Grafo&   \tiny No& \tiny A* usa una función heuristica que guía la búsqueda más eficiente, Poca escalabilidad\\
-    \hline
-    \tiny PRM   & \tiny Si    & \tiny Grafo&   \tiny Si&  \tiny Eficiente para multi-busquedas, completez probabilistica \\
-    \hline
-    \tiny RRT   & \tiny Si    & \tiny No&   \tiny Si&  \tiny Eficiente para problemas simples, completez probabilistica\\
-    \hline
-  \end{tabular}  
-\end{frame}
+
+%\begin{frame}{}
+%  \centering
+%  \begin{tabular}{ |p{1.5cm}||p{0.8cm}|p{0.8cm}|p{1.2cm}|p{5cm}|  }
+%    \hline
+%    \multicolumn{5}{|c|}{\tiny Comparaci\'{o}n de m\'{e}todos} \\
+%    \hline 
+%    \tiny Metodo& \tiny Completo & \tiny \'{O}ptimo& \tiny Escalable& \tiny Notas \\
+%    \hline
+%    \tiny Grafo de Visibilidad   & \tiny Si    & \tiny Si&   \tiny No& \tiny Poca escalabilidad, el robot pasa cerca de los obstaculos\\
+%    \hline
+%    \tiny Diagramas de Voronoi   & \tiny Si    & \tiny No&   \tiny No& \tiny Poca escalabilidad\\
+%    \hline
+%    \tiny Campo de potencial artificial & \tiny Si    & \tiny No&   \tiny Depende del ambiente& \tiny F\'{a}cil de implementar, suceptible a minimos locales\\
+%    \hline
+%    \tiny Dijkstra/A*/D* & \tiny Si    & \tiny Grafo&   \tiny No& \tiny A* usa una función heuristica que guía la búsqueda más eficiente, Poca escalabilidad\\
+%    \hline
+%    \tiny PRM   & \tiny Si    & \tiny Grafo&   \tiny Si&  \tiny Eficiente para multi-busquedas, completez probabilistica \\
+%    \hline
+%    \tiny RRT   & \tiny Si    & \tiny No&   \tiny Si&  \tiny Eficiente para problemas simples, completez probabilistica\\
+%    \hline
+%  \end{tabular}  
+%\end{frame}
 
 
 \begin{frame}{Panorama Planificación de trayectorias}
-
+  %\cite{nphard}[\citenum{nphard}] \cite{5427034}[\citenum{5427034}]
+  %Calcular la ruta más corta entre dos puntos en un ambiente 3D es un problema NP-HARD.
+  %La mayoria de planificadores de rutas hacen uso de heuristicas y metaheuristicas para
+  %generar el óptimo más cercano \\
   \begin{figure}
     \centering
-    \includegraphics[scale=0.60]{panorama_planning}
-    \caption[Caption for LOF]{\footnotemark}
+    \includegraphics[scale=0.33]{path_planning_panorama}
+    \caption[Caption for LOF]{Clasificación del enfoque de planificación de rutas\footnotemark}
   \end{figure}
-  \footnotetext{Cooperación en robots heterogeneos \cite{SnchezIbez2021}}
+  \footnotetext{Different Cell Decomposition Path Planning Methods for Unmanned Air Vehicles - A Review \cite{Debnath2020}}
   
 \end{frame}
 
 \begin{frame}{Representación del ambiente}
-
+  %MOSTRAR OCTOMAP
+  %MOSTRAR MAPA 3D
   \begin{figure}
     \centering
     \includegraphics[scale=0.60]{panorama_planning}
     \caption[Caption for LOF]{Mapa probabilistico 3D\protect\footnotemark}
   \end{figure}
-  \footnotetext{Cooperación en robots heterogeneos \cite{SnchezIbez2021}}
+  \footnotetext{Cooperación en robots heterogeneos}
   
 \end{frame}
 
@@ -465,37 +570,13 @@ architecture in a closed route environment \cite{CurielRamirez2019}}
 
 %Explicar con el cronograma
 \section{Metodología}
-\begin{frame}{Metodología}
+\begin{frame}{Metodología/Cronograma}
 
-  \begin{enumerate}
-  \item <1-> Análisis y diseño de la solución propuesta 
-    \begin{itemize}
-    \item Revisión a grano fino del estado del arte
-    \item Evaluación de aptitudes
-    \item Elaboración de la solución
-    \end{itemize}
-  \item <2-> Implementación y validación
-    \begin{itemize}
-    \item Selección de Simulador
-    \item Visualización de información (Construcción OctoMap)
-    \item Control de desplazamientos (1 VANT, 2 VANT,..N)
-    \item Exploración 1 VANT
-    \item Exploración multi-VANT
-    \end{itemize}
-  \item <3-> Evaluación experimental, resultados y conclusiones
-    \begin{itemize}
-    \item Experimentación de solución
-    \item Recopilación de información
-    \item Divulgación
-    \end{itemize}
-  \end{enumerate}  
-\end{frame}
-
-\begin{frame}
   \begin{figure}
     \centering
-    \includegraphics[width=12cm, height=9cm]{cronograma}
+    \includegraphics[width=11cm, height=8cm]{cronograma}
   \end{figure}
+  
 \end{frame}
 
 \section{Estado del Arte}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,6 +15,17 @@ L.~A. Curiel-Ramirez, R.~A. Ramirez-Mendoza, J.~Izquierdo-Reyes, M.~R.
   ({IJIDeM})}, 13\penalty0 (4):\penalty0 1647--1658, Oct. 2019.
 \newblock \doi{10.1007/s12008-019-00619-x}.
 \newblock URL \url{https://doi.org/10.1007/s12008-019-00619-x}.
+
+\bibitem[Debnath et~al.(2020)Debnath, Omar, Bagchi, Sabudin, Kandar, Foysol,
+  and Chakraborty]{Debnath2020}
+S.~K. Debnath, R.~Omar, S.~Bagchi, E.~N. Sabudin, M.~H. A.~S. Kandar,
+  K.~Foysol, and T.~K. Chakraborty.
+\newblock Different cell decomposition path planning methods for unmanned air
+  vehicles-a review.
+\newblock In \emph{Lecture Notes in Electrical Engineering}, pages 99--111.
+  Springer Nature Singapore, July 2020.
+\newblock \doi{10.1007/978-981-15-5281-6_8}.
+\newblock URL \url{https://doi.org/10.1007/978-981-15-5281-6_8}.
 
 \bibitem[Dieudonné et~al.(2010)Dieudonné, Labbani-Igbida, and Petit]{5427034}
 Y.~Dieudonné, O.~Labbani-Igbida, and F.~Petit.
