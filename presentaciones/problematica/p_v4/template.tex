@@ -279,35 +279,8 @@
 %	PRESENTATION BODY SLIDES
 %----------------------------------------------------------------------------------------
 
-%\section{Introducción} % Sections are added in order to organize your presentation into discrete blocks, all sections and subsections are automatically output to the table of contents as an overview of the talk but NOT output in the presentation as separate slides
-
-%------------------------------------------------
-
-% Ejemplo imagen
-%\begin{figure}
-%  \includegraphics[width=0.7\linewidth]{dron_ovni.jpg}
-%\end{figure}
-
 \section{Resumen}
-
 \begin{frame}{Resumen}%{Problemática}
-  %Desastres Naturales \ref{fig:images} Terremoto Turquía y norte de Siria Febrero 2023, \ref{fig:nature1} and \ref{fig:nature2}, that I can reference independently.
-
-  %\begin{figure}
-  %  \centering
-  %  \begin{subfigure}[t]{0.4\textwidth}
-  %    \includegraphics[width=\textwidth]{turquia1}
-  %    \caption{Trabajos contra reloj en búsqueda de sobrevivientes.}
-  %    \label{fig:nature1}
-  %  \end{subfigure}
-  %  \begin{subfigure}[b]{0.5\textwidth}
-  %    \includegraphics[width=\textwidth]{turquia2}
-  %    \caption{Desastre ocurrido 4:17 am. de un Lunes por la mañana según medios internacionales.}
-  %    \label{fig:nature2}
-  %  \end{subfigure}
-  %  \caption{Terremoto Turquía y norte de Siria Febrero 2023.}
-  %  \label{fig:images}
-  %\end{figure}
   \bigskip % Vertical whitespace
   \centering
   \includegraphics[width=0.45\textwidth,height=0.35\textheight]{DJI_B1}$^\dag$
@@ -322,7 +295,6 @@
 \end{frame}
 
 \section{Descripción del proyecto}
-
 \begin{frame}{Descripción del proyecto}
   \begin{minipage}{0.47\textwidth}
     \begin{itemize}
@@ -334,11 +306,21 @@
     \end{itemize}
   \end{minipage}
   \begin{minipage}{0.5\textwidth}
-    \only<1>{\includegraphics[width=\textwidth]{multiple-drones}}
-    \only<2>{\includegraphics[width=\textwidth]{drone_path}}
-    \only<3>{\includegraphics[width=\textwidth]{drone_path}}
-    \only<4>{\includegraphics[width=\textwidth]{drone_collision}}
-    \only<5>{\includegraphics[width=\textwidth]{drone_action}}
+    \only<1>{\includegraphics[width=\textwidth]{multiple-drones}$^\dag$\\
+      \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}
+    }
+    \only<2>{\includegraphics[width=\textwidth]{drone_path}$^\dag$\\
+      \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}
+    }
+    \only<3>{\includegraphics[width=\textwidth]{drone_path}$^\dag$\\
+      \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}
+    }
+    \only<4>{\includegraphics[width=\textwidth]{drone_collision}$^\dag$\\
+      \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}
+    }
+    \only<5>{\includegraphics[width=\textwidth]{drone_action}$^\dag$\\
+      \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}
+    }
   \end{minipage}
 \end{frame}
 
@@ -348,9 +330,7 @@
     \centering
     \includegraphics[scale=0.30]{control_autonomo2}$^\dag$\\
     \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}\\
-    
   \end{figure}
-  %\footnotetext{Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}}
 \end{frame}
 
 \begin{frame}{Multi-robots}
@@ -365,43 +345,10 @@
     \item Esfuerzo colaborativo
     \end{itemize}
     \column{0.5\textwidth}
-    \includegraphics[width=\textwidth]{drone_swarm}
-    %Retos multi-VANT
-    %\begin{itemize}
-    %\item Eficiencia y cobertura
-    %\item Redundancia y tolerancia a fallos
-    %\item Adaptabilidad a entornos dinámicos
-    %\item Distribución de carga de trabajo
-    %\item Aprendizaje colaborativo
-    %\end{itemize}
+    \includegraphics[width=\textwidth]{drone_swarm}$^\dag$\\
+    \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}
   \end{columns}
 \end{frame}
-
-%COMPARACION DE METODOS, USAR INFOGRAFIA
-
-%\begin{frame}{}
-%  \centering
-%  \begin{tabular}{ |p{1.5cm}||p{0.8cm}|p{0.8cm}|p{1.2cm}|p{5cm}|  }
-%    \hline
-%    \multicolumn{5}{|c|}{\tiny Comparaci\'{o}n de m\'{e}todos} \\
-%    \hline 
-%    \tiny Metodo& \tiny Completo & \tiny \'{O}ptimo& \tiny Escalable& \tiny Notas \\
-%    \hline
-%    \tiny Grafo de Visibilidad   & \tiny Si    & \tiny Si&   \tiny No& \tiny Poca escalabilidad, el robot pasa cerca de los obstaculos\\
-%    \hline
-%    \tiny Diagramas de Voronoi   & \tiny Si    & \tiny No&   \tiny No& \tiny Poca escalabilidad\\
-%    \hline
-%    \tiny Campo de potencial artificial & \tiny Si    & \tiny No&   \tiny Depende del ambiente& \tiny F\'{a}cil de implementar, suceptible a minimos locales\\
-%    \hline
-%    \tiny Dijkstra/A*/D* & \tiny Si    & \tiny Grafo&   \tiny No& \tiny A* usa una función heuristica que guía la búsqueda más eficiente, Poca escalabilidad\\
-%    \hline
-%    \tiny PRM   & \tiny Si    & \tiny Grafo&   \tiny Si&  \tiny Eficiente para multi-busquedas, completez probabilistica \\
-%    \hline
-%    \tiny RRT   & \tiny Si    & \tiny No&   \tiny Si&  \tiny Eficiente para problemas simples, completez probabilistica\\
-%    \hline
-%  \end{tabular}  
-%\end{frame}
-
 
 \begin{frame}{Panorama Planificación de trayectorias}
   %\cite{nphard}[\citenum{nphard}] \cite{5427034}[\citenum{5427034}]
@@ -414,7 +361,6 @@
     \caption[Caption for LOF]{Clasificación del enfoque de planificación de rutas\footnotemark}
   \end{figure}
   \footnotetext{Different Cell Decomposition Path Planning Methods for Unmanned Air Vehicles - A Review \cite{Debnath2020}}
-  
 \end{frame}
 
 \begin{frame}{Representación del ambiente 3D}
@@ -426,11 +372,9 @@
     \caption[Caption for LOF]{Mapa probabilistico 3D\protect\footnotemark}
   \end{figure}
   \footnotetext{Cooperación en robots heterogeneos}
-  
 \end{frame}
 
 \section{Planteamiento del problema}
-
 \begin{frame}
   \frametitle{Planteamiento del problema}
   \begin{columns}
@@ -449,36 +393,9 @@
   \end{columns}
 \end{frame}
 
-%\begin{frame}
-%  El espacio de todas las posibles configuraciones, está compuesto por los espacios libres ($C%_{free}$) y espacios ocupado (con obst\'{a}culos) $C_{obs}$.\\
-%  \bigskip % Vertical whitespace
-%  Sea $\mathcal{W} = \mathbb{R}^{3}$ el mundo, $\mathcal{O} \in \mathcal{W}$ el conjunto de ob%st\'{a}culos,\\
-%$\mathcal{A}(q)$ las configuraciones del robot $q \in \mathcal{C}$\\
-%  \bigskip % Vertical whitespace
-%\begin{itemize}
-%  \item $C_{free} = \{q \in \mathcal{C} | \mathcal{A}(q)\cap\mathcal{O} = \emptyset\}$
-%  \item $C_{obs} = C \setminus C_{free}$
-%\end{itemize}
-%\bigskip % Vertical whitespace
-%donde $\mathcal{W} = \mathbb{R}^{3}$ es el espacio de trabajo del robot, $\mathcal{O} \in \mathcal{W}$ es el conjunto de obst\'{a}culos, y $\mathcal{A}(q)$ son las configuraciones del robot $q \in \mathcal{C}$ .\\
-%\end{frame}
-
-%\begin{frame}
-%  La función objetivo puede cambiar, algunos ejemplos pueden ser:
-%  \bigskip % Vertical whitespace
-%  \begin{itemize}
-%  \item Maximizar la cobertura del área de interés \textbf{A}
-%  \item Minimizar el tiempo total requerido para cubrir el área de interés \textbf{A}
-%  \item Maximizar la cantidad de información recolectada
-%  \end{itemize} 
-%\end{frame}
-
 \section{Objetivos generales y específicos del proyecto}
-
 \begin{frame}
-  
   \frametitle{Objetivos generales y específicos del proyecto}
-
   \begin{enumerate}
   \item<1-> General \\
     Diseñar una arquitectura de software descentralizada para implementar una estrategia multi-VANT capaz de resolver los problemas de localización y coordinación en ambientes desconocidos y dinámicos para tareas de exploración en interiores.
@@ -491,28 +408,19 @@
       \pause
     \item Comparación y análisis (escalabilidad, robustez y recursos computacionales).
     \end{itemize}
-    
   \end{enumerate}
 \end{frame}
 
 %Explicar con el cronograma
 \section{Metodología}
 \begin{frame}{Metodología/Cronograma}
-
   \begin{figure}
     \centering
     \includegraphics[width=11cm, height=8cm]{cronograma}
   \end{figure}
-  
 \end{frame}
 
 \section{Estado del Arte}
-
-%\begin{frame}{Prueba Video}
-%  \centering
-%  \animategraphics[loop, width=10cm]{10}{video-}{0}{46}  
-%\end{frame}
-
 \begin{frame}{Estado del Arte}
   \bigskip % Vertical whitespace
   \centering
@@ -626,11 +534,8 @@
 \end{frame}
 
 \section{Contribuciones o resultados esperados}
-
 \begin{frame}
-
   \frametitle{Contribuciones o resultados esperados}
-
   \begin{enumerate}
   \item<1-> Documentación y códigos liberados
     \begin{itemize}
@@ -641,7 +546,6 @@
   \item<2-> Validación de la solución en un simulador
   \item<3-> Tesis impresa
   \end{enumerate}
-  
 \end{frame}
 
 \begin{frame}[allowframebreaks,noframenumbering]{Bibliografía}
