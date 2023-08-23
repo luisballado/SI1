@@ -265,7 +265,7 @@ Grado acad\'{e}mico: & \hspace{5pt}Doctorado en Inform\'{a}tica
 \newpage
 \section*{Descripci\'{o}n del proyecto}
 
-El proyecto se centra en la problem\'{a}tica de la colaboraci\'{o}n de múltiples veh\'{i}culos a\'{e}reos no tripulados (VANTS) para tareas de exploraci\'{o}n, con el objetivo de desarrollar y evaluar una arquitectura de software descentralizada en la que varios veh\'{i}culos a\'{e}reos no tripulados trabajen de forma independiente y aut\'{o}noma, pero coordinada, para explorar entornos desconocidos de manera eficiente.\\
+El proyecto se centra en la problem\'{a}tica de la colaboraci\'{o}n de múltiples veh\'{i}culos a\'{e}reos no tripulados (VANTS) para tareas de exploraci\'{o}n, con el objetivo de desarrollar y evaluar una arquitectura de software descentralizada en la que varios VANTS trabajen de forma independiente y aut\'{o}noma, pero coordinada, para explorar entornos desconocidos de manera eficiente.\\
 
 %Antes de profundizar en los detalles del proyecto, es fundamental definir qu\'{e} es un VANT.\\
 Un VANT, tambi\'{e}n conocido como dron o recientemente como sistema a\'{e}reo no tripulado (UAS), se refiere a una aeronave que opera sin un piloto humano a bordo. Los VANTS est\'{a}n equipados con sensores, sistemas de comunicaci\'{o}n y computadoras a bordo que les permiten operar de forma aut\'{o}noma o bajo control remoto. Estos veh\'{i}culos pueden ser de diferentes tama\~{n}os, desde peque\~{n}os modelos hasta m\'{a}quinas comerciales o militares m\'{a}s grandes[\citenum{Dalamagkidis2014}].\\
@@ -629,9 +629,9 @@ También se han propuesto diversas t\'{e}cnicas de Inteligencia Computacional par
 \newpage
 \section*{Planteamiento del problema}
 
-Desarrollar una arquitectura descentralizada de control, implementada en cada uno de los miembros de un conjunto de $\mathcal{V}$ veh\'{i}culos a\'{e}reos no tripulados, que refleje una estrategia de exploraci\'{o}n multi-VANT para la exploración de un medio ambiente dado. El propósito de esta arquitectura de control es que cada uno de los VANT participe de manera independiente pero coordinada para reducir el tiempo total de exploración, colaborando y compartiendo información eficazmente con los demás miembros del equipo.
+Desarrollar una arquitectura descentralizada de control, implementada en cada uno de los miembros de un conjunto de $\mathcal{V}$ veh\'{i}culos a\'{e}reos no tripulados, que refleje una estrategia de exploraci\'{o}n multi-VANT de un medio ambiente dado. El propósito de esta arquitectura de control es que cada uno de los VANT participe de manera independiente pero coordinada para reducir el tiempo total de exploración, colaborando y compartiendo información eficazmente con los demás miembros del equipo.\\
 
-La estrategia propuesta debe tomar en cuenta las limitaciones de comunicación, sensores y energía, para distribuir las tareas de exploración entre todos los miembros del equipo de VANTs, así como establecer las trayectorias seguras para cada uno de ellos.
+La estrategia propuesta debe tomar en cuenta las limitaciones de comunicación, sensores y energía, para distribuir las tareas de exploración entre todos los miembros del equipo de VANTS, así como establecer las trayectorias seguras y libres de obstáculos para cada uno de ellos.\\
 
 % que reduzca el tiempo total de exploraci\'{o}n dado un conjunto de . Las capacidades limitadas de energ\'{i}a y sensores abordo de los VANT les permiten navegar de forma aut\'{o}noma. Teniendo en cuenta sus limitaciones de energ\'{i}a y la necesidad de una exploraci\'{o}n eficiente, el objetivo es determinar la trayectoria, las rutas y la asignaci\'{o}n de tareas \'{o}ptimas.\\
 
@@ -651,7 +651,8 @@ La estrategia propuesta debe tomar en cuenta las limitaciones de comunicación, s
 
 %\textquestiondown Qu\'{e} acciones deber\'{a} realizar el VANT para explorar el espacio completo lo m\'{a}s r\'{a}pido posible?.\\
 
-La soluci\'{o}n debe tener en cuenta los obst\'{a}culos, los entornos din\'{a}micos, las limitaciones de comunicaci\'{o}n y la coordinaci\'{o}n entre los VANTS para evitar colisiones. Para lograr una exploraci\'{o}n eficiente y completa con un tiempo y recursos m\'{i}nimos, el problema requiere la creaci\'{o}n de algoritmos y t\'{e}cnicas de optimizaci\'{o}n.\\
+%La soluci\'{o}n debe tener en cuenta los obst\'{a}culos, los entornos din\'{a}micos, las limitaciones de comunicaci\'{o}n y la coordinaci\'{o}n entre los VANTS para evitar colisiones.
+Para lograr una exploraci\'{o}n eficiente y completa con un tiempo y recursos m\'{i}nimos, el problema requiere la creaci\'{o}n de algoritmos y t\'{e}cnicas de optimizaci\'{o}n.\\
 
 %Completar la exploraci\'{o}n significa que el robot pueda crear un mapa $\mathcal{M}$ que cubre el volumen $\mathcal{V}$ y los puntos en el mapa. Por la naturaleza del problema, esto se debe resolver de forma r\'{a}pida sin tiempos de espera.\\
 
@@ -682,7 +683,7 @@ La funci\'{o}n objetivo tomar\'{a} en cuenta distintos objetivos espec\'{i}ficos
 \begin{itemize}
 \item Maximizar la cobertura del \'{a}rea de inter\'{e}s 
 \item Minimizar el tiempo total requerido para cubrir el \'{a}rea de inter\'{e}s
-\item Maximizar la cantidad de informaci\'{o}n recolectada
+%\item Maximizar la cantidad de informaci\'{o}n recolectada
 \item Asegurar la consistencia de la información recolectada y fusionada en un único mapa, compartido entre todos los robots
 \end{itemize}
 
