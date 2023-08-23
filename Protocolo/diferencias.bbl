@@ -1,4 +1,4 @@
-\begin{thebibliography}{53}
+\begin{thebibliography}{50}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -93,24 +93,6 @@ Liang Xu, Xianbin Cao, Wenbo Du, and Yumeng Li.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0950705122012606}.
 
-\bibitem[De~Waen et~al.(2017)De~Waen, Dinh, Cruz~Torres, and Holvoet]{8098706}
-Jorik De~Waen, Hoang~Tung Dinh, Mario~Henrique Cruz~Torres, and Tom Holvoet.
-\newblock Scalable multirotor uav trajectory planning using mixed integer
-  linear programming.
-\newblock In \emph{2017 European Conference on Mobile Robots (ECMR)}, pages
-  1--6, 2017.
-\newblock \doi{10.1109/ECMR.2017.8098706}.
-
-\bibitem[bo~Chen et~al.(2014)bo~Chen, chen Luo, song Mei, qiao Yu, and long
-  Su]{Chen2014AF}
-Yong bo~Chen, Guan chen Luo, Yue song Mei, Jian qiao Yu, and Xiao long Su.
-\newblock {UAV} path planning using artificial potential field method updated
-  by optimal control theory.
-\newblock \emph{International Journal of Systems Science}, 47\penalty0
-  (6):\penalty0 1407--1420, June 2014.
-\newblock \doi{10.1080/00207721.2014.929191}.
-\newblock URL \url{https://doi.org/10.1080/00207721.2014.929191}.
-
 \bibitem[Zhao(2020)]{ZHAO2020}
 Hong Zhao.
 \newblock Optimal path planning for robot based on ant colony algorithm.
@@ -159,14 +141,6 @@ Sertac Karaman and Emilio Frazzoli.
 Fan Yang, Chao Cao, Hongbiao Zhu, Jean Oh, and Ji~Zhang.
 \newblock Far planner: Fast, attemptable route planner using dynamic visibility
   update, 2022.
-
-\bibitem[Chen et~al.(2017)Chen, Li, and Chen]{7978644}
-Xia Chen, Guang-yao Li, and Xiang-min Chen.
-\newblock Path planning and cooperative control for multiple uavs based on
-  consistency theory and voronoi diagram.
-\newblock In \emph{2017 29th Chinese Control And Decision Conference (CCDC)},
-  pages 881--886, 2017.
-\newblock \doi{10.1109/CCDC.2017.7978644}.
 
 \bibitem[Chen and Hung(2023)]{10120943}
 Bor-Sen Chen and Ting-Wei Hung.
