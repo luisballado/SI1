@@ -1,4 +1,4 @@
-\begin{thebibliography}{53}
+\begin{thebibliography}{56}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -39,7 +39,7 @@ Konstantinos Dalamagkidis.
 
 \bibitem[Ed.(2023{\natexlab{a}})]{INTEL2023}
 Intel Ed.
-\newblock Fireworks have a new competitor: Drones, Ago 2023{\natexlab{a}}.
+\newblock What are service robots?, Ago 2023{\natexlab{a}}.
 \newblock URL
   \url{https://www.intel.la/content/www/xl/es/robotics/service-robot.html}.
 
@@ -93,24 +93,6 @@ Liang Xu, Xianbin Cao, Wenbo Du, and Yumeng Li.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0950705122012606}.
 
-\bibitem[De~Waen et~al.(2017)De~Waen, Dinh, Cruz~Torres, and Holvoet]{8098706}
-Jorik De~Waen, Hoang~Tung Dinh, Mario~Henrique Cruz~Torres, and Tom Holvoet.
-\newblock Scalable multirotor uav trajectory planning using mixed integer
-  linear programming.
-\newblock In \emph{2017 European Conference on Mobile Robots (ECMR)}, pages
-  1--6, 2017.
-\newblock \doi{10.1109/ECMR.2017.8098706}.
-
-\bibitem[bo~Chen et~al.(2014)bo~Chen, chen Luo, song Mei, qiao Yu, and long
-  Su]{Chen2014AF}
-Yong bo~Chen, Guan chen Luo, Yue song Mei, Jian qiao Yu, and Xiao long Su.
-\newblock {UAV} path planning using artificial potential field method updated
-  by optimal control theory.
-\newblock \emph{International Journal of Systems Science}, 47\penalty0
-  (6):\penalty0 1407--1420, June 2014.
-\newblock \doi{10.1080/00207721.2014.929191}.
-\newblock URL \url{https://doi.org/10.1080/00207721.2014.929191}.
-
 \bibitem[Zhao(2020)]{ZHAO2020}
 Hong Zhao.
 \newblock Optimal path planning for robot based on ant colony algorithm.
@@ -160,6 +142,15 @@ Fan Yang, Chao Cao, Hongbiao Zhu, Jean Oh, and Ji~Zhang.
 \newblock Far planner: Fast, attemptable route planner using dynamic visibility
   update, 2022.
 
+\bibitem[Huang and Teo(2019)]{8798322}
+Sunan Huang and Rodney Swee~Huat Teo.
+\newblock Computationally efficient visibility graph-based generation of 3d
+  shortest collision-free path among polyhedral obstacles for unmanned aerial
+  vehicles.
+\newblock In \emph{2019 International Conference on Unmanned Aircraft Systems
+  (ICUAS)}, pages 1218--1223, 2019.
+\newblock \doi{10.1109/ICUAS.2019.8798322}.
+
 \bibitem[Chen et~al.(2017)Chen, Li, and Chen]{7978644}
 Xia Chen, Guang-yao Li, and Xiang-min Chen.
 \newblock Path planning and cooperative control for multiple uavs based on
@@ -167,6 +158,38 @@ Xia Chen, Guang-yao Li, and Xiang-min Chen.
 \newblock In \emph{2017 29th Chinese Control And Decision Conference (CCDC)},
   pages 881--886, 2017.
 \newblock \doi{10.1109/CCDC.2017.7978644}.
+
+\bibitem[Batinovic et~al.(2022)Batinovic, Goricanec, Markovic, and
+  Bogdan]{9836159}
+Ana Batinovic, Jurica Goricanec, Lovro Markovic, and Stjepan Bogdan.
+\newblock Path planning with potential field-based obstacle avoidance in a 3d
+  environment by an unmanned aerial vehicle.
+\newblock In \emph{2022 International Conference on Unmanned Aircraft Systems
+  (ICUAS)}, pages 394--401, 2022.
+\newblock \doi{10.1109/ICUAS54217.2022.9836159}.
+
+\bibitem[Wang et~al.(2022)Wang, Li, Li, Chen, and Chu]{Wang2022}
+Jinyang Wang, Yuhua Li, Ruixuan Li, Hao Chen, and Kejing Chu.
+\newblock Trajectory planning for {UAV} navigation in dynamic environments with
+  matrix alignment dijkstra.
+\newblock \emph{Soft Computing}, 26\penalty0 (22):\penalty0 12599--12610, June
+  2022.
+\newblock \doi{10.1007/s00500-022-07224-3}.
+\newblock URL \url{https://doi.org/10.1007/s00500-022-07224-3}.
+
+\bibitem[Yan et~al.(2012)Yan, Zhuang, and Xiao]{6491122}
+Fei Yan, Yan Zhuang, and Jizhong Xiao.
+\newblock 3d prm based real-time path planning for uav in complex environment.
+\newblock In \emph{2012 IEEE International Conference on Robotics and
+  Biomimetics (ROBIO)}, pages 1135--1140, 2012.
+\newblock \doi{10.1109/ROBIO.2012.6491122}.
+
+\bibitem[Li et~al.(2018)Li, Han, Zhang, and Mu]{9018916}
+Yue Li, Wei Han, Yong Zhang, and Wanhui Mu.
+\newblock A method of uav path planning based on an improved rrt algorithm.
+\newblock In \emph{2018 IEEE CSAA Guidance, Navigation and Control Conference
+  (CGNCC)}, pages 1--5, 2018.
+\newblock \doi{10.1109/GNCC42960.2018.9018916}.
 
 \bibitem[Chen and Hung(2023)]{10120943}
 Bor-Sen Chen and Ting-Wei Hung.
