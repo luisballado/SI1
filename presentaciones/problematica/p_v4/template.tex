@@ -290,7 +290,7 @@
   \includegraphics[width=0.45\textwidth,height=0.35\textheight]{DJI_B5}$^\dag$ 
   \hfil
   \includegraphics[width=0.45\textwidth,height=0.35\textheight]{DJI_B4}$^\dag$\\
-  \rule{0in}{1.2em}$^\dag$ \small Drone Inspections Based on Best Use Cases \\
+  \rule{0in}{1.2em}$^\dag$ \small Inspecciones con VANT basadas en los mejores casos de uso\\
   \tiny \url{https://enterprise-insights.dji.com/blog/complete-guide-to-drone-inspections}
 \end{frame}
 
@@ -307,46 +307,63 @@
   \end{minipage}
   \begin{minipage}{0.5\textwidth}
     \only<1>{\includegraphics[width=\textwidth]{multiple-drones}$^\dag$\\
-      \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}
+      \rule{0in}{1.2em}$^\dag$\scriptsize Ilustración Multi-VAN \\
+      \tiny \url{https://dronevideos.com/} 
     }
     \only<2>{\includegraphics[width=\textwidth]{drone_path}$^\dag$\\
-      \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}
+      \rule{0in}{1.2em}$^\dag$\scriptsize Exploración VANT en entorno 3D. \\
+      \url{https://www.theengineer.co.uk/content/news/prometheus-drones-to-explore-subterranean-environments/} 
     }
     \only<3>{\includegraphics[width=\textwidth]{drone_path}$^\dag$\\
-      \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}
+      \rule{0in}{1.2em}$^\dag$\scriptsize Exploración VANT en entorno 3D. \\
+      \url{https://www.theengineer.co.uk/content/news/prometheus-drones-to-explore-subterranean-environments/} 
     }
-    \only<4>{\includegraphics[width=\textwidth]{drone_collision}$^\dag$\\
-      \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}
+    \only<4>{\includegraphics[width=\textwidth]{obstacle_avoidance}$^\dag$\\
+      \rule{0in}{1.2em}$^\dag$\scriptsize \url{https://acl.mit.edu/projects/real-time-planning-obstacle-avoidance-uavs}
     }
     \only<5>{\includegraphics[width=\textwidth]{drone_action}$^\dag$\\
-      \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}
+      \rule{0in}{1.2em}$^\dag$\scriptsize Crazyflie drone \url{https://www.bitcraze.io/}
     }
   \end{minipage}
 \end{frame}
 
 \section{Antecedentes y motivación para el proyecto}
 \begin{frame}{Arquitectura híbrida}
-  \begin{figure}
+  \begin{minipage}{0.5\textwidth}
     \centering
-    \includegraphics[scale=0.50]{sentir_pensar_actuar}$^\dag$\\
-    \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}\\
-  \end{figure}
+    \includegraphics[scale=0.40]{paradigma}$^\dag$\\
+    \rule{0in}{1.2em}$^\dag$\scriptsize Paradigmas de arquitectura \url{https://cs.brown.edu/people/tdean/courses/cs148/02/architectures.html}\\
+  \end{minipage}
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[scale=0.30]{control_autonomo2}$^\ddagger$\\
+    \rule{0in}{1.2em}$^\ddagger$\scriptsize Propuesta de una arquitectura de automóvil autónoma \cite{CurielRamirez2019}\\
+  \end{minipage}
 \end{frame}
 
 \begin{frame}{Multi-robots}
   \begin{columns}
     \column{0.5\textwidth}
-    Beneficios coordinación multi-VANT
+    \scriptsize Conjunto de robots que pueden cooperar y comunicarse entre sí para realizar ciertas tareas.\\
+    \bigskip % Vertical whitespace
+    \scriptsize Ventajas
     \begin{itemize}
-    \item Eficiencia y cobertura
-    \item Redundancia y tolerancia a fallos
-    \item Adaptabilidad a entornos dinámicos
-    \item Distribución de carga de trabajo
-    \item Esfuerzo colaborativo
+      %\item Eficiencia y cobertura
+      \scriptsize \item Redundancia y tolerancia a fallos
+      %\item Adaptabilidad a entornos dinámicos
+      \scriptsize \item Distribución de carga de trabajo
+      \scriptsize \item Esfuerzo colaborativo
+    \end{itemize}
+    \bigskip % Vertical whitespace
+    Desventajas
+    \begin{itemize}
+    \item Complejidad computacional
+    \item Comunicación
+    \item Mantenimiento
     \end{itemize}
     \column{0.5\textwidth}
     \includegraphics[width=\textwidth]{drone_swarm}$^\dag$\\
-    \rule{0in}{1.2em}$^\dag$\scriptsize Hardware in the loop framework proposal for a semi-autonomous car architecture in a closed route environment \cite{CurielRamirez2019}
+    \rule{0in}{1.2em}$^\dag$\scriptsize Enjambre de drones\\ \url{https://www.navalnews.com/naval-news/2022/03/naval-group-teaming-with-french-startup-to-develop-drone-swarm-solutions/}
   \end{columns}
 \end{frame}
 
@@ -368,10 +385,11 @@
   %MOSTRAR MAPA 3D
   \begin{figure}
     \centering
-    \includegraphics[scale=0.15]{drone_mapping}
-    \caption[Caption for LOF]{Mapa probabilistico 3D\protect\footnotemark}
+    \includegraphics[scale=0.45]{octomapas}$^\dag$\\
+    \rule{0in}{1.2em}$^\dag$\scriptsize Mapa probabilistico 3D (Octomap)
+    %\caption[Caption for LOF]{Mapa probabilistico 3D\protect\footnotemark}
   \end{figure}
-  \footnotetext{Cooperación en robots heterogeneos}
+  %\footnotetext{Cooperación en robots heterogeneos}
 \end{frame}
 
 \section{Planteamiento del problema}
@@ -380,7 +398,7 @@
   \begin{columns}
     \column{0.5\textwidth}
     \justifying
-    \small Desarrollar una estrategia de exploración multi-VANT que reduzca el tiempo total de exploración dado un conjunto de $\mathcal{V}$ vehículos aéreos no tripulados. Las capacidades limitadas de energía y sensores abordo de los VANTS les permiten navegar de forma autónoma. Teniendo en cuenta sus limitaciones de energía y la necesidad de una exploración eficiente, el objetivo es determinar la trayectoria, las rutas y la asignación de tareas óptimas ó sub-óptimas.
+    \small Desarrollar una arquitectura de software para la tarea de exploración multi-VANT que reduzca el tiempo total de exploración dado un conjunto $\mathcal{V}$ de vehículos aéreos no tripulados. Las capacidades limitadas de energía y sensores abordo de los VANTS les permiten navegar de forma autónoma. Teniendo en cuenta sus limitaciones de energía y la necesidad de una exploración eficiente, el objetivo es determinar trayectorias buscando que la asignación de tareas sean óptimas ó sub-óptimas.
     \column{0.5\textwidth}\\
     \pause
     \centering
