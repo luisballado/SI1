@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: protocolo8859.aux
 The style file: unsrtnat.bst
 Database file #1: referencias.bib
-You've used 56 entries,
+You've used 63 entries,
             2481 wiz_defined-function locations,
-            975 strings with 20001 characters,
-and the built_in function-call counts, 26358 in all, are:
-= -- 2131
-> -- 1674
-< -- 36
-+ -- 623
-- -- 510
-* -- 2237
-:= -- 4267
-add.period$ -- 237
-call.type$ -- 56
-change.case$ -- 110
-chr.to.int$ -- 55
-cite$ -- 56
-duplicate$ -- 1207
-empty$ -- 2181
-format.name$ -- 582
-if$ -- 5624
+            1024 strings with 21847 characters,
+and the built_in function-call counts, 29632 in all, are:
+= -- 2424
+> -- 1827
+< -- 42
++ -- 681
+- -- 554
+* -- 2479
+:= -- 4757
+add.period$ -- 270
+call.type$ -- 63
+change.case$ -- 124
+chr.to.int$ -- 62
+cite$ -- 63
+duplicate$ -- 1386
+empty$ -- 2482
+format.name$ -- 637
+if$ -- 6368
 int.to.chr$ -- 2
-int.to.str$ -- 57
-missing$ -- 45
-newline$ -- 352
-num.names$ -- 170
-pop$ -- 458
+int.to.str$ -- 64
+missing$ -- 52
+newline$ -- 398
+num.names$ -- 191
+pop$ -- 521
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 63
 quote$ -- 0
-skip$ -- 770
+skip$ -- 889
 stack$ -- 0
-substring$ -- 1127
-swap$ -- 296
-text.length$ -- 15
+substring$ -- 1256
+swap$ -- 348
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 392
+type$ -- 441
 warning$ -- 0
-while$ -- 175
+while$ -- 199
 width$ -- 0
-write$ -- 856
+write$ -- 969

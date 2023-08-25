@@ -463,21 +463,21 @@ Durante la planificación de rutas seguras, se deben tomar en cuenta las restricc
 
 \citeauthor{XU2023110164}[\citenum{XU2023110164}] mencionan que la dificultad en la planificaci\'{o}n de trayectorias para m\'{u}ltiples VANTS es inherente a la complejidad espacial del entorno y las maniobras que pueda realizar el VANT. La minimizaci\'{o}n de la longitud de las rutas y la seguridad del trayecto para todos los robots durante el vuelo son partes clave cuando se crea un planificador de trayectorias multi-VANT.\\
 
-En \'{u}ltimas décadas se han propuesto diversas soluciones globales de planificaci\'{o}n basadas en distintas t\'{e}cnicas de programaci\'{o}n (Mixed Integer Linear Programming (MILP), Nonlinear programming (NP) y Dynamic Programming (DP)), pero su complejidad computacional crece exponencialmente conforme aumenta el espacio de b\'{u}squeda.\\
+En \'{u}ltimas décadas se han propuesto diversas soluciones globales de planificaci\'{o}n basadas en distintas t\'{e}cnicas de programaci\'{o}n (Mixed Integer Linear Programming (MILP) [\citenum{Kamal2005}], Nonlinear programming (NP) [\citenum{Geiger2006}] y Dynamic Programming (DP) [\citenum{9249903}]), pero su complejidad computacional crece exponencialmente conforme aumenta el espacio de b\'{u}squeda.\\
 
 %teniendo estos m\'{e}todos una fuerte base en teor\'{i}a matem\'{a}tica. A pesar de ello estos metodos de programacion matem\'{a}tica 
 %Tomando como ejemplo uno de sus deseables usos aut\'{o}nomos para b\'{u}squeda y rescate, supongamos que un VANT encuentra el objetivo, informa a los dem\'{a}s VANT para que vengan a ayudar lo m\'{a}s r\'{a}pido posible, la comunicaci\'{o}n entre ellos no debe perderse para lograr completar la tarea.\\
 %Es por ello que el conocimiento de algoritmos capaces de planear rutas cooperativas debe ser considerados.\\
 
-Otros m\'{e}todos que han sido ampliamente trabajados son los Campos de Potencial Artificial por sus ventajas de cómputo en tiempo real. Desafortunadamente, este m\'{e}todo cae en m\'{i}nimos locales de la funci\'{o}n potencial, llegando a fallar para encontrar una solución.\\
+Otros m\'{e}todos que han sido ampliamente trabajados son los Campos de Potencial Artificial por sus ventajas de cómputo en tiempo real. Desafortunadamente, este m\'{e}todo cae en m\'{i}nimos locales de la funci\'{o}n potencial, llegando a fallar para encontrar una solución que lo guíe al punto destino.\\
 %cuando existen dos campos de repulsi\'{o}n causados por obst\'{a}culos son iguales, \'{e}ste 
 
 %Tambien se han propuesto los algoritmos basados en grafos para resolver el problema de planificaci\'{o}n de trayectorias.\\
 %Diagramas de Voronoi y el algoritmo A* siguen demostrando en encontrar efectivamente una ruta dependiendo de la division del espacio de busqueda. Estos metodos basados en grafos que funcionan muy bien en ambientes representados en 2D, pero al aplicarse a 3D toman mucho tiempo de ejecucion cuando el espacio de busqueda es complejo \citenum{DENG2023}.\\
 
-También se han propuesto diversas t\'{e}cnicas de Inteligencia Computacional para el problema de planificaci\'{o}n de trayectorias (algoritmos gen\'{e}ticos (GA), algoritmo de optimización por colonia de hormigas (ACO) \citeauthor{ZHAO2020} [\citenum{ZHAO2020}], optimización por enjambre de particulas (PSO) y evolución diferencial (DE)). Estos algoritmos han demostrado crear rutas navegables para los VANT y son ampliamente usados para problemas de planificación de rutas complejos. Desafortunadamente, estas técnicas requieren de amplios recursos computacionales, lo que las hace inadecuadas para implementar en los VANTS actuales.
+De manera similar se han propuesto diversas t\'{e}cnicas de Inteligencia Computacional para el problema de planificaci\'{o}n de trayectorias (algoritmos gen\'{e}ticos (GA) [\citenum{7152274}], algoritmo de optimización por colonia de hormigas (ACO) [\citenum{ZHAO2020}], optimización por enjambre de particulas (PSO) [\citenum{9317271}] y evolución diferencial (DE) [\citenum{1467074}]). Estos algoritmos han demostrado crear rutas navegables para los VANT y son ampliamente usados para problemas de planificación de rutas complejos. Desafortunadamente, estas técnicas requieren de amplios recursos computacionales, lo que las hace inadecuadas para implementar en los VANTS actuales.\\
 
-% Trabajos de \cite{DENG2023} [\citenum{DENG2023}] han realizado adaptaciones al algoritmo PSO mostrado mejores resultados evitando caer en m\'{i}nimos locales con ayuda de Algoritmos Gen\'{e}ticos (GA) considerando par\'{a}metros como inercia, funciones de activaci\'{o}n para la probabilidad de cruza y mutaci\'{o}n, mostrando mejorar a rutas r\'{a}pidas y estables en una ejecuci\'{o}n off-line.\\
+%Trabajos de \cite{DENG2023} [\citenum{DENG2023}] han realizado adaptaciones al algoritmo PSO mostrado mejores resultados, evitando caer en m\'{i}nimos locales con ayuda de algoritmos gen\'{e}ticos (GA), considerando par\'{a}metros como inercia, funciones de activaci\'{o}n para la probabilidad de cruza y mutaci\'{o}n, mostrando mejorar las rutas en una ejecuci\'{o}n off-line.\\
 
 %\begin{itemize}
 %  \item Geom\'{e}tricos
@@ -703,7 +703,7 @@ Con base en lo anterior, surgen las siguientes preguntas de investigaci\'{o}n:
     
     %\item \textquestiondown Qu\'{e} accionesdeber\'{a}n de realizar los VANTS para explorar el espacio completo lo m\'{a}s r\'{a}pido posible?
 %\item \textquestiondown Cuáles son los algoritmos mejor adaptados para ejecutar en equipos computacionalmente limitados?
-\item ¿Cómo asegurar que la información que aporte cada uno de los VANTs se integre correctamente a la información ya conocida para generar mapas precisos y completos del entorno explorado?
+\item ¿Cómo asegurar que la información que aporte cada uno de los VANTS se integre correctamente a la información ya conocida para generar mapas precisos y completos del entorno explorado?
 \end{itemize}
 
 \subsection*{Hip\'{o}tesis}
@@ -1009,17 +1009,17 @@ La exploraci\'{o}n de un ambiente desconocido empleando multi-VANT es un \'{a}re
 
 La direcci\'{o}n en que apunta el estado del arte actualmente se puede atribuir a los avances en tecnolog\'{i}a en la \'{u}ltima d\'{e}cada. Investigadores de diversas \'{a}reas, que incluyen las ciencias computacionales y la ingeniería, han contribuido al crecimiento de este campo.\\
 
-Sin embargo, la necesidad de una arquitectura de software descentralizada que engloble todos estos componentes y que sea capaz de coordinar múltiples VANTS surge como una área de investigación prometedora que garantice el funcionamiento correcto los componentes necesarios para realizar tareas de exploración coordinada multi-VANT.\\
+Sin embargo, la necesidad de una arquitectura de software descentralizada que engloble todos estos componentes y que sea capaz de coordinar múltiples VANTS, surge como una área de investigación prometedora que garantice el funcionamiento correcto los componentes necesarios para realizar tareas de exploración coordinada multi-VANT.\\
 %[\citenum{6320878,Karaman2011,TONG2023,Daponte2015,SurveyCollab2019}]\\%\cite{Karaman2011}, recopila algoritmos para encontrar rutas optimas.\\
 
 %Los avances en hardware con mayores capacidades de procesamiento en un espacio reducido, así como sensores que permiten precibir un entorno en 3D, han dado espacio a desarrollos para crear VANTS con autonomia, desplazamientos rápidos y agresivos. 
 
-En esta revisión del estado del arte se citan trabajos relacionados a la coordinación multi-VANT para tareas de exploración, que sirven de guía para la realización de este trabajo.
+En esta revisión del estado del arte se citan trabajos relacionados en la coordinación multi-VANT para tareas de exploración, que sirven de guía para la realización de este trabajo.
 %Dentro de la rob\'{o}tica m\'{o}vil inteligente se han propuesto estrategias de comportamiento reactivas, algoritmos que imitan el comportamiento de insectos y el c\'{o}mo se desplanzan en un entorno.\\
 
 \subsection*{Planificación de trayectorias}
 
-Uno de los desaf\'{i}os clave en la colaboraci\'{o}n de m\'{u}ltiples VANTS es la planificaci\'{o}n de rutas. Se han desarrollado diversos algoritmos para optimizar la planificaci\'{o}n de rutas dentro de la rob\'{o}tica m\'{o}vil (tabla \ref{pathsummary}), minimizando los riesgos de colisi\'{o}n y mejorando la eficiencia de sus misiones. Estos algoritmos tienen en cuenta varios factores, como las restricciones del robot y las ubicaciones del objetivo, para generar trayectorias seguras y eficientes.\\
+Uno de los desaf\'{i}os clave en la colaboraci\'{o}n de m\'{u}ltiples VANTS es la planificaci\'{o}n de rutas. Se han desarrollado diversos algoritmos para optimizar la planificaci\'{o}n de rutas dentro de la rob\'{o}tica m\'{o}vil (tabla \ref{pathsummary}), minimizando los riesgos de colisi\'{o}n y mejorando la eficiencia en sus misiones. Estos algoritmos tienen en cuenta varios factores como las restricciones del robot y la ubicacion del objetivo, para generar trayectorias seguras.\\
 
 El objetivo principal de los algoritmos de navegaci\'{o}n es el de guiar al robot desde el punto de inicio al punto destino. Los trabajos por \citeauthor{Lumelsky1987}[\citenum{Lumelsky1987}], dieron respuesta a problemáticas de navegaci\'{o}n eficiente, que no requieren de una representación del medio ambiente y emplean, por lo tanto, pocos recursos computacionales y de memoria (algoritmos tipo bug).\\
 
@@ -1076,7 +1076,7 @@ RRT [\citenum{9018916}]& \ding{51} & \ding{55} & \ding{51} & \begin{itemize}[lef
 
 Por otra parte, el algoritmo RRT (Rapidly Exploring Random Trees), propuesto por \citeauthor{LaValle1998RapidlyexploringRT}[\citenum{LaValle1998RapidlyexploringRT}], es ampliamente usado para la planificaci\'{o}n de rutas en robots modernos. El algoritmo construye de forma incremental una estructura de \'{a}rbol mediante un muestreo aleatorio en el espacio de configuraciones, uniendo aleatoriamente nuevas posiciones al \'{a}rbol existente hasta alcanzar la posición final. Las modificaciones realizadas al algoritmo RRT por \citeauthor{Karaman2011}[\citenum{Karaman2011}], incorporando una heur\'{i}stica de costo por recorrer, permite encontrar rutas casi \'{o}ptimas de manera eficiente. Este enfoque es ampliamente usado en problemas de navegaci\'{o}n aut\'{o}noma y planificaci\'{o}n de movimiento.\\
 
-En recientes trabajos de \citeauthor{yang2022far}[\citenum{yang2022far}], muestran la capacidad de implementaci\'{o}n de algoritmos clásicos de planificación de trayectorias, como los grafos de visibilidad, para tareas en entornos conocidos y no conocidos, utilizando una representaci\'{o}n del ambiente a base de polígonos, logrando un r\'{a}pido planificador que tambi\'{e}n resuelve los obst\'{a}culos nuevos en el ambiente, logrando resultados comparables a las estrategias más recientes como D* e inclusive RRT*.\\
+En recientes trabajos de \citeauthor{yang2022far}[\citenum{yang2022far}], muestran la capacidad de implementaci\'{o}n de algoritmos clásicos de planificación de trayectorias, como los grafos de visibilidad, para tareas en entornos conocidos y no conocidos, utilizando una representaci\'{o}n del ambiente a base de polígonos, logrando un r\'{a}pido planificador que tambi\'{e}n resuelve obst\'{a}culos nuevos en el ambiente, logrando resultados comparables a las estrategias más recientes como D* e inclusive RRT*.\\
 
 Trabajos como el de \citeauthor{CERBERUS2022}[\citenum{CERBERUS2022}] han logrado optimizar problemas de alta dimensionalidad como el control de navegaci\'{o}n para un robot con cuatro patas, haciendo uso de aprendizaje por refuerzo y con ayuda de simulaciones, logrando obtener un esquema de control que le permiten al robot resolver el problema de navegaci\'{o}n. Sin embargo, al momento de probar el esquema en un robot real, el robot no pudo efectuar un paso correcto. Este problema se debe a la distancia que existe entre la simulaci\'{o}n y la realidad, en particular al no considerar las incertidumbres en las lecturas de los sensores. \\
 
@@ -1114,7 +1114,7 @@ Sin embargo, es importante tener en cuenta que ciertamente hay \'{a}reas dentro 
 
 \subsection*{Coordinación multi-robot}
 
-Adem\'{a}s de la planificaci\'{o}n de rutas, la coordinaci\'{o}n de m\'{u}ltiples robots para la exploración requiere de una estrategia de comunicaci\'{o}n efectiva, que garantice la coherencia del mapa que se va generando. Se han investigado diferentes protocolos de comunicaci\'{o}n y estrategias de intercambio de informaci\'{o}n para permitir la colaboraci\'{o}n. Algunos enfoques utilizan comunicaci\'{o}n directa entre los robots, mientras que otros emplean una arquitectura de red donde los m\'{u}ltiples robots se comunican a trav\'{e}s de una infraestructura descentralizada \citeauthor{10120943}[\citenum{10120943}] mostrando la tolerancia a fallas en equipos para tareas de b\'{u}squeda y rescate.\\ %La elecci\'{o}n del enfoque depende de las caracter\'{i}sticas de la aplicaci\'{o}n y las restricciones del sistema.\\
+Adem\'{a}s de la planificaci\'{o}n de rutas, la coordinaci\'{o}n de m\'{u}ltiples robots para la exploración requiere de una estrategia de comunicaci\'{o}n efectiva, que garantice la coherencia del mapa que se va generando. Se han investigado diferentes protocolos de comunicaci\'{o}n y estrategias de intercambio de informaci\'{o}n para permitir la colaboraci\'{o}n. Algunos enfoques utilizan comunicaci\'{o}n directa entre los robots, mientras que otros emplean una arquitectura de red donde los m\'{u}ltiples robots se comunican a trav\'{e}s de una infraestructura descentralizada \citeauthor{10120943}[\citenum{10120943}], mostrando la tolerancia a fallas en equipos para tareas de b\'{u}squeda y rescate.\\ %La elecci\'{o}n del enfoque depende de las caracter\'{i}sticas de la aplicaci\'{o}n y las restricciones del sistema.\\
 
 %La asignaciÃƒÂƒÃ‚ÂƒÃƒÂ‚Ã‚Â³n de tareas es otro aspecto crucial en la colaboraciÃƒÂƒÃ‚ÂƒÃƒÂ‚Ã‚Â³n de mÃƒÂƒÃ‚ÂƒÃƒÂ‚Ã‚Âºltiples VANTs. Los VANTs deben ser capaces de dividir y asignar las tareas de manera ÃƒÂƒÃ‚ÂƒÃƒÂ‚Ã‚Â³ptima, considerando factores como la capacidad de carga, la distancia a las ubicaciones objetivo y los recursos disponibles. Se han propuesto diferentes estrategias de asignaciÃƒÂƒÃ‚ÂƒÃƒÂ‚Ã‚Â³n de tareas, como algoritmos basados en la teorÃƒÂƒÃ‚ÂƒÃƒÂ‚Ã‚Â­a de grafos y enfoques basados en tÃƒÂƒÃ‚ÂƒÃƒÂ‚Ã‚Â©cnicas de optimizaciÃƒÂƒÃ‚ÂƒÃƒÂ‚Ã‚Â³n.\\
 

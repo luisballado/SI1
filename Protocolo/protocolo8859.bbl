@@ -1,4 +1,4 @@
-\begin{thebibliography}{56}
+\begin{thebibliography}{63}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -93,12 +93,107 @@ Liang Xu, Xianbin Cao, Wenbo Du, and Yumeng Li.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0950705122012606}.
 
+\bibitem[Kamal et~al.(2005)Kamal, Gu, and Postlethwaite]{Kamal2005}
+W.A. Kamal, D.-W. Gu, and I.~Postlethwaite.
+\newblock {MILP} {AND} {ITS} {APPLICATION} {IN} {FLIGHT} {PATH} {PLANNING}.
+\newblock \emph{{IFAC} Proceedings Volumes}, 38\penalty0 (1):\penalty0 55--60,
+  2005.
+\newblock \doi{10.3182/20050703-6-cz-1902.02061}.
+\newblock URL \url{https://doi.org/10.3182/20050703-6-cz-1902.02061}.
+
+\bibitem[Geiger et~al.(2006)Geiger, Horn, DeLullo, Niessner, and
+  Long]{Geiger2006}
+Brian Geiger, Joseph Horn, Anthony DeLullo, Albert Niessner, and Lyle Long.
+\newblock Optimal path planning of {UAVs} using direct collocation with
+  nonlinear programming.
+\newblock In \emph{{AIAA} Guidance, Navigation, and Control Conference and
+  Exhibit}. American Institute of Aeronautics and Astronautics, June 2006.
+\newblock \doi{10.2514/6.2006-6199}.
+\newblock URL \url{https://doi.org/10.2514/6.2006-6199}.
+
+\bibitem[MOKRANE et~al.(2020)MOKRANE, BRAHAM, and CHERKI]{9249903}
+Adel MOKRANE, Amal~CHOUKCHOU BRAHAM, and Brahim CHERKI.
+\newblock Uav path planning based on dynamic programming algorithm on
+  photogrammetric dems.
+\newblock In \emph{2020 International Conference on Electrical Engineering
+  (ICEE)}, pages 1--5, 2020.
+\newblock \doi{10.1109/ICEE49691.2020.9249903}.
+
+\bibitem[Sonmez et~al.(2015)Sonmez, Kocyigit, and Kugu]{7152274}
+Abdurrahim Sonmez, Emre Kocyigit, and Emin Kugu.
+\newblock Optimal path planning for uavs using genetic algorithm.
+\newblock In \emph{2015 International Conference on Unmanned Aircraft Systems
+  (ICUAS)}, pages 50--55, 2015.
+\newblock \doi{10.1109/ICUAS.2015.7152274}.
+
 \bibitem[Zhao(2020)]{ZHAO2020}
 Hong Zhao.
 \newblock Optimal path planning for robot based on ant colony algorithm.
 \newblock In \emph{2020 International Wireless Communications and Mobile
   Computing (IWCMC)}, pages 671--675, 2020.
 \newblock \doi{10.1109/IWCMC48107.2020.9148277}.
+
+\bibitem[Mesquita and Gaspar(2020)]{9317271}
+Ricardo Mesquita and Pedro~D. Gaspar.
+\newblock A path planning optimization algorithm based on particle swarm
+  optimization for uavs for bird monitoring and repelling - simulation results.
+\newblock In \emph{2020 International Conference on Decision Aid Sciences and
+  Application (DASA)}, pages 1144--1148, 2020.
+\newblock \doi{10.1109/DASA51403.2020.9317271}.
+
+\bibitem[Nikolos and Brintaki(2005)]{1467074}
+I.K. Nikolos and A.N. Brintaki.
+\newblock Coordinated uav path planning using differential evolution.
+\newblock In \emph{Proceedings of the 2005 IEEE International Symposium on,
+  Mediterrean Conference on Control and Automation Intelligent Control, 2005.},
+  pages 549--556, 2005.
+\newblock \doi{10.1109/.2005.1467074}.
+
+\bibitem[Deng et~al.(2023)Deng, Chen, Zhang, and Liu]{DENG2023}
+Lixia Deng, Huanyu Chen, Xiaoyiqun Zhang, and Haiying Liu.
+\newblock Three-dimensional path planning of uav based on improved particle
+  swarm optimization.
+\newblock \emph{Mathematics}, 11\penalty0 (9), 2023.
+\newblock ISSN 2227-7390.
+\newblock \doi{10.3390/math11091987}.
+\newblock URL \url{https://www.mdpi.com/2227-7390/11/9/1987}.
+
+\bibitem[Rou\v{c}ek et~al.(2022)Rou\v{c}ek, Pecka, \v{C}\'{\i}\v{z}ek,
+  Pet\v{r}\'\i\v{c}ek, Bayer, \v{S}alansk\'{y}, Azayev, He\v{r}t, Petrl\'{i}k,
+  B\'{a}\v{c}a, Spurn\'y, Kr\'{a}tky\'{y}, Petr\'{a}\v{c}ek, Baril, Vaidis,
+  Kubelka, Pomerleau, Faigl, Zimmermann, Saska, Svoboda, and
+  Krajn\'{i}k]{DARPA2022}
+Tom\'{a}\v{s} Rou\v{c}ek, Martin Pecka, Petr \v{C}\'{\i}\v{z}ek, Tom\'{a}\v{s}
+  Pet\v{r}\'\i\v{c}ek, Jan Bayer, Vojt\v{e}ch \v{S}alansk\'{y}, Teymur Azayev,
+  Daniel He\v{r}t, Mat\v{e}j Petrl\'{i}k, Tom\'{a}\v{s} B\'{a}\v{c}a, Vojtech
+  Spurn\'y, V\'{i}t Kr\'{a}tky\'{y}, Pavel Petr\'{a}\v{c}ek, Dominic Baril,
+  Maxime Vaidis, Vladim\'{i}r Kubelka, Fran\c{c}ois Pomerleau, Jan Faigl, Karel
+  Zimmermann, Martin Saska, Tom\'{a}\v{s} Svoboda, and Tom\'{a}\v{s}
+  Krajn\'{i}k.
+\newblock System for multi-robotic exploration of underground environments
+  {CTU}-{CRAS}-{NORLAB} in the {DARPA} subterranean challenge.
+\newblock \emph{Field Robotics}, 2\penalty0 (1):\penalty0 1779--1818, March
+  2022.
+\newblock \doi{10.55417/fr.2022055}.
+\newblock URL \url{https://doi.org/10.55417/fr.2022055}.
+
+\bibitem[Alsamhi et~al.(2019)Alsamhi, Ma, Ansari, and
+  Almalki]{SurveyCollab2019}
+Saeed~H. Alsamhi, Ou~Ma, Mohammad~Samar Ansari, and Faris~A. Almalki.
+\newblock Survey on collaborative smart drones and internet of things for
+  improving smartness of smart cities.
+\newblock \emph{IEEE Access}, 7:\penalty0 128125--128152, 2019.
+\newblock \doi{10.1109/ACCESS.2019.2934998}.
+
+\bibitem[Mukhamediev et~al.(2023)Mukhamediev, Yakunin, Aubakirov, Assanov,
+  Kuchin, Symagulov, Levashenko, Zaitseva, Sokolov, and Amirgaliyev]{10011226}
+Ravil~I. Mukhamediev, Kirill Yakunin, Margulan Aubakirov, Ilyas Assanov, Yan
+  Kuchin, Adilkhan Symagulov, Vitaly Levashenko, Elena Zaitseva, Dmitry
+  Sokolov, and Yedilkhan Amirgaliyev.
+\newblock Coverage path planning optimization of heterogeneous uavs group for
+  precision agriculture.
+\newblock \emph{IEEE Access}, 11:\penalty0 5789--5803, 2023.
+\newblock \doi{10.1109/ACCESS.2023.3235207}.
 
 \bibitem[Lumelsky and Stepanov(1987)]{Lumelsky1987}
 Vladimir~J. Lumelsky and Alexander~A. Stepanov.
@@ -122,25 +217,6 @@ A.~Stentz.
 \newblock In \emph{Proceedings of the 1994 IEEE International Conference on
   Robotics and Automation}, pages 3310--3317 vol.4, 1994.
 \newblock \doi{10.1109/ROBOT.1994.351061}.
-
-\bibitem[LaValle(1998)]{LaValle1998RapidlyexploringRT}
-Steven~M. LaValle.
-\newblock Rapidly-exploring random trees : a new tool for path planning.
-\newblock \emph{The annual research report}, 1998.
-\newblock URL \url{https://api.semanticscholar.org/CorpusID:14744621}.
-
-\bibitem[Karaman and Frazzoli(2011)]{Karaman2011}
-Sertac Karaman and Emilio Frazzoli.
-\newblock Sampling-based algorithms for optimal motion planning.
-\newblock \emph{The International Journal of Robotics Research}, 30\penalty0
-  (7):\penalty0 846--894, June 2011.
-\newblock \doi{10.1177/0278364911406761}.
-\newblock URL \url{https://doi.org/10.1177/0278364911406761}.
-
-\bibitem[Yang et~al.(2022)Yang, Cao, Zhu, Oh, and Zhang]{yang2022far}
-Fan Yang, Chao Cao, Hongbiao Zhu, Jean Oh, and Ji~Zhang.
-\newblock Far planner: Fast, attemptable route planner using dynamic visibility
-  update, 2022.
 
 \bibitem[Huang and Teo(2019)]{8798322}
 Sunan Huang and Rodney Swee~Huat Teo.
@@ -191,6 +267,43 @@ Yue Li, Wei Han, Yong Zhang, and Wanhui Mu.
   (CGNCC)}, pages 1--5, 2018.
 \newblock \doi{10.1109/GNCC42960.2018.9018916}.
 
+\bibitem[LaValle(1998)]{LaValle1998RapidlyexploringRT}
+Steven~M. LaValle.
+\newblock Rapidly-exploring random trees : a new tool for path planning.
+\newblock \emph{The annual research report}, 1998.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:14744621}.
+
+\bibitem[Karaman and Frazzoli(2011)]{Karaman2011}
+Sertac Karaman and Emilio Frazzoli.
+\newblock Sampling-based algorithms for optimal motion planning.
+\newblock \emph{The International Journal of Robotics Research}, 30\penalty0
+  (7):\penalty0 846--894, June 2011.
+\newblock \doi{10.1177/0278364911406761}.
+\newblock URL \url{https://doi.org/10.1177/0278364911406761}.
+
+\bibitem[Yang et~al.(2022)Yang, Cao, Zhu, Oh, and Zhang]{yang2022far}
+Fan Yang, Chao Cao, Hongbiao Zhu, Jean Oh, and Ji~Zhang.
+\newblock Far planner: Fast, attemptable route planner using dynamic visibility
+  update, 2022.
+
+\bibitem[Tranzatto et~al.(2022)Tranzatto, Mascarich, Bernreiter, Godinho,
+  Camurri, Khattak, Dang, Reijgwart, Loeje, Wisth, Zimmermann, Nguyen, Fehr,
+  Solanka, Buchanan, Bjelonic, Khedekar, Valceschini, Jenelten, Dharmadhikari,
+  Homberger, Petris, Wellhausen, Kulkarni, Miki, Hirsch, Montenegro,
+  Papachristos, Tresoldi, Carius, Valsecchi, Lee, Meyer, Wu, Nieto, Smith,
+  Hutter, Siegwart, Mueller, Fallon, and Alexis]{CERBERUS2022}
+Marco Tranzatto, Frank Mascarich, Lukas Bernreiter, Carolina Godinho, Marco
+  Camurri, Shehryar Khattak, Tung Dang, Victor Reijgwart, Johannes Loeje, David
+  Wisth, Samuel Zimmermann, Huan Nguyen, Marius Fehr, Lukas Solanka, Russell
+  Buchanan, Marko Bjelonic, Nikhil Khedekar, Mathieu Valceschini, Fabian
+  Jenelten, Mihir Dharmadhikari, Timon Homberger, Paolo~De Petris, Lorenz
+  Wellhausen, Mihir Kulkarni, Takahiro Miki, Satchel Hirsch, Markus Montenegro,
+  Christos Papachristos, Fabian Tresoldi, Jan Carius, Giorgio Valsecchi, Joonho
+  Lee, Konrad Meyer, Xiangyu Wu, Juan Nieto, Andy Smith, Marco Hutter, Roland
+  Siegwart, Mark Mueller, Maurice Fallon, and Kostas Alexis.
+\newblock Cerberus: Autonomous legged and aerial robotic exploration in the
+  tunnel and urban circuits of the darpa subterranean challenge, 2022.
+
 \bibitem[Chen and Hung(2023)]{10120943}
 Bor-Sen Chen and Ting-Wei Hung.
 \newblock Integrating local motion planning and robust decentralized
@@ -227,24 +340,6 @@ Leobardo Campos-Mac\'{i}as, Rodrigo Aldana-L\'{o}pez, Rafael Guardia,
 \newblock \doi{10.1002/rob.21959}.
 \newblock URL \url{https://doi.org/10.1002/rob.21959}.
 
-\bibitem[Alsamhi et~al.(2019)Alsamhi, Ma, Ansari, and
-  Almalki]{SurveyCollab2019}
-Saeed~H. Alsamhi, Ou~Ma, Mohammad~Samar Ansari, and Faris~A. Almalki.
-\newblock Survey on collaborative smart drones and internet of things for
-  improving smartness of smart cities.
-\newblock \emph{IEEE Access}, 7:\penalty0 128125--128152, 2019.
-\newblock \doi{10.1109/ACCESS.2019.2934998}.
-
-\bibitem[Mukhamediev et~al.(2023)Mukhamediev, Yakunin, Aubakirov, Assanov,
-  Kuchin, Symagulov, Levashenko, Zaitseva, Sokolov, and Amirgaliyev]{10011226}
-Ravil~I. Mukhamediev, Kirill Yakunin, Margulan Aubakirov, Ilyas Assanov, Yan
-  Kuchin, Adilkhan Symagulov, Vitaly Levashenko, Elena Zaitseva, Dmitry
-  Sokolov, and Yedilkhan Amirgaliyev.
-\newblock Coverage path planning optimization of heterogeneous uavs group for
-  precision agriculture.
-\newblock \emph{IEEE Access}, 11:\penalty0 5789--5803, 2023.
-\newblock \doi{10.1109/ACCESS.2023.3235207}.
-
 \bibitem[Yamauchi(1997)]{YAMAUCHI1997}
 B.~Yamauchi.
 \newblock A frontier-based approach for autonomous exploration.
@@ -262,43 +357,6 @@ Margarida Faria, Ant{\'{o}}nio~S{\'{e}}rgio Ferreira, H{\'{e}}ctor
 \newblock \emph{Sensors}, 19\penalty0 (22):\penalty0 4849, November 2019.
 \newblock \doi{10.3390/s19224849}.
 \newblock URL \url{https://doi.org/10.3390/s19224849}.
-
-\bibitem[Tranzatto et~al.(2022)Tranzatto, Mascarich, Bernreiter, Godinho,
-  Camurri, Khattak, Dang, Reijgwart, Loeje, Wisth, Zimmermann, Nguyen, Fehr,
-  Solanka, Buchanan, Bjelonic, Khedekar, Valceschini, Jenelten, Dharmadhikari,
-  Homberger, Petris, Wellhausen, Kulkarni, Miki, Hirsch, Montenegro,
-  Papachristos, Tresoldi, Carius, Valsecchi, Lee, Meyer, Wu, Nieto, Smith,
-  Hutter, Siegwart, Mueller, Fallon, and Alexis]{CERBERUS2022}
-Marco Tranzatto, Frank Mascarich, Lukas Bernreiter, Carolina Godinho, Marco
-  Camurri, Shehryar Khattak, Tung Dang, Victor Reijgwart, Johannes Loeje, David
-  Wisth, Samuel Zimmermann, Huan Nguyen, Marius Fehr, Lukas Solanka, Russell
-  Buchanan, Marko Bjelonic, Nikhil Khedekar, Mathieu Valceschini, Fabian
-  Jenelten, Mihir Dharmadhikari, Timon Homberger, Paolo~De Petris, Lorenz
-  Wellhausen, Mihir Kulkarni, Takahiro Miki, Satchel Hirsch, Markus Montenegro,
-  Christos Papachristos, Fabian Tresoldi, Jan Carius, Giorgio Valsecchi, Joonho
-  Lee, Konrad Meyer, Xiangyu Wu, Juan Nieto, Andy Smith, Marco Hutter, Roland
-  Siegwart, Mark Mueller, Maurice Fallon, and Kostas Alexis.
-\newblock Cerberus: Autonomous legged and aerial robotic exploration in the
-  tunnel and urban circuits of the darpa subterranean challenge, 2022.
-
-\bibitem[Rou\v{c}ek et~al.(2022)Rou\v{c}ek, Pecka, \v{C}\'{\i}\v{z}ek,
-  Pet\v{r}\'\i\v{c}ek, Bayer, \v{S}alansk\'{y}, Azayev, He\v{r}t, Petrl\'{i}k,
-  B\'{a}\v{c}a, Spurn\'y, Kr\'{a}tky\'{y}, Petr\'{a}\v{c}ek, Baril, Vaidis,
-  Kubelka, Pomerleau, Faigl, Zimmermann, Saska, Svoboda, and
-  Krajn\'{i}k]{DARPA2022}
-Tom\'{a}\v{s} Rou\v{c}ek, Martin Pecka, Petr \v{C}\'{\i}\v{z}ek, Tom\'{a}\v{s}
-  Pet\v{r}\'\i\v{c}ek, Jan Bayer, Vojt\v{e}ch \v{S}alansk\'{y}, Teymur Azayev,
-  Daniel He\v{r}t, Mat\v{e}j Petrl\'{i}k, Tom\'{a}\v{s} B\'{a}\v{c}a, Vojtech
-  Spurn\'y, V\'{i}t Kr\'{a}tky\'{y}, Pavel Petr\'{a}\v{c}ek, Dominic Baril,
-  Maxime Vaidis, Vladim\'{i}r Kubelka, Fran\c{c}ois Pomerleau, Jan Faigl, Karel
-  Zimmermann, Martin Saska, Tom\'{a}\v{s} Svoboda, and Tom\'{a}\v{s}
-  Krajn\'{i}k.
-\newblock System for multi-robotic exploration of underground environments
-  {CTU}-{CRAS}-{NORLAB} in the {DARPA} subterranean challenge.
-\newblock \emph{Field Robotics}, 2\penalty0 (1):\penalty0 1779--1818, March
-  2022.
-\newblock \doi{10.55417/fr.2022055}.
-\newblock URL \url{https://doi.org/10.55417/fr.2022055}.
 
 \bibitem[Loquercio et~al.(2021)Loquercio, Kaufmann, Ranftl, Müller, Koltun,
   and Scaramuzza]{Loquercio_2021}
