@@ -629,17 +629,17 @@ De manera similar se han propuesto diversas t\'{e}cnicas de Inteligencia Computa
 \newpage
 \section*{Planteamiento del problema}
 
-Dada un área de interés desconocida que se desea explorar denotada como $\mathcal{A} \subset \mathbb{R}^{3}$, que puede tomar valores libres o ocupados de notados como $\mathcal{A}_{libre}$, $\mathcal{A}_{obs}$.\\
+Dada un área de interés desconocida en un espacio cerrado que se desea explorar denotada como $\mathcal{A}$, tal que $\mathcal{A} \subset \mathbb{R}^{3}$.\\
 
-Un voxel $v$ que representa el espacio contenido en $\mathcal{A}$ que es obtenido dividiendo recursivamente el área de interés $\mathcal{A}$ en ocho partes de igual tamaño. La región ocupada son obtenidas mediante un sensor basado en un modelo de ocupación probabilístico.\\
+Un voxel $v$ que representa el espacio contenido en $\mathcal{A}$ que es obtenido dividiendo recursivamente el área de interés $\mathcal{A}$ en ocho partes de igual tamaño, el voxel puede tomar los valores de libre o ocupado de notados como $v_{libre}$, $v_{occ}$. La región ocupada son obtenidas mediante un sensor basado en un modelo de ocupación probabilístico.\\
 
-Un conjunto de VANTS autónomos denotado como $\mathcal{V} = \{\mathcal{V}_{1},\mathcal{V}_{2},\mathcal{V}_{3},...,\mathcal{V}_{n}\}$ siendo $n$ el número total de VANTS disponibles y una configuración inicial $q$ cuya cardinalidad es el número de VANTS disponibles denotado como $q = \{q_{1},q_{2},q_{3},...,q_{n}\}$ \\
+Un conjunto de VANTS autónomos denotado como $\mathcal{V} = \{\mathcal{V}_{1},\mathcal{V}_{2},\mathcal{V}_{3},...,\mathcal{V}_{n}\}$ siendo $n$ el número total de VANTS disponibles y una configuración inicial $q$ cuya cardinalidad es el número de VANTS disponibles denotado como $q = \{q_{1},q_{2},q_{3},...,q_{n}\}$.\\
 
-Determinar el conjunto de tareas para cada VANT, así como el conjunto de rutas que maximize la cobertura minimizando el tiempo de exploración y la energía consumida.\\
+Determinar el conjunto de tareas para cada VANT, así como el conjunto de rutas que maximize el área explorada minimizando el tiempo y la energía consumida.\\
 
 %Desarrollar una arquitectura descentralizada de control, implementada en cada uno de los miembros de un conjunto de $\mathcal{V}$ veh\'{i}culos a\'{e}reos no tripulados, que refleje una estrategia de exploraci\'{o}n multi-VANT de un medio ambiente dado. El propósito de esta arquitectura de control es que cada uno de los VANT participe de manera independiente pero coordinada para reducir el tiempo total de exploración, colaborando y compartiendo información eficazmente con los demás miembros del equipo.\\
 
-La estrategia propuesta debe tomar en cuenta las limitaciones de comunicación, sensores y energía, para distribuir las tareas de exploración entre todos los miembros del equipo de VANTS, así como establecer las trayectorias seguras y libres de obstáculos para cada uno de ellos.\\
+La estrategia propuesta debe tomar en cuenta las limitaciones de comunicación, sensores y energía, para distribuir las tareas de exploración entre todos los miembros del equipo de VANTS, así como establecer trayectorias seguras y libres de obstáculos para cada uno de los VANTS.\\
 
 % que reduzca el tiempo total de exploraci\'{o}n dado un conjunto de . Las capacidades limitadas de energ\'{i}a y sensores abordo de los VANT les permiten navegar de forma aut\'{o}noma. Teniendo en cuenta sus limitaciones de energ\'{i}a y la necesidad de una exploraci\'{o}n eficiente, el objetivo es determinar la trayectoria, las rutas y la asignaci\'{o}n de tareas \'{o}ptimas.\\
 
@@ -689,15 +689,15 @@ Para lograr una exploraci\'{o}n eficiente y completa con un tiempo y recursos m\
 
 La funci\'{o}n objetivo tomar\'{a} en cuenta distintos objetivos espec\'{i}ficos del problema:
 \begin{itemize}
-\item Maximizar la cobertura del \'{a}rea de inter\'{e}s 
+\item Maximizar la cobertura del \'{a}rea explorada 
 \item Minimizar el tiempo total requerido para cubrir el \'{a}rea de inter\'{e}s
 %\item Maximizar la cantidad de informaci\'{o}n recolectada
-\item Asegurar la consistencia de la información recolectada y fusionada en un único mapa, compartido entre todos los robots
+\item Asegurar la consistencia de la información recolectada y fusionada en un único mapa, compartido entre todos los VANTS
 \end{itemize}
 
 Con base en lo anterior, surgen las siguientes preguntas de investigaci\'{o}n:
 \begin{itemize}
-  \item ¿Qué estrategias pueden emplearse para optimizar la asignación de tareas y coordinación entre múltiples VANTS para el problema de exploración de un ambiente desconocido?
+  \item ¿Qué estrategias pueden emplearse para optimizar la asignación de tareas y coordinación entre múltiples VANTS para el problema de exploración de un ambiente desconocido en interiores sin señal GPS?
   \item ¿Cómo se pueden diseñar algoritmos rápidos para la planificación de rutas que guie de forma efectiva los múltiples VANTS considerando la evasión de obstáculos, optimizando la cobertura del área a explorar?
   \item ¿Qué mecanismos de coordinación y comunicación pueden facilitar la colaboración y el intercambio rápido de información entre múltiples VANTS durante las misiones de exploración?
     
@@ -706,15 +706,15 @@ Con base en lo anterior, surgen las siguientes preguntas de investigaci\'{o}n:
 \item ¿Cómo asegurar que la información que aporte cada uno de los VANTS se integre correctamente a la información ya conocida para generar mapas precisos y completos del entorno explorado?
 \end{itemize}
 
+\newpage
 \subsection*{Hip\'{o}tesis}
 
 %Es posible crear una arquitectura de software para coordinar m\'{u}ltiples-VANTS para tareas de exploraci\'{o}n capaz de contar con una representacion del ambiente en voxels.
 
 %La eficiencia de exploraci\'{o}n y la cobertura de un \'{a}rea objetivo llevada a cabo por un grupo de VANTS se pueden mejorar empleando un enfoque coordinado, colaborativo y descentralizado. El sistema multi-VANT puede lograr una exploraci\'{o}n m\'{a}s completa a trav\'{e}s de la asignaci\'{o}n efectiva de tareas, la planificaci\'{o}n de la trayectoria y la coordinaci\'{o}n. La hip\'{o}tesis asume que la integraci\'{o}n de m\'{u}ltiples VANTS con diversas capacidades conducir\'{a} a mejores resultados de exploraci\'{o}n, incluida una mayor cobertura de \'{a}rea, una mejor recopilaci\'{o}n de datos y un rendimiento general mejorado en comparaci\'{o}n con un enfoque de un solo VANT.
 
-La implementación de una arquitectura descentralizada integrada de algoritmos para la detección y evasión de obstáculos, toma de decisiones, navegación e inteligencia colectiva para los múltiples VANTS. Así como un enfoque de fusión de datos que integre la información de los sensores de los múltiples VANTS, mejorará la efectividad y conducirá a mejores resultados de exploración en entornos dinámicos e inciertos, incluida una mayor cobertura de \'{a}rea, una mejor recopilaci\'{o}n de datos en comparaci\'{o}n con un enfoque de un solo VANT.
+La implementación de una arquitectura descentralizada integrada de algoritmos para la detección y evasión de obstáculos, toma de decisiones, navegación e inteligencia colectiva para los múltiples VANTS. Así como un enfoque de fusión de datos que integre la información de los sensores de los múltiples VANTS, mejorará la efectividad y conducirá a mejores resultados de exploración en entornos dinámicos e inciertos, incluida una mayor cobertura de \'{a}rea explorada, una mejor recopilaci\'{o}n de datos en comparaci\'{o}n con un enfoque de un solo VANT.
 
-\newpage
 \section*{Objetivos generales y espec\'{\i}ficos del proyecto}
 
 \textbf{General} \\
