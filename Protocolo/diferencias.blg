@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: diferencias.aux
 The style file: unsrtnat.bst
 Database file #1: referencias.bib
-You've used 50 entries,
+You've used 63 entries,
             2481 wiz_defined-function locations,
-            935 strings with 18419 characters,
-and the built_in function-call counts, 23136 in all, are:
-= -- 1844
-> -- 1530
-< -- 30
-+ -- 569
-- -- 468
-* -- 2000
-:= -- 3809
-add.period$ -- 212
-call.type$ -- 50
-change.case$ -- 98
-chr.to.int$ -- 49
-cite$ -- 50
-duplicate$ -- 1033
-empty$ -- 1884
-format.name$ -- 532
-if$ -- 4880
+            1023 strings with 21824 characters,
+and the built_in function-call counts, 29679 in all, are:
+= -- 2432
+> -- 1821
+< -- 42
++ -- 679
+- -- 552
+* -- 2486
+:= -- 4757
+add.period$ -- 269
+call.type$ -- 63
+change.case$ -- 124
+chr.to.int$ -- 62
+cite$ -- 63
+duplicate$ -- 1387
+empty$ -- 2491
+format.name$ -- 635
+if$ -- 6379
 int.to.chr$ -- 2
-int.to.str$ -- 51
-missing$ -- 39
-newline$ -- 315
-num.names$ -- 152
-pop$ -- 398
+int.to.str$ -- 64
+missing$ -- 52
+newline$ -- 397
+num.names$ -- 191
+pop$ -- 522
 preamble$ -- 1
-purify$ -- 50
+purify$ -- 63
 quote$ -- 0
-skip$ -- 644
+skip$ -- 887
 stack$ -- 0
-substring$ -- 938
-swap$ -- 233
-text.length$ -- 10
+substring$ -- 1281
+swap$ -- 349
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 350
+type$ -- 441
 warning$ -- 0
-while$ -- 151
+while$ -- 201
 width$ -- 0
-write$ -- 764
+write$ -- 967

@@ -1,4 +1,4 @@
-\begin{thebibliography}{63}
+\begin{thebibliography}{62}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -149,15 +149,6 @@ I.K. Nikolos and A.N. Brintaki.
   pages 549--556, 2005.
 \newblock \doi{10.1109/.2005.1467074}.
 
-\bibitem[Deng et~al.(2023)Deng, Chen, Zhang, and Liu]{DENG2023}
-Lixia Deng, Huanyu Chen, Xiaoyiqun Zhang, and Haiying Liu.
-\newblock Three-dimensional path planning of uav based on improved particle
-  swarm optimization.
-\newblock \emph{Mathematics}, 11\penalty0 (9), 2023.
-\newblock ISSN 2227-7390.
-\newblock \doi{10.3390/math11091987}.
-\newblock URL \url{https://www.mdpi.com/2227-7390/11/9/1987}.
-
 \bibitem[Rou\v{c}ek et~al.(2022)Rou\v{c}ek, Pecka, \v{C}\'{\i}\v{z}ek,
   Pet\v{r}\'\i\v{c}ek, Bayer, \v{S}alansk\'{y}, Azayev, He\v{r}t, Petrl\'{i}k,
   B\'{a}\v{c}a, Spurn\'y, Kr\'{a}tky\'{y}, Petr\'{a}\v{c}ek, Baril, Vaidis,
@@ -176,6 +167,14 @@ Tom\'{a}\v{s} Rou\v{c}ek, Martin Pecka, Petr \v{C}\'{\i}\v{z}ek, Tom\'{a}\v{s}
   2022.
 \newblock \doi{10.55417/fr.2022055}.
 \newblock URL \url{https://doi.org/10.55417/fr.2022055}.
+
+\bibitem[Gielis et~al.(2022)Gielis, Shankar, and Prorok]{Gielis2022}
+Jennifer Gielis, Ajay Shankar, and Amanda Prorok.
+\newblock A critical review of communications in multi-robot systems.
+\newblock \emph{Current Robotics Reports}, 3\penalty0 (4):\penalty0 213--225,
+  August 2022.
+\newblock \doi{10.1007/s43154-022-00090-9}.
+\newblock URL \url{https://doi.org/10.1007/s43154-022-00090-9}.
 
 \bibitem[Alsamhi et~al.(2019)Alsamhi, Ma, Ansari, and
   Almalki]{SurveyCollab2019}
@@ -318,11 +317,18 @@ Juan~Carlos Elizondo~Leal.
   incluyendo Restricciones en Rango de Comunicaci\'{o}n}.
 \newblock PhD thesis, CINVESTAV Unidad Tamaulipas, Junio 2013.
 
-\bibitem[Sandoval~Garc\'{i}a(2013)]{CINVES2013}
-Humberto Sandoval~Garc\'{i}a.
-\newblock Generaci\'{o}n de mapas utilizando veh\'{i}culos a\'{e}reos no
-  tripulados de baja altitud.
-\newblock Master's thesis, CINVESTAV Unidad Tamaulipas, Febrero 2013.
+\bibitem[Cieslewski(2021)]{CIESLEWSKI2021}
+Titus Cieslewski.
+\newblock \emph{Decentralized Multi-Agent Visual SLAM}.
+\newblock PhD thesis, University of Zurich, Febrero 2021.
+\newblock URL \url{https://rpg.ifi.uzh.ch/docs/thesis_Cieslewski_final.pdf}.
+
+\bibitem[Brooks(1986)]{BROOKS1986}
+R.~Brooks.
+\newblock A robust layered control system for a mobile robot.
+\newblock \emph{IEEE Journal on Robotics and Automation}, 2\penalty0
+  (1):\penalty0 14--23, 1986.
+\newblock \doi{10.1109/JRA.1986.1087032}.
 
 \bibitem[Villanueva~Grijalva(2015)]{CINVES2015}
 Omar~Abraham Villanueva~Grijalva.
@@ -339,6 +345,23 @@ Leobardo Campos-Mac\'{i}as, Rodrigo Aldana-L\'{o}pez, Rafael Guardia,
   may 2020.
 \newblock \doi{10.1002/rob.21959}.
 \newblock URL \url{https://doi.org/10.1002/rob.21959}.
+
+\bibitem[Loquercio et~al.(2021)Loquercio, Kaufmann, Ranftl, Müller, Koltun,
+  and Scaramuzza]{Loquercio_2021}
+Antonio Loquercio, Elia Kaufmann, Ren{\'{e} } Ranftl, Matthias Müller, Vladlen
+  Koltun, and Davide Scaramuzza.
+\newblock Learning high-speed flight in the wild.
+\newblock \emph{Science Robotics}, 6\penalty0 (59), oct 2021.
+\newblock \doi{10.1126/scirobotics.abg5810}.
+\newblock URL \url{https://doi.org/10.1126%2Fscirobotics.abg5810}.
+
+\bibitem[Zhou et~al.(2023)Zhou, Xu, and Shen]{RACER2022}
+Boyu Zhou, Hao Xu, and Shaojie Shen.
+\newblock Racer: Rapid collaborative exploration with a decentralized multi-uav
+  system.
+\newblock \emph{IEEE Transactions on Robotics}, 39\penalty0 (3):\penalty0
+  1816--1835, 2023.
+\newblock \doi{10.1109/TRO.2023.3236945}.
 
 \bibitem[Yamauchi(1997)]{YAMAUCHI1997}
 B.~Yamauchi.
@@ -358,21 +381,43 @@ Margarida Faria, Ant{\'{o}}nio~S{\'{e}}rgio Ferreira, H{\'{e}}ctor
 \newblock \doi{10.3390/s19224849}.
 \newblock URL \url{https://doi.org/10.3390/s19224849}.
 
-\bibitem[Loquercio et~al.(2021)Loquercio, Kaufmann, Ranftl, Müller, Koltun,
-  and Scaramuzza]{Loquercio_2021}
-Antonio Loquercio, Elia Kaufmann, Ren{\'{e} } Ranftl, Matthias Müller, Vladlen
-  Koltun, and Davide Scaramuzza.
-\newblock Learning high-speed flight in the wild.
-\newblock \emph{Science Robotics}, 6\penalty0 (59), oct 2021.
-\newblock \doi{10.1126/scirobotics.abg5810}.
-\newblock URL \url{https://doi.org/10.1126%2Fscirobotics.abg5810}.
+\bibitem[Fraundorfer et~al.(2012)Fraundorfer, Heng, Honegger, Lee, Meier,
+  Tanskanen, and Pollefeys]{FRAUNDORFER2012}
+Friedrich Fraundorfer, Lionel Heng, Dominik Honegger, Gim~Hee Lee, Lorenz
+  Meier, Petri Tanskanen, and Marc Pollefeys.
+\newblock Vision-based autonomous mapping and exploration using a quadrotor
+  mav.
+\newblock In \emph{2012 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems}, pages 4557--4564, 2012.
+\newblock \doi{10.1109/IROS.2012.6385934}.
 
-\bibitem[Brooks(1986)]{BROOKS1986}
-R.~Brooks.
-\newblock A robust layered control system for a mobile robot.
-\newblock \emph{IEEE Journal on Robotics and Automation}, 2\penalty0
-  (1):\penalty0 14--23, 1986.
-\newblock \doi{10.1109/JRA.1986.1087032}.
+\bibitem[Papachristos et~al.(2017)Papachristos, Khattak, and
+  Alexis]{PAPACHRISTOS2017}
+Christos Papachristos, Shehryar Khattak, and Kostas Alexis.
+\newblock Uncertainty-aware receding horizon exploration and mapping using
+  aerial robots.
+\newblock In \emph{2017 IEEE International Conference on Robotics and
+  Automation (ICRA)}, pages 4568--4575, 2017.
+\newblock \doi{10.1109/ICRA.2017.7989531}.
+
+\bibitem[Selin et~al.(2019)Selin, Tiger, Duberg, Heintz, and
+  Jensfelt]{SELIN2019}
+Magnus Selin, Mattias Tiger, Daniel Duberg, Fredrik Heintz, and Patric
+  Jensfelt.
+\newblock Efficient autonomous exploration planning of large-scale 3-d
+  environments.
+\newblock \emph{IEEE Robotics and Automation Letters}, 4\penalty0 (2):\penalty0
+  1699--1706, 2019.
+\newblock \doi{10.1109/LRA.2019.2897343}.
+
+\bibitem[Cieslewski et~al.(2017)Cieslewski, Kaufmann, and
+  Scaramuzza]{CIESLEWSKI2017}
+Titus Cieslewski, Elia Kaufmann, and Davide Scaramuzza.
+\newblock Rapid exploration with multi-rotors: A frontier selection method for
+  high speed flight.
+\newblock In \emph{2017 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 2135--2142, 2017.
+\newblock \doi{10.1109/IROS.2017.8206030}.
 
 \bibitem[Shen et~al.(2011)Shen, Michael, and Kumar]{SHEN2011}
 Shaojie Shen, Nathan Michael, and Vijay Kumar.
@@ -388,16 +433,6 @@ Slawomir Grzonka, Giorgio Grisetti, and Wolfram Burgard.
 \newblock \emph{IEEE Transactions on Robotics}, 28\penalty0 (1):\penalty0
   90--100, 2012.
 \newblock \doi{10.1109/TRO.2011.2162999}.
-
-\bibitem[Fraundorfer et~al.(2012)Fraundorfer, Heng, Honegger, Lee, Meier,
-  Tanskanen, and Pollefeys]{FRAUNDORFER2012}
-Friedrich Fraundorfer, Lionel Heng, Dominik Honegger, Gim~Hee Lee, Lorenz
-  Meier, Petri Tanskanen, and Marc Pollefeys.
-\newblock Vision-based autonomous mapping and exploration using a quadrotor
-  mav.
-\newblock In \emph{2012 IEEE/RSJ International Conference on Intelligent Robots
-  and Systems}, pages 4557--4564, 2012.
-\newblock \doi{10.1109/IROS.2012.6385934}.
 
 \bibitem[Meagher(1982)]{DONALD1982}
 Donald Meagher.
@@ -423,15 +458,6 @@ Heajung Min, Kyung~Min Han, and Young~J. Kim.
 \newblock Accelerating probabilistic volumetric mapping using ray-tracing
   graphics hardware, 2020.
 
-\bibitem[Cieslewski et~al.(2017)Cieslewski, Kaufmann, and
-  Scaramuzza]{CIESLEWSKI2017}
-Titus Cieslewski, Elia Kaufmann, and Davide Scaramuzza.
-\newblock Rapid exploration with multi-rotors: A frontier selection method for
-  high speed flight.
-\newblock In \emph{2017 IEEE/RSJ International Conference on Intelligent Robots
-  and Systems (IROS)}, pages 2135--2142, 2017.
-\newblock \doi{10.1109/IROS.2017.8206030}.
-
 \bibitem[Usenko et~al.(2017)Usenko, von Stumberg, Pangercic, and
   Cremers]{USENKO2017}
 Vladyslav Usenko, Lukas von Stumberg, Andrej Pangercic, and Daniel Cremers.
@@ -455,6 +481,20 @@ Kartik Mohta, Michael Watterson, Yash Mulgaonkar, Sikang Liu, Chao Qu, Anurag
 \newblock \doi{10.1002/rob.21774}.
 \newblock URL \url{https://doi.org/10.1002/rob.21774}.
 
+\bibitem[Florence et~al.(2018)Florence, Carter, Ware, and
+  Tedrake]{FLORENCE2018}
+Peter~R. Florence, John Carter, Jake Ware, and Russ Tedrake.
+\newblock Nanomap: Fast, uncertainty-aware proximity queries with lazy search
+  over local 3d data, 2018.
+
+\bibitem[Gao et~al.(2018)Gao, Wu, Lin, and Shen]{GAO2018}
+Fei Gao, William Wu, Yi~Lin, and Shaojie Shen.
+\newblock Online safe trajectory generation for quadrotors using fast marching
+  method and bernstein basis polynomial.
+\newblock In \emph{2018 IEEE International Conference on Robotics and
+  Automation (ICRA)}, pages 344--351, 2018.
+\newblock \doi{10.1109/ICRA.2018.8462878}.
+
 \bibitem[Lin et~al.(2017)Lin, Gao, Qin, Gao, Liu, Wu, Yang, and Shen]{LIN2017}
 Yi~Lin, Fei Gao, Tong Qin, Wenliang Gao, Tianbo Liu, William Wu, Zhenfei Yang,
   and Shaojie Shen.
@@ -463,15 +503,6 @@ Yi~Lin, Fei Gao, Tong Qin, Wenliang Gao, Tianbo Liu, William Wu, Zhenfei Yang,
   July 2017.
 \newblock \doi{10.1002/rob.21732}.
 \newblock URL \url{https://doi.org/10.1002/rob.21732}.
-
-\bibitem[Papachristos et~al.(2017)Papachristos, Khattak, and
-  Alexis]{PAPACHRISTOS2017}
-Christos Papachristos, Shehryar Khattak, and Kostas Alexis.
-\newblock Uncertainty-aware receding horizon exploration and mapping using
-  aerial robots.
-\newblock In \emph{2017 IEEE International Conference on Robotics and
-  Automation (ICRA)}, pages 4568--4575, 2017.
-\newblock \doi{10.1109/ICRA.2017.7989531}.
 
 \bibitem[Oleynikova et~al.(2018)Oleynikova, Taylor, Siegwart, and
   Nieto]{OLEYNIKOVA2018}
@@ -483,29 +514,13 @@ Helen Oleynikova, Zachary Taylor, Roland Siegwart, and Juan Nieto.
 \newblock \doi{10.1109/lra.2018.2800109}.
 \newblock URL \url{https://doi.org/10.1109/lra.2018.2800109}.
 
-\bibitem[Gao et~al.(2018)Gao, Wu, Lin, and Shen]{GAO2018}
-Fei Gao, William Wu, Yi~Lin, and Shaojie Shen.
-\newblock Online safe trajectory generation for quadrotors using fast marching
-  method and bernstein basis polynomial.
-\newblock In \emph{2018 IEEE International Conference on Robotics and
-  Automation (ICRA)}, pages 344--351, 2018.
-\newblock \doi{10.1109/ICRA.2018.8462878}.
-
-\bibitem[Florence et~al.(2018)Florence, Carter, Ware, and
-  Tedrake]{FLORENCE2018}
-Peter~R. Florence, John Carter, Jake Ware, and Russ Tedrake.
-\newblock Nanomap: Fast, uncertainty-aware proximity queries with lazy search
-  over local 3d data, 2018.
-
-\bibitem[Selin et~al.(2019)Selin, Tiger, Duberg, Heintz, and
-  Jensfelt]{SELIN2019}
-Magnus Selin, Mattias Tiger, Daniel Duberg, Fredrik Heintz, and Patric
-  Jensfelt.
-\newblock Efficient autonomous exploration planning of large-scale 3-d
-  environments.
-\newblock \emph{IEEE Robotics and Automation Letters}, 4\penalty0 (2):\penalty0
-  1699--1706, 2019.
-\newblock \doi{10.1109/LRA.2019.2897343}.
+\bibitem[Collins and Michael(2020)]{COLLINS2019}
+Matthew Collins and Nathan Michael.
+\newblock Efficient planning for high-speed mav flight in unknown environments
+  using online sparse topological graphs.
+\newblock In \emph{2020 IEEE International Conference on Robotics and
+  Automation (ICRA)}, pages 11450--11456, 2020.
+\newblock \doi{10.1109/ICRA40945.2020.9197167}.
 
 \bibitem[McGuire et~al.(2019)McGuire, Wagter, Tuyls, Kappen, and
   de~Croon]{BUG2019}
@@ -516,27 +531,5 @@ K.~N. McGuire, C.~De Wagter, K.~Tuyls, H.~J. Kappen, and G.~C. H.~E. de~Croon.
 \newblock \doi{10.1126/scirobotics.aaw9710}.
 \newblock URL
   \url{https://www.science.org/doi/abs/10.1126/scirobotics.aaw9710}.
-
-\bibitem[Collins and Michael(2020)]{COLLINS2019}
-Matthew Collins and Nathan Michael.
-\newblock Efficient planning for high-speed mav flight in unknown environments
-  using online sparse topological graphs.
-\newblock In \emph{2020 IEEE International Conference on Robotics and
-  Automation (ICRA)}, pages 11450--11456, 2020.
-\newblock \doi{10.1109/ICRA40945.2020.9197167}.
-
-\bibitem[Cieslewski(2021)]{CIESLEWSKI2021}
-Titus Cieslewski.
-\newblock \emph{Decentralized Multi-Agent Visual SLAM}.
-\newblock PhD thesis, University of Zurich, Febrero 2021.
-\newblock URL \url{https://rpg.ifi.uzh.ch/docs/thesis_Cieslewski_final.pdf}.
-
-\bibitem[Zhou et~al.(2023)Zhou, Xu, and Shen]{RACER2022}
-Boyu Zhou, Hao Xu, and Shaojie Shen.
-\newblock Racer: Rapid collaborative exploration with a decentralized multi-uav
-  system.
-\newblock \emph{IEEE Transactions on Robotics}, 39\penalty0 (3):\penalty0
-  1816--1835, 2023.
-\newblock \doi{10.1109/TRO.2023.3236945}.
 
 \end{thebibliography}
